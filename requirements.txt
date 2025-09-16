@@ -7,7 +7,7 @@ pymdown-extensions>=10.3.0
 
 # 插件
 mkdocs-minify-plugin>=0.7.1
-mkdocs-roamlinks-plugin>=0.4.2
+mkdocs-roamlinks-plugin>=0.3.2
 
 # 可选插件 (根据需要启用)
 # mkdocs-blog-plugin>=0.27.0  # 博客功能
