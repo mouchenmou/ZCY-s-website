@@ -1,0 +1,17 @@
+# MkDocs 核心
+mkdocs>=1.5.3
+mkdocs-material>=9.4.0
+
+# Markdown 扩展
+pymdown-extensions>=10.3.0
+
+# 插件
+mkdocs-minify-plugin>=0.7.1
+mkdocs-roamlinks-plugin>=0.4.2
+
+# 可选插件 (根据需要启用)
+# mkdocs-blog-plugin>=0.27.0  # 博客功能
+# mkdocs-git-revision-date-localized-plugin>=1.2.0  # Git信息显示
+# mkdocs-awesome-pages-plugin>=2.9.2  # 自动页面导航
+# mkdocs-macros-plugin>=1.0.4  # 宏和变量支持
+# mkdocs-glightbox>=0.3.4  # 图片灯箱效果

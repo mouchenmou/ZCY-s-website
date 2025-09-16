@@ -1,0 +1,150 @@
+site_name: ZCY's blog
+site_description: 记录学习过程中的笔记和思考
+site_author: 某晨某
+site_url: https://mouchenmou.github.io/ZCY-s-website/
+
+# Repository
+repo_name: zcy's website
+repo_url: https://github.com/mouchenmou/ZCY-s-website
+edit_uri: ""
+
+# Copyright
+copyright: Copyright &copy; 2025 某晨某
+
+theme:
+  name: material
+  language: zh
+  logo: assets/IMG/1.jpg
+  favicon: assets/IMG/1.jpg
+  palette:
+    # Palette toggle for light mode - 自定义米黄绿色主题
+    - scheme: warm
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: teal
+      accent: green
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+  icon:
+    repo: fontawesome/brands/github
+
+# Plugins
+plugins:
+  - search:
+      lang: zh
+  - minify:
+      minify_html: true
+
+# Extra
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mouchenmou
+      name: GitHub
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Navigation
+nav:
+  - 首页: index.md
+  - Undergraduate Study:
+    - undergraduate-study/index.md
+    - CS61B 数据结构:
+      - 笔记本/CS61B/index.md
+      - Lecture 1 - Java基础: 笔记本/CS61B/Lecture 1/Intro 1 Study Guide.md
+      - Lecture 2 - Java语法: 笔记本/CS61B/Lecture 2/一些关于java的语法.md
+      - Lecture 13 - 渐近线1: 笔记本/CS61B/Lecture 13 渐近线1/Big O.md
+      - Lecture 14 - 不相交集1:
+        - 笔记本/CS61B/Lecture 14 不相交集1(Disjoint Sets)/1.快速查找不相交集（QuickFindDS）.md
+        - 笔记本/CS61B/Lecture 14 不相交集1(Disjoint Sets)/2.快速连接法（QuickUnionDS）.md
+        - 笔记本/CS61B/Lecture 14 不相交集1(Disjoint Sets)/3.加权快速接头（Weighted Quick Union）.md
+      - Lecture 15 - 不相交集2和渐近线2:
+        - 笔记本/CS61B/Lecture 15 不相交集2和渐近线2/15.1路径压缩(WQU with Path Compression).md
+        - 笔记本/CS61B/Lecture 15 不相交集2和渐近线2/15.2 渐近线2.md
+      - Lecture 16 - 二分查找法和BSTs:
+        - 笔记本/CS61B/Lecture 16 二分查找法，ADTs，BSTs/二分查找法（BinarySearch）.md
+        - 笔记本/CS61B/Lecture 16 二分查找法，ADTs，BSTs/归并排序（Mergesort）.md
+        - 笔记本/CS61B/Lecture 16 二分查找法，ADTs，BSTs/BSTs.md
+      - Lecture 17 - 二叉搜索树:
+        - 笔记本/CS61B/Lecture 17 二叉搜索树，Set and Maps，B-trees/1.BST的insert.md
+        - 笔记本/CS61B/Lecture 17 二叉搜索树，Set and Maps，B-trees/2.BST删除节点.md
+        - 笔记本/CS61B/Lecture 17 二叉搜索树，Set and Maps，B-trees/3.集合与映射（Set and Maps）.md
+        - 笔记本/CS61B/Lecture 17 二叉搜索树，Set and Maps，B-trees/4.二叉搜索树的高度和最坏情况.md
+        - 笔记本/CS61B/Lecture 17 二叉搜索树，Set and Maps，B-trees/5.B-Trees.md
+      - Lecture 18 - 旋转树和红黑树:
+        - 笔记本/CS61B/Lecture 18旋转树和红黑树/1.Definition of Tree Rotation.md
+        - 笔记本/CS61B/Lecture 18旋转树和红黑树/2.红黑树.md
+    - 面向对象程序设计:
+      - Lecture 1 - C++程序基础: 笔记本/面向对象程序设计/Lecture 1/The first C++ program.md
+  - Laboratory Work:
+    - 实验记录: laboratory-work/experiments.md
+    - 研究笔记: laboratory-work/research-notes.md
+
+# Custom CSS
+extra_css:
+  - stylesheets/extra.css
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
