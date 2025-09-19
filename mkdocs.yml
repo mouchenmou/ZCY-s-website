@@ -132,8 +132,11 @@ nav:
         - 笔记本/CS61B/Lecture 17 二叉搜索树，Set and Maps，B-trees/4.二叉搜索树的高度和最坏情况.md
         - 笔记本/CS61B/Lecture 17 二叉搜索树，Set and Maps，B-trees/5.B-Trees.md
       - Lecture 18 - 旋转树和红黑树:
-        - 笔记本/CS61B/Lecture 18旋转树和红黑树/1.Definition of Tree Rotation.md
-        - 笔记本/CS61B/Lecture 18旋转树和红黑树/2.红黑树.md
+        - 笔记本/CS61B/Lecture 18 旋转树和红黑树/1.Definition of Tree Rotation.md
+        - 笔记本/CS61B/Lecture 18 旋转树和红黑树/2.红黑树.md
+      - Lecture 19 - 哈希算法1:
+        - 笔记本/CS61B/Lecture 19 哈希算法1/1.BobaCounterSet.md
+        - 笔记本/CS61B/Lecture 19 哈希算法1/2.Dynamic Array Of Lists Set.md
     - 面向对象程序设计:
       - Lecture 1 - C++程序基础: 笔记本/面向对象程序设计/Lecture 1/The first C++ program.md
     - 大学物理实验:

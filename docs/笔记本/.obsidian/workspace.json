@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工程力学/第二章/2.2 约束的分类及约束力的特征.md",
+                "file": "CS61B/Lecture 19 哈希算法1/1.BobaCounterSet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2.2 约束的分类及约束力的特征"
+              "title": "1.BobaCounterSet"
             }
           }
         ],
@@ -212,8 +212,11 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "874e42e3ff1dd324",
+  "active": "0c3136469588a543",
   "lastOpenFiles": [
+    "CS61B/Lecture 19 哈希算法1/2.Dynamic Array Of Lists Set.md",
+    "CS61B/Lecture 19 哈希算法1/1.BobaCounterSet.md",
+    "工程力学/第二章/2.2 约束的分类及约束力的特征.md",
     "电子电路基础/第2章 电路的等效变换/2.4 储能元件电路的等效变换.md",
     "电子电路基础/第2章 电路的等效变换/2.3 电阻电路的等效变换.md",
     "电子电路基础/第2章 电路的等效变换/2.2 基尔霍夫电压定律.md",
@@ -231,11 +234,8 @@
     "电子电路基础/第2章 电路的等效变换/附件/Pasted image 20250919170850.png",
     "电子电路基础/第2章 电路的等效变换/附件",
     "未命名.md",
-    "CS61B/Lecture 19 哈希算法1/2.Dynamic Array Of Lists Set.md",
     "电子电路基础/第2章 电路的等效变换",
-    "CS61B/Lecture 19 哈希算法1/1.BobaCounterSet.md",
     "CS61B/Lecture 19 哈希算法1/附件",
-    "工程力学/第二章/2.2 约束的分类及约束力的特征.md",
     "工程力学/第二章/附件",
     "工程力学/第二章/2.2",
     "工程力学/第二章",
