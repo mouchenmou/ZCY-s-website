@@ -11,14 +11,10 @@
             "id": "adc0afb6f484a017",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "大学物理实验/1.绪论/一、实验测量与误差分布.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "一、实验测量与误差分布"
+              "title": "新标签页"
             }
           },
           {
@@ -62,9 +58,23 @@
               "icon": "lucide-file",
               "title": "1.BobaCounterSet"
             }
+          },
+          {
+            "id": "e7ff0b0769832358",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "大学物理乙2/第十二章 静电场/12.7 电势梯度.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "12.7 电势梯度"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -96,7 +106,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "\\varepsilon_{0}",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -209,57 +219,58 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:创建新数据库": false
+      "bases:创建新数据库": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
   "active": "0c3136469588a543",
   "lastOpenFiles": [
-    "CS61B/Lecture 19 哈希算法1/2.Dynamic Array Of Lists Set.md",
+    "大学物理乙2/第十二章 静电场/附件/Pasted image 20250920171011.png",
+    "大学物理乙2/第十二章 静电场/附件/Pasted image 20250920170805.png",
+    "大学物理乙2/第十二章 静电场/附件/Pasted image 20250920170744.png",
+    "大学物理乙2/第十二章 静电场/附件/Pasted image 20250920170655.png",
+    "大学物理乙2/第十二章 静电场/附件/Pasted image 20250920170634.png",
+    "CS61B/Lecture 17 二叉搜索树，Set and Maps，B-trees/4.二叉搜索树的高度和最坏情况.md",
+    "CS61B/Lecture 17 二叉搜索树，Set and Maps，B-trees/3.集合与映射（Set and Maps）.md",
+    "CS61B/Lecture 16 二分查找法，ADTs，BSTs/归并排序（Mergesort）.md",
+    "CS61B/Lecture 15 不相交集2和渐近线2/15.1路径压缩(WQU with Path Compression).md",
+    "CS61B/Lecture 14 不相交集1(Disjoint Sets)/3.加权快速接头（Weighted Quick Union）.md",
+    "CS61B/Lecture 14 不相交集1(Disjoint Sets)/2.快速连接法（QuickUnionDS）.md",
+    "CS61B/Lecture 14 不相交集1(Disjoint Sets)/1.快速查找不相交集（QuickFindDS）.md",
+    "CS61B/Lecture 16 二分查找法，ADTs，BSTs/BSTs.md",
+    "CS61B/Lecture 15 不相交集2和渐近线2/15.2 渐近线2.md",
+    "CS61B/Lecture 13 渐近线1/Big O.md",
+    "大学物理乙2/第十二章 静电场/12.7 电势梯度.md",
+    "大学物理乙2/第十二章 静电场/附件/Pasted image 20250920163257.png",
+    "大学物理乙2/第十二章 静电场/12.6 电势.md",
+    "大学物理乙2/第十二章 静电场/附件/Pasted image 20250920162352.png",
+    "大学物理乙2/第十二章 静电场/附件/Pasted image 20250920161806.png",
+    "大学物理乙2/第十二章 静电场/附件/Pasted image 20250920161319.png",
+    "大学物理乙2/第十二章 静电场/附件/Pasted image 20250920155547.png",
+    "大学物理乙2/第十二章 静电场/附件/Pasted image 20250920155430.png",
+    "大学物理乙2/第十二章 静电场/12.5 利用高斯定理计算电场.md",
+    "大学物理乙2/第十二章 静电场/12.4 高斯定理.md",
+    "2025-09-20.md",
+    "大学物理乙2/第十二章 静电场/附件",
+    "大学物理乙2/第十二章 静电场",
     "CS61B/Lecture 19 哈希算法1/1.BobaCounterSet.md",
+    "学校课程",
+    "CS61B/Lecture 19 哈希算法1/2.Dynamic Array Of Lists Set.md",
     "工程力学/第二章/2.2 约束的分类及约束力的特征.md",
     "电子电路基础/第2章 电路的等效变换/2.4 储能元件电路的等效变换.md",
     "电子电路基础/第2章 电路的等效变换/2.3 电阻电路的等效变换.md",
     "电子电路基础/第2章 电路的等效变换/2.2 基尔霍夫电压定律.md",
     "电子电路基础/第2章 电路的等效变换/2.1 电路等效.md",
     "电子电路基础/第1章 电路基本概述/1.3基本电路元件.md",
-    "电子电路基础/第2章 电路的等效变换/附件/Pasted image 20250919232240.png",
-    "电子电路基础/第2章 电路的等效变换/附件/Pasted image 20250919232003.png",
-    "电子电路基础/第2章 电路的等效变换/附件/Pasted image 20250919231131.png",
-    "电子电路基础/第2章 电路的等效变换/附件/Pasted image 20250919221718.png",
-    "电子电路基础/第2章 电路的等效变换/附件/Pasted image 20250919220920.png",
-    "电子电路基础/第2章 电路的等效变换/附件/Pasted image 20250919171339.png",
-    "电子电路基础/第2章 电路的等效变换/附件/Pasted image 20250919171128.png",
-    "电子电路基础/第2章 电路的等效变换/附件/Pasted image 20250919171115.png",
-    "电子电路基础/第2章 电路的等效变换/附件/Pasted image 20250919170934.png",
-    "电子电路基础/第2章 电路的等效变换/附件/Pasted image 20250919170850.png",
     "电子电路基础/第2章 电路的等效变换/附件",
-    "未命名.md",
     "电子电路基础/第2章 电路的等效变换",
     "CS61B/Lecture 19 哈希算法1/附件",
     "工程力学/第二章/附件",
     "工程力学/第二章/2.2",
     "工程力学/第二章",
     "大学物理乙2",
-    "深入理解计算机系统",
-    "CS61A",
-    "大学物理2",
     "大学物理实验/1.绪论/3.有效数字与实验数据处理.md",
     "大学物理实验/1.绪论/2.误差与不确定度.md",
-    "大学物理实验/1.绪论/1.实验测量与误差分布.md",
-    "cs224n/Lecture 1/1.Assignment.md",
-    "cs224n/Lecture 1/2.Human language and word meaning.md",
-    "cs224n/Lecture 1/3.Word2vec introduction.md",
-    "电子电路基础/第1章 电路基本概述/1.2电路基础知识.md",
-    "CS61B/Lecture 14 不相交集1(Disjoint Sets)/3.加权快速接头（Weighted Quick Union）.md",
-    "CS61B/Lecture 14 不相交集1(Disjoint Sets)/2.快速连接法（QuickUnionDS）.md",
-    "CS61B/Lecture 14 不相交集1(Disjoint Sets)/1.快速查找不相交集（QuickFindDS）.md",
-    "面向对象程序设计/Lecture 1/The first C++ program.md",
-    "面向对象程序设计/Lecture 1/未命名 1.md",
-    "Lecture.md",
-    "cs224n/Lecture 1/4..md",
-    "cs224n/homework/homework.md",
-    "CS61B/Lecture 16 二分查找法，ADTs，BSTs/BSTs.md",
-    "CS61B/Lecture 16 二分查找法，ADTs，BSTs/归并排序（Mergesort）.md",
     "未命名.canvas"
   ]
 }
