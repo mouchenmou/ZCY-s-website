@@ -24,7 +24,7 @@
   - 这门课的作业质量很高，14个lab会让你实现课上所讲的绝大多数数据结构
   - 10个Homework会让你运用数据结构和算法解决实际问题
   - 3个project让你有机会接触上千行的工程代码
-  - 课程网站：[https://sp24.datastructur.es/](CS61B)
+  - 课程网站：[https://sp24.datastructur.es/]([https://sp24.datastructur.es/]())
 
 ### cs224n
 
@@ -33,7 +33,7 @@
   - 内容覆盖了词向量、RNN、LSTM、Seq2Seq 模型、机器翻译、注意力机制、Transformer等等NLP领域的核心知识
   - 五个编程作业的难度循序渐进，分别是词向量、word2vec算法、Dependency parsing、机器翻译以及Transformer的fine-tune
   - 最终的大作业是在Stanford的SQuAD数据集上训练QA模型
-  - 课程网站：[http://web.stanford.edu/class/cs224n/index.html](cs224n)
+  - 课程网站：[http://web.stanford.edu/class/cs224n/index.html](http://web.stanford.edu/class/cs224n/index.html)
 
 ### CSAPP
 
@@ -43,7 +43,7 @@
   - 内容覆盖了多种汇编语言、体系结构、编译链接、并行、网络等等
   - 这门课的lab巨难，第一个lab就已经把我搞破防了，学有余力的同学真得好好钻研钻研
   - 如果觉得英文网课听不明白可以去b站上看九曲阑干这位博主对于这本书的讲解，但是他的直播回放要钱，免费的版本都只是粗略的概述
-  - 课程网站：[http://csapp.cs.cmu.edu/](深入理解计算机系统)
+  - 课程网站：[http://csapp.cs.cmu.edu/](http://csapp.cs.cmu.edu/)
 
 ---
 
