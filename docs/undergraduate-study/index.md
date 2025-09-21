@@ -24,7 +24,7 @@
   - 这门课的作业质量很高，14个lab会让你实现课上所讲的绝大多数数据结构
   - 10个Homework会让你运用数据结构和算法解决实际问题
   - 3个project让你有机会接触上千行的工程代码
-  - 课程网站：[https://sp24.datastructur.es/]([https://sp24.datastructur.es/]())
+  - 课程网站：[https://sp24.datastructur.es/](https://sp24.datastructur.es/)
 
 ### cs224n
 
