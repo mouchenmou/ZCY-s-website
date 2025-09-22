@@ -138,7 +138,12 @@ nav:
         - 笔记本/CS61B/Lecture 19 哈希算法1/1.BobaCounterSet.md
         - 笔记本/CS61B/Lecture 19 哈希算法1/2.Dynamic Array Of Lists Set.md
     - 面向对象程序设计:
-      - Lecture 1 - C++程序基础: 笔记本/面向对象程序设计/Lecture 1/The first C++ program.md
+      - Lecture 1: 笔记本/面向对象程序设计/Lecture 1/The first C++ program.md
+      - Lecture 2: 
+        - 1.类: 笔记本/面向对象程序设计/Lecture 2/1.类.md
+        - 2.File I and O: 笔记本/面向对象程序设计/Lecture 2/2.File I and O.md
+        - 3.Memory Model: 笔记本/面向对象程序设计/Lecture 2/3.Memory Model.md
+        - 4.Pointers to Objects: 笔记本/面向对象程序设计/Lecture 2/4.Pointers to Objects.md
     - 大学物理实验:
       - 1.绪论:
         - 1.实验测量与误差分布: 笔记本/大学物理实验/1.绪论/1.实验测量与误差分布.md
