@@ -1,5 +1,19 @@
 {
-  "userAdmonitions": {},
+  "userAdmonitions": {
+    "example": {
+      "type": "example",
+      "color": "#7d7d7d",
+      "icon": {
+        "name": "data:image/png;base64,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",
+        "type": "image"
+      },
+      "command": false,
+      "title": "示例",
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
+    }
+  },
   "syntaxHighlight": false,
   "copyButton": false,
   "version": "10.3.2",
