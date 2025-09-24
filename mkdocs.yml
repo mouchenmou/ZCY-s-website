@@ -108,7 +108,7 @@ markdown_extensions:
 nav:
   - 首页: index.md
   - Undergraduate Study:
-    - undergraduate-study/index.md
+    - undergraduate-study/index1.md
     - CS61B 数据结构:
       - 笔记本/CS61B/index.md
       - Lecture 1 - Java基础: 笔记本/CS61B/Lecture 1/Intro 1 Study Guide.md
@@ -137,6 +137,7 @@ nav:
       - Lecture 19 - 哈希算法1:
         - 笔记本/CS61B/Lecture 19 哈希算法1/1.BobaCounterSet.md
         - 笔记本/CS61B/Lecture 19 哈希算法1/2.Dynamic Array Of Lists Set.md
+    - undergraduate-study/index2.md
     - 面向对象程序设计:
       - Lecture 1: 笔记本/面向对象程序设计/Lecture 1/The first C++ program.md
       - Lecture 2: 
