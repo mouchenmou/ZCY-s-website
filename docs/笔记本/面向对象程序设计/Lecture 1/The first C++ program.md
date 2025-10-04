@@ -1,12 +1,12 @@
 # 先来浅浅看个最简单的代码
 
 ```c
-#include<iostream>
-using namespace std;
-int main{
-    cout << "Today I ma " << "19" << " years old " << "now" << endl;
-    return 0;
-}
+    #include<iostream>
+    using namespace std;
+    int main{
+        cout << "Today I ma " << "19" << " years old " << "now" << endl;
+        return 0;
+    }
 ```
 
 ---
@@ -14,15 +14,15 @@ int main{
 # cin 和 cout
 ## cin是输入，cout是输出：
 ```c
-#include<iostream>
-using namespace std;
-int main(){
-    int number;
-    cout << "Enter a decimal number : ";
-    cin >> number;
-    cout << "The number you entered is " << number << "." << endl;
-    return 0;
-}
+    #include<iostream>
+    using namespace std;
+    int main(){
+        int number;
+        cout << "Enter a decimal number : ";
+        cin >> number;
+        cout << "The number you entered is " << number << "." << endl;
+        return 0;
+    }
 ```
 
 ---
@@ -66,12 +66,12 @@ int main(){
 
 如果觉得每次都写`std::`很麻烦，你可以在代码的开头加上 `using namespace std;`。
 ```c++
-#include <iostream>
-using namespace std; // 加上这行
-int main() {
-    cout << "Hello, world!" << endl; // 就可以不用写std::了
-    return 0;
-}
+    #include <iostream>
+    using namespace std; // 加上这行
+    int main() {
+        cout << "Hello, world!" << endl; // 就可以不用写std::了
+        return 0;
+    }
 ```
 **但是！** 这种写法在**大型项目**和**头文件**中**不推荐**。因为这会把`std`命名空间里的所有东西都暴露出来，增加了命名冲突的风险。课堂中老师可能为了让我们养成好习惯，会展现完整的`std::`
 简单来说，`std::`就是C++的标准操作，它能帮你把代码组织得更清晰、更安全。虽然刚开始看起来有点烦，但习惯之后就会觉得它很自然了。
@@ -80,14 +80,14 @@ int main() {
 
 # const
 
-在C++中，`const`是一个关键字，它表示“**常量**”或“**不可变**”。简单来说，它告诉编译器，被`const`修饰的东西是不能被修改的。
+在C++中，`const`是一个关键字，它表示“**常量**”或“**不可变**”。简单来说，它告诉编译器，被`const`修饰的东西是不能被修改的。它跟reference一样定义的时候就得直接初始化。
 这有什么用呢？它能让你在代码中明确地表达你的意图，让编译器来帮你检查错误，从而提高代码的健壮性和安全性。
 `const` 可以用在许多地方：
 ## 1.修饰变量
 当一个变量被 `const` 修饰后，它就成了一个常量，它的值在初始化后就不能再改变了。
 ```c++
-const int max_size = 100; // max_size现在是一个常量
-max_size = 200; // 错误！不能修改常量
+    const int max_size = 100; // max_size现在是一个常量
+    max_size = 200; // 错误！不能修改常量
 ```
 
 ## 2.修饰指针
@@ -95,37 +95,37 @@ max_size = 200; // 错误！不能修改常量
 
 - **常量指针（`const` 在 `*` 后面）**：指针本身可以改变，但它**指向的值**不能改变。
 ```c++
-int x = 5;
-const int* p = &x; // p指向的值是const的
-*p = 10;           // 错误！不能通过p修改x的值
-int y = 6;
-p = &y;            // 正确！p可以指向另一个变量
+    int x = 5;
+    const int* p = &x; // p指向的值是const的
+    *p = 10;           // 错误！不能通过p修改x的值
+    int y = 6;
+    p = &y;            // 正确！p可以指向另一个变量
 ```
 
 - **指针常量（`const` 在 `*` 前面）**：**指针本身**不能改变，但它指向的值可以改变。
 ```c++
-int x = 5;
-int* const p = &x; // p本身是const的
-*p = 10;           // 正确！可以通过p修改x的值
-int y = 6;
-p = &y;            // 错误！不能让p指向另一个变量
+    int x = 5;
+    int* const p = &x; // p本身是const的
+    *p = 10;           // 正确！可以通过p修改x的值
+    int y = 6;
+    p = &y;            // 错误！不能让p指向另一个变量
 ```
 
 - **都修饰（两个 `const`）**：指针本身和它指向的值都不能改变。
 ```c++
-int x = 5;
-const int* const p = &x; // 指针p和它指向的值都不能变
-*p = 10;                 // 错误！
-int y = 6;
-p = &y;                  // 错误！
+    int x = 5;
+    const int* const p = &x; // 指针p和它指向的值都不能变
+    *p = 10;                 // 错误！
+    int y = 6;
+    p = &y;                  // 错误！
 ```
 
 ## 3.修饰函数
 
 当我们在函数参数前加上 `const` 时，是在向调用者保证，这个函数**不会修改**传入的参数。这是一种很好的编程习惯，因为它让函数接口更清晰。
 ```c++
-void print_string(const std::string& str) {// 只能读取str，不能修改它
-    std::cout << str << std::endl;
-    str[0] = 'a'; // 错误！
-}
+    void print_string(const std::string& str) {// 只能读取str，不能修改它
+        std::cout << str << std::endl;
+        str[0] = 'a'; // 错误！
+    }
 ```

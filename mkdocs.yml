@@ -145,6 +145,13 @@ nav:
         - 2.File I and O: 笔记本/面向对象程序设计/Lecture 2/2.File I and O.md
         - 3.Memory Model: 笔记本/面向对象程序设计/Lecture 2/3.Memory Model.md
         - 4.Pointers to Objects: 笔记本/面向对象程序设计/Lecture 2/4.Pointers to Objects.md
+      - Lecture 3:
+        - 1.衔接 Lecture 2 的指针内容: 笔记本/面向对象程序设计/Lecture 3/1.衔接 lecture 2 的指针内容.md
+        - 2.Reference(引用): 笔记本/面向对象程序设计/Lecture 3/2.Reference(引用).md
+        - 3.constants: 笔记本/面向对象程序设计/Lecture 3/3.constants.md
+        - 4.Conversions: 笔记本/面向对象程序设计/Lecture 3/4.Conversions.md
+        - 5.Passing address: 笔记本/面向对象程序设计/Lecture 3/5.Passing address.md
+        - 6.Class: 笔记本/面向对象程序设计/Lecture 3/6.Class.md
       - Homework:
         - Homework 1: 笔记本/面向对象程序设计/Homework/Homework1/Homework.md
     - 大学物理实验:
