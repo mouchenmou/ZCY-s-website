@@ -16,17 +16,17 @@ Consider the functions below.
 ## Big O
 
 O的意思是小于等于，Examples:
-![](Lecture13 photo/Pasted image 20250914142924.png)
-![](Lecture13 photo/Pasted image 20250914143001.png)
-
+![](附件/Pasted%20image%2020251005185023.png)
+![](附件/Pasted%20image%2020251005185111.png)
 
 ---
 
 ## Big Theta vs. Big O
+![](附件/Pasted%20image%2020251005185332.png)
+![](附件/Pasted%20image%2020251005185405.png)
+![](附件/Pasted%20image%2020251005185430.png)
 
-![](Lecture13 photo/Pasted image 20250914143151.png)
-![](Lecture13 photo/Pasted image 20250914143223.png)
-![](Lecture13 photo/Pasted image 20250914143253.png)
+
 
 
 

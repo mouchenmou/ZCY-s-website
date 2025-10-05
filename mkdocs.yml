@@ -119,24 +119,28 @@ nav:
         - 笔记本/CS61B/Lecture 14 不相交集1(Disjoint Sets)/2.快速连接法（QuickUnionDS）.md
         - 笔记本/CS61B/Lecture 14 不相交集1(Disjoint Sets)/3.加权快速接头（Weighted Quick Union）.md
       - Lecture 15 - 不相交集2和渐近线2:
-        - 笔记本/CS61B/Lecture 15 不相交集2和渐近线2/15.1路径压缩(WQU with Path Compression).md
+        - 笔记本/CS61B/Lecture 15 不相交集2和渐近线2/15.1 路径压缩(WQU with Path Compression).md
         - 笔记本/CS61B/Lecture 15 不相交集2和渐近线2/15.2 渐近线2.md
       - Lecture 16 - 二分查找法和BSTs:
-        - 笔记本/CS61B/Lecture 16 二分查找法，ADTs，BSTs/二分查找法（BinarySearch）.md
-        - 笔记本/CS61B/Lecture 16 二分查找法，ADTs，BSTs/归并排序（Mergesort）.md
-        - 笔记本/CS61B/Lecture 16 二分查找法，ADTs，BSTs/BSTs.md
+        - 16.1 二分查找法: 笔记本/CS61B/Lecture 16 二分查找法，ADTs，BSTs/二分查找法（BinarySearch）.md
+        - 16.2 归并排序: 笔记本/CS61B/Lecture 16 二分查找法，ADTs，BSTs/归并排序（Mergesort）.md
+        - 16.3 BSTs: 笔记本/CS61B/Lecture 16 二分查找法，ADTs，BSTs/BSTs.md
       - Lecture 17 - 二叉搜索树:
-        - 笔记本/CS61B/Lecture 17 二叉搜索树，Set and Maps，B-trees/1.BST的insert.md
-        - 笔记本/CS61B/Lecture 17 二叉搜索树，Set and Maps，B-trees/2.BST删除节点.md
-        - 笔记本/CS61B/Lecture 17 二叉搜索树，Set and Maps，B-trees/3.集合与映射（Set and Maps）.md
-        - 笔记本/CS61B/Lecture 17 二叉搜索树，Set and Maps，B-trees/4.二叉搜索树的高度和最坏情况.md
-        - 笔记本/CS61B/Lecture 17 二叉搜索树，Set and Maps，B-trees/5.B-Trees.md
+        - 17.1 BST的insert: 笔记本/CS61B/Lecture 17 二叉搜索树，Set and Maps，B-trees/1.BST的insert.md
+        - 17.2 BST的delete: 笔记本/CS61B/Lecture 17 二叉搜索树，Set and Maps，B-trees/2.BST删除节点.md
+        - 17.3 集合与映射: 笔记本/CS61B/Lecture 17 二叉搜索树，Set and Maps，B-trees/3.集合与映射（Set and Maps）.md
+        - 17.4 二叉搜索树的高度和最坏情况: 笔记本/CS61B/Lecture 17 二叉搜索树，Set and Maps，B-trees/4.二叉搜索树的高度和最坏情况.md
+        - 17.5 B-Trees: 笔记本/CS61B/Lecture 17 二叉搜索树，Set and Maps，B-trees/5.B-Trees.md
       - Lecture 18 - 旋转树和红黑树:
-        - 笔记本/CS61B/Lecture 18 旋转树和红黑树/1.Definition of Tree Rotation.md
-        - 笔记本/CS61B/Lecture 18 旋转树和红黑树/2.红黑树.md
+        - 18.1 Definition of Tree Rotation: 笔记本/CS61B/Lecture 18 旋转树和红黑树/1.Definition of Tree Rotation.md
+        - 18.2 红黑树: 笔记本/CS61B/Lecture 18 旋转树和红黑树/2.红黑树.md
       - Lecture 19 - 哈希算法1:
-        - 笔记本/CS61B/Lecture 19 哈希算法1/1.BobaCounterSet.md
-        - 笔记本/CS61B/Lecture 19 哈希算法1/2.Dynamic Array Of Lists Set.md
+        - 19.1 BobaCounterSet: 笔记本/CS61B/Lecture 19 哈希算法1/19.1 BobaCounterSet.md
+        - 19.2 Dynamic Array of list: 笔记本/CS61B/Lecture 19 哈希算法1/19.2 Dynamic Array Of Lists Set.md
+      - Lecture 20 - 哈希算法2: 笔记本/CS61B/Lecture 20 哈希算法2/20 关于哈希算法的深层解析.md
+      - Lecture 21 Priority Queues and Heaps:
+        - 21.1 优先队列: 笔记本/CS61B/Lecture 21 Priority Queues and Heaps/21.1 优先队列.md
+        - 21.2 堆: 笔记本/CS61B/Lecture 21 Priority Queues and Heaps/21.2 堆.md
     - undergraduate-study/index2.md
     - 面向对象程序设计:
       - Lecture 1: 笔记本/面向对象程序设计/Lecture 1/The first C++ program.md
