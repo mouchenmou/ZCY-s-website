@@ -79,12 +79,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS61B/Lecture 21 Priority Queues and Heaps/21.2 堆.md",
+                "file": "深入理解计算机系统/第3章 程序的机器级表示/3.2 程序编码.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "21.2 堆"
+              "title": "3.2 程序编码"
             }
           }
         ],
@@ -161,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS61B/Lecture 21 Priority Queues and Heaps/21.2 堆.md",
+                "file": "深入理解计算机系统/第3章 程序的机器级表示/3.2 程序编码.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "21.2 堆 的反向链接列表"
+              "title": "3.2 程序编码 的反向链接列表"
             }
           },
           {
@@ -238,6 +238,20 @@
   },
   "active": "3b8a88b05cacbf4a",
   "lastOpenFiles": [
+    "深入理解计算机系统/第3章 程序的机器级表示/附件/Pasted image 20251006135558.png",
+    "深入理解计算机系统/第3章 程序的机器级表示/附件/Pasted image 20251006132440.png",
+    "深入理解计算机系统/第3章 程序的机器级表示/附件",
+    "深入理解计算机系统/第1章 计算机系统漫游/1.4 处理器读并解释储存在内存中的指令.md",
+    "深入理解计算机系统/第3章 程序的机器级表示/3.2 程序编码.md",
+    "深入理解计算机系统/第2章/未命名.md",
+    "深入理解计算机系统/第2章/未命名",
+    "深入理解计算机系统/第3章 程序的机器级表示",
+    "深入理解计算机系统/第2章",
+    "深入理解计算机系统/第1章 计算机系统漫游/附件/Pasted image 20251006124022.png",
+    "深入理解计算机系统/第1章 计算机系统漫游/附件",
+    "CS61B/Lecture 20 哈希算法2/20 关于哈希算法的深解析.md",
+    "深入理解计算机系统/第1章 计算机系统漫游",
+    "CS61B/Lecture 21 Priority Queues and Heaps/21.2 堆.md",
     "CS61B/Lecture 21 Priority Queues and Heaps/附件/Pasted image 20251006004949.png",
     "CS61B/Lecture 21 Priority Queues and Heaps/附件/Pasted image 20251006004907.png",
     "CS61B/Lecture 21 Priority Queues and Heaps/附件/Pasted image 20251006003230.png",
@@ -247,15 +261,10 @@
     "CS61B/Lecture 21 Priority Queues and Heaps/附件/Pasted image 20251006000650.png",
     "CS61B/Lecture 21 Priority Queues and Heaps/附件/Pasted image 20251006000445.png",
     "CS61B/Lecture 21 Priority Queues and Heaps/21.1 优先队列.md",
-    "CS61B/Lecture 21 Priority Queues and Heaps/21.2 堆.md",
     "Lecture13.md",
     "Lecture2 photo/Pasted.md",
     "CS61B/Lecture 21 Priority Queues and Heaps/附件/堆.md",
-    "CS61B/Lecture 21 Priority Queues and Heaps/附件/Pasted image 20251005234108.png",
     "CS61B/Lecture 21 Priority Queues and Heaps/附件",
-    "CS61B/Lecture 20 哈希算法2/20 关于哈希算法的深层解析.md",
-    "CS61B/Lecture 20 哈希算法2/附件/Pasted image 20251005233023.png",
-    "CS61B/Lecture 20 哈希算法2/附件/Pasted image 20251005232859.png",
     "CS61B/Lecture 19 哈希算法1/19.2 Dynamic Array Of Lists Set.md",
     "CS61B/Lecture 19 哈希算法1/19.1 BobaCounterSet.md",
     "CS61B/Lecture 20 哈希算法2/附件",
@@ -275,15 +284,6 @@
     "CS61B/Lecture 16 二分查找法，ADTs，BSTs/BSTs.md",
     "CS61B/Lecture 16 二分查找法，ADTs，BSTs/归并排序（Mergesort）.md",
     "CS61B/Lecture 16 二分查找法，ADTs，BSTs/二分查找法（BinarySearch）.md",
-    "CS61B/Lecture 16 二分查找法，ADTs，BSTs/附件",
-    "CS61B/Lecture 15 不相交集2和渐近线2/15.2 渐近线2.md",
-    "大学物理实验/第三节 用扭摆法测定转动惯量/预习报告.md",
-    "Lecture15.md",
-    "CS61B/Lecture 15 不相交集2和渐近线2/附件",
-    "CS61B/Lecture 14 不相交集1(Disjoint Sets)/附件",
-    "附件",
-    "CS61B/Lecture 13 渐近线1/附件",
-    "CS61B/Lecture 2/附件",
     "未命名.canvas"
   ]
 }
