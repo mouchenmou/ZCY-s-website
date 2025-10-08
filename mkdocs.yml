@@ -141,7 +141,10 @@ nav:
       - Lecture 21 Priority Queues and Heaps:
         - 21.1 优先队列: 笔记本/CS61B/Lecture 21 Priority Queues and Heaps/21.1 优先队列.md
         - 21.2 堆: 笔记本/CS61B/Lecture 21 Priority Queues and Heaps/21.2 堆.md
-    - 深入理解计算机系统:
+    - CS224n 深度学习:
+      - Lecture 1: 
+        - 1 Assignment: 笔记本/CS224n/Lecture 1/1.Assignment.md
+    - CSAPP 深入理解计算机系统:
       - 第1章 计算机系统漫游:
         - 1.4 处理器读并解释储存在内存中的指令: 笔记本/深入理解计算机系统/第1章 计算机系统漫游/1.4 处理器读并解释储存在内存中的指令.md
       - 第3章 程序的机器级表示:
@@ -149,6 +152,7 @@ nav:
         - 3.3 数据格式: 笔记本/深入理解计算机系统/第3章 程序的机器级表示/3.3 数据格式.md
         - 3.4 访问信息: 笔记本/深入理解计算机系统/第3章 程序的机器级表示/3.4 访问信息.md
         - 3.5 算数和逻辑操作: 笔记本/深入理解计算机系统/第3章 程序的机器级表示/3.5 算数和逻辑操作.md
+        - 3.6 控制: 笔记本/深入理解计算机系统/第3章 程序的机器级表示/3.6 控制.md
     - undergraduate-study/index2.md
     - 面向对象程序设计:
       - Lecture 1: 笔记本/面向对象程序设计/Lecture 1/The first C++ program.md
