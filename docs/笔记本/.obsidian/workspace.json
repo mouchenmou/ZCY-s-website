@@ -79,12 +79,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "深入理解计算机系统/第3章 程序的机器级表示/3.6 控制.md",
+                "file": "CS70/Lecture 2/1.Proofs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3.6 控制"
+              "title": "1.Proofs"
             }
           }
         ],
@@ -161,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "深入理解计算机系统/第3章 程序的机器级表示/3.6 控制.md",
+                "file": "CS70/Lecture 2/1.Proofs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "3.6 控制 的反向链接列表"
+              "title": "1.Proofs 的反向链接列表"
             }
           },
           {
@@ -238,11 +238,29 @@
   },
   "active": "3b8a88b05cacbf4a",
   "lastOpenFiles": [
+    "CS70/Lecture 1/1.Introduction.md",
+    "CS70/Lecture 1/2.Propositional logical.md",
+    "CS70/Lecture 2/1.Proofs.md",
+    "CS70/Discussions/dis0-sol.pdf",
+    "CS70/Homework/hw02-sol.pdf",
+    "CS70/Discussions/dis02a-sol.pdf",
+    "CS70/Discussions/dis01b-sol.pdf",
+    "CS70/Discussions/dis01a-sol.pdf",
+    "CS70/Discussions/dis14b-sol.pdf",
+    "CS70/Discussions/dis14a-sol.pdf",
+    "CS70/Discussions/dis13a-sol.pdf",
+    "CS70/Discussions/dis12b-sol.pdf",
+    "CS70/Discussions/dis12a-sol.pdf",
+    "CS70/Lecture 2/未命名.md",
+    "CS70/Lecture 1/附件/Pasted image 20251009194637.png",
+    "CS70/Lecture 1/3.Proof.md",
+    "CS70/Lecture 1/2.Discrete structure.md",
+    "附件/Pasted.md",
+    "深入理解计算机系统/第3章 程序的机器级表示/3.6 控制.md",
+    "CS70/未命名.md",
     "CS224n/Lecture 1/1.Assignment.md",
     "CS224n/Lecture 1/2.Human language and word meaning.md",
     "CS224n/Lecture 1/3.Word2vec introduction.md",
-    "深入理解计算机系统/第3章 程序的机器级表示/3.6 控制.md",
-    "CS70",
     "深入理解计算机系统/第3章 程序的机器级表示/附件/c409048428413f1e89c8fc6c2a7c52f1.jpg",
     "深入理解计算机系统/第3章 程序的机器级表示/附件/a8c022a5213fcfff7b0de97357abba99.jpg",
     "深入理解计算机系统/第3章 程序的机器级表示/附件/3c124af6f6fbc33bdbfdb35cde11bc85.jpg",
@@ -257,7 +275,6 @@
     "深入理解计算机系统/第3章 程序的机器级表示/附件/Pasted image 20251008160234.png",
     "深入理解计算机系统/第3章 程序的机器级表示/附件/Pasted image 20251008142001.png",
     "深入理解计算机系统/第3章 程序的机器级表示/附件/Pasted image 20251008002617.png",
-    "深入理解计算机系统/第3章 程序的机器级表示/附件/Pasted image 20251007234147.png",
     "CS61B/index.md",
     "电子电路基础/第4章 动态电路的时域分析/4.2 二阶电路的响应.md",
     "电子电路基础/第5章 正弦交流电路/5.1 正弦量的基本概念.md",
@@ -266,24 +283,6 @@
     "大学物理乙2/第十三章 静电场中的导体和电介质/13.3 电容 电容器.md",
     "大学物理乙2/第十三章 静电场中的导体和电介质/13.2 外电场中的导体.md",
     "大学物理乙2/第十三章 静电场中的导体和电介质/13.1 导体的静电平衡.md",
-    "大学物理乙2/第十二章 静电场/12.7 电势梯度.md",
-    "大学物理乙2/第十二章 静电场/12.6 电势.md",
-    "大学物理乙2/第十二章 静电场/12.5 利用高斯定理计算电场.md",
-    "大学物理乙2/第十二章 静电场/12.4 高斯定理.md",
-    "大学物理实验/第三节 用扭摆法测定转动惯量/预习报告.md",
-    "大学物理实验/1.绪论/3.有效数字与实验数据处理.md",
-    "大学物理实验/1.绪论/2.误差与不确定度.md",
-    "大学物理实验/1.绪论/1.实验测量与误差分布.md",
-    "深入理解计算机系统/第3章 程序的机器级表示/附件",
-    "深入理解计算机系统/第1章 计算机系统漫游/1.4 处理器读并解释储存在内存中的指令.md",
-    "深入理解计算机系统/第2章/未命名",
-    "深入理解计算机系统/第3章 程序的机器级表示",
-    "深入理解计算机系统/第2章",
-    "深入理解计算机系统/第1章 计算机系统漫游/附件",
-    "深入理解计算机系统/第1章 计算机系统漫游",
-    "CS61B/Lecture 21 Priority Queues and Heaps/附件",
-    "CS61B/Lecture 20 哈希算法2/附件",
-    "CS61B/Lecture 18 旋转树和红黑树/附件",
     "未命名.canvas"
   ]
 }
