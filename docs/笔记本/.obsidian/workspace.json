@@ -79,12 +79,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "电子电路基础/第5章 正弦交流电路/5.2 正弦稳态电路的相量分析方法.md",
+                "file": "电子电路基础/第5章 正弦交流电路/5.1 正弦量的基本概念.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5.2 正弦稳态电路的相量分析方法"
+              "title": "5.1 正弦量的基本概念"
             }
           }
         ],
@@ -161,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "电子电路基础/第5章 正弦交流电路/5.2 正弦稳态电路的相量分析方法.md",
+                "file": "电子电路基础/第5章 正弦交流电路/5.1 正弦量的基本概念.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "5.2 正弦稳态电路的相量分析方法 的反向链接列表"
+              "title": "5.1 正弦量的基本概念 的反向链接列表"
             }
           },
           {
@@ -238,6 +238,7 @@
   },
   "active": "3b8a88b05cacbf4a",
   "lastOpenFiles": [
+    "电子电路基础/第5章 正弦交流电路/5.2 正弦稳态电路的相量分析方法.md",
     "电子电路基础/第5章 正弦交流电路/5.1 正弦量的基本概念.md",
     "电子电路基础/第5章 正弦交流电路/附件/Pasted image 20251010171405.png",
     "电子电路基础/第5章 正弦交流电路/附件/Pasted image 20251010153829.png",
@@ -245,7 +246,6 @@
     "电子电路基础/第5章 正弦交流电路/附件/Pasted image 20251010153736.png",
     "电子电路基础/第5章 正弦交流电路/附件/Pasted image 20251010153559.png",
     "电子电路基础/第5章 正弦交流电路/附件/Pasted image 20251010142512.png",
-    "电子电路基础/第5章 正弦交流电路/5.2 正弦稳态电路的相量分析方法.md",
     "CS70/Lecture 1/2.Propositional logical.md",
     "CS70/Lecture 1/1.Introduction.md",
     "CS70/Lecture 2/1.Proofs.md",
