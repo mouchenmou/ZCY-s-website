@@ -79,12 +79,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "电子电路基础/第5章 正弦交流电路/5.1 正弦量的基本概念.md",
+                "file": "电子电路基础/第5章 正弦交流电路/5.2 正弦稳态电路的相量分析方法.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5.1 正弦量的基本概念"
+              "title": "5.2 正弦稳态电路的相量分析方法"
             }
           }
         ],
@@ -161,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "电子电路基础/第5章 正弦交流电路/5.1 正弦量的基本概念.md",
+                "file": "电子电路基础/第5章 正弦交流电路/5.2 正弦稳态电路的相量分析方法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "5.1 正弦量的基本概念 的反向链接列表"
+              "title": "5.2 正弦稳态电路的相量分析方法 的反向链接列表"
             }
           },
           {
@@ -238,6 +238,7 @@
   },
   "active": "3b8a88b05cacbf4a",
   "lastOpenFiles": [
+    "电子电路基础/第5章 正弦交流电路/5.1 正弦量的基本概念.md",
     "电子电路基础/第5章 正弦交流电路/附件/Pasted image 20251010171405.png",
     "电子电路基础/第5章 正弦交流电路/附件/Pasted image 20251010153829.png",
     "电子电路基础/第5章 正弦交流电路/附件/Pasted image 20251010153801.png",
@@ -245,7 +246,6 @@
     "电子电路基础/第5章 正弦交流电路/附件/Pasted image 20251010153559.png",
     "电子电路基础/第5章 正弦交流电路/附件/Pasted image 20251010142512.png",
     "电子电路基础/第5章 正弦交流电路/5.2 正弦稳态电路的相量分析方法.md",
-    "电子电路基础/第5章 正弦交流电路/5.1 正弦量的基本概念.md",
     "CS70/Lecture 1/2.Propositional logical.md",
     "CS70/Lecture 1/1.Introduction.md",
     "CS70/Lecture 2/1.Proofs.md",
@@ -273,7 +273,6 @@
     "深入理解计算机系统/第3章 程序的机器级表示/附件/a8c022a5213fcfff7b0de97357abba99.jpg",
     "深入理解计算机系统/第3章 程序的机器级表示/附件/3c124af6f6fbc33bdbfdb35cde11bc85.jpg",
     "深入理解计算机系统/第3章 程序的机器级表示/表格.md",
-    "深入理解计算机系统/第3章 程序的机器级表示/附件/Pasted image 20251008164253.png",
     "深入理解计算机系统/第3章 程序的机器级表示/3.5 算数和逻辑操作.md",
     "深入理解计算机系统/第3章 程序的机器级表示/3.4 访问信息.md",
     "深入理解计算机系统/第3章 程序的机器级表示/3.3 数据格式.md",
