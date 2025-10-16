@@ -79,12 +79,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "电子电路基础/第4章 动态电路的时域分析/4.1 一阶电路的响应.md",
+                "file": "面向对象程序设计/Lecture 5/1.Object interaction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4.1 一阶电路的响应"
+              "title": "1.Object interaction"
             }
           }
         ],
@@ -120,7 +120,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\\varepsilon_{0}",
+                "query": "tag:#include",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -161,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "电子电路基础/第4章 动态电路的时域分析/4.1 一阶电路的响应.md",
+                "file": "面向对象程序设计/Lecture 5/1.Object interaction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "4.1 一阶电路的响应 的反向链接列表"
+              "title": "1.Object interaction 的反向链接列表"
             }
           },
           {
@@ -238,20 +238,37 @@
   },
   "active": "3b8a88b05cacbf4a",
   "lastOpenFiles": [
+    "面向对象程序设计/Lecture 5/附件/Pasted image 20251016230656.png",
+    "面向对象程序设计/Lecture 5/附件/Pasted image 20251016230607.png",
+    "面向对象程序设计/Lecture 5/附件",
+    "面向对象程序设计/Lecture 4/8.MakeFile.md",
+    "面向对象程序设计/Lecture 5/1.Object interaction.md",
+    "面向对象程序设计/Lecture 5",
+    "面向对象程序设计/未命名.md",
+    "面向对象程序设计/Lecture 4/附件/Pasted image 20251016224130.png",
+    "面向对象程序设计/Lecture 4/4.The head file.md",
+    "面向对象程序设计/Lecture 4/7.Standard header file structure.md",
+    "面向对象程序设计/Lecture 4/6.Include.md",
+    "面向对象程序设计/Lecture 4/5.Declaration vs. Definition.md",
+    "面向对象程序设计/Lecture 4/附件/1fb98548ec02a880680b853599a5c31b.jpg",
+    "面向对象程序设计/Lecture 4/3.Compilation unit.md",
+    "面向对象程序设计/Lecture 4/1.OOP Characters.md",
+    "面向对象程序设计/Lecture 4/2.Definition of a class.md",
+    "面向对象程序设计/Lecture 4/附件/Pasted image 20251016212721.png",
+    "面向对象程序设计/Lecture 4/附件/Pasted image 20251016212146.png",
+    "面向对象程序设计/Lecture 4/附件/Pasted image 20251016205429.png",
+    "面向对象程序设计/Lecture 4/附件/Pasted image 20251016201106.png",
+    "面向对象程序设计/Lecture 4/附件",
+    "面向对象程序设计/Lecture 3/6.Class.md",
+    "电子电路基础/第4章 动态电路的时域分析/4.3 一阶电路和二阶电路的越阶响应.md",
+    "面向对象程序设计/Lecture 4",
+    "电子电路基础/第4章 动态电路的时域分析/4.2 二阶电路的响应.md",
+    "电子电路基础/第4章 动态电路的时域分析/4.1 一阶电路的响应.md",
     "电子电路基础/第4章 动态电路的时域分析/附件/Pasted image 20251015232313.png",
     "电子电路基础/第4章 动态电路的时域分析/附件/Pasted image 20251015232246.png",
     "电子电路基础/第4章 动态电路的时域分析/附件/Pasted image 20251015232222.png",
-    "电子电路基础/第4章 动态电路的时域分析/附件/Pasted image 20251015232216.png",
-    "电子电路基础/第4章 动态电路的时域分析/附件/Pasted image 20251015232131.png",
     "电子电路基础/第1章 电路基本概述/1.3基本电路元件.md",
     "CS70/Lecture 1/2.Propositional logical.md",
-    "电子电路基础/第4章 动态电路的时域分析/4.1 一阶电路的响应.md",
-    "电子电路基础/第4章 动态电路的时域分析/附件/Pasted image 20251015214625.png",
-    "电子电路基础/第4章 动态电路的时域分析/附件/Pasted image 20251015214531.png",
-    "电子电路基础/第4章 动态电路的时域分析/附件/Pasted image 20251015214522.png",
-    "电子电路基础/第4章 动态电路的时域分析/附件/Pasted image 20251015214204.png",
-    "电子电路基础/第4章 动态电路的时域分析/4.3 一阶电路和二阶电路的越阶响应.md",
-    "电子电路基础/第4章 动态电路的时域分析/4.2 二阶电路的响应.md",
     "电子电路基础/第5章 正弦交流电路/5.1 正弦量的基本概念.md",
     "大学物理乙2/第十三章 静电场中的导体和电介质/13.5 电介质中的静电场的基本定理.md",
     "大学物理乙2/第十四章 电流和磁场/14.1 稳恒电流.md",
@@ -261,29 +278,12 @@
     "大学物理乙2/第十五章 带电粒子在磁场中的运动/15.3 同步回旋加速器.md",
     "大学物理乙2/第十五章 带电粒子在磁场中的运动/15.2 回旋加速器.md",
     "大学物理乙2/第十五章 带电粒子在磁场中的运动/15.1 带电粒子在磁场中的运动.md",
-    "大学物理乙2/第十四章 电流和磁场/14.7 磁场对电流的作用.md",
-    "大学物理乙2/第十四章 电流和磁场/14.5 毕奥——萨伐尔定律.md",
-    "大学物理乙2/第十四章 电流和磁场/14.4 磁场 磁感应强度.md",
-    "大学物理乙2/第十四章 电流和磁场/14.3 电动势.md",
-    "大学物理乙2/第十四章 电流和磁场/14.2 欧姆定律的微分形式.md",
-    "大学物理乙2/第十五章 带电粒子在磁场中的运动/附件/Pasted image 20251013224939.png",
-    "大学物理乙2/第十五章 带电粒子在磁场中的运动/附件/Pasted image 20251013224922.png",
     "大学物理乙2/第十五章 带电粒子在磁场中的运动/附件",
     "大学物理乙2/第十五章 带电粒子在磁场中的运动",
     "大学物理乙2/第十四章 电流和磁场/14.6 磁场的高斯定理安培环路定理",
     "大学物理乙2/第十四章 电流和磁场/附件 1",
     "大学物理乙2/第十四章 电流和磁场/附件",
-    "大学物理乙2/第十三章 静电场中的导体和电介质/13.6 静电场中的能量.md",
     "大学物理乙2/第十四章 电流和磁场",
-    "大学物理乙2/未命名.md",
-    "大学物理乙2/第十二章 静电场/12.7 电势梯度.md",
-    "大学物理乙2/第十二章 静电场/12.6 电势.md",
-    "大学物理乙2/第十二章 静电场/12.5 利用高斯定理计算电场.md",
-    "大学物理乙2/第十二章 静电场/12.4 高斯定理.md",
-    "CS70/Discussions/dis0-sol.pdf",
-    "CS70/Homework/hw02-sol.pdf",
-    "CS70/Discussions/dis02a-sol.pdf",
-    "CS70/Discussions/dis01b-sol.pdf",
     "未命名.canvas"
   ]
 }

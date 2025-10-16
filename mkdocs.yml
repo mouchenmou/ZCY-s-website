@@ -220,6 +220,17 @@ nav:
         - 4.Conversions: 笔记本/面向对象程序设计/Lecture 3/4.Conversions.md
         - 5.Passing address: 笔记本/面向对象程序设计/Lecture 3/5.Passing address.md
         - 6.Class: 笔记本/面向对象程序设计/Lecture 3/6.Class.md
+      - Lecture 4:
+        - 1.OOP characters: 笔记本/面向对象程序设计/Lecture 4/1.OOP Characters.md
+        - 2.Definition of a class: 笔记本/面向对象程序设计/Lecture 4/2.Definition of a class.md
+        - 3.Compilation unit: 笔记本/面向对象程序设计/Lecture 4/3.Compilation unit.md
+        - 4.The head file: 笔记本/面向对象程序设计/Lecture 4/4.The head file.md
+        - 5.Declaratioin vs. Definition : 笔记本/面向对象程序设计/Lecture 4/5.Declaration vs. Definition
+        - 6.Include: 笔记本/面向对象程序设计/Lecture 4/6.Include.md
+        - 7.Standard header flie structure: 笔记本/面向对象程序设计/Lecture 4/7.Standard header file structure.md
+        - 8.MakeFile : 笔记本/面向对象程序设计/Lecture 4/8.MakeFile.md
+      - Lecture 5:
+        - 1.Object interaction: 笔记本/面向对象程序设计/Lecture 5/1.Object interaction.md
       - Homework:
         - Homework 1: 笔记本/面向对象程序设计/Homework/Homework1/Homework.md
     - 大学物理实验:
