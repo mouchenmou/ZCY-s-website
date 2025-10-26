@@ -206,6 +206,8 @@ nav:
         - 3.5 算数和逻辑操作: 笔记本/深入理解计算机系统/第3章 程序的机器级表示/3.5 算数和逻辑操作.md
         - 3.6 控制: 笔记本/深入理解计算机系统/第3章 程序的机器级表示/3.6 控制.md
     - undergraduate-study/index2.md
+    - E志精品课:
+      - Lecture 1 硬件基础: 笔记本/E志精品课/Lecture 1 硬件基础/硬件基础.md
     - 面向对象程序设计:
       - Lecture 1: 笔记本/面向对象程序设计/Lecture 1/The first C++ program.md
       - Lecture 2: 
