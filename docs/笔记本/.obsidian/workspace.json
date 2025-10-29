@@ -37,12 +37,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "面向对象程序设计/Homework/Homework1/Homework.md",
+                "file": "面向对象程序设计/Lecture 6/2.Inline function.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Homework"
+              "title": "2.Inline function"
             }
           },
           {
@@ -79,16 +79,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "面向对象程序设计/Lecture 6/3.Access functions.md",
+                "file": "面向对象程序设计/Lecture 6/5.Composition and Inheritance.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3.Access functions"
+              "title": "5.Composition and Inheritance"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -161,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "面向对象程序设计/Lecture 6/3.Access functions.md",
+                "file": "面向对象程序设计/Lecture 6/2.Inline function.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "3.Access functions 的反向链接列表"
+              "title": "2.Inline function 的反向链接列表"
             }
           },
           {
@@ -236,31 +236,35 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3b8a88b05cacbf4a",
+  "active": "794ad353dff81307",
   "lastOpenFiles": [
-    "面向对象程序设计/Lecture 6/4.type of function parameters and return value.md",
+    "面向对象程序设计/Lecture 6/附件/Pasted image 20251029213529.png",
     "面向对象程序设计/Lecture 6/3.Access functions.md",
+    "面向对象程序设计/Lecture 6/5.Composition and Inheritance.md",
+    "面向对象程序设计/Lecture 6/4.type of function parameters and return value.md",
     "面向对象程序设计/Lecture 6/2.Inline function.md",
     "面向对象程序设计/Lecture 6/1.Const member functions.md",
+    "面向对象程序设计/Lecture 6/附件/Pasted image 20251029153108.png",
+    "面向对象程序设计/Lecture 6/附件/Pasted image 20251029151318.png",
+    "面向对象程序设计/Lecture 6/附件/Pasted image 20251029151204.png",
+    "面向对象程序设计/Lecture 6/附件/Pasted image 20251029151028.png",
+    "面向对象程序设计/Lecture 6/附件/Pasted image 20251029150850.png",
+    "面向对象程序设计/Homework/Homework1/Homework.md",
+    "面向对象程序设计/Lecture 6/附件/Pasted image 20251029143117.png",
+    "面向对象程序设计/Lecture 6/附件/Pasted image 20251029140212.png",
+    "面向对象程序设计/Lecture 6/附件/Pasted image 20251029121528.png",
+    "面向对象程序设计/Lecture 6/附件/Pasted image 20251029113701.png",
+    "面向对象程序设计/Lecture 6/附件",
     "面向对象程序设计/Lecture 5/4.Initialization.md",
     "电子电路基础/第4章 动态电路的时域分析/4.2 二阶电路的响应.md",
     "面向对象程序设计/Lecture 6",
     "电子电路基础/第4章 动态电路的时域分析/附件/Pasted image 20251026164452.png",
-    "电子电路基础/第4章 动态电路的时域分析/附件/Pasted image 20251026164433.png",
-    "电子电路基础/第4章 动态电路的时域分析/附件/Pasted image 20251026164413.png",
     "E志精品课/Lecture 1 硬件基础/硬件基础.md",
     "E志精品课/Lecture 1 硬件基础",
     "E志精品课",
-    "电子电路基础/第4章 动态电路的时域分析/附件/Pasted image 20251023205502.png",
     "电子电路基础/第4章 动态电路的时域分析/4.3 一阶电路和二阶电路的越阶响应.md",
-    "面向对象程序设计/Lecture 5/附件/Pasted image 20251022210459.png",
     "面向对象程序设计/Lecture 5/2.C'tor and D'tor.md",
-    "面向对象程序设计/Lecture 5/附件/Pasted image 20251022192454.png",
-    "面向对象程序设计/Lecture 5/附件/Pasted image 20251022191241.png",
-    "面向对象程序设计/Lecture 5/附件/Pasted image 20251022172306.png",
     "面向对象程序设计/Lecture 5/1.Object interaction.md",
-    "面向对象程序设计/Lecture 5/附件/Pasted image 20251022152513.png",
-    "面向对象程序设计/Lecture 5/附件/Pasted image 20251022151313.png",
     "面向对象程序设计/Lecture 5/3.Aggregate initialization.md",
     "电子电路基础/第4章 动态电路的时域分析/4.1 一阶电路的响应.md",
     "大学物理乙2/第十三章 静电场中的导体和电介质/13.5 电介质中的静电场的基本定理.md",
@@ -275,15 +279,11 @@
     "面向对象程序设计/Lecture 3/2.Reference(引用).md",
     "面向对象程序设计/Lecture 1/The first C++ program.md",
     "面向对象程序设计/Lecture 5/附件",
-    "面向对象程序设计/Lecture 4/8.MakeFile.md",
     "面向对象程序设计/Lecture 5",
-    "面向对象程序设计/未命名.md",
-    "面向对象程序设计/Lecture 4/4.The head file.md",
     "面向对象程序设计/Lecture 4/附件",
     "面向对象程序设计/Lecture 4",
     "大学物理乙2/第十五章 带电粒子在磁场中的运动/附件",
     "大学物理乙2/第十五章 带电粒子在磁场中的运动",
-    "大学物理乙2/第十四章 电流和磁场/14.6 磁场的高斯定理安培环路定理",
     "未命名.canvas"
   ]
 }
