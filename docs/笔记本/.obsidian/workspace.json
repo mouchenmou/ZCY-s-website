@@ -35,12 +35,14 @@
             "id": "794ad353dff81307",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "电子电路基础/第6章 二极管/chap_6m 二极管.pdf"
+                "file": "电子电路基础/第5章 正弦交流电路/5.1 正弦量的基本概念.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "chap_6m 二极管"
+              "icon": "lucide-file",
+              "title": "5.1 正弦量的基本概念"
             }
           },
           {
@@ -159,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "电子电路基础/第6章 二极管/chap_6m 二极管.pdf",
+                "file": "电子电路基础/第5章 正弦交流电路/5.1 正弦量的基本概念.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +171,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "chap_6m 二极管 的反向链接列表"
+              "title": "5.1 正弦量的基本概念 的反向链接列表"
             }
           },
           {
@@ -236,8 +238,11 @@
   },
   "active": "794ad353dff81307",
   "lastOpenFiles": [
-    "电子电路基础/第9章 理想运算放大器及其应用电路/9.2 运算放大器基本应用电路.md",
+    "电子电路基础/第2章 电路的等效变换/2.5 电源电路的等效变换.md",
+    "电子电路基础/第2章 电路的等效变换/2.4 储能元件电路的等效变换.md",
+    "电子电路基础/第2章 电路的等效变换/2.3 电阻电路的等效变换.md",
     "电子电路基础/第6章 二极管/chap_6m 二极管.pdf",
+    "电子电路基础/第9章 理想运算放大器及其应用电路/9.2 运算放大器基本应用电路.md",
     "电子电路基础/第6章 二极管",
     "大学物理乙2/第十四章 电流和磁场/14.7 磁场对电流的作用.md",
     "大学物理乙2/第十五章 带电粒子在磁场中的运动/15.1 带电粒子在磁场中的运动.md",
@@ -278,8 +283,6 @@
     "面向对象程序设计/Lecture 5/1.Object interaction.md",
     "面向对象程序设计/Lecture 5/3.Aggregate initialization.md",
     "电子电路基础/第4章 动态电路的时域分析/4.1 一阶电路的响应.md",
-    "大学物理乙2/第十三章 静电场中的导体和电介质/13.5 电介质中的静电场的基本定理.md",
-    "大学物理乙2/第十三章 静电场中的导体和电介质/13.4 静电场中的电介质.md",
     "面向对象程序设计/Lecture 5/附件",
     "未命名.canvas"
   ]
