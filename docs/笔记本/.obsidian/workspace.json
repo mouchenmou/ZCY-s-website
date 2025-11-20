@@ -49,12 +49,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "面向对象程序设计/Lecture 7/2.Inheritance and constructors.md",
+                "file": "面向对象程序设计/Lecture 8/1.Polymorphism.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2.Inheritance and constructors"
+              "title": "1.Polymorphism"
             }
           },
           {
@@ -173,7 +173,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "面向对象程序设计/Lecture 7/2.Inheritance and constructors.md",
+                "file": "面向对象程序设计/Lecture 8/1.Polymorphism.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +183,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "2.Inheritance and constructors 的反向链接列表"
+              "title": "1.Polymorphism 的反向链接列表"
             }
           },
           {
@@ -250,6 +250,7 @@
   },
   "active": "2c1b114fe363d548",
   "lastOpenFiles": [
+    "面向对象程序设计/Lecture 7/2.Inheritance and constructors.md",
     "面向对象程序设计/Lecture 8/1.Polymorphism.md",
     "面向对象程序设计/Lecture 8/附件/Pasted image 20251120174519.png",
     "面向对象程序设计/Lecture 8/附件/Pasted image 20251120174244.png",
@@ -257,7 +258,6 @@
     "面向对象程序设计/Lecture 8/附件/Pasted image 20251120173826.png",
     "面向对象程序设计/Lecture 8/附件/Pasted image 20251120171531.png",
     "面向对象程序设计/Lecture 8/附件",
-    "面向对象程序设计/Lecture 7/2.Inheritance and constructors.md",
     "电子电路基础/第4章 动态电路的时域分析/4.1 一阶电路的响应.md",
     "面向对象程序设计/Lecture 7/附件/Pasted image 20251120163849.png",
     "面向对象程序设计/Lecture 7/附件/Pasted image 20251120163750.png",
