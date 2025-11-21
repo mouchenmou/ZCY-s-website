@@ -47,12 +47,14 @@
             "id": "2c1b114fe363d548",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "申老师科研/llm自进化论文/d18573cce94208f9ddefde0cf1fb4788.pdf"
+                "file": "1.这个网站的一些东西/未命名.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "d18573cce94208f9ddefde0cf1fb4788"
+              "icon": "lucide-file",
+              "title": "未命名"
             }
           },
           {
@@ -171,7 +173,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "申老师科研/llm自进化论文/d18573cce94208f9ddefde0cf1fb4788.pdf",
+                "file": "1.这个网站的一些东西/未命名.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +183,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "d18573cce94208f9ddefde0cf1fb4788 的反向链接列表"
+              "title": "未命名 的反向链接列表"
             }
           },
           {
@@ -248,8 +250,17 @@
   },
   "active": "2c1b114fe363d548",
   "lastOpenFiles": [
-    "申老师科研/llm自进化论文/Teaching LLMs to Plan- Logical Chain-of-Thought Instruction Tuning for Symbolic Planning.pdf",
+    "1.这个网站的一些东西/附件/Pasted image 20251121200900.png",
+    "1.这个网站的一些东西/附件/Pasted image 20251121200846.png",
+    "1.这个网站的一些东西/附件/Pasted image 20251121194311.png",
+    "1.这个网站的一些东西/附件/Pasted image 20251121194240.png",
+    "1.这个网站的一些东西/附件/Pasted image 20251121194215.png",
+    "1.这个网站的一些东西/附件/Pasted image 20251121194158.png",
+    "1.这个网站的一些东西/附件",
     "申老师科研/llm自进化论文/d18573cce94208f9ddefde0cf1fb4788.pdf",
+    "1.这个网站的一些东西/未命名.md",
+    "1.这个网站的一些东西",
+    "申老师科研/llm自进化论文/Teaching LLMs to Plan- Logical Chain-of-Thought Instruction Tuning for Symbolic Planning.pdf",
     "面向对象程序设计/Lecture 8/1. Polymorphism.md",
     "申老师科研/llm自进化论文",
     "申老师科研/未命名.md",
@@ -260,23 +271,16 @@
     "面向对象程序设计/Lecture 8/附件/Pasted image 20251120234847.png",
     "面向对象程序设计/Lecture 7/2.Inheritance and constructors.md",
     "面向对象程序设计/Lecture 7/附件/Pasted image 20251120205001.png",
-    "面向对象程序设计/Lecture 7/附件/Pasted image 20251120204903.png",
     "面向对象程序设计/Lecture 6/5.Composition and Inheritance.md",
     "面向对象程序设计/Lecture 5/4.Initialization.md",
     "面向对象程序设计/Lecture 5/1.Object interaction.md",
     "面向对象程序设计/Lecture 7/1.Inheritance.md",
-    "面向对象程序设计/Lecture 8/附件/Pasted image 20251120174519.png",
-    "面向对象程序设计/Lecture 8/附件/Pasted image 20251120174244.png",
-    "面向对象程序设计/Lecture 8/附件/Pasted image 20251120174019.png",
-    "面向对象程序设计/Lecture 8/附件/Pasted image 20251120173826.png",
     "面向对象程序设计/Lecture 8/附件",
     "电子电路基础/第4章 动态电路的时域分析/4.1 一阶电路的响应.md",
     "电子电路基础/第6章 二极管/二极管.md",
     "面向对象程序设计/Lecture 8",
     "电子电路基础/第6章 二极管/附件",
     "电子电路基础/第6章 二极管/chap_6m 二极管.pdf",
-    "电子电路基础/第7章 三极管/chap_7m 三极管.pdf",
-    "电子电路基础/第7章 三极管",
     "CS224n/Lecture 1/1.Assignment.md",
     "CS224n/Lecture 1/2.Human language and word meaning.md",
     "CS224n/Lecture 1/3.Word2vec introduction.md",
@@ -292,7 +296,6 @@
     "面向对象程序设计/Lecture 6/2.Inline function.md",
     "面向对象程序设计/Lecture 6/3.Access functions.md",
     "电子电路基础/第5章 正弦交流电路/5.1 正弦量的基本概念.md",
-    "电子电路基础/第2章 电路的等效变换/2.5 电源电路的等效变换.md",
     "未命名.canvas"
   ]
 }
