@@ -23,12 +23,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "面向对象程序设计/Lecture 8/2. Friend.md",
+                "file": "1.这个网站的一些东西/未命名.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2. Friend"
+              "title": "未命名"
             }
           },
           {
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "面向对象程序设计/Lecture 8/2. Friend.md",
+                "file": "1.这个网站的一些东西/未命名.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +157,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "2. Friend 的反向链接列表"
+              "title": "未命名 的反向链接列表"
             }
           },
           {
@@ -224,6 +224,7 @@
   },
   "active": "2c1b114fe363d548",
   "lastOpenFiles": [
+    "面向对象程序设计/Lecture 8/2. Friend.md",
     "面向对象程序设计/Lecture 8/附件/Pasted image 20251122034520.png",
     "面向对象程序设计/Lecture 8/1. Polymorphism.md",
     "电子电路基础/第6章 二极管/chap_6m 二极管.pdf",
@@ -231,7 +232,6 @@
     "面向对象程序设计/Lecture 7/2.Inheritance and constructors.md",
     "电子电路基础/第5章 正弦交流电路/5.1 正弦量的基本概念.md",
     "电子电路基础/第4章 动态电路的时域分析/4.2 二阶电路的响应.md",
-    "面向对象程序设计/Lecture 8/2. Friend.md",
     "面向对象程序设计/Lecture 6/5.Composition and Inheritance.md",
     "面向对象程序设计/Lecture 8/附件/Pasted image 20251122020550.png",
     "面向对象程序设计/Lecture 8/附件/Pasted image 20251122020130.png",
@@ -242,7 +242,6 @@
     "面向对象程序设计/Lecture 8/附件/Pasted image 20251121212812.png",
     "面向对象程序设计/Lecture 8/附件/Pasted image 20251121212009.png",
     "面向对象程序设计/Lecture 8/附件/Pasted image 20251121205211.png",
-    "面向对象程序设计/Lecture 8/附件/Pasted image 20251121203624.png",
     "1.这个网站的一些东西/未命名.md",
     "1.这个网站的一些东西/附件",
     "申老师科研/llm自进化论文/d18573cce94208f9ddefde0cf1fb4788.pdf",
