@@ -21,12 +21,14 @@
             "id": "2c1b114fe363d548",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "电子电路基础/第7章 三极管/chap_7m 三极管.pdf"
+                "file": "电子电路基础/第7章 三极管/三极管.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "chap_7m 三极管"
+              "icon": "lucide-file",
+              "title": "三极管"
             }
           },
           {
@@ -145,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "电子电路基础/第7章 三极管/chap_7m 三极管.pdf",
+                "file": "电子电路基础/第7章 三极管/三极管.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +157,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "chap_7m 三极管 的反向链接列表"
+              "title": "三极管 的反向链接列表"
             }
           },
           {
@@ -222,8 +224,11 @@
   },
   "active": "2c1b114fe363d548",
   "lastOpenFiles": [
-    "电子电路基础/第7章 三极管/三极管.md",
+    "电子电路基础/第7章 三极管/附件/Pasted image 20251123230839.png",
+    "电子电路基础/第7章 三极管/附件/Pasted image 20251123230542.png",
+    "电子电路基础/第7章 三极管/附件/Pasted image 20251123225900.png",
     "电子电路基础/第7章 三极管/chap_7m 三极管.pdf",
+    "电子电路基础/第7章 三极管/三极管.md",
     "电子电路基础/第7章 三极管/附件/Pasted image 20251123215509.png",
     "电子电路基础/第7章 三极管/附件/Pasted image 20251123214010.png",
     "电子电路基础/第7章 三极管/附件/Pasted image 20251123212508.png",
@@ -232,10 +237,8 @@
     "电子电路基础/第7章 三极管/附件/Pasted image 20251123212316.png",
     "电子电路基础/第7章 三极管/附件/Pasted image 20251123212215.png",
     "电子电路基础/第7章 三极管/附件/Pasted image 20251123205835.png",
-    "电子电路基础/第7章 三极管/附件/Pasted image 20251123203946.png",
     "电子电路基础/第7章 三极管/附件",
     "电子电路基础/第6章 二极管/二极管.md",
-    "电子电路基础/第6章 二极管/附件/Pasted image 20251123202452.png",
     "电子电路基础/第6章 二极管/chap_6m 二极管.pdf",
     "1.这个网站的一些东西/未命名.md",
     "申老师科研/LLM自进化论文/d18573cce94208f9ddefde0cf1fb4788.pdf",
