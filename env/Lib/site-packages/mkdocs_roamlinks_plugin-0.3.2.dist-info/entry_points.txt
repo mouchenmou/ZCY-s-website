@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+roamlinks = mkdocs_roamlinks_plugin.plugin:RoamLinksPlugin

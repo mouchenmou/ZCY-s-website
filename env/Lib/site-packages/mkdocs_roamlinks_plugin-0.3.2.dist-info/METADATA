@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: mkdocs-roamlinks-plugin
+Version: 0.3.2
+Summary: An MkDocs plugin
+Home-page: https://github.com/Jackiexiao/mkdocs-roamlinks-plugin
+Author: jackiexiao
+Author-email: 707610215@qq.com
+License: MIT
+Keywords: mkdocs
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: mkdocs (>=1.0.4)
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+
+An MkDocs plugin that automagically generates relative links and convert roamlike links for foam and obsidian between markdown pages

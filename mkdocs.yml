@@ -316,6 +316,7 @@ nav:
       - 第2章:
         - 2.2约束的分类及约束力的特征: 笔记本/工程力学/第二章/2.2 约束的分类及约束力的特征.md 
   - Undergraduate Research:
+    - 科研概述: laboratory-work/research-overview.md
     - 跟着申老师做的: 
       - LLM自进化论文1: 笔记本/申老师科研/LLM自进化论文/Teaching LLMs to Plan- Logical Chain-of-Thought Instruction Tuning for Symbolic Planning.pdf
       - LLM自进化论文2: 笔记本/申老师科研/LLM自进化论文/d18573cce94208f9ddefde0cf1fb4788.pdf
