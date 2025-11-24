@@ -23,12 +23,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "电子电路基础/第7章 三极管/三极管.md",
+                "file": "面向对象程序设计/Lecture 9/衔接Lecture 8的多态.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "三极管"
+              "title": "衔接Lecture 8的多态"
             }
           },
           {
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "电子电路基础/第7章 三极管/三极管.md",
+                "file": "面向对象程序设计/Lecture 9/衔接Lecture 8的多态.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +157,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "三极管 的反向链接列表"
+              "title": "衔接Lecture 8的多态 的反向链接列表"
             }
           },
           {
@@ -224,28 +224,32 @@
   },
   "active": "2c1b114fe363d548",
   "lastOpenFiles": [
-    "申老师科研/LLM自进化论文/LLM论文2.pdf",
+    "面向对象程序设计/Lecture 7/2.Inheritance and constructors.md",
+    "面向对象程序设计/Lecture 9/衔接Lecture 8的多态.md",
+    "面向对象程序设计/Lecture 8/1. Polymorphism.md",
+    "面向对象程序设计/Lecture 7/1.Inheritance.md",
+    "面向对象程序设计/Lecture 9/附件/Pasted image 20251124220921.png",
+    "面向对象程序设计/Lecture 9/附件/Pasted image 20251124220417.png",
+    "面向对象程序设计/Lecture 9/附件/Pasted image 20251124220414.png",
+    "面向对象程序设计/Lecture 9/附件/Pasted image 20251124220328.png",
+    "面向对象程序设计/Lecture 9/附件/Pasted image 20251124204353.png",
+    "面向对象程序设计/Lecture 9/附件/Pasted image 20251124202420.png",
+    "面向对象程序设计/Lecture 9/附件/Pasted image 20251124202336.png",
+    "面向对象程序设计/Lecture 9/附件/Pasted image 20251124201849.png",
+    "面向对象程序设计/Lecture 9/附件/Pasted image 20251124201759.png",
+    "面向对象程序设计/Lecture 9/附件/Pasted image 20251124194831.png",
+    "面向对象程序设计/Lecture 8/2. Friend.md",
+    "面向对象程序设计/Lecture 9/附件",
     "电子电路基础/第7章 三极管/三极管.md",
-    "电子电路基础/第7章 三极管/附件/Pasted image 20251123234749.png",
-    "电子电路基础/第7章 三极管/附件/Pasted image 20251123233437.png",
-    "电子电路基础/第7章 三极管/附件/Pasted image 20251123233343.png",
+    "面向对象程序设计/Lecture 9",
+    "申老师科研/LLM自进化论文/LLM论文2.pdf",
     "电子电路基础/第7章 三极管/chap_7m 三极管.pdf",
-    "电子电路基础/第7章 三极管/附件/Pasted image 20251123230839.png",
-    "电子电路基础/第7章 三极管/附件/Pasted image 20251123230542.png",
-    "电子电路基础/第7章 三极管/附件/Pasted image 20251123225900.png",
-    "电子电路基础/第7章 三极管/附件/Pasted image 20251123215509.png",
-    "电子电路基础/第7章 三极管/附件/Pasted image 20251123214010.png",
-    "电子电路基础/第7章 三极管/附件/Pasted image 20251123212508.png",
-    "电子电路基础/第7章 三极管/附件/Pasted image 20251123212402.png",
     "电子电路基础/第7章 三极管/附件",
     "电子电路基础/第6章 二极管/二极管.md",
     "电子电路基础/第6章 二极管/chap_6m 二极管.pdf",
     "1.这个网站的一些东西/未命名.md",
     "申老师科研/LLM自进化论文/LLM论文1.pdf",
-    "面向对象程序设计/Lecture 8/2. Friend.md",
-    "面向对象程序设计/Lecture 8/1. Polymorphism.md",
     "大学物理实验/1.绪论/3.有效数字与实验数据处理.md",
-    "面向对象程序设计/Lecture 7/2.Inheritance and constructors.md",
     "电子电路基础/第5章 正弦交流电路/5.1 正弦量的基本概念.md",
     "电子电路基础/第4章 动态电路的时域分析/4.2 二阶电路的响应.md",
     "面向对象程序设计/Lecture 6/5.Composition and Inheritance.md",
@@ -253,11 +257,8 @@
     "1.这个网站的一些东西",
     "申老师科研/LLM自进化论文",
     "申老师科研/未命名.md",
-    "申老师科研",
     "面向对象程序设计/Lecture 5/4.Initialization.md",
     "面向对象程序设计/Lecture 5/1.Object interaction.md",
-    "面向对象程序设计/Lecture 7/1.Inheritance.md",
-    "面向对象程序设计/Lecture 8/附件",
     "电子电路基础/第4章 动态电路的时域分析/4.1 一阶电路的响应.md",
     "CS224n/Lecture 1/1.Assignment.md",
     "CS224n/Lecture 1/2.Human language and word meaning.md",
@@ -268,7 +269,6 @@
     "深入理解计算机系统/第3章 程序的机器级表示/3.5 算数和逻辑操作.md",
     "深入理解计算机系统/第3章 程序的机器级表示/3.6 控制.md",
     "深入理解计算机系统/第3章 程序的机器级表示/表格.md",
-    "面向对象程序设计/Lecture 5/3.Aggregate initialization.md",
     "未命名.canvas"
   ]
 }
