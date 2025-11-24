@@ -248,6 +248,10 @@ nav:
       - Lecture 8:
         - 1.多态性:Polymorphism: 笔记本/面向对象程序设计/Lecture 8/1. Polymorphism.md
         - 2.friend: 笔记本/面向对象程序设计/Lecture 8/2. Friend.md 
+      - Lecture 9:
+        - 衔接Lecture 8的多态: 笔记本/面向对象程序设计/Lecture 9/衔接Lecture 8的多态.md
+      - Lecture 10:
+        - 1.Copy Tor: 笔记本/面向对象程序设计/Lecture 10/1.Copy Tor.md
       - Homework:
         - Homework 1: 笔记本/面向对象程序设计/Homework/Homework1/Homework.md
     - 大学物理实验:
