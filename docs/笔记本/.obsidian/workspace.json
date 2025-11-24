@@ -21,12 +21,14 @@
             "id": "2c1b114fe363d548",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "申老师科研/LLM自进化论文/LLM论文2.pdf"
+                "file": "电子电路基础/第7章 三极管/三极管.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "LLM论文2"
+              "icon": "lucide-file",
+              "title": "三极管"
             }
           },
           {
@@ -145,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "申老师科研/LLM自进化论文/LLM论文2.pdf",
+                "file": "电子电路基础/第7章 三极管/三极管.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +157,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "LLM论文2 的反向链接列表"
+              "title": "三极管 的反向链接列表"
             }
           },
           {
@@ -220,8 +222,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "0c3136469588a543",
+  "active": "2c1b114fe363d548",
   "lastOpenFiles": [
+    "申老师科研/LLM自进化论文/LLM论文2.pdf",
     "电子电路基础/第7章 三极管/三极管.md",
     "电子电路基础/第7章 三极管/附件/Pasted image 20251123234749.png",
     "电子电路基础/第7章 三极管/附件/Pasted image 20251123233437.png",
@@ -248,7 +251,6 @@
     "面向对象程序设计/Lecture 6/5.Composition and Inheritance.md",
     "1.这个网站的一些东西/附件",
     "1.这个网站的一些东西",
-    "申老师科研/LLM自进化论文/LLM论文2.pdf",
     "申老师科研/LLM自进化论文",
     "申老师科研/未命名.md",
     "申老师科研",
