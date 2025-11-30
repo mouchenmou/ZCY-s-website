@@ -36,6 +36,7 @@
 ---
 ## Overriding
 Overriding redefines the body of a virtual function.
+
 - 覆盖是指在派生类中，重新定义一个基类中已声明为虚函数的函数体。
 ```c++
     class Base {
@@ -51,6 +52,7 @@ Overriding redefines the body of a virtual function.
 
 !!! conception "### Calls up the chain"
     You can still call the overridden function for reuse:
+    
     - 即使派生类已经覆盖了基类的虚函数，你仍然可以显式地调用基类的实现代码，以实现代码复用。
     ```c++
         void Derived::func(){
@@ -58,8 +60,10 @@ Overriding redefines the body of a virtual function.
             Base::func(); //call to base class
         }
     ```
+    
     - This is a common way to add new functionality
         - 这是一种非常常见且推荐的模式。派生类可以在执行自己的特定逻辑（如 `cout << "In Derived::func!";`）之前或之后，调用基类的实现来完成“通用”或“初始化”任务。这使得派生类可以安全地在基类功能之上添加新的功能。
+        
     - No need to copy the old stuff
         - 通过调用基类的函数，派生类避免了重新编写或复制基类中已经存在的逻辑代码。这符合面向对象设计中“DRY”（Don't Repeat Yourself）的原则。
 
@@ -79,7 +83,7 @@ Overriding redefines the body of a virtual function.
         public:
             virtual Expr* newExpr();
             virtual Expr& clone();
-            virtual Expr self;
+            virtual Expr self();
         };
         
         class BinaryExpr: public Expr{
@@ -165,8 +169,8 @@ Overriding redefines the body of a virtual function.
                 b.virtualFunc();
                 
                 d.nonVirtualFunc();
-                 d.virtualFunc();
-                 return 0;
+                d.virtualFunc();
+                return 0;
             }
         ```
         ![](附件/Pasted%20image%2020251124225744.png)
@@ -181,7 +185,9 @@ Overriding redefines the body of a virtual function.
 
 ---
 ## Abstract classes
+
 抽象类：一个类中所有的函数全都是虚函数。
+
 - Why use them ？
     - Modeling
     - Force correct behavior

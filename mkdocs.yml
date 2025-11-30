@@ -32,8 +32,8 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: LXGW WenKai Screen
+    code: JetBrains Mono
   features:
     - navigation.tabs
     - navigation.tabs.sticky
@@ -247,11 +247,12 @@ nav:
         - 2.Inheritance and constructors: 笔记本/面向对象程序设计/Lecture 7/2.Inheritance and constructors.md
       - Lecture 8:
         - 1.多态性:Polymorphism: 笔记本/面向对象程序设计/Lecture 8/1. Polymorphism.md
-        - 2.friend: 笔记本/面向对象程序设计/Lecture 8/2. Friend.md 
+        - 2.Friend: 笔记本/面向对象程序设计/Lecture 8/2. Friend.md
       - Lecture 9:
         - 衔接Lecture 8的多态: 笔记本/面向对象程序设计/Lecture 9/衔接Lecture 8的多态.md
       - Lecture 10:
-        - 1.Copy Tor: 笔记本/面向对象程序设计/Lecture 10/1.Copy Tor.md
+        - 1.Copy Ctor: 笔记本/面向对象程序设计/Lecture 10/1.Copy Ctor.md
+        - 2.Container and STL: 笔记本/面向对象程序设计/Lecture 10/2.Container ＆ STL.md
       - Homework:
         - Homework 1: 笔记本/面向对象程序设计/Homework/Homework1/Homework.md
     - 大学物理实验:
@@ -312,9 +313,7 @@ nav:
       - 第6章 二极管: 
         - 二极管pdf: 笔记本/电子电路基础/第6章 二极管/chap_6m 二极管.pdf
         - 二极管难题: 笔记本/电子电路基础/第6章 二极管/二极管.md
-      - 第7章 三极管: 
-        - 三极管pdf: 笔记本/电子电路基础/第7章 三极管/chap_7m 三极管.pdf
-        - 三极管 : 笔记本/电子电路基础/第7章 三极管/三极管.md
+      - 第7章 三极管: 笔记本/电子电路基础/第7章 三极管/chap_7m 三极管.pdf
       
       - 第9章 理想运算放大器及其应用电路:
         - 9.1 运算放大器基础: 笔记本/电子电路基础/第9章 理想运算放大器及其应用电路/9.1 运算放大器基础.md
@@ -325,12 +324,13 @@ nav:
   - Undergraduate Research:
     - 科研概述: laboratory-work/research-overview.md
     - 跟着申老师做的: 
-      - LLM自进化论文1: 笔记本/申老师科研/LLM自进化论文/LLM论文1.pdf
-      - LLM自进化论文2: 笔记本/申老师科研/LLM自进化论文/LLM论文2.pdf
+      - LLM自进化论文1: 笔记本/申老师科研/LLM自进化论文/Teaching LLMs to Plan- Logical Chain-of-Thought Instruction Tuning for Symbolic Planning.pdf
+      - LLM自进化论文2: 笔记本/申老师科研/LLM自进化论文/d18573cce94208f9ddefde0cf1fb4788.pdf
     - 研究笔记: laboratory-work/research-notes.md
 
 # Custom CSS
 extra_css:
+  - https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
   - stylesheets/extra.css
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
 
