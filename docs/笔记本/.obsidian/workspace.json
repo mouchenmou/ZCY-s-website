@@ -63,14 +63,12 @@
             "id": "3b8a88b05cacbf4a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "面向对象程序设计/Lecture 11/2. Overloaded Operators.md",
-                "mode": "source",
-                "source": false
+                "file": "申老师科研/LLM自进化论文/LLM论文2.pdf"
               },
-              "icon": "lucide-file",
-              "title": "2. Overloaded Operators"
+              "icon": "lucide-file-text",
+              "title": "LLM论文2"
             }
           }
         ],
@@ -147,17 +145,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "面向对象程序设计/Lecture 11/2. Overloaded Operators.md",
+                "file": "申老师科研/LLM自进化论文/LLM论文2.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "2. Overloaded Operators 的反向链接列表"
+              "title": "LLM论文2 的反向链接列表"
             }
           },
           {
@@ -224,32 +222,39 @@
   },
   "active": "3b8a88b05cacbf4a",
   "lastOpenFiles": [
-    "面向对象程序设计/Lecture 11/附件/Pasted image 20251204010342.png",
-    "面向对象程序设计/Lecture 11/附件/Pasted image 20251204010121.png",
-    "面向对象程序设计/Lecture 11/附件/Pasted image 20251204004730.png",
-    "面向对象程序设计/Lecture 11/附件/Pasted image 20251204002203.png",
-    "面向对象程序设计/Lecture 11/附件",
-    "面向对象程序设计/Lecture 11/1.Container ＆ STL.md",
+    "申老师科研/LLM自进化论文/LLM论文1.pdf",
+    "申老师科研/LLM自进化论文/LLM论文2.pdf",
+    "CS61A/Lab/Lab01/Lab01.md",
+    "CS61A/Lab/Lab01/附件/Pasted image 20251217205802.png",
+    "CS61A/Lab/Lab01/附件/Pasted image 20251217205705.png",
+    "CS61A/Lab/Lab01/附件/Pasted image 20251217205224.png",
+    "CS61A/Lab/Lab01/附件/Pasted image 20251217205042.png",
+    "CS61A/Lab/Lab01/附件/Pasted image 20251217204826.png",
+    "CS61A/Lab/Lab01/附件/Pasted image 20251217204737.png",
+    "CS61A/Lab/Lab01/附件/Pasted image 20251217204455.png",
+    "CS61A/Lab/Lab01/附件/Pasted image 20251217165850.png",
+    "CS61A/Lab/Lab01/附件/Pasted image 20251217165808.png",
+    "CS61A/Lab/Lab01/附件/Pasted image 20251217165737.png",
+    "CS61A/Lab/Lab01/附件",
+    "CS61A/Lecture 3/Lecture 3 Control.md",
+    "CS61A/Lab/Lab01",
+    "CS61A/Lab",
+    "CS61B/Lecture 1/Intro 1 Study Guide.md",
+    "CS61B/Lecture 2/一些关于java的语法.md",
+    "CS61A/Lecture 3/附件",
+    "电子电路基础/第9章 理想运算放大器及其应用电路/9.1 运算放大器基础.md",
+    "CS61A/Lecture 3",
+    "CS61A/Lecture 2/Lecture 2 Functions.md",
+    "CS61A/Lecture 2/附件",
+    "电子电路基础/第8章 场效应晶体管及其放大电路/chap_8m 场效应晶体管.pdf",
+    "CS61A/Lecture 2",
+    "电子电路基础/第8章 场效应晶体管及其放大电路/chap_8m_appd_交流小信号特性.pdf",
+    "电子电路基础/第8章 场效应晶体管及其放大电路/场效应晶体管.md",
+    "电子电路基础/第7章 三极管/三极管.md",
     "面向对象程序设计/Lecture 11/2. Overloaded Operators.md",
-    "面向对象程序设计/Lecture 10/附件/Pasted image 20251203230700.png",
-    "面向对象程序设计/Lecture 10/附件/Pasted image 20251203204915.png",
-    "面向对象程序设计/Lecture 10/附件/Pasted image 20251203204609.png",
-    "面向对象程序设计/Lecture 10/附件/Pasted image 20251203171900.png",
-    "面向对象程序设计/Lecture 10/附件/Pasted image 20251203170416.png",
-    "面向对象程序设计/Lecture 10/附件/Pasted image 20251203164531.png",
-    "面向对象程序设计/Lecture 10/附件/Pasted image 20251203164504.png",
+    "面向对象程序设计/Lecture 11/1.Container ＆ STL.md",
     "面向对象程序设计/Lecture 10/1.Copy Ctor.md",
     "1.这个网站的一些东西/未命名.md",
-    "面向对象程序设计/Lecture 11",
-    "电子电路基础/第7章 三极管/三极管.md",
-    "电子电路基础/第7章 三极管/chap_7m 三极管.pdf",
-    "电子电路基础/第8章 场效应晶体管及其放大电路/chap_8m 场效应晶体管.pdf",
-    "电子电路基础/第8章 场效应晶体管及其放大电路/chap_8m_appd_工作原理.pdf",
-    "电子电路基础/第8章 场效应晶体管及其放大电路/chap_8m_appd_直流特性.pdf",
-    "电子电路基础/第8章 场效应晶体管及其放大电路/chap_8m_appd_类型.pdf",
-    "电子电路基础/第8章 场效应晶体管及其放大电路/chap_8m_appd_交流小信号特性.pdf",
-    "电子电路基础/第8章 场效应晶体管及其放大电路",
-    "面向对象程序设计/Lecture 10/附件",
     "面向对象程序设计/Lecture 9/衔接Lecture 8的多态.md",
     "面向对象程序设计/Lecture 7/2.Inheritance and constructors.md",
     "电子电路基础/第5章 正弦交流电路/5.1 正弦量的基本概念.md",
@@ -263,13 +268,6 @@
     "面向对象程序设计/Lecture 6/5.Composition and Inheritance.md",
     "申老师科研/未命名.md",
     "面向对象程序设计/Lecture 5/4.Initialization.md",
-    "面向对象程序设计/Lecture 5/1.Object interaction.md",
-    "电子电路基础/第4章 动态电路的时域分析/4.1 一阶电路的响应.md",
-    "CS224n/Lecture 1/1.Assignment.md",
-    "CS224n/Lecture 1/2.Human language and word meaning.md",
-    "CS224n/Lecture 1/3.Word2vec introduction.md",
-    "深入理解计算机系统/第3章 程序的机器级表示/3.2 程序编码.md",
-    "深入理解计算机系统/第3章 程序的机器级表示/3.3 数据格式.md",
     "未命名.canvas"
   ]
 }
