@@ -128,7 +128,7 @@ Overriding redefines the body of a virtual function.
     ```
 
 !!! Tips "### Tips"
-    1. Never redefin an inherited non-virtual function.（不要重新定义继承来的非虚函数）
+    1. Never redefine an inherited non-virtual function.（不要重新定义继承来的非虚函数）
         - 原因：`Non-virtuals are statically bound`。（非虚函数是通过静态绑定机制调用的）
         - 后果：No dynamic dispatch
             - 静态绑定是在编译时确定的，它只看你声明的变量或指针的静态类型，而不会看对象的实际类型。如果你重新定义了一个非虚函数，通过基类指针调用该函数时，永远只会调用基类的版本，完全无法实现多态。也就是说我们在lecture中实现的内容实际上是不好的东西，不要采取。

@@ -1,33 +1,4 @@
-## Q1: Return and Print
-```python
-    What would Python display? If you get stuck, try it out in the Python interpreter!
-    >>> def welcome():
-    ...     print('Go')
-    ...     return 'hello'
-    >>> def cal():
-    ...     print('Bears')
-    ...     return 'world'
-    
-    >>> welcome()
-    (line 1)? Go
-    (line 2)? 'hello'
-    -- OK! --
-    
-    >>> print(welcome(), cal())
-    (line 1)? Go 
-    (line 2)? Bears
-    (line 3)? hello world
-    -- OK! --
-```
 
-![](附件/Pasted%20image%2020251217165737.png)
-
-![](附件/Pasted%20image%2020251217165808.png)
-![](附件/Pasted%20image%2020251217165850.png)
-
----
-
-## Q2: Debugging Quiz
 ### Case3
 ```python
 Q: How do you write a doctest asserting that square(2) == 4?
@@ -59,6 +30,7 @@ Choose the number of the correct choice:
 ```
 ![](附件/Pasted%20image%2020251217204455.png)
 
+---
 ### Case4
 ```python
 Choose the number of the correct choice:
@@ -69,6 +41,7 @@ Choose the number of the correct choice:
 ![](附件/Pasted%20image%2020251217204737.png)
 ![](附件/Pasted%20image%2020251217204826.png)
 
+---
 ## Case5
 ```python
 Q: How do you prevent the ok autograder from interpreting print statements as output?
@@ -79,6 +52,7 @@ Choose the number of the correct choice:
 ```
 ![](附件/Pasted%20image%2020251217205042.png)
 
+---
 ## Case 6
 ```python
 Q: What is the best way to open an interactive terminal to investigate a failing test for question sum_digits in assignment lab01?
@@ -90,6 +64,7 @@ Choose the number of the correct choice:
 ```
 ![](附件/Pasted%20image%2020251217205224.png)
 
+---
 ## Case7
 ```python
 Q: Which of the following is NOT true?
