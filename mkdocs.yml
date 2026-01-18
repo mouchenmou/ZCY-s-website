@@ -109,6 +109,12 @@ nav:
   - 首页: index.md
   - Undergraduate Study:
     - undergraduate-study/index1.md
+    - CS61A Python:
+      - Lab:
+        - Lab01: 笔记本/CS61A/Lab/Lab01.md
+      - Lecture 2 Functions: 笔记本/CS61A/Lecture 2/Lecture 2 Functions.md
+      - Lecture 3 Control: 笔记本/CS61A/Lecture 3/Lecture 3 Control.md
+      - Lecture 4 Higher-Order Function: 笔记本/CS61A/Lecture 4/Lecture 4 Higher-Order Function.md
     - CS61B 数据结构:
       - 笔记本/CS61B/index.md
       - Lecture 1 - Java基础: 笔记本/CS61B/Lecture 1/Intro 1 Study Guide.md

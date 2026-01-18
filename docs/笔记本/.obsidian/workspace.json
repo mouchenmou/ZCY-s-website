@@ -79,12 +79,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS61B/lab/lab1/命令行.md",
+                "file": "CS61A/Lecture 4/Lecture 4 Higher-Order Function.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "命令行"
+              "title": "Lecture 4 Higher-Order Function"
             }
           }
         ],
@@ -161,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS61B/lab/lab1/命令行.md",
+                "file": "CS61A/Lecture 4/Lecture 4 Higher-Order Function.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "命令行 的反向链接列表"
+              "title": "Lecture 4 Higher-Order Function 的反向链接列表"
             }
           },
           {
@@ -238,13 +238,22 @@
   },
   "active": "b32056b0e4423e73",
   "lastOpenFiles": [
-    "CS61B/index.md",
+    "CS61A/Lecture 3/Lecture 3 Control.md",
+    "CS61A/Lecture 2/Lecture 2 Functions.md",
+    "CS61A/Lecture 4/Lecture 4 Higher-Order Function.md",
+    "CS61A/Lecture 4/附件/Pasted image 20260118233924.png",
+    "CS61A/Lecture 4/附件/Pasted image 20260118233653.png",
+    "CS61A/Lecture 4/附件/Pasted image 20260118232146.png",
+    "CS61A/Lecture 4/附件/Pasted image 20260118225416.png",
+    "CS61A/Lecture 4/附件/Pasted image 20260118225255.png",
+    "CS61A/Lecture 4/附件",
+    "CS61A/Lecture 4",
     "CS61B/lab/lab1/命令行.md",
+    "CS61B/index.md",
     "CS61B/lab/lab1",
     "CS61B/lab",
     "CS61A/进度.md",
     "CS61A/Lab/Lab01/Q9.md",
-    "CS61A/Lecture 2/Lecture 2 Functions.md",
     "CS61A/Lecture 2/附件/Pasted image 20251216114410.png",
     "CS61A/Lecture 2/附件/Pasted image 20251216114212.png",
     "CS61A/Lab/Lab01/Q3 Pick a Digit.md",
@@ -266,24 +275,14 @@
     "电子电路基础/第8章 场效应晶体管及其放大电路/场效应晶体管笔记.md",
     "电子电路基础/第12章 功率放大器/功率放大器.md",
     "电子电路基础/第12章 功率放大器/chap_12m 功率放大器.pdf",
-    "电子电路基础/第11章 反馈/chap_11m_appd.pdf",
-    "电子电路基础/第11章 反馈/chap_11m 反馈.pdf",
     "电子电路基础/第11章 反馈/反馈.md",
     "电子电路基础/第10章 频率响应/频率响应.md",
     "面向对象程序设计/Lecture 7/1.Inheritance.md",
     "面向对象程序设计/Lecture 7/2.Inheritance and constructors.md",
     "面向对象程序设计/Lecture 5/4.Initialization.md",
-    "面向对象程序设计/Lecture 5/3.Aggregate initialization.md",
-    "面向对象程序设计/Lecture 5/2.C'tor and D'tor.md",
-    "面向对象程序设计/Lecture 5/1.Object interaction.md",
     "面向对象程序设计/Lecture 12/附件/Pasted image 20260102220134.png",
     "面向对象程序设计/Lecture 12/附件/Pasted image 20260102220117.png",
     "面向对象程序设计/Lecture 12/附件/Pasted image 20260102220155.png",
-    "电子电路基础/第12章 功率放大器/附件/Pasted image 20260101221442.png",
-    "电子电路基础/第11章 反馈/附件/Pasted image 20251224211214.png",
-    "电子电路基础/第11章 反馈/附件/Pasted image 20251224184508.png",
-    "面向对象程序设计/Lecture 14/附件/Pasted image 20260108200753.png",
-    "面向对象程序设计/Lecture 14/附件/Pasted image 20260108194420.png",
     "未命名.canvas"
   ]
 }
