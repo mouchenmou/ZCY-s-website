@@ -112,9 +112,13 @@ nav:
     - CS61A Python:
       - Lab:
         - Lab01: 笔记本/CS61A/Lab/Lab01.md
+        - Lab02: 笔记本/CS61A/Lab/Lab02/Q1 Short Circuiting.md
       - Lecture 2 Functions: 笔记本/CS61A/Lecture 2/Lecture 2 Functions.md
       - Lecture 3 Control: 笔记本/CS61A/Lecture 3/Lecture 3 Control.md
       - Lecture 4 Higher-Order Function: 笔记本/CS61A/Lecture 4/Lecture 4 Higher-Order Function.md
+      - Lecture 5 Environments: 笔记本/CS61A/Lecture 5/Lecture 5 Environments.md
+      - Lecture 6 Sound: 笔记本/CS61A/Lecture 6/Lecture 6 Sound.md
+      - Lecture 7 Functional Abstraction: 笔记本/CS61A/Lecture 7/Lecture 7 Functional Abstraction.md
     - CS61B 数据结构:
       - 笔记本/CS61B/index.md
       - Lecture 1 - Java基础: 笔记本/CS61B/Lecture 1/Intro 1 Study Guide.md
