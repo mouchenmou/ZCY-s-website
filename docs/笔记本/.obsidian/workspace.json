@@ -91,12 +91,14 @@
             "id": "19870e99f931bdd1",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "电子电路基础/第12章 功率放大器/chap_12m 功率放大器.pdf"
+                "file": "CS61A/Lecture 7/Lecture 7 Functional Abstraction.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "chap_12m 功率放大器"
+              "icon": "lucide-file",
+              "title": "Lecture 7 Functional Abstraction"
             }
           }
         ],
@@ -173,7 +175,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "电子电路基础/第12章 功率放大器/chap_12m 功率放大器.pdf",
+                "file": "CS61A/Lecture 7/Lecture 7 Functional Abstraction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +185,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "chap_12m 功率放大器 的反向链接列表"
+              "title": "Lecture 7 Functional Abstraction 的反向链接列表"
             }
           },
           {
@@ -248,10 +250,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "0c3136469588a543",
+  "active": "19870e99f931bdd1",
   "lastOpenFiles": [
-    "电子电路基础/第12章 功率放大器/功率放大器.md",
     "电子电路基础/第12章 功率放大器/chap_12m 功率放大器.pdf",
+    "电子电路基础/第12章 功率放大器/功率放大器.md",
     "CS61B/Lecture 1 Intro, Hello World Java/Intro 1 Study Guide.md",
     "CS61B/Lecture 2/一些关于java的语法.md",
     "CS61B/lab/lab1/命令行.md",
@@ -295,7 +297,6 @@
     "面向对象程序设计/Lecture 13/8.2 异常处理基础.md",
     "面向对象程序设计/Lecture 12/7.2 函数模板与模板函数.md",
     "面向对象程序设计/Lecture 11/1.Container ＆ STL.md",
-    "电子电路基础/第8章 场效应晶体管及其放大电路/场效应晶体管笔记.md",
     "未命名.canvas"
   ]
 }
