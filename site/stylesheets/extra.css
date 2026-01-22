@@ -447,13 +447,26 @@ html[data-md-color-scheme="warm"] body {
   color: var(--md-primary-fg-color);
 }
 
-/* 自定义字体 - 使用宋体系列字体 */
+/* 霞鹜文楷屏幕阅读版 - 优雅的现代楷体 */
 .md-typeset {
-  font-family: "STSong", "SimSun", "NSimSun", "FangSong", "STFangsong", "LiSu", "KaiTi", "STKaiti", "Times New Roman", "serif", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei";
-  font-size: 0.9rem;
+  font-family: "LXGW WenKai Screen", "LXGW WenKai", "KaiTi", "STKaiti", "SimKai", serif;
+  font-size: 0.95rem;
   line-height: 1.8;
   font-weight: 400;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
+}
+
+/* 标题使用文楷字体，保持优雅一致性 */
+.md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4, .md-typeset h5, .md-typeset h6 {
+  font-family: "LXGW WenKai Screen", "LXGW WenKai", "KaiTi", "STKaiti", "SimKai", serif;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+/* 代码字体使用 JetBrains Mono */
+.md-typeset code, .md-typeset pre, .md-typeset kbd {
+  font-family: "JetBrains Mono", "SFMono-Regular", "SF Mono", "Monaco", "Consolas", "Liberation Mono", "Menlo", "Courier New", monospace;
+  font-size: 0.88em;
 }
 
 /* 搜索框圆角美化 */

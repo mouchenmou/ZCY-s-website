@@ -111,8 +111,15 @@ nav:
     - undergraduate-study/index1.md
     - CS61A Python:
       - Lab:
-        - Lab01: 笔记本/CS61A/Lab/Lab01.md
-        - Lab02: 笔记本/CS61A/Lab/Lab02/Q1 Short Circuiting.md
+        - Lab01:
+          - Q1 Return and pring: 笔记本/CS61A/Lab/Lab01/Q1 Return and Print.md
+          - Q2 Debugging Quiz: 笔记本/CS61A/Lab/Lab01/Q2 Debugging Quiz.md
+          - Q3 Pick a Digit: 笔记本/CS61A/Lab/Lab01/Q3 Pick a Digit.md
+          - Q9: 笔记本/CS61A/Lab/Lab01/Q9.md
+        - Lab02: 
+          - Q1 Short Circuiting: 笔记本/CS61A/Lab/Lab02/Q1 Short Circuiting.md
+          - Q3 Lambda: 笔记本/CS61A/Lab/Lab02/Q3 Lambda.md
+          - Q8 I heard of you like functions: 笔记本/CS61A/Lab/Lab02/Q8 I heard of you like functions.md
       - Lecture 2 Functions: 笔记本/CS61A/Lecture 2/Lecture 2 Functions.md
       - Lecture 3 Control: 笔记本/CS61A/Lecture 3/Lecture 3 Control.md
       - Lecture 4 Higher-Order Function: 笔记本/CS61A/Lecture 4/Lecture 4 Higher-Order Function.md
@@ -121,7 +128,7 @@ nav:
       - Lecture 7 Functional Abstraction: 笔记本/CS61A/Lecture 7/Lecture 7 Functional Abstraction.md
     - CS61B 数据结构:
       - 笔记本/CS61B/index.md
-      - Lecture 1 - Java基础: 笔记本/CS61B/Lecture 1/Intro 1 Study Guide.md
+      - Lecture 1 - Hello World Java: 笔记本/CS61B/Lecture 1/Lecture 1 Intro, Hello World Javamd
       - Lecture 2 - Java语法: 笔记本/CS61B/Lecture 2/一些关于java的语法.md
       - Lecture 13 - 渐近线1: 笔记本/CS61B/Lecture 13 渐近线1/Big O.md
       - Lecture 14 - 不相交集1:
