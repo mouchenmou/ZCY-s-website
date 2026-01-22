@@ -1,7 +1,5 @@
 # Welcome to ZCY's World
 
-*测试实时重载功能 - 2025年11月30日 13:53*
-
 <div class="hero-banner">
   <div class="profile-card">
     <div class="avatar-container">
