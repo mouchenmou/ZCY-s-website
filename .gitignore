@@ -1,0 +1,25 @@
+# MkDocs
+site/
+/env/
+build/
+dist/
+*.pyc
+*.pyo
+__pycache__/
+
+# Obsidian
+**/.obsidian/
+**/.trash/
+**/.DS_Store
+.obsidian/
+.trash/
+
+# Log files
+*.log
+build_log.txt
+mkdocs_import_output.txt
+
+# Temp files
+tatus
+tatus?
+
