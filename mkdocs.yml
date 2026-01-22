@@ -112,11 +112,11 @@ nav:
     - CS61A Python:
       - Lab:
         - Lab01:
-          - Q1 Return and pring: 笔记本/CS61A/Lab/Lab01/Q1 Return and Print.md
+          - Q1 Return and Print: 笔记本/CS61A/Lab/Lab01/Q1 Return and Print.md
           - Q2 Debugging Quiz: 笔记本/CS61A/Lab/Lab01/Q2 Debugging Quiz.md
           - Q3 Pick a Digit: 笔记本/CS61A/Lab/Lab01/Q3 Pick a Digit.md
           - Q9: 笔记本/CS61A/Lab/Lab01/Q9.md
-        - Lab02: 
+        - Lab02:
           - Q1 Short Circuiting: 笔记本/CS61A/Lab/Lab02/Q1 Short Circuiting.md
           - Q3 Lambda: 笔记本/CS61A/Lab/Lab02/Q3 Lambda.md
           - Q8 I heard of you like functions: 笔记本/CS61A/Lab/Lab02/Q8 I heard of you like functions.md
@@ -128,7 +128,7 @@ nav:
       - Lecture 7 Functional Abstraction: 笔记本/CS61A/Lecture 7/Lecture 7 Functional Abstraction.md
     - CS61B 数据结构:
       - 笔记本/CS61B/index.md
-      - Lecture 1 - Hello World Java: 笔记本/CS61B/Lecture 1/Lecture 1 Intro, Hello World Javamd
+      - Lecture 1 - Hello World Java: "笔记本/CS61B/Lecture 1 Intro, Hello World Java/Intro 1 Study Guide.md"
       - Lecture 2 - Java语法: 笔记本/CS61B/Lecture 2/一些关于java的语法.md
       - Lecture 13 - 渐近线1: 笔记本/CS61B/Lecture 13 渐近线1/Big O.md
       - Lecture 14 - 不相交集1:
@@ -136,8 +136,8 @@ nav:
         - 笔记本/CS61B/Lecture 14 不相交集1(Disjoint Sets)/2.快速连接法（QuickUnionDS）.md
         - 笔记本/CS61B/Lecture 14 不相交集1(Disjoint Sets)/3.加权快速接头（Weighted Quick Union）.md
       - Lecture 15 - 不相交集2和渐近线2:
-        - 笔记本/CS61B/Lecture 15 不相交集2和渐近线2/15.1 路径压缩(WQU with Path Compression).md
-        - 笔记本/CS61B/Lecture 15 不相交集2和渐近线2/15.2 渐近线2.md
+        - 15.1 路径压缩: 笔记本/CS61B/Lecture 15 不相交集2和渐近线2/15.1路径压缩(WQU with Path Compression).md
+        - 15.2 渐近线2: 笔记本/CS61B/Lecture 15 不相交集2和渐近线2/15.2 渐近线2.md
       - Lecture 16 - 二分查找法和BSTs:
         - 16.1 二分查找法: 笔记本/CS61B/Lecture 16 二分查找法，ADTs，BSTs/二分查找法（BinarySearch）.md
         - 16.2 归并排序: 笔记本/CS61B/Lecture 16 二分查找法，ADTs，BSTs/归并排序（Mergesort）.md
@@ -154,10 +154,12 @@ nav:
       - Lecture 19 - 哈希算法1:
         - 19.1 BobaCounterSet: 笔记本/CS61B/Lecture 19 哈希算法1/19.1 BobaCounterSet.md
         - 19.2 Dynamic Array of list: 笔记本/CS61B/Lecture 19 哈希算法1/19.2 Dynamic Array Of Lists Set.md
-      - Lecture 20 - 哈希算法2: 笔记本/CS61B/Lecture 20 哈希算法2/20 关于哈希算法的深层解析.md
+      - Lecture 20 - 哈希算法2: 笔记本/CS61B/Lecture 20 哈希算法2/20 关于哈希算法的深解析.md
       - Lecture 21 Priority Queues and Heaps:
         - 21.1 优先队列: 笔记本/CS61B/Lecture 21 Priority Queues and Heaps/21.1 优先队列.md
         - 21.2 堆: 笔记本/CS61B/Lecture 21 Priority Queues and Heaps/21.2 堆.md
+      - Lab:
+        - Lab1 命令行: 笔记本/CS61B/lab/lab1/命令行.md
     - CS70 离散数学:
       - Homework:
         - Homework 1: 笔记本/CS70/Homework/hw01-sol.pdf
@@ -189,8 +191,6 @@ nav:
         - Discussion 5b: 笔记本/CS70/Discussions/dis05b-sol.pdf
         - Discussion 6a: 笔记本/CS70/Discussions/dis06a-sol.pdf
         - Discussion 6b: 笔记本/CS70/Discussions/dis06b-sol.pdf
-        - Discussion 7a: 笔记本/CS70/Discussions/dis07a-sol.pdf
-        - Discussion 7b: 笔记本/CS70/Discussions/dis07b-sol.pdf
         - Discussion 8a: 笔记本/CS70/Discussions/dis08a-sol.pdf
         - Discussion 8b: 笔记本/CS70/Discussions/dis08b-sol.pdf
         - Discussion 9a: 笔记本/CS70/Discussions/dis09a-sol.pdf
@@ -202,7 +202,6 @@ nav:
         - Discussion 12a: 笔记本/CS70/Discussions/dis12a-sol.pdf
         - Discussion 12b: 笔记本/CS70/Discussions/dis12b-sol.pdf
         - Discussion 13a: 笔记本/CS70/Discussions/dis13a-sol.pdf
-        - Discussion 13b: 笔记本/CS70/Discussions/dis13b-sol.pdf
         - Discussion 14a: 笔记本/CS70/Discussions/dis14a-sol.pdf
         - Discussion 14b: 笔记本/CS70/Discussions/dis14b-sol.pdf
       - Lecture 1:
@@ -244,13 +243,13 @@ nav:
         - 2.Definition of a class: 笔记本/面向对象程序设计/Lecture 4/2.Definition of a class.md
         - 3.Compilation unit: 笔记本/面向对象程序设计/Lecture 4/3.Compilation unit.md
         - 4.The head file: 笔记本/面向对象程序设计/Lecture 4/4.The head file.md
-        - 5.Declaratioin vs. Definition : 笔记本/面向对象程序设计/Lecture 4/5.Declaration vs. Definition
+        - 5.Declaration vs. Definition: 笔记本/面向对象程序设计/Lecture 4/5.Declaration vs. Definition.md
         - 6.Include: 笔记本/面向对象程序设计/Lecture 4/6.Include.md
-        - 7.Standard header flie structure: 笔记本/面向对象程序设计/Lecture 4/7.Standard header file structure.md
-        - 8.MakeFile : 笔记本/面向对象程序设计/Lecture 4/8.MakeFile.md
+        - 7.Standard header file structure: 笔记本/面向对象程序设计/Lecture 4/7.Standard header file structure.md
+        - 8.MakeFile: 笔记本/面向对象程序设计/Lecture 4/8.MakeFile.md
       - Lecture 5:
         - 1.Object interaction: 笔记本/面向对象程序设计/Lecture 5/1.Object interaction.md
-        - 2.C'tor and D'tor:  笔记本/面向对象程序设计/Lecture 5/2.C'tor and D'tor.md
+        - 2.C'tor and D'tor: 笔记本/面向对象程序设计/Lecture 5/2.C'tor and D'tor.md
         - 3.Aggregate initialization: 笔记本/面向对象程序设计/Lecture 5/3.Aggregate initialization.md
         - 4.Initialization: 笔记本/面向对象程序设计/Lecture 5/4.Initialization.md
       - Lecture 6:
@@ -269,10 +268,9 @@ nav:
         - 衔接Lecture 8的多态: 笔记本/面向对象程序设计/Lecture 9/衔接Lecture 8的多态.md
       - Lecture 10:
         - 1.Copy Ctor: 笔记本/面向对象程序设计/Lecture 10/1.Copy Ctor.md
-        - 2.Container and STL: 笔记本/面向对象程序设计/Lecture 10/2.Container ＆ STL.md
       - Lecture 11:
-        - 1.Container ＆ STL: 笔记本/面向对象程序设计/Lecture 10/1.Container ＆ STL.md
-        - 2. Overloaded Operators: 笔记本/面向对象程序设计/Lecture 10/ 2. Overloaded Operators.md
+        - 1.Container ＆ STL: 笔记本/面向对象程序设计/Lecture 11/1.Container ＆ STL.md
+        - 2. Overloaded Operators: 笔记本/面向对象程序设计/Lecture 11/2. Overloaded Operators.md
       - Lecture 12:
         - 7.2 函数模板与模板函数: 笔记本/面向对象程序设计/Lecture 12/7.2 函数模板与模板函数.md
         - 7.3 类模板: 笔记本/面向对象程序设计/Lecture 12/7.3 类模板.md
@@ -335,7 +333,7 @@ nav:
         - 4.1一阶电路的响应: 笔记本/电子电路基础/第4章 动态电路的时域分析/4.1 一阶电路的响应.md
         - 4.2二阶电路的响应: 笔记本/电子电路基础/第4章 动态电路的时域分析/4.2 二阶电路的响应.md
         - 4.3一阶电路和二阶电路的越阶响应: 笔记本/电子电路基础/第4章 动态电路的时域分析/4.3 一阶电路和二阶电路的越阶响应.md
-        - 4.4一阶电路和二阶电路的冲激响应: 笔记本/电子电路基础/第4章 动态电路的时域分析/4.4 一阶电路和二阶电路的冲击响应.md
+        - 4.4一阶电路和二阶电路的冲激响应: 笔记本/电子电路基础/第4章 动态电路的时域分析/4.4 一阶电路和二阶电路的冲激响应.md
       - 第5章 正弦交流电路: 
         - 5.1正弦量的基本概念: 笔记本/电子电路基础/第5章 正弦交流电路/5.1 正弦量的基本概念.md
         - 5.2正弦稳态电路的相量分析方法: 笔记本/电子电路基础/第5章 正弦交流电路/5.2 正弦稳态电路的相量分析方法.md
@@ -365,7 +363,7 @@ nav:
         - 3. 反馈知识点: 笔记本/电子电路基础/第11章 反馈/chap_11m_appd.pdf
       - 第12章 放大器:
         - 1. 功率放大器笔记: 笔记本/电子电路基础/第12章 功率放大器/功率放大器.md
-        - 2. 功率放大器PPT: 笔记本/电子电路基础/第12章 功率放大器/chap_11m_appd.pdf
+        - 2. 功率放大器PPT: 笔记本/电子电路基础/第12章 功率放大器/chap_12m 功率放大器.pdf
     - 工程力学:
       - 第2章:
         - 2.2约束的分类及约束力的特征: 笔记本/工程力学/第二章/2.2 约束的分类及约束力的特征.md 
