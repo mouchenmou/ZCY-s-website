@@ -93,12 +93,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS61A/Lecture 7/Lecture 7 Functional Abstraction.md",
+                "file": "CS61A/Lecture 8/Lecture 8 Function Examples.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 7 Functional Abstraction"
+              "title": "Lecture 8 Function Examples"
             }
           }
         ],
@@ -175,7 +175,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS61A/Lecture 7/Lecture 7 Functional Abstraction.md",
+                "file": "CS61A/Lecture 8/Lecture 8 Function Examples.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -185,7 +185,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Lecture 7 Functional Abstraction 的反向链接列表"
+              "title": "Lecture 8 Function Examples 的反向链接列表"
             }
           },
           {
@@ -252,6 +252,11 @@
   },
   "active": "19870e99f931bdd1",
   "lastOpenFiles": [
+    "CS61A/Lecture 8/附件/Pasted image 20260123002837.png",
+    "CS61A/Lecture 8/附件",
+    "CS61A/Lecture 7/Lecture 7 Functional Abstraction.md",
+    "CS61A/Lecture 8/Lecture 8 Function Examples.md",
+    "CS61A/Lecture 8",
     "电子电路基础/第12章 功率放大器/chap_12m 功率放大器.pdf",
     "电子电路基础/第12章 功率放大器/功率放大器.md",
     "CS61B/Lecture 1 Intro, Hello World Java/Intro 1 Study Guide.md",
@@ -264,7 +269,6 @@
     "CS61A/Lab/Lab01/Q9.md",
     "CS61A/Lab/Lab01/Q2 Debugging Quiz.md",
     "CS61A/Lab/Lab01/Q1 Return and Print.md",
-    "CS61A/Lecture 7/Lecture 7 Functional Abstraction.md",
     "CS61A/Lecture 7/附件/Pasted image 20260122191031.png",
     "CS61A/Lecture 7/附件",
     "CS61A/进度.md",
@@ -288,15 +292,12 @@
     "CS61A/Lecture 4/附件/Pasted image 20260118233924.png",
     "CS61A/Lecture 4/附件/Pasted image 20260118233653.png",
     "CS61A/Lecture 4/附件/Pasted image 20260118232146.png",
-    "CS61A/Lecture 4/附件",
-    "CS61A/Lecture 4",
     "CS61B/index.md",
     "面向对象程序设计/Lecture 14/10.1 I O 流及流类库.md",
     "面向对象程序设计/Lecture 13/8.5 异常和类.md",
     "面向对象程序设计/Lecture 13/8.4 异常处理的几种特殊情况.md",
     "面向对象程序设计/Lecture 13/8.2 异常处理基础.md",
     "面向对象程序设计/Lecture 12/7.2 函数模板与模板函数.md",
-    "面向对象程序设计/Lecture 11/1.Container ＆ STL.md",
     "未命名.canvas"
   ]
 }
