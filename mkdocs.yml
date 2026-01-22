@@ -128,7 +128,7 @@ nav:
       - Lecture 7 Functional Abstraction: 笔记本/CS61A/Lecture 7/Lecture 7 Functional Abstraction.md
     - CS61B 数据结构:
       - 笔记本/CS61B/index.md
-      - Lecture 1 - Hello World Java: "笔记本/CS61B/Lecture 1 Intro, Hello World Java/Intro 1 Study Guide.md"
+      - Lecture 1 - Hello World Java: 笔记本/CS61B/Lecture 1 Intro, Hello World Java/Intro 1 Study Guide.md
       - Lecture 2 - Java语法: 笔记本/CS61B/Lecture 2/一些关于java的语法.md
       - Lecture 13 - 渐近线1: 笔记本/CS61B/Lecture 13 渐近线1/Big O.md
       - Lecture 14 - 不相交集1:
@@ -191,6 +191,8 @@ nav:
         - Discussion 5b: 笔记本/CS70/Discussions/dis05b-sol.pdf
         - Discussion 6a: 笔记本/CS70/Discussions/dis06a-sol.pdf
         - Discussion 6b: 笔记本/CS70/Discussions/dis06b-sol.pdf
+        - Discussion 7a: 笔记本/CS70/Discussions/dis07a-sol.pdf
+        - Discussion 7b: 笔记本/CS70/Discussions/dis07b-sol.pdf
         - Discussion 8a: 笔记本/CS70/Discussions/dis08a-sol.pdf
         - Discussion 8b: 笔记本/CS70/Discussions/dis08b-sol.pdf
         - Discussion 9a: 笔记本/CS70/Discussions/dis09a-sol.pdf
@@ -202,6 +204,7 @@ nav:
         - Discussion 12a: 笔记本/CS70/Discussions/dis12a-sol.pdf
         - Discussion 12b: 笔记本/CS70/Discussions/dis12b-sol.pdf
         - Discussion 13a: 笔记本/CS70/Discussions/dis13a-sol.pdf
+        - Discussion 13b: 笔记本/CS70/Discussions/dis13b-sol.pdf
         - Discussion 14a: 笔记本/CS70/Discussions/dis14a-sol.pdf
         - Discussion 14b: 笔记本/CS70/Discussions/dis14b-sol.pdf
       - Lecture 1:
@@ -243,10 +246,10 @@ nav:
         - 2.Definition of a class: 笔记本/面向对象程序设计/Lecture 4/2.Definition of a class.md
         - 3.Compilation unit: 笔记本/面向对象程序设计/Lecture 4/3.Compilation unit.md
         - 4.The head file: 笔记本/面向对象程序设计/Lecture 4/4.The head file.md
-        - 5.Declaration vs. Definition: 笔记本/面向对象程序设计/Lecture 4/5.Declaration vs. Definition.md
+        - 5.Declaratioin vs. Definition : 笔记本/面向对象程序设计/Lecture 4/5.Declaration vs. Definition
         - 6.Include: 笔记本/面向对象程序设计/Lecture 4/6.Include.md
-        - 7.Standard header file structure: 笔记本/面向对象程序设计/Lecture 4/7.Standard header file structure.md
-        - 8.MakeFile: 笔记本/面向对象程序设计/Lecture 4/8.MakeFile.md
+        - 7.Standard header flie structure: 笔记本/面向对象程序设计/Lecture 4/7.Standard header file structure.md
+        - 8.MakeFile : 笔记本/面向对象程序设计/Lecture 4/8.MakeFile.md
       - Lecture 5:
         - 1.Object interaction: 笔记本/面向对象程序设计/Lecture 5/1.Object interaction.md
         - 2.C'tor and D'tor: 笔记本/面向对象程序设计/Lecture 5/2.C'tor and D'tor.md
@@ -268,6 +271,7 @@ nav:
         - 衔接Lecture 8的多态: 笔记本/面向对象程序设计/Lecture 9/衔接Lecture 8的多态.md
       - Lecture 10:
         - 1.Copy Ctor: 笔记本/面向对象程序设计/Lecture 10/1.Copy Ctor.md
+        - 2.Container and STL: 笔记本/面向对象程序设计/Lecture 10/2.Container ＆ STL.md
       - Lecture 11:
         - 1.Container ＆ STL: 笔记本/面向对象程序设计/Lecture 11/1.Container ＆ STL.md
         - 2. Overloaded Operators: 笔记本/面向对象程序设计/Lecture 11/2. Overloaded Operators.md

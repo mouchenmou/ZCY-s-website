@@ -91,14 +91,12 @@
             "id": "19870e99f931bdd1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "CS61B/lab/lab1/命令行.md",
-                "mode": "source",
-                "source": false
+                "file": "电子电路基础/第12章 功率放大器/chap_12m 功率放大器.pdf"
               },
-              "icon": "lucide-file",
-              "title": "命令行"
+              "icon": "lucide-file-text",
+              "title": "chap_12m 功率放大器"
             }
           }
         ],
@@ -175,7 +173,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS61B/lab/lab1/命令行.md",
+                "file": "电子电路基础/第12章 功率放大器/chap_12m 功率放大器.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -185,7 +183,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "命令行 的反向链接列表"
+              "title": "chap_12m 功率放大器 的反向链接列表"
             }
           },
           {
@@ -250,8 +248,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "19870e99f931bdd1",
+  "active": "0c3136469588a543",
   "lastOpenFiles": [
+    "电子电路基础/第12章 功率放大器/功率放大器.md",
+    "电子电路基础/第12章 功率放大器/chap_12m 功率放大器.pdf",
+    "CS61B/Lecture 1 Intro, Hello World Java/Intro 1 Study Guide.md",
+    "CS61B/Lecture 2/一些关于java的语法.md",
+    "CS61B/lab/lab1/命令行.md",
     "CS61A/Lab/Lab02/Q8 I heard of you like functions.md",
     "CS61A/Lab/Lab02/Q3 Lambda.md",
     "CS61A/Lab/Lab02/Q1 Short Circuiting.md",
@@ -259,7 +262,6 @@
     "CS61A/Lab/Lab01/Q9.md",
     "CS61A/Lab/Lab01/Q2 Debugging Quiz.md",
     "CS61A/Lab/Lab01/Q1 Return and Print.md",
-    "CS61B/lab/lab1/命令行.md",
     "CS61A/Lecture 7/Lecture 7 Functional Abstraction.md",
     "CS61A/Lecture 7/附件/Pasted image 20260122191031.png",
     "CS61A/Lecture 7/附件",
@@ -287,15 +289,12 @@
     "CS61A/Lecture 4/附件",
     "CS61A/Lecture 4",
     "CS61B/index.md",
-    "CS61B/lab/lab1",
     "面向对象程序设计/Lecture 14/10.1 I O 流及流类库.md",
     "面向对象程序设计/Lecture 13/8.5 异常和类.md",
     "面向对象程序设计/Lecture 13/8.4 异常处理的几种特殊情况.md",
     "面向对象程序设计/Lecture 13/8.2 异常处理基础.md",
     "面向对象程序设计/Lecture 12/7.2 函数模板与模板函数.md",
     "面向对象程序设计/Lecture 11/1.Container ＆ STL.md",
-    "CS61B/Lecture 2/一些关于java的语法.md",
-    "CS61B/Lecture 1 Intro, Hello World Java/Intro 1 Study Guide.md",
     "电子电路基础/第8章 场效应晶体管及其放大电路/场效应晶体管笔记.md",
     "未命名.canvas"
   ]
