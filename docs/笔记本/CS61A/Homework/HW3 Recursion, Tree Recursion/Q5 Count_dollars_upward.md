@@ -61,7 +61,9 @@ def count_dollars_upward(total):
 ### 错误举例：
 
 假设我们输入的`total=6`，按理来说应该只有两种方法，那我们将`total=6`带入到上面的代码中看看结果如何。
+
 $calculate(6, 1) = calculate(5, 1)+calculate(6, 5)$
+
 $calculate(5, 1)+calculate(6, 5)= calculate(4, 1)+calculate(5, 5)+calculate(1, 5)+calculate(6, 10)$
 
 - $calculate(4, 1)=1$
