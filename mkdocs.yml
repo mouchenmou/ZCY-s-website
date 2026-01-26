@@ -110,6 +110,10 @@ nav:
   - Undergraduate Study:
     - undergraduate-study/index1.md
     - CS61A Python:
+      - Homework:
+        - HW3 Recursion, Tree Recursion:
+          - Q4 Count Dollars: 笔记本/CS61A/Homework/HW3 Recursion, Tree Recursion/Q4 Count Dollars.md
+          - Q5 Count_dollars_upward: 笔记本/CS61A/Homework/HW3 Recursion, Tree Recursion/Q5 Count_dollars_upward.md
       - Lab:
         - Lab01:
           - Q1 Return and Print: 笔记本/CS61A/Lab/Lab01/Q1 Return and Print.md

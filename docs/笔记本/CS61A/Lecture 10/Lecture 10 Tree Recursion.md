@@ -34,6 +34,7 @@
 
 ---
 
+<span id="partition"></span>
 ## 2. Example: Counting Partitions（计算分区）
 The number of partitions of a positive integer n, using parts up to size m, is the number of ways in which n can be expressed as the sum of positive integer parts up to m in increasing order.
 
