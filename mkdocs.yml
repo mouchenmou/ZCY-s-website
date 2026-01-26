@@ -136,7 +136,7 @@ nav:
     - CS61B 数据结构:
       - 笔记本/CS61B/index.md
       - Lecture 1 - Hello World Java: 笔记本/CS61B/Lecture 1 Intro, Hello World Java/Intro 1 Study Guide.md
-      - Lecture 2 - Java语法: 笔记本/CS61B/Lecture 2/一些关于java的语法.md
+      - Lecture 2 - Defining and Using Classes: 笔记本/CS61B/Lecture 2 Definiing and Using Classes/一Defining and Using Classes.md
       - Lecture 13 - 渐近线1: 笔记本/CS61B/Lecture 13 渐近线1/Big O.md
       - Lecture 14 - 不相交集1:
         - 笔记本/CS61B/Lecture 14 不相交集1(Disjoint Sets)/1.快速查找不相交集（QuickFindDS）.md
