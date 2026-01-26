@@ -379,11 +379,9 @@ nav:
       - 第2章:
         - 2.2约束的分类及约束力的特征: 笔记本/工程力学/第二章/2.2 约束的分类及约束力的特征.md 
   - Undergraduate Research:
-    - 科研概述: laboratory-work/research-overview.md
-    - 跟着申老师做的: 
+    - 自动化渗透: 
       - LLM自进化论文1: 笔记本/申老师科研/LLM自进化论文/LLM论文1.pdf
       - LLM自进化论文2: 笔记本/申老师科研/LLM自进化论文/LLM论文2.pdf
-    - 研究笔记: laboratory-work/research-notes.md
 
 # Custom CSS
 extra_css:
