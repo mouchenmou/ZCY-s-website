@@ -93,12 +93,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS61B/Lecture 2 Definiing and Using Classes/Defining and Using Classes.md",
+                "file": "CS61A/Homework/HW3 Recursion, Tree Recursion/Q5 Count_dollars_upward.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Defining and Using Classes"
+              "title": "Q5 Count_dollars_upward"
             }
           }
         ],
@@ -175,7 +175,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS61B/Lecture 2 Definiing and Using Classes/Defining and Using Classes.md",
+                "file": "CS61A/Homework/HW3 Recursion, Tree Recursion/Q5 Count_dollars_upward.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -185,7 +185,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Defining and Using Classes 的反向链接列表"
+              "title": "Q5 Count_dollars_upward 的反向链接列表"
             }
           },
           {
@@ -252,11 +252,11 @@
   },
   "active": "19870e99f931bdd1",
   "lastOpenFiles": [
+    "CS61B/Lecture 2 Definiing and Using Classes/Defining and Using Classes.md",
     "CS61B/Lecture 2 Definiing and Using Classes/附件/Pasted image 20260126232959.png",
     "CS61B/Lecture 2 Definiing and Using Classes/附件/Pasted image 20260126232520.png",
     "CS61B/Lecture 2 Definiing and Using Classes/附件/Pasted image 20260126231549.png",
     "CS61B/Lecture 1 Intro, Hello World Java/Intro 1 Study Guide.md",
-    "CS61B/Lecture 2 Definiing and Using Classes/Defining and Using Classes.md",
     "CS61A/Homework/HW3 Recursion, Tree Recursion/Q5 Count_dollars_upward.md",
     "CS61A/Homework/HW3 Recursion, Tree Recursion/Q4 Count Dollars.md",
     "CS61A/Lecture 10/Lecture 10 Tree Recursion.md",
@@ -279,7 +279,6 @@
     "CS61A/Lecture 9/Lecture 9 Recursion.md",
     "CS61A/Lecture 10",
     "CS61A/Lecture 9/附件/Pasted image 20260124011949.png",
-    "CS61A/Lecture 9/附件/Pasted image 20260124010516.png",
     "CS61A/Lecture 9/附件",
     "CS61A/Lecture 9",
     "CS61A/Lecture 8/附件",
