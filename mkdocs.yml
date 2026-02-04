@@ -133,6 +133,8 @@ nav:
       - Lecture 8 Function Examples: 笔记本/CS61A/Lecture 8/Lecture 8 Function Examples.md
       - Lecture 9 Recursion: 笔记本/CS61A/Lecture 9/Lecture 9 Recursion.md
       - Lecture 10 Tree Recursion: 笔记本/CS61A/Lecture 10/Lecture 10 Tree Recursion.md
+      - Lecture 11 Sequecces: 笔记本/CS61A/Lecture 11/Lecture 11 Sequences.md
+      - Lecture 12 Containers : 笔记本/CS61A/Lecture 12/Lecture 12 Containers.md
     - CS61B 数据结构:
       - 笔记本/CS61B/index.md
       - Lecture 1 - Hello World Java: 笔记本/CS61B/Lecture 1 Intro, Hello World Java/Intro 1 Study Guide.md
@@ -167,6 +169,9 @@ nav:
         - 21.2 堆: 笔记本/CS61B/Lecture 21 Priority Queues and Heaps/21.2 堆.md
       - Lab:
         - Lab1 命令行: 笔记本/CS61B/lab/lab1/命令行.md
+      - Project:
+        - Project0: 
+          - Q2 public static boolean maxTileExists : 笔记本/CS61B/Project/Project0/Q2 public static boolean maxTileExists.md
     - CS70 离散数学:
       - Homework:
         - Homework 1: 笔记本/CS70/Homework/hw01-sol.pdf

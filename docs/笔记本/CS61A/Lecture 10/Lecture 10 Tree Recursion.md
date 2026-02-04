@@ -49,7 +49,6 @@ The number of partitions of a positive integer n, using parts up to size m, is t
             return 0
         elif(m==0):
             return 0
-            return 0
         else:
             with_m=count_partitions(n-m, m)
             without_m=count_partitions(n, m-1)
