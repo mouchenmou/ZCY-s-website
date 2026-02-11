@@ -93,12 +93,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS61B/Project/Project0/Q2 public static boolean maxTileExists.md",
+                "file": "CS61A/Lab/Lab03/Q4.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Q2 public static boolean maxTileExists"
+              "title": "Q4"
             }
           }
         ],
@@ -175,7 +175,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS61B/Project/Project0/Q2 public static boolean maxTileExists.md",
+                "file": "CS61A/Lab/Lab03/Q4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -185,7 +185,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Q2 public static boolean maxTileExists 的反向链接列表"
+              "title": "Q4 的反向链接列表"
             }
           },
           {
@@ -252,20 +252,29 @@
   },
   "active": "19870e99f931bdd1",
   "lastOpenFiles": [
+    "CS61A/Lecture 14/Lecture 14 Trees.md",
+    "CS61A/Lecture 13/Lecture 13 Data Abstraction.md",
+    "CS61A/Lab/Lab03/Q4.md",
+    "CS61A/Lecture 13/附件/截屏2026-02-08 17.48.12.png",
+    "CS61A/Lab/Lab03",
+    "CS61B/Project/Project0/Q2 public static boolean maxTileExists.md",
+    "CS61A/Lecture 14/附件/截屏2026-02-10 15.31.12.png",
+    "CS61A/Lecture 14/附件/截屏2026-02-10 15.28.25.png",
+    "CS61A/Lecture 14/附件/Pasted image 20260210175824.png",
+    "CS61A/Lecture 14/附件",
+    "CS61A/Lecture 14",
+    "CS61A/Lecture 13/附件/截屏2026-02-08 18.01.16.png",
+    "CS61A/Lecture 13/附件/截屏2026-02-08 18.10.17.png",
+    "CS61A/Lecture 13/附件",
+    "CS61A/Lecture 13",
     "CS61A/Lecture 12/Lecture 12 Containers.md",
     "CS61A/Lecture 11/Lecture 11 Sequences.md",
     "CS61A/Lecture 12/附件/Pasted image 20260204143827.png",
     "CS61A/Lecture 12/附件/Pasted image 20260204141417.png",
     "CS61A/Lecture 12/附件/Pasted image 20260204141154.png",
     "CS61A/Lecture 12/附件/Pasted image 20260204135856.png",
-    "CS61A/Lecture 12/附件/Pasted image 20260203213518.png",
-    "CS61A/Lecture 12/附件/Pasted image 20260203212028.png",
-    "CS61A/Lecture 12/附件/Pasted image 20260203211702.png",
     "CS61A/Lecture 12/附件",
     "CS61A/Lecture 12",
-    "CS61A/Lecture 11/附件/Pasted image 20260203020937.png",
-    "CS61A/Lecture 11/附件/Pasted image 20260203020721.png",
-    "CS61A/Lecture 11/附件/Pasted image 20260203020115.png",
     "CS61A/Lecture 11/附件",
     "CS61A/Lecture 10/Lecture 10 Tree Recursion.md",
     "CS61A/Lecture 11",
@@ -275,10 +284,8 @@
     "CS224n/Lecture 1/3.Word2vec introduction.md",
     "CS61A/Homework/HW3 Recursion, Tree Recursion/Q4 Count Dollars.md",
     "CS61A/Homework/HW3 Recursion, Tree Recursion/Q5 Count_dollars_upward.md",
-    "CS61B/Project/Project0/Q2 public static boolean maxTileExists.md",
     "CS61B/Lecture 2 Definiing and Using Classes/Defining and Using Classes.md",
     "CS61B/Project/Project0",
-    "CS61B/Project",
     "CS61B/Lecture 1 Intro, Hello World Java/Intro 1 Study Guide.md",
     "CS61A/Lecture 4/Lecture 4 Higher-Order Function.md",
     "CS61A/Lecture 5/Lecture 5 Environments.md",
@@ -286,17 +293,10 @@
     "CS61A/Lecture 7/Lecture 7 Functional Abstraction.md",
     "CS61A/Lecture 8/Lecture 8 Function Examples.md",
     "CS61A/Homework/未命名.md",
-    "CS61A/Homework/HW3 Recursion, Tree Recursion",
-    "CS61A/Homework",
-    "CS61A/Lecture 10/附件",
     "CS61A/Lecture 9/Lecture 9 Recursion.md",
-    "CS61A/Lecture 10",
     "电子电路基础/第12章 功率放大器/功率放大器.md",
     "CS61B/lab/lab1/命令行.md",
     "CS61A/Lab/Lab02/Q8 I heard of you like functions.md",
-    "CS61A/Lab/Lab02/Q3 Lambda.md",
-    "CS61A/Lab/Lab02/Q1 Short Circuiting.md",
-    "CS61A/Lab/Lab01/Q3 Pick a Digit.md",
     "未命名.canvas"
   ]
 }

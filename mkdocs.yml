@@ -124,6 +124,8 @@ nav:
           - Q1 Short Circuiting: 笔记本/CS61A/Lab/Lab02/Q1 Short Circuiting.md
           - Q3 Lambda: 笔记本/CS61A/Lab/Lab02/Q3 Lambda.md
           - Q8 I heard of you like functions: 笔记本/CS61A/Lab/Lab02/Q8 I heard of you like functions.md
+        - Lab03:
+          - Q4: 笔记本/CS61A/Lab/Lab03/Q4.md
       - Lecture 2 Functions: 笔记本/CS61A/Lecture 2/Lecture 2 Functions.md
       - Lecture 3 Control: 笔记本/CS61A/Lecture 3/Lecture 3 Control.md
       - Lecture 4 Higher-Order Function: 笔记本/CS61A/Lecture 4/Lecture 4 Higher-Order Function.md
@@ -135,6 +137,8 @@ nav:
       - Lecture 10 Tree Recursion: 笔记本/CS61A/Lecture 10/Lecture 10 Tree Recursion.md
       - Lecture 11 Sequecces: 笔记本/CS61A/Lecture 11/Lecture 11 Sequences.md
       - Lecture 12 Containers : 笔记本/CS61A/Lecture 12/Lecture 12 Containers.md
+      - Lecture 13 Data Abstraction: 笔记本/CS61A/Lecture 13/Lecture 13 Data Abstraction.md
+      - Lecture 14 Trees: 笔记本/CS61A/Lecture 14/Lecture 14 Trees.md
     - CS61B 数据结构:
       - 笔记本/CS61B/index.md
       - Lecture 1 - Hello World Java: 笔记本/CS61B/Lecture 1 Intro, Hello World Java/Intro 1 Study Guide.md
