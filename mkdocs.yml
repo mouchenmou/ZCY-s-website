@@ -126,6 +126,14 @@ nav:
           - Q8 I heard of you like functions: 笔记本/CS61A/Lab/Lab02/Q8 I heard of you like functions.md
         - Lab03:
           - Q4: 笔记本/CS61A/Lab/Lab03/Q4.md
+      - Project:
+        - cats:
+          - Problem 1: 笔记本/CS61A/Project/cats/Problem 1.md
+          - Problem 7 minimum_mewtations: 笔记本/CS61A/Project/cats/Problem 7 minimum_mewtations.md
+      - Discussion:
+        - Discussion 4:
+          - Q2 Max product: 笔记本/CS61A/Discussion/Discussion 4/Q2 Max product.md
+          - Q3 Sum Fun: 笔记本/CS61A/Discussion/Discussion 4/Q3 Sum Fun.md
       - Lecture 2 Functions: 笔记本/CS61A/Lecture 2/Lecture 2 Functions.md
       - Lecture 3 Control: 笔记本/CS61A/Lecture 3/Lecture 3 Control.md
       - Lecture 4 Higher-Order Function: 笔记本/CS61A/Lecture 4/Lecture 4 Higher-Order Function.md
