@@ -1,8 +1,8 @@
 ## 1. Implementing the Tree Abstraction
-![[附件/截屏2026-02-10 15.28.25.png]]
+![](附件/截屏2026-02-10%2015.28.25.png)
 
 !!! example
-    ![[附件/Pasted image 20260210175824.png]]
+    ![](附件/Pasted%20image%2020260210175824.png)
     
     ## 报错原因：
     ### 1. 发生了什么？（代码拆解）

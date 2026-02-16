@@ -107,12 +107,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS61B/Lecture 2 Definiing and Using Classes/Defining and Using Classes.md",
+                "file": "CS61A/Discussion/Discussion 4/Q3 Sum Fun.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Defining and Using Classes"
+              "title": "Q3 Sum Fun"
             }
           }
         ],
@@ -189,7 +189,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS61B/Lecture 2 Definiing and Using Classes/Defining and Using Classes.md",
+                "file": "CS61A/Discussion/Discussion 4/Q3 Sum Fun.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +199,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Defining and Using Classes 的反向链接列表"
+              "title": "Q3 Sum Fun 的反向链接列表"
             }
           },
           {
@@ -266,33 +266,35 @@
   },
   "active": "0aa610f01aa8ffd2",
   "lastOpenFiles": [
-    "CS61A/Discussion/Discussion 4/Q3 Sum Fun.md",
     "CS61A/Discussion/Discussion 4/Q2 Max product.md",
-    "CS61A/Project/cats/Problem 7 minimum_mewtations.md",
     "CS61A/Project/cats/Problem 1.md",
-    "CS61A/Discussion/Discussion 4",
-    "CS61A/Discussion",
-    "CS61A/Project/cats/附件/截屏2026-02-13 20.51.51.png",
+    "CS61A/Project/cats/Problem 7 minimum_mewtations.md",
     "CS61A/Project/cats/附件/截屏2026-02-13 20.53.06.png",
-    "CS61A/Project/cats/附件",
-    "未命名",
+    "CS61A/Project/cats/附件/截屏2026-02-13 20.51.51.png",
     "CS61A/Lecture 14/Lecture 14 Trees.md",
-    "CS61A/Project/cats",
-    "CS61A/Project",
-    "CS61A/Lecture 13/Lecture 13 Data Abstraction.md",
-    "CS61A/Lab/Lab03/Q4.md",
-    "CS61A/Lecture 13/附件/截屏2026-02-08 17.48.12.png",
-    "CS61A/Lab/Lab03",
-    "CS61B/Project/Project0/Q2 public static boolean maxTileExists.md",
     "CS61A/Lecture 14/附件/截屏2026-02-10 15.31.12.png",
     "CS61A/Lecture 14/附件/截屏2026-02-10 15.28.25.png",
     "CS61A/Lecture 14/附件/Pasted image 20260210175824.png",
+    "CS61A/Lecture 13/Lecture 13 Data Abstraction.md",
+    "CS61A/Lecture 13/附件/截屏2026-02-08 18.10.17.png",
+    "CS61A/Lecture 13/附件/截屏2026-02-08 18.01.16.png",
+    "CS61A/Lecture 13/附件/截屏2026-02-08 17.48.12.png",
+    "附件/截屏2026-02-08.md",
+    "附件",
+    "CS61A/Lecture 12/Lecture 12 Containers.md",
+    "CS61B/Lecture 2 Definiing and Using Classes/Defining and Using Classes.md",
+    "CS61A/Discussion/Discussion 4/Q3 Sum Fun.md",
+    "CS61A/Discussion/Discussion 4",
+    "CS61A/Discussion",
+    "CS61A/Project/cats/附件",
+    "未命名",
+    "CS61A/Project/cats",
+    "CS61A/Project",
+    "CS61A/Lab/Lab03/Q4.md",
+    "CS61A/Lab/Lab03",
+    "CS61B/Project/Project0/Q2 public static boolean maxTileExists.md",
     "CS61A/Lecture 14/附件",
     "CS61A/Lecture 14",
-    "CS61A/Lecture 13/附件/截屏2026-02-08 18.01.16.png",
-    "CS61A/Lecture 13/附件/截屏2026-02-08 18.10.17.png",
-    "CS61A/Lecture 13/附件",
-    "CS61A/Lecture 12/Lecture 12 Containers.md",
     "CS61A/Lecture 11/Lecture 11 Sequences.md",
     "CS61A/Lecture 12/附件/Pasted image 20260204143827.png",
     "CS61A/Lecture 12/附件/Pasted image 20260204141417.png",
@@ -303,15 +305,12 @@
     "CS224n/Lecture 1/3.Word2vec introduction.md",
     "CS61A/Homework/HW3 Recursion, Tree Recursion/Q4 Count Dollars.md",
     "CS61A/Homework/HW3 Recursion, Tree Recursion/Q5 Count_dollars_upward.md",
-    "CS61B/Lecture 2 Definiing and Using Classes/Defining and Using Classes.md",
     "CS61B/Lecture 1 Intro, Hello World Java/Intro 1 Study Guide.md",
     "CS61A/Lecture 4/Lecture 4 Higher-Order Function.md",
     "CS61A/Lecture 5/Lecture 5 Environments.md",
     "CS61A/Lecture 6/Lecture 6 Sound.md",
     "CS61A/Lecture 7/Lecture 7 Functional Abstraction.md",
     "CS61A/Lecture 8/Lecture 8 Function Examples.md",
-    "CS61A/Homework/未命名.md",
-    "CS61A/Lecture 9/Lecture 9 Recursion.md",
     "未命名.canvas"
   ]
 }
