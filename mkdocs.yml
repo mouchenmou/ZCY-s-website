@@ -151,6 +151,7 @@ nav:
       - 笔记本/CS61B/index.md
       - Lecture 1 - Hello World Java: 笔记本/CS61B/Lecture 1 Intro, Hello World Java/Intro 1 Study Guide.md
       - Lecture 2 - Defining and Using Classes: 笔记本/CS61B/Lecture 2 Definiing and Using Classes/Defining and Using Classes.md
+      - Lecture 3 - Testing: 笔记本/CS61B/Lecture 3 Testing/Lecture 3 Testing.md
       - Lecture 13 - 渐近线1: 笔记本/CS61B/Lecture 13 渐近线1/Big O.md
       - Lecture 14 - 不相交集1:
         - 笔记本/CS61B/Lecture 14 不相交集1(Disjoint Sets)/1.快速查找不相交集（QuickFindDS）.md
