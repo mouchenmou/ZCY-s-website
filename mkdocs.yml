@@ -114,6 +114,8 @@ nav:
         - HW3 Recursion, Tree Recursion:
           - Q4 Count Dollars: 笔记本/CS61A/Homework/HW3 Recursion, Tree Recursion/Q4 Count Dollars.md
           - Q5 Count_dollars_upward: 笔记本/CS61A/Homework/HW3 Recursion, Tree Recursion/Q5 Count_dollars_upward.md
+        - HW4:
+          - Q2 Deep Map: 笔记本/CS61A/Homework/HW4/Q2 Deep Map.md
       - Lab:
         - Lab01:
           - Q1 Return and Print: 笔记本/CS61A/Lab/Lab01/Q1 Return and Print.md
@@ -147,6 +149,9 @@ nav:
       - Lecture 12 Containers : 笔记本/CS61A/Lecture 12/Lecture 12 Containers.md
       - Lecture 13 Data Abstraction: 笔记本/CS61A/Lecture 13/Lecture 13 Data Abstraction.md
       - Lecture 14 Trees: 笔记本/CS61A/Lecture 14/Lecture 14 Trees.md
+      - Lecture 15 Mutability: 笔记本/CS61A/Lecture 15/Lecture 15 Mutability.md
+      - Lecture 16 Iterators: 笔记本/CS61A/Lecture 16/Lecture 16 Iterators.md
+      - Lecture 17 generators: 笔记本/CS61A/Lecture 17/Lecture 17 Generators.md
     - CS61B 数据结构:
       - 笔记本/CS61B/index.md
       - Lecture 1 - Hello World Java: 笔记本/CS61B/Lecture 1 Intro, Hello World Java/Intro 1 Study Guide.md
@@ -250,8 +255,11 @@ nav:
         - 3.5 算数和逻辑操作: 笔记本/深入理解计算机系统/第3章 程序的机器级表示/3.5 算数和逻辑操作.md
         - 3.6 控制: 笔记本/深入理解计算机系统/第3章 程序的机器级表示/3.6 控制.md
     - undergraduate-study/index2.md
-    - E志精品课:
-      - Lecture 1 硬件基础: 笔记本/E志精品课/Lecture 1 硬件基础/硬件基础.md
+    - 信号与系统:
+      - 目录: 笔记本/信号与系统/目录.pdf
+      - 第一章 信号与系统的基本概念: 笔记本/信号与系统/第一章.pdf
+    - 作业:
+      - 第一次作业: 笔记本/信号与系统/作业/作业1.pdf
     - 面向对象程序设计:
       - Lecture 1: 笔记本/面向对象程序设计/Lecture 1/The first C++ program.md
       - Lecture 2: 
