@@ -119,12 +119,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "信号与系统/Matlab编程/离散LTI系统卷积编程.md",
+                "file": "CS61B/Lecture 5/Lecture 5 SLLists, Nested Classes, Sentinel Nodes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "离散LTI系统卷积编程"
+              "title": "Lecture 5 SLLists, Nested Classes, Sentinel Nodes"
             }
           }
         ],
@@ -201,7 +201,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "信号与系统/Matlab编程/离散LTI系统卷积编程.md",
+                "file": "CS61B/Lecture 5/Lecture 5 SLLists, Nested Classes, Sentinel Nodes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "离散LTI系统卷积编程 的反向链接列表"
+              "title": "Lecture 5 SLLists, Nested Classes, Sentinel Nodes 的反向链接列表"
             }
           },
           {
@@ -278,7 +278,23 @@
   },
   "active": "1e4a9bc8679e10b4",
   "lastOpenFiles": [
+    "CS61B/Lecture 4/Lecture 4 References, Recursion, and Lists.md",
     "信号与系统/Matlab编程/离散LTI系统卷积编程.md",
+    "CS61B/Lecture 5/附件/Pasted image 20260303172607.png",
+    "CS61B/Lecture 5/附件/Pasted image 20260303180452.png",
+    "CS61B/Lecture 5/附件/Pasted image 20260303175217.png",
+    "CS61B/Lecture 5/附件/Pasted image 20260303172248.png",
+    "CS61B/Lecture 5/附件/Pasted image 20260303171753.png",
+    "CS61B/Lecture 5/附件/Pasted image 20260303171716.png",
+    "CS61B/Lecture 5/附件/Pasted image 20260303154719.png",
+    "CS61B/Lecture 5/附件/Pasted image 20260303154523.png",
+    "CS61B/Lecture 5/附件",
+    "CS61B/Lecture 5/Lecture 5 SLLists, Nested Classes, Sentinel Nodes.md",
+    "CS61B/Lecture 5",
+    "CS61B/Lecture 4/附件/截屏2026-03-03 09.43.57.png",
+    "CS61B/Lecture 4/附件/截屏2026-03-03 09.21.30.png",
+    "CS61B/Lecture 4/附件",
+    "CS61B/Lecture 4",
     "信号与系统/Matlab编程",
     "信号与系统/第一章.pdf",
     "信号与系统/目录.pdf",
@@ -288,22 +304,8 @@
     "CS61A/Lecture 17/Lecture 17 Generators.md",
     "CS61A/Lecture 16/Lecture 16 Iterators.md",
     "CS61A/Lecture 15/Lecture 15 Mutability.md",
-    "CS61A/Homework/HW4/附件/截屏2026-02-24 17.27.36.png",
-    "CS61A/Homework/HW4/附件/截屏2026-02-24 17.27.36 1.png",
-    "CS61A/Homework/HW4/附件/截屏2026-02-24 17.20.32.png",
-    "CS61A/Homework/HW4/附件/截屏2026-02-24 17.18.59.png",
     "CS61A/Homework/HW4/附件",
     "CS61A/Homework/HW4",
-    "CS61A/Lecture 17/附件/截屏2026-02-23 19.34.34.png",
-    "CS61A/Lecture 17/附件/截屏2026-02-22 20.51.47.png",
-    "CS61A/Lecture 17/附件/截屏2026-02-22 19.33.46.png",
-    "CS61A/Lecture 17/附件",
-    "CS61A/Lecture 17",
-    "CS61A/Lecture 16/附件/截屏2026-02-19 23.19.48.png",
-    "CS61A/Lecture 16/附件/截屏2026-02-19 23.10.26.png",
-    "CS61A/Lecture 16/附件/截屏2026-02-19 23.10.26 1.png",
-    "CS61A/Lecture 16/附件",
-    "CS61A/Lecture 16",
     "CS61B/Lecture 3 Testing/Lecture 3 Testing.md",
     "CS61A/Discussion/Discussion 4/Q3 Sum Fun.md",
     "CS61A/Discussion/Discussion 4/Q2 Max product.md",
@@ -321,9 +323,6 @@
     "CS61A/进度.md",
     "CS224n/Lecture 1/1.Assignment.md",
     "CS224n/Lecture 1/2.Human language and word meaning.md",
-    "CS224n/Lecture 1/3.Word2vec introduction.md",
-    "CS61A/Homework/HW3 Recursion, Tree Recursion/Q5 Count_dollars_upward.md",
-    "CS61B/Lecture 1 Intro, Hello World Java/Intro 1 Study Guide.md",
     "未命名.canvas"
   ]
 }
