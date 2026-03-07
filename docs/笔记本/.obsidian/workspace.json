@@ -112,9 +112,23 @@
               "icon": "lucide-file-text",
               "title": "目录"
             }
+          },
+          {
+            "id": "1e4a9bc8679e10b4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "信号与系统/Matlab编程/离散LTI系统卷积编程.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "离散LTI系统卷积编程"
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -187,7 +201,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "信号与系统/目录.pdf",
+                "file": "信号与系统/Matlab编程/离散LTI系统卷积编程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,7 +211,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "目录 的反向链接列表"
+              "title": "离散LTI系统卷积编程 的反向链接列表"
             }
           },
           {
@@ -262,8 +276,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "0aa610f01aa8ffd2",
+  "active": "1e4a9bc8679e10b4",
   "lastOpenFiles": [
+    "信号与系统/Matlab编程/离散LTI系统卷积编程.md",
+    "信号与系统/Matlab编程",
     "信号与系统/第一章.pdf",
     "信号与系统/目录.pdf",
     "信号与系统/作业/作业1.pdf",
@@ -288,8 +304,6 @@
     "CS61A/Lecture 16/附件/截屏2026-02-19 23.10.26 1.png",
     "CS61A/Lecture 16/附件",
     "CS61A/Lecture 16",
-    "CS61A/Lecture 15/附件",
-    "CS61A/Lecture 15",
     "CS61B/Lecture 3 Testing/Lecture 3 Testing.md",
     "CS61A/Discussion/Discussion 4/Q3 Sum Fun.md",
     "CS61A/Discussion/Discussion 4/Q2 Max product.md",
