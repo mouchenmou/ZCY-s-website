@@ -119,12 +119,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS61B/Lecture 6/2. AList.md",
+                "file": "CS61A/Lecture 18/Lecture 18 Object-Oriented Programming.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2. AList"
+              "title": "Lecture 18 Object-Oriented Programming"
             }
           }
         ],
@@ -201,7 +201,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS61B/Lecture 6/2. AList.md",
+                "file": "CS61A/Lecture 18/Lecture 18 Object-Oriented Programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "2. AList 的反向链接列表"
+              "title": "Lecture 18 Object-Oriented Programming 的反向链接列表"
             }
           },
           {
@@ -278,6 +278,7 @@
   },
   "active": "1e4a9bc8679e10b4",
   "lastOpenFiles": [
+    "CS61B/Lecture 6/2. AList.md",
     "CS61B/Lecture 6/1. DLLists.md",
     "CS61A/Homework/HW5/Q3 stair_ways.md",
     "CS61A/Lecture 19 Attributes/2. Method calls.md",
@@ -303,7 +304,6 @@
     "CS61A/Homework/HW5",
     "CS61A/Homework/6",
     "CS61B/Lecture 6/附件",
-    "CS61B/Lecture 6/2. AList.md",
     "CS61B/Lecture 6",
     "未命名.md",
     "CS61B/Lecture 5/Lecture 5 SLLists, Nested Classes, Sentinel Nodes.md",
