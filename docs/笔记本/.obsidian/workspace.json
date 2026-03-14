@@ -119,12 +119,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS61B/Lecture 5/Lecture 5 SLLists, Nested Classes, Sentinel Nodes.md",
+                "file": "CS61B/Lecture 6/2. AList.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 5 SLLists, Nested Classes, Sentinel Nodes"
+              "title": "2. AList"
             }
           }
         ],
@@ -201,7 +201,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS61B/Lecture 5/Lecture 5 SLLists, Nested Classes, Sentinel Nodes.md",
+                "file": "CS61B/Lecture 6/2. AList.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Lecture 5 SLLists, Nested Classes, Sentinel Nodes 的反向链接列表"
+              "title": "2. AList 的反向链接列表"
             }
           },
           {
@@ -278,34 +278,42 @@
   },
   "active": "1e4a9bc8679e10b4",
   "lastOpenFiles": [
+    "CS61B/Lecture 6/1. DLLists.md",
+    "CS61A/Homework/HW5/Q3 stair_ways.md",
+    "CS61A/Lecture 19 Attributes/2. Method calls.md",
+    "CS61A/Lecture 19 Attributes/1. Class Attributes.md",
+    "CS61A/Lecture 18/Lecture 18 Object-Oriented Programming.md",
+    "机器人视觉、自动驾驶/Lecture 1/未命名.md",
+    "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308224204.png",
+    "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308223715.png",
+    "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308222306.png",
+    "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308222252.png",
+    "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308221614.png",
+    "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308215327.png",
+    "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308213442.png",
+    "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308211726.png",
+    "CS61A/Lecture 19 Attributes/附件",
+    "CS61A/Lecture 19 Attributes",
+    "CS61A/Lecture 18/附件/Pasted image 20260308205130.png",
+    "CS61A/Lecture 18/附件/Pasted image 20260308201219.png",
+    "CS61A/Lecture 18/附件",
+    "CS61A/Lecture 18",
+    "CS61A/Homework/HW5/__MACOSX/HW5",
+    "CS61A/Homework/HW5/__MACOSX",
+    "CS61A/Homework/HW5",
+    "CS61A/Homework/6",
+    "CS61B/Lecture 6/附件",
+    "CS61B/Lecture 6/2. AList.md",
+    "CS61B/Lecture 6",
+    "未命名.md",
+    "CS61B/Lecture 5/Lecture 5 SLLists, Nested Classes, Sentinel Nodes.md",
     "CS61B/Lecture 4/Lecture 4 References, Recursion, and Lists.md",
     "信号与系统/Matlab编程/离散LTI系统卷积编程.md",
-    "CS61B/Lecture 5/附件/Pasted image 20260303172607.png",
-    "CS61B/Lecture 5/附件/Pasted image 20260303180452.png",
-    "CS61B/Lecture 5/附件/Pasted image 20260303175217.png",
-    "CS61B/Lecture 5/附件/Pasted image 20260303172248.png",
-    "CS61B/Lecture 5/附件/Pasted image 20260303171753.png",
-    "CS61B/Lecture 5/附件/Pasted image 20260303171716.png",
-    "CS61B/Lecture 5/附件/Pasted image 20260303154719.png",
-    "CS61B/Lecture 5/附件/Pasted image 20260303154523.png",
-    "CS61B/Lecture 5/附件",
-    "CS61B/Lecture 5/Lecture 5 SLLists, Nested Classes, Sentinel Nodes.md",
-    "CS61B/Lecture 5",
-    "CS61B/Lecture 4/附件/截屏2026-03-03 09.43.57.png",
-    "CS61B/Lecture 4/附件/截屏2026-03-03 09.21.30.png",
-    "CS61B/Lecture 4/附件",
-    "CS61B/Lecture 4",
-    "信号与系统/Matlab编程",
-    "信号与系统/第一章.pdf",
-    "信号与系统/目录.pdf",
-    "信号与系统/作业/作业1.pdf",
     "CS61A/Homework/HW4/Q2 Deep Map.md",
     "CS61A/Homework/HW3 Recursion, Tree Recursion/Q4 Count Dollars.md",
     "CS61A/Lecture 17/Lecture 17 Generators.md",
     "CS61A/Lecture 16/Lecture 16 Iterators.md",
     "CS61A/Lecture 15/Lecture 15 Mutability.md",
-    "CS61A/Homework/HW4/附件",
-    "CS61A/Homework/HW4",
     "CS61B/Lecture 3 Testing/Lecture 3 Testing.md",
     "CS61A/Discussion/Discussion 4/Q3 Sum Fun.md",
     "CS61A/Discussion/Discussion 4/Q2 Max product.md",
@@ -315,14 +323,6 @@
     "CS61A/Lecture 13/Lecture 13 Data Abstraction.md",
     "附件/截屏2026-02-08.md",
     "CS61A/Lecture 12/Lecture 12 Containers.md",
-    "CS61B/Lecture 2 Definiing and Using Classes/Defining and Using Classes.md",
-    "CS61A/Lab/Lab03/Q4.md",
-    "CS61B/Project/Project0/Q2 public static boolean maxTileExists.md",
-    "CS61A/Lecture 11/Lecture 11 Sequences.md",
-    "CS61A/Lecture 10/Lecture 10 Tree Recursion.md",
-    "CS61A/进度.md",
-    "CS224n/Lecture 1/1.Assignment.md",
-    "CS224n/Lecture 1/2.Human language and word meaning.md",
     "未命名.canvas"
   ]
 }

@@ -116,6 +116,8 @@ nav:
           - Q5 Count_dollars_upward: 笔记本/CS61A/Homework/HW3 Recursion, Tree Recursion/Q5 Count_dollars_upward.md
         - HW4:
           - Q2 Deep Map: 笔记本/CS61A/Homework/HW4/Q2 Deep Map.md
+        - HW5:
+          - Q3 stair_ways: 笔记本/CS61A/Homework/HW5/Q3 stair_ways.md
       - Lab:
         - Lab01:
           - Q1 Return and Print: 笔记本/CS61A/Lab/Lab01/Q1 Return and Print.md
@@ -152,38 +154,46 @@ nav:
       - Lecture 15 Mutability: 笔记本/CS61A/Lecture 15/Lecture 15 Mutability.md
       - Lecture 16 Iterators: 笔记本/CS61A/Lecture 16/Lecture 16 Iterators.md
       - Lecture 17 generators: 笔记本/CS61A/Lecture 17/Lecture 17 Generators.md
+      - Lecture 18 Object-Oriented Programming: 笔记本/CS61A/Lecture 18 /Lecture 18 Object-Oriented Programming.md
+      - Lecture 19 Attributes:
+        - 1. Class Attributes: 笔记本/CS61A/Lecture 19 Attributes/1. Class Attributes.md
+        - 2. Method calls: 笔记本/CS61A/Lecture 19 Attributes/2. Method calls.md
+       
     - CS61B 数据结构:
       - 笔记本/CS61B/index.md
-      - Lecture 1 - Hello World Java: 笔记本/CS61B/Lecture 1 Intro, Hello World Java/Intro 1 Study Guide.md
-      - Lecture 2 - Defining and Using Classes: 笔记本/CS61B/Lecture 2 Definiing and Using Classes/Defining and Using Classes.md
-      - Lecture 3 - Testing: 笔记本/CS61B/Lecture 3 Testing/Lecture 3 Testing.md
-      - Lecture 4 - References, Recursion, and Lists: 笔记本/CS61B/Lecture 4/Lecture 4 References, Recursion, and Lists.md
-      - Lecture 5 - SLLists, Nested Classes, Sentinel Nodes: 笔记本/CS61B/Lecture 5/Lecture 5 SLLists, Nested Classes, Sentinel Nodes.md
-      - Lecture 13 - 渐近线1: 笔记本/CS61B/Lecture 13 渐近线1/Big O.md
-      - Lecture 14 - 不相交集1:
+      - Lecture 1 Hello World Java: 笔记本/CS61B/Lecture 1 Intro, Hello World Java/Intro 1 Study Guide.md
+      - Lecture 2 Defining and Using Classes: 笔记本/CS61B/Lecture 2 Definiing and Using Classes/Defining and Using Classes.md
+      - Lecture 3 Testing: 笔记本/CS61B/Lecture 3 Testing/Lecture 3 Testing.md
+      - Lecture 4 References, Recursion, and Lists: 笔记本/CS61B/Lecture 4/Lecture 4 References, Recursion, and Lists.md
+      - Lecture 5 SLLists, Nested Classes, Sentinel Nodes: 笔记本/CS61B/Lecture 5/Lecture 5 SLLists, Nested Classes, Sentinel Nodes.md
+      - Lecture 6 DLLists, AList: 
+        - 1. DDLists: 笔记本/CS61B/Lecture 6/1. DLLists.md
+        - 2. AList: 笔记本/CS61B/Lecture 6/2. AList.md
+      - Lecture 13 渐近线1: 笔记本/CS61B/Lecture 13 渐近线1/Big O.md
+      - Lecture 14 不相交集1:
         - 笔记本/CS61B/Lecture 14 不相交集1(Disjoint Sets)/1.快速查找不相交集（QuickFindDS）.md
         - 笔记本/CS61B/Lecture 14 不相交集1(Disjoint Sets)/2.快速连接法（QuickUnionDS）.md
         - 笔记本/CS61B/Lecture 14 不相交集1(Disjoint Sets)/3.加权快速接头（Weighted Quick Union）.md
-      - Lecture 15 - 不相交集2和渐近线2:
+      - Lecture 15 不相交集2和渐近线2:
         - 15.1 路径压缩: 笔记本/CS61B/Lecture 15 不相交集2和渐近线2/15.1路径压缩(WQU with Path Compression).md
         - 15.2 渐近线2: 笔记本/CS61B/Lecture 15 不相交集2和渐近线2/15.2 渐近线2.md
-      - Lecture 16 - 二分查找法和BSTs:
+      - Lecture 16 二分查找法和BSTs:
         - 16.1 二分查找法: 笔记本/CS61B/Lecture 16 二分查找法，ADTs，BSTs/二分查找法（BinarySearch）.md
         - 16.2 归并排序: 笔记本/CS61B/Lecture 16 二分查找法，ADTs，BSTs/归并排序（Mergesort）.md
         - 16.3 BSTs: 笔记本/CS61B/Lecture 16 二分查找法，ADTs，BSTs/BSTs.md
-      - Lecture 17 - 二叉搜索树:
+      - Lecture 17 二叉搜索树:
         - 17.1 BST的insert: 笔记本/CS61B/Lecture 17 二叉搜索树，Set and Maps，B-trees/1.BST的insert.md
         - 17.2 BST的delete: 笔记本/CS61B/Lecture 17 二叉搜索树，Set and Maps，B-trees/2.BST删除节点.md
         - 17.3 集合与映射: 笔记本/CS61B/Lecture 17 二叉搜索树，Set and Maps，B-trees/3.集合与映射（Set and Maps）.md
         - 17.4 二叉搜索树的高度和最坏情况: 笔记本/CS61B/Lecture 17 二叉搜索树，Set and Maps，B-trees/4.二叉搜索树的高度和最坏情况.md
         - 17.5 B-Trees: 笔记本/CS61B/Lecture 17 二叉搜索树，Set and Maps，B-trees/5.B-Trees.md
-      - Lecture 18 - 旋转树和红黑树:
+      - Lecture 18 旋转树和红黑树:
         - 18.1 Definition of Tree Rotation: 笔记本/CS61B/Lecture 18 旋转树和红黑树/1.Definition of Tree Rotation.md
         - 18.2 红黑树: 笔记本/CS61B/Lecture 18 旋转树和红黑树/2.红黑树.md
-      - Lecture 19 - 哈希算法1:
+      - Lecture 19 哈希算法1:
         - 19.1 BobaCounterSet: 笔记本/CS61B/Lecture 19 哈希算法1/19.1 BobaCounterSet.md
         - 19.2 Dynamic Array of list: 笔记本/CS61B/Lecture 19 哈希算法1/19.2 Dynamic Array Of Lists Set.md
-      - Lecture 20 - 哈希算法2: 笔记本/CS61B/Lecture 20 哈希算法2/20 关于哈希算法的深解析.md
+      - Lecture 20 哈希算法2: 笔记本/CS61B/Lecture 20 哈希算法2/20 关于哈希算法的深解析.md
       - Lecture 21 Priority Queues and Heaps:
         - 21.1 优先队列: 笔记本/CS61B/Lecture 21 Priority Queues and Heaps/21.1 优先队列.md
         - 21.2 堆: 笔记本/CS61B/Lecture 21 Priority Queues and Heaps/21.2 堆.md
