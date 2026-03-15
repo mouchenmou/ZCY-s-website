@@ -119,12 +119,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS61A/Lecture 18/Lecture 18 Object-Oriented Programming.md",
+                "file": "CS61B/Lecture 6/2. Array.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 18 Object-Oriented Programming"
+              "title": "2. Array"
             }
           }
         ],
@@ -201,7 +201,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS61A/Lecture 18/Lecture 18 Object-Oriented Programming.md",
+                "file": "CS61B/Lecture 6/2. Array.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Lecture 18 Object-Oriented Programming 的反向链接列表"
+              "title": "2. Array 的反向链接列表"
             }
           },
           {
@@ -278,12 +278,12 @@
   },
   "active": "1e4a9bc8679e10b4",
   "lastOpenFiles": [
-    "CS61B/Lecture 6/2. AList.md",
+    "CS61A/Lecture 18/Lecture 18 Object-Oriented Programming.md",
+    "CS61B/Lecture 6/2. Array.md",
     "CS61B/Lecture 6/1. DLLists.md",
     "CS61A/Homework/HW5/Q3 stair_ways.md",
     "CS61A/Lecture 19 Attributes/2. Method calls.md",
     "CS61A/Lecture 19 Attributes/1. Class Attributes.md",
-    "CS61A/Lecture 18/Lecture 18 Object-Oriented Programming.md",
     "机器人视觉、自动驾驶/Lecture 1/未命名.md",
     "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308224204.png",
     "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308223715.png",
