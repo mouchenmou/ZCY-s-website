@@ -170,8 +170,8 @@ nav:
         - 1. DDLists: 笔记本/CS61B/Lecture 6/1. DLLists.md
         - 2. Array: 笔记本/CS61B/Lecture 6/2. Array.md
       - Lecture 7 ALists, Resizing, vs. SLists:
-        - 1. AList: 笔记本/CS61B/Lecture 7/1. AList.md
-        - 2. Array Resizing: 笔记本/CS61B/Lecture 7/2. Array Resizing.md
+        - 1. AList: 笔记本/CS61B/Lecture 7 ALists, Resizing, vs. SLists/1. AList.md
+        - 2. Array Resizing: 笔记本/CS61B/Lecture 7 ALists, Resizing, vs. SLists/2. Array Resizing.md
       - Lecture 13 渐近线1: 笔记本/CS61B/Lecture 13 渐近线1/Big O.md
       - Lecture 14 不相交集1:
         - 笔记本/CS61B/Lecture 14 不相交集1(Disjoint Sets)/1.快速查找不相交集（QuickFindDS）.md
