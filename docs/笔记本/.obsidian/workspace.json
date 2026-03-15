@@ -119,12 +119,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS61B/Lecture 6/2. Array.md",
+                "file": "CS61B/Lecture 7 ALists, Resizing, vs. SLists/2. Array Resizing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2. Array"
+              "title": "2. Array Resizing"
             }
           }
         ],
@@ -201,7 +201,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS61B/Lecture 6/2. Array.md",
+                "file": "CS61B/Lecture 7 ALists, Resizing, vs. SLists/2. Array Resizing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "2. Array 的反向链接列表"
+              "title": "2. Array Resizing 的反向链接列表"
             }
           },
           {
@@ -278,8 +278,15 @@
   },
   "active": "1e4a9bc8679e10b4",
   "lastOpenFiles": [
-    "CS61A/Lecture 18/Lecture 18 Object-Oriented Programming.md",
+    "CS61B/Lecture 7 ALists, Resizing, vs. SLists/1. AList.md",
+    "CS61B/Lecture 7 ALists, Resizing, vs. SLists/2. Array Resizing.md",
+    "CS61B/Lecture 7 ALists, Resizing, vs. SLists/附件/Pasted image 20260315154912.png",
+    "CS61B/Lecture 7 ALists, Resizing, vs. SLists/附件/Pasted image 20260315154850.png",
+    "CS61B/Lecture 7 ALists, Resizing, vs. SLists/附件",
+    "CS61B/index.md",
     "CS61B/Lecture 6/2. Array.md",
+    "CS61B/Lecture 7 ALists, Resizing, vs. SLists",
+    "CS61A/Lecture 18/Lecture 18 Object-Oriented Programming.md",
     "CS61B/Lecture 6/1. DLLists.md",
     "CS61A/Homework/HW5/Q3 stair_ways.md",
     "CS61A/Lecture 19 Attributes/2. Method calls.md",
@@ -295,16 +302,12 @@
     "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308211726.png",
     "CS61A/Lecture 19 Attributes/附件",
     "CS61A/Lecture 19 Attributes",
-    "CS61A/Lecture 18/附件/Pasted image 20260308205130.png",
-    "CS61A/Lecture 18/附件/Pasted image 20260308201219.png",
     "CS61A/Lecture 18/附件",
     "CS61A/Lecture 18",
     "CS61A/Homework/HW5/__MACOSX/HW5",
     "CS61A/Homework/HW5/__MACOSX",
     "CS61A/Homework/HW5",
     "CS61A/Homework/6",
-    "CS61B/Lecture 6/附件",
-    "CS61B/Lecture 6",
     "未命名.md",
     "CS61B/Lecture 5/Lecture 5 SLLists, Nested Classes, Sentinel Nodes.md",
     "CS61B/Lecture 4/Lecture 4 References, Recursion, and Lists.md",
@@ -320,9 +323,6 @@
     "CS61A/Project/cats/Problem 1.md",
     "CS61A/Project/cats/Problem 7 minimum_mewtations.md",
     "CS61A/Lecture 14/Lecture 14 Trees.md",
-    "CS61A/Lecture 13/Lecture 13 Data Abstraction.md",
-    "附件/截屏2026-02-08.md",
-    "CS61A/Lecture 12/Lecture 12 Containers.md",
     "未命名.canvas"
   ]
 }
