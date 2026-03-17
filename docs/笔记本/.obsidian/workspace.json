@@ -117,14 +117,12 @@
             "id": "1e4a9bc8679e10b4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "CS61B/Lecture 7 ALists, Resizing, vs. SLists/2. Array Resizing.md",
-                "mode": "source",
-                "source": false
+                "file": "流体力学/流体力学第一章.pdf"
               },
-              "icon": "lucide-file",
-              "title": "2. Array Resizing"
+              "icon": "lucide-file-text",
+              "title": "流体力学第一章"
             }
           }
         ],
@@ -201,7 +199,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS61B/Lecture 7 ALists, Resizing, vs. SLists/2. Array Resizing.md",
+                "file": "流体力学/流体力学第一章.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +209,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "2. Array Resizing 的反向链接列表"
+              "title": "流体力学第一章 的反向链接列表"
             }
           },
           {
@@ -278,8 +276,11 @@
   },
   "active": "1e4a9bc8679e10b4",
   "lastOpenFiles": [
-    "CS61B/Lecture 7 ALists, Resizing, vs. SLists/1. AList.md",
     "CS61B/Lecture 7 ALists, Resizing, vs. SLists/2. Array Resizing.md",
+    "流体力学/流体力学第一章.pdf",
+    "流体力学/流体力学第二章.pdf",
+    "流体力学",
+    "CS61B/Lecture 7 ALists, Resizing, vs. SLists/1. AList.md",
     "CS61B/Lecture 7 ALists, Resizing, vs. SLists/附件/Pasted image 20260315154912.png",
     "CS61B/Lecture 7 ALists, Resizing, vs. SLists/附件/Pasted image 20260315154850.png",
     "CS61B/Lecture 7 ALists, Resizing, vs. SLists/附件",
@@ -305,9 +306,6 @@
     "CS61A/Lecture 18/附件",
     "CS61A/Lecture 18",
     "CS61A/Homework/HW5/__MACOSX/HW5",
-    "CS61A/Homework/HW5/__MACOSX",
-    "CS61A/Homework/HW5",
-    "CS61A/Homework/6",
     "未命名.md",
     "CS61B/Lecture 5/Lecture 5 SLLists, Nested Classes, Sentinel Nodes.md",
     "CS61B/Lecture 4/Lecture 4 References, Recursion, and Lists.md",
