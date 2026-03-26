@@ -19,8 +19,8 @@
 
 ### 举个例子：
 
-- **`0 or 3` returns the value 0** : Since 0 is false and comfores to Rule 2, the returned value is determined by the left value, which is 0.
-- **`1 or 3` returns the value 3** : Since 1 is false and comfores to Rule 3, the returned value is determined by the right value, which is 3.
+- **`0 or 3` returns the value 3** : Since 0 is false and comfores to Rule 3, the returned value is determined by the right value, which is 3.
+- **`1 or 3` returns the value 3** : Since 1 is true and comfores to Rule 2, the returned value is determined by the right value, which is 1.
 
 ---
 

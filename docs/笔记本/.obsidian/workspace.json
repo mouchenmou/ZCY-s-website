@@ -117,12 +117,14 @@
             "id": "1e4a9bc8679e10b4",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "信号与系统/第2章/信号与系统第二章.pdf"
+                "file": "CS61A/Lecture 4/Lecture 4 Higher-Order Function.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "信号与系统第二章"
+              "icon": "lucide-file",
+              "title": "Lecture 4 Higher-Order Function"
             }
           }
         ],
@@ -199,7 +201,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "信号与系统/第2章/信号与系统第二章.pdf",
+                "file": "CS61A/Lecture 4/Lecture 4 Higher-Order Function.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -209,7 +211,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "信号与系统第二章 的反向链接列表"
+              "title": "Lecture 4 Higher-Order Function 的反向链接列表"
             }
           },
           {
@@ -274,26 +276,42 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "0c3136469588a543",
+  "active": "1e4a9bc8679e10b4",
   "lastOpenFiles": [
+    "CS61A/Lecture 3/Lecture 3 Control.md",
+    "CS61A/Lecture 2/Lecture 2 Functions.md",
+    "CS61A/Lecture 13/Lecture 13 Data Abstraction.md",
+    "CS61A/Lecture 12/Lecture 12 Containers.md",
+    "CS61A/Lecture 11/Lecture 11 Sequences.md",
+    "CS61A/Lecture 10/Lecture 10 Tree Recursion.md",
+    "CS61A/Lecture 9/Lecture 9 Recursion.md",
+    "CS61A/Lecture 8/Lecture 8 Function Examples.md",
+    "CS61A/Lecture 7/Lecture 7 Functional Abstraction.md",
+    "CS61A/Lecture 6/Lecture 6 Sound.md",
+    "CS61A/Lecture 5/Lecture 5 Environments.md",
+    "CS61A/Lecture 4/Lecture 4 Higher-Order Function.md",
+    "CS61B/Lecture 4/Lecture 4 References, Recursion, and Lists.md",
+    "CS61B/Lecture 7 ALists, Resizing, vs. SLists/2. Array Resizing.md",
+    "CS61B/Lecture 7 ALists, Resizing, vs. SLists/1. AList.md",
+    "CS61B/Lecture 6/2. Array.md",
+    "CS61B/Lecture 6/1. DLLists.md",
+    "CS61A/Lecture 14/Lecture 14 Trees.md",
+    "CS61A/Lecture 18/Lecture 18 Object-Oriented Programming.md",
+    "CS61A/Lecture 17/Lecture 17 Generators.md",
+    "CS61A/Lecture 15/Lecture 15 Mutability.md",
     "信号与系统/第1章/信号与系统第一章.pdf",
     "信号与系统/第2章/信号与系统第二章.pdf",
     "信号与系统/第2章",
     "信号与系统/第1章",
     "信号与系统/目录.pdf",
     "流体力学/流体力学第一章.pdf",
-    "CS61B/Lecture 7 ALists, Resizing, vs. SLists/2. Array Resizing.md",
     "流体力学/流体力学第二章.pdf",
     "流体力学",
-    "CS61B/Lecture 7 ALists, Resizing, vs. SLists/1. AList.md",
     "CS61B/Lecture 7 ALists, Resizing, vs. SLists/附件/Pasted image 20260315154912.png",
     "CS61B/Lecture 7 ALists, Resizing, vs. SLists/附件/Pasted image 20260315154850.png",
     "CS61B/Lecture 7 ALists, Resizing, vs. SLists/附件",
     "CS61B/index.md",
-    "CS61B/Lecture 6/2. Array.md",
     "CS61B/Lecture 7 ALists, Resizing, vs. SLists",
-    "CS61A/Lecture 18/Lecture 18 Object-Oriented Programming.md",
-    "CS61B/Lecture 6/1. DLLists.md",
     "CS61A/Homework/HW5/Q3 stair_ways.md",
     "CS61A/Lecture 19 Attributes/2. Method calls.md",
     "CS61A/Lecture 19 Attributes/1. Class Attributes.md",
@@ -306,22 +324,6 @@
     "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308215327.png",
     "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308213442.png",
     "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308211726.png",
-    "CS61A/Lecture 19 Attributes/附件",
-    "未命名.md",
-    "CS61B/Lecture 5/Lecture 5 SLLists, Nested Classes, Sentinel Nodes.md",
-    "CS61B/Lecture 4/Lecture 4 References, Recursion, and Lists.md",
-    "信号与系统/Matlab编程/离散LTI系统卷积编程.md",
-    "CS61A/Homework/HW4/Q2 Deep Map.md",
-    "CS61A/Homework/HW3 Recursion, Tree Recursion/Q4 Count Dollars.md",
-    "CS61A/Lecture 17/Lecture 17 Generators.md",
-    "CS61A/Lecture 16/Lecture 16 Iterators.md",
-    "CS61A/Lecture 15/Lecture 15 Mutability.md",
-    "CS61B/Lecture 3 Testing/Lecture 3 Testing.md",
-    "CS61A/Discussion/Discussion 4/Q3 Sum Fun.md",
-    "CS61A/Discussion/Discussion 4/Q2 Max product.md",
-    "CS61A/Project/cats/Problem 1.md",
-    "CS61A/Project/cats/Problem 7 minimum_mewtations.md",
-    "CS61A/Lecture 14/Lecture 14 Trees.md",
     "未命名.canvas"
   ]
 }

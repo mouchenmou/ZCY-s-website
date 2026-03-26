@@ -11,27 +11,27 @@ The thing that's special about a generator is that it's returned from a generato
 Generator函数返回的是一个Generator，但是在执行的过程中它们经常处理迭代器。
 
 !!! explanation "Generators can `Yield from` Iterators"
-	    ![](附件/截屏2026-02-22%2020.51.47.png)
-	    
-	    ### 不使用`yield from`:
-	    ```Python
-	        def countdown(k):
-	            if k > 0:
-	                 yield k
-	                 for x in countdown(k-1):
-	                     yield x
-	        
-	    ```
-	    
-	    ---
-	    
-	    ###使用`yield from`
-	    ```Python
-	        def countdown(x):
-	            if x>0:
+    ![](附件/截屏2026-02-22%2020.51.47.png)
+	### 不使用`yield from`:
+	
+	```Python
+	    def countdown(k):
+	        if k > 0:
+	            yield k
+	            for x in countdown(k-1):
 	                yield x
-	                yield from countdown(x-1)
-	    ```
+	        
+	```
+	    
+	---
+	    
+	###使用`yield from`
+	```Python
+	    def countdown(x):
+	        if x>0:
+	            yield x
+	            yield from countdown(x-1)
+	```
 
 !!! explanation "Yield partition"
     partitions之前在递归的时候讲过，现在将用`yield from`来实现

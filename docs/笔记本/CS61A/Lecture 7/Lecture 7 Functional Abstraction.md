@@ -10,6 +10,7 @@ A lambda function's parent is the current frame in which the lambda expression i
 Functional abstraction is giving a name to some computational process and then referring to that process as a whole without worrying about its implementation details.（函数抽象就是给某个计算过程起个名字，然后整个过程都用这个名字来引用，而不用担心具体的实现细节。）
 
 !!! example 
+    
     ```Python
         def square:
             return mul(x, y)
@@ -22,21 +23,24 @@ Functional abstraction is giving a name to some computational process and then r
         
         1. Square takes one argument. Yes(如果不知道的话就没法调用)
         2. Square has the intrinsic name square. No(固有名称只是为了让人类能够检查函数的名称而存在，只要它绑定到当前环境中的名称为square，任何带有任何固有名称的函数都可行。)
-            - ```Python
-                def f(x):  # 固有名称是 'f'
-                    return x * x
+        
+    ```Python
+        def f(x):  # 固有名称是 'f'
+            return x * x
                     
-                # 把函数 f 赋值给变量名 square
-                square = f 
-                
-                def sum_square(x, y):
-                    return square(x) + square(y) # sum_square 在这里调用了 square
-                ```
-                在这个例子中：
-                - `sum_square` 内部写的是 `square(x)`。
-                - 当程序运行到这一行时，它会在当前环境中找名为 `square` 的东西。
-                - 它找到了之前赋值给 `square` 的那个函数对象。
-                - 哪怕那个函数对象的“真名”（固有名称）其实是 `f`，`sum_square` 也能运行得很好。
+        # 把函数 f 赋值给变量名 square
+        square = f 
+        def sum_square(x, y):
+            return square(x) + square(y) # sum_square 在这里调用了 square
+    ```
+    
+    在这个例子中：
+    
+    - `sum_square` 内部写的是 `square(x)`。
+    - 当程序运行到这一行时，它会在当前环境中找名为 `square` 的东西。
+    - 它找到了之前赋值给 `square` 的那个函数对象。
+    - 哪怕那个函数对象的“真名”（固有名称）其实是 `f`，`sum_square` 也能运行得很好。
+        
         3. Square computes the square of a number. Yes
         4. Square computes the square by calling mul. No
     
