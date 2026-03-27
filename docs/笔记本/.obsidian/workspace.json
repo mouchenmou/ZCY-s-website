@@ -126,9 +126,21 @@
               "icon": "lucide-file",
               "title": "Lecture 4 Higher-Order Function"
             }
+          },
+          {
+            "id": "f30194b4f27cd478",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "信号与系统/第2章/信号与系统第二章.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "信号与系统第二章"
+            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -201,7 +213,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS61A/Lecture 4/Lecture 4 Higher-Order Function.md",
+                "file": "信号与系统/第2章/信号与系统第二章.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +223,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Lecture 4 Higher-Order Function 的反向链接列表"
+              "title": "信号与系统第二章 的反向链接列表"
             }
           },
           {
@@ -276,7 +288,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "1e4a9bc8679e10b4",
+  "active": "f30194b4f27cd478",
   "lastOpenFiles": [
     "CS61A/Lecture 3/Lecture 3 Control.md",
     "CS61A/Lecture 2/Lecture 2 Functions.md",
@@ -303,7 +315,7 @@
     "信号与系统/第2章/信号与系统第二章.pdf",
     "信号与系统/第2章",
     "信号与系统/第1章",
-    "信号与系统/目录.pdf",
+    "CS61A/目录.pdf",
     "流体力学/流体力学第一章.pdf",
     "流体力学/流体力学第二章.pdf",
     "流体力学",
