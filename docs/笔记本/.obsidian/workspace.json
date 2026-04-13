@@ -131,12 +131,14 @@
             "id": "f30194b4f27cd478",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "信号与系统/第2章/信号与系统第二章.pdf"
+                "file": "CS61B/Lecture 21 Priority Queues and Heaps/21.1 优先队列.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "信号与系统第二章"
+              "icon": "lucide-file",
+              "title": "21.1 优先队列"
             }
           }
         ],
@@ -213,7 +215,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "信号与系统/第2章/信号与系统第二章.pdf",
+                "file": "CS61B/Lecture 21 Priority Queues and Heaps/21.1 优先队列.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -223,7 +225,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "信号与系统第二章 的反向链接列表"
+              "title": "21.1 优先队列 的反向链接列表"
             }
           },
           {
@@ -290,6 +292,9 @@
   },
   "active": "f30194b4f27cd478",
   "lastOpenFiles": [
+    "CS61B/Lecture 21 Priority Queues and Heaps/21.2 堆.md",
+    "CS61B/Lecture 21 Priority Queues and Heaps/21.1 优先队列.md",
+    "信号与系统/第2章/信号与系统第二章.pdf",
     "CS61A/Lecture 3/Lecture 3 Control.md",
     "CS61A/Lecture 2/Lecture 2 Functions.md",
     "CS61A/Lecture 13/Lecture 13 Data Abstraction.md",
@@ -312,7 +317,6 @@
     "CS61A/Lecture 17/Lecture 17 Generators.md",
     "CS61A/Lecture 15/Lecture 15 Mutability.md",
     "信号与系统/第1章/信号与系统第一章.pdf",
-    "信号与系统/第2章/信号与系统第二章.pdf",
     "信号与系统/第2章",
     "信号与系统/第1章",
     "CS61A/目录.pdf",
@@ -326,8 +330,6 @@
     "CS61B/Lecture 7 ALists, Resizing, vs. SLists",
     "CS61A/Homework/HW5/Q3 stair_ways.md",
     "CS61A/Lecture 19 Attributes/2. Method calls.md",
-    "CS61A/Lecture 19 Attributes/1. Class Attributes.md",
-    "机器人视觉、自动驾驶/Lecture 1/未命名.md",
     "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308224204.png",
     "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308223715.png",
     "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308222306.png",
