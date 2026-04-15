@@ -133,12 +133,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS61B/Lecture 21 Priority Queues and Heaps/21.1 优先队列.md",
+                "file": "CS70/Lecture 2 Proofs/Proofs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "21.1 优先队列"
+              "title": "Proofs"
             }
           }
         ],
@@ -215,7 +215,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS61B/Lecture 21 Priority Queues and Heaps/21.1 优先队列.md",
+                "file": "CS70/Lecture 2 Proofs/Proofs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -225,7 +225,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "21.1 优先队列 的反向链接列表"
+              "title": "Proofs 的反向链接列表"
             }
           },
           {
@@ -292,8 +292,12 @@
   },
   "active": "f30194b4f27cd478",
   "lastOpenFiles": [
-    "CS61B/Lecture 21 Priority Queues and Heaps/21.2 堆.md",
+    "CS70/Lecture 2 Proofs/1.Proofs.md",
+    "CS70/Lecture 1/2. Propositional logical.md",
+    "CS70/Lecture 1/1. Introduction.md",
+    "CS70/Lecture 2 Proofs/Proofs.md",
     "CS61B/Lecture 21 Priority Queues and Heaps/21.1 优先队列.md",
+    "CS61B/Lecture 21 Priority Queues and Heaps/21.2 堆.md",
     "信号与系统/第2章/信号与系统第二章.pdf",
     "CS61A/Lecture 3/Lecture 3 Control.md",
     "CS61A/Lecture 2/Lecture 2 Functions.md",
@@ -315,7 +319,6 @@
     "CS61A/Lecture 14/Lecture 14 Trees.md",
     "CS61A/Lecture 18/Lecture 18 Object-Oriented Programming.md",
     "CS61A/Lecture 17/Lecture 17 Generators.md",
-    "CS61A/Lecture 15/Lecture 15 Mutability.md",
     "信号与系统/第1章/信号与系统第一章.pdf",
     "信号与系统/第2章",
     "信号与系统/第1章",
@@ -326,10 +329,7 @@
     "CS61B/Lecture 7 ALists, Resizing, vs. SLists/附件/Pasted image 20260315154912.png",
     "CS61B/Lecture 7 ALists, Resizing, vs. SLists/附件/Pasted image 20260315154850.png",
     "CS61B/Lecture 7 ALists, Resizing, vs. SLists/附件",
-    "CS61B/index.md",
     "CS61B/Lecture 7 ALists, Resizing, vs. SLists",
-    "CS61A/Homework/HW5/Q3 stair_ways.md",
-    "CS61A/Lecture 19 Attributes/2. Method calls.md",
     "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308224204.png",
     "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308223715.png",
     "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308222306.png",

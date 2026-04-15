@@ -256,7 +256,7 @@ nav:
         - 1.1 Introduction: 笔记本/CS70/Lecture 1/1.Introduction.md
         - 1.2 Propositional logical: 笔记本/CS70/Lecture 1/2.Propositional logical.md
       - Lecture 2:
-        - 2.1 Proofs: 笔记本/CS70/Lecture 2/1.Proofs.md
+        - 2.1 Proofs: 笔记本/CS70/Lecture 2/Proofs.md
     - CS224n 深度学习:
       - Lecture 1: 
         - 1 Assignment: 笔记本/CS224n/Lecture 1/1.Assignment.md
