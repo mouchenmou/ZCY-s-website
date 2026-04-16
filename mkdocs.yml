@@ -207,6 +207,7 @@ nav:
           - Q2 public static boolean maxTileExists : 笔记本/CS61B/Project/Project0/Q2 public static boolean maxTileExists.md
     - CS70 离散数学:
       - Homework:
+        - Homework 0: 笔记本/CS70/Homework/hw00-sol.pdf
         - Homework 1: 笔记本/CS70/Homework/hw01-sol.pdf
         - Homework 2: 笔记本/CS70/Homework/hw02-sol.pdf
         - Homework 3: 笔记本/CS70/Homework/hw03-sol.pdf
@@ -223,7 +224,8 @@ nav:
         - Homework 14: 笔记本/CS70/Homework/hw14-sol.pdf
         - Homework 15: 笔记本/CS70/Homework/hw15-sol.pdf
       - Discussions:
-        - Discussion 0: 笔记本/CS70/Discussions/dis0-sol.pdf
+        - Discussion 0a: 笔记本/CS70/Discussions/dis00a-sol.pdf
+        - Discussion 0b: 笔记本/CS70/Discussions/dis00b-sol.pdf
         - Discussion 1a: 笔记本/CS70/Discussions/dis01a-sol.pdf
         - Discussion 1b: 笔记本/CS70/Discussions/dis01b-sol.pdf
         - Discussion 2a: 笔记本/CS70/Discussions/dis02a-sol.pdf

@@ -131,14 +131,12 @@
             "id": "f30194b4f27cd478",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "CS70/Lecture/Lecture 3 Induction/Induction.md",
-                "mode": "source",
-                "source": false
+                "file": "CS70/Homework/hw07-sol.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Induction"
+              "icon": "lucide-file-text",
+              "title": "hw07-sol"
             }
           }
         ],
@@ -215,7 +213,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS70/Lecture/Lecture 3 Induction/Induction.md",
+                "file": "CS70/Homework/hw07-sol.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -225,7 +223,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Induction 的反向链接列表"
+              "title": "hw07-sol 的反向链接列表"
             }
           },
           {
@@ -292,16 +290,24 @@
   },
   "active": "f30194b4f27cd478",
   "lastOpenFiles": [
-    "CS70/Lecture/Lecture 2 Proofs/Proofs.md",
+    "CS70/Homework/未确认 413694.crdownload",
+    "CS70/Homework/未确认 688054.crdownload",
+    "CS70/Homework/未确认 226238.crdownload",
+    "CS70/Homework/hw06-sol.pdf",
+    "CS70/Homework/hw07-sol.pdf",
+    "CS70/Homework/hw08-sol.pdf",
+    "CS70/Discussions/dis12a-sol.pdf",
+    "CS70/Homework/未确认 856660.crdownload",
+    "CS70/Homework/未确认 353840.crdownload",
+    "CS70/Homework/未确认 685067.crdownload",
+    "CS70/Homework/未确认 922309.crdownload",
     "CS70/Lecture/Lecture 3 Induction/Induction.md",
+    "CS70/Lecture/Lecture 2 Proofs/Proofs.md",
     "CS70/Lecture/Lecture 2 Proofs/1.Proofs.md",
     "CS70/Lecture/Lecture 1 Introduction, Propositional logical/2. Propositional logical.md",
     "CS70/Lecture/Lecture 1 Introduction, Propositional logical/1. Introduction.md",
-    "CS70/Lecture",
-    "CS70/Lecture/Lecture 3 Induction",
     "CS61B/Lecture 21 Priority Queues and Heaps/21.1 优先队列.md",
     "CS61B/Lecture 21 Priority Queues and Heaps/21.2 堆.md",
-    "信号与系统/第2章/信号与系统第二章.pdf",
     "CS61A/Lecture 3/Lecture 3 Control.md",
     "CS61A/Lecture 2/Lecture 2 Functions.md",
     "CS61A/Lecture 13/Lecture 13 Data Abstraction.md",
@@ -320,14 +326,6 @@
     "CS61B/Lecture 6/2. Array.md",
     "CS61B/Lecture 6/1. DLLists.md",
     "CS61A/Lecture 14/Lecture 14 Trees.md",
-    "CS61A/Lecture 18/Lecture 18 Object-Oriented Programming.md",
-    "信号与系统/第1章/信号与系统第一章.pdf",
-    "信号与系统/第2章",
-    "信号与系统/第1章",
-    "CS61A/目录.pdf",
-    "流体力学/流体力学第一章.pdf",
-    "流体力学/流体力学第二章.pdf",
-    "流体力学",
     "CS61B/Lecture 7 ALists, Resizing, vs. SLists/附件/Pasted image 20260315154912.png",
     "CS61B/Lecture 7 ALists, Resizing, vs. SLists/附件/Pasted image 20260315154850.png",
     "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308224204.png",
