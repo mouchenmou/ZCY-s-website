@@ -10,7 +10,7 @@
 
 ### 强数学归纳法：
 1. **Basecase**: 证明 $P(0)$ 成立
-2. **Inductive Hypothesis**: 假设所有$j<=k,$  $P(j)$ 都成立
+2. **Inductive Hypothesis**: 假设所有$j \le k,$  $P(j)$ 都成立
 3. **Inductive step**: 证明 $P(k+1)$ 成立
 
 接下来证明fundamental theorem of Arithmetic：

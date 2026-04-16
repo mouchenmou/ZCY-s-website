@@ -131,12 +131,14 @@
             "id": "f30194b4f27cd478",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "CS70/Homework/hw07-sol.pdf"
+                "file": "CS70/Lecture/Lecture 3 Induction/Induction.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "hw07-sol"
+              "icon": "lucide-file",
+              "title": "Induction"
             }
           }
         ],
@@ -213,7 +215,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS70/Homework/hw07-sol.pdf",
+                "file": "CS70/Lecture/Lecture 3 Induction/Induction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -223,7 +225,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "hw07-sol 的反向链接列表"
+              "title": "Induction 的反向链接列表"
             }
           },
           {
@@ -290,11 +292,11 @@
   },
   "active": "f30194b4f27cd478",
   "lastOpenFiles": [
+    "CS70/Homework/hw07-sol.pdf",
     "CS70/Homework/未确认 413694.crdownload",
     "CS70/Homework/未确认 688054.crdownload",
     "CS70/Homework/未确认 226238.crdownload",
     "CS70/Homework/hw06-sol.pdf",
-    "CS70/Homework/hw07-sol.pdf",
     "CS70/Homework/hw08-sol.pdf",
     "CS70/Discussions/dis12a-sol.pdf",
     "CS70/Homework/未确认 856660.crdownload",
