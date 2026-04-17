@@ -133,12 +133,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS70/Lecture/Lecture 3 Induction/Induction.md",
+                "file": "CS70/Lecture/Lecture 4 Stable Matching/Stable Matching.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Induction"
+              "title": "Stable Matching"
             }
           }
         ],
@@ -215,7 +215,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS70/Lecture/Lecture 3 Induction/Induction.md",
+                "file": "CS70/Lecture/Lecture 4 Stable Matching/Stable Matching.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -225,7 +225,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Induction 的反向链接列表"
+              "title": "Stable Matching 的反向链接列表"
             }
           },
           {
@@ -292,6 +292,14 @@
   },
   "active": "f30194b4f27cd478",
   "lastOpenFiles": [
+    "CS70/Lecture/Lecture 4 Stable Matching/附件/Pasted image 20260417190804.png",
+    "CS70/Lecture/Lecture 4 Stable Matching/附件/Pasted image 20260417184612.png",
+    "CS70/Lecture/Lecture 2 Proofs/Proofs.md",
+    "CS70/Lecture/Lecture 4 Stable Matching/Stable Matching.md",
+    "CS70/Lecture/Lecture 3 Induction/Induction.md",
+    "CS70/Lecture/Lecture 4 Stable Matching/附件/a4e6d879a6722b576e627cfe5311fa6b.jpg",
+    "CS70/Lecture/Lecture 4 Stable Matching/附件",
+    "CS70/Lecture/Lecture 4 Stable Matching",
     "CS70/Homework/hw07-sol.pdf",
     "CS70/Homework/未确认 413694.crdownload",
     "CS70/Homework/未确认 688054.crdownload",
@@ -300,11 +308,6 @@
     "CS70/Homework/hw08-sol.pdf",
     "CS70/Discussions/dis12a-sol.pdf",
     "CS70/Homework/未确认 856660.crdownload",
-    "CS70/Homework/未确认 353840.crdownload",
-    "CS70/Homework/未确认 685067.crdownload",
-    "CS70/Homework/未确认 922309.crdownload",
-    "CS70/Lecture/Lecture 3 Induction/Induction.md",
-    "CS70/Lecture/Lecture 2 Proofs/Proofs.md",
     "CS70/Lecture/Lecture 2 Proofs/1.Proofs.md",
     "CS70/Lecture/Lecture 1 Introduction, Propositional logical/2. Propositional logical.md",
     "CS70/Lecture/Lecture 1 Introduction, Propositional logical/1. Introduction.md",
@@ -327,7 +330,6 @@
     "CS61B/Lecture 7 ALists, Resizing, vs. SLists/1. AList.md",
     "CS61B/Lecture 6/2. Array.md",
     "CS61B/Lecture 6/1. DLLists.md",
-    "CS61A/Lecture 14/Lecture 14 Trees.md",
     "CS61B/Lecture 7 ALists, Resizing, vs. SLists/附件/Pasted image 20260315154912.png",
     "CS61B/Lecture 7 ALists, Resizing, vs. SLists/附件/Pasted image 20260315154850.png",
     "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308224204.png",
@@ -336,8 +338,6 @@
     "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308222252.png",
     "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308221614.png",
     "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308215327.png",
-    "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308213442.png",
-    "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308211726.png",
     "未命名.canvas"
   ]
 }
