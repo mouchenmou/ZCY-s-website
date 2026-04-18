@@ -131,14 +131,12 @@
             "id": "f30194b4f27cd478",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "CS70/Lecture/Lecture 4 Stable Matching/Stable Matching.md",
-                "mode": "source",
-                "source": false
+                "file": "流体力学/流体力学第三章.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Stable Matching"
+              "icon": "lucide-file-text",
+              "title": "流体力学第三章"
             }
           }
         ],
@@ -215,7 +213,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS70/Lecture/Lecture 4 Stable Matching/Stable Matching.md",
+                "file": "流体力学/流体力学第三章.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -225,7 +223,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Stable Matching 的反向链接列表"
+              "title": "流体力学第三章 的反向链接列表"
             }
           },
           {
@@ -292,10 +290,13 @@
   },
   "active": "f30194b4f27cd478",
   "lastOpenFiles": [
+    "流体力学/流体力学第一章.pdf",
+    "流体力学/流体力学第三章.pdf",
+    "流体力学/流体力学第二章.pdf",
+    "CS70/Lecture/Lecture 4 Stable Matching/Stable Matching.md",
     "CS70/Lecture/Lecture 4 Stable Matching/附件/Pasted image 20260417190804.png",
     "CS70/Lecture/Lecture 4 Stable Matching/附件/Pasted image 20260417184612.png",
     "CS70/Lecture/Lecture 2 Proofs/Proofs.md",
-    "CS70/Lecture/Lecture 4 Stable Matching/Stable Matching.md",
     "CS70/Lecture/Lecture 3 Induction/Induction.md",
     "CS70/Lecture/Lecture 4 Stable Matching/附件/a4e6d879a6722b576e627cfe5311fa6b.jpg",
     "CS70/Lecture/Lecture 4 Stable Matching/附件",
@@ -306,8 +307,6 @@
     "CS70/Homework/未确认 226238.crdownload",
     "CS70/Homework/hw06-sol.pdf",
     "CS70/Homework/hw08-sol.pdf",
-    "CS70/Discussions/dis12a-sol.pdf",
-    "CS70/Homework/未确认 856660.crdownload",
     "CS70/Lecture/Lecture 2 Proofs/1.Proofs.md",
     "CS70/Lecture/Lecture 1 Introduction, Propositional logical/2. Propositional logical.md",
     "CS70/Lecture/Lecture 1 Introduction, Propositional logical/1. Introduction.md",
@@ -337,7 +336,6 @@
     "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308222306.png",
     "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308222252.png",
     "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308221614.png",
-    "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308215327.png",
     "未命名.canvas"
   ]
 }
