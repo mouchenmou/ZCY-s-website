@@ -261,7 +261,9 @@ nav:
       - Lecture 3 Induction: 笔记本/CS70/Lecture/Lecture 3 Induction/Induction.md
       - Lecture 4 Stable Matching : 笔记本/CS70/Lecture/Lecture 4 Stable Matching/Stable Matching.md
       - Lecture 5 Graph 1: 笔记本/CS70/Lecture/Lecture 4 Graph 1/Graph 1.md
-    - CS224n 深度学习:
+    - CS231n 计算机视觉:
+      - Part 1 Deep Learning Basics:
+        - Lecture 1 导论: 笔记本/CS231n/Lecture/Lecture 1 导论.md
       - Lecture 1: 
         - 1 Assignment: 笔记本/CS224n/Lecture 1/1.Assignment.md
     - CSAPP 深入理解计算机系统:
