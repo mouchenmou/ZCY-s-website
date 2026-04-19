@@ -131,12 +131,14 @@
             "id": "f30194b4f27cd478",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "流体力学/流体力学第三章.pdf"
+                "file": "CS70/Lecture/Lecture 5 Graphs 1/Graph 1.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "流体力学第三章"
+              "icon": "lucide-file",
+              "title": "Graph 1"
             }
           }
         ],
@@ -213,7 +215,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "流体力学/流体力学第三章.pdf",
+                "file": "CS70/Lecture/Lecture 5 Graphs 1/Graph 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -223,7 +225,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "流体力学第三章 的反向链接列表"
+              "title": "Graph 1 的反向链接列表"
             }
           },
           {
@@ -290,26 +292,34 @@
   },
   "active": "f30194b4f27cd478",
   "lastOpenFiles": [
-    "流体力学/流体力学第一章.pdf",
-    "流体力学/流体力学第三章.pdf",
-    "流体力学/流体力学第二章.pdf",
+    "CS70/Lecture/Lecture 5 Graphs 1/附件/aa420ccd1aa1c4d273dda4501b115c6b.jpg",
+    "CS70/Lecture/Lecture 3 Induction/Induction.md",
+    "CS70/Lecture/Lecture 5 Graphs 1/Graph 1.md",
+    "CS70/Lecture/Lecture 5 Graphs 1/附件/Pasted image 20260419235350.png",
+    "CS70/Lecture/Lecture 5 Graphs 1/附件/064794712d3bd6987cbd16607749f424.jpg",
+    "CS70/Lecture/Lecture 5 Graphs 1/附件/ef01e18db46d55d057033c4a6be387a9.jpg",
+    "CS70/Lecture/Lecture 5 Graphs 1/附件/Pasted image 20260419202106.png",
+    "CS70/Lecture/Lecture 5 Graphs 1/附件/Pasted image 20260419201603.png",
+    "CS70/Lecture/Lecture 2 Proofs/Proofs.md",
     "CS70/Lecture/Lecture 4 Stable Matching/Stable Matching.md",
+    "CS70/Lecture/Lecture 1 Introduction, Propositional logical/2. Propositional logical.md",
+    "CS70/Lecture/Lecture 1 Introduction, Propositional logical/1. Introduction.md",
+    "CS70/Lecture/Lecture 5 Graphs 1/附件/Pasted image 20260419175652.png",
+    "CS70/Lecture/Lecture 5 Graphs 1/附件/Pasted image 20260419181452.png",
+    "CS70/Lecture/Lecture 5 Graphs 1/附件",
+    "流体力学/流体力学第三章.pdf",
+    "CS70/Lecture/Lecture 5 Graphs 1",
+    "流体力学/流体力学第一章.pdf",
+    "流体力学/流体力学第二章.pdf",
     "CS70/Lecture/Lecture 4 Stable Matching/附件/Pasted image 20260417190804.png",
     "CS70/Lecture/Lecture 4 Stable Matching/附件/Pasted image 20260417184612.png",
-    "CS70/Lecture/Lecture 2 Proofs/Proofs.md",
-    "CS70/Lecture/Lecture 3 Induction/Induction.md",
     "CS70/Lecture/Lecture 4 Stable Matching/附件/a4e6d879a6722b576e627cfe5311fa6b.jpg",
     "CS70/Lecture/Lecture 4 Stable Matching/附件",
     "CS70/Lecture/Lecture 4 Stable Matching",
     "CS70/Homework/hw07-sol.pdf",
     "CS70/Homework/未确认 413694.crdownload",
     "CS70/Homework/未确认 688054.crdownload",
-    "CS70/Homework/未确认 226238.crdownload",
-    "CS70/Homework/hw06-sol.pdf",
-    "CS70/Homework/hw08-sol.pdf",
     "CS70/Lecture/Lecture 2 Proofs/1.Proofs.md",
-    "CS70/Lecture/Lecture 1 Introduction, Propositional logical/2. Propositional logical.md",
-    "CS70/Lecture/Lecture 1 Introduction, Propositional logical/1. Introduction.md",
     "CS61B/Lecture 21 Priority Queues and Heaps/21.1 优先队列.md",
     "CS61B/Lecture 21 Priority Queues and Heaps/21.2 堆.md",
     "CS61A/Lecture 3/Lecture 3 Control.md",
@@ -328,14 +338,6 @@
     "CS61B/Lecture 7 ALists, Resizing, vs. SLists/2. Array Resizing.md",
     "CS61B/Lecture 7 ALists, Resizing, vs. SLists/1. AList.md",
     "CS61B/Lecture 6/2. Array.md",
-    "CS61B/Lecture 6/1. DLLists.md",
-    "CS61B/Lecture 7 ALists, Resizing, vs. SLists/附件/Pasted image 20260315154912.png",
-    "CS61B/Lecture 7 ALists, Resizing, vs. SLists/附件/Pasted image 20260315154850.png",
-    "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308224204.png",
-    "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308223715.png",
-    "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308222306.png",
-    "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308222252.png",
-    "CS61A/Lecture 19 Attributes/附件/Pasted image 20260308221614.png",
     "未命名.canvas"
   ]
 }
