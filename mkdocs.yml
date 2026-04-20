@@ -339,6 +339,35 @@ nav:
       - 第二章 LTI系统: 笔记本/信号与系统/第2章/信号与系统第二章.pdf
       - 作业:
         - 第一次作业: 笔记本/信号与系统/作业/作业1.pdf
+    - 数据结构基础 FDS:
+      - Homework:
+        - Homework1:
+          - 单选题2-5: 笔记本/数据结构基础 FDS/Homework/HW1/单选题2-5.md
+          - 判断题1-4: 笔记本/数据结构基础 FDS/Homework/HW1/判断题1-4.md
+        - Homework2:
+          - 判断题: 笔记本/数据结构基础 FDS/Homework/HW2/判断题.md
+          - 单选题2-1: 笔记本/数据结构基础 FDS/Homework/HW2/单选题2-1.md
+          - 单选题2-2: 笔记本/数据结构基础 FDS/Homework/HW2/单选题2-2.md
+          - 单选题2-3: 笔记本/数据结构基础 FDS/Homework/HW2/单选题2-3.md
+          - 函数题2: 笔记本/数据结构基础 FDS/Homework/HW2/函数题2 Reverse Linked Lise.md
+        - Homework4:
+          - 判断题: 笔记本/数据结构基础 FDS/Homework/HW4/判断题.md
+          - 单选题2-1: 笔记本/数据结构基础 FDS/Homework/HW4/单选题2-1.md
+          - 单选题2-2: 笔记本/数据结构基础 FDS/Homework/HW4/单选题2-2.md
+          - 单选题2-4: 笔记本/数据结构基础 FDS/Homework/HW4/单选题2-4.md
+        - Homework5:
+          - 判断题: 笔记本/数据结构基础 FDS/Homework/HW5/判断题.md
+          - 单选题2-4: 笔记本/数据结构基础 FDS/Homework/HW5/单选题2-4.md
+          - 单选题2-5: 笔记本/数据结构基础 FDS/Homework/HW5/单选题2-5.md
+          - 单选题2-6: 笔记本/数据结构基础 FDS/Homework/HW5/单选题2-6.md
+        - Homework6:
+          - 判断题1-2: 笔记本/数据结构基础 FDS/Homework/HW6/判断题1-2.md
+          - 单选题2-3: 笔记本/数据结构基础 FDS/Homework/HW6/单选题2-3.md
+          - 单选题2-6: 笔记本/数据结构基础 FDS/Homework/HW6/单选题2-6.md
+          - 编程题: 笔记本/数据结构基础 FDS/Homework/HW6/编程题.md
+        - Homework7:
+          - 单选题: 笔记本/数据结构基础 FDS/Homework/HW7/单选题.md
+          - 程序填空题: 笔记本/数据结构基础 FDS/Homework/HW7/程序填空题.md
     - 流体力学:
       - 第一章 绪论: 笔记本/流体力学/流体力学第一章.pdf
       - 第二章 流体的主要物理性质: 笔记本/流体力学/流体力学第二章.pdf
@@ -425,9 +454,6 @@ nav:
       - 第12章 放大器:
         - 1. 功率放大器笔记: 笔记本/电子电路基础/第12章 功率放大器/功率放大器.md
         - 2. 功率放大器PPT: 笔记本/电子电路基础/第12章 功率放大器/chap_12m 功率放大器.pdf
-    - 工程力学:
-      - 第2章:
-        - 2.2约束的分类及约束力的特征: 笔记本/工程力学/第二章/2.2 约束的分类及约束力的特征.md 
   - Undergraduate Research:
     - 自动化渗透: 
       - LLM自进化论文1: 笔记本/申老师科研/LLM自进化论文/LLM论文1.pdf
