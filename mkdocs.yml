@@ -263,9 +263,7 @@ nav:
       - Lecture 5 Graph 1: 笔记本/CS70/Lecture/Lecture 5 Graph 1/Graph 1.md
     - CS231n 计算机视觉:
       - Part 1 Deep Learning Basics:
-        - Lecture 1 导论: 笔记本/CS231n/Lecture/Lecture 1 导论.md
-      - Lecture 1: 
-        - 1 Assignment: 笔记本/CS224n/Lecture 1/1.Assignment.md
+        - Lecture 1 导论: 笔记本/CS231n/Lecture/Lecture 1 导论/导论.md
     - CSAPP 深入理解计算机系统:
       - 第1章 计算机系统漫游:
         - 1.4 处理器读并解释储存在内存中的指令: 笔记本/深入理解计算机系统/第1章 计算机系统漫游/1.4 处理器读并解释储存在内存中的指令.md

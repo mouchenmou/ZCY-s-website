@@ -131,12 +131,14 @@
             "id": "f30194b4f27cd478",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "CS70/Homework/hw12-sol.pdf"
+                "file": "CS61B/Lecture 15 不相交集2和渐近线2/15.1路径压缩(WQU with Path Compression).md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "hw12-sol"
+              "icon": "lucide-file",
+              "title": "15.1路径压缩(WQU with Path Compression)"
             }
           }
         ],
@@ -213,7 +215,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS70/Homework/hw12-sol.pdf",
+                "file": "CS61B/Lecture 15 不相交集2和渐近线2/15.1路径压缩(WQU with Path Compression).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -223,7 +225,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "hw12-sol 的反向链接列表"
+              "title": "15.1路径压缩(WQU with Path Compression) 的反向链接列表"
             }
           },
           {
@@ -290,8 +292,15 @@
   },
   "active": "f30194b4f27cd478",
   "lastOpenFiles": [
-    "CS70/Homework/hw11-sol.pdf",
+    "CS61B/Lecture 15 不相交集2和渐近线2/15.2 渐近线2.md",
+    "CS61B/Lecture 14 不相交集1(Disjoint Sets)/3.加权快速接头（Weighted Quick Union）.md",
+    "CS61B/Lecture 14 不相交集1(Disjoint Sets)/附件/Pasted image 20260420175603.png",
+    "CS61B/Lecture 15 不相交集2和渐近线2/15.1路径压缩(WQU with Path Compression).md",
+    "CS61B/Lecture 14 不相交集1(Disjoint Sets)/2.快速连接法（QuickUnionDS）.md",
+    "CS61B/Lecture 15 不相交集2和渐近线2/附件/Pasted image 20260420172328.png",
+    "CS61B/Lecture 14 不相交集1(Disjoint Sets)/附件/Pasted image 20260420171825.png",
     "CS70/Homework/hw12-sol.pdf",
+    "CS70/Homework/hw11-sol.pdf",
     "CS70/Homework/hw13-sol.pdf",
     "CS70/Discussions/dis12b-sol.pdf",
     "CS70/Discussions/未确认 485543.crdownload",
@@ -303,7 +312,6 @@
     "CS231n/Lecture/Lecture 1 导论/导论.md",
     "CS231n/Lecture/Lecture 1 导论/附件/Pasted image 20260420004729.png",
     "CS231n/Lecture/Lecture 1 导论/附件/Pasted image 20260420003911.png",
-    "CS231n/Lecture/Lecture 1 导论/附件",
     "CS70/Lecture/Lecture 5 Graphs 1/Graph 1.md",
     "CS70/Lecture/Lecture 5 Graphs 1/附件/aa420ccd1aa1c4d273dda4501b115c6b.jpg",
     "CS70/Lecture/Lecture 3 Induction/Induction.md",
@@ -311,13 +319,10 @@
     "CS70/Lecture/Lecture 5 Graphs 1/附件/064794712d3bd6987cbd16607749f424.jpg",
     "CS70/Lecture/Lecture 5 Graphs 1/附件/ef01e18db46d55d057033c4a6be387a9.jpg",
     "CS70/Lecture/Lecture 5 Graphs 1/附件/Pasted image 20260419202106.png",
-    "CS70/Lecture/Lecture 5 Graphs 1/附件/Pasted image 20260419201603.png",
     "CS70/Lecture/Lecture 2 Proofs/Proofs.md",
     "CS70/Lecture/Lecture 4 Stable Matching/Stable Matching.md",
     "CS70/Lecture/Lecture 1 Introduction, Propositional logical/2. Propositional logical.md",
     "CS70/Lecture/Lecture 1 Introduction, Propositional logical/1. Introduction.md",
-    "CS70/Lecture/Lecture 5 Graphs 1/附件/Pasted image 20260419175652.png",
-    "CS70/Lecture/Lecture 5 Graphs 1/附件/Pasted image 20260419181452.png",
     "CS70/Lecture/Lecture 2 Proofs/1.Proofs.md",
     "CS61B/Lecture 21 Priority Queues and Heaps/21.1 优先队列.md",
     "CS61B/Lecture 21 Priority Queues and Heaps/21.2 堆.md",
@@ -333,9 +338,6 @@
     "CS61A/Lecture 6/Lecture 6 Sound.md",
     "CS61A/Lecture 5/Lecture 5 Environments.md",
     "CS61A/Lecture 4/Lecture 4 Higher-Order Function.md",
-    "CS61B/Lecture 4/Lecture 4 References, Recursion, and Lists.md",
-    "CS61B/Lecture 7 ALists, Resizing, vs. SLists/2. Array Resizing.md",
-    "CS61B/Lecture 7 ALists, Resizing, vs. SLists/1. AList.md",
     "未命名.canvas"
   ]
 }

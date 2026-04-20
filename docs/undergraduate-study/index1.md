@@ -9,8 +9,8 @@
 - CS61A---UCB
 - CS61B---UCB
 - CS70---UCB
+- CS231n---Stanford
 - 深入理解计算机系统---CMU
-- cs224n---Stanford
 
 ---
 
