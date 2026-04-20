@@ -131,14 +131,12 @@
             "id": "f30194b4f27cd478",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "CS70/Lecture/Lecture 5 Graphs 1/Graph 1.md",
-                "mode": "source",
-                "source": false
+                "file": "信号与系统/第2章/信号与系统第二章.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Graph 1"
+              "icon": "lucide-file-text",
+              "title": "信号与系统第二章"
             }
           }
         ],
@@ -215,7 +213,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS70/Lecture/Lecture 5 Graphs 1/Graph 1.md",
+                "file": "信号与系统/第2章/信号与系统第二章.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -225,7 +223,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Graph 1 的反向链接列表"
+              "title": "信号与系统第二章 的反向链接列表"
             }
           },
           {
@@ -290,8 +288,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f30194b4f27cd478",
+  "active": "0c3136469588a543",
   "lastOpenFiles": [
+    "信号与系统/第2章/信号与系统第二章.pdf",
+    "信号与系统/第2章/信号与系统第二章.pdf",
+    "信号与系统/第3章/信号与系统第三章.pdf",
+    "信号与系统/第3章",
+    "信号与系统/作业/作业1.pdf",
+    "信号与系统/作业/作业4.pdf",
+    "信号与系统/作业/作业3.pdf",
+    "信号与系统/作业/作业2.pdf",
+    "CS70/Lecture/Lecture 5 Graphs 1/Graph 1.md",
     "数据结构基础 FDS/Homework/HW4/单选题2-2.md",
     "数据结构基础 FDS/Homework/HW4/单选题2-1.md",
     "数据结构基础 FDS/Homework/HW7/单选题.md",
@@ -308,7 +315,6 @@
     "数据结构基础 FDS/Homework/HW2/判断题.md",
     "数据结构基础 FDS/Homework/HW1/单选题2-5.md",
     "流体力学/流体力学第二章.pdf",
-    "流体力学/流体力学第三章.pdf",
     "CS61B/Lecture 14 不相交集1(Disjoint Sets)/3.加权快速接头（Weighted Quick Union）.md",
     "数据结构基础 FDS/Homework/HW2/附件/Pasted image 20260309184632.png",
     "数据结构基础 FDS/Homework/HW2/附件/Pasted image 20260309183410.png",
@@ -317,12 +323,6 @@
     "数据结构基础 FDS/Homework/HW2/附件/Pasted image 20260309182421.png",
     "数据结构基础 FDS/Homework/HW6/附件/Pasted image 20260420212117.png",
     "数据结构基础 FDS/Homework/HW6/附件/Pasted image 20260413220337.png",
-    "数据结构基础 FDS/Homework/__MACOSX/Homework/HW5/附件",
-    "数据结构基础 FDS/Homework/__MACOSX/Homework/HW6/附件",
-    "数据结构基础 FDS/Homework/__MACOSX/Homework/HW4/附件",
-    "数据结构基础 FDS/Homework/__MACOSX/Homework/HW2/附件",
-    "数据结构基础 FDS/Homework/__MACOSX/Homework/HW1/附件",
-    "数据结构基础 FDS/Homework/HW2/附件",
     "数据结构基础 FDS/Homework/HW2/单选题2-3.md",
     "数据结构基础 FDS/Homework/HW2/单选题2-2.md",
     "数据结构基础 FDS/Homework/HW6/单选题2-6.md",
@@ -336,7 +336,6 @@
     "数据结构基础 FDS/Homework/HW1/判断题1-4.md",
     "Homework/Homework/HW6/编程题.md",
     "Homework/Homework/HW6/判断题1-2.md",
-    "Homework/Homework/HW6/单选题2-6.md",
     "未命名.canvas"
   ]
 }
