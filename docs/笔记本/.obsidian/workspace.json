@@ -133,12 +133,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS61B/Lecture 15 不相交集2和渐近线2/15.1路径压缩(WQU with Path Compression).md",
+                "file": "CS61B/Lecture 14 不相交集1(Disjoint Sets)/3.加权快速接头（Weighted Quick Union）.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "15.1路径压缩(WQU with Path Compression)"
+              "title": "3.加权快速接头（Weighted Quick Union）"
             }
           }
         ],
@@ -215,7 +215,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS61B/Lecture 15 不相交集2和渐近线2/15.1路径压缩(WQU with Path Compression).md",
+                "file": "CS61B/Lecture 14 不相交集1(Disjoint Sets)/3.加权快速接头（Weighted Quick Union）.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -225,7 +225,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "15.1路径压缩(WQU with Path Compression) 的反向链接列表"
+              "title": "3.加权快速接头（Weighted Quick Union） 的反向链接列表"
             }
           },
           {
@@ -292,11 +292,11 @@
   },
   "active": "f30194b4f27cd478",
   "lastOpenFiles": [
+    "CS61B/Lecture 14 不相交集1(Disjoint Sets)/2.快速连接法（QuickUnionDS）.md",
+    "CS61B/Lecture 15 不相交集2和渐近线2/15.1路径压缩(WQU with Path Compression).md",
     "CS61B/Lecture 15 不相交集2和渐近线2/15.2 渐近线2.md",
     "CS61B/Lecture 14 不相交集1(Disjoint Sets)/3.加权快速接头（Weighted Quick Union）.md",
     "CS61B/Lecture 14 不相交集1(Disjoint Sets)/附件/Pasted image 20260420175603.png",
-    "CS61B/Lecture 15 不相交集2和渐近线2/15.1路径压缩(WQU with Path Compression).md",
-    "CS61B/Lecture 14 不相交集1(Disjoint Sets)/2.快速连接法（QuickUnionDS）.md",
     "CS61B/Lecture 15 不相交集2和渐近线2/附件/Pasted image 20260420172328.png",
     "CS61B/Lecture 14 不相交集1(Disjoint Sets)/附件/Pasted image 20260420171825.png",
     "CS70/Homework/hw12-sol.pdf",
