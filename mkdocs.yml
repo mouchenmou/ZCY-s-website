@@ -261,7 +261,9 @@ nav:
       - Lecture 3 Induction: 笔记本/CS70/Lecture/Lecture 3 Induction/Induction.md
       - Lecture 4 Stable Matching : 笔记本/CS70/Lecture/Lecture 4 Stable Matching/Stable Matching.md
       - Lecture 5 Graph 1: 笔记本/CS70/Lecture/Lecture 5 Graphs 1/Graph 1.md
-    - CS231n 计算机视觉:
+      - Lecture 6 Grapg 2: 
+        - 6.1 Complete Graphs and Trees: 笔记本/CS70/Lecture/Lecture 6 Graphs 2/1. Complete Graphs and Trees.md
+        - 6.2 Planar Graph and Euler's Formula: 笔记本/CS70/Lecture/Lecture 6 Graphs 2/2. Planar Graphs and Euler’s Formula.md
       - Part 1 Deep Learning Basics:
         - Lecture 1 导论: 笔记本/CS231n/Lecture/Lecture 1 导论/导论.md
     - CSAPP 深入理解计算机系统:

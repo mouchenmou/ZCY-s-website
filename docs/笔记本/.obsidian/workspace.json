@@ -131,12 +131,14 @@
             "id": "f30194b4f27cd478",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "信号与系统/第2章/信号与系统第二章.pdf"
+                "file": "CS70/Lecture/Lecture 6 Graphs 2/2. Planar Graphs and Euler’s Formula.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "信号与系统第二章"
+              "icon": "lucide-file",
+              "title": "2. Planar Graphs and Euler’s Formula"
             }
           }
         ],
@@ -213,7 +215,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "信号与系统/第2章/信号与系统第二章.pdf",
+                "file": "CS70/Lecture/Lecture 6 Graphs 2/2. Planar Graphs and Euler’s Formula.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -223,7 +225,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "信号与系统第二章 的反向链接列表"
+              "title": "2. Planar Graphs and Euler’s Formula 的反向链接列表"
             }
           },
           {
@@ -288,41 +290,43 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "0c3136469588a543",
+  "active": "f30194b4f27cd478",
   "lastOpenFiles": [
+    "CS70/Lecture/Lecture 6 Graphs 2/1. Complete Graphs and Trees.md",
+    "CS70/Lecture/Lecture 6 Graphs 2/2. Planar Graphs and Euler’s Formula.md",
+    "CS70/Lecture/Lecture 6 Graphs 2/附件/Pasted image 20260427004759.png",
+    "CS70/Lecture/Lecture 6 Graphs 2/附件/Pasted image 20260427003449.png",
+    "CS70/Lecture/Lecture 6 Graphs 2/附件/Pasted image 20260427002841.png",
+    "CS70/Lecture/Lecture 6 Graphs 2/附件/d57490ae5a0518c903dcd377c0987229.jpg",
+    "CS70/Lecture/Lecture 6 Graphs 2/附件/7d36a2bd4db94f54fc6a30cba30a9326.jpg",
+    "CS70/Lecture/Lecture 6 Graphs 2/附件/049cf35d760f86c4888f0989d59771e2 1.jpg",
+    "CS70/Lecture/Lecture 6 Graphs 2/附件/049cf35d760f86c4888f0989d59771e2.jpg",
+    "CS70/Lecture/Lecture 6 Graphs 2/附件/Pasted image 20260426235240.png",
+    "CS70/Lecture/Lecture 6 Graphs 2/附件/Pasted image 20260426234738.png",
+    "CS70/Lecture/Lecture 5 Graphs 1/Graph 1.md",
+    "CS70/Lecture/Lecture 6 Graphs 2/附件/Pasted image 20260426225359.png",
+    "CS70/Discussions/dis02a-sol.pdf",
+    "CS70/Discussions/dis01b-sol.pdf",
+    "CS70/Lecture/Lecture 6 Graphs 2/附件",
+    "CS70/Lecture/Lecture 5 Graphs 1/Trees and Complete Graphs.md",
+    "CS70/Lecture/Lecture 6 Graphs 2",
     "信号与系统/第2章/信号与系统第二章.pdf",
     "信号与系统/第2章/信号与系统第二章.pdf",
     "信号与系统/第3章/信号与系统第三章.pdf",
     "信号与系统/第3章",
     "信号与系统/作业/作业1.pdf",
     "信号与系统/作业/作业4.pdf",
-    "信号与系统/作业/作业3.pdf",
-    "信号与系统/作业/作业2.pdf",
-    "CS70/Lecture/Lecture 5 Graphs 1/Graph 1.md",
     "数据结构基础 FDS/Homework/HW4/单选题2-2.md",
     "数据结构基础 FDS/Homework/HW4/单选题2-1.md",
     "数据结构基础 FDS/Homework/HW7/单选题.md",
-    "数据结构基础 FDS/Homework/HW7/附件/Pasted image 20260420224217.png",
     "数据结构基础 FDS/Homework/HW7/程序填空题.md",
-    "数据结构基础 FDS/Homework/HW7/附件/Pasted image 20260420223835.png",
-    "数据结构基础 FDS/Homework/HW7/附件/Pasted image 20260420223013.png",
-    "数据结构基础 FDS/Homework/HW7/附件",
     "数据结构基础 FDS/Homework/HW6/编程题.md",
-    "数据结构基础 FDS/Homework/HW7",
     "数据结构基础 FDS/Homework/HW6/判断题1-2.md",
     "数据结构基础 FDS/Homework/HW2/函数题2 Reverse Linked Lise.md",
     "数据结构基础 FDS/Homework/HW2/单选题2-1.md",
     "数据结构基础 FDS/Homework/HW2/判断题.md",
     "数据结构基础 FDS/Homework/HW1/单选题2-5.md",
-    "流体力学/流体力学第二章.pdf",
     "CS61B/Lecture 14 不相交集1(Disjoint Sets)/3.加权快速接头（Weighted Quick Union）.md",
-    "数据结构基础 FDS/Homework/HW2/附件/Pasted image 20260309184632.png",
-    "数据结构基础 FDS/Homework/HW2/附件/Pasted image 20260309183410.png",
-    "数据结构基础 FDS/Homework/HW2/附件/Pasted image 20260309182914.png",
-    "数据结构基础 FDS/Homework/HW2/附件/Pasted image 20260309182519.png",
-    "数据结构基础 FDS/Homework/HW2/附件/Pasted image 20260309182421.png",
-    "数据结构基础 FDS/Homework/HW6/附件/Pasted image 20260420212117.png",
-    "数据结构基础 FDS/Homework/HW6/附件/Pasted image 20260413220337.png",
     "数据结构基础 FDS/Homework/HW2/单选题2-3.md",
     "数据结构基础 FDS/Homework/HW2/单选题2-2.md",
     "数据结构基础 FDS/Homework/HW6/单选题2-6.md",
@@ -333,9 +337,6 @@
     "数据结构基础 FDS/Homework/HW5/判断题.md",
     "数据结构基础 FDS/Homework/HW4/单选题2-4.md",
     "数据结构基础 FDS/Homework/HW4/判断题.md",
-    "数据结构基础 FDS/Homework/HW1/判断题1-4.md",
-    "Homework/Homework/HW6/编程题.md",
-    "Homework/Homework/HW6/判断题1-2.md",
     "未命名.canvas"
   ]
 }
