@@ -172,6 +172,7 @@ nav:
       - Lecture 7 ALists, Resizing, vs. SLists:
         - 1. AList: 笔记本/CS61B/Lecture 7 ALists, Resizing, vs. SLists/1. AList.md
         - 2. Array Resizing: 笔记本/CS61B/Lecture 7 ALists, Resizing, vs. SLists/2. Array Resizing.md
+      - Lecture 12 Git: 笔记本/CS61B/Lecture 12 Git/Git.md
       - Lecture 13 渐近线1: 笔记本/CS61B/Lecture 13 渐近线1/Big O.md
       - Lecture 14 不相交集1:
         - 笔记本/CS61B/Lecture 14 不相交集1(Disjoint Sets)/1.快速查找不相交集（QuickFindDS）.md
@@ -193,13 +194,16 @@ nav:
       - Lecture 18 旋转树和红黑树:
         - 18.1 Definition of Tree Rotation: 笔记本/CS61B/Lecture 18 旋转树和红黑树/1.Definition of Tree Rotation.md
         - 18.2 红黑树: 笔记本/CS61B/Lecture 18 旋转树和红黑树/2.红黑树.md
-      - Lecture 19 哈希算法1:
-        - 19.1 BobaCounterSet: 笔记本/CS61B/Lecture 19 哈希算法1/19.1 BobaCounterSet.md
-        - 19.2 Dynamic Array of list: 笔记本/CS61B/Lecture 19 哈希算法1/19.2 Dynamic Array Of Lists Set.md
-      - Lecture 20 哈希算法2: 笔记本/CS61B/Lecture 20 哈希算法2/20 关于哈希算法的深解析.md
-      - Lecture 21 Priority Queues and Heaps:
-        - 21.1 优先队列: 笔记本/CS61B/Lecture 21 Priority Queues and Heaps/21.1 优先队列.md
-        - 21.2 堆: 笔记本/CS61B/Lecture 21 Priority Queues and Heaps/21.2 堆.md
+      - Lecture 19 哈希算法:
+        - 19.1 BobaCounterSet: 笔记本/CS61B/Lecture 19 哈希算法/19.1 BobaCounterSet.md
+        - 19.2 Dynamic Array of list: 笔记本/CS61B/Lecture 19 哈希算法/19.2 Dynamic Array Of Lists Set.md
+        - 19.3 深度解析哈希算法: 笔记本/CS61B/Lecture 19 哈希算法/19.3 关于哈希算法的深解析.md
+      - Lecture 20 Priority Queues and Heaps:
+        - 20.1 优先队列: 笔记本/CS61B/Lecture 20 Priority Queues and Heaps/20.1 优先队列.md
+        - 20.2 堆: 笔记本/CS61B/Lecture 20 Priority Queues and Heaps/20.2 堆.md
+      - Lecture 21 Tree and Graph Traversals:
+        - 21.1 Trees and Traversals: 笔记本/CS61B/Lecture 21 Tree and Graph Traversals/21.1 Trees and Traversals.md
+        - 21.2 Graph: 笔记本/CS61B/Lecture 21 Tree and Graph Traversals/21.2 Graph.md
       - Lab:
         - Lab1 命令行: 笔记本/CS61B/lab/lab1/命令行.md
       - Project:
