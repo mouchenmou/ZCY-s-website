@@ -63,14 +63,12 @@
             "id": "3b8a88b05cacbf4a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "CS61B/Lecture 21 Tree and Graph Traversals/21.2 Graph.md",
-                "mode": "source",
-                "source": false
+                "file": "CS70/Homework/hw13-sol.pdf"
               },
-              "icon": "lucide-file",
-              "title": "21.2 Graph"
+              "icon": "lucide-file-text",
+              "title": "hw13-sol"
             }
           },
           {
@@ -201,7 +199,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS61B/Lecture 21 Tree and Graph Traversals/21.2 Graph.md",
+                "file": "CS70/Homework/hw13-sol.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +209,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "21.2 Graph 的反向链接列表"
+              "title": "hw13-sol 的反向链接列表"
             }
           },
           {
@@ -278,8 +276,21 @@
   },
   "active": "3b8a88b05cacbf4a",
   "lastOpenFiles": [
-    "CS61B/Lecture 21 Tree and Graph Traversals/21.1 Trees and Traversals.md",
+    "CS70/Homework/未确认 226527.crdownload",
+    "CS70/Homework/hw14-sol.pdf",
+    "CS70/Homework/hw13-sol.pdf",
+    "CS70/Homework/hw12-sol.pdf",
+    "CS70/Homework/hw11-sol.pdf",
+    "CS70/Discussions/dis14b-sol.pdf",
+    "CS70/Discussions/dis14a-sol.pdf",
+    "CS70/Discussions/未确认 930817.crdownload",
+    "CS70/Discussions/未确认 174205.crdownload",
+    "CS70/Discussions/dis13b-sol.pdf",
+    "吴恩达机器学习/课程/week1/1 引言（Introduction）.md",
+    "吴恩达机器学习/课程/week1/3 Linear Algebra Review.md",
+    "吴恩达机器学习/课程/week1/2 单变量线性回归（Linear Regression with One Variable）.md",
     "CS61B/Lecture 21 Tree and Graph Traversals/21.2 Graph.md",
+    "CS61B/Lecture 21 Tree and Graph Traversals/21.1 Trees and Traversals.md",
     "CS61B/Lecture 21 Tree and Graph Traversals/附件/Pasted image 20260501235544.png",
     "CS61B/Lecture 21 Tree and Graph Traversals/附件/Pasted image 20260501233518.png",
     "CS61B/Lecture 21 Tree and Graph Traversals/附件/Pasted image 20260501233446.png",
@@ -301,28 +312,16 @@
     "CS61B/Lecture 19 哈希算法/19.2 Dynamic Array Of Lists Set.md",
     "CS61B/Lecture 19 哈希算法/19.1 BobaCounterSet.md",
     "CS61B/Lecture 12 Git/Git.md",
-    "CS61B/Lecture",
     "CS61B/Lecture 5/Lecture 5 SLLists, Nested Classes, Sentinel Nodes.md",
     "CS61B/Lecture 4/Lecture 4 References, Recursion, and Lists.md",
-    "CS61B/Lecture 12 Git/附件",
     "信号与系统/作业中的收获/作业7.md",
-    "CS61B/Lecture 12 Git",
     "CS61B/未命名.md",
-    "信号与系统/作业/作业6.pdf",
-    "信号与系统/作业/作业5.pdf",
-    "信号与系统/作业中的收获/附件",
     "信号与系统/未命名.md",
-    "信号与系统/作业中的收获",
-    "信号与系统/作业/作业4.pdf",
-    "信号与系统/作业/作业3.pdf",
     "数据结构基础 FDS/Homework/期中考错题.md",
     "数据结构基础 FDS/期中复习/期中复习错题.md",
     "CS61B/Lecture 14 不相交集1(Disjoint Sets)/3.加权快速接头（Weighted Quick Union）.md",
     "CS61B/Lecture 14 不相交集1(Disjoint Sets)/2.快速连接法（QuickUnionDS）.md",
     "CS61B/Lecture 14 不相交集1(Disjoint Sets)/1.快速查找不相交集（QuickFindDS）.md",
-    "数据结构基础 FDS/课程内容/topic1.md",
-    "数据结构基础 FDS/期中复习/期中复习.md",
-    "数据结构基础 FDS/Homework/HW4/单选题2-4.md",
     "未命名.canvas"
   ]
 }
