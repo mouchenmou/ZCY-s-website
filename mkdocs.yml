@@ -108,6 +108,10 @@ markdown_extensions:
 nav:
   - 首页: index.md
   - Undergraduate Study:
+    - undergraduate-study/雕虫小技.md
+    - Claude code: 
+      - MacOS claude 国内安装教程: 笔记本/Claude code使用/MacOS claude 国内安装教程.md
+      - 阿里云 API 白嫖教程: 笔记本/Claude code使用/阿里云 API 白嫖教程.pdf
     - undergraduate-study/index1.md
     - CS61A Python:
       - Homework:

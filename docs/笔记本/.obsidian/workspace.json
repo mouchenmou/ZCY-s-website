@@ -65,10 +65,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "流体力学/流体力学第四章.pdf"
+                "file": "Claude code使用/阿里云 API 白嫖教程.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "流体力学第四章"
+              "title": "阿里云 API 白嫖教程"
             }
           },
           {
@@ -199,7 +199,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "流体力学/流体力学第四章.pdf",
+                "file": "Claude code使用/阿里云 API 白嫖教程.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -209,7 +209,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "流体力学第四章 的反向链接列表"
+              "title": "阿里云 API 白嫖教程 的反向链接列表"
             }
           },
           {
@@ -274,19 +274,20 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3b8a88b05cacbf4a",
+  "active": "0c3136469588a543",
   "lastOpenFiles": [
-    "CS70/Homework/hw13-sol.pdf",
+    "Claude code使用/MacOS claude 国内安装教程.md",
+    "Claude code使用/阿里云 API 白嫖教程.pdf",
+    "Claude code使用/未命名.md",
+    "Claude code使用/阿里云 API 白嫖教程.pdf.crdownload",
+    "Claude code使用/claude 国内安装教程.md.crdownload",
     "流体力学/流体力学第四章.pdf",
+    "Claude code使用",
+    "CS70/Homework/hw13-sol.pdf",
     "CS70/Homework/未确认 226527.crdownload",
     "CS70/Homework/hw14-sol.pdf",
     "CS70/Homework/hw12-sol.pdf",
     "CS70/Homework/hw11-sol.pdf",
-    "CS70/Discussions/dis14b-sol.pdf",
-    "CS70/Discussions/dis14a-sol.pdf",
-    "CS70/Discussions/未确认 930817.crdownload",
-    "CS70/Discussions/未确认 174205.crdownload",
-    "CS70/Discussions/dis13b-sol.pdf",
     "吴恩达机器学习/课程/week1/1 引言（Introduction）.md",
     "吴恩达机器学习/课程/week1/3 Linear Algebra Review.md",
     "吴恩达机器学习/课程/week1/2 单变量线性回归（Linear Regression with One Variable）.md",
@@ -320,8 +321,6 @@
     "数据结构基础 FDS/Homework/期中考错题.md",
     "数据结构基础 FDS/期中复习/期中复习错题.md",
     "CS61B/Lecture 14 不相交集1(Disjoint Sets)/3.加权快速接头（Weighted Quick Union）.md",
-    "CS61B/Lecture 14 不相交集1(Disjoint Sets)/2.快速连接法（QuickUnionDS）.md",
-    "CS61B/Lecture 14 不相交集1(Disjoint Sets)/1.快速查找不相交集（QuickFindDS）.md",
     "未命名.canvas"
   ]
 }
