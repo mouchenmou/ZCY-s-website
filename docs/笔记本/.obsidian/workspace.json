@@ -65,10 +65,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "CS70/Homework/hw13-sol.pdf"
+                "file": "流体力学/流体力学第四章.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "hw13-sol"
+              "title": "流体力学第四章"
             }
           },
           {
@@ -199,7 +199,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS70/Homework/hw13-sol.pdf",
+                "file": "流体力学/流体力学第四章.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -209,7 +209,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "hw13-sol 的反向链接列表"
+              "title": "流体力学第四章 的反向链接列表"
             }
           },
           {
@@ -276,9 +276,10 @@
   },
   "active": "3b8a88b05cacbf4a",
   "lastOpenFiles": [
+    "CS70/Homework/hw13-sol.pdf",
+    "流体力学/流体力学第四章.pdf",
     "CS70/Homework/未确认 226527.crdownload",
     "CS70/Homework/hw14-sol.pdf",
-    "CS70/Homework/hw13-sol.pdf",
     "CS70/Homework/hw12-sol.pdf",
     "CS70/Homework/hw11-sol.pdf",
     "CS70/Discussions/dis14b-sol.pdf",
@@ -304,7 +305,6 @@
     "CS61B/Lecture 21 Tree and Graph Traversals/附件/Pasted image 20260501224107.png",
     "CS61B/Lecture 21 Tree and Graph Traversals/附件/Pasted image 20260501223652.png",
     "CS70/Lecture/Lecture 5 Graphs 1/Graph 1.md",
-    "CS61B/Lecture 21 Tree and Graph Traversals/附件",
     "CS70/Lecture/Lecture 6 Graphs 2/1. Complete Graphs and Trees.md",
     "CS61B/Lecture 20 Priority Queues and Heaps/20.2 堆.md",
     "CS61B/Lecture 20 Priority Queues and Heaps/20.1 优先队列.md",
