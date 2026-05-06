@@ -6,7 +6,6 @@
       {
         "id": "cb6cc8d3043913d8",
         "type": "tabs",
-        "dimension": 64.625,
         "children": [
           {
             "id": "adc0afb6f484a017",
@@ -52,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian接入AI/Geimini Cli接入Obsidian.md",
+                "file": "Codex/Codex安装.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Geimini Cli接入Obsidian"
+              "title": "Codex安装"
             }
           },
           {
@@ -101,15 +100,14 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       },
       {
-        "id": "b8c5b37f1e0a5565",
+        "id": "ea0f132d06d621f4",
         "type": "tabs",
-        "dimension": 35.375,
         "children": [
           {
-            "id": "631bbc728d46a692",
+            "id": "190aa84e230d0d48",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -120,9 +118,9 @@
                   "focus": false,
                   "profile": {
                     "args": [],
-                    "executable": "C:\\Windows\\System32\\cmd.exe",
+                    "executable": "powershell",
                     "followTheme": true,
-                    "name": "",
+                    "name": "自己加的",
                     "platforms": {
                       "win32": true
                     },
@@ -146,90 +144,9 @@
               "pinned": true,
               "icon": "terminal",
               "title": "终端：C:\\Windows\\System32\\conhost.exe"
-            }
-          },
-          {
-            "id": "7ed4a61858e16604",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "terminal:terminal",
-              "state": {
-                "terminal:terminal": {
-                  "cwd": "C:\\Users\\admin\\Desktop\\ZCY-s-website\\docs\\笔记本",
-                  "focus": false,
-                  "profile": {
-                    "args": [],
-                    "executable": "C:\\Windows\\System32\\cmd.exe",
-                    "followTheme": true,
-                    "name": "",
-                    "platforms": {
-                      "win32": true
-                    },
-                    "pythonExecutable": "python3",
-                    "restoreHistory": false,
-                    "rightClickAction": "copyPaste",
-                    "successExitCodes": [
-                      "0",
-                      "SIGINT",
-                      "SIGTERM"
-                    ],
-                    "terminalOptions": {
-                      "documentOverride": null
-                    },
-                    "type": "integrated",
-                    "useWin32Conhost": true
-                  },
-                  "serial": null
-                }
-              },
-              "pinned": true,
-              "icon": "terminal",
-              "title": "终端：C:\\Windows\\System32\\conhost.exe"
-            }
-          },
-          {
-            "id": "684bc0366f26539a",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "terminal:terminal",
-              "state": {
-                "terminal:terminal": {
-                  "cwd": "C:\\Users\\admin\\Desktop\\ZCY-s-website\\docs\\笔记本",
-                  "focus": false,
-                  "profile": {
-                    "args": [],
-                    "executable": "C:\\Windows\\System32\\cmd.exe",
-                    "followTheme": true,
-                    "name": "",
-                    "platforms": {
-                      "win32": true
-                    },
-                    "pythonExecutable": "python3",
-                    "restoreHistory": false,
-                    "rightClickAction": "copyPaste",
-                    "successExitCodes": [
-                      "0",
-                      "SIGINT",
-                      "SIGTERM"
-                    ],
-                    "terminalOptions": {
-                      "documentOverride": null
-                    },
-                    "type": "integrated",
-                    "useWin32Conhost": true
-                  },
-                  "serial": null
-                }
-              },
-              "pinned": true,
-              "icon": "terminal",
-              "title": "终端：✳ Claude Code"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -349,21 +266,30 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Obsidian接入AI/Claude Code接入Obsidian.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Claude Code接入Obsidian 的大纲"
+              "title": "大纲"
+            }
+          },
+          {
+            "id": "471e76ef73692fa0",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {},
+              "icon": "bot",
+              "title": "Claudian"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 508.5
+    "width": 515.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -376,14 +302,49 @@
       "command-palette:打开命令面板": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "terminal:Open terminal": false,
-      "claudian:Open Claudian": false,
-      "copilot:Open Copilot Chat": false
+      "claudian:Open Claudian": false
     }
   },
-  "active": "50af5b9b98b250ba",
+  "active": "b32056b0e4423e73",
   "lastOpenFiles": [
     "Obsidian接入AI/Geimini Cli接入Obsidian.md",
     "Obsidian接入AI/Claude Code接入Obsidian.md",
+    "Codex/Codex安装.md",
+    "Codex",
+    "Obsidian接入AI/附件/Pasted image 20260506093414.png",
+    "Obsidian接入AI/附件/Pasted image 20260506084533.png",
+    "Claude code使用/MacOS claude 国内安装教程.md",
+    "未命名.md",
+    "Obsidian接入AI/附件/Pasted image 20260506082409.png",
+    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/6. Conclusions/Conclusions.md",
+    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/5. Experiments/绪论.md",
+    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/4. Dataset/Dataset.md",
+    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/3.Model for deep regression of camera pose/绪论.md",
+    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/3.Model for deep regression of camera pose/3.2 Architecture.md",
+    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/3.Model for deep regression of camera pose/3.1 Simultaneously learning location and orientation.md",
+    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/2. Related work/2. Related work.md",
+    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/3.Model for deep regression of camera pose/附件/Pasted image 20260331222417.png",
+    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/附件/Pasted image 20260331121422.png",
+    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/附件/Pasted image 20260331121355.png",
+    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/附件/Pasted image 20260331110024.png",
+    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/附件/Pasted image 20260331121019.png",
+    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/附件/Pasted image 20260331105921.png",
+    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/附件/Pasted image 20260331103653.png",
+    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/5. Experiments/5.5 System efficient.md",
+    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/5. Experiments/5.4 Viewing the internal representation.md",
+    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/5. Experiments/5.3 Visualizing features relevant to pose.md",
+    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/5. Experiments/5.2 Importance of transfer learning.md",
+    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/5. Experiments/5.1 Robustness against training image spacing.md",
+    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/3.Model for deep regression of camera pose/附件",
+    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/附件",
+    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/6. Conclusions",
+    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/5. Experiments",
+    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/4. Dataset",
+    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/3.Model for deep regression of camera pose",
+    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/2. Related work",
+    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文",
+    "面向图像的位姿估计深度神经网络设计和实验",
+    "Obsidian接入AI/未命名.md",
     "copilot/copilot-custom-prompts/Clip Web Page.md",
     "copilot/copilot-custom-prompts/Clip YouTube Transcript.md",
     "copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
@@ -392,42 +353,6 @@
     "copilot/copilot-custom-prompts/Generate glossary.md",
     "copilot/copilot-custom-prompts/Generate table of contents.md",
     "copilot/copilot-custom-prompts/Make longer.md",
-    "copilot/copilot-custom-prompts/Make shorter.md",
-    "copilot/copilot-custom-prompts/Emojify.md",
-    "copilot/copilot-custom-prompts/Explain like I am 5.md",
-    "copilot/copilot-custom-prompts/Simplify.md",
-    "copilot/copilot-custom-prompts/Summarize.md",
-    "copilot/copilot-custom-prompts/Translate to Chinese.md",
-    "copilot/copilot-custom-prompts/Fix grammar and spelling.md",
-    "copilot/copilot-custom-prompts",
-    "copilot",
-    "Claude code使用/MacOS claude 国内安装教程.md",
-    "Claude code使用/阿里云 API 白嫖教程.pdf",
-    "Obsidian接入AI/未命名.md",
-    "Obsidian接入AI/未命名",
-    "电子电路基础/第5章 正弦交流电路/5.1 正弦量的基本概念.md",
-    "未命名 1.base",
-    "未命名.base",
-    "电子电路基础/第4章 动态电路的时域分析/4.2 二阶电路的响应.md",
-    "Obsidian接入AI/附件/Pasted image 20260505174946.png",
-    "Obsidian接入AI/附件",
-    "CS61A/Lab/Lab03/Q4.md",
-    "Obsidian接入AI",
-    "CS224n/Lecture 1/1.Assignment.md",
-    "1.这个网站的一些东西/未命名.md",
-    "Claude code使用/未命名.md",
-    "Claude code使用/阿里云 API 白嫖教程.pdf.crdownload",
-    "Claude code使用/claude 国内安装教程.md.crdownload",
-    "吴恩达机器学习/课程/week1/1 引言（Introduction）.md",
-    "CS61B/Lecture 21 Tree and Graph Traversals/附件/Pasted image 20260501235544.png",
-    "CS61B/Lecture 21 Tree and Graph Traversals/附件/Pasted image 20260501233518.png",
-    "CS61B/Lecture 21 Tree and Graph Traversals/附件/Pasted image 20260501233446.png",
-    "CS61B/Lecture 21 Tree and Graph Traversals/附件/Pasted image 20260501230759.png",
-    "CS61B/Lecture 21 Tree and Graph Traversals/附件/Pasted image 20260501230224.png",
-    "CS61B/Lecture 21 Tree and Graph Traversals/附件/Pasted image 20260501225252.png",
-    "CS61B/Lecture 21 Tree and Graph Traversals/附件/Pasted image 20260501225144.png",
-    "CS61B/Lecture 21 Tree and Graph Traversals/附件/Pasted image 20260501224827.png",
-    "CS61B/Lecture 21 Tree and Graph Traversals/附件/Pasted image 20260501224107.png",
     "未命名.canvas"
   ]
 }

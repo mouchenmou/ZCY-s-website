@@ -112,6 +112,8 @@ nav:
     - Claude code: 
       - MacOS claude 国内安装教程: 笔记本/Claude code使用/MacOS claude 国内安装教程.md
       - 阿里云 API 白嫖教程: 笔记本/Claude code使用/阿里云 API 白嫖教程.pdf
+    - Codex:
+      - Codex 安装: 笔记本/Codex/Codex安装.md
     - Obsidian中接入AI:
       - Gemini Cli接入Obsidian: 笔记本/Obsidian接入AI/Geimini Cli接入Obsidian.md
       - Claude code接入Obsidian: 笔记本/Obsidian接入AI/Claude Code接入Obsidian.md
