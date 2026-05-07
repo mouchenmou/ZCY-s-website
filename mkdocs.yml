@@ -110,7 +110,8 @@ nav:
   - Undergraduate Study:
     - undergraduate-study/雕虫小技.md
     - Claude code: 
-      - MacOS claude 国内安装教程: 笔记本/Claude code使用/MacOS claude 国内安装教程.md
+      - MacOS Claude Code国内安装教程: 笔记本/Claude code使用/MacOS Claude Code 国内安装教程.md
+      - Windows Claude Code国内安装教程: 笔记本/Claude code使用/Windows Claude Code 国内安装教程.md
       - 阿里云 API 白嫖教程: 笔记本/Claude code使用/阿里云 API 白嫖教程.pdf
     - Codex:
       - Codex 安装: 笔记本/Codex/Codex安装.md

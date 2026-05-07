@@ -37,12 +37,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian接入AI/Claude Code接入Obsidian.md",
+                "file": "吴恩达机器学习/课程/week1/1 引言（Introduction）.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Claude Code接入Obsidian"
+              "title": "1 引言（Introduction）"
             }
           },
           {
@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Codex/Codex安装.md",
+                "file": "大学物理实验/1.绪论/3.有效数字与实验数据处理.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Codex安装"
+              "title": "3.有效数字与实验数据处理"
             }
           },
           {
@@ -76,77 +76,21 @@
             }
           },
           {
-            "id": "0aa610f01aa8ffd2",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
-            }
-          },
-          {
             "id": "f30194b4f27cd478",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "数据结构基础 FDS/Homework/HW4/单选题2-4.md",
+                "file": "Obsidian接入AI/Windows 主机中的Claude Code接入Obsidian.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "单选题2-4"
+              "title": "Windows 主机中的Claude Code接入Obsidian"
             }
           }
         ],
-        "currentTab": 3
-      },
-      {
-        "id": "ea0f132d06d621f4",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "190aa84e230d0d48",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "terminal:terminal",
-              "state": {
-                "terminal:terminal": {
-                  "cwd": "C:\\Users\\admin\\Desktop\\ZCY-s-website\\docs\\笔记本",
-                  "focus": false,
-                  "profile": {
-                    "args": [],
-                    "executable": "powershell",
-                    "followTheme": true,
-                    "name": "自己加的",
-                    "platforms": {
-                      "win32": true
-                    },
-                    "pythonExecutable": "python3",
-                    "restoreHistory": false,
-                    "rightClickAction": "copyPaste",
-                    "successExitCodes": [
-                      "0",
-                      "SIGINT",
-                      "SIGTERM"
-                    ],
-                    "terminalOptions": {
-                      "documentOverride": null
-                    },
-                    "type": "integrated",
-                    "useWin32Conhost": true
-                  },
-                  "serial": null
-                }
-              },
-              "pinned": true,
-              "icon": "terminal",
-              "title": "终端：C:\\Windows\\System32\\conhost.exe"
-            }
-          }
-        ]
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -305,54 +249,53 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "b32056b0e4423e73",
+  "active": "f30194b4f27cd478",
   "lastOpenFiles": [
     "Obsidian接入AI/Geimini Cli接入Obsidian.md",
-    "Obsidian接入AI/Claude Code接入Obsidian.md",
+    "Obsidian接入AI/Windows 主机中的Claude Code接入Obsidian.md",
+    "Claude code使用/Windows Claude Code 国内安装教程以及Ubuntu的重新配置.md",
+    "Claude code使用/MacOS Claude Code 国内安装教程.md",
+    "CS70/Lecture/Lecture 8 Euclid’s Algorithm, FLT, CRT/Euclid’s Algorithm, FLT, CRT.md.md",
+    "Claude code使用/附件/Pasted image 20260508003352.png",
+    "Claude code使用/附件/Pasted image 20260508003319.png",
+    "Claude code使用/阿里云 API 白嫖教程.pdf",
+    "Claude code使用/附件/Pasted image 20260507233940.png",
+    "Claude code使用/附件/Pasted image 20260507225012.png",
+    "Claude code使用/附件/Pasted image 20260507215446.png",
+    "Claude code使用/附件",
+    "CS70/Lecture/Lecture 8 Euclid’s Algorithm, FLT, CRT/附件/c0496496bf8d001f3c58d0c96487686a.jpg",
+    "CS70/Lecture/Lecture 7 Modular Arithmetic/Lecture 7 Modular Arithmetic.md",
+    "CS70/Lecture/Lecture 7 Modular Arithmetic/n6.pdf",
+    "CS70/Lecture/Lecture 8 Euclid’s Algorithm, FLT, CRT/附件/Pasted image 20260507154057.png",
+    "数据结构基础 FDS/Homework/HW4/单选题2-4.md",
+    "吴恩达机器学习/课程/week1/1 引言（Introduction）.md",
+    "吴恩达机器学习/课程/week1/2 单变量线性回归（Linear Regression with One Variable）.md",
+    "吴恩达机器学习/课程/week1/3 Linear Algebra Review.md",
+    "机器人视觉、自动驾驶/Lecture 1/未命名.md",
+    "流体力学/流体力学第二章.pdf",
+    "流体力学/流体力学第三章.pdf",
+    "流体力学/流体力学第四章.pdf",
+    "流体力学/流体力学第一章.pdf",
     "Codex/Codex安装.md",
-    "Codex",
+    "copilot/copilot-custom-prompts/Simplify.md",
+    "copilot/copilot-custom-prompts/Remove URLs.md",
+    "copilot/copilot-custom-prompts/Make longer.md",
+    "copilot/copilot-custom-prompts/Generate table of contents.md",
+    "copilot/copilot-custom-prompts/Fix grammar and spelling.md",
+    "copilot/copilot-custom-prompts/Clip Web Page.md",
+    "copilot/copilot-custom-prompts/Translate to Chinese.md",
+    "copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
+    "copilot/copilot-custom-prompts/Emojify.md",
+    "大学物理实验/1.绪论/3.有效数字与实验数据处理.md",
+    "附件/截屏2026-02-08.md",
+    "大学物理实验/1.绪论/2.误差与不确定度.md",
+    "大学物理实验/1.绪论/1.实验测量与误差分布.md",
+    "CS70/Lecture/Lecture 8 Euclid’s Algorithm, FLT, CRT/附件/67b8ed7a7ad77b476edcdb70718036b4.jpg",
+    "CS70/Lecture/Lecture 8 Euclid’s Algorithm, FLT, CRT/附件",
+    "CS70/n7.pdf",
+    "CS70/Lecture/Lecture 8 Euclid’s Algorithm, FLT, CRT/n7.pdf",
     "Obsidian接入AI/附件/Pasted image 20260506093414.png",
     "Obsidian接入AI/附件/Pasted image 20260506084533.png",
-    "Claude code使用/MacOS claude 国内安装教程.md",
-    "未命名.md",
-    "Obsidian接入AI/附件/Pasted image 20260506082409.png",
-    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/6. Conclusions/Conclusions.md",
-    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/5. Experiments/绪论.md",
-    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/4. Dataset/Dataset.md",
-    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/3.Model for deep regression of camera pose/绪论.md",
-    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/3.Model for deep regression of camera pose/3.2 Architecture.md",
-    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/3.Model for deep regression of camera pose/3.1 Simultaneously learning location and orientation.md",
-    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/2. Related work/2. Related work.md",
-    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/3.Model for deep regression of camera pose/附件/Pasted image 20260331222417.png",
-    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/附件/Pasted image 20260331121422.png",
-    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/附件/Pasted image 20260331121355.png",
-    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/附件/Pasted image 20260331110024.png",
-    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/附件/Pasted image 20260331121019.png",
-    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/附件/Pasted image 20260331105921.png",
-    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/附件/Pasted image 20260331103653.png",
-    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/5. Experiments/5.5 System efficient.md",
-    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/5. Experiments/5.4 Viewing the internal representation.md",
-    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/5. Experiments/5.3 Visualizing features relevant to pose.md",
-    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/5. Experiments/5.2 Importance of transfer learning.md",
-    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/5. Experiments/5.1 Robustness against training image spacing.md",
-    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/3.Model for deep regression of camera pose/附件",
-    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/附件",
-    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/6. Conclusions",
-    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/5. Experiments",
-    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/4. Dataset",
-    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/3.Model for deep regression of camera pose",
-    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文/2. Related work",
-    "面向图像的位姿估计深度神经网络设计和实验/第一篇论文",
-    "面向图像的位姿估计深度神经网络设计和实验",
-    "Obsidian接入AI/未命名.md",
-    "copilot/copilot-custom-prompts/Clip Web Page.md",
-    "copilot/copilot-custom-prompts/Clip YouTube Transcript.md",
-    "copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
-    "copilot/copilot-custom-prompts/Rewrite as tweet.md",
-    "copilot/copilot-custom-prompts/Remove URLs.md",
-    "copilot/copilot-custom-prompts/Generate glossary.md",
-    "copilot/copilot-custom-prompts/Generate table of contents.md",
-    "copilot/copilot-custom-prompts/Make longer.md",
     "未命名.canvas"
   ]
 }
