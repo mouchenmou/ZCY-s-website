@@ -1,8 +1,6 @@
 
 !!! warning "不建议在Windows主系统中装Claude Code"
-    我原本是将Claude Code安装在Windows的主系统中，但它在Windows下真的很笨，本身就更适配Linux。而且把AI工具装在主系统中会有安全隐患，所以我选择把它迁到WSL中，顺便把WSL从C盘迁移到了D盘。
-    
-    但是，值得庆祝的是，Claudian插件不需要重新配置原因是 Claudian 插件不走本地 Windows 的 claude 可执行文件，它是通过环境变量直接把 API 请求发到云端：ANTHROPIC_BASE_URL=https://dashscope.aliyuncs.com/apps/anthropic  配置中 cliPath 是空的（"cliPath": ""），说明它走的是 API 直连模式，不需要本地有 claude 命令。
+    我原本是将Claude Code安装在Windows的主系统中，但它在Windows下真的很笨，本身就更适配Linux。而且把AI工具装在主系统中会有安全隐患，所以我在WSL中也装了一个Claude Code，顺便把WSL从C盘迁移到了D盘。原本把Windows主系统中的Claude Code直接删掉了，但是Claudian用不了了，只好装回来。
     
     但是在Terminal插件需要把默认的Shell改成WSL的bash，这样太麻烦了，因为Gemini Cli还得在Powershell中对话，所以不如Terminal插件用来跟Gemini Cli对话，Claudian用来跟Claude对话。
 

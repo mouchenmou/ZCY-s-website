@@ -87,3 +87,10 @@ git我之前已经安装过了，这个去搜一下也很快。
 1. 在终端中输入`curl -fsSL https://claude.ai/install.sh | bash`。安装完成之后会显示：
 ![](附件/Pasted%20image%2020260508003352.png)
 2. 在终端中输入`vim ~/.claude.json`，进入.claude.json文件，然后在键盘中点击i进入编辑模式，在这段文字中加入`"hasCompletedOnboarding": true,`（一定要加上逗号），然后点击ESC退出，输入`:wq`退出编辑，点击enter。
+
+---
+### 让 Claude Code 干活
+
+刚把Claude Code接入到WSL后，我就让它帮我梳理了一下我的Ubuntu，感觉还是蛮不错的：
+
+![](附件/Pasted%20image%2020260508174657.png)
