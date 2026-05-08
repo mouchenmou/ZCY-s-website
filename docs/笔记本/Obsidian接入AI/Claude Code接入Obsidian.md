@@ -29,6 +29,7 @@ ANTHROPIC_MODEL=qwen3.6-plus（这里填你的模型）
 ![](附件/Pasted%20image%2020260506082409.png)
 
 
-不过Terminal插件已经能够让我在Obsidian中使用claude了，但是那个终端看着很奇怪，很乱，所以用Claudian会舒服很多。
+不过Terminal插件已经能够让我在Obsidian中使用claude了，但是在Windows系统中，Terminal插件的终端渲染出来的效果真的很差，看着非常难受，在MacOS中看着就会舒服很多，很乱，所以我在Windows中用Claudian会舒服很多，并且跟Gemini Cli的终端不冲突。在MacOS中我直接用Terminal插件跟claude code对话。
+
 
 ---
