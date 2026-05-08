@@ -33,3 +33,9 @@ ANTHROPIC_MODEL=qwen3.6-plus（这里填你的模型）
 
 
 ---
+
+### 让 Claude Code 干活
+
+刚把Claude Code接入到WSL后，我就让它帮我梳理了一下我的Ubuntu，感觉还是蛮不错的：
+
+![](附件/Pasted%20image%2020260508174657.png)
