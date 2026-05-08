@@ -1,3 +1,4 @@
+
 !!! warning "不建议在Windows主系统中装Claude Code"
     我原本是将Claude Code安装在Windows的主系统中，但它在Windows下真的很笨，本身就更适配Linux。而且把AI工具装在主系统中会有安全隐患，所以我选择把它迁到WSL中，顺便把WSL从C盘迁移到了D盘。
     
@@ -22,7 +23,7 @@ ANTHROPIC_API_KEY=你的千问API密钥
 
 ANTHROPIC_BASE_URL=https://dashscope.aliyuncs.com/apps/anthropic
 
-ANTHROPIC_MODEL=qwen3.6-plus
+ANTHROPIC_MODEL=qwen3.6-plus（这里填你的模型）
 
 注意，那个框框里面的最后一行还有一个CLAUDE_CODE_USE_BEDROCK=1，这一行千万不要添加，这个是claude自己的模型才添加的。
 ![](附件/Pasted%20image%2020260506082409.png)
