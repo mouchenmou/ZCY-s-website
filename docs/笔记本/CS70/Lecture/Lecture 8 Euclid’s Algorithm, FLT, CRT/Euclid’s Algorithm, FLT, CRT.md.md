@@ -286,15 +286,22 @@ $\text{egcd}(35, 12)$ 返回 $(1, -1, 3)$，即 $1 = (-1) \cdot 35 + 3 \cdot 12$
 
 ## 4. Chinese Remainder Theorem（中国剩余定理）
 
+设 $m_1, m_2, \dots, m_k$ 是 $k$ 个两两互质的正整数（即对于任意 $i \neq j$，有最大公约数 $\gcd(m_i, m_j) = 1$）。对于任意给定的整数 $a_1, a_2, \dots, a_k$，存在一个整数 $x$，使得 $x$ 满足以下一元线性同余方程组：$$\begin{cases}
+x \equiv a_1 \pmod{m_1} \\
+x \equiv a_2 \pmod{m_2} \\
+\vdots \\
+x \equiv a_k \pmod{m_k}
+\end{cases}$$并且，在模 $M = m_1 m_2 \dots m_k$ 的意义下，该方程组的解是唯一的。也就是说，如果 $x_1$ 和 $x_2$ 都是方程组的解，那么必有 $x_1 \equiv x_2 \pmod{M}$。
+
 ### 4.1 最简单的情况（k = 2）
 
 **Claim：** 设 $\gcd(n_1, n_2) = 1$，则对于任意 $a_1, a_2$，存在**唯一**的 $x \pmod{n_1 n_2}$ 满足：
 
 $$x \equiv a_1 \pmod{n_1} \quad \text{且} \quad x \equiv a_2 \pmod{n_2}$$
 
-**证明（存在性）：**
+#### 4.1.1证明存在性：
 
-由扩展欧几里得，存在 $b_1, b_2$ 使得 $b_1 n_1 + b_2 n_2 = 1$。
+由扩展欧几里得，存在 $b_1, b_2$ 使得 $b_1 n_1 + b_2 n_2 = 1$。也就是找到 $n1\ (mod\ n2)$ 和 $n2\ (mod\ n1)$ 的逆元
 
 令 $x = a_1 b_2 n_2 + a_2 b_1 n_1$。
 
@@ -304,7 +311,7 @@ $$x = a_1 b_2 n_2 + a_2 b_1 n_1 = a_1(1 - b_1 n_1) + a_2 b_1 n_1 = a_1 + (a_2 - 
 
 所以 $x \equiv a_1 \pmod{n_1}$。同理 $x \equiv a_2 \pmod{n_2}$。
 
-**证明（唯一性）：**
+### 4.1.2 证明唯一性（there is exactly one x (mod n1n2) that satisfies the equations）：
 
 假设 $x$ 和 $y$ 都满足上述方程组。则 $x \equiv y \pmod{n_1}$ 且 $x \equiv y \pmod{n_2}$。
 
@@ -327,15 +334,160 @@ $$x = a_1 b_2 n_2 + a_2 b_1 n_1 = a_1(1 - b_1 n_1) + a_2 b_1 n_1 = a_1 + (a_2 - 
 
 $$x \equiv a_i \pmod{n_i} \quad \forall i$$
 
-**构造方法：**
+#### 4.3.1 证明
 
-对每个 $i$，令 $N_i = N / n_i$，求 $N_i$ 在 mod $n_i$ 下的逆元：
+证明分为两部分：“解的存在性”和“解的唯一性”。存在性的证明使用的是**构造法**，这种证明方式不仅在理论上严密，同时也直接构成了计算机算法中求解该类方程组的代码逻辑基础。
+
+##### 1. 证明解的存在性（构造法）
+
+我们需要构造出一个满足所有条件的 $x$。
+
+首先，令所有模数的乘积为 $M$：
+
+$$M = m_1 m_2 \dots m_k = \prod_{i=1}^k m_i$$
+
+对于每一个 $i \in \{1, 2, \dots, k\}$，定义：
+
+$$M_i = \frac{M}{m_i}$$
+
+显然，$M_i$ 是除了 $m_i$ 之外所有其他模数的乘积。因为 $m_1, m_2, \dots, m_k$ 两两互质，所以 $M_i$ 与 $m_i$ 互质，即 $\gcd(M_i, m_i) = 1$。
+
+既然 $\gcd(M_i, m_i) = 1$，就必然存在整数 $y_i$，使得：
+
+$$M_i y_i \equiv 1 \pmod{m_i}$$
+
+这里的 $y_i$ 就是 $M_i$ 在模 $m_i$ 下的乘法逆元（通常可通过扩展欧几里得算法求得）。
+
+现在，我们构造出解 $x$ 的表达式：
+
+$$x = a_1 M_1 y_1 + a_2 M_2 y_2 + \dots + a_k M_k y_k = \sum_{i=1}^k a_i M_i y_i$$
+
+**验证这个 $x$ 是否满足原方程组：**
+
+考虑 $x$ 模 $m_j$ 的情况（$1 \le j \le k$）。
+
+在求和式 $\sum_{i=1}^k a_i M_i y_i$ 中，当 $i \neq j$ 时，$M_i$ 内部包含了因子 $m_j$，因此 $M_i \equiv 0 \pmod{m_j}$，这意味着除第 $j$ 项外的所有项在模 $m_j$ 时都等于 $0$。
+
+而当 $i = j$ 时，由前面的定义已知 $M_j y_j \equiv 1 \pmod{m_j}$。
+
+因此，对 $x$ 取模 $m_j$ 有：
+
+$$x \equiv 0 + \dots + 0 + a_j(M_j y_j) + 0 + \dots + 0 \equiv a_j \times 1 \equiv a_j \pmod{m_j}$$
+
+这就证明了我们构造出来的 $x$ 确实满足所有的同余方程，解是存在的。
+
+##### 2. 证明解的唯一性
+
+假设存在两个解 $x_1$ 和 $x_2$ 都满足原方程组。
+
+对于所有的 $1 \le i \le k$，都有：
+
+$$x_1 \equiv a_i \pmod{m_i}$$
+
+$$x_2 \equiv a_i \pmod{m_i}$$
+
+两式相减，得到：
+
+$$x_1 - x_2 \equiv 0 \pmod{m_i}$$
+
+这意味着差值 $(x_1 - x_2)$ 能被每一个 $m_i$ 整除。
+
+因为 $m_1, m_2, \dots, m_k$ 两两互质，多个两两互质的整数共同整除一个数，说明它们的乘积也能整除这个数。因此 $(x_1 - x_2)$ 必定能被它们的乘积 $M$ 整除。
+
+即：
+
+$$x_1 - x_2 \equiv 0 \pmod{M}$$
+
+等价于：
+
+$$x_1 \equiv x_2 \pmod{M}$$
+
+这就证明了在模 $M$ 的意义下，方程组的解是唯一的。
+#### 4.3.2 核心思想：延续 k=2 的"基向量"构造
+
+从 k=2 的情况我们知道，关键是构造一组"基向量" $u_i$，每个 $u_i$ 在自己对应的模下等于 1，在其他所有模下等于 0。
+
+推广到 k 个模数，思路完全一样：我们需要构造 $u_1, u_2, ..., u_k$ 使得：
+
+- $u_i \equiv 1 \pmod{n_i}$
+- $u_i \equiv 0 \pmod{n_j}$（对所有 $j \ne i$）
+
+一旦有了这些 $u_i$，解就是 $x = \sum_{i=1}^{k} a_i u_i \pmod N$。
+
+**为什么这个解是对的？** 拿第 $i$ 个方程来验证，$x \pmod{n_i}$ 时：
+
+- $a_i u_i \equiv a_i \cdot 1 = a_i \pmod{n_i}$（唯一贡献）
+- 所有 $a_j u_j$（$j \ne i$）中，$u_j \equiv 0 \pmod{n_i}$，所以全部消失
+
+结果：$x \equiv a_i \pmod{n_i}$。每个方程都满足。
+
+#### 4.3.3 怎么构造 $u_i$？
+
+对每个 $i$，令 $N_i = N / n_i = n_1 \cdot n_2 \cdots n_{i-1} \cdot n_{i+1} \cdots n_k$。
+
+也就是说，$N_i$ 是**除了 $n_i$ 以外所有模数的乘积**。
+
+**关键观察：** 因为所有 $n_j$ 两两互质，所以 $N_i$ 和 $n_i$ 也互质（$\gcd(N_i, n_i) = 1$）。
+
+因此，**$N_i$ 在 mod $n_i$ 下一定有乘法逆元**（扩展欧几里得算法可以求出来）。
+
+令：
 
 $$u_i = N_i \cdot (N_i^{-1} \bmod n_i)$$
 
-则 $u_i \equiv 1 \pmod{n_i}$，$u_i \equiv 0 \pmod{n_j}$（$j \ne i$）。
+其中 $N_i^{-1} \bmod n_i$ 是 $N_i$ 在 mod $n_i$ 下的乘法逆元，即满足 $N_i \cdot N_i^{-1} \equiv 1 \pmod{n_i}$ 的那个数。
 
-最终解：$x = \sum_{i=1}^{k} a_i u_i \pmod N$。
+**验证 $u_i$ 的两个性质：**
+
+**性质 1：$u_i \equiv 1 \pmod{n_i}$**
+
+由定义，$u_i = N_i \cdot N_i^{-1}$，而 $N_i^{-1}$ 就是 $N_i$ 的逆元，所以 $N_i \cdot N_i^{-1} \equiv 1 \pmod{n_i}$。**直接得证。**
+
+**性质 2：$u_i \equiv 0 \pmod{n_j}$（$j \ne i$）**
+
+因为 $N_i$ 的定义包含了 $n_j$ 作为因子（$N_i = N / n_i$，而 $n_j$ 是 $N$ 的因子且 $j \ne i$），所以 $N_i \equiv 0 \pmod{n_j}$。进而 $u_i = N_i \cdot N_i^{-1} \equiv 0 \pmod{n_j}$。**也得证。**
+
+#### 4.3.4 具体例子：k = 3
+
+求满足以下条件的最小正整数 $x$：
+
+$$\begin{cases} x \equiv 2 \pmod{3} \\ x \equiv 3 \pmod{5} \\ x \equiv 2 \pmod{7} \end{cases}$$
+
+**Step 1：** 计算 $N = 3 \times 5 \times 7 = 105$
+
+**Step 2：** 对每个模数计算 $N_i$：
+
+- $N_1 = 105 / 3 = 35$
+- $N_2 = 105 / 5 = 21$
+- $N_3 = 105 / 7 = 15$
+
+**Step 3：** 求每个 $N_i$ 在 mod $n_i$ 下的逆元：
+
+- 求 $35^{-1} \pmod 3$：$35 \equiv 2 \pmod 3$，$2 \times 2 = 4 \equiv 1 \pmod 3$，所以逆元是 $2$
+- 求 $21^{-1} \pmod 5$：$21 \equiv 1 \pmod 5$，$1 \times 1 = 1 \pmod 5$，所以逆元是 $1$
+- 求 $15^{-1} \pmod 7$：$15 \equiv 1 \pmod 7$，逆元是 $1$
+
+**Step 4：** 构造 $u_i$：
+
+- $u_1 = 35 \times 2 = 70$
+- $u_2 = 21 \times 1 = 21$
+- $u_3 = 15 \times 1 = 15$
+
+**验证性质：**
+- $70 \equiv 1 \pmod 3$ ✓，$70 \equiv 0 \pmod 5$ ✓，$70 \equiv 0 \pmod 7$ ✓
+- $21 \equiv 0 \pmod 3$ ✓，$21 \equiv 1 \pmod 5$ ✓，$21 \equiv 0 \pmod 7$ ✓
+- $15 \equiv 0 \pmod 3$ ✓，$15 \equiv 0 \pmod 5$ ✓，$15 \equiv 1 \pmod 7$ ✓
+
+**Step 5：** 最终解：
+
+$$x = 2 \times 70 + 3 \times 21 + 2 \times 15 = 140 + 63 + 30 = 233 \equiv 23 \pmod{105}$$
+
+**验证：**
+- $23 \equiv 2 \pmod 3$ ✓（$23 = 7 \times 3 + 2$）
+- $23 \equiv 3 \pmod 5$ ✓（$23 = 4 \times 5 + 3$）
+- $23 \equiv 2 \pmod 7$ ✓（$23 = 3 \times 7 + 2$）
+
+**答案：$x = 23$，在 mod 105 下唯一。
 
 ---
 
