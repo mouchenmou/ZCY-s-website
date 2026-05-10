@@ -1,0 +1,24 @@
+{
+  "id": "conv-1778405942290-5jjpysmtp",
+  "providerId": "claude",
+  "title": "你好啊",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1778405942290,
+  "updatedAt": 1778405958815,
+  "lastResponseAt": 1778405958815,
+  "sessionId": "14a54f6f-a3b9-41a7-a543-f374b3f71931",
+  "providerState": {
+    "providerSessionId": "14a54f6f-a3b9-41a7-a543-f374b3f71931"
+  },
+  "currentNote": "合并笔记/合并笔记.md",
+  "usage": {
+    "model": "qwen3.6-plus",
+    "inputTokens": 18527,
+    "cacheCreationInputTokens": 58,
+    "cacheReadInputTokens": 19868,
+    "contextWindow": 200000,
+    "contextTokens": 38453,
+    "percentage": 19,
+    "contextWindowIsAuthoritative": true
+  }
+}
