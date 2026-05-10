@@ -216,6 +216,7 @@ nav:
       - Lecture 21 Tree and Graph Traversals:
         - 21.1 Trees and Traversals: 笔记本/CS61B/Lecture 21 Tree and Graph Traversals/21.1 Trees and Traversals.md
         - 21.2 Graph: 笔记本/CS61B/Lecture 21 Tree and Graph Traversals/21.2 Graph.md
+      - Lecture 22 Graph Traversals and Implementations: 笔记本/CS61B/Lecture 22 Graph Traversals and Implementations/Graph Traversals and Implementations.md
       - Lab:
         - Lab1 命令行: 笔记本/CS61B/lab/lab1/命令行.md
       - Project:
@@ -270,19 +271,20 @@ nav:
         - Discussion 13b: 笔记本/CS70/Discussions/dis13b-sol.pdf
         - Discussion 14a: 笔记本/CS70/Discussions/dis14a-sol.pdf
         - Discussion 14b: 笔记本/CS70/Discussions/dis14b-sol.pdf
-      - Lecture 1:
-        - 1.1 Introduction: 笔记本/CS70/Lecture/Lecture 1 Introduction, Propositional logical/1.Introduction.md
-        - 1.2 Propositional logical: 笔记本/CS70/Lecture/Lecture 1 Introduction, Propositional logical/2.Propositional logical.md
-      - Lecture 2 Proofs: 笔记本/CS70/Lecture/Lecture 2 Proofs/Proofs.md
-      - Lecture 3 Induction: 笔记本/CS70/Lecture/Lecture 3 Induction/Induction.md
-      - Lecture 4 Stable Matching : 笔记本/CS70/Lecture/Lecture 4 Stable Matching/Stable Matching.md
-      - Lecture 5 Graph 1: 笔记本/CS70/Lecture/Lecture 5 Graphs 1/Graph 1.md
-      - Lecture 6 Grapg 2: 
-        - 6.1 Complete Graphs and Trees: 笔记本/CS70/Lecture/Lecture 6 Graphs 2/1. Complete Graphs and Trees.md
-        - 6.2 Planar Graph and Euler's Formula: 笔记本/CS70/Lecture/Lecture 6 Graphs 2/2. Planar Graphs and Euler’s Formula.md
-      - Lecture 7 Modular Arithmeti: 笔记本/CS70/Lecture/Lecture 7 Modular Arithmetic/Lecture 7 Modular Arithmetic.md
-      - Lecture 8 Euclid’s Algorithm, FLT, CRT: 笔记本/CS70/Lecture/Lecture 8 Euclid’s Algorithm, FLT, CRT/Euclid’s Algorithm, FLT, CRT.md
-      - Lecutre 9 RSA: 笔记本/CS70/Lecture/Lecutre 9 RSA/RSA.md
+      - Lecture:
+        - Lecture 1:
+          - 1.1 Introduction: 笔记本/CS70/Lecture/Lecture 1 Introduction, Propositional logical/1.Introduction.md
+          - 1.2 Propositional logical: 笔记本/CS70/Lecture/Lecture 1 Introduction, Propositional logical/2.Propositional logical.md
+        - Lecture 2 Proofs: 笔记本/CS70/Lecture/Lecture 2 Proofs/Proofs.md
+        - Lecture 3 Induction: 笔记本/CS70/Lecture/Lecture 3 Induction/Induction.md
+        - Lecture 4 Stable Matching : 笔记本/CS70/Lecture/Lecture 4 Stable Matching/Stable Matching.md
+        - Lecture 5 Graph 1: 笔记本/CS70/Lecture/Lecture 5 Graphs 1/Graph 1.md
+        - Lecture 6 Grapg 2: 
+          - 6.1 Complete Graphs and Trees: 笔记本/CS70/Lecture/Lecture 6 Graphs 2/1. Complete Graphs and Trees.md
+          - 6.2 Planar Graph and Euler's Formula: 笔记本/CS70/Lecture/Lecture 6 Graphs 2/2. Planar Graphs and Euler’s Formula.md
+        - Lecture 7 Modular Arithmeti: 笔记本/CS70/Lecture/Lecture 7 Modular Arithmetic/Lecture 7 Modular Arithmetic.md
+        - Lecture 8 Euclid's Algorithm, FLT, CRT: 笔记本/CS70/Lecture/Lecture 8 Euclid's Algorithm, FLT, CRT/Euclid’s Algorithm, FLT, CRT.md
+        - Lecutre 9 RSA: 笔记本/CS70/Lecture/Lecutre 9 RSA/RSA.md
     - CS231n:  
       - Part 1 Deep Learning Basics:
         - Lecture 1 导论: 笔记本/CS231n/Lecture/Lecture 1 导论/导论.md
