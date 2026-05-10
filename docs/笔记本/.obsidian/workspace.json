@@ -65,12 +65,14 @@
             "id": "f30194b4f27cd478",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "CS70/Lecture/Lecture 8 Euclid’s Algorithm, FLT, CRT/n7.pdf"
+                "file": "CS70/Lecture/Lecture 8 Euclid’s Algorithm, FLT, CRT/Euclid’s Algorithm, FLT, CRT.md.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "n7"
+              "icon": "lucide-file",
+              "title": "Euclid’s Algorithm, FLT, CRT.md"
             }
           },
           {
@@ -249,13 +251,14 @@
   },
   "active": "f30194b4f27cd478",
   "lastOpenFiles": [
+    "CS70/Lecture/Lecutre 9 RSA/RSA.md.md",
+    "CS70/Lecture/Lecture 8 Euclid’s Algorithm, FLT, CRT/n7.pdf",
     "CS70/Lecture/Lecture 8 Euclid’s Algorithm, FLT, CRT/Euclid’s Algorithm, FLT, CRT.md.md",
     "CS70/Homework/未确认 731626.crdownload",
     "CS70/Lecture/Lecture 7 Modular Arithmetic/Lecture 7 Modular Arithmetic.md",
     "CS70/Lecture/Lecture 7 Modular Arithmetic/n6.pdf",
     "fix_crt.py",
     "大学物理实验/1.绪论/3.有效数字与实验数据处理.md",
-    "CS70/Lecture/Lecture 8 Euclid’s Algorithm, FLT, CRT/n7.pdf",
     "Claude code使用/WSL Claude Code 国内安装教程以及Ubuntu的重新配置.md",
     "Obsidian接入AI/Claude Code接入Obsidian.md",
     "Obsidian接入AI/Geimini Cli接入Obsidian.md",
