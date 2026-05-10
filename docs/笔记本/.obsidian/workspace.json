@@ -63,12 +63,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "合并笔记/合并笔记.md",
+                "file": "CS70/Lecture/Lecture 8 Euclid’s Algorithm, FLT, CRT/Euclid’s Algorithm, FLT, CRT.md.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "合并笔记"
+              "title": "Euclid’s Algorithm, FLT, CRT.md"
             }
           }
         ],
@@ -216,7 +216,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 506.5
+    "width": 283.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -232,13 +232,14 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "3ee86d49960c812e",
+  "active": "3ebbdfc0d6b8251b",
   "lastOpenFiles": [
+    "CS70/Lecture/Lecture 8 Euclid’s Algorithm, FLT, CRT/n7.pdf",
+    "CS70/Lecture/Lecutre 9 RSA/RSA.md.md",
     "合并笔记/合并笔记.md",
     "Obsidian接入AI/Claude Code接入Obsidian.md",
     "合并笔记",
     "Claude code使用/Windows Claude Code安装教程.md",
-    "CS70/Lecture/Lecture 8 Euclid’s Algorithm, FLT, CRT/n7.pdf",
     "CS70/Lecture/Lecture 8 Euclid’s Algorithm, FLT, CRT/Euclid’s Algorithm, FLT, CRT.md.md",
     "CS70/Homework/未确认 731626.crdownload",
     "CS70/Lecture/Lecture 7 Modular Arithmetic/Lecture 7 Modular Arithmetic.md",
@@ -276,8 +277,6 @@
     "copilot/copilot-custom-prompts/Generate table of contents.md",
     "copilot/copilot-custom-prompts/Fix grammar and spelling.md",
     "copilot/copilot-custom-prompts/Clip Web Page.md",
-    "copilot/copilot-custom-prompts/Translate to Chinese.md",
-    "copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
     "CS70/Lecture/Lecture 8 Euclid’s Algorithm, FLT, CRT/附件/67b8ed7a7ad77b476edcdb70718036b4.jpg",
     "Obsidian接入AI/附件/Pasted image 20260506093414.png",
     "未命名.canvas"
