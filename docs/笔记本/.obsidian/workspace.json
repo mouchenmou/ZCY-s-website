@@ -63,12 +63,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS70/Lecture/Lecture 6 Graphs 2/2. Planar Graphs and Euler's Formula.md",
+                "file": "数据结构基础 FDS/课程内容/summary1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2. Planar Graphs and Euler's Formula"
+              "title": "summary1"
             }
           }
         ],
@@ -234,6 +234,9 @@
   },
   "active": "3ebbdfc0d6b8251b",
   "lastOpenFiles": [
+    "数据结构基础 FDS/DS09_Ch09_Shortest-Path Algorithm.pdf",
+    "数据结构基础 FDS/DS07_Segment Tree.pdf",
+    "CS70/Lecture/Lecture 6 Graphs 2/2. Planar Graphs and Euler's Formula.md",
     "CS70/Lecture/Lecture 8 Euclid's Algorithm, FLT, CRT/Euclid's Algorithm, FLT, CRT.md.md",
     "CS61B/Lecture 22 Graph Traversals and Implementations/Graph Traversals and Implementations.md",
     "CS70/Lecture/Lecutre 9 RSA/RSA.md.md",
@@ -264,7 +267,6 @@
     "Claude code使用/附件/Pasted image 20260507233940.png",
     "Claude code使用/附件/Pasted image 20260507225012.png",
     "Claude code使用/附件/Pasted image 20260507215446.png",
-    "Claude code使用/附件",
     "CS70/Lecture/Lecture 8 Euclid's Algorithm, FLT, CRT/附件/c0496496bf8d001f3c58d0c96487686a.jpg",
     "CS70/Lecture/Lecture 8 Euclid's Algorithm, FLT, CRT/附件/Pasted image 20260507154057.png",
     "数据结构基础 FDS/Homework/HW4/单选题2-4.md",
@@ -276,7 +278,6 @@
     "copilot/copilot-custom-prompts/Remove URLs.md",
     "copilot/copilot-custom-prompts/Make longer.md",
     "copilot/copilot-custom-prompts/Generate table of contents.md",
-    "copilot/copilot-custom-prompts/Fix grammar and spelling.md",
     "CS70/Lecture/Lecture 8 Euclid's Algorithm, FLT, CRT/附件/67b8ed7a7ad77b476edcdb70718036b4.jpg",
     "Obsidian接入AI/附件/Pasted image 20260506093414.png",
     "未命名.canvas"
