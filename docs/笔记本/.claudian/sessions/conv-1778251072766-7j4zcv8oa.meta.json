@@ -4,8 +4,8 @@
   "title": "你好",
   "titleGenerationStatus": "failed",
   "createdAt": 1778251072766,
-  "updatedAt": 1778338068057,
-  "lastResponseAt": 1778338068057,
+  "updatedAt": 1778521366471,
+  "lastResponseAt": 1778521366471,
   "sessionId": "456524d5-f9a7-41f7-b476-b3087694fd4f",
   "providerState": {
     "providerSessionId": "456524d5-f9a7-41f7-b476-b3087694fd4f",
@@ -1313,12 +1313,12 @@
   "currentNote": "Obsidian接入AI/Claude Code接入Obsidian.md",
   "usage": {
     "model": "qwen3.6-plus",
-    "inputTokens": 25559,
-    "cacheCreationInputTokens": 108,
-    "cacheReadInputTokens": 61957,
+    "inputTokens": 48746,
+    "cacheCreationInputTokens": 172,
+    "cacheReadInputTokens": 100522,
     "contextWindow": 200000,
-    "contextTokens": 87624,
-    "percentage": 44,
+    "contextTokens": 149440,
+    "percentage": 75,
     "contextWindowIsAuthoritative": true
   }
 }

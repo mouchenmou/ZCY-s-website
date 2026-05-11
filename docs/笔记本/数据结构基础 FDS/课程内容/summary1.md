@@ -7,10 +7,10 @@ counter: True
 # 基础数据结构
 
 !!! abstract
-    「数据结构基础」课程 树、堆、并查集、图 部分内容复习与总结
+    「数据结构基础」课程 树、堆、线段树、并查集、图 部分内容复习与总结
 
-## 树
-### 基础概念
+## 1. 树
+### 1.1 基础概念
 - 树包括根节点（root），0 个或多个非空子树 $T_1,\cdots, T_k$ 与根通过一条有向边连接
 - 每棵子树的根叫做 root 的儿子（children），root 是每棵子树根的父亲（parent）
 - 一棵树是 $N$ 个节点和 $N-1$ 条边的集合
@@ -25,7 +25,7 @@ counter: True
 - 一个节点的祖先（ancestors）是从根到这个节点的路径上的所有节点
 - 一个节点的后裔（descendants）是这个节点子树中的所有节点
 
-#### 树的表示
+#### 1.1.1 树的表示
 - 列表表示
     - 子节点个数未知，不易表示
 - FirstChild-NextSibling 表示法
@@ -40,7 +40,7 @@ counter: True
     typedef struct TreeNode *PtrToNode;
     ```
 
-### 二叉树
+### 1.2 二叉树
 - 二叉树（binary tree）是每个节点最多有两个儿子的树
 - 每棵树都可以用二叉树来表示
     - 即通过 FirstChild-NextSibling 表示法
@@ -59,7 +59,7 @@ counter: True
     - 二叉树的一种，每个节点都是一个运算符，叶节点是操作数
     - 用于表示算术表达式
 
-#### 遍历
+#### 1.2.1 二叉树的遍历
 - 先序遍历（preorder traversal）
     - 根 -> 左 -> 右
 - 后序遍历（postorder traversal）
@@ -94,13 +94,13 @@ counter: True
     }
     ```
 
-#### 线索二叉树（Threaded Binary Tree）
+#### 1.2.2 线索二叉树（Threaded Binary Tree）
 - 如果一个节点的左儿子为空，那么它的左指针指向它的遍历前驱节点
 - 如果一个节点的右儿子为空，那么它的右指针指向它的遍历后继节点
 - 一定有一个 head node，左儿子为根，右儿子为自身
  Homework4中就有一个post-order threaded binary tree，可以作为参考。
 
-### 二叉搜索树
+### 1.3 二叉搜索树
 - 二叉搜索树（binary search tree）是一种二叉树，非空情况下服从以下性质：
     - 所有节点都有不同的 key（一个整数）
     - 一个节点的左子树的所有节点的 key 都小于这个节点的 key
@@ -152,7 +152,7 @@ counter: True
 
 ---
 
-## 堆
+## 2. 堆
 - 堆（heap）也称作优先队列（priority queue），支持插入值、找最小/大值，删除最小/大值
 - 二叉堆（binary heap）是一种完全二叉树，满足以下性质：
     - 任意节点的值都不大于（或不小于）其父节点的值（即最大堆或最小堆）
@@ -206,7 +206,120 @@ counter: True
     - 可以直接将这个序列当作二叉树，然后从最后一个非叶节点开始，进行 PercolateDown，复杂度为 $O(N)$
 
 ---
-## 并查集
+## 3. 线段树
+
+我之所以把线段树跟别的树分开，是因为线段树是今年新增的内容，我还不是很熟悉，所以单开一段，把内容写的详细一点。
+
+### 3.1 动机
+
+给定一个数组 `A`，需要**频繁**计算任意区间 `[L, R]` 的和（或最值等聚合操作）。
+
+暴力做法每次遍历区间，复杂度 $O(N)$，作为频繁操作太慢。
+
+线段树可以在 $O(\log N)$ 内完成**区间查询**和**单点更新**。
+
+### 3.2 结构
+
+线段树是一棵**满二叉树**，可以用数组存储：
+
+```
+数组 A:    [7, 2, 5, 3, 8]
+            ↓
+线段树:
+                [0,4] = 25
+           ──────────┐
+        [0,2] = 14   [3,4] = 11
+       ─────┴───     ────┴──
+     [0,1]=9 [2]=5   [3]=3 [4]=8
+     ┌──
+    [0]=7 [1]=2
+```
+
+- 根节点 `tree[1]` 表示区间 `[0, n-1]`
+- 节点 `tree[node]` 的左儿子是 `tree[2*node]`，右儿子是 `tree[2*node+1]`
+- 叶子节点 `tree[node]` 存储 `A[start]`（单个元素）
+- 内部节点存储其两个儿子的 **聚合结果** （比如和、最大值、最小值、gcd等等）
+- 空间复杂度 $O(N)$，实际开 `4N` 是安全的（N 不是 2 的幂时，数组最大索引可能接近 4N）
+
+### 3.3 建树
+
+从根节点开始，递归地分割区间，到叶子节点时赋值为 `A[start]`，回溯时合并两个儿子的值。
+
+```c
+void Build(int node, int start, int end) {
+    // 叶子节点
+    if (start == end) {
+        tree[node] = A[start];
+        return;
+    }
+    int mid = (start + end) / 2;
+    Build(2 * node, start, mid);           // 左儿子
+    Build(2 * node + 1, mid + 1, end);     // 右儿子
+    tree[node] = tree[2 * node] + tree[2 * node + 1];  // 合并
+}
+```
+
+时间复杂度：$O(N)$（只跑一次）
+
+!!! question "为什么 Build 的返回值是 void？"
+    因为线段树用 **数组存储** ，根节点永远在 `tree[1]`。子节点位置由索引自动算出（`2*node` 和 `2*node+1`），不需要返回任何东西。这和指针实现的树不同——指针需要返回新节点地址才能"挂"上去，数组的索引本身就是"天然指针"。
+
+### 3.4 区间查询
+
+查询区间 `[L, R]` 时，从根节点往下走，有三种情况：
+
+| 情况 | 条件 | 操作 |
+|------|------|------|
+| 完全无交集 | `R < start || end < L` | 返回 0（或单位元） |
+| 完全包含 | `L <= start && end <= R` | 直接返回 `tree[node]` |
+| 部分重叠 | 其他 | 递归查询左右儿子，合并结果 |
+
+```c
+int Query(int node, int start, int end, int L, int R) {
+    // 完全无交集
+    if (R < start || end < L) return 0;
+    // 完全包含
+    if (L <= start && end <= R) return tree[node];
+    // 部分重叠
+    int mid = (start + end) / 2;
+    int left_sum = Query(2 * node, start, mid, L, R);
+    int right_sum = Query(2 * node + 1, mid + 1, end, L, R);
+    return left_sum + right_sum;
+}
+```
+
+时间复杂度：$O(\log N)$
+
+!!! question "为什么每一层最多用到 4 个元素？"
+    任意查询区间 `[L, R]` 在线段树上分解时，每一层最多只有 **4 个节点被访问**：2 个在左边界附近的部分重叠节点 + 2 个在右边界附近的部分重叠节点。中间的全包含节点直接返回，不用往下递归。所以每层工作量是常数，总层数 $\log N$，总体 $O(\log N)$。
+
+### 3.5 单点更新
+
+将 `A[idx]` 更新为 `val`：从根节点找到对应的叶子节点，更新后回溯时重新计算每个祖先节点的值。
+
+```c
+void Update(int node, int start, int end, int idx, int val) {
+    if (start == end) {       // 找到叶子节点
+        tree[node] = val;
+        return;
+    }
+    int mid = (start + end) / 2;
+    if (idx <= mid)
+        Update(2 * node, start, mid, idx, val);      // 往左走
+    else
+        Update(2 * node + 1, mid + 1, end, idx, val); // 往右走
+    tree[node] = tree[2 * node] + tree[2 * node + 1];  // 回溯更新
+}
+```
+
+时间复杂度：$O(\log N)$
+
+### 3.6 注意事项
+
+- 不限于求和，适用于 **任何满足结合律的区间聚合操作** ：`min`、`max`、`gcd`、`xor` 等
+- 对于 **区间更新** （如给 `[L, R]` 所有元素加 10），需要用到 **lazy propagation**（延迟标记），这里就不讲了。。。
+---
+## 4. 并查集
 - 并查集（disjoint set）是一种数据结构，支持两种操作：
     - 合并两个集合
     - 查询两个元素是否属于同一个集合
@@ -258,7 +371,7 @@ int find(int x) {
     - 无向图的连通组件（connected component of an undirected G）：无向图的极大连通子图
         1. 子图 (Subgraph)：它是原图 $G$ 的一部分，由原图中的部分顶点（Vertices）和部分边（Edges）组成。
         2. 连通 (Connected)：在这个子图内部， **任意两个顶点之间都至少存在一条路径可以互相到达** 。也就是说，这个子图内部是四通八达的，没有任何节点是被完全孤立在这个子图之外的。
-        3. 极大 (Maximal)：“极大”的意思是，你不能再从原图中拉任何一个其他顶点加入到这个子图中了。如果你强行拉一个外面的顶点进来，这个子图就不再“连通”了（因为那个外面的顶点和现在的子图没有任何边相连）。它已经“尽可能大”地把所有能连通的节点都圈在一起了。
+        3. 极大 (Maximal)："极大"的意思是，你不能再从原图中拉任何一个其他顶点加入到这个子图中了。如果你强行拉一个外面的顶点进来，这个子图就不再"连通"了（因为那个外面的顶点和现在的子图没有任何边相连）。它已经"尽可能大"地把所有能连通的节点都圈在一起了。
         - 也就是说，==如果图G本身是连通的图的话，那么这幅图的connected component只有一个，就是它自己==
 - 树是联通的无环图
 - DAG（directed acyclic graph）：有向无环图
@@ -313,42 +426,134 @@ void topsort(Graph G) {
 ```
 
 ### 最短路算法
-- 单源最短路：给定一个有向图和一个源点，求从源点到图中每个点的最短路径
-- 无权图的单源最短路：BFS 即可
-- 带权图的单源最短路：Dijkstra 算法，堆优化复杂度 $O(E\log V)$
-    1. 初始化 dis[s] = 0，其他 dis[v] = ∞
-    2. 从堆中取全局 dis[x] 最小的、且未访问过的 x，将 x 标记为已访问
-    3. 扫描 x 的所有出边 (x, y)
-        - 若 dis[y] > dis[x] + weight(x, y)，则更新 dis[y] = dis[x] + weight(x, y)，并将 {y, dis[y]} 压入堆中
-- 带负权边：
-    - SPFA 算法，复杂度 $O(VE)$
-    ```c 
-    void WeightNegative(Table T) {
-        Queue Q = CreateQueue(); Vertex V, W;
-        Enqueue(Q, s);
-        while (!IsEmpty(Q)) {
-            V = Dequeue(Q);
-            for (each W adjacent to V) {
-                if (T[V].dist + w < T[W].dist) {
-                    T[W].dist = T[V].dist + w;
-                    T[W].path = V;
-                    if (W is not already in Q) Enqueue(Q, W);
-                }
+
+**单源最短路（Single-Source Shortest Path）：** 给定一个带权有向图 $G = (V, E)$ 和源点 $s$，求从 $s$ 到图中每个顶点的最短路径（加权路径长度 $\sum_{e \in P} c(e)$）。
+
+#### 无权图的最短路
+
+无权图（或所有边权重相等）的最短路用 **BFS** 即可（CS61B中有讲为什么BSF在无权途中返回最短的路径，并且这个想想也很简单）：
+
+```c
+void Unweighted(Table T) {
+    Queue Q = CreateQueue();
+    Enqueue(S, Q);
+    while (!IsEmpty(Q)) {
+        V = Dequeue(Q);
+        T[V].Known = true;
+        for (each W adjacent to V)
+            if (T[W].Dist == Infinity) {
+                T[W].Dist = T[V].Dist + 1;
+                T[W].Path = V;
+                Enqueue(W, Q);
             }
-        }
-        free(Q);
     }
-    ```
-- AOE（Activity On Edge）网络
-    - 规划活动进行的顺序
-    - 有向无环图
-    - 每个节点存在一个最早完成时间（earliest completion time）EC[v] 和最晚完成时间（latest completion time）LC[v]
-    - 每条边存在一个持续时间（lasting time）也就是边权 C，还有一个松弛时间（slack time）
-    - 计算
-        - $EC[w]=\max_{<v,w>\in E}\{EC[v]+C_{v,w}\}$
-        - $LC[v]=\max_{<v,w>\in E}\{LC[w]-C_{v,w}\}$
-        - 边 $<v,w>$ 的松弛时间为 $LC[w]-EC[v]-C_{v,w}$
-    - 关键路径（critical path）为全是 0 松弛时间的边构成的路径
+}
+```
+
+- `T[i].Dist`：从 $s$ 到 $v_i$ 的距离（初始化为 $\infty$，$s$ 为 0）
+- `T[i].Known`：是否已处理
+- `T[i].Path`：记录路径前驱
+- 时间复杂度：$O(|V| + |E|)$
+
+#### Dijkstra 算法（带权最短路）
+
+设 $S = \{s$ 和已找到最短路径的顶点$\}$。对任意 $u \notin S$，定义 `distance[u]` 为只经过 $S$ 中顶点从 $s$ 到 $u$ 的最短路径长度。
+
+**贪心策略：** 每次选 `distance` 最小的 $u \notin S$ 加入 $S$，然后更新其邻居。
+
+**正确性证明：** 假设最短路径经过某个不在 $S$ 中的顶点 $w$，那么该路径上必然有第一个不在 $S$ 中的顶点，其距离一定比 $u$ 更小——与 $u$ 是最小矛盾。
+
+```c
+void Dijkstra(Table T) {
+    for (;;) {
+        V = smallest unknown distance vertex;
+        if (V == NotAVertex) break;
+        T[V].Known = true;
+        for (each W adjacent to V)
+            if (!T[W].Known)
+                if (T[V].Dist + Cvw < T[W].Dist) {
+                    T[W].Dist = T[V].Dist + Cvw;
+                    T[W].Path = V;
+                }
+    }
+}
+```
+
+**两种实现方式：**
+
+| 实现 | 找最小顶点 | Decrease | 总复杂度 | 适用场景 |
+|------|-----------|----------|---------|---------|
+| 1 | 线性扫描 $O(|V|)$ | $O(1)$ | $O(|V|^2 + |E|)$ | 稠密图 |
+| 2 | 优先队列 $O(\log|V|)$ | DecreaseKey $O(\log|V|)$ 或直接插入 | $O(|E|\log|V|)$ | 稀疏图 |
+
+- **方法 2 的 DecreaseKey 实现：** 用堆维护未访问顶点，更新时调用 DecreaseKey（需维护顶点在堆中的位置）
+- **方法 2 的插入实现：** 不修改堆内元素，直接将更新后的 `{W, newDist}` 插入堆，出队时跳过已访问的顶点。需要 $O(|E|)$ 空间。
+
+**注意：Dijkstra 不能处理负权边！**
+
+#### 带负权边的图
+
+**不能简单给每条边加常数**（因为边数不同的路径受影响不同，最短路径可能改变）。
+
+正确做法：**SPFA 算法**（队列优化的 Bellman-Ford）
+
+```c
+void WeightedNegative(Table T) {
+    Queue Q = CreateQueue();
+    Enqueue(S, Q);
+    while (!IsEmpty(Q)) {
+        V = Dequeue(Q);
+        for (each W adjacent to V)
+            if (T[V].Dist + Cvw < T[W].Dist) {
+                T[W].Dist = T[V].Dist + Cvw;
+                T[W].Path = V;
+                if (W is not already in Q)
+                    Enqueue(W, Q);
+            }
+    }
+}
+```
+
+- 与 BFS 的区别：同一顶点可能**多次入队**（因为距离可能被多次更新）
+- 每个顶点最多出队 $|V|$ 次
+- 时间复杂度：$O(|V| \times |E|)$
+- **负环会导致无限循环**（没有最短路径）
+
+#### 有向无环图（DAG）
+
+如果图是 DAG，可以按**拓扑排序**的顺序处理顶点：
+
+```c
+// 拓扑排序后依次松弛
+for (each vertex v in topological order) {
+    for (each W adjacent to v)
+        if (dist[v] + Cvw < dist[W]) {
+            dist[W] = dist[v] + Cvw;
+            path[W] = v;
+        }
+}
+```
+
+- 时间复杂度：$O(|V| + |E|)$，**不需要优先队列**
+- 原理：拓扑序保证处理 $v$ 时，所有可能的入边起点都已经处理完
+
+#### AOE 网络（Activity On Edge）
+
+AOE 网络用于**项目调度**：边表示活动（持续时间 = 边权），顶点表示事件的完成。
+
+- **EC[v]**（最早完成时间）：从起点正向计算，$EC[w] = \max_{\langle v,w \rangle \in E} \{ EC[v] + C_{v,w} \}$
+- **LC[v]**（最晚完成时间）：从终点反向计算，$LC[v] = \min_{\langle v,w \rangle \in E} \{ LC[w] - C_{v,w} \}$
+- 边 $\langle v,w \rangle$ 的**松弛时间（slack time）**：$LC[w] - EC[v] - C_{v,w}$
+- **关键路径（critical path）**：由松弛时间全为 0 的边构成的路径
+
+#### 全源最短路（All-Pairs Shortest Path）
+
+求任意两点之间的最短路径：
+
+| 方法 | 思路 | 复杂度 | 适用 |
+|------|------|--------|------|
+| 单源重复 $|V|$ 次 | 对每个顶点跑一次单源最短路 | $O(|V|^3)$ | 稀疏图 |
+| Floyd-Warshall（Ch.10） | 动态规划 | $O(|V|^3)$ | 稠密图 |
 
 ### 网络流
 - 最大流：给定一个有向图，求从源点到汇点的最大流量
