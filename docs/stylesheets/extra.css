@@ -835,6 +835,100 @@ html[data-md-color-scheme="warm"] body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* ============================================
+   代码块行号和语言标签样式
+   ============================================ */
+
+/* 代码块整体容器 */
+.md-typeset pre > code {
+  display: table;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: separate;
+}
+
+/* 行号列 */
+.md-typeset pre > code .linenos {
+  display: table-cell;
+  padding: 1em 0.5em !important;
+  padding-right: 1em !important;
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+  -webkit-user-select: none;
+  user-select: none;
+  text-align: right;
+  vertical-align: top;
+  color: rgba(0, 0, 0, 0.3) !important;
+  background: transparent !important;
+  font-size: 0.85em;
+  line-height: 1.6;
+}
+
+/* 代码内容列 */
+.md-typeset pre > code .code {
+  display: table-cell;
+  padding: 1em !important;
+  padding-left: 1em !important;
+  vertical-align: top;
+  overflow-x: auto;
+}
+
+/* 代码块内部的pre不要有额外padding */
+.md-typeset pre {
+  padding: 0 !important;
+  margin: 0;
+}
+
+/* 语言标签样式 - 显示在代码块右上角 */
+.md-typeset pre > code .hl-lang {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--md-code-hl-color, #3b82f6);
+  background: rgba(59, 130, 246, 0.1);
+  padding: 0.2em 0.6em;
+  border-radius: 0 0.5rem 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  pointer-events: none;
+}
+
+/* 确保代码块有相对定位以便语言标签定位 */
+.md-typeset pre {
+  position: relative;
+}
+
+/* warm主题下的行号样式 */
+[data-md-color-scheme="warm"] .md-typeset pre > code .linenos {
+  color: rgba(0, 0, 0, 0.35) !important;
+  border-right-color: rgba(0, 0, 0, 0.12);
+}
+
+[data-md-color-scheme="warm"] .md-typeset pre > code .hl-lang {
+  color: #558b2f;
+  background: rgba(124, 179, 66, 0.15);
+}
+
+/* 复制按钮不覆盖行号 */
+.md-clipboard {
+  z-index: 2;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+  .md-typeset pre > code .linenos {
+    padding: 0.8em 0.4em !important;
+    padding-right: 0.8em !important;
+    font-size: 0.8em;
+  }
+
+  .md-typeset pre > code .code {
+    padding: 0.8em !important;
+    padding-left: 0.8em !important;
+  }
+}
+
 /* 内容区域整体美化 */
 .md-content {
   border-radius: 16px 16px 0 0;
