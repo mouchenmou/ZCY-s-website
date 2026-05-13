@@ -85,31 +85,9 @@ html[data-md-color-scheme="warm"] body {
   background-attachment: fixed !important;
 }
 
-/* 保留文章内容区域的圆角框框效果 - 确保内容清晰 */
-[data-md-color-scheme="warm"] .md-content {
-  background: #f0e6d2 !important;
-  background-color: #f0e6d2 !important;
-  box-shadow:
-    0 4px 15px rgba(0, 0, 0, 0.2) !important;
-  position: relative;
-  border-radius: 8px;
-  padding: 30px !important;
-  margin: 20px !important;
-  min-height: calc(100vh - 100px) !important;
-}
-
-/* 确保导航抽屉在内容区域之上且可点击 */
+/* 导航抽屉修复 - 确保移动端可点击 */
 .md-nav--primary {
-  z-index: 5 !important;
-}
-
-.md-nav--primary .md-nav__link {
-  pointer-events: auto !important;
-  cursor: pointer !important;
-}
-
-.md-nav--primary .md-nav__item {
-  pointer-events: auto !important;
+  z-index: 3 !important;
 }
 
 /* 确保所有文本在内容区域清晰可见 */
@@ -122,13 +100,6 @@ html[data-md-color-scheme="warm"] body {
 [data-md-color-scheme="warm"] .md-content .md-typeset h3,
 [data-md-color-scheme="warm"] .md-content .md-typeset h4 {
   color: #1a202c !important;
-}
-
-/* 代码块确保清晰 */
-[data-md-color-scheme="warm"] .md-content .md-typeset pre {
-  background: #f7fafc !important;
-  color: #2d3748 !important;
-  border: 1px solid #e2e8f0;
 }
 
 /* 导航栏分隔符样式 */
@@ -527,10 +498,6 @@ html[data-md-color-scheme="warm"] body {
   border-radius: 12px;
 }
 
-.md-typeset code {
-  border-radius: 6px;
-}
-
 .md-typeset h1 {
   font-weight: 700;
   color: #2e2e2e;
@@ -546,13 +513,15 @@ html[data-md-color-scheme="warm"] body {
 .md-typeset code {
   background-color: var(--md-code-bg-color);
   padding: 0.1em 0.3em;
-  border-radius: 0.2rem;
+  border-radius: 6px;
   font-size: 0.85em;
 }
 
 .md-typeset pre code {
   background-color: transparent;
   padding: 0;
+  border-radius: 0;
+  font-size: inherit;
 }
 
 /* 链接样式 */
@@ -844,11 +813,6 @@ html[data-md-color-scheme="warm"] body {
 .tech-tag:hover {
   transform: scale(1.05);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* 内容区域整体美化 */
-.md-content {
-  border-radius: 16px 16px 0 0;
 }
 
 /* 导航面包屑美化 */
