@@ -25,8 +25,10 @@
 
 ##### Windows系统的解决方法：
  如果你用的是 PowerShell（Windows 默认终端），持久化环境变量要在 $PROFILE 文件里设置。在 PowerShell 里运行：`notepad $PROFILE`，然后在文件里加上：
- - $env:HTTPS_PROXY = "http://127.0.0.1:你的端口"
- - $env:HTTP_PROXY = "http://127.0.0.1:你的端口"
+ 
+ `$env:HTTP_PROXY="http://127.0.0.1:你的端口号"`
+`$env:HTTPS_PROXY="http://127.0.0.1:你的端口号"`
+
   
   如果你用的是 Git Bash（MINGW64），那 ~/.bashrc 的路径是 C:\Users\admin\.bashrc，直接编辑就行。
 
@@ -57,8 +59,9 @@ try {
   - Linux 多数默认是 bash → 用 ~/.bashrc
   
 在 ~/.bashrc 或 ~/.zshrc 中加入下面两句话：
-- export HTTPS_PROXY=http://127.0.0.1:你的代理端口
-- export HTTP_PROXY=http://127.0.0.1:你的代理端口
+
+`export HTTPS_PROXY=http://127.0.0.1:你的代理端口`
+`export HTTP_PROXY=http://127.0.0.1:你的代理端口`
 
 去了美国后得删掉，因为去了美国就没必要开梯子了。
 #### 2. 说我年龄未满18岁
