@@ -223,53 +223,53 @@ nav:
           - Q2 public static boolean maxTileExists : 笔记本/CS61B/Project/Project0/Q2 public static boolean maxTileExists.md
     - CS70 离散数学:
       - Homework:
-        - Homework 0: 笔记本/CS70/Homework/hw00/hw00.md
-        - Homework 1: 笔记本/CS70/Homework/hw01/hw01.md
-        - Homework 2: 笔记本/CS70/Homework/hw02/hw02.md
-        - Homework 3: 笔记本/CS70/Homework/hw03/hw03.md
-        - Homework 4: 笔记本/CS70/Homework/hw04/hw04.md
-        - Homework 5: 笔记本/CS70/Homework/hw05/hw05.md
-        - Homework 6: 笔记本/CS70/Homework/hw06/hw06.md
-        - Homework 7: 笔记本/CS70/Homework/hw07/hw07.md
-        - Homework 8: 笔记本/CS70/Homework/hw08/hw08.md
-        - Homework 9: 笔记本/CS70/Homework/hw09/hw09.md
-        - Homework 10: 笔记本/CS70/Homework/hw10/hw10.md
-        - Homework 11: 笔记本/CS70/Homework/hw11/hw11.md
-        - Homework 12: 笔记本/CS70/Homework/hw12/hw12.md
-        - Homework 13: 笔记本/CS70/Homework/hw13/hw13.md
-        - Homework 14: 笔记本/CS70/Homework/hw14/hw14.md
-        - Homework 15: 笔记本/CS70/Homework/hw15/hw15.md
+        - Homework 0: 笔记本/CS70/Homework/hw00-sol.pdf
+        - Homework 1: 笔记本/CS70/Homework/hw01-sol.pdf
+        - Homework 2: 笔记本/CS70/Homework/hw02-sol.pdf
+        - Homework 3: 笔记本/CS70/Homework/hw03-sol.pdf
+        - Homework 4: 笔记本/CS70/Homework/hw04-sol.pdf
+        - Homework 5: 笔记本/CS70/Homework/hw05-sol.pdf
+        - Homework 6: 笔记本/CS70/Homework/hw06-sol.pdf
+        - Homework 7: 笔记本/CS70/Homework/hw07-sol.pdf
+        - Homework 8: 笔记本/CS70/Homework/hw08-sol.pdf
+        - Homework 9: 笔记本/CS70/Homework/hw09-sol.pdf
+        - Homework 10: 笔记本/CS70/Homework/hw10-sol.pdf
+        - Homework 11: 笔记本/CS70/Homework/hw11-sol.pdf
+        - Homework 12: 笔记本/CS70/Homework/hw12-sol.pdf
+        - Homework 13: 笔记本/CS70/Homework/hw13-sol.pdf
+        - Homework 14: 笔记本/CS70/Homework/hw14-sol.pdf
+        - Homework 15: 笔记本/CS70/Homework/hw15-sol.pdf
       - Discussions:
-        - dis00a: 笔记本/CS70/Discussions/dis00/dis00a.md
-        - dis00b: 笔记本/CS70/Discussions/dis00/dis00b.md
-        - dis01a: 笔记本/CS70/Discussions/dis01/dis01a.md
-        - dis01b: 笔记本/CS70/Discussions/dis01/dis01b.md
-        - dis02a: 笔记本/CS70/Discussions/dis02/dis02a.md
-        - dis02b: 笔记本/CS70/Discussions/dis02/dis02b.md
-        - dis03a: 笔记本/CS70/Discussions/dis03/dis03a.md
-        - dis03b: 笔记本/CS70/Discussions/dis03/dis03b.md
-        - dis04a: 笔记本/CS70/Discussions/dis04/dis04a.md
-        - dis04b: 笔记本/CS70/Discussions/dis04/dis04b.md
-        - dis05a: 笔记本/CS70/Discussions/dis05/dis05a.md
-        - dis05b: 笔记本/CS70/Discussions/dis05/dis05b.md
-        - dis06a: 笔记本/CS70/Discussions/dis06/dis06a.md
-        - dis06b: 笔记本/CS70/Discussions/dis06/dis06b.md
-        - dis07a: 笔记本/CS70/Discussions/dis07/dis07a.md
-        - dis07b: 笔记本/CS70/Discussions/dis07/dis07b.md
-        - dis08a: 笔记本/CS70/Discussions/dis08/dis08a.md
-        - dis08b: 笔记本/CS70/Discussions/dis08/dis08b.md
-        - dis09a: 笔记本/CS70/Discussions/dis09/dis09a.md
-        - dis09b: 笔记本/CS70/Discussions/dis09/dis09b.md
-        - dis10a: 笔记本/CS70/Discussions/dis10/dis10a.md
-        - dis10b: 笔记本/CS70/Discussions/dis10/dis10b.md
-        - dis11a: 笔记本/CS70/Discussions/dis11/dis11a.md
-        - dis11b: 笔记本/CS70/Discussions/dis11/dis11b.md
-        - dis12a: 笔记本/CS70/Discussions/dis12/dis12a.md
-        - dis12b: 笔记本/CS70/Discussions/dis12/dis12b.md
-        - dis13a: 笔记本/CS70/Discussions/dis13/dis13a.md
-        - dis13b: 笔记本/CS70/Discussions/dis13/dis13b.md
-        - dis14a: 笔记本/CS70/Discussions/dis14/dis14a.md
-        - dis14b: 笔记本/CS70/Discussions/dis14/dis14b.md
+        - Discussion 0a: 笔记本/CS70/Discussions/dis00a-sol.pdf
+        - Discussion 0b: 笔记本/CS70/Discussions/dis00b-sol.pdf
+        - Discussion 1a: 笔记本/CS70/Discussions/dis01a-sol.pdf
+        - Discussion 1b: 笔记本/CS70/Discussions/dis01b-sol.pdf
+        - Discussion 2a: 笔记本/CS70/Discussions/dis02a-sol.pdf
+        - Discussion 2b: 笔记本/CS70/Discussions/dis02b-sol.pdf
+        - Discussion 3a: 笔记本/CS70/Discussions/dis03a-sol.pdf
+        - Discussion 3b: 笔记本/CS70/Discussions/dis03b-sol.pdf
+        - Discussion 4a: 笔记本/CS70/Discussions/dis04a-sol.pdf
+        - Discussion 4b: 笔记本/CS70/Discussions/dis04b-sol.pdf
+        - Discussion 5a: 笔记本/CS70/Discussions/dis05a-sol.pdf
+        - Discussion 5b: 笔记本/CS70/Discussions/dis05b-sol.pdf
+        - Discussion 6a: 笔记本/CS70/Discussions/dis06a-sol.pdf
+        - Discussion 6b: 笔记本/CS70/Discussions/dis06b-sol.pdf
+        - Discussion 7a: 笔记本/CS70/Discussions/dis07a-sol.pdf
+        - Discussion 7b: 笔记本/CS70/Discussions/dis07b-sol.pdf
+        - Discussion 8a: 笔记本/CS70/Discussions/dis08a-sol.pdf
+        - Discussion 8b: 笔记本/CS70/Discussions/dis08b-sol.pdf
+        - Discussion 9a: 笔记本/CS70/Discussions/dis09a-sol.pdf
+        - Discussion 9b: 笔记本/CS70/Discussions/dis09b-sol.pdf
+        - Discussion 10a: 笔记本/CS70/Discussions/dis10a-sol.pdf
+        - Discussion 10b: 笔记本/CS70/Discussions/dis10b-sol.pdf
+        - Discussion 11a: 笔记本/CS70/Discussions/dis11a-sol.pdf
+        - Discussion 11b: 笔记本/CS70/Discussions/dis11b-sol.pdf
+        - Discussion 12a: 笔记本/CS70/Discussions/dis12a-sol.pdf
+        - Discussion 12b: 笔记本/CS70/Discussions/dis12b-sol.pdf
+        - Discussion 13a: 笔记本/CS70/Discussions/dis13a-sol.pdf
+        - Discussion 13b: 笔记本/CS70/Discussions/dis13b-sol.pdf
+        - Discussion 14a: 笔记本/CS70/Discussions/dis14a-sol.pdf
+        - Discussion 14b: 笔记本/CS70/Discussions/dis14b-sol.pdf
       - Lecture:
         - Lecture 1:
           - 1.1 Introduction: 笔记本/CS70/Lecture/Lecture 1 Introduction, Propositional logical/1.Introduction.md
@@ -379,47 +379,46 @@ nav:
       - 第5章 正弦交流电路: 
         - 5.1正弦量的基本概念: 笔记本/电子电路基础/第5章 正弦交流电路/5.1 正弦量的基本概念.md
         - 5.2正弦稳态电路的相量分析方法: 笔记本/电子电路基础/第5章 正弦交流电路/5.2 正弦稳态电路的相量分析方法.md
-      - 第6章 二极管: 
-        - 二极管pdf: 笔记本/电子电路基础/第6章 二极管/index.md
+      - 第6章 二极管:
+        - 二极管pdf: 笔记本/电子电路基础/第6章 二极管/chap_6m 二极管.pdf
         - 二极管难题: 笔记本/电子电路基础/第6章 二极管/二极管.md
-      - 第7章 三极管: 
-        - 三极管pdf: 笔记本/电子电路基础/第7章 三极管/index.md
+      - 第7章 三极管:
+        - 三极管pdf: 笔记本/电子电路基础/第7章 三极管/chap_7m 三极管.pdf
         - 三极管: 笔记本/电子电路基础/第7章 三极管/三极管.md
       - 第8章 场效应晶体管及其放大电路:
-        - 一、场效应晶体管PPT: 笔记本/电子电路基础/第8章 场效应晶体管及其放大电路/index.md
-        - 8.1 MOS晶体管工作原理: 笔记本/电子电路基础/第8章 场效应晶体管及其放大电路/index.md
-        - 8.2 MOS晶体管类型: 笔记本/电子电路基础/第8章 场效应晶体管及其放大电路/index.md
-        - 8.3 MOS晶体管直流特性: 笔记本/电子电路基础/第8章 场效应晶体管及其放大电路/index.md
-        - 8.4 MOS晶体管交流小信号特性: 笔记本/电子电路基础/第8章 场效应晶体管及其放大电路/index.md
+        - 一、场效应晶体管PPT: 笔记本/电子电路基础/第8章 场效应晶体管及其放大电路/第八章 场效应晶体管.pdf
+        - 8.1 MOS晶体管工作原理: 笔记本/电子电路基础/第8章 场效应晶体管及其放大电路/8.1 MOS晶体管工作原理.pdf
+        - 8.2 MOS晶体管类型: 笔记本/电子电路基础/第8章 场效应晶体管及其放大电路/8.2 MOS晶体管类型.pdf
+        - 8.3 MOS晶体管直流特性: 笔记本/电子电路基础/第8章 场效应晶体管及其放大电路/8.3 MOS晶体管直流特性.pdf
+        - 8.4 MOS晶体管交流小信号特性: 笔记本/电子电路基础/第8章 场效应晶体管及其放大电路/8.4 MOS晶体管交流小信号特性.pdf
       - 第9章 理想运算放大器及其应用电路:
         - 9.1 运算放大器基础: 笔记本/电子电路基础/第9章 理想运算放大器及其应用电路/9.1 运算放大器基础.md
         - 9.2 运算放大器基本应用电路: 笔记本/电子电路基础/第9章 理想运算放大器及其应用电路/9.2 运算放大器基本应用电路.md
       - 第10章 频率响应:
         - 1. 频率响应笔记: 笔记本/电子电路基础/第10章 频率响应/频率响应.md
-        - 2. 频率响应PPT: 笔记本/电子电路基础/第10章 频率响应/index.md
-        - 3. 频率响应补充: 笔记本/电子电路基础/第10章 频率响应/index.md
-        - 4. 频率响应知识点: 笔记本/电子电路基础/第10章 频率响应/index.md
+        - 2. 频率响应PPT: 笔记本/电子电路基础/第10章 频率响应/chap_10m 频率响应.pdf
+        - 3. 频率响应补充: 笔记本/电子电路基础/第10章 频率响应/chap_10m_appd1.pdf
+        - 4. 频率响应知识点: 笔记本/电子电路基础/第10章 频率响应/chap_10m_appd2.pdf
       - 第11章 反馈:
         - 1. 反馈笔记: 笔记本/电子电路基础/第11章 反馈/反馈.md
-        - 2. 反馈PPT: 笔记本/电子电路基础/第11章 反馈/index.md
-        - 3. 反馈知识点: 笔记本/电子电路基础/第11章 反馈/index.md
+        - 2. 反馈PPT: 笔记本/电子电路基础/第11章 反馈/chap_11m 反馈.pdf
+        - 3. 反馈知识点: 笔记本/电子电路基础/第11章 反馈/chap_11m_appd.pdf
       - 第12章 放大器:
         - 1. 功率放大器笔记: 笔记本/电子电路基础/第12章 功率放大器/功率放大器.md
-        - 2. 功率放大器PPT: 笔记本/电子电路基础/第12章 功率放大器/index.md
+        - 2. 功率放大器PPT: 笔记本/电子电路基础/第12章 功率放大器/chap_12m 功率放大器.pdf
     - 信号与系统:
-      - 目录: 笔记本/信号与系统/index.md
-      - 第一章 信号与系统的基本概念: 笔记本/信号与系统/第1章/index.md
-      - 第二章 LTI系统: 笔记本/信号与系统/第2章/index.md
-      - 第三章 连续时间信号与系统的频域分析: 笔记本/信号与系统/第3章/index.md
+      - 第一章 信号与系统的基本概念: 笔记本/信号与系统/第1章/信号与系统第一章.pdf
+      - 第二章 LTI系统: 笔记本/信号与系统/第2章/信号与系统第二章.pdf
+      - 第三章 连续时间信号与系统的频域分析: 笔记本/信号与系统/第3章/信号与系统第三章.pdf
       - 作业:
-        - 第一次作业: 笔记本/信号与系统/作业/作业一/作业一.md
-        - 第二次作业: 笔记本/信号与系统/作业/作业二/作业二.md
-        - 第三次作业: 笔记本/信号与系统/作业/作业三/作业三.md
-        - 第四次作业: 笔记本/信号与系统/作业/作业四/作业四.md
-        - 第五次作业: 笔记本/信号与系统/作业/作业五/作业五.md
-        - 第六次作业: 笔记本/信号与系统/作业/作业六/作业六.md
+        - 第一次作业: 笔记本/信号与系统/作业/作业1.pdf
+        - 第二次作业: 笔记本/信号与系统/作业/作业2.pdf
+        - 第三次作业: 笔记本/信号与系统/作业/作业3.pdf
+        - 第四次作业: 笔记本/信号与系统/作业/作业4.pdf
+        - 第五次作业: 笔记本/信号与系统/作业/作业5.pdf
+        - 第六次作业: 笔记本/信号与系统/作业/作业6.pdf
       - 作业中的收获:
-        - 第七次作业: 笔记本/信号与系统/作业中的收获/index.md
+        - 第七次作业: 笔记本/信号与系统/作业中的收获/作业7.md
     - 数据结构基础 FDS:
       - 1. 算法分析基础: 笔记本/数据结构基础 FDS/课程内容/topic1.md
       - 2. 基础数据结构: 笔记本/数据结构基础 FDS/课程内容/summary1.md
@@ -463,10 +462,10 @@ nav:
           - 单选题: 笔记本/数据结构基础 FDS/Homework/HW9/单选题.md
           - 程序填空题: 笔记本/数据结构基础 FDS/Homework/HW9/程序填空题.md
     - 流体力学:
-      - 第一章 绪论: 笔记本/流体力学/第1章/第1章.md
-      - 第二章 流体的主要物理性质: 笔记本/流体力学/第2章/第2章.md
-      - 第三章 流体静力学: 笔记本/流体力学/第3章/第3章.md
-      - 第四章 流体运动基本原理: 笔记本/流体力学/第4章/第4章.md
+      - 第一章 绪论: 笔记本/流体力学/流体力学第一章.pdf
+      - 第二章 流体的主要物理性质: 笔记本/流体力学/流体力学第二章.pdf
+      - 第三章 流体静力学: 笔记本/流体力学/流体力学第三章.pdf
+      - 第四章 流体运动基本原理: 笔记本/流体力学/流体力学第四章.pdf
     - 大学物理实验:
       - 1.绪论:
         - 1.实验测量与误差分布: 笔记本/大学物理实验/1.绪论/1.实验测量与误差分布.md
@@ -502,8 +501,8 @@ nav:
   - Undergraduate Research:
     - laboratory-work/research-notes.md
     - 自动化渗透: 
-      - LLM自进化论文1: 笔记本/申老师科研/LLM自进化论文/index.md
-      - LLM自进化论文2: 笔记本/申老师科研/LLM自进化论文/index.md
+      - LLM自进化论文1: 笔记本/申老师科研/LLM自进化论文/LLM论文1.pdf
+      - LLM自进化论文2: 笔记本/申老师科研/LLM自进化论文/LLM论文2.pdf
 
 # Custom CSS
 extra_css:
