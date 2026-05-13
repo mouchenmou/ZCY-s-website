@@ -512,6 +512,46 @@ html[data-md-color-scheme="warm"] body {
   border-radius: 12px;
 }
 
+/* 代码块行号样式统一 - 让行号和代码在同一个框内，中间只有细灰线分隔 */
+/* 去掉行号容器的独立背景/圆角，让它和代码共享同一个大框 */
+.md-typeset .highlighttable,
+.md-typeset .linenos,
+.md-typeset .md-code__content .linenos {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* 行号文字样式 - 浅灰色，与BruceJqs风格一致 */
+.md-typeset .highlighttable .linenos .lineno,
+.md-typeset .linenos .lineno,
+.md-typeset .md-code__content .linenos a {
+  color: #9e9e9e !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  padding: 0 0.6em 0 1em !important;
+  font-size: inherit !important;
+}
+
+/* 行号与代码之间的细灰线分隔 */
+.md-typeset .highlighttable td:nth-child(2),
+.md-typeset .highlighttable td.linenos,
+.md-typeset .md-code__content .linenos {
+  border-right: 1px solid #d0d7de !important;
+}
+
+/* 代码区域样式 - 与行号共享背景 */
+.md-typeset .highlighttable td:nth-child(2) pre,
+.md-typeset .md-code__content pre {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
 .md-typeset h1 {
   font-weight: 700;
   color: #2e2e2e;
