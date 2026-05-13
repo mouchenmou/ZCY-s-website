@@ -7,6 +7,9 @@ dist/
 *.pyo
 __pycache__/
 
+# Claude AI assistant local data
+**/.claudian/
+
 # Obsidian
 **/.obsidian/
 **/.trash/
