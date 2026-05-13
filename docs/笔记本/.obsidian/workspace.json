@@ -63,12 +63,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Claude code使用/Windows Claude Code安装教程.md",
+                "file": "Claude code使用/MacOS Claude Code 国内安装教程.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Windows Claude Code安装教程"
+              "title": "MacOS Claude Code 国内安装教程"
             }
           }
         ],
@@ -234,6 +234,9 @@
   },
   "active": "3ebbdfc0d6b8251b",
   "lastOpenFiles": [
+    "Claude code使用/Windows Claude Code安装教程.md",
+    "Claude code使用/WSL Claude Code 国内安装教程以及Ubuntu的重新配置.md",
+    "Obsidian接入AI/Geimini Cli接入Obsidian.md",
     "流体力学/流体力学第二章.pdf",
     "吴恩达机器学习/assignments/machine-learning-ex1/ex1.pdf",
     "信号与系统/作业/作业6.pdf",
@@ -244,7 +247,6 @@
     "信号与系统/作业/作业1.pdf",
     "流体力学/流体力学第四章.pdf",
     "流体力学/流体力学第三章.pdf",
-    "流体力学/流体力学第一章.pdf",
     "吴恩达机器学习/assignments/machine-learning-ex1/index.md",
     "吴恩达机器学习/README.md",
     "吴恩达机器学习/assignments/machine-learning-ex2/index.md",
@@ -268,8 +270,6 @@
     "电子电路基础/第5章 正弦交流电路/5.1 正弦量的基本概念.md",
     "电子电路基础/第4章 动态电路的时域分析/4.1 一阶电路的响应.md",
     "电子电路基础/第3章 电路分析的基本方法和定理/3.3 节点电压法.md",
-    "电子电路基础/第3章 电路分析的基本方法和定理/3.2 网孔电流法.md",
-    "电子电路基础/第3章 电路分析的基本方法和定理/3.1 电路分析基础.md",
     "Obsidian接入AI/附件/Pasted image 20260508174657.png",
     "Claude code使用/附件/Pasted image 20260508003352.png",
     "Claude code使用/附件/Pasted image 20260508003319.png",
