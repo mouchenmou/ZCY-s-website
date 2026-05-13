@@ -513,14 +513,19 @@ html[data-md-color-scheme="warm"] body {
 }
 
 /* 代码块行号样式统一 - 让行号和代码在同一个框内，中间只有细灰线分隔 */
+/* 代码块整体容器 - 浅灰底色框框 */
+[data-md-color-scheme="warm"] .md-typeset .highlighttable,
+[data-md-color-scheme="warm"] .md-typeset pre {
+  background: #f5f5f5 !important;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 12px;
+}
+
 /* 去掉行号容器的独立背景/圆角，让它和代码共享同一个大框 */
 .md-typeset .highlighttable,
 .md-typeset .linenos,
 .md-typeset .md-code__content .linenos {
-  background: transparent !important;
   box-shadow: none !important;
-  border: none !important;
-  border-radius: 0 !important;
   padding: 0 !important;
   margin: 0 !important;
 }
