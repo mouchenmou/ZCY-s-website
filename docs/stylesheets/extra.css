@@ -463,7 +463,6 @@ html[data-md-color-scheme="warm"] body {
 }
 .md-typeset pre {
   font-family: "JetBrains Mono", "SFMono-Regular", "SF Mono", "Monaco", "Consolas", "Liberation Mono", "Menlo", "Courier New", monospace;
-  font-size: 0.95rem;
 }
 
 /* 搜索框圆角美化 */
