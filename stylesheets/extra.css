@@ -511,22 +511,22 @@ html[data-md-color-scheme="warm"] body {
    代码块样式 - 灰色框 + 行号竖线分隔
    ============================================ */
 
-/* 1. 整体容器：灰色背景，圆角边框 */
+/* 1. 整体容器：灰色背景，直角边框（不要圆角） */
 [data-md-color-scheme="warm"] .md-typeset .highlighttable {
   background: #f0f0f0 !important;
   border: 1px solid #d0d0d0 !important;
-  border-radius: 12px;
+  border-radius: 0 !important;
 }
 
-/* 2. 行号列 - 透明背景，无圆角，竖线分隔，统一 padding */
+/* 2. 行号列 - 透明背景，无圆角，加大左侧 padding，去掉竖线分隔 */
 [data-md-color-scheme="warm"] .md-typeset .highlighttable td.linenos {
   background: transparent !important;
-  padding: 0.5em 0.5em 0.5em 0 !important;
-  border-right: 1px solid #d0d7de !important;
+  padding: 0.5em 1em 0.5em 1.2em !important;
+  border-right: none !important;
   vertical-align: top !important;
 }
 
-/* 3. 代码列 - 统一 padding（与行号列上下留白一致），去掉左侧边框 */
+/* 3. 代码列 - 统一 padding，去掉左侧边框 */
 [data-md-color-scheme="warm"] .md-typeset .highlighttable td.code {
   padding: 0.5em 0 !important;
   vertical-align: top !important;
