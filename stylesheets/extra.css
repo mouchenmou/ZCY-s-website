@@ -526,10 +526,11 @@ html[data-md-color-scheme="warm"] body {
   vertical-align: top !important;
 }
 
-/* 3. 代码列 - 统一 padding（与行号列上下留白一致） */
+/* 3. 代码列 - 统一 padding（与行号列上下留白一致），去掉左侧边框 */
 [data-md-color-scheme="warm"] .md-typeset .highlighttable td.code {
   padding: 0.5em 0 !important;
   vertical-align: top !important;
+  border-left: none !important;
 }
 
 /* 4. 行号列内部所有元素：透明背景，无圆角 */
