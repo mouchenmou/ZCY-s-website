@@ -522,41 +522,36 @@ html[data-md-color-scheme="warm"] body {
   padding: 0.6em 0 !important;
 }
 
-/* 行号列左边不要圆角 */
-[data-md-color-scheme="warm"] .md-typeset .highlighttable td:first-child {
+/* 彻底清除行号列上所有元素的圆角和背景，让它们完全融入父容器 */
+[data-md-color-scheme="warm"] .md-typeset .highlighttable td.linenos,
+[data-md-color-scheme="warm"] .md-typeset .highlighttable .linenos,
+[data-md-color-scheme="warm"] .md-typeset .highlighttable .linenos *,
+[data-md-color-scheme="warm"] .md-typeset .highlighttable .linenodiv,
+[data-md-color-scheme="warm"] .md-typeset .highlighttable .linenodiv *,
+[data-md-color-scheme="warm"] .md-typeset .highlighttable td.linenos pre {
   border-radius: 0 !important;
-}
-
-/* 代码区域右边圆角 */
-[data-md-color-scheme="warm"] .md-typeset .highlighttable td:nth-child(2) {
-  border-radius: 0 12px 12px 0 !important;
-}
-
-/* 去掉行号容器的独立背景/圆角，让它和代码共享同一个大框 */
-.md-typeset .highlighttable,
-.md-typeset .linenos,
-.md-typeset .md-code__content .linenos {
+  background: transparent !important;
   box-shadow: none !important;
+  border: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
 
+/* 行号与代码之间的细灰线分隔 */
+[data-md-color-scheme="warm"] .md-typeset .highlighttable td.linenos {
+  border-right: 1px solid #d0d7de !important;
+}
+
 /* 行号文字样式 - 中性灰，不用绿色 */
-.md-typeset .highlighttable .linenos .lineno,
-.md-typeset .linenos .lineno,
-.md-typeset .md-code__content .linenos a {
+[data-md-color-scheme="warm"] .md-typeset .highlighttable .linenos .lineno,
+[data-md-color-scheme="warm"] .md-typeset .highlighttable .linenos a,
+[data-md-color-scheme="warm"] .md-typeset .linenos .lineno,
+[data-md-color-scheme="warm"] .md-typeset .md-code__content .linenos a {
   color: #999999 !important;
   background: transparent !important;
   border-radius: 0 !important;
   padding: 0 0.6em 0 1em !important;
   font-size: inherit !important;
-}
-
-/* 行号与代码之间的细灰线分隔 */
-.md-typeset .highlighttable td:nth-child(2),
-.md-typeset .highlighttable td.linenos,
-.md-typeset .md-code__content .linenos {
-  border-right: 1px solid #d0d7de !important;
 }
 
 /* 代码区域样式 - 与行号共享背景 */
