@@ -89,16 +89,27 @@ html[data-md-color-scheme="warm"] body {
 [data-md-color-scheme="warm"] .md-content {
   background: #f0e6d2 !important;
   background-color: #f0e6d2 !important;
-  box-shadow: 
-    -8px 0 25px rgba(0, 0, 0, 0.4),
-    8px 0 25px rgba(0, 0, 0, 0.4),
+  box-shadow:
     0 4px 15px rgba(0, 0, 0, 0.2) !important;
   position: relative;
-  z-index: 2;
   border-radius: 8px;
   padding: 30px !important;
   margin: 20px !important;
   min-height: calc(100vh - 100px) !important;
+}
+
+/* 确保导航抽屉在内容区域之上且可点击 */
+.md-nav--primary {
+  z-index: 5 !important;
+}
+
+.md-nav--primary .md-nav__link {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+.md-nav--primary .md-nav__item {
+  pointer-events: auto !important;
 }
 
 /* 确保所有文本在内容区域清晰可见 */
@@ -1383,6 +1394,5 @@ html[data-md-color-scheme="warm"] body {
 }
 
 
-#   F o r c e   u p d a t e 
- 
- 
+# Force update
+
