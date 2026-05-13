@@ -90,6 +90,18 @@ html[data-md-color-scheme="warm"] body {
   z-index: 3 !important;
 }
 
+/* 内容区域米白色圆角框框效果 */
+[data-md-color-scheme="warm"] .md-content {
+  background: #f0e6d2 !important;
+  background-color: #f0e6d2 !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+  position: relative;
+  border-radius: 8px;
+  padding: 30px !important;
+  margin: 20px !important;
+  min-height: calc(100vh - 100px) !important;
+}
+
 /* 确保所有文本在内容区域清晰可见 */
 [data-md-color-scheme="warm"] .md-content .md-typeset {
   color: #2d3748 !important;
@@ -446,9 +458,11 @@ html[data-md-color-scheme="warm"] body {
 }
 
 /* 代码字体使用 JetBrains Mono */
-.md-typeset code, .md-typeset pre, .md-typeset kbd {
+.md-typeset code, .md-typeset kbd {
   font-family: "JetBrains Mono", "SFMono-Regular", "SF Mono", "Monaco", "Consolas", "Liberation Mono", "Menlo", "Courier New", monospace;
-  font-size: 0.88em;
+}
+.md-typeset pre {
+  font-family: "JetBrains Mono", "SFMono-Regular", "SF Mono", "Monaco", "Consolas", "Liberation Mono", "Menlo", "Courier New", monospace;
 }
 
 /* 搜索框圆角美化 */
@@ -509,19 +523,19 @@ html[data-md-color-scheme="warm"] body {
   margin-bottom: 1rem;
 }
 
-/* 代码块样式优化 */
-.md-typeset code {
+/* 行内代码样式 */
+.md-typeset :not(pre) > code {
   background-color: var(--md-code-bg-color);
   padding: 0.1em 0.3em;
   border-radius: 6px;
   font-size: 0.85em;
 }
 
+/* 代码块内部代码 - 字体大小继承，与行号保持一致 */
 .md-typeset pre code {
   background-color: transparent;
   padding: 0;
   border-radius: 0;
-  font-size: inherit;
 }
 
 /* 链接样式 */
