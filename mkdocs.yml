@@ -223,53 +223,53 @@ nav:
           - Q2 public static boolean maxTileExists : 笔记本/CS61B/Project/Project0/Q2 public static boolean maxTileExists.md
     - CS70 离散数学:
       - Homework:
-        - Homework 0: 笔记本/CS70/Homework/index.md
-        - Homework 1: 笔记本/CS70/Homework/index.md
-        - Homework 2: 笔记本/CS70/Homework/index.md
-        - Homework 3: 笔记本/CS70/Homework/index.md
-        - Homework 4: 笔记本/CS70/Homework/index.md
-        - Homework 5: 笔记本/CS70/Homework/index.md
-        - Homework 6: 笔记本/CS70/Homework/index.md
-        - Homework 7: 笔记本/CS70/Homework/index.md
-        - Homework 8: 笔记本/CS70/Homework/index.md
-        - Homework 9: 笔记本/CS70/Homework/index.md
-        - Homework 10: 笔记本/CS70/Homework/index.md
-        - Homework 11: 笔记本/CS70/Homework/index.md
-        - Homework 12: 笔记本/CS70/Homework/index.md
-        - Homework 13: 笔记本/CS70/Homework/index.md
-        - Homework 14: 笔记本/CS70/Homework/index.md
-        - Homework 15: 笔记本/CS70/Homework/index.md
+        - Homework 0: 笔记本/CS70/Homework/hw00/hw00.md
+        - Homework 1: 笔记本/CS70/Homework/hw01/hw01.md
+        - Homework 2: 笔记本/CS70/Homework/hw02/hw02.md
+        - Homework 3: 笔记本/CS70/Homework/hw03/hw03.md
+        - Homework 4: 笔记本/CS70/Homework/hw04/hw04.md
+        - Homework 5: 笔记本/CS70/Homework/hw05/hw05.md
+        - Homework 6: 笔记本/CS70/Homework/hw06/hw06.md
+        - Homework 7: 笔记本/CS70/Homework/hw07/hw07.md
+        - Homework 8: 笔记本/CS70/Homework/hw08/hw08.md
+        - Homework 9: 笔记本/CS70/Homework/hw09/hw09.md
+        - Homework 10: 笔记本/CS70/Homework/hw10/hw10.md
+        - Homework 11: 笔记本/CS70/Homework/hw11/hw11.md
+        - Homework 12: 笔记本/CS70/Homework/hw12/hw12.md
+        - Homework 13: 笔记本/CS70/Homework/hw13/hw13.md
+        - Homework 14: 笔记本/CS70/Homework/hw14/hw14.md
+        - Homework 15: 笔记本/CS70/Homework/hw15/hw15.md
       - Discussions:
-        - Discussion 0a: 笔记本/CS70/Discussions/index.md
-        - Discussion 0b: 笔记本/CS70/Discussions/index.md
-        - Discussion 1a: 笔记本/CS70/Discussions/index.md
-        - Discussion 1b: 笔记本/CS70/Discussions/index.md
-        - Discussion 2a: 笔记本/CS70/Discussions/index.md
-        - Discussion 2b: 笔记本/CS70/Discussions/index.md
-        - Discussion 3a: 笔记本/CS70/Discussions/index.md
-        - Discussion 3b: 笔记本/CS70/Discussions/index.md
-        - Discussion 4a: 笔记本/CS70/Discussions/index.md
-        - Discussion 4b: 笔记本/CS70/Discussions/index.md
-        - Discussion 5a: 笔记本/CS70/Discussions/index.md
-        - Discussion 5b: 笔记本/CS70/Discussions/index.md
-        - Discussion 6a: 笔记本/CS70/Discussions/index.md
-        - Discussion 6b: 笔记本/CS70/Discussions/index.md
-        - Discussion 7a: 笔记本/CS70/Discussions/index.md
-        - Discussion 7b: 笔记本/CS70/Discussions/index.md
-        - Discussion 8a: 笔记本/CS70/Discussions/index.md
-        - Discussion 8b: 笔记本/CS70/Discussions/index.md
-        - Discussion 9a: 笔记本/CS70/Discussions/index.md
-        - Discussion 9b: 笔记本/CS70/Discussions/index.md
-        - Discussion 10a: 笔记本/CS70/Discussions/index.md
-        - Discussion 10b: 笔记本/CS70/Discussions/index.md
-        - Discussion 11a: 笔记本/CS70/Discussions/index.md
-        - Discussion 11b: 笔记本/CS70/Discussions/index.md
-        - Discussion 12a: 笔记本/CS70/Discussions/index.md
-        - Discussion 12b: 笔记本/CS70/Discussions/index.md
-        - Discussion 13a: 笔记本/CS70/Discussions/index.md
-        - Discussion 13b: 笔记本/CS70/Discussions/index.md
-        - Discussion 14a: 笔记本/CS70/Discussions/index.md
-        - Discussion 14b: 笔记本/CS70/Discussions/index.md
+        - dis00a: 笔记本/CS70/Discussions/dis00/dis00a.md
+        - dis00b: 笔记本/CS70/Discussions/dis00/dis00b.md
+        - dis01a: 笔记本/CS70/Discussions/dis01/dis01a.md
+        - dis01b: 笔记本/CS70/Discussions/dis01/dis01b.md
+        - dis02a: 笔记本/CS70/Discussions/dis02/dis02a.md
+        - dis02b: 笔记本/CS70/Discussions/dis02/dis02b.md
+        - dis03a: 笔记本/CS70/Discussions/dis03/dis03a.md
+        - dis03b: 笔记本/CS70/Discussions/dis03/dis03b.md
+        - dis04a: 笔记本/CS70/Discussions/dis04/dis04a.md
+        - dis04b: 笔记本/CS70/Discussions/dis04/dis04b.md
+        - dis05a: 笔记本/CS70/Discussions/dis05/dis05a.md
+        - dis05b: 笔记本/CS70/Discussions/dis05/dis05b.md
+        - dis06a: 笔记本/CS70/Discussions/dis06/dis06a.md
+        - dis06b: 笔记本/CS70/Discussions/dis06/dis06b.md
+        - dis07a: 笔记本/CS70/Discussions/dis07/dis07a.md
+        - dis07b: 笔记本/CS70/Discussions/dis07/dis07b.md
+        - dis08a: 笔记本/CS70/Discussions/dis08/dis08a.md
+        - dis08b: 笔记本/CS70/Discussions/dis08/dis08b.md
+        - dis09a: 笔记本/CS70/Discussions/dis09/dis09a.md
+        - dis09b: 笔记本/CS70/Discussions/dis09/dis09b.md
+        - dis10a: 笔记本/CS70/Discussions/dis10/dis10a.md
+        - dis10b: 笔记本/CS70/Discussions/dis10/dis10b.md
+        - dis11a: 笔记本/CS70/Discussions/dis11/dis11a.md
+        - dis11b: 笔记本/CS70/Discussions/dis11/dis11b.md
+        - dis12a: 笔记本/CS70/Discussions/dis12/dis12a.md
+        - dis12b: 笔记本/CS70/Discussions/dis12/dis12b.md
+        - dis13a: 笔记本/CS70/Discussions/dis13/dis13a.md
+        - dis13b: 笔记本/CS70/Discussions/dis13/dis13b.md
+        - dis14a: 笔记本/CS70/Discussions/dis14/dis14a.md
+        - dis14b: 笔记本/CS70/Discussions/dis14/dis14b.md
       - Lecture:
         - Lecture 1:
           - 1.1 Introduction: 笔记本/CS70/Lecture/Lecture 1 Introduction, Propositional logical/1.Introduction.md
