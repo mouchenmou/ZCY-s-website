@@ -521,18 +521,12 @@ html[data-md-color-scheme="warm"] body {
   border-radius: 12px;
 }
 
-/* 彻底清除行号列上所有元素的圆角和背景，让它们完全融入父容器 */
+/* 只清除行号列的圆角和背景，不动 padding！ */
 [data-md-color-scheme="warm"] .md-typeset .highlighttable td.linenos,
 [data-md-color-scheme="warm"] .md-typeset .highlighttable .linenos,
-[data-md-color-scheme="warm"] .md-typeset .highlighttable .linenos *,
-[data-md-color-scheme="warm"] .md-typeset .highlighttable .linenodiv,
-[data-md-color-scheme="warm"] .md-typeset .highlighttable .linenodiv *,
-[data-md-color-scheme="warm"] .md-typeset .highlighttable td.linenos pre {
+[data-md-color-scheme="warm"] .md-typeset .highlighttable .linenodiv {
   border-radius: 0 !important;
   background: transparent !important;
-  box-shadow: none !important;
-  border: none !important;
-  margin: 0 !important;
 }
 
 /* 行号与代码之间的细灰线分隔 */
@@ -550,6 +544,13 @@ html[data-md-color-scheme="warm"] body {
   border-radius: 0 !important;
   padding: 0 0.6em 0 1em !important;
   font-size: inherit !important;
+}
+
+/* 代码块内部上下留白 */
+[data-md-color-scheme="warm"] .md-typeset .highlighttable pre,
+[data-md-color-scheme="warm"] .md-typeset .highlighttable .linenodiv pre {
+  padding-top: 0.6em !important;
+  padding-bottom: 0.6em !important;
 }
 
 /* 代码区域样式 - 与行号共享背景 */
