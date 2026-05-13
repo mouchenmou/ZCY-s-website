@@ -507,79 +507,59 @@ html[data-md-color-scheme="warm"] body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* 代码块圆角 */
-.md-typeset pre {
-  border-radius: 12px;
-}
+/* ============================================
+   代码块样式 - 灰色框 + 行号竖线分隔
+   ============================================ */
 
-/* 代码块整体容器 - 灰色底色框框 */
-[data-md-color-scheme="warm"] .md-typeset .highlighttable,
-[data-md-color-scheme="warm"] .md-typeset pre {
+/* 1. 整体容器：灰色背景，圆角边框 */
+[data-md-color-scheme="warm"] .md-typeset .highlighttable {
   background: #f0f0f0 !important;
   border: 1px solid #d0d0d0 !important;
   border-radius: 12px;
-  padding: 0 !important;
-  margin: 0 !important;
 }
 
-/* 行号列(td) - 去掉所有内边距、背景、圆角，只保留竖线分隔 */
+/* 2. 行号列 - 透明背景，无圆角，竖线分隔，统一 padding */
 [data-md-color-scheme="warm"] .md-typeset .highlighttable td.linenos {
   background: transparent !important;
-  border-radius: 0 !important;
-  padding: 0 !important;
-  margin: 0 !important;
+  padding: 0.5em 0.5em 0.5em 0 !important;
   border-right: 1px solid #d0d7de !important;
   vertical-align: top !important;
 }
 
-/* 行号列内部的 .linenodiv - 去掉所有背景、圆角、padding */
-[data-md-color-scheme="warm"] .md-typeset .highlighttable td.linenos .linenodiv {
-  background: transparent !important;
-  border-radius: 0 !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-/* 行号列内部的 pre - 去掉背景、圆角，只保留上下留白 */
-[data-md-color-scheme="warm"] .md-typeset .highlighttable td.linenos .linenodiv pre {
-  background: transparent !important;
-  border: none !important;
-  border-radius: 0 !important;
-  padding: 0.5em 0 !important;
-  margin: 0 !important;
-}
-
-/* 代码列(td) - 去掉内边距，代码pre自带padding */
+/* 3. 代码列 - 统一 padding（与行号列上下留白一致） */
 [data-md-color-scheme="warm"] .md-typeset .highlighttable td.code {
+  padding: 0.5em 0 !important;
+  vertical-align: top !important;
+}
+
+/* 4. 行号列内部所有元素：透明背景，无圆角 */
+[data-md-color-scheme="warm"] .md-typeset .highlighttable td.linenos .linenodiv,
+[data-md-color-scheme="warm"] .md-typeset .highlighttable td.linenos pre {
+  background: transparent !important;
+  border-radius: 0 !important;
   padding: 0 !important;
   margin: 0 !important;
 }
 
-/* 代码列内部的 .highlight > pre - 保留上下留白 */
+/* 5. 代码列内部 pre：透明背景，无圆角，无额外 padding（padding 在 td 上） */
+[data-md-color-scheme="warm"] .md-typeset .highlighttable td.code pre,
 [data-md-color-scheme="warm"] .md-typeset .highlighttable td.code .highlight pre {
-  padding: 0.5em 0 !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
   margin: 0 !important;
 }
 
-/* 行号文字 - 中性灰 */
+/* 6. 行号文字颜色 - 灰色 */
 [data-md-color-scheme="warm"] .md-typeset .highlighttable .linenos .lineno,
-[data-md-color-scheme="warm"] .md-typeset .highlighttable .linenos a,
-[data-md-color-scheme="warm"] .md-typeset .linenos .lineno,
-[data-md-color-scheme="warm"] .md-typeset .md-code__content .linenos a {
+[data-md-color-scheme="warm"] .md-typeset .highlighttable .linenos a {
   color: #999999 !important;
-  background: transparent !important;
-  border-radius: 0 !important;
-  padding: 0 0.8em 0 1em !important;
-  font-size: inherit !important;
 }
 
-/* 代码区域内部 - 与行号共享背景 */
-.md-typeset .highlighttable td:nth-child(2) pre,
-.md-typeset .md-code__content pre {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
+/* 7. 不带行号的普通 pre（如 inline 代码块）保持圆角 */
+[data-md-color-scheme="warm"] .md-typeset :not(.highlighttable) pre {
+  border-radius: 12px;
 }
 
 .md-typeset h1 {
