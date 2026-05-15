@@ -45,24 +45,28 @@
             "id": "f30194b4f27cd478",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "复变函数与积分变换/复变函数与积分变换笔记.pdf"
+                "file": "复变函数与积分变换/第一章-预备知识.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "复变函数与积分变换笔记"
+              "icon": "lucide-file",
+              "title": "第一章-预备知识"
             }
           },
           {
             "id": "84e73aa598f9b172",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "复变函数与积分变换/第二讲-解析函数(2)(1).pdf"
+                "file": "复变函数与积分变换/第一章-预备知识.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "第二讲-解析函数(2)(1)"
+              "icon": "lucide-file",
+              "title": "第一章-预备知识"
             }
           }
         ],
@@ -228,6 +232,7 @@
   },
   "active": "84e73aa598f9b172",
   "lastOpenFiles": [
+    "复变函数与积分变换/第二讲-解析函数(2)(1).pdf",
     "复变函数与积分变换/第一章-预备知识.md",
     "复变函数与积分变换/第一讲-预备知识(3)(1).pdf",
     "复变函数与积分变换/复变函数与积分变换笔记.pdf",
@@ -237,7 +242,6 @@
     "复变函数与积分变换/附件/Pasted image 20260515223343.png",
     "复变函数与积分变换/附件/Pasted image 20260515223239.png",
     "复变函数与积分变换/第二章-解析函数.md",
-    "复变函数与积分变换/第二讲-解析函数(2)(1).pdf",
     "复变函数与积分变换/第六章-保角映射.md",
     "复变函数与积分变换/第六讲-保角变换(1).pdf",
     "复变函数与积分变换/附件/Pasted image 20260515221830.png",
