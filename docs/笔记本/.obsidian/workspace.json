@@ -35,14 +35,10 @@
             "id": "50af5b9b98b250ba",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS70/Lecture/Lecture 8 Euclid’s Algorithm, FLT, CRT/Euclid’s Algorithm, FLT, CRT.md.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Euclid’s Algorithm, FLT, CRT.md"
+              "title": "新标签页"
             }
           },
           {
@@ -51,24 +47,22 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "CS70/Lecture/Lecture 8 Euclid’s Algorithm, FLT, CRT/n7.pdf"
+                "file": "复变函数与积分变换/复变函数与积分变换笔记.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "n7"
+              "title": "复变函数与积分变换笔记"
             }
           },
           {
-            "id": "3ebbdfc0d6b8251b",
+            "id": "84e73aa598f9b172",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "信号与系统/作业中的收获/作业8.md",
-                "mode": "source",
-                "source": false
+                "file": "复变函数与积分变换/第二讲-解析函数(2)(1).pdf"
               },
-              "icon": "lucide-file",
-              "title": "作业8"
+              "icon": "lucide-file-text",
+              "title": "第二讲-解析函数(2)(1)"
             }
           }
         ],
@@ -232,23 +226,37 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "3ebbdfc0d6b8251b",
+  "active": "84e73aa598f9b172",
   "lastOpenFiles": [
-    "Claude code使用/MacOS Claude Code 国内安装教程.md",
+    "复变函数与积分变换/第一章-预备知识.md",
+    "复变函数与积分变换/第一讲-预备知识(3)(1).pdf",
+    "复变函数与积分变换/复变函数与积分变换笔记.pdf",
+    "复变函数与积分变换/附件/Pasted image 20260515223739.png",
+    "复变函数与积分变换/附件/Pasted image 20260515223722.png",
+    "复变函数与积分变换/附件/Pasted image 20260515223552.png",
+    "复变函数与积分变换/附件/Pasted image 20260515223343.png",
+    "复变函数与积分变换/附件/Pasted image 20260515223239.png",
+    "复变函数与积分变换/第二章-解析函数.md",
+    "复变函数与积分变换/第二讲-解析函数(2)(1).pdf",
+    "复变函数与积分变换/第六章-保角映射.md",
+    "复变函数与积分变换/第六讲-保角变换(1).pdf",
+    "复变函数与积分变换/附件/Pasted image 20260515221830.png",
+    "复变函数与积分变换/第七章-Laplace变换.md",
+    "复变函数与积分变换/附件/Pasted image 20260515221507.png",
+    "复变函数与积分变换/附件",
+    "复变函数与积分变换/第五章-留数.md",
+    "复变函数与积分变换/第四章-级数.md",
+    "复变函数与积分变换/第三章-复变函数的积分.md",
+    "复变函数与积分变换/第四讲-级数(1).pdf",
+    "复变函数与积分变换/ch7.txt",
+    "复变函数与积分变换/ch6.txt",
+    "复变函数与积分变换/ch5.txt",
+    "复变函数与积分变换/ch4.txt",
     "信号与系统/作业中的收获/作业8.md",
+    "Claude code使用/MacOS Claude Code 国内安装教程.md",
     "Claude code使用/Windows Claude Code安装教程.md",
     "Claude code使用/WSL Claude Code 国内安装教程以及Ubuntu的重新配置.md",
     "Obsidian接入AI/Geimini Cli接入Obsidian.md",
-    "流体力学/流体力学第二章.pdf",
-    "吴恩达机器学习/assignments/machine-learning-ex1/ex1.pdf",
-    "信号与系统/作业/作业6.pdf",
-    "信号与系统/作业/作业5.pdf",
-    "信号与系统/作业/作业4.pdf",
-    "信号与系统/作业/作业3.pdf",
-    "信号与系统/作业/作业2.pdf",
-    "信号与系统/作业/作业1.pdf",
-    "流体力学/流体力学第四章.pdf",
-    "流体力学/流体力学第三章.pdf",
     "吴恩达机器学习/assignments/machine-learning-ex1/index.md",
     "吴恩达机器学习/README.md",
     "吴恩达机器学习/assignments/machine-learning-ex2/index.md",
@@ -262,24 +270,9 @@
     "流体力学/第4章/第4章.md",
     "流体力学/第3章/第3章.md",
     "流体力学/第2章/第2章.md",
-    "流体力学/第1章/第1章.md",
-    "吴恩达机器学习/课程/week1/1 引言（Introduction）.md",
-    "信号与系统/作业/index.md",
-    "CS70/Discussions/dis00/dis00a.md",
-    "电子电路基础/第8章 场效应晶体管及其放大电路/index.md",
-    "电子电路基础/第7章 三极管/index.md",
-    "电子电路基础/第6章 二极管/index.md",
-    "电子电路基础/第5章 正弦交流电路/5.1 正弦量的基本概念.md",
     "Obsidian接入AI/附件/Pasted image 20260508174657.png",
     "Claude code使用/附件/Pasted image 20260508003352.png",
     "Claude code使用/附件/Pasted image 20260508003319.png",
-    "Claude code使用/附件/Pasted image 20260507233940.png",
-    "Claude code使用/附件/Pasted image 20260507225012.png",
-    "Claude code使用/附件/Pasted image 20260507215446.png",
-    "CS70/Lecture/Lecture 8 Euclid's Algorithm, FLT, CRT/附件/c0496496bf8d001f3c58d0c96487686a.jpg",
-    "CS70/Lecture/Lecture 8 Euclid's Algorithm, FLT, CRT/附件/Pasted image 20260507154057.png",
-    "CS70/Lecture/Lecture 8 Euclid's Algorithm, FLT, CRT/附件/67b8ed7a7ad77b476edcdb70718036b4.jpg",
-    "Obsidian接入AI/附件/Pasted image 20260506093414.png",
     "未命名.canvas"
   ]
 }
