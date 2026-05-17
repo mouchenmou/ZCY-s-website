@@ -61,16 +61,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS61B/Lecture 24 Minimum Spanning Trees/Lecture 24 Minimum Spanning Trees.md",
+                "file": "CS61B/Lecture 23 Shortest Paths/Shortest Paths.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 24 Minimum Spanning Trees"
+              "title": "Shortest Paths"
+            }
+          },
+          {
+            "id": "7a6bc012d52f3b3b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "4. 图"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -230,25 +244,32 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "84e73aa598f9b172",
+  "active": "7a6bc012d52f3b3b",
   "lastOpenFiles": [
-    "CS61B/Lecture 24 Minimum Spanning Trees/cs61b 2020 lec 26 mst.pdf",
-    "CS61B/Lecture 23 Shortest Paths/Shortest Paths.md",
-    "CS61B/Lecture 23 Shortest Paths/cs61b 2020 lec 25 shortest paths.pdf",
     "CS61B/Lecture 24 Minimum Spanning Trees/Lecture 24 Minimum Spanning Trees.md",
+    "CS61B/Lecture 24 Minimum Spanning Trees/cs61b 2020 lec 26 mst.pdf",
+    "CS61B/Lecture 15 不相交集2和渐近线2/15.1路径压缩(WQU with Path Compression).md",
+    "CS61B/Lecture 14 不相交集1(Disjoint Sets)/3.加权快速接头（Weighted Quick Union）.md",
+    "CS61B/Lecture 14 不相交集1(Disjoint Sets)/2.快速连接法（QuickUnionDS）.md",
+    "CS61B/Lecture 24 Minimum Spanning Trees/附件/35c706907da21d76cf346b2a3f23c35c.jpg",
+    "CS61B/Lecture 24 Minimum Spanning Trees/附件/Pasted image 20260518010701.png",
+    "CS61B/Lecture 24 Minimum Spanning Trees/附件/Pasted image 20260518005517.png",
+    "CS61B/Lecture 23 Shortest Paths/Shortest Paths.md",
+    "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
+    "数据结构基础 FDS/DS09_Ch09_Shortest-Path Algorithm(7).pdf",
+    "数据结构基础 FDS/DS11_Ch09_DFS.pdf",
+    "数据结构基础 FDS/DS08_Ch09_Graph Definition_Topological Sort(1).pdf",
+    "CS61B/Lecture 23 Shortest Paths/cs61b 2020 lec 25 shortest paths.pdf",
     "CS61B/Lecture 24 Minimum Spanning Trees/附件/Pasted image 20260517191715.png",
     "CS61B/Lecture 24 Minimum Spanning Trees/附件/Pasted image 20260517191636.png",
     "CS61B/Lecture 24 Minimum Spanning Trees/附件/Pasted image 20260517185847.png",
     "CS61B/Lecture 24 Minimum Spanning Trees/附件",
-    "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
     "数据结构基础 FDS/课程内容/基础数据结构/2. 堆.md",
     "数据结构基础 FDS/课程内容/基础数据结构/1. 树.md",
     "数据结构基础 FDS/课程内容/基础数据结构/3. 并查集.md",
     "数据结构基础 FDS/课程内容/summary1.md",
     "数据结构基础 FDS/课程内容/summary2.md",
-    "数据结构基础 FDS/DS08_Ch09_Graph Definition_Topological Sort(1).pdf",
     "数据结构基础 FDS/DS10_Ch09_Network Flow_MST.pdf",
-    "数据结构基础 FDS/DS11_Ch09_DFS.pdf",
     "数据结构基础 FDS/课程内容/基础数据结构",
     "Obsidian接入AI/Claude Code接入Obsidian.md",
     "数据结构基础 FDS/DS10_Ch09_Network Flow_MST.ppt",
@@ -267,16 +288,9 @@
     "复变函数与积分变换/第二章-解析函数.md",
     "复变函数与积分变换/第一章-预备知识.md",
     "Claude code使用/MacOS Claude Code 国内安装教程.md",
-    "Claude code使用/阿里云_API_白嫖教程.pdf",
     "Claude code使用/WSL Claude Code 国内安装教程以及Ubuntu的重新配置.md",
     "Claude code使用/Windows Claude Code安装教程.md",
     "阿里云.md",
-    "Claude code使用/index.md",
-    "阿里云 API 白嫖教程.md",
-    "CS70/Lecture/Lecture 8 Euclid's Algorithm, FLT, CRT/Euclid's Algorithm, FLT, CRT.md.md",
-    "信号与系统/作业中的收获/附件/fcf6174a42f8ea5faf003270567f47d9.jpg",
-    "信号与系统/作业中的收获/附件/d8376343e20a7487490e7674e7330515.jpg",
-    "信号与系统/作业中的收获/附件/97aaafa1768f1d75ef6251ffbc9d21ac.jpg",
     "未命名.canvas"
   ]
 }
