@@ -31,16 +31,16 @@ $$\mathcal{L}[f(t)] = F(s) = \int_0^{+\infty} f(t)e^{-st}\,dt$$
 
 ### 7.1.3 常用 Laplace 变换表
 
-| 原函数 $f(t)$ | 像函数 $F(s)$ | 收敛域 |
-|--------------|-------------|--------|
-| $u(t)$（单位阶跃） | $\frac{1}{s}$ | $\text{Re}(s) > 0$ |
-| $e^{kt}$ | $\frac{1}{s - k}$ | $\text{Re}(s) > k$ |
-| $t^n \cdot u(t)$ | $\frac{n!}{s^{n+1}}$ | $\text{Re}(s) > 0$ |
-| $t^a$ | $\frac{\Gamma(a+1)}{s^{a+1}}$ | $\text{Re}(s) > 0$ |
-| $\sin kt$ | $\frac{k}{s^2 + k^2}$ | $\text{Re}(s) > 0$ |
-| $\cos kt$ | $\frac{s}{s^2 + k^2}$ | $\text{Re}(s) > 0$ |
-| $\text{sh}\,wt$ | $\frac{w}{s^2 - w^2}$ | $\text{Re}(s) > |w|$ |
-| $\text{ch}\,wt$ | $\frac{s}{s^2 - w^2}$ | $\text{Re}(s) > |w|$ |
+| 原函数 $f(t)$       | 像函数 $F(s)$                    | 收敛域                |
+| ---------------- | ----------------------------- | ------------------ |
+| $u(t)$（单位阶跃）     | $\frac{1}{s}$                 | $\text{Re}(s) > 0$ |
+| $e^{kt}$         | $\frac{1}{s - k}$             | $\text{Re}(s) > k$ |
+| $t^n \cdot u(t)$ | $\frac{n!}{s^{n+1}}$          | $\text{Re}(s) > 0$ |
+| $t^a$            | $\frac{\Gamma(a+1)}{s^{a+1}}$ | $\text{Re}(s) > 0$ |
+| $\sin kt$        | $\frac{k}{s^2 + k^2}$         | $\text{Re}(s) > 0$ |
+| $\cos kt$        | $\frac{s}{s^2 + k^2}$         | $\text{Re}(s) > 0$ |
+| $\text{sh}\,wt$  | $\frac{w}{s^2 - w^2}$         | $\text{Re}(s) >w$  |
+| $\text{ch}\,wt$  | $\frac{s}{s^2 - w^2}$         | $\text{Re}(s) >w$  |
 
 ---
 
