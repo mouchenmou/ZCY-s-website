@@ -95,7 +95,7 @@ T(N) &= 2T(\frac{N}{2}) + O(N)\\
 \end{align*}
 $$
 
-??? success "代码"
+??? example "代码"
     ```c 
     void mergeSort(int arr[], int n) {
         int *tmp = malloc(sizeof(int) * n);
