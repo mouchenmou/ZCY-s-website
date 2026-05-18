@@ -75,12 +75,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS61B/Lecture 24 Minimum Spanning Trees/Lecture 24 Minimum Spanning Trees.md",
+                "file": "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 24 Minimum Spanning Trees"
+              "title": "4. 图"
             }
           }
         ],
@@ -246,8 +246,8 @@
   },
   "active": "7a6bc012d52f3b3b",
   "lastOpenFiles": [
-    "CS61B/Lecture 23 Shortest Paths/Shortest Paths.md",
     "CS61B/Lecture 24 Minimum Spanning Trees/Lecture 24 Minimum Spanning Trees.md",
+    "CS61B/Lecture 23 Shortest Paths/Shortest Paths.md",
     "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
     "数据结构基础 FDS/课程内容/基础数据结构/附件/Pasted image 20260518185933.png",
     "数据结构基础 FDS/课程内容/基础数据结构/附件/Pasted image 20260518184532.png",
