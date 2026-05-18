@@ -255,10 +255,10 @@ public class PrimMST {
 
 与 Dijkstra 完全相同，理解一下Dijkstra算法就很容易了：
 
-| PQ 操作 | 次数 | 每次代价 | 总代价 |
-|---------|------|----------|--------|
-| `add` | $V$ | $O(\log V)$ | $O(V \log V)$ |
-| `delMin` | $V$ | $O(\log V)$ | $O(V \log V)$ |
+| PQ 操作              | 次数  | 每次代价        | 总代价           |
+| ------------------ | --- | ----------- | ------------- |
+| `add`              | $V$ | $O(\log V)$ | $O(V \log V)$ |
+| `delMin`           | $V$ | $O(\log V)$ | $O(V \log V)$ |
 | `decreasePriority` | $E$ | $O(\log V)$ | $O(E \log V)$ |
 
 **总时间复杂度：** $O(E \log V)$（假设 $E > V$）
