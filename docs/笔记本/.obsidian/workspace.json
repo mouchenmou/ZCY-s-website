@@ -75,12 +75,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
+                "file": "CS70/Lecture/Lecture 4 Stable Matching/Stable Matching.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4. 图"
+              "title": "Stable Matching"
             }
           }
         ],
@@ -246,6 +246,7 @@
   },
   "active": "7a6bc012d52f3b3b",
   "lastOpenFiles": [
+    "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
     "CS61B/Lecture 24 Minimum Spanning Trees/Lecture 24 Minimum Spanning Trees.md",
     "CS61B/Lecture 24 Minimum Spanning Trees/cs61b 2020 lec 26 mst.pdf",
     "CS61B/Lecture 15 不相交集2和渐近线2/15.1路径压缩(WQU with Path Compression).md",
@@ -255,7 +256,6 @@
     "CS61B/Lecture 24 Minimum Spanning Trees/附件/Pasted image 20260518010701.png",
     "CS61B/Lecture 24 Minimum Spanning Trees/附件/Pasted image 20260518005517.png",
     "CS61B/Lecture 23 Shortest Paths/Shortest Paths.md",
-    "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
     "数据结构基础 FDS/DS09_Ch09_Shortest-Path Algorithm(7).pdf",
     "数据结构基础 FDS/DS11_Ch09_DFS.pdf",
     "数据结构基础 FDS/DS08_Ch09_Graph Definition_Topological Sort(1).pdf",
