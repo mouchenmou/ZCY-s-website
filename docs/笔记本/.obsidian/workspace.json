@@ -61,12 +61,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
+                "file": "数据结构基础 FDS/补充知识/网络流.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4. 图"
+              "title": "网络流"
             }
           }
         ],
@@ -230,11 +230,12 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "84e73aa598f9b172",
+  "active": "3ee86d49960c812e",
   "lastOpenFiles": [
+    "数据结构基础 FDS/补充知识/网络流_new.md",
+    "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
     "CS61B/Lecture 23 Shortest Paths/Shortest Paths.md",
     "CS61B/Lecture 24 Minimum Spanning Trees/Lecture 24 Minimum Spanning Trees.md",
-    "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
     "数据结构基础 FDS/补充知识/Bellman-Ford算法与SPFA算法.md",
     "数据结构基础 FDS/补充知识/网络流.md",
     "数据结构基础 FDS/课程内容/基础数据结构/3. 并查集.md",
@@ -277,7 +278,6 @@
     "Obsidian接入AI/Claude Code接入Obsidian.md",
     "CS61B/Lecture 21 Tree and Graph Traversals/21.2 Graph.md",
     "CS61B/Lecture 21 Tree and Graph Traversals/21.1 Trees and Traversals.md",
-    "复变函数与积分变换/第四章-级数.md",
     "未命名.canvas"
   ]
 }
