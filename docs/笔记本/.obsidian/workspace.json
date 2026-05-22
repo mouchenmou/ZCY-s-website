@@ -61,12 +61,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
+                "file": "CS61B/Lecture 24 Minimum Spanning Trees/Lecture 24 Minimum Spanning Trees.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4. 图"
+              "title": "Lecture 24 Minimum Spanning Trees"
             }
           }
         ],
@@ -232,9 +232,9 @@
   },
   "active": "84e73aa598f9b172",
   "lastOpenFiles": [
+    "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
     "Obsidian接入AI/Claude Code接入Obsidian.md",
     "数据结构基础 FDS/补充知识/网络流_new.md",
-    "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
     "CS61B/Lecture 23 Shortest Paths/Shortest Paths.md",
     "CS61B/Lecture 24 Minimum Spanning Trees/Lecture 24 Minimum Spanning Trees.md",
     "数据结构基础 FDS/补充知识/Bellman-Ford算法与SPFA算法.md",

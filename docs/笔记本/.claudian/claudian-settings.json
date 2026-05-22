@@ -1,7 +1,7 @@
 {
   "userName": "",
   "permissionMode": "yolo",
-  "model": "qwen3.6-plus",
+  "model": "DeepSeek-V4-pro",
   "thinkingBudget": "medium",
   "effortLevel": "high",
   "serviceTier": "default",
@@ -18,6 +18,13 @@
       "name": "千问API",
       "description": "",
       "envVars": "ANTHROPIC_API_KEY=sk-9fa4f8accb494dd6861f8b84430c41b6\nANTHROPIC_BASE_URL=https://dashscope.aliyuncs.com/apps/anthropic\nANTHROPIC_MODEL=qwen3.6-plus",
+      "scope": "provider:claude"
+    },
+    {
+      "id": "snippet-1779458589155",
+      "name": "Deepseek",
+      "description": "",
+      "envVars": "ANTHROPIC_API_KEY=sk-daf20b1c63e440adaf4dd4e8dcbfa6f2\nANTHROPIC_BASE_URL=hhttps://api.deepseek.com/anthropic\nANTHROPIC_MODEL=DeepSeek-V4-pro",
       "scope": "provider:claude"
     }
   ],
@@ -40,8 +47,8 @@
       "enableSonnet1M": false,
       "customModels": "qwen3.6-plus",
       "lastModel": "haiku",
-      "environmentVariables": "ANTHROPIC_API_KEY=sk-9fa4f8accb494dd6861f8b84430c41b6\nANTHROPIC_BASE_URL=https://dashscope.aliyuncs.com/apps/anthropic\nANTHROPIC_MODEL=qwen3.6-plus",
-      "environmentHash": "ANTHROPIC_BASE_URL=https://dashscope.aliyuncs.com/apps/anthropic|ANTHROPIC_MODEL=qwen3.6-plus"
+      "environmentVariables": "ANTHROPIC_API_KEY=sk-daf20b1c63e440adaf4dd4e8dcbfa6f2\nANTHROPIC_BASE_URL=hhttps://api.deepseek.com/anthropic\nANTHROPIC_MODEL=DeepSeek-V4-pro",
+      "environmentHash": "ANTHROPIC_BASE_URL=hhttps://api.deepseek.com/anthropic|ANTHROPIC_MODEL=DeepSeek-V4-pro"
     },
     "codex": {
       "enabled": false,
@@ -71,7 +78,7 @@
   },
   "settingsProvider": "claude",
   "savedProviderModel": {
-    "claude": "qwen3.6-plus"
+    "claude": "DeepSeek-V4-pro"
   },
   "savedProviderEffort": {
     "claude": "high"
