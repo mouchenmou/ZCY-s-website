@@ -4,8 +4,8 @@
   "title": "你好",
   "titleGenerationStatus": "failed",
   "createdAt": 1778251072766,
-  "updatedAt": 1779381225830,
-  "lastResponseAt": 1779381225830,
+  "updatedAt": 1779456353370,
+  "lastResponseAt": 1779456353370,
   "sessionId": "456524d5-f9a7-41f7-b476-b3087694fd4f",
   "providerState": {
     "providerSessionId": "456524d5-f9a7-41f7-b476-b3087694fd4f",
@@ -1354,11 +1354,12 @@
   },
   "usage": {
     "model": "qwen3.6-plus",
-    "inputTokens": 37897,
-    "cacheCreationInputTokens": 1776,
-    "cacheReadInputTokens": 105676,
+    "inputTokens": 40121,
+    "cacheCreationInputTokens": 1808,
+    "cacheReadInputTokens": 88518,
     "contextWindow": 200000,
-    "contextTokens": 145349,
-    "percentage": 73
+    "contextTokens": 130447,
+    "percentage": 65,
+    "contextWindowIsAuthoritative": true
   }
 }
