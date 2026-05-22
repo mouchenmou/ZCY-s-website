@@ -4,7 +4,6 @@
     
     但是在Terminal插件需要把默认的Shell改成WSL的bash，这样太麻烦了，因为Gemini Cli还得在Powershell中对话，所以不如Terminal插件用来跟Gemini Cli对话，Claudian用来跟Claude对话。
 
-  所以即使你删掉了 Windows 上的 Claude Code，Claudian 插件仍然正常工作，它直接用你配置的环境变量连 Dashscope API。
 
 视频教程：[不止Claude Code:任意AI接入Obsidian打造本地知识库,Gemini/GLM/Codex/MiniMax全搞定](https://www.bilibili.com/video/BV1BgoVBGEox/?spm_id_from=333.337.search-card.all.click&vd_source=d6e21125b4ff2bde83430369b29c9418)
 

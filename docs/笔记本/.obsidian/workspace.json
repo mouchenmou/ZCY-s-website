@@ -61,12 +61,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "数据结构基础 FDS/补充知识/网络流.md",
+                "file": "Obsidian接入AI/Claude Code接入Obsidian.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "网络流"
+              "title": "Claude Code接入Obsidian"
             }
           }
         ],
@@ -230,7 +230,7 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "3ee86d49960c812e",
+  "active": "84e73aa598f9b172",
   "lastOpenFiles": [
     "数据结构基础 FDS/补充知识/网络流_new.md",
     "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
