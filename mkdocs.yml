@@ -13,6 +13,7 @@ copyright: Copyright &copy; 2025 某晨某
 
 theme:
   name: material
+  custom_dir: overrides
   language: zh
   logo: assets/IMG/1.jpg
   favicon: assets/IMG/1.jpg
@@ -124,7 +125,6 @@ nav:
     - 两端同时操作Blog:
       - 笔记本/合并笔记/index.md
   - Undergraduate Study:
-    - undergraduate-study/index1.md
     - CS61A Python:
       - 笔记本/CS61A/index.md
       - Homework:
