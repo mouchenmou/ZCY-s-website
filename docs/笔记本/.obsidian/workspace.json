@@ -61,12 +61,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "大学物理实验/1.绪论/3.有效数字与实验数据处理.md",
+                "file": "合并笔记/合并笔记.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3.有效数字与实验数据处理"
+              "title": "合并笔记"
             }
           }
         ],
@@ -232,8 +232,11 @@
   },
   "active": "84e73aa598f9b172",
   "lastOpenFiles": [
-    "大学物理实验/第三节 用扭摆法测定转动惯量/预习报告.md",
+    "合并笔记/index.md",
+    "合并笔记/合并笔记.md",
+    "1.这个网站的一些东西/未命名.md",
     "大学物理实验/1.绪论/3.有效数字与实验数据处理.md",
+    "大学物理实验/第三节 用扭摆法测定转动惯量/预习报告.md",
     "大学物理实验/1.绪论/2.误差与不确定度.md",
     "大学物理实验/1.绪论/1.实验测量与误差分布.md",
     "电子电路基础/index.md",
@@ -248,7 +251,6 @@
     "CS70/index.md",
     "CS61A/index.md",
     "面向对象程序设计/index.md",
-    "合并笔记/index.md",
     "Codex/index.md",
     "Obsidian接入AI/Claude Code接入Obsidian.md",
     "数据结构基础 FDS/补充知识/网络流_new.md",
@@ -256,10 +258,8 @@
     "CS61B/Lecture 23 Shortest Paths/Shortest Paths.md",
     "数据结构基础 FDS/补充知识/Bellman-Ford算法与SPFA算法.md",
     "数据结构基础 FDS/补充知识/网络流.md",
-    "数据结构基础 FDS/课程内容/基础数据结构/3. 并查集.md",
     "数据结构基础 FDS/补充知识/附件/Pasted image 20260519232916.png",
     "数据结构基础 FDS/补充知识/附件",
-    "CS70/Lecture/Lecture 5 Graphs 1/Graph 1.md",
     "数据结构基础 FDS/补充知识",
     "数据结构基础 FDS/课程内容/基础数据结构/附件/Pasted image 20260518185933.png",
     "数据结构基础 FDS/课程内容/基础数据结构/附件/Pasted image 20260518184532.png",
