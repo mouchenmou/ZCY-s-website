@@ -122,8 +122,7 @@ nav:
       - 笔记本/Obsidian接入AI/index.md
       - Gemini Cli接入Obsidian: 笔记本/Obsidian接入AI/Geimini Cli接入Obsidian.md
       - Claude code接入Obsidian: 笔记本/Obsidian接入AI/Claude Code接入Obsidian.md
-    - 两端同时操作Blog:
-      - 笔记本/合并笔记/合并笔记.md
+    - 两端同时操作Blog: 笔记本/合并笔记/合并笔记.md
   - Undergraduate Study:
     - CS61A Python:
       - 笔记本/CS61A/index.md
