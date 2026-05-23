@@ -1424,5 +1424,47 @@ html[data-md-color-scheme="warm"] body {
 }
 
 
+/* ============================================
+   导航栏样式修复 - 去掉navigation.indexes造成的肥大卡片样式
+   Material 9.7默认给 .md-nav__link--index 加了
+   独立的背景色、圆角、padding，让它看起来像个肥卡片。
+   这里彻底扒掉，让它和没index的section一样简洁。
+   ============================================ */
+
+/* 彻底扒掉 .md-nav__link--index 的所有特殊样式，跟普通nav item一模一样 */
+/* 用 .md-nav__item .md-nav__link--index 提高优先级，压过后面的 .md-nav__link 通用规则 */
+.md-nav__item .md-nav__link--index,
+[data-md-color-scheme="warm"] .md-nav__item .md-nav__link--index,
+[data-md-color-scheme="slate"] .md-nav__item .md-nav__link--index {
+  background: transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* 让 .md-nav__link--index 里的链接保持和普通nav item一样的间距 */
+.md-nav__link--index > a {
+  padding: 0.4em 0.8em !important;
+}
+
+/* 统一导航链接的样式（排除 .md-nav__link--index，它有自己的样式） */
+[data-md-color-scheme="warm"] .md-nav__link:not(.md-nav__link--index) {
+  color: #f4e8d0 !important;
+  padding: 12px 16px !important;
+  border-radius: 6px;
+  margin: 4px 8px !important;
+  transition: all 0.3s ease;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+  background: transparent !important;
+}
+
+/* 去掉section的特殊展开/折叠按钮样式 */
+[data-md-color-scheme="warm"] .md-nav__item .md-nav__toggle ~ .md-nav {
+  background: transparent !important;
+}
+
 # Force update
 
