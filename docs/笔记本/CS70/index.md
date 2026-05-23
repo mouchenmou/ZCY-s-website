@@ -17,16 +17,16 @@
 
 ### Lecture 笔记
 
-- [Lecture 1: Introduction & Propositional Logic](Lecture/Lecture%201%20Introduction,%20Propositional%20logical/1.Introduction.md)
-  - [1.1 Introduction](Lecture/Lecture%201%20Introduction,%20Propositional%20logical/1.Introduction.md)
-  - [1.2 Propositional Logic](Lecture/Lecture%201%20Introduction,%20Propositional%20logical/2.Propositional%20logical.md)
+- Lecture 1: Introduction & Propositional Logic
+    - [1.1 Introduction](Lecture/Lecture%201%20Introduction,%20Propositional%20logical/1.Introduction.md)
+    - [1.2 Propositional Logic](Lecture/Lecture%201%20Introduction,%20Propositional%20logical/2.Propositional%20logical.md)
 - [Lecture 2: Proofs](Lecture/Lecture%202%20Proofs/Proofs.md)
 - [Lecture 3: Induction](Lecture/Lecture%203%20Induction/Induction.md)
 - [Lecture 4: Stable Matching](Lecture/Lecture%204%20Stable%20Matching/Stable%20Matching.md)
 - [Lecture 5: Graph 1](Lecture/Lecture%205%20Graphs%201/Graph%201.md)
-- [Lecture 6: Graph 2](Lecture/Lecture%206%20Graphs%202/1.%20Complete%20Graphs%20and%20Trees.md)
-  - [6.1 Complete Graphs and Trees](Lecture/Lecture%206%20Graphs%202/1.%20Complete%20Graphs%20and%20Trees.md)
-  - [6.2 Planar Graphs and Euler's Formula](Lecture/Lecture%206%20Graphs%202/2.%20Planar%20Graphs%20and%20Euler's%20Formula.md)
+- Lecture 6: Graph 2
+    - [6.1 Complete Graphs and Trees](Lecture/Lecture%206%20Graphs%202/1.%20Complete%20Graphs%20and%20Trees.md)
+    - [6.2 Planar Graphs and Euler's Formula](Lecture/Lecture%206%20Graphs%202/2.%20Planar%20Graphs%20and%20Euler's%20Formula.md)
 - [Lecture 7: Modular Arithmetic](Lecture/Lecture%207%20Modular%20Arithmetic/Lecture%207%20Modular%20Arithmetic.md)
 - [Lecture 8: Euclid's Algorithm, FLT, CRT](Lecture/Lecture%208%20Euclid's%20Algorithm,%20FLT,%20CRT/Euclid's%20Algorithm,%20FLT,%20CRT.md)
 - [Lecture 9: RSA](Lecture/Lecutre%209%20RSA/RSA.md)

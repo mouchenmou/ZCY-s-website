@@ -34,9 +34,9 @@ CS61 系列是伯克利 CS 专业的入门课，其中：
 - [Lecture 16 Iterators](Lecture%2016/Lecture%2016%20Iterators.md)
 - [Lecture 17 Generators](Lecture%2017/Lecture%2017%20Generators.md)
 - [Lecture 18 Object-Oriented Programming](Lecture%2018/Lecture%2018%20Object-Oriented%20Programming.md)
-- [Lecture 19 Attributes](Lecture%2019%20Attributes/1.%20Class%20Attributes.md)
-  - [1. Class Attributes](Lecture%2019%20Attributes/1.%20Class%20Attributes.md)
-  - [2. Method calls](Lecture%2019%20Attributes/2.%20Method%20calls.md)
+- Lecture 19 
+    - [1. Class Attributes](Lecture%2019%20Attributes/1.%20Class%20Attributes.md)
+    - [2. Method calls](Lecture%2019%20Attributes/2.%20Method%20calls.md)
 
 ### Lab
 
