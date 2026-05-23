@@ -1432,9 +1432,10 @@ html[data-md-color-scheme="warm"] body {
    ============================================ */
 
 /* 彻底扒掉 .md-nav__link--index 的所有特殊样式，跟普通nav item一模一样 */
-.md-nav__link--index,
-[data-md-color-scheme="warm"] .md-nav__link--index,
-[data-md-color-scheme="slate"] .md-nav__link--index {
+/* 用 .md-nav__item .md-nav__link--index 提高优先级，压过后面的 .md-nav__link 通用规则 */
+.md-nav__item .md-nav__link--index,
+[data-md-color-scheme="warm"] .md-nav__item .md-nav__link--index,
+[data-md-color-scheme="slate"] .md-nav__item .md-nav__link--index {
   background: transparent !important;
   border-radius: 0 !important;
   box-shadow: none !important;
