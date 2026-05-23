@@ -1431,8 +1431,8 @@ html[data-md-color-scheme="warm"] body {
    这里彻底扒掉，让它和没index的section一样简洁。
    ============================================ */
 
-/* 彻底扒掉 .md-nav__link--index 的所有特殊样式，跟普通nav item一模一样 */
-/* 用 .md-nav__item .md-nav__link--index 提高优先级，压过后面的 .md-nav__link 通用规则 */
+/* 去掉 .md-nav__link--index 的 Material 默认卡片样式（背景/圆角/阴影/边框），
+   但保留通用 .md-nav__link 的 padding/margin，让高度跟普通项一致 */
 .md-nav__item .md-nav__link--index,
 [data-md-color-scheme="warm"] .md-nav__item .md-nav__link--index,
 [data-md-color-scheme="slate"] .md-nav__item .md-nav__link--index {
@@ -1440,17 +1440,21 @@ html[data-md-color-scheme="warm"] body {
   border-radius: 0 !important;
   box-shadow: none !important;
   border: none !important;
+}
+
+/* .md-nav__link--index 内部：<a> 不用自己的 padding，跟着父 div 的 padding 走 */
+.md-nav__link--index > a {
+  padding: 0 !important;
   margin: 0 !important;
+}
+
+/* .md-nav__link--index 内部的 <label>（箭头按钮）不要多余 padding */
+.md-nav__link--index > label {
   padding: 0 !important;
 }
 
-/* 让 .md-nav__link--index 里的链接保持和普通nav item一样的间距 */
-.md-nav__link--index > a {
-  padding: 0.4em 0.8em !important;
-}
-
-/* 统一导航链接的样式（排除 .md-nav__link--index，它有自己的样式） */
-[data-md-color-scheme="warm"] .md-nav__link:not(.md-nav__link--index) {
+/* 统一导航链接的样式 */
+[data-md-color-scheme="warm"] .md-nav__link {
   color: #f4e8d0 !important;
   padding: 12px 16px !important;
   border-radius: 6px;
@@ -1459,6 +1463,17 @@ html[data-md-color-scheme="warm"] body {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   position: relative;
   background: transparent !important;
+}
+
+/* .md-nav__link--index 是flex容器，padding应该跟普通项一样，
+   但内部的 <a> 不要重复padding */
+.md-nav__link--index > a {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.md-nav__link--index > label {
+  padding: 0 !important;
 }
 
 /* 去掉section的特殊展开/折叠按钮样式 */
