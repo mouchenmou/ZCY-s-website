@@ -1448,8 +1448,11 @@ html[data-md-color-scheme="warm"] body {
   margin: 0 !important;
 }
 
-/* .md-nav__link--index 内部的 <label>（箭头按钮）不要多余 padding */
+/* .md-nav__link--index 内部的 <label>（箭头按钮）确保箭头可见 */
 .md-nav__link--index > label {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   padding: 0 !important;
 }
 
