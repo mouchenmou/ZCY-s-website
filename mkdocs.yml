@@ -124,6 +124,7 @@ nav:
       - Claude code接入Obsidian: 笔记本/Obsidian接入AI/Claude Code接入Obsidian.md
     - 双端操作Blog: 笔记本/合并笔记/合并笔记.md
   - Undergraduate Study:
+    - undergraduate-study/index1.md
     - CS61A Python:
       - 笔记本/CS61A/index.md
       - Homework:
