@@ -1,7 +1,7 @@
 {
   "userName": "",
   "permissionMode": "yolo",
-  "model": "DeepSeek-V4-pro",
+  "model": "Deepseek-V4-pro",
   "thinkingBudget": "medium",
   "effortLevel": "high",
   "serviceTier": "default",
@@ -21,10 +21,10 @@
       "scope": "provider:claude"
     },
     {
-      "id": "snippet-1779458589155",
+      "id": "snippet-1779556227598",
       "name": "Deepseek",
       "description": "",
-      "envVars": "ANTHROPIC_API_KEY=sk-daf20b1c63e440adaf4dd4e8dcbfa6f2\nANTHROPIC_BASE_URL=hhttps://api.deepseek.com/anthropic\nANTHROPIC_MODEL=DeepSeek-V4-pro",
+      "envVars": "ANTHROPIC_API_KEY=sk-daf20b1c63e440adaf4dd4e8dcbfa6f2\nANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic\nANTHROPIC_MODEL=Deepseek-V4-pro",
       "scope": "provider:claude"
     }
   ],
@@ -47,8 +47,8 @@
       "enableSonnet1M": false,
       "customModels": "qwen3.6-plus",
       "lastModel": "haiku",
-      "environmentVariables": "ANTHROPIC_API_KEY=sk-daf20b1c63e440adaf4dd4e8dcbfa6f2\nANTHROPIC_BASE_URL=hhttps://api.deepseek.com/anthropic\nANTHROPIC_MODEL=DeepSeek-V4-pro",
-      "environmentHash": "ANTHROPIC_BASE_URL=hhttps://api.deepseek.com/anthropic|ANTHROPIC_MODEL=DeepSeek-V4-pro"
+      "environmentVariables": "ANTHROPIC_API_KEY=sk-daf20b1c63e440adaf4dd4e8dcbfa6f2\nANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic\nANTHROPIC_MODEL=Deepseek-V4-pro",
+      "environmentHash": "ANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic|ANTHROPIC_MODEL=Deepseek-V4-pro"
     },
     "codex": {
       "enabled": false,
@@ -60,7 +60,8 @@
       "environmentVariables": "",
       "environmentHash": "",
       "installationMethodsByHost": {
-        "LAPTOP-76KSVDVU": "native-windows"
+        "LAPTOP-76KSVDVU": "native-windows",
+        "mouchenmoudeMacBook-Pro.local": "native-windows"
       },
       "wslDistroOverridesByHost": {}
     },
@@ -78,7 +79,7 @@
   },
   "settingsProvider": "claude",
   "savedProviderModel": {
-    "claude": "DeepSeek-V4-pro"
+    "claude": "Deepseek-V4-pro"
   },
   "savedProviderEffort": {
     "claude": "high"

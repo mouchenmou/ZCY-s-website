@@ -1424,5 +1424,49 @@ html[data-md-color-scheme="warm"] body {
 }
 
 
+/* ============================================
+   导航栏样式修复 - 去掉带index的section的肥大样式
+   ============================================ */
+
+/* 去掉section的卡片/背景色，保持和没index的导航项一致的简洁样式 */
+[data-md-color-scheme="warm"] .md-nav__item--section {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+[data-md-color-scheme="warm"] .md-nav__item--section > .md-nav__link {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 12px 16px !important;
+  margin: 4px 8px !important;
+}
+
+[data-md-color-scheme="warm"] .md-nav__item--section.md-nav__item--nested {
+  background: transparent !important;
+}
+
+/* 统一导航链接的样式 */
+[data-md-color-scheme="warm"] .md-nav__link {
+  color: #f4e8d0 !important;
+  padding: 12px 16px !important;
+  border-radius: 6px;
+  margin: 4px 8px !important;
+  transition: all 0.3s ease;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+  background: transparent !important;
+}
+
+/* 去掉section的特殊展开/折叠按钮样式 */
+[data-md-color-scheme="warm"] .md-nav__item .md-nav__toggle ~ .md-nav {
+  background: transparent !important;
+}
+
 # Force update
 
