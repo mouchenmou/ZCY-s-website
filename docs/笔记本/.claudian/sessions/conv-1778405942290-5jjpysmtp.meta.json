@@ -4,8 +4,8 @@
   "title": "你好啊",
   "titleGenerationStatus": "failed",
   "createdAt": 1778405942290,
-  "updatedAt": 1779553218532,
-  "lastResponseAt": 1779553218532,
+  "updatedAt": 1779554701983,
+  "lastResponseAt": 1779554701983,
   "sessionId": "14a54f6f-a3b9-41a7-a543-f374b3f71931",
   "providerState": {
     "providerSessionId": "14a54f6f-a3b9-41a7-a543-f374b3f71931",
@@ -298,12 +298,12 @@
   "currentNote": "合并笔记/合并笔记.md",
   "usage": {
     "model": "qwen3.6-plus",
-    "inputTokens": 30821,
-    "cacheCreationInputTokens": 3443,
-    "cacheReadInputTokens": 125524,
+    "inputTokens": 33236,
+    "cacheCreationInputTokens": 104,
+    "cacheReadInputTokens": 136864,
     "contextWindow": 200000,
-    "contextTokens": 159788,
-    "percentage": 80,
+    "contextTokens": 170204,
+    "percentage": 85,
     "contextWindowIsAuthoritative": true
   }
 }

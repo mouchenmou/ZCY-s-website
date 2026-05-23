@@ -61,12 +61,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "电子电路基础/index.md",
+                "file": "大学物理实验/1.绪论/3.有效数字与实验数据处理.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "3.有效数字与实验数据处理"
             }
           }
         ],
@@ -232,6 +232,11 @@
   },
   "active": "84e73aa598f9b172",
   "lastOpenFiles": [
+    "大学物理实验/第三节 用扭摆法测定转动惯量/预习报告.md",
+    "大学物理实验/1.绪论/3.有效数字与实验数据处理.md",
+    "大学物理实验/1.绪论/2.误差与不确定度.md",
+    "大学物理实验/1.绪论/1.实验测量与误差分布.md",
+    "电子电路基础/index.md",
     "复变函数与积分变换/index.md",
     "深入理解计算机系统/index.md",
     "CS231n/index.md",
@@ -242,7 +247,6 @@
     "信号与系统/index.md",
     "CS70/index.md",
     "CS61A/index.md",
-    "电子电路基础/index.md",
     "面向对象程序设计/index.md",
     "合并笔记/index.md",
     "Codex/index.md",
@@ -256,10 +260,6 @@
     "数据结构基础 FDS/补充知识/附件/Pasted image 20260519232916.png",
     "数据结构基础 FDS/补充知识/附件",
     "CS70/Lecture/Lecture 5 Graphs 1/Graph 1.md",
-    "CS70/Lecture/Lecture 4 Stable Matching/Stable Matching.md",
-    "CS70/Lecture/Lecture 2 Proofs/Proofs.md",
-    "CS70/Lecture/Lecture 2 Proofs/1.Proofs.md",
-    "CS70/Lecture/Lecture 1 Introduction, Propositional logical/2. Propositional logical.md",
     "数据结构基础 FDS/补充知识",
     "数据结构基础 FDS/课程内容/基础数据结构/附件/Pasted image 20260518185933.png",
     "数据结构基础 FDS/课程内容/基础数据结构/附件/Pasted image 20260518184532.png",
