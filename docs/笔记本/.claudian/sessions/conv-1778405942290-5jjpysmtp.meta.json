@@ -4,8 +4,8 @@
   "title": "你好啊",
   "titleGenerationStatus": "failed",
   "createdAt": 1778405942290,
-  "updatedAt": 1779563269948,
-  "lastResponseAt": 1779563269948,
+  "updatedAt": 1779564069492,
+  "lastResponseAt": 1779564069492,
   "sessionId": "0cc669b2-b4c8-41d9-907b-2675331a5013",
   "providerState": {
     "providerSessionId": "0cc669b2-b4c8-41d9-907b-2675331a5013",
@@ -301,12 +301,12 @@
   "currentNote": "合并笔记/合并笔记.md",
   "usage": {
     "model": "Deepseek-V4-pro",
-    "inputTokens": 307,
+    "inputTokens": 247,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 136192,
+    "cacheReadInputTokens": 142720,
     "contextWindow": 200000,
-    "contextTokens": 136499,
-    "percentage": 68,
+    "contextTokens": 142967,
+    "percentage": 71,
     "contextWindowIsAuthoritative": true
   }
 }
