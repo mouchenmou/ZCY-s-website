@@ -1431,8 +1431,11 @@ html[data-md-color-scheme="warm"] body {
    这里彻底扒掉，让它和没index的section一样简洁。
    ============================================ */
 
-/* 核心：.md-nav__link--index 保持卡片底色但不肥大 */
-.md-nav__link--index {
+/* 彻底扒掉 .md-nav__link--index 的所有特殊样式，跟普通nav item一模一样 */
+.md-nav__link--index,
+[data-md-color-scheme="warm"] .md-nav__link--index,
+[data-md-color-scheme="slate"] .md-nav__link--index {
+  background: transparent !important;
   border-radius: 0 !important;
   box-shadow: none !important;
   border: none !important;
@@ -1443,19 +1446,6 @@ html[data-md-color-scheme="warm"] body {
 /* 让 .md-nav__link--index 里的链接保持和普通nav item一样的间距 */
 .md-nav__link--index > a {
   padding: 0.4em 0.8em !important;
-}
-
-/* 给带index的项保留一个微妙的底色区分（跟Material默认一致但不加padding） */
-[data-md-color-scheme="warm"] .md-nav__link--index {
-  background: rgba(139, 119, 90, 0.12) !important;
-  border-radius: 6px !important;
-  margin: 4px 8px !important;
-}
-
-[data-md-color-scheme="slate"] .md-nav__link--index {
-  background: rgba(255, 255, 255, 0.06) !important;
-  border-radius: 6px !important;
-  margin: 4px 8px !important;
 }
 
 /* 统一导航链接的样式 */
