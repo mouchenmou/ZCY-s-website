@@ -106,21 +106,27 @@ markdown_extensions:
 # Navigation
 nav:
   - 首页: index.md
-  - Undergraduate Study:
-    - undergraduate-study/雕虫小技.md
-    - Claude code: 
+  - Useful Tools:
+    - 雕虫小技: undergraduate-study/雕虫小技.md
+    - Claude code:
+      - 课程主页: 笔记本/Claude code使用/index.md
       - MacOS Claude Code安装教程: 笔记本/Claude code使用/MacOS Claude Code 国内安装教程.md
       - WSL Claude Code安装教程: 笔记本/Claude code使用/WSL Claude Code 国内安装教程以及Ubuntu的重新配置.md
       - Windows Claude Code安装教程: 笔记本/Claude code使用/Windows Claude Code安装教程.md
-      - 阿里云 API 白嫖教程: 笔记本/Claude code使用/index.md
+      - 阿里云 API 白嫖教程: 笔记本/Claude code使用/阿里云_API_白嫖教程.pdf
     - Codex:
+      - 课程主页: 笔记本/Codex/index.md
       - Codex 安装: 笔记本/Codex/Codex安装.md
     - Obsidian中接入AI:
+      - 课程主页: 笔记本/Obsidian接入AI/index.md
       - Gemini Cli接入Obsidian: 笔记本/Obsidian接入AI/Geimini Cli接入Obsidian.md
       - Claude code接入Obsidian: 笔记本/Obsidian接入AI/Claude Code接入Obsidian.md
-    - 两端同时操作Blog: 笔记本/合并笔记/合并笔记.md
+    - 两端同时操作Blog:
+      - 课程主页: 笔记本/合并笔记/index.md
+  - Undergraduate Study:
     - undergraduate-study/index1.md
     - CS61A Python:
+      - 课程主页: 笔记本/CS61A/index.md
       - Homework:
         - HW3 Recursion, Tree Recursion:
           - Q4 Count Dollars: 笔记本/CS61A/Homework/HW3 Recursion, Tree Recursion/Q4 Count Dollars.md
@@ -171,7 +177,7 @@ nav:
         - 2. Method calls: 笔记本/CS61A/Lecture 19 Attributes/2. Method calls.md
        
     - CS61B 数据结构:
-      - 笔记本/CS61B/index.md
+      - 课程主页: 笔记本/CS61B/index.md
       - Lecture 1 Hello World Java: 笔记本/CS61B/Lecture 1 Intro, Hello World Java/Intro 1 Study Guide.md
       - Lecture 2 Defining and Using Classes: 笔记本/CS61B/Lecture 2 Definiing and Using Classes/Defining and Using Classes.md
       - Lecture 3 Testing: 笔记本/CS61B/Lecture 3 Testing/Lecture 3 Testing.md
@@ -223,6 +229,7 @@ nav:
         - Project0: 
           - Q2 public static boolean maxTileExists : 笔记本/CS61B/Project/Project0/Q2 public static boolean maxTileExists.md
     - CS70 离散数学:
+      - 课程主页: 笔记本/CS70/index.md
       - Homework:
         - Homework 0: 笔记本/CS70/Homework/hw00-sol.pdf
         - Homework 1: 笔记本/CS70/Homework/hw01-sol.pdf
@@ -285,10 +292,12 @@ nav:
         - Lecture 7 Modular Arithmeti: 笔记本/CS70/Lecture/Lecture 7 Modular Arithmetic/Lecture 7 Modular Arithmetic.md
         - Lecture 8 Euclid's Algorithm, FLT, CRT: 笔记本/CS70/Lecture/Lecture 8 Euclid's Algorithm, FLT, CRT/Euclid's Algorithm, FLT, CRT.md.md
         - Lecutre 9 RSA: 笔记本/CS70/Lecture/Lecutre 9 RSA/RSA.md
-    - CS231n 计算机视觉:  
+    - CS231n 计算机视觉:
+      - 课程主页: 笔记本/CS231n/index.md
       - Part 1 Deep Learning Basics:
         - Lecture 1 导论: 笔记本/CS231n/Lecture/Lecture 1 导论/导论.md
     - CSAPP 深入理解计算机系统:
+      - 课程主页: 笔记本/深入理解计算机系统/index.md
       - 第1章 计算机系统漫游:
         - 1.4 处理器读并解释储存在内存中的指令: 笔记本/深入理解计算机系统/第1章 计算机系统漫游/1.4 处理器读并解释储存在内存中的指令.md
       - 第3章 程序的机器级表示:
@@ -299,6 +308,7 @@ nav:
         - 3.6 控制: 笔记本/深入理解计算机系统/第3章 程序的机器级表示/3.6 控制.md
     - undergraduate-study/index2.md
     - 面向对象程序设计:
+      - 课程主页: 笔记本/面向对象程序设计/index.md
       - Lecture 1: 笔记本/面向对象程序设计/Lecture 1/The first C++ program.md
       - Lecture 2: 
         - 1.类: 笔记本/面向对象程序设计/Lecture 2/1.类.md
@@ -358,6 +368,7 @@ nav:
       - Homework:
         - Homework 1: 笔记本/面向对象程序设计/Homework/Homework1/Homework.md
     - 电子电路基础:
+      - 课程主页: 笔记本/电子电路基础/index.md
       - 第1章 电路基本概述:
         - 1.2电路基础知识: 笔记本/电子电路基础/第1章 电路基本概述/1.2电路基础知识.md
         - 1.3基本电路元件: 笔记本/电子电路基础/第1章 电路基本概述/1.3基本电路元件.md
@@ -408,6 +419,7 @@ nav:
         - 1. 功率放大器笔记: 笔记本/电子电路基础/第12章 功率放大器/功率放大器.md
         - 2. 功率放大器PPT: 笔记本/电子电路基础/第12章 功率放大器/chap_12m 功率放大器.pdf
     - 信号与系统:
+      - 课程主页: 笔记本/信号与系统/index.md
       - 第一章 信号与系统的基本概念: 
         - 第一章笔记: 笔记本/信号与系统/第1章/信号与系统第一章.pdf
         - 课后作业: 笔记本/信号与系统/第1章/第一章作业.pdf
@@ -431,6 +443,7 @@ nav:
         - 第七次作业: 笔记本/信号与系统/作业中的收获/作业7.md
         - 第八次作业: 笔记本/信号与系统/作业中的收获/作业8.md
     - 数据结构基础 FDS:
+      - 课程主页: 笔记本/数据结构基础 FDS/index.md
       - 1. 算法分析基础: 笔记本/数据结构基础 FDS/课程内容/topic1.md
       - 2. 基础数据结构: 
         - 1. 树: 笔记本/数据结构基础 FDS/课程内容/基础数据结构/1. 树.md
@@ -479,6 +492,7 @@ nav:
           - 单选题: 笔记本/数据结构基础 FDS/Homework/HW9/单选题.md
           - 程序填空题: 笔记本/数据结构基础 FDS/Homework/HW9/程序填空题.md
     - 复变函数与积分变换:
+      - 课程主页: 笔记本/复变函数与积分变换/index.md
       - 第一章 预备知识: 笔记本/复变函数与积分变换/第一章-预备知识.md
       - 第二章 解析函数: 笔记本/复变函数与积分变换/第二章-解析函数.md
       - 第三章 复变函数的积分: 笔记本/复变函数与积分变换/第三章-复变函数的积分.md

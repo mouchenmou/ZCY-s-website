@@ -61,12 +61,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS61B/Lecture 24 Minimum Spanning Trees/Lecture 24 Minimum Spanning Trees.md",
+                "file": "电子电路基础/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 24 Minimum Spanning Trees"
+              "title": "index"
             }
           }
         ],
@@ -232,11 +232,24 @@
   },
   "active": "84e73aa598f9b172",
   "lastOpenFiles": [
-    "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
+    "复变函数与积分变换/index.md",
+    "深入理解计算机系统/index.md",
+    "CS231n/index.md",
+    "数据结构基础 FDS/index.md",
+    "CS61B/Lecture 24 Minimum Spanning Trees/Lecture 24 Minimum Spanning Trees.md",
+    "CS61B/index.md",
+    "Obsidian接入AI/index.md",
+    "信号与系统/index.md",
+    "CS70/index.md",
+    "CS61A/index.md",
+    "电子电路基础/index.md",
+    "面向对象程序设计/index.md",
+    "合并笔记/index.md",
+    "Codex/index.md",
     "Obsidian接入AI/Claude Code接入Obsidian.md",
     "数据结构基础 FDS/补充知识/网络流_new.md",
+    "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
     "CS61B/Lecture 23 Shortest Paths/Shortest Paths.md",
-    "CS61B/Lecture 24 Minimum Spanning Trees/Lecture 24 Minimum Spanning Trees.md",
     "数据结构基础 FDS/补充知识/Bellman-Ford算法与SPFA算法.md",
     "数据结构基础 FDS/补充知识/网络流.md",
     "数据结构基础 FDS/课程内容/基础数据结构/3. 并查集.md",
@@ -247,11 +260,7 @@
     "CS70/Lecture/Lecture 2 Proofs/Proofs.md",
     "CS70/Lecture/Lecture 2 Proofs/1.Proofs.md",
     "CS70/Lecture/Lecture 1 Introduction, Propositional logical/2. Propositional logical.md",
-    "CS70/Lecture/Lecture 1 Introduction, Propositional logical/1. Introduction.md",
     "数据结构基础 FDS/补充知识",
-    "Claude code使用/MacOS Claude Code 国内安装教程.md",
-    "Claude code使用/Windows Claude Code安装教程.md",
-    "Claude code使用/index.md",
     "数据结构基础 FDS/课程内容/基础数据结构/附件/Pasted image 20260518185933.png",
     "数据结构基础 FDS/课程内容/基础数据结构/附件/Pasted image 20260518184532.png",
     "数据结构基础 FDS/课程内容/基础数据结构/附件/Pasted image 20260518182504.png",
@@ -266,18 +275,9 @@
     "数据结构基础 FDS/DS09_Ch09_Shortest-Path Algorithm(7).pdf",
     "CS61B/Lecture 24 Minimum Spanning Trees/附件/Pasted image 20260518122400.png",
     "CS61B/Lecture 24 Minimum Spanning Trees/cs61b 2020 lec 26 mst.pdf",
-    "CS61B/Lecture 15 不相交集2和渐近线2/15.1路径压缩(WQU with Path Compression).md",
-    "CS61B/Lecture 14 不相交集1(Disjoint Sets)/3.加权快速接头（Weighted Quick Union）.md",
-    "CS61B/Lecture 14 不相交集1(Disjoint Sets)/2.快速连接法（QuickUnionDS）.md",
     "数据结构基础 FDS/DS11_Ch09_DFS.pdf",
     "数据结构基础 FDS/DS08_Ch09_Graph Definition_Topological Sort(1).pdf",
     "CS61B/Lecture 23 Shortest Paths/cs61b 2020 lec 25 shortest paths.pdf",
-    "数据结构基础 FDS/课程内容/基础数据结构/2. 堆.md",
-    "数据结构基础 FDS/课程内容/基础数据结构/1. 树.md",
-    "数据结构基础 FDS/课程内容/summary1.md",
-    "数据结构基础 FDS/课程内容/summary2.md",
-    "CS61B/Lecture 21 Tree and Graph Traversals/21.2 Graph.md",
-    "CS61B/Lecture 21 Tree and Graph Traversals/21.1 Trees and Traversals.md",
     "未命名.canvas"
   ]
 }
