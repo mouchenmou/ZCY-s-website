@@ -47,30 +47,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "复变函数与积分变换/第一章-预备知识.md",
+                "file": "数据结构基础 FDS/课程内容/排序与哈希/2. 哈希.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "第一章-预备知识"
+              "title": "2. 哈希"
             }
           },
           {
-            "id": "84e73aa598f9b172",
+            "id": "6abdadf4f6e5f133",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "信号与系统/index.md",
+                "file": "CS70/Lecture/Lecture 5 Graphs 1/Graph 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Graph 1"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -230,10 +230,32 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "84e73aa598f9b172",
+  "active": "f30194b4f27cd478",
   "lastOpenFiles": [
-    "信号与系统/第4章/信号与系统第四章.pdf",
+    "数据结构基础 FDS/课程内容/排序与哈希/1. 排序.md",
+    "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
+    "数据结构基础 FDS/课程内容/summary1.md",
+    "数据结构基础 FDS/课程内容/summary2.md",
+    "数据结构基础 FDS/课程内容/排序与哈希/2. 哈希.md",
+    "数据结构基础 FDS/课程内容/排序与哈希",
+    "CS70/Lecture/Lecture 5 Graphs 1/Graph 1.md",
+    "数据结构基础 FDS/课程内容/基础数据结构/附件/Pasted image 20260525214013.png",
+    "CS61B/Lecture 21 Tree and Graph Traversals/21.2 Graph.md",
+    "CS61B/Lecture 21 Tree and Graph Traversals/21.1 Trees and Traversals.md",
+    "数据结构基础 FDS/课程内容/基础数据结构/附件/Pasted image 20260525193821.png",
+    "数据结构基础 FDS/课程内容/基础数据结构/附件/Pasted image 20260525192217.png",
+    "数据结构基础 FDS/课程内容/基础数据结构/附件/Pasted image 20260525190123.png",
+    "数据结构基础 FDS/课程内容/基础数据结构/附件/Pasted image 20260525184804.png",
+    "复变函数与积分变换/第一章-预备知识.md",
+    "数据结构基础 FDS/课程内容/基础数据结构/1. 树.md",
+    "数据结构基础 FDS/课程内容/基础数据结构/2. 堆.md",
+    "数据结构基础 FDS/课程内容/基础数据结构/3. 并查集.md",
+    "数据结构基础 FDS/课程内容/基础数据结构/附件/Pasted image 20260525183349.png",
+    "数据结构基础 FDS/DS11_Ch09_DFS(6).pdf",
+    "数据结构基础 FDS/index.md",
     "信号与系统/index.md",
+    "未命名.md",
+    "信号与系统/第4章/信号与系统第四章.pdf",
     "信号与系统/第5章/第五章作业.pdf",
     "信号与系统/第5章/信号与系统第五章.pdf",
     "信号与系统/第4章/第四章作业.pdf",
@@ -252,31 +274,10 @@
     "Claude code使用/MacOS Claude Code 国内安装教程.md",
     "CS70/index.md",
     "CS61A/index.md",
-    "CS61A/进度.md",
-    "CS61A/目录.pdf",
-    "合并笔记/网站修复记录 2026-05-24.md",
-    "合并笔记/合并笔记.md",
-    "合并笔记/index.md",
-    "1.这个网站的一些东西/未命名.md",
-    "大学物理实验/1.绪论/3.有效数字与实验数据处理.md",
-    "大学物理实验/第三节 用扭摆法测定转动惯量/预习报告.md",
-    "大学物理实验/1.绪论/2.误差与不确定度.md",
-    "大学物理实验/1.绪论/1.实验测量与误差分布.md",
-    "复变函数与积分变换/index.md",
-    "深入理解计算机系统/index.md",
-    "CS231n/index.md",
-    "数据结构基础 FDS/index.md",
     "数据结构基础 FDS/补充知识/附件/Pasted image 20260519232916.png",
-    "数据结构基础 FDS/补充知识/附件",
     "数据结构基础 FDS/课程内容/基础数据结构/附件/Pasted image 20260518185933.png",
     "数据结构基础 FDS/课程内容/基础数据结构/附件/Pasted image 20260518184532.png",
     "数据结构基础 FDS/课程内容/基础数据结构/附件/Pasted image 20260518182504.png",
-    "数据结构基础 FDS/课程内容/基础数据结构/附件/Pasted image 20260518182401.png",
-    "数据结构基础 FDS/课程内容/基础数据结构/附件/Pasted image 20260518171341.png",
-    "数据结构基础 FDS/课程内容/基础数据结构/附件/Pasted image 20260518170224.png",
-    "数据结构基础 FDS/课程内容/基础数据结构/附件/Pasted image 20260518170029.png",
-    "数据结构基础 FDS/课程内容/基础数据结构/附件/Pasted image 20260518165742.png",
-    "CS61B/Lecture 24 Minimum Spanning Trees/附件/Pasted image 20260518122400.png",
     "未命名.canvas"
   ]
 }

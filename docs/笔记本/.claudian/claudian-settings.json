@@ -1,7 +1,7 @@
 {
   "userName": "",
   "permissionMode": "yolo",
-  "model": "Deepseek-V4-pro",
+  "model": "DeepSeek-V4-pro[1m]",
   "thinkingBudget": "medium",
   "effortLevel": "high",
   "serviceTier": "default",
@@ -24,7 +24,7 @@
       "id": "snippet-1779556227598",
       "name": "Deepseek",
       "description": "",
-      "envVars": "ANTHROPIC_API_KEY=sk-daf20b1c63e440adaf4dd4e8dcbfa6f2\nANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic\nANTHROPIC_MODEL=Deepseek-V4-pro",
+      "envVars": "ANTHROPIC_API_KEY=sk-daf20b1c63e440adaf4dd4e8dcbfa6f2\nANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic\nANTHROPIC_MODEL=DeepSeek-V4-pro[1m]",
       "scope": "provider:claude"
     }
   ],
@@ -47,8 +47,8 @@
       "enableSonnet1M": false,
       "customModels": "qwen3.6-plus",
       "lastModel": "haiku",
-      "environmentVariables": "ANTHROPIC_API_KEY=sk-daf20b1c63e440adaf4dd4e8dcbfa6f2\nANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic\nANTHROPIC_MODEL=Deepseek-V4-pro",
-      "environmentHash": "ANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic|ANTHROPIC_MODEL=Deepseek-V4-pro"
+      "environmentVariables": "ANTHROPIC_API_KEY=sk-daf20b1c63e440adaf4dd4e8dcbfa6f2\nANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic\nANTHROPIC_MODEL=DeepSeek-V4-pro[1m]",
+      "environmentHash": "ANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic|ANTHROPIC_MODEL=DeepSeek-V4-pro[1m]"
     },
     "codex": {
       "enabled": false,
@@ -61,7 +61,8 @@
       "environmentHash": "",
       "installationMethodsByHost": {
         "LAPTOP-76KSVDVU": "native-windows",
-        "mouchenmoudeMacBook-Pro.local": "native-windows"
+        "mouchenmoudeMacBook-Pro.local": "native-windows",
+        "mouchenmoudeMacBook-Pro-3.local": "native-windows"
       },
       "wslDistroOverridesByHost": {}
     },
@@ -79,7 +80,7 @@
   },
   "settingsProvider": "claude",
   "savedProviderModel": {
-    "claude": "Deepseek-V4-pro"
+    "claude": "DeepSeek-V4-pro[1m]"
   },
   "savedProviderEffort": {
     "claude": "high"
@@ -91,7 +92,7 @@
   "savedProviderPermissionMode": {
     "claude": "yolo"
   },
-  "lastCustomModel": "qwen3.6-plus",
+  "lastCustomModel": "Deepseek-V4-pro",
   "maxTabs": 3,
   "tabBarPosition": "input",
   "enableAutoScroll": true,
