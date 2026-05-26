@@ -226,7 +226,7 @@ nav:
       - Project:
         - Project0: 
           - Q2 public static boolean maxTileExists : 笔记本/CS61B/Project/Project0/Q2 public static boolean maxTileExists.md
-    - CS70 离散数学:
+    - CS70 离散数学和概率论:
       - 笔记本/CS70/index.md
       - Homework:
         - Homework 0: 笔记本/CS70/Homework/hw00-sol.pdf

@@ -47,7 +47,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "数据结构基础 FDS/index.md",
+                "file": "CS70/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -56,17 +56,15 @@
             }
           },
           {
-            "id": "6abdadf4f6e5f133",
+            "id": "c53c8129eacc817d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "CS70/Lecture/Lecture 5 Graphs 1/Graph 1.md",
-                "mode": "source",
-                "source": false
+                "file": "CS70/Lecture/Lecutre 9 RSA/n7.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Graph 1"
+              "icon": "lucide-file-text",
+              "title": "n7"
             }
           }
         ],
@@ -214,7 +212,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.5
+    "width": 210.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -232,6 +230,11 @@
   },
   "active": "f30194b4f27cd478",
   "lastOpenFiles": [
+    "CS70/Lecture/Lecutre 9 RSA/RSA.md.md",
+    "CS70/Lecture/Lecutre 9 RSA/n7.pdf",
+    "CS70/Lecture/Lecture 5 Graphs 1/Graph 1.md",
+    "CS70/Lecture/Lecture 6 Graphs 2/1. Complete Graphs and Trees.md",
+    "数据结构基础 FDS/index.md",
     "数据结构基础 FDS/Homework/HW11/程序填空题.md",
     "数据结构基础 FDS/Homework/HW11/附件/Pasted image 20260526203500.png",
     "数据结构基础 FDS/Homework/HW11/判断题.md",
@@ -249,7 +252,6 @@
     "数据结构基础 FDS/Homework/HW11/附件/Pasted image 20260526175549.png",
     "数据结构基础 FDS/Homework/HW11/附件/Pasted image 20260526175454.png",
     "数据结构基础 FDS/Homework/HW11/附件",
-    "数据结构基础 FDS/index.md",
     "数据结构基础 FDS/Homework/HW11",
     "数据结构基础 FDS/Homework/HW10",
     "数据结构基础 FDS/课程内容/排序与哈希/2. 哈希.md",
@@ -259,7 +261,6 @@
     "数据结构基础 FDS/课程内容/summary1.md",
     "数据结构基础 FDS/课程内容/summary2.md",
     "数据结构基础 FDS/课程内容/排序与哈希",
-    "CS70/Lecture/Lecture 5 Graphs 1/Graph 1.md",
     "数据结构基础 FDS/课程内容/基础数据结构/附件/Pasted image 20260525214013.png",
     "CS61B/Lecture 21 Tree and Graph Traversals/21.2 Graph.md",
     "CS61B/Lecture 21 Tree and Graph Traversals/21.1 Trees and Traversals.md",
@@ -271,12 +272,9 @@
     "未命名.md",
     "信号与系统/第4章/信号与系统第四章.pdf",
     "信号与系统/第5章/第五章作业.pdf",
-    "信号与系统/第5章/信号与系统第五章.pdf",
     "电子电路基础/index.md",
     "Obsidian接入AI/Geimini Cli接入Obsidian.md",
     "Claude code使用/index.md",
-    "Obsidian接入AI/index.md",
-    "Codex/index.md",
     "未命名.canvas"
   ]
 }
