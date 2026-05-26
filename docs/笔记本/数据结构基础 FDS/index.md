@@ -74,6 +74,15 @@ FDS给我的体验就是，他把我们当成了有OI基础的选手来上课。
 - [单选题](Homework/HW9/单选题.md)
 - [程序填空题](Homework/HW9/程序填空题.md)
 
+#### Homework 10
+- [单选题](Homework/HW10/单选题.md)
+
+#### Homework 11
+- [判断题](Homework/HW11/判断题.md)
+- [单选题](Homework/HW11/单选题.md)
+- [程序填空题](Homework/HW11/程序填空题.md)
+- [函数题](Homework/HW11/函数题.md)
+
 #### 其他
 - [期中考错题](Homework/期中考错题.md)
 
