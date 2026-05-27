@@ -47,12 +47,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS70/index.md",
+                "file": "信号与系统/第6章/我的疑惑2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "我的疑惑2"
             }
           },
           {
@@ -230,6 +230,12 @@
   },
   "active": "f30194b4f27cd478",
   "lastOpenFiles": [
+    "信号与系统/第6章/我的疑惑1.md",
+    "信号与系统/第6章/我的疑惑2.md",
+    "信号与系统/第5章/信号与系统第五章.pdf",
+    "信号与系统/第6章",
+    "信号与系统/第5章/第五章作业.pdf",
+    "CS70/index.md",
     "CS70/Lecture/Lecutre 9 RSA/RSA.md.md",
     "CS70/Lecture/Lecutre 9 RSA/n7.pdf",
     "CS70/Lecture/Lecture 5 Graphs 1/Graph 1.md",
@@ -260,7 +266,6 @@
     "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
     "数据结构基础 FDS/课程内容/summary1.md",
     "数据结构基础 FDS/课程内容/summary2.md",
-    "数据结构基础 FDS/课程内容/排序与哈希",
     "数据结构基础 FDS/课程内容/基础数据结构/附件/Pasted image 20260525214013.png",
     "CS61B/Lecture 21 Tree and Graph Traversals/21.2 Graph.md",
     "CS61B/Lecture 21 Tree and Graph Traversals/21.1 Trees and Traversals.md",
@@ -270,11 +275,7 @@
     "数据结构基础 FDS/课程内容/基础数据结构/3. 并查集.md",
     "信号与系统/index.md",
     "未命名.md",
-    "信号与系统/第4章/信号与系统第四章.pdf",
-    "信号与系统/第5章/第五章作业.pdf",
     "电子电路基础/index.md",
-    "Obsidian接入AI/Geimini Cli接入Obsidian.md",
-    "Claude code使用/index.md",
     "未命名.canvas"
   ]
 }
