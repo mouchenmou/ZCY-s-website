@@ -221,6 +221,13 @@ nav:
         - 21.2 Graph: 笔记本/CS61B/Lecture 21 Tree and Graph Traversals/21.2 Graph.md
       - Lecture 23 Shortest Paths: 笔记本/CS61B/Lecture 23 Shortest Paths/Shortest Paths.md
       - Lecture 24 Minimum Spanning Trees: 笔记本/CS61B/Lecture 24 Minimum Spanning Trees/Lecture 24 Minimum Spanning Trees.md
+      - Lecture 29 Sorting I:
+        - 排序问题: 笔记本/CS61B/Lecture 29 Basic Sort/1. 排序问题.md
+        - Selection Sort: 笔记本/CS61B/Lecture 29 Basic Sort/2. Selection Sort.md
+        - Heapsort: 笔记本/CS61B/Lecture 29 Basic Sort/3. Heapsort.md
+        - Mergesort: 笔记本/CS61B/Lecture 29 Basic Sort/4. Mergesort.md
+        - Insertion Sort: 笔记本/CS61B/Lecture 29 Basic Sort/5. Insertion Sort.md
+        - Shell Sort: 笔记本/CS61B/Lecture 29 Basic Sort/6. Shell Sort.md
       - Lab:
         - Lab1 命令行: 笔记本/CS61B/lab/lab1/命令行.md
       - Project:

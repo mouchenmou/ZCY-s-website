@@ -53,7 +53,7 @@ If proposer $P$ makes offer to rejecter $R$ on $l^{th}$ loop, then every subsequ
 首先，这个问题并没有很明显的蕴含关系，因此Direct Proof和Proof by contraposition在这里都不适用。在这里，我们用反证法来证明：
 
 1. 假设在程序结束时，仍然有一个 $proposer\  P$ 没有被 $rejecters$ 选中，那就意味着他向所有的 $rejecters$ 都发出了申请并且被所有的 $rejecters$ 都拒绝了。
-2. 根据刚刚推出的 **Improvement Lemma** 可得，所有的 $rejecters$ 选择的 $proprser$ 都优于$P$（因为他们都拒绝过$P$），也就是说每个 $rejecter$ 都已经有了自己的选择,并且他们的选择都不是 $P$。
+2. 根据刚刚推出的**Improvement Lemma**可得，所有的 $rejecters$ 选择的 $proprser$ 都优于$P$（因为他们都拒绝过$P$），也就是说每个 $rejecter$ 都已经有了自己的选择,并且他们的选择都不是 $P$。
 3. 此时矛盾就来了，由于所有的 $rejecters$ 都已经匹配到 $proposers$ 了，而 $P$ 却没有匹配到 $rejecters$ ，说明一共有有 $n+1$ 个 $proposers$ 而只有 $n$ 个 $rejecters$。因此这个假设不成立。
 
 !!! warning "我之前的错误理解"
@@ -107,7 +107,7 @@ If proposer $P$ makes offer to rejecter $R$ on $l^{th}$ loop, then every subsequ
 如果 $M$ 当前配对的对象是 $N$，$M^*$ 当前的配对对象是$N^*$。但相比于$N$，$M$ 更偏向于 $N^*$。那么稳定的条件只能是$N^*$ 更喜欢 $M^*$ 而非 $M$。
 
 ### 证明matching always stable
-由 **3.2 Stable matching的条件** 可得，这是一个很明显的 **蕴含** 关系，用 **Direct Proofs** (假设条件p成立，然后验证能否推导出结论q) 来证明：
+由**3.2 Stable matching的条件**可得，这是一个很明显的**蕴含**关系，用**Direct Proofs** (假设条件p成立，然后验证能否推导出结论q) 来证明：
 
 1. 假设的输出结果中：$P$ 和 $R$ 是一对、$P^*$ 和 $R^*$是一对，并且 $P$ 更喜欢 $R^*$ 而非$R$（其中 $P$ 和 $P^*$ 是 $proposers$）。
 2. 由于 $proposers$ 是根据他喜欢的 $rejecters$ 的优先程度来选择$rejecters$ 的，由于 $P$ 更喜欢 $R^*$ ，但是 $P$ 却选择了他更不喜欢的 $R$，说明 $P$ 在先前的循环中已经被 $R^*$ 拒绝过了。

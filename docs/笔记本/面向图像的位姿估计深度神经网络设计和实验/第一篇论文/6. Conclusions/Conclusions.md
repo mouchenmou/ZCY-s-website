@@ -7,13 +7,13 @@
 
 > **原文：** We present, to our knowledge, the first application of deep convolutional neural networks to end-to-end 6-DOF camera pose localization.
 > 
-> **大白话：** 据我们所知，这是第一次有人把深度卷积神经网络，应用在端到端的6自由度相机位姿定位上。
+> **大白话：**据我们所知，这是第一次有人把深度卷积神经网络，应用在端到端的6自由度相机位姿定位上。
 
 **硬核剖析：**
 
-在学术界，**“First application（首次应用）”** 是最值钱的四个字。它意味着你开辟了一个全新的赛道。
+在学术界，**“First application（首次应用）”**是最值钱的四个字。它意味着你开辟了一个全新的赛道。
 
-- 关键词是 **“端到端（End-to-End）”**。传统算法是流水线作业：先提取特征 -> 再匹配特征 -> 再算基础矩阵 -> 最后解方程求坐标。如果中间哪一步崩了，整个系统就全挂了。
+- 关键词是**“端到端（End-to-End）”**。传统算法是流水线作业：先提取特征 -> 再匹配特征 -> 再算基础矩阵 -> 最后解方程求坐标。如果中间哪一步崩了，整个系统就全挂了。
     
 - 而 PoseNet 是端到端：左边丢进去一张图片，右边直接吐出一个 $(X, Y, Z, W, P, Q, R)$ 坐标。中间过程全交给黑盒，极其暴力且优雅。
     
@@ -22,7 +22,7 @@
 
 > **原文：** We have demonstrated that one can sidestep the need for millions of training images by use of transfer learning from networks trained as classifiers.
 > 
-> **大白话：** 我们证明了，通过借用分类网络进行迁移学习，你可以完全避开必须要几百万张训练图片的死循环。
+> **大白话：**我们证明了，通过借用分类网络进行迁移学习，你可以完全避开必须要几百万张训练图片的死循环。
 
 **硬核剖析：**
 
@@ -34,7 +34,7 @@
 
 > **原文：** We showed that such networks preserve ample pose information in their feature vectors, despite being trained to produce pose-invariant outputs.
 > 
-> **大白话：** 我们展示了，尽管这些网络当初是被训练来“无视角度（得出角度不变的分类结果）”的，但它们的特征向量里却保留了极其充足的角度/位姿信息。
+> **大白话：**我们展示了，尽管这些网络当初是被训练来“无视角度（得出角度不变的分类结果）”的，但它们的特征向量里却保留了极其充足的角度/位姿信息。
 
 **硬核剖析：**
 
@@ -44,7 +44,7 @@
 
 > **原文：** Our method tolerates large baselines that cause SIFT-based localizers to fail sharply.
 > 
-> **大白话：** 我们的方法能够容忍巨大的基线（拍照间距），而这种巨大的基线会让基于 SIFT 的定位器发生灾难性的崩溃。
+> **大白话：**我们的方法能够容忍巨大的基线（拍照间距），而这种巨大的基线会让基于 SIFT 的定位器发生灾难性的崩溃。
 
 **硬核剖析：**
 
@@ -56,7 +56,7 @@
 
 > **原文：** In future work, we aim to pursue further uses of multiview geometry as a source of training data for deep pose regressors...
 > 
-> **大白话：** 在未来的工作中，我们打算进一步利用多视图几何（传统算法），把它们作为深度位姿回归网络（AI）的“训练数据生成器”。
+> **大白话：**在未来的工作中，我们打算进一步利用多视图几何（传统算法），把它们作为深度位姿回归网络（AI）的“训练数据生成器”。
 
 **硬核剖析（自动标数据）：**
 
@@ -84,13 +84,13 @@
 
 作者的下一步计划就是引入不确定性。未来的 AI 不仅要给出坐标，还要给出一个概率：我算出来坐标是这里，但我只有 20% 的把握，我建议你刹车。
 
-这直接催生了后来爆火的 **Bayesian PoseNet（贝叶斯位姿网络）**。
+这直接催生了后来爆火的**Bayesian PoseNet（贝叶斯位姿网络）**。
 
 ### 第三刀：50MB 大脑的物理极限（容量悖论）
 
 > **原文：** It is obvious that a finite neural network has an upper bound on the physical area that it can learn to localize within. We leave finding this limit to future work.
 > 
-> **大白话：** 显而易见，一个体积有限的神经网络，它能学会定位的“物理面积”肯定是有上限的。至于这个上限到底在哪，我们留给未来的工作去探索。
+> **大白话：**显而易见，一个体积有限的神经网络，它能学会定位的“物理面积”肯定是有上限的。至于这个上限到底在哪，我们留给未来的工作去探索。
 
 **硬核剖析（大地图 vs 小脑容量）：**
 
@@ -102,9 +102,9 @@
 
 这个预见极其毒辣。后来为了解决这个问题，学术界走出了两条路：
 
-1. **分块地图（Hierarchical Localization）：** 把地球切成一万个小块，训练一万个小模型。
+1. **分块地图（Hierarchical Localization）：**把地球切成一万个小块，训练一万个小模型。
     
-2. **增大参数量：** 也就是咱们现在看到的大模型（LLM/VLM）路线，用千亿参数强行记住世界知识。
+2. **增大参数量：**也就是咱们现在看到的大模型（LLM/VLM）路线，用千亿参数强行记住世界知识。
     
 
 ---

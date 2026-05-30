@@ -108,13 +108,13 @@ int main(){
     
     1. **默认模式（ std::defaultfloat ）**：
     
-        - **precision** 控制的是总有效数字。
+        - **precision**控制的是总有效数字。
         
         - 示例：`std::cout.precision(1); std::cout << 3.14;` 输出 `3`。
         
 	2. **固定模式（ std::fixed ）**：
     
-        - **precision** 控制的是小数点后的位数。
+        - **precision**控制的是小数点后的位数。
         
         - 示例：
             ```
@@ -127,7 +127,7 @@ int main(){
     我的代码中，输出student[i].average代码中的 `if` 语句，只使用了 `std::precision(0)`，**没有开启 `std::fixed` 模式**。所以，它使用的就是默认模式。
     
     ### 为什么 `precision(0)` 输出的是 `5` 而不是 `0`？
-    这是因为 `std::cout` 在处理 `precision(0)` 时，会先检查数字是否为 **0**。
+    这是因为 `std::cout` 在处理 `precision(0)` 时，会先检查数字是否为**0**。
 	
     - 对于 `0`，它会直接输出 `0`。
     

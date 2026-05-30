@@ -16,18 +16,18 @@ counter: True
 
 $$\mathcal{L}[f(t)] = F(s) = \int_0^{+\infty} f(t)e^{-st}\,dt$$
 
-- $F(s)$ 称为 **像函数** （image function）
-- $f(t)$ 称为 **原像函数** （original function）
+- $F(s)$ 称为**像函数**（image function）
+- $f(t)$ 称为**原像函数**（original function）
 - 逆变换：$f(t) = \mathcal{L}^{-1}[F(s)]$
 
 ### 7.1.2 存在定理
 
-**充分条件** ：若 $f(t)$ 满足
+**充分条件**：若 $f(t)$ 满足
 
-1. 在任意有限区间上 **分段连续**
-2. **指数阶增长** ：$|f(t)| \leq Me^{ct}$（$M > 0, c \geq 0$）
+1. 在任意有限区间上**分段连续**
+2. **指数阶增长**：$|f(t)| \leq Me^{ct}$（$M > 0, c \geq 0$）
 
-则 $F(s)$ 在半平面 $\text{Re}(s) > c$ 上存在且 **解析** 。
+则 $F(s)$ 在半平面 $\text{Re}(s) > c$ 上存在且**解析**。
 
 ### 7.1.3 常用 Laplace 变换表
 
@@ -87,11 +87,11 @@ $$\mathcal{L}[e^{s_0 t}f(t)] = F(s - s_0)$$
 
 ### 7.2.7 卷积性质
 
-**卷积定义** ：
+**卷积定义**：
 
 $$[f_1 * f_2](t) = \int_0^t f_1(\tau)f_2(t - \tau)\,d\tau$$
 
-**卷积定理** ：
+**卷积定理**：
 
 $$\mathcal{L}[f_1(t) * f_2(t)] = F_1(s) \cdot F_2(s)$$
 
@@ -118,14 +118,14 @@ $$f(t) = \frac{1}{2\pi i}\int_{\beta - i\infty}^{\beta + i\infty} F(s)e^{st}\,ds
 
 ### 7.3.2 用留数计算逆变换
 
-**定理** ：若 $F(s)$ 只有有限个奇点 $s_1, \ldots, s_n$（均在 $\text{Re}(s) = \beta$ 左侧），且 $\lim\limits_{s \to \infty} F(s) = 0$，则
+**定理**：若 $F(s)$ 只有有限个奇点 $s_1, \ldots, s_n$（均在 $\text{Re}(s) = \beta$ 左侧），且 $\lim\limits_{s \to \infty} F(s) = 0$，则
 
 $$f(t) = \sum_{k=1}^{n} \text{Res}[F(s)e^{st}, s_k]$$
 
 ### 7.3.3 两种方法
 
-- **部分分式分解** ：$F(s)$ 为有理函数时，分解为简单分式后查表
-- **留数法** ：通用方法，尤其适合高阶极点
+- **部分分式分解**：$F(s)$ 为有理函数时，分解为简单分式后查表
+- **留数法**：通用方法，尤其适合高阶极点
 
 !!! example "部分分式法"
     $F(s) = \frac{1}{s^2(s+1)} = \frac{1}{s^2} - \frac{1}{s} + \frac{1}{s+1}$
@@ -167,7 +167,7 @@ $$\mathcal{L}[\delta(t)] = 1$$
 
 ### 7.5.2 核心思路
 
-时域中的 **微分运算** $\xrightarrow{\mathcal{L}}$ 复频域中的 **代数运算**
+时域中的**微分运算**$\xrightarrow{\mathcal{L}}$ 复频域中的**代数运算**
 
 | 时域 | 频域 |
 |------|------|

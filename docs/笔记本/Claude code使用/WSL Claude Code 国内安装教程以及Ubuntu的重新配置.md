@@ -2,7 +2,7 @@
 
 首先打开Ubuntu，刚打开的时候是这样的：
 ![](附件/Pasted%20image%2020260507215446.png)
-提示中提到的“检测到 localhost 代理配置”是一个非常经典的 **WSL 网络同步问题**。因为我的 Windows 开了代理，但 WSL 默认是一个独立的虚拟网络，它感知不到 Windows 上的代理，这会导致后续 `npm install` 报错或者 `claude` 无法联网。
+提示中提到的“检测到 localhost 代理配置”是一个非常经典的**WSL 网络同步问题**。因为我的 Windows 开了代理，但 WSL 默认是一个独立的虚拟网络，它感知不到 Windows 上的代理，这会导致后续 `npm install` 报错或者 `claude` 无法联网。
 
 为了让 WSL 顺畅地访问网络，最简单的办法是开启 WSL 的“镜像网络”模式：
 
@@ -55,7 +55,7 @@ default=你的Linux用户名
 
 1. 这边Ubuntu推荐.deb，那我们就找到最新版的.deb文件，复制链接地址之后，在Ubuntu中输入：`wget https://github.com/farion1231/cc-switch/releases/download/v3.14.1/CC-Switch-v3.14.1-Linux-x86_64.deb`（这个链接地址是目前最新版本的，你们不要照搬我的，要是更新了就去复制最新的）。
 
-这一步我又报错了，因为我的Ubuntu是桌面快捷方式，我在创建快捷方式的时候填写的对象位置是`wsl.exe -d Ubuntu`。这时候 Windows 会默认把 **快捷方式文件所在的目录**（也就是你的桌面，对应的路径通常是 `C:\Users\admin\Desktop`）作为起始路径带进 Linux 里。因此我们打开这个桌面快捷方式的属性，然后目标那一栏把`wsl.exe -d Ubuntu`改为`wsl.exe -d Ubuntu --cd ~`就能一劳永逸了，以后打开Ubuntu后就是Linux内部的家目录。
+这一步我又报错了，因为我的Ubuntu是桌面快捷方式，我在创建快捷方式的时候填写的对象位置是`wsl.exe -d Ubuntu`。这时候 Windows 会默认把**快捷方式文件所在的目录**（也就是你的桌面，对应的路径通常是 `C:\Users\admin\Desktop`）作为起始路径带进 Linux 里。因此我们打开这个桌面快捷方式的属性，然后目标那一栏把`wsl.exe -d Ubuntu`改为`wsl.exe -d Ubuntu --cd ~`就能一劳永逸了，以后打开Ubuntu后就是Linux内部的家目录。
 
 2. 下载完成之后在终端中输入`sudo apt install ./CC-Switch-v3.14.1-Linux-x86_64.deb`（版本一定要填你下载的那个版本）
 3. 安装完成之后，在终端输入`cc-switch`就能够弹出ccswich的UI了，但是我的UI中很多字体都是框框，是因为wslg字体问题。只需要在 Ubuntu 终端里执行下面这一行命令，把常用的中文字体补上：

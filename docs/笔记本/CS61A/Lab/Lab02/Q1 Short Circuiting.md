@@ -7,6 +7,6 @@
 
 #### 1. 执行 `print(3)`
 - `print` 会将数字 `3` 输出到控制台。
-- 在 Python 中，`print` 函数执行完后会返回 **`None`**。
+- 在 Python 中，`print` 函数执行完后会返回**`None`**。
 #### 2. 计算 `None or ""`
 - 此时表达式变成了：`None or ""`。
