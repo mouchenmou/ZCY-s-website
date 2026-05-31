@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "数据结构基础 FDS/index.md",
+                "file": "CS70/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -194,8 +194,10 @@
   },
   "active": "50af5b9b98b250ba",
   "lastOpenFiles": [
-    "CS61A/index.md",
     "mit 18.06 线性代数/index.md",
+    "CS70/index.md",
+    "数据结构基础 FDS/index.md",
+    "CS61A/index.md",
     "mit 18.06 线性代数/第四章：正定矩阵及其应用.md",
     "CS61B/index.md",
     "mit 18.06 线性代数/第1章：Ax = b 与四个基本子空间.md",
@@ -235,8 +237,6 @@
     "MIT 18.06 线性代数/docs/chapter14.md",
     "MIT 18.06 线性代数/docs/chapter31.md",
     "MIT 18.06 线性代数/docs/chapter13.md",
-    "MIT 18.06 线性代数/docs/chapter32.md",
-    "MIT 18.06 线性代数/docs/chapter28.md",
     "MIT 18.06 线性代数/docs",
     "MIT 18.06 线性代数",
     "CS61B/Lecture 29 Basic Sort/cs61b 2021 lec29 sorting I.pdf",
