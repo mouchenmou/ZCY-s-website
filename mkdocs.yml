@@ -123,12 +123,6 @@ nav:
     - 双端操作Blog: 笔记本/合并笔记/合并笔记.md
   - Undergraduate Study:
     - undergraduate-study/index1.md
-    - MIT 18.06 线性代数:
-      - 笔记本/mit 18.06 线性代数/index.md
-      - 第一章 Ax=b 与四个基本子空间: 笔记本/mit 18.06 线性代数/Unit1-Ax=bAndTheFourSubspaces.md
-      - 第二章 最小二乘与行列式: 笔记本/mit 18.06 线性代数/Unit2-LeastSquaresAndDeterminants.md
-      - 第三章 特征值与傅里叶级数: 笔记本/mit 18.06 线性代数/Unit 3-EigenvaluesEigenvectorsAndFourierSeries.md
-      - 第四章 正定矩阵及其应用: 笔记本/mit 18.06 线性代数/Unit4-PositiveDefiniteMatricesAndApplications.md
     - CS61A Python:
       - 笔记本/CS61A/index.md
       - Homework:
@@ -303,6 +297,12 @@ nav:
         - Lecture 7 Modular Arithmeti: 笔记本/CS70/Lecture/Lecture 7 Modular Arithmetic/Lecture 7 Modular Arithmetic.md
         - Lecture 8 Euclid's Algorithm, FLT, CRT: 笔记本/CS70/Lecture/Lecture 8 Euclid's Algorithm, FLT, CRT/Euclid's Algorithm, FLT, CRT.md.md
         - Lecutre 9 RSA: 笔记本/CS70/Lecture/Lecutre 9 RSA/RSA.md
+    - MIT 18.06 线性代数:
+      - 笔记本/mit 18.06 线性代数/index.md
+      - 第一章 Ax=b 与四个基本子空间: 笔记本/mit 18.06 线性代数/Unit1-Ax=bAndTheFourSubspaces.md
+      - 第二章 最小二乘与行列式: 笔记本/mit 18.06 线性代数/Unit2-LeastSquaresAndDeterminants.md
+      - 第三章 特征值与傅里叶级数: 笔记本/mit 18.06 线性代数/Unit 3-EigenvaluesEigenvectorsAndFourierSeries.md
+      - 第四章 正定矩阵及其应用: 笔记本/mit 18.06 线性代数/Unit4-PositiveDefiniteMatricesAndApplications.md
     - CS231n 计算机视觉:
       - 笔记本/CS231n/index.md
       - Part 1 Deep Learning Basics:
