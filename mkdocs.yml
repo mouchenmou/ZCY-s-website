@@ -123,6 +123,64 @@ nav:
     - 双端操作Blog: 笔记本/合并笔记/合并笔记.md
   - Undergraduate Study:
     - undergraduate-study/index1.md
+    - MIT 18.06 线性代数:
+      - 笔记本/mit 18.06 线性代数/index.md
+      - 第一章 Introduction to Vectors:
+        - 1.1 Vectors and Linear Combinations: 笔记本/mit 18.06 线性代数/第1章 Introduction to Vectors/1.1 Vectors and Linear Combinations.md
+        - 1.2 Lengths and Dot Products: 笔记本/mit 18.06 线性代数/第1章 Introduction to Vectors/1.2 Lengths and Dot Products.md
+      - 第二章 Solving Linear Equations:
+        - 2.1 Vectors and Linear Equations: 笔记本/mit 18.06 线性代数/第2章 Solving Linear Equations/2.1 Vectors and Linear Equations.md
+        - 2.2 The Idea of Elimination: 笔记本/mit 18.06 线性代数/第2章 Solving Linear Equations/2.2 The Idea of Elimination.md
+        - 2.3 Elimination Using Matrices: 笔记本/mit 18.06 线性代数/第2章 Solving Linear Equations/2.3 Elimination Using Matrices.md
+        - 2.4 Rules for Matrix Operations: 笔记本/mit 18.06 线性代数/第2章 Solving Linear Equations/2.4 Rules for Matrix Operations.md
+        - 2.5 Inverse Matrices: 笔记本/mit 18.06 线性代数/第2章 Solving Linear Equations/2.5 Inverse Matrices.md
+        - 2.6 Elimination = Factorization A=LU: 笔记本/mit 18.06 线性代数/第2章 Solving Linear Equations/2.6 Elimination = Factorization A = LU.md
+        - 2.7 Transposes and Permutations: 笔记本/mit 18.06 线性代数/第2章 Solving Linear Equations/2.7 Transposes and Permutations.md
+      - 第三章 Vector Spaces and Subspaces:
+        - 3.1 Spaces of Vectors: 笔记本/mit 18.06 线性代数/第3章 Vector Spaces and Subspaces/3.1 Spaces of Vectors.md
+        - 3.2 The Nullspace of A: 笔记本/mit 18.06 线性代数/第3章 Vector Spaces and Subspaces/3.2 The Nullspace of A Solving Ax=0.md
+        - 3.3 The Rank and Row Reduced Form: 笔记本/mit 18.06 线性代数/第3章 Vector Spaces and Subspaces/3.3 The Rank and the Row Reduced Form.md
+        - 3.4 The Complete Solution to Ax=b: 笔记本/mit 18.06 线性代数/第3章 Vector Spaces and Subspaces/3.4 The Complete Solution to Ax=b.md
+        - 3.5 Independence, Basis and Dimension: 笔记本/mit 18.06 线性代数/第3章 Vector Spaces and Subspaces/3.5 Independence, Basis and Dimension.md
+        - 3.6 Dimensions of the Four Subspaces: 笔记本/mit 18.06 线性代数/第3章 Vector Spaces and Subspaces/3.6 Dimensions of the Four Subspaces.md
+      - 第四章 Orthogonality:
+        - 4.1 Orthogonality of the Four Subspaces: 笔记本/mit 18.06 线性代数/第4章 Orthogonality/4.1 Orthogonality of the Four Subspaces.md
+        - 4.2 Projections: 笔记本/mit 18.06 线性代数/第4章 Orthogonality/4.2 Projections.md
+        - 4.3 Least Squares Approximations: 笔记本/mit 18.06 线性代数/第4章 Orthogonality/4.3 Least Squares Approximations.md
+        - 4.4 Orthogonal Bases and Gram-Schmidt: 笔记本/mit 18.06 线性代数/第4章 Orthogonality/4.4 Orthogonal Bases and Gram-Schmidt.md
+      - 第五章 Determinants:
+        - 5.1 The Properties of Determinants: 笔记本/mit 18.06 线性代数/第5章 Determinants/5.1 The Properties of Determinants.md
+        - 5.2 Permutations and Cofactors: 笔记本/mit 18.06 线性代数/第5章 Determinants/5.2 Permutations and Cofactors.md
+        - 5.3 Cramer's Rule, Inverses, and Volumes: 笔记本/mit 18.06 线性代数/第5章 Determinants/5.3 Cramers Rule, Inverses, and Volumes.md
+      - 第六章 Eigenvalues and Eigenvectors:
+        - 6.1 Introduction to Eigenvalues: 笔记本/mit 18.06 线性代数/第6章 Eigenvalues and Eigenvectors/6.1 Introduction to Eigenvalues.md
+        - 6.2 Diagonalizing a Matrix: 笔记本/mit 18.06 线性代数/第6章 Eigenvalues and Eigenvectors/6.2 Diagonalizing a Matrix.md
+        - 6.3 Applications to Differential Equations: 笔记本/mit 18.06 线性代数/第6章 Eigenvalues and Eigenvectors/6.3 Applications to Differential Equations.md
+        - 6.4 Symmetric Matrices: 笔记本/mit 18.06 线性代数/第6章 Eigenvalues and Eigenvectors/6.4 Symmetric Matrices.md
+        - 6.5 Positive Definite Matrices: 笔记本/mit 18.06 线性代数/第6章 Eigenvalues and Eigenvectors/6.5 Positive Definite Matrices.md
+        - 6.6 Similar Matrices: 笔记本/mit 18.06 线性代数/第6章 Eigenvalues and Eigenvectors/6.6 Similar Matrices.md
+        - 6.7 Singular Value Decomposition: 笔记本/mit 18.06 线性代数/第6章 Eigenvalues and Eigenvectors/6.7 Singular Value Decomposition SVD.md
+      - 第七章 Linear Transformations:
+        - 7.1 The Idea of a Linear Transformation: 笔记本/mit 18.06 线性代数/第7章 Linear Transformations/7.1 The Idea of a Linear Transformation.md
+        - 7.2 The Matrix of a Linear Transformation: 笔记本/mit 18.06 线性代数/第7章 Linear Transformations/7.2 The Matrix of a Linear Transformation.md
+        - 7.3 Change of Basis: 笔记本/mit 18.06 线性代数/第7章 Linear Transformations/7.3 Change of Basis.md
+        - 7.4 Diagonalization and the Pseudoinverse: 笔记本/mit 18.06 线性代数/第7章 Linear Transformations/7.4 Diagonalization and the Pseudoinverse.md
+      - 第八章 Applications:
+        - 8.1 Matrices in Engineering: 笔记本/mit 18.06 线性代数/第8章 Applications/8.1 Matrices in Engineering.md
+        - 8.2 Graphs and Networks: 笔记本/mit 18.06 线性代数/第8章 Applications/8.2 Graphs and Networks.md
+        - 8.3 Markov Matrices: 笔记本/mit 18.06 线性代数/第8章 Applications/8.3 Markov Matrices and Economic Models.md
+        - 8.4 Linear Programming: 笔记本/mit 18.06 线性代数/第8章 Applications/8.4 Linear Programming.md
+        - 8.5 Fourier Series: 笔记本/mit 18.06 线性代数/第8章 Applications/8.5 Fourier Series.md
+        - 8.6 Computer Graphics: 笔记本/mit 18.06 线性代数/第8章 Applications/8.6 Computer Graphics.md
+        - 8.7 Statistics and Probability: 笔记本/mit 18.06 线性代数/第8章 Applications/8.7 Statistics and Probability.md
+      - 第九章 Numerical Linear Algebra:
+        - 9.1 Gaussian Elimination in Practice: 笔记本/mit 18.06 线性代数/第9章 Numerical Linear Algebra/9.1 Gaussian Elimination in Practice.md
+        - 9.2 Norms and Condition Numbers: 笔记本/mit 18.06 线性代数/第9章 Numerical Linear Algebra/9.2 Norms and Condition Numbers.md
+        - 9.3 Iterative Methods: 笔记本/mit 18.06 线性代数/第9章 Numerical Linear Algebra/9.3 Iterative Methods for Linear Algebra.md
+      - 第十章 Complex Vectors and Matrices:
+        - 10.1 Complex Numbers: 笔记本/mit 18.06 线性代数/第10章 Complex Vectors and Matrices/10.1 Complex Numbers.md
+        - 10.2 Hermitian and Unitary Matrices: 笔记本/mit 18.06 线性代数/第10章 Complex Vectors and Matrices/10.2 Hermitian and Unitary Matrices.md
+        - 10.3 The Fast Fourier Transform: 笔记本/mit 18.06 线性代数/第10章 Complex Vectors and Matrices/10.3 The Fast Fourier Transform.md
     - CS61A Python:
       - 笔记本/CS61A/index.md
       - Homework:
@@ -297,12 +355,6 @@ nav:
         - Lecture 7 Modular Arithmeti: 笔记本/CS70/Lecture/Lecture 7 Modular Arithmetic/Lecture 7 Modular Arithmetic.md
         - Lecture 8 Euclid's Algorithm, FLT, CRT: 笔记本/CS70/Lecture/Lecture 8 Euclid's Algorithm, FLT, CRT/Euclid's Algorithm, FLT, CRT.md.md
         - Lecutre 9 RSA: 笔记本/CS70/Lecture/Lecutre 9 RSA/RSA.md
-    - MIT 18.06 线性代数:
-      - 笔记本/mit 18.06 线性代数/index.md
-      - 第一章 Ax=b 与四个基本子空间: 笔记本/mit 18.06 线性代数/第1章：Ax = b 与四个基本子空间.md
-      - 第二章 最小二乘与行列式: 笔记本/mit 18.06 线性代数/第2章：最小二乘与行列式.md
-      - 第三章 特征值与傅里叶级数: 笔记本/mit 18.06 线性代数/第3章：特征值、特征向量与傅里叶级数.md
-      - 第四章 正定矩阵及其应用: 笔记本/mit 18.06 线性代数/第四章：正定矩阵及其应用.md
     - CS231n 计算机视觉:
       - 笔记本/CS231n/index.md
       - Part 1 Deep Learning Basics:
