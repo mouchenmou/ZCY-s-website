@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mit 18.06 线性代数/index.md",
+                "file": "数据结构基础 FDS/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -194,9 +194,9 @@
   },
   "active": "50af5b9b98b250ba",
   "lastOpenFiles": [
-    "mit 18.06 线性代数/第四章：正定矩阵及其应用.md",
-    "mit 18.06 线性代数/index.md",
     "CS61A/index.md",
+    "mit 18.06 线性代数/index.md",
+    "mit 18.06 线性代数/第四章：正定矩阵及其应用.md",
     "CS61B/index.md",
     "mit 18.06 线性代数/第1章：Ax = b 与四个基本子空间.md",
     "mit 18.06 线性代数/第2章：最小二乘与行列式.md",
