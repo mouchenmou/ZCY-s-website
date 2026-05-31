@@ -299,10 +299,10 @@ nav:
         - Lecutre 9 RSA: 笔记本/CS70/Lecture/Lecutre 9 RSA/RSA.md
     - MIT 18.06 线性代数:
       - 笔记本/mit 18.06 线性代数/index.md
-      - 第一章 Ax=b 与四个基本子空间: 笔记本/mit 18.06 线性代数/Unit1-Ax=bAndTheFourSubspaces.md
-      - 第二章 最小二乘与行列式: 笔记本/mit 18.06 线性代数/Unit2-LeastSquaresAndDeterminants.md
-      - 第三章 特征值与傅里叶级数: 笔记本/mit 18.06 线性代数/Unit 3-EigenvaluesEigenvectorsAndFourierSeries.md
-      - 第四章 正定矩阵及其应用: 笔记本/mit 18.06 线性代数/Unit4-PositiveDefiniteMatricesAndApplications.md
+      - 第一章 Ax=b 与四个基本子空间: 笔记本/mit 18.06 线性代数/第1章：Ax = b 与四个基本子空间.md
+      - 第二章 最小二乘与行列式: 笔记本/mit 18.06 线性代数/第2章：最小二乘与行列式.md
+      - 第三章 特征值与傅里叶级数: 笔记本/mit 18.06 线性代数/第3章：特征值、特征向量与傅里叶级数.md
+      - 第四章 正定矩阵及其应用: 笔记本/mit 18.06 线性代数/第四章：正定矩阵及其应用.md
     - CS231n 计算机视觉:
       - 笔记本/CS231n/index.md
       - Part 1 Deep Learning Basics:

@@ -23,12 +23,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS70/index.md",
+                "file": "mit 18.06 线性代数/第四章：正定矩阵及其应用.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "第四章：正定矩阵及其应用"
             }
           }
         ],
@@ -194,15 +194,15 @@
   },
   "active": "50af5b9b98b250ba",
   "lastOpenFiles": [
-    "mit 18.06 线性代数/index.md",
+    "mit 18.06 线性代数/第3章：特征值、特征向量与傅里叶级数.md",
+    "mit 18.06 线性代数/第2章：最小二乘与行列式.md",
+    "mit 18.06 线性代数/第1章：Ax = b 与四个基本子空间.md",
     "CS70/index.md",
+    "mit 18.06 线性代数/index.md",
     "数据结构基础 FDS/index.md",
     "CS61A/index.md",
     "mit 18.06 线性代数/第四章：正定矩阵及其应用.md",
     "CS61B/index.md",
-    "mit 18.06 线性代数/第1章：Ax = b 与四个基本子空间.md",
-    "mit 18.06 线性代数/第2章：最小二乘与行列式.md",
-    "mit 18.06 线性代数/第3章：特征值、特征向量与傅里叶级数.md",
     "mit 18.06 线性代数/附件/Pasted image 20260531172624.png",
     "mit 18.06 线性代数/附件/Pasted image 20260531170920.png",
     "mit 18.06 线性代数/transform_u4.py",
