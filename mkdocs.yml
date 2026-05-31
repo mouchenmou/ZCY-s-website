@@ -286,6 +286,7 @@ nav:
         - Mergesort: 笔记本/CS61B/Lecture 29 Basic Sort/4. Mergesort.md
         - Insertion Sort: 笔记本/CS61B/Lecture 29 Basic Sort/5. Insertion Sort.md
         - Shell Sort: 笔记本/CS61B/Lecture 29 Basic Sort/6. Shell Sort.md
+      - Lecture 30 Sorting II Quicksort: 笔记本/CS61B/Lecture 30 Quicksort/Quicksort.md
       - Lab:
         - Lab1 命令行: 笔记本/CS61B/lab/lab1/命令行.md
       - Project:
