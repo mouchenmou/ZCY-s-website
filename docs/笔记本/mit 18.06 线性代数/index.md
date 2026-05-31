@@ -1,0 +1,14 @@
+# MIT 18.06 线性代数
+
+> MIT 18.06 课程网站：[MIT OCW 18.06SC Fall 2011](https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/)
+
+MIT 全球爆火的线性代数课。知乎上有这样一句话：国内的老师线性代数的水平在第 2 层，老爷子的线性代数水平在第 10000 层，你跟着国内的老师能爬到第 0.5 层，跟着老爷子的课能爬到第 100 层，剩下的我就不多说了。
+
+---
+
+## Table of content
+
+- 第一单元：[Ax = b 与四个基本子空间](%E7%AC%AC1%E7%AB%A0%EF%BC%9AAx%20%3D%20b%20%E4%B8%8E%E5%9B%9B%E4%B8%AA%E5%9F%BA%E6%9C%AC%E5%AD%90%E7%A9%BA%E9%97%B4.md)
+- 第二单元：[最小二乘与行列式](%E7%AC%AC2%E7%AB%A0%EF%BC%9A%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E4%B8%8E%E8%A1%8C%E5%88%97%E5%BC%8F.md)
+- 第三单元：[特征值、特征向量与傅里叶级数](%E7%AC%AC3%E7%AB%A0%EF%BC%9A%E7%89%B9%E5%BE%81%E5%80%BC%E3%80%81%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F%E4%B8%8E%E5%82%85%E9%87%8C%E5%8F%B6%E7%BA%A7%E6%95%B0.md)
+- 第四单元：[正定矩阵及其应用](%E7%AC%AC%E5%9B%9B%E7%AB%A0%EF%BC%9A%E6%AD%A3%E5%AE%9A%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8.md)
