@@ -16,23 +16,8 @@
               "icon": "lucide-file",
               "title": "新标签页"
             }
-          },
-          {
-            "id": "50af5b9b98b250ba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mit 18.06 线性代数/第四章：正定矩阵及其应用.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "第四章：正定矩阵及其应用"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -192,35 +177,36 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "50af5b9b98b250ba",
+  "active": "adc0afb6f484a017",
   "lastOpenFiles": [
-    "mit 18.06 线性代数/第3章：特征值、特征向量与傅里叶级数.md",
-    "mit 18.06 线性代数/第2章：最小二乘与行列式.md",
-    "mit 18.06 线性代数/第1章：Ax = b 与四个基本子空间.md",
-    "CS70/index.md",
-    "mit 18.06 线性代数/index.md",
-    "数据结构基础 FDS/index.md",
-    "CS61A/index.md",
-    "mit 18.06 线性代数/第四章：正定矩阵及其应用.md",
-    "CS61B/index.md",
     "mit 18.06 线性代数/附件/Pasted image 20260531172624.png",
     "mit 18.06 线性代数/附件/Pasted image 20260531170920.png",
-    "mit 18.06 线性代数/transform_u4.py",
     "mit 18.06 线性代数/附件/Pasted image 20260531165222.png",
+    "mit 18.06 线性代数/附件/Pasted image 20250709151830.png",
+    "mit 18.06 线性代数/附件/image-20250709163315358.png",
+    "mit 18.06 线性代数/附件/image-20250709163127151.png",
+    "mit 18.06 线性代数/附件/image-20250709162208727.png",
+    "mit 18.06 线性代数/附件/image-20250709161559473.png",
+    "mit 18.06 线性代数/附件/image-20250709163021296.png",
+    "mit 18.06 线性代数/附件/image-20250709162334209.png",
+    "mit 18.06 线性代数/附件/image-20250709162136924.png",
+    "mit 18.06 线性代数/附件",
+    "mit 18.06 线性代数/第3章：特征值、特征向量与傅里叶级数.md",
+    "mit 18.06 线性代数/第四章：正定矩阵及其应用.md",
+    "mit 18.06 线性代数/第2章：最小二乘与行列式.md",
+    "mit 18.06 线性代数/index.md",
+    "mit 18.06 线性代数/第1章：Ax = b 与四个基本子空间.md",
+    "mit 18.06 线性代数",
+    "CS70/index.md",
+    "数据结构基础 FDS/index.md",
+    "CS61A/index.md",
+    "CS61B/index.md",
+    "mit 18.06 线性代数/transform_u4.py",
     "mit 18.06 线性代数/transform_u3.py",
     "mit 18.06 线性代数/transform_unit2.py",
     "mit 18.06 线性代数/transform_unit1.py",
     "CS189 机器学习/index.md",
     "MIT 18.06 线性代数/docs/chapter02.md",
-    "mit 18.06 线性代数/附件/Pasted image 20250709151830.png",
-    "mit 18.06 线性代数/附件/image-20250709163127151.png",
-    "mit 18.06 线性代数/附件/image-20250709163315358.png",
-    "mit 18.06 线性代数/附件/image-20250709163021296.png",
-    "mit 18.06 线性代数/附件/image-20250709162334209.png",
-    "mit 18.06 线性代数/附件/image-20250709162208727.png",
-    "mit 18.06 线性代数/附件/image-20250709162136924.png",
-    "mit 18.06 线性代数/附件",
-    "mit 18.06 线性代数",
     "MIT 18.06 线性代数/docs/chapter01.md",
     "CS61B/Lecture 29 Basic Sort/1. 排序问题.md",
     "未命名.md",
@@ -236,7 +222,6 @@
     "MIT 18.06 线性代数/docs/chapter30.md",
     "MIT 18.06 线性代数/docs/chapter14.md",
     "MIT 18.06 线性代数/docs/chapter31.md",
-    "MIT 18.06 线性代数/docs/chapter13.md",
     "MIT 18.06 线性代数/docs",
     "MIT 18.06 线性代数",
     "CS61B/Lecture 29 Basic Sort/cs61b 2021 lec29 sorting I.pdf",
