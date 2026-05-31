@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mit 18.06 线性代数/第2章：最小二乘与行列式.md",
+                "file": "CS61B/Lecture 29 Basic Sort/5. Insertion Sort.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "第2章：最小二乘与行列式"
+              "title": "5. Insertion Sort"
             }
           }
         ]
@@ -183,6 +183,14 @@
   },
   "active": "adc0afb6f484a017",
   "lastOpenFiles": [
+    "CS61B/Lecture 29 Basic Sort/6. Shell Sort.md",
+    "CS61B/Lecture 29 Basic Sort/cs61b 2021 lec29 sorting I.pdf",
+    "CS61B/Lecture 29 Basic Sort/5. Insertion Sort.md",
+    "CS61B/Lecture 29 Basic Sort/4. Mergesort.md",
+    "CS61B/Lecture 29 Basic Sort/3. Heapsort.md",
+    "CS61B/Lecture 29 Basic Sort/2. Selection Sort.md",
+    "CS61B/Lecture 29 Basic Sort/1. 排序问题.md",
+    "mit 18.06 线性代数/第2章：最小二乘与行列式.md",
     "mit 18.06 线性代数/第1章：Ax = b 与四个基本子空间.md",
     "mit 18.06 线性代数/fix_img.py",
     "mit 18.06 线性代数/第4章：正定矩阵及其应用.md",
@@ -193,7 +201,6 @@
     "mit 18.06 线性代数/附件/image-20241212151409776.png",
     "mit 18.06 线性代数/附件/image-20241120102834082.png",
     "mit 18.06 线性代数/附件/image-20241120102554032.png",
-    "mit 18.06 线性代数/第2章：最小二乘与行列式.md",
     "mit 18.06 线性代数/附件/Pasted image 20260531172624.png",
     "mit 18.06 线性代数/附件/Pasted image 20260531170920.png",
     "mit 18.06 线性代数/附件/Pasted image 20260531165222.png",
@@ -212,7 +219,6 @@
     "CS189 机器学习/index.md",
     "MIT 18.06 线性代数/docs/chapter02.md",
     "MIT 18.06 线性代数/docs/chapter01.md",
-    "CS61B/Lecture 29 Basic Sort/1. 排序问题.md",
     "未命名.md",
     "MIT 18.06 线性代数/docs/img",
     "MIT 18.06 线性代数/docs/chapter27.md",
@@ -221,13 +227,7 @@
     "MIT 18.06 线性代数/docs/chapter04.md",
     "MIT 18.06 线性代数/docs/chapter34.md",
     "MIT 18.06 线性代数/docs/chapter11.md",
-    "MIT 18.06 线性代数/docs/chapter21.md",
-    "MIT 18.06 线性代数/docs/chapter26.md",
-    "MIT 18.06 线性代数/docs/chapter30.md",
-    "MIT 18.06 线性代数/docs/chapter14.md",
-    "MIT 18.06 线性代数/docs/chapter31.md",
     "MIT 18.06 线性代数/docs",
-    "MIT 18.06 线性代数",
     "未命名.canvas"
   ]
 }
