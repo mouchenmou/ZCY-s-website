@@ -4,8 +4,8 @@
   "title": "你好",
   "titleGenerationStatus": "failed",
   "createdAt": 1778251072766,
-  "updatedAt": 1780223043977,
-  "lastResponseAt": 1780223043977,
+  "updatedAt": 1780223572916,
+  "lastResponseAt": 1780223572916,
   "sessionId": "e669b318-89be-444f-bdc9-ac3a1dd044aa",
   "providerState": {
     "providerSessionId": "e669b318-89be-444f-bdc9-ac3a1dd044aa",
@@ -15,11 +15,11 @@
   },
   "usage": {
     "model": "DeepSeek-V4-pro[1m]",
-    "inputTokens": 150,
+    "inputTokens": 108,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 189568,
+    "cacheReadInputTokens": 192768,
     "contextWindow": 1000000,
-    "contextTokens": 189718,
+    "contextTokens": 192876,
     "percentage": 19,
     "contextWindowIsAuthoritative": true
   }
