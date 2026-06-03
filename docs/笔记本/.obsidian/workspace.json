@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "数据结构基础 FDS/index.md",
+                "file": "Codex/Codex接入deepseek.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Codex接入deepseek"
             }
           }
         ],
@@ -212,8 +212,10 @@
   },
   "active": "c8c49b6dd49a9119",
   "lastOpenFiles": [
-    "数据结构基础 FDS/课程内容/排序与哈希/1. 排序.md",
+    "Codex/Codex安装.md",
+    "Codex/Codex接入deepseek.md",
     "数据结构基础 FDS/index.md",
+    "数据结构基础 FDS/课程内容/排序与哈希/1. 排序.md",
     "课程内容/基础数据结构/排序与哈希/1..md",
     "课程内容/基础数据结构/排序与哈希",
     "课程内容/基础数据结构",
@@ -249,8 +251,6 @@
     "mit 18.06 线性代数/第1章 Introduction to Vectors/1.1 Vectors and Linear Combinations.md",
     "mit 18.06 线性代数/第1章 Introduction to Vectors/1.2 Lengths and Dot Products.md",
     "mit 18.06 线性代数/第2章 Solving Linear Equations/2.3 Elimination Using Matrices.md",
-    "mit 18.06 线性代数/第4章 Orthogonality/4.3 Least Squares Approximations.md",
-    "mit 18.06 线性代数/第2章 Solving Linear Equations/2.5 Inverse Matrices.md",
     "mit 18.06 线性代数/附件/1571191950433.png",
     "mit 18.06 线性代数/附件/1571189779502.png",
     "mit 18.06 线性代数/附件/image-20210715111524087.png",
