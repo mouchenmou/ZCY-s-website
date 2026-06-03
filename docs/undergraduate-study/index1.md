@@ -6,6 +6,7 @@
 
 ### 🏫 课程列表
 
+- MIT 18.06--MIT
 - CS61A---UCB
 - CS61B---UCB
 - CS70---UCB
