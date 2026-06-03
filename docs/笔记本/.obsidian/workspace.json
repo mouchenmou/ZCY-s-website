@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Codex/Codex接入deepseek.md",
+                "file": "信号与系统/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Codex接入deepseek"
+              "title": "index"
             }
           }
         ],
@@ -212,8 +212,16 @@
   },
   "active": "c8c49b6dd49a9119",
   "lastOpenFiles": [
-    "Codex/Codex安装.md",
+    "信号与系统/作业中的收获/作业11.md",
+    "信号与系统/作业中的收获/附件/Pasted image 20260604014147 1.png",
+    "信号与系统/作业中的收获/附件/Pasted image 20260604014147.png",
+    "信号与系统/作业中的收获/附件/Pasted image 20260604014130.png",
+    "信号与系统/作业/作业8.pdf",
+    "信号与系统/作业中的收获/作业1",
+    "信号与系统/index.md",
+    "信号与系统/作业/作业7.pdf",
     "Codex/Codex接入deepseek.md",
+    "Codex/Codex安装.md",
     "数据结构基础 FDS/index.md",
     "数据结构基础 FDS/课程内容/排序与哈希/1. 排序.md",
     "课程内容/基础数据结构/排序与哈希/1..md",
@@ -232,14 +240,10 @@
     "数据结构基础 FDS/Homework/HW12/判断题.md",
     "数据结构基础 FDS/Homework/HW12/单选题.md",
     "数据结构基础 FDS/Homework/HW12",
-    "信号与系统/index.md",
-    "信号与系统/第6章/信号与系统第六章.pdf",
     "信号与系统/第6章/我的疑惑3.md",
     "信号与系统/第6章/我的疑惑1.md",
     "信号与系统/第6章/附件/bf27acea235fb38dcb2aad62ecace4e7.jpg",
     "信号与系统/第6章/附件/88d8098473241a40f8dd38336ee54eaa.jpg",
-    "信号与系统/第6章/第六章作业.pdf",
-    "信号与系统/第5章/信号与系统第五章.pdf",
     "信号与系统/第6章/我的疑惑2.md",
     "CS61B/Lecture 30 Quicksort/Quicksort.md",
     "数据结构基础 FDS/课程内容/排序与哈希/2. 哈希.md",
@@ -249,15 +253,10 @@
     "mit 18.06 线性代数/第2章 Solving Linear Equations/2.7 Transposes and Permutations.md",
     "mit 18.06 线性代数/第2章 Solving Linear Equations/2.1 Vectors and Linear Equations.md",
     "mit 18.06 线性代数/第1章 Introduction to Vectors/1.1 Vectors and Linear Combinations.md",
-    "mit 18.06 线性代数/第1章 Introduction to Vectors/1.2 Lengths and Dot Products.md",
-    "mit 18.06 线性代数/第2章 Solving Linear Equations/2.3 Elimination Using Matrices.md",
     "mit 18.06 线性代数/附件/1571191950433.png",
     "mit 18.06 线性代数/附件/1571189779502.png",
     "mit 18.06 线性代数/附件/image-20210715111524087.png",
     "mit 18.06 线性代数/附件/image-20210715110730492.png",
-    "mit 18.06 线性代数/附件/image-20210715110409335.png",
-    "mit 18.06 线性代数/附件/image-20210713142826566.png",
-    "mit 18.06 线性代数/附件/image-20210705164146530.png",
     "未命名.canvas"
   ]
 }
