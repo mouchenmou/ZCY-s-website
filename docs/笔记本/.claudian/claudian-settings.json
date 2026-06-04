@@ -24,7 +24,7 @@
       "id": "snippet-1779556227598",
       "name": "Deepseek",
       "description": "",
-      "envVars": "ANTHROPIC_API_KEY=sk-daf20b1c63e440adaf4dd4e8dcbfa6f2\nANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic\nANTHROPIC_MODEL=DeepSeek-V4-pro[1m]",
+      "envVars": "ANTHROPIC_API_KEY=sk-88ccfb3126a845ba83ef59e10271488c\nANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic\nANTHROPIC_MODEL=DeepSeek-V4-pro[1m]",
       "scope": "provider:claude"
     }
   ],
@@ -47,7 +47,7 @@
       "enableSonnet1M": false,
       "customModels": "qwen3.6-plus",
       "lastModel": "haiku",
-      "environmentVariables": "ANTHROPIC_API_KEY=sk-daf20b1c63e440adaf4dd4e8dcbfa6f2\nANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic\nANTHROPIC_MODEL=DeepSeek-V4-pro[1m]",
+      "environmentVariables": "ANTHROPIC_API_KEY=sk-88ccfb3126a845ba83ef59e10271488c\nANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic\nANTHROPIC_MODEL=DeepSeek-V4-pro[1m]",
       "environmentHash": "ANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic|ANTHROPIC_MODEL=DeepSeek-V4-pro[1m]"
     },
     "codex": {
