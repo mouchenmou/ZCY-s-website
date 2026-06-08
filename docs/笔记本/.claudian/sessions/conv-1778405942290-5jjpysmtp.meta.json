@@ -4,8 +4,8 @@
   "title": "你好啊",
   "titleGenerationStatus": "failed",
   "createdAt": 1778405942290,
-  "updatedAt": 1780410037371,
-  "lastResponseAt": 1780410037371,
+  "updatedAt": 1780936238463,
+  "lastResponseAt": 1780936238463,
   "sessionId": "3acf3b50-0abc-4b9f-9b0f-06b9ebaa9624",
   "providerState": {
     "providerSessionId": "3acf3b50-0abc-4b9f-9b0f-06b9ebaa9624",
@@ -302,12 +302,12 @@
   "currentNote": "合并笔记/合并笔记.md",
   "usage": {
     "model": "DeepSeek-V4-pro[1m]",
-    "inputTokens": 82,
+    "inputTokens": 149,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 301696,
+    "cacheReadInputTokens": 391040,
     "contextWindow": 1000000,
-    "contextTokens": 301778,
-    "percentage": 30,
+    "contextTokens": 391189,
+    "percentage": 39,
     "contextWindowIsAuthoritative": true
   }
 }

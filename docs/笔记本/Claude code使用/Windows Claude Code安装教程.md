@@ -86,7 +86,7 @@ added 2 packages in 4s
 
 ### 第三步：安装ccswitch
 
-来到[ccswitch的仓库地址](https://github.com/farion1231/cc-switch)，点击[Latest release](https://github.com/farion1231/cc-switch/releases/tag/v3.14.1)，往下滑找到Windows版本的安装包（其它系统的就下载自己系统的安装包就好了）。
+来到[ccswitch的仓库地址](https://github.com/farion1231/cc-switch)，点击Latest release，往下滑找到Windows版本的安装包（其它系统的就下载自己系统的安装包就好了）。
 
 ---
 
