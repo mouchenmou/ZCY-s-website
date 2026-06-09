@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "数据结构基础 FDS/课程内容/排序与哈希/1. 排序.md",
+                "file": "数据结构基础 FDS/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1. 排序"
+              "title": "index"
             }
           },
           {
@@ -210,11 +210,18 @@
   },
   "active": "c5d6e17e9d92519c",
   "lastOpenFiles": [
+    "数据结构基础 FDS/Homework/HW13/判断题.md",
+    "数据结构基础 FDS/index.md",
+    "数据结构基础 FDS/补充知识/网络流.md",
+    "数据结构基础 FDS/DS13_Ch06_QuickSort_Table Sort_Bucket Sort(6).pdf",
+    "数据结构基础 FDS/Homework/HW13/单选题.md",
+    "数据结构基础 FDS/Homework/HW12/单选题.md",
+    "数据结构基础 FDS/Homework/HW12/判断题.md",
+    "数据结构基础 FDS/Homework/期中考错题.md",
+    "数据结构基础 FDS/课程内容/排序与哈希/1. 排序.md",
+    "数据结构基础 FDS/Homework/HW13",
     "数据结构基础 FDS/课程内容/排序与哈希/附件/Pasted image 20260609005629.png",
     "数据结构基础 FDS/课程内容/排序与哈希/附件/Pasted image 20260609003509.png",
-    "数据结构基础 FDS/DS13_Ch06_QuickSort_Table Sort_Bucket Sort(6).pdf",
-    "数据结构基础 FDS/index.md",
-    "数据结构基础 FDS/课程内容/排序与哈希/1. 排序.md",
     "数据结构基础 FDS/课程内容/排序与哈希/附件/Pasted image 20260609003213.png",
     "数据结构基础 FDS/课程内容/排序与哈希/附件/Pasted image 20260609003208.png",
     "数据结构基础 FDS/课程内容/排序与哈希/附件/Pasted image 20260609002419.png",
@@ -223,7 +230,6 @@
     "数据结构基础 FDS/课程内容/排序与哈希/附件/Pasted image 20260609000638.png",
     "数据结构基础 FDS/课程内容/排序与哈希/附件/Pasted image 20260609000225.png",
     "数据结构基础 FDS/课程内容/排序与哈希/附件/Pasted image 20260609000213.png",
-    "数据结构基础 FDS/课程内容/排序与哈希/附件/Pasted image 20260609000029.png",
     "mit 18.06 线性代数/第8章 Applications/8.6 Computer Graphics.md",
     "数据结构基础 FDS/课程内容/排序与哈希/附件",
     "Claude code使用/Windows Claude Code安装教程.md",
@@ -248,14 +254,8 @@
     "信号与系统/作业/作业10.pdf",
     "Obsidian接入AI/Geimini Cli接入Obsidian.md",
     "Obsidian接入AI/Claude Code接入Obsidian.md",
-    "Codex/附件",
     "信号与系统/index.md",
     "信号与系统/作业中的收获/作业11.md",
-    "课程内容/基础数据结构/排序与哈希/1..md",
-    "课程内容/排序与哈希/1..md",
-    "数据结构基础 FDS/课程内容/基础数据结构/2. 堆.md",
-    "CS61B/Lecture 20 Priority Queues and Heaps/20.2 堆.md",
-    "CS61B/Lecture 20 Priority Queues and Heaps/20.1 优先队列.md",
     "未命名.canvas"
   ]
 }
