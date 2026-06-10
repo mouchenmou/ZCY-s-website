@@ -29,7 +29,7 @@
     - [6.2 Planar Graphs and Euler's Formula](Lecture/Lecture%206%20Graphs%202/2.%20Planar%20Graphs%20and%20Euler's%20Formula.md)
 - [Lecture 7: Modular Arithmetic](Lecture/Lecture%207%20Modular%20Arithmetic/Lecture%207%20Modular%20Arithmetic.md)
 - [Lecture 8: Euclid's Algorithm, FLT, CRT](Lecture/Lecture%208%20Euclid's%20Algorithm,%20FLT,%20CRT/Euclid's%20Algorithm,%20FLT,%20CRT.md)
-- [Lecture 9: RSA](Lecture/Lecutre%209%20RSA/RSA.md)
+- [Lecture 9: RSA](RSA.md.md)
 
 ### Homework
 
