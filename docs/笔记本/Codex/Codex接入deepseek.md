@@ -4,7 +4,7 @@
 
 ---
 
-可以观看这个[保姆级教程](https://www.bilibili.com/video/BV1WCVq61EFi/?spm_id_from=333.337.search-card.all.click&vd_source=d6e21125b4ff2bde83430369b29c9418)。
+可以参考[这个视频](https://www.bilibili.com/video/BV1aREu6wEk9/?spm_id_from=333.337.search-card.all.click&vd_source=d6e21125b4ff2bde83430369b29c9418)进行配置。
 
 ### 第一步 选择供应商
 我选的是deepseek

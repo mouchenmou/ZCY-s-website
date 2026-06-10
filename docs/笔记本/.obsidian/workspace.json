@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "数据结构基础 FDS/index.md",
+                "file": "Codex/Codex接入deepseek.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Codex接入deepseek"
             }
           },
           {
@@ -210,8 +210,9 @@
   },
   "active": "c5d6e17e9d92519c",
   "lastOpenFiles": [
-    "数据结构基础 FDS/Homework/HW13/判断题.md",
+    "做笔记的规则.md",
     "数据结构基础 FDS/index.md",
+    "数据结构基础 FDS/Homework/HW13/判断题.md",
     "数据结构基础 FDS/补充知识/网络流.md",
     "数据结构基础 FDS/DS13_Ch06_QuickSort_Table Sort_Bucket Sort(6).pdf",
     "数据结构基础 FDS/Homework/HW13/单选题.md",
@@ -244,7 +245,6 @@
     "mit 18.06 线性代数/第2章 Solving Linear Equations/2.6 Elimination = Factorization A = LU.md",
     "mit 18.06 线性代数/第2章 Solving Linear Equations/2.5 Inverse Matrices.md",
     "mit 18.06 线性代数/第2章 Solving Linear Equations/2.4 Rules for Matrix Operations.md",
-    "做笔记的规则.md",
     "mit 18.06 线性代数/index.md",
     "MIT线性代数/index.md",
     "Codex/Codex安装.md",
