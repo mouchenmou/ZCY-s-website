@@ -25,12 +25,14 @@
             "id": "c8c49b6dd49a9119",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "CS70/Lecture/Lecture 17 Conditional Probability, Independence/n14.pdf"
+                "file": "机械设计基础/第9章 连杆/概念.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "n14"
+              "icon": "lucide-file",
+              "title": "概念"
             }
           }
         ],
@@ -194,19 +196,35 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "0c3136469588a543",
+  "active": "c8c49b6dd49a9119",
   "lastOpenFiles": [
+    "机械设计基础/第9章 连杆/附件/Pasted image 20260612013903.png",
+    "机械设计基础/第9章 连杆/附件/Pasted image 20260612013815.png",
+    "机械设计基础/第9章 连杆/附件/Pasted image 20260612013701.png",
+    "机械设计基础/第9章 连杆/附件/Pasted image 20260612013604.png",
+    "机械设计基础/第9章 连杆/附件/Pasted image 20260612013100.png",
+    "机械设计基础/第9章 连杆/附件/4987aabbde3ae97f62ba473cacdfc123.png",
+    "机械设计基础/第9章 连杆/附件/3c7ca7e895aaf97aa161e38d5fccddb5.png",
+    "机械设计基础/第9章 连杆/附件/2dc350144d9a478ad85293bc848cac25.png",
+    "机械设计基础/第9章 连杆/附件/53c789ebb43f060c82b16ac283e5848a.png",
+    "机械设计基础/第9章 连杆/附件/1ff59b38c662dc7ef4366a654dc685a0.png",
+    "机械设计基础/第9章 连杆/附件/fb389dfb0a4ba352f77fee41bd1eb574.png",
+    "机械设计基础/第9章 连杆/选择题.md",
+    "机械设计基础/第9章 连杆/概念.md",
+    "机械设计基础/第9章 连杆/判断题.md",
+    "机械设计基础/第9章 连杆/附件",
+    "机械设计基础/第1章 总论/选择题.md",
+    "机械设计基础/第9章 连杆",
+    "机械设计基础/第1章 总论/判断题.md",
+    "机械设计基础/第1章 总论/附件",
+    "未命名.md",
+    "机械设计基础/第1章 总论",
+    "机械设计基础",
+    "CS70/Lecture/Lecture 17 Conditional Probability, Independence/n14.pdf",
     "CS70/Lecture/Lecture 26 Markov Chains I/n21.pdf",
     "CS70/Lecture/Lecture 24 Continuous Probability Distribution I/n20.pdf",
     "CS70/Lecture/Lecture 24 Continuous Probability Distribution I/未确认 546093.crdownload",
     "CS70/Lecture/Lecture 23 Concentration Inequalities and LLN/n19.pdf",
-    "CS70/Lecture/Lecture 23 Concentration Inequalities and LLN/未确认 166518.crdownload",
-    "CS70/Lecture/Lecture 22 Geometric and Poisson Distributions/n18.pdf",
-    "CS70/Lecture/Lecture 21 Random Variables II (Variance and Covariance)/n17.pdf",
-    "CS70/Lecture/Lecture 21 Random Variables II (Variance and Covariance)/未确认 537967.crdownload",
-    "CS70/Lecture/Lecture 20 Random Variables I (Distribution and Expectation)/n16.pdf",
-    "CS70/Lecture/Lecture 19 Some Applications/n15.pdf",
-    "CS70/Lecture/Lecture 10 Polynomials, Secret Sharing/n8.pdf",
     "CS70/Lecture/Lecture 11 Secret Sharing/未命名.md",
     "CS70/Lecture/Lecture 8 Euclid's Algorithm, FLT, CRT/Euclid's Algorithm, FLT, CRT.md.md",
     "Codex/Codex接入deepseek.md",
@@ -219,16 +237,6 @@
     "数据结构基础 FDS/Homework/HW12/判断题.md",
     "数据结构基础 FDS/Homework/期中考错题.md",
     "数据结构基础 FDS/课程内容/排序与哈希/1. 排序.md",
-    "数据结构基础 FDS/课程内容/排序与哈希/附件/Pasted image 20260609005629.png",
-    "数据结构基础 FDS/课程内容/排序与哈希/附件/Pasted image 20260609003509.png",
-    "数据结构基础 FDS/课程内容/排序与哈希/附件/Pasted image 20260609003213.png",
-    "数据结构基础 FDS/课程内容/排序与哈希/附件/Pasted image 20260609003208.png",
-    "数据结构基础 FDS/课程内容/排序与哈希/附件/Pasted image 20260609002419.png",
-    "数据结构基础 FDS/课程内容/排序与哈希/附件/Pasted image 20260609002057.png",
-    "数据结构基础 FDS/课程内容/排序与哈希/附件/Pasted image 20260609002000.png",
-    "数据结构基础 FDS/课程内容/排序与哈希/附件/Pasted image 20260609000638.png",
-    "数据结构基础 FDS/课程内容/排序与哈希/附件/Pasted image 20260609000225.png",
-    "数据结构基础 FDS/课程内容/排序与哈希/附件/Pasted image 20260609000213.png",
     "mit 18.06 线性代数/第8章 Applications/8.6 Computer Graphics.md",
     "Claude code使用/Windows Claude Code安装教程.md",
     "数据结构基础 FDS/课程内容/排序与哈希/2. 哈希.md",
@@ -236,12 +244,6 @@
     "mit 18.06 线性代数/第2章 Solving Linear Equations/2.7 Transposes and Permutations.md",
     "mit 18.06 线性代数/第2章 Solving Linear Equations/2.6 Elimination = Factorization A = LU.md",
     "mit 18.06 线性代数/第2章 Solving Linear Equations/2.5 Inverse Matrices.md",
-    "mit 18.06 线性代数/第2章 Solving Linear Equations/2.4 Rules for Matrix Operations.md",
-    "mit 18.06 线性代数/index.md",
-    "MIT线性代数/index.md",
-    "Codex/Codex安装.md",
-    "mit 18.06 线性代数/第2章 Solving Linear Equations/2.3 Elimination Using Matrices.md",
-    "Obsidian接入AI/Geimini Cli接入Obsidian.md",
     "未命名.canvas"
   ]
 }
