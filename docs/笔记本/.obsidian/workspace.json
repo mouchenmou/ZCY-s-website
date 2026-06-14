@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "机械设计基础/第5章 齿轮传动/选择题.md",
+                "file": "机械设计基础/第7章 轮系/概念.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "选择题"
+              "title": "概念"
             }
           }
         ],
@@ -198,24 +198,27 @@
   },
   "active": "c8c49b6dd49a9119",
   "lastOpenFiles": [
-    "机械设计基础/第5章 齿轮传动/附件/Pasted image 20260613183549.png",
-    "机械设计基础/第10章 凸轮机构/选择题.md",
-    "机械设计基础/第10章 凸轮机构/判断题.md",
-    "机械设计基础/第10章 凸轮机构/附件/Pasted image 20260613031513.png",
-    "机械设计基础/第5章 齿轮传动/选择题.md",
-    "机械设计基础/第5章 齿轮传动/附件/Pasted image 20260613025449.png",
-    "机械设计基础/第5章 齿轮传动/附件/Pasted image 20260613024929.png",
-    "机械设计基础/第5章 齿轮传动/附件/Pasted image 20260613024338.png",
-    "机械设计基础/第5章 齿轮传动/附件/Pasted image 20260613024020.png",
-    "机械设计基础/第5章 齿轮传动/附件/Pasted image 20260613023932.png",
-    "机械设计基础/第5章 齿轮传动/附件/Pasted image 20260613023856.png",
-    "机械设计基础/第5章 齿轮传动/附件/Pasted image 20260613023823.png",
-    "机械设计基础/第5章 齿轮传动/附件/Pasted image 20260613023735.png",
-    "机械设计基础/第5章 齿轮传动/附件/Pasted image 20260613023633.png",
-    "机械设计基础/第5章 齿轮传动/判断题.md",
-    "fu.md",
+    "机械设计基础/第7章 轮系/附件/Pasted image 20260615010915.png",
     "机械设计基础/第5章 齿轮传动/概念2.md",
     "机械设计基础/第5章 齿轮传动/概念1.md",
+    "机械设计基础/第7章 轮系/概念.md",
+    "机械设计基础/第7章 轮系/附件/Pasted image 20260615010800.png",
+    "机械设计基础/第7章 轮系/附件/Pasted image 20260615010626.png",
+    "机械设计基础/第7章 轮系/附件/Pasted image 20260615010156.png",
+    "机械设计基础/第7章 轮系/附件/Pasted image 20260615010110.png",
+    "机械设计基础/第7章 轮系/附件/Pasted image 20260615010016.png",
+    "机械设计基础/第7章 轮系/附件/Pasted image 20260615005423.png",
+    "机械设计基础/第7章 轮系/附件/Pasted image 20260615004901.png",
+    "机械设计基础/第7章 轮系/附件/Pasted image 20260615004626.png",
+    "机械设计基础/第7章 轮系/附件/Pasted image 20260615004324.png",
+    "机械设计基础/第7章 轮系/附件/Pasted image 20260615004022.png",
+    "机械设计基础/第7章 轮系/附件",
+    "机械设计基础/第7章 轮系",
+    "机械设计基础/第5章 齿轮传动/选择题.md",
+    "机械设计基础/第10章 凸轮机构/选择题.md",
+    "机械设计基础/第10章 凸轮机构/判断题.md",
+    "机械设计基础/第5章 齿轮传动/判断题.md",
+    "fu.md",
     "mit 18.06 线性代数/第4章 Orthogonality/4.1 Orthogonality of the Four Subspaces.md",
     "机械设计基础/第5章 齿轮传动/附件",
     "机械设计基础/第10章 凸轮机构/概念.md",
@@ -233,8 +236,6 @@
     "机械设计基础/第9章 连杆机构",
     "机械设计基础/第1章 总论/附件",
     "未命名.md",
-    "机械设计基础/第1章 总论",
-    "机械设计基础",
     "CS70/Lecture/Lecture 11 Secret Sharing/未命名.md",
     "CS70/Lecture/Lecture 8 Euclid's Algorithm, FLT, CRT/Euclid's Algorithm, FLT, CRT.md.md",
     "Codex/Codex接入deepseek.md",
@@ -243,7 +244,6 @@
     "数据结构基础 FDS/Homework/HW13/判断题.md",
     "数据结构基础 FDS/补充知识/网络流.md",
     "数据结构基础 FDS/Homework/HW13/单选题.md",
-    "数据结构基础 FDS/Homework/HW12/单选题.md",
     "未命名.canvas"
   ]
 }
