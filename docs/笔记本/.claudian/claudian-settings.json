@@ -62,7 +62,8 @@
       "installationMethodsByHost": {
         "LAPTOP-76KSVDVU": "native-windows",
         "mouchenmoudeMacBook-Pro.local": "native-windows",
-        "mouchenmoudeMacBook-Pro-3.local": "native-windows"
+        "mouchenmoudeMacBook-Pro-3.local": "native-windows",
+        "mouchenmoudeMacBook-Pro-6.local": "native-windows"
       },
       "wslDistroOverridesByHost": {}
     },
@@ -92,7 +93,7 @@
   "savedProviderPermissionMode": {
     "claude": "yolo"
   },
-  "lastCustomModel": "DeepSeek-V4-pro[1m]",
+  "lastCustomModel": "qwen3.6-plus",
   "maxTabs": 3,
   "tabBarPosition": "input",
   "enableAutoScroll": true,

@@ -4,11 +4,11 @@
   "title": "你好啊",
   "titleGenerationStatus": "failed",
   "createdAt": 1778405942290,
-  "updatedAt": 1781509639416,
-  "lastResponseAt": 1781509639416,
-  "sessionId": "3acf3b50-0abc-4b9f-9b0f-06b9ebaa9624",
+  "updatedAt": 1781529822762,
+  "lastResponseAt": 1781529822762,
+  "sessionId": "76e987af-cdd2-46e7-b002-32d8f0031255",
   "providerState": {
-    "providerSessionId": "3acf3b50-0abc-4b9f-9b0f-06b9ebaa9624",
+    "providerSessionId": "76e987af-cdd2-46e7-b002-32d8f0031255",
     "subagentData": {
       "toolu_5674f18b19454674ba67a7c7": {
         "id": "toolu_5674f18b19454674ba67a7c7",
@@ -296,18 +296,20 @@
     },
     "previousProviderSessionIds": [
       "14a54f6f-a3b9-41a7-a543-f374b3f71931",
-      "0cc669b2-b4c8-41d9-907b-2675331a5013"
+      "0cc669b2-b4c8-41d9-907b-2675331a5013",
+      "3acf3b50-0abc-4b9f-9b0f-06b9ebaa9624",
+      "22b2fb62-3544-48a8-9b19-f12b75bd2530"
     ]
   },
   "currentNote": "合并笔记/合并笔记.md",
   "usage": {
     "model": "DeepSeek-V4-pro[1m]",
-    "inputTokens": 120,
+    "inputTokens": 138034,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 417280,
+    "cacheReadInputTokens": 0,
     "contextWindow": 1000000,
-    "contextTokens": 417400,
-    "percentage": 42,
+    "contextTokens": 138034,
+    "percentage": 14,
     "contextWindowIsAuthoritative": true
   }
 }
