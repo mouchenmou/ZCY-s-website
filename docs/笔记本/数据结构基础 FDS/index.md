@@ -92,6 +92,11 @@ FDS给我的体验就是，他把我们当成了有OI基础的选手来上课。
 - [判断题](Homework/HW13/判断题.md)
 - [单选题](Homework/HW13/单选题.md)
 
+#### Homework 14
+- [判断题](Homework/HW14/判断题.md)
+- [单选题](Homework/HW14/单选题.md)
+- [编程题](Homework/HW14/编程题.md)
+
 #### 其他
 - [期中考错题](Homework/期中考错题.md)
 
