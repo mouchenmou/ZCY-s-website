@@ -25,14 +25,12 @@
             "id": "c8c49b6dd49a9119",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "数据结构基础 FDS/index.md",
-                "mode": "source",
-                "source": false
+                "file": "信号与系统/第3章/信号与系统第三章.pdf"
               },
-              "icon": "lucide-file",
-              "title": "index"
+              "icon": "lucide-file-text",
+              "title": "信号与系统第三章"
             }
           }
         ],
@@ -196,8 +194,11 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "c8c49b6dd49a9119",
+  "active": "0c3136469588a543",
   "lastOpenFiles": [
+    "信号与系统/第3章/信号与系统第三章.pdf",
+    "信号与系统/第3章/信号与系统第三章.pdf",
+    "数据结构基础 FDS/index.md",
     "数据结构基础 FDS/Homework/HW15/选择题.md",
     "数据结构基础 FDS/Homework/期中考错题.md",
     "数据结构基础 FDS/Homework/HW15/判断题.md",
@@ -241,9 +242,6 @@
     "机械设计基础/第13章 滑动轴承/选择题.md",
     "机械设计基础/第13章 滑动轴承/概念.md",
     "机械设计基础/第13章 滑动轴承/附件",
-    "机械设计基础/第12章 轴/判断题.md",
-    "机械设计基础/第13章 滑动轴承",
-    "机械设计基础/第12章 轴/选择题.md",
     "未命名.canvas"
   ]
 }
