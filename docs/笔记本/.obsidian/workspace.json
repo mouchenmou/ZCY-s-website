@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "数据结构基础 FDS/课程内容/排序与哈希/2. 哈希.md",
+                "file": "数据结构基础 FDS/课程内容/基础数据结构/5. 栈和队列.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2. 哈希"
+              "title": "5. 栈和队列"
             }
           }
         ],
@@ -198,10 +198,14 @@
   },
   "active": "c8c49b6dd49a9119",
   "lastOpenFiles": [
+    "数据结构基础 FDS/课程内容/基础数据结构/ADT, The List ADT.md",
+    "数据结构基础 FDS/index.md",
+    "数据结构基础 FDS/课程内容/topic1.md",
+    "数据结构基础 FDS/课程内容/基础数据结构/5. 栈和队列.md",
+    "数据结构基础 FDS/课程内容/排序与哈希/2. 哈希.md",
     "数据结构基础 FDS/课程内容/排序与哈希/1. 排序.md",
     "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
     "数据结构基础 FDS/课程内容/基础数据结构/3. 并查集.md",
-    "数据结构基础 FDS/课程内容/基础数据结构/5. 栈和队列.md",
     "数据结构基础 FDS/补充知识/Bellman-Ford算法与SPFA算法.md",
     "CS61B/Lecture 23 Shortest Paths/Shortest Paths.md",
     "数据结构基础 FDS/课程内容/基础数据结构/附件/Pasted image 20260624003656.png",
@@ -223,15 +227,12 @@
     "tmp/presentations/union_find/texts.txt",
     "tmp/presentations/union_find",
     "数据结构基础 FDS/课程内容/基础数据结构/DS07_Ch08_Union and Find(7).ppt",
-    "数据结构基础 FDS/课程内容/基础数据结构/ADT, The List ADT.md",
     "tmp/presentations/priority_queue/texts.txt",
     "tmp/presentations/priority_queue",
     "数据结构基础 FDS/课程内容/基础数据结构/DS06_Ch05_Priority Queues(6).ppt",
     "数据结构基础 FDS/课程内容/基础数据结构/1. 树.md",
     "tmp/presentations/tree_ppt_extract/search_texts.txt",
     "数据结构基础 FDS/期中复习/期中复习错题.md",
-    "数据结构基础 FDS/课程内容/topic1.md",
-    "数据结构基础 FDS/index.md",
     "CS61B/Lecture 21 Tree and Graph Traversals/21.1 Trees and Traversals.md",
     "CS61B/Lecture 30 Quicksort/Quicksort.md",
     "CS61B/Lecture 29 Basic Sort/3. Heapsort.md",
@@ -243,7 +244,6 @@
     "数据结构基础 FDS/Homework/HW15/选择题.md",
     "数据结构基础 FDS/Homework/期中考错题.md",
     "数据结构基础 FDS/Homework/HW15/判断题.md",
-    "机械设计基础/第14章 滚动轴承/概念.md",
     "未命名.canvas"
   ]
 }
