@@ -56,8 +56,9 @@ comment: true
     - 如果 $f(n) = \Theta(n^{\log_ba})$ 则 $T(n) = \Theta(n^{\log_ba}\log n)$
     - 如果存在常数 $\epsilon > 0$ 有 $f(n) = \Omega(n^{\log_ba+\epsilon})$，同时存在常数 $c<1$ 使得对于充分大 $n$ 有 $af(n/b)\leq cf(n)$ 则 $T(N) = \Theta(f(n))$
 
+---
 ## 例：最大子序列和问题
-### O(N³)
+### $O(N³)$
 直接枚举开头结尾，并计算中间子序列和：
 ```c 
 int MaxSubsequenceSum(const int a[], int N) {
@@ -74,7 +75,9 @@ int MaxSubsequenceSum(const int a[], int N) {
     return res;
 } 
 ```
-### O(N²)
+
+---
+### $O(N²)$
 同样枚举开头结尾，不过动态计算子序列和，省去最内层循环
 ```c
 int MaxSubsequenceSum(const int a[], int N) {
@@ -89,7 +92,9 @@ int MaxSubsequenceSum(const int a[], int N) {
     return res;
 }
 ```
-### O(NlogN)
+
+---
+### $O(NlogN)$
 使用分治算法
 
 $$
@@ -101,7 +106,35 @@ T(N) &= 2T(N/2)+cN,\quad T(1) = O(1) \\
 \end{align*}
 $$
 
-### O(N)
+
+假设我们将数组从中间位置 `mid` 切开，分为**左半部分**和**右半部分**。那么，最大子串和只可能出现在以下三个地方之一：
+
+1. **完全在左半部分**：即最大子串不跨越中间点（通过递归计算）。
+2. **完全在右半部分**：即最大子串不跨越中间点（通过递归计算）。
+3. **跨越中间点 `mid`**：即包含 `nums[mid]` 和 `nums[mid+1]`，并分别向左右两侧延伸。
+
+计算跨越终点的最大子串的方法：
+
+```c
+int sum = 0;
+int now = a[mid + 1];
+
+for(int i = mid + 1; i <= right; i++){
+    now += a[i];
+    if(sum > now){
+        now = sum;
+    }
+}
+```
+
+!!! example "用一个例子来解释一下计算CrossMid最大子串的方法。"
+    首先，跨越终点的最大子串，一定是包含`a[mid]`和`a[mid+1]`的。我们这个时候不需要去考虑左侧的最大子串和右侧的最大子串（因为最终的 $max子串=max\{左侧最大子串，右侧最大子串，跨越中点的最大子串\}$）此时，我们只需要计算跨越中点的那个子串。
+    
+    以计算`a[mid+1]`及其右侧的为例，从`a[mid+1]`出发往前走，一个一个加上这些元素，如果 `sum>now`，就更新now。
+    
+    因为计算包含`a[mid]`的左最大子串和计算包含`a[mid+1]`的右侧最大子串执行的次数加起来正好等于N个元素的次数，所以计算CrossMid的时间复杂是 $O(N)$。计算左最小子串和右最小子串的分析很简单，也是 $O(N)$。因此每一层的时间复杂度都是 $O(N)$，总共有 $logN$ 层，因此总的时间复杂度是 $O(NlogN)$
+
+### $O(N)$
 动态规划思想
 ```c
 int MaxSubsequenceSum(const int a[], int N) {

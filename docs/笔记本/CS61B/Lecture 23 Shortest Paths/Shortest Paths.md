@@ -90,7 +90,7 @@
 
 **Single Source Single Target Shortest Paths：**给定一个带权图，找从源点 $s$ 到目标 $t$ 的最短路径。
 
-**Single Source Shortest Paths：**找从 $s$ 到**每个可达顶点**的最短路径。
+**Single Source Shortest Paths：找从 $s$ 到**每个可达顶点**的最短路径。
 
 !!! example "示例"
     ![](Pasted%20image%2020260511233452.png)
@@ -100,6 +100,7 @@
     - 注意：路径 $0 \to 2 \to 5$ 虽然只经过 3 个镇，但总长度是 16 英里，不是最短的
     
     观察：最短路径一定**没有环**（假设边权重非负）。
+    
     ![](附件/Pasted%20image%2020260511234243.png)
 
 ### 2.2 Shortest Paths Tree (SPT)
