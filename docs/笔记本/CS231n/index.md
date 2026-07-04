@@ -8,7 +8,7 @@ Stanford 的 CV 入门课，由计算机领域的巨佬李飞飞院士领衔教�
 
 ### Lecture 笔记
 
-- [Lecture 1: 导论](Lecture/Lecture%201%20导论/导论.md)
+- [Lecture 1: 导论](导论.md)
 
 ---
 
