@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS231n/1. Deep Learning Basic/Lecture 2 Image Classification with Linear Classifiers.md",
+                "file": "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 2 Image Classification with Linear Classifiers"
+              "title": "Lecture 3 Regularization and Optimization"
             }
           }
         ],
@@ -196,18 +196,20 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "c8c49b6dd49a9119",
+  "active": "0c3136469588a543",
   "lastOpenFiles": [
+    "CS231n/1. Deep Learning Basic/Lecture 2 Image Classification with Linear Classifiers.md",
+    "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
+    "CS231n/1. Deep Learning Basic/Lecture 4 Neural Networks and Backpropagation.md",
+    "CS231n/1. Deep Learning Basic/附件/Pasted image 20260706144755.png",
+    "CS231n/1. Deep Learning Basic/附件/Pasted image 20260706142140.png",
     "CS231n/1. Deep Learning Basic/附件/Pasted image 20260705234147.png",
     "CS231n/1. Deep Learning Basic/附件/Pasted image 20260705231746.png",
-    "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
     "CS231n/index.md",
-    "CS231n/1. Deep Learning Basic/Lecture 2 Image Classification with Linear Classifiers.md",
     "1. Deep Learning Basic/Lecture 2 Image Classification with Linear Classifiers.md",
     "CS70/index.md",
     "CS70/Lecture/Lecture 6 Graphs 2/2. Planar Graphs and Euler's Formula.md",
     "1. Deep Learning Basic/Lecture 2 Image Classification with Linear Classifiers 2.md",
-    "CS231n/1. Deep Learning Basic/Lecture 4 Neural Networks and Backpropagation.md",
     "1. Deep Learning Basic/Lecture 2 Image Classification with Linear Classifiers 1.md",
     "CS231n/Lecture 1 导论/导论.md",
     "1. Deep Learning Basic",
@@ -217,9 +219,6 @@
     "CS231n/1. Deep Learning Basic/附件/Pasted image 20260705005807.png",
     "CS231n/1. Deep Learning Basic/附件/Pasted image 20260705005202.png",
     "CS231n/1. Deep Learning Basic/附件/Pasted image 20260705004018.png",
-    "CS231n/1. Deep Learning Basic/附件/Pasted image 20260705003813.png",
-    "CS231n/1. Deep Learning Basic/附件/Pasted image 20260705001626.png",
-    "CS231n/1. Deep Learning Basic/附件/Pasted image 20260704235803.png",
     "CS231n/1. Deep Learning Basic/附件",
     "CS231n/1. Deep Learning Basic",
     "数据结构基础 FDS/Homework/期中考错题.md",
