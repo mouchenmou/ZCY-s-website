@@ -13,6 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "mit 18.06 线性代数/第4章 Orthogonality/4.1 Orthogonality of the Four Subspaces.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "4.1 Orthogonality of the Four Subspaces"
+            }
+          },
+          {
+            "id": "c8c49b6dd49a9119",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
                 "mode": "source",
                 "source": false
@@ -21,7 +35,8 @@
               "title": "Lecture 3 Regularization and Optimization"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -181,15 +196,8 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "adc0afb6f484a017",
+  "active": "c8c49b6dd49a9119",
   "lastOpenFiles": [
-    "CS231n/1. Deep Learning Basic/Lecture 4 Neural Networks and Backpropagation.md",
-    "CS231n/1. Deep Learning Basic/lecture_3.pdf",
-    "mit 18.06 线性代数/第4章 Orthogonality/4.1 Orthogonality of the Four Subspaces.md",
-    "1. Deep Learning Basic/Lecture 2 Image Classification with Linear Classifiers 2.md",
-    "1. Deep Learning Basic/Lecture 2 Image Classification with Linear Classifiers 1.md",
-    "1. Deep Learning Basic/Lecture 2 Image Classification with Linear Classifiers.md",
-    "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
     "CS231n/1. Deep Learning Basic/附件/Pasted image 20260706224144.png",
     "CS231n/1. Deep Learning Basic/附件/Pasted image 20260706210110.png",
     "CS231n/1. Deep Learning Basic/附件/Pasted image 20260706205920.png",
@@ -199,12 +207,18 @@
     "CS231n/1. Deep Learning Basic/附件/Pasted image 20260706203246.png",
     "CS231n/1. Deep Learning Basic/附件/Pasted image 20260706202601.png",
     "CS231n/1. Deep Learning Basic/附件/Pasted image 20260706194533.png",
-    "CS231n/1. Deep Learning Basic/未确认 847970.crdownload",
+    "CS231n/1. Deep Learning Basic/lecture_3.pdf",
     "CS231n/1. Deep Learning Basic/Lecture 2 Image Classification with Linear Classifiers.md",
+    "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
+    "CS231n/1. Deep Learning Basic/Lecture 4 Neural Networks and Backpropagation.md",
     "CS231n/1. Deep Learning Basic/附件/Pasted image 20260706144755.png",
+    "CS231n/1. Deep Learning Basic/附件/Pasted image 20260706142140.png",
     "CS231n/index.md",
+    "1. Deep Learning Basic/Lecture 2 Image Classification with Linear Classifiers.md",
     "CS70/index.md",
     "CS70/Lecture/Lecture 6 Graphs 2/2. Planar Graphs and Euler's Formula.md",
+    "1. Deep Learning Basic/Lecture 2 Image Classification with Linear Classifiers 2.md",
+    "1. Deep Learning Basic/Lecture 2 Image Classification with Linear Classifiers 1.md",
     "CS231n/Lecture 1 导论/导论.md",
     "1. Deep Learning Basic",
     "CS231n/1. Deep Learning Basic/附件",
@@ -223,11 +237,13 @@
     "合并笔记/合并笔记.md",
     "机械设计基础/轴系改错.md",
     "课程内容/基础数据结构/ADT, The.md",
+    "附件.md",
     "水下机器人/attachments",
     "数据结构基础 FDS/课程内容/基础数据结构/DS07_Segment Tree.pptx",
     "水下机器人/附件",
     "水下机器人",
     "tmp/presentations/graph/texts.txt",
+    "tmp/presentations/graph",
     "未命名.canvas"
   ]
 }

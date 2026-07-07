@@ -1,4 +1,4 @@
-# 1. Regularization（正则化）
+	# 1. Regularization（正则化）
 ![](附件/Pasted%20image%2020260706142140.png)
 
 ## 1.1 Regularization 是干什么的
@@ -246,9 +246,7 @@ $$
 
 也就是每一步只看当前这一刻的梯度。
 
-Momentum 的想法是：引入动量。
-
-!!! explanation "Momentum 的直觉"
+!!! explanation "Momentum"
     假设我们在山谷里下坡。
     
     普通 SGD 每一步都只看脚下这一点的坡度，所以很容易左右摇摆。
@@ -296,7 +294,7 @@ w += v
 
 ## 2.6 RMSProp
 
-Momentum 解决的是“方向惯性”的问题，但还有一个问题：不同参数方向的坡度大小差别可能很大。
+Momentum 解决的是方向惯性的问题，但还有一个问题：不同参数方向的坡度大小差别可能很大。
 
 RMSProp 的想法是：给每个参数单独调学习率。
 
