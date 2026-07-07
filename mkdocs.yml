@@ -361,6 +361,9 @@ nav:
       - 笔记本/CS231n/index.md
       - Part 1 Deep Learning Basics:
         - Lecture 1 导论: 笔记本/CS231n/Lecture/Lecture 1 导论/导论.md
+        - Python 和 Numpy: 笔记本/CS231n/1. Deep Learning Basic/python 和 numpy.md
+        - Lecture 2 Image Classification with Linear Classifiers: 笔记本/CS231n/1. Deep Learning Basic/Lecture 2 Image Classification with Linear Classifiers.md
+        - Lecture 3 Regularization and Optimization: 笔记本/CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md
     - CSAPP 深入理解计算机系统:
       - 笔记本/深入理解计算机系统/index.md
       - 第1章 计算机系统漫游:
