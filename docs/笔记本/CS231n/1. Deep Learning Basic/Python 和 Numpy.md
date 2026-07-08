@@ -445,7 +445,7 @@ print(np.full((2, 2), 7))
 # [[7 7]
 #  [7 7]]
 
-print(np.eye(2))
+print(np.eye(2)) # 输出单位矩阵
 # [[1. 0.]
 #  [0. 1.]]
 
@@ -454,6 +454,40 @@ print(np.random.random((2, 2)))
 # [[0.91940167 0.08143941]
 #  [0.68744134 0.87236687]]
 ```
+
+!!! warning "两个random的区别"
+    这里不是随机两次，**这俩 `random` 含义不一样**：
+
+    ```
+    e = np.random.random((2,2))
+    ```
+
+    意思是：NumPy 里面的 random 模块 里的 random 函数
+
+    也就是：
+
+    ```
+    np.random        表示 NumPy 的随机数模块
+    np.random.random 表示这个模块里的 random() 函数
+    ```
+
+    类似于：
+
+    ```
+    math.sqrt(4)
+    ```
+
+    即math 模块里的 sqrt 函数
+
+    所以：
+    
+    ```
+    np.random.random((2,2))
+    ```
+
+    意思是：
+
+    > 调用 NumPy 随机模块里的 `random()` 函数，生成一个形状为 `(2,2)` 的随机数组。
 
 ### 数组索引
 

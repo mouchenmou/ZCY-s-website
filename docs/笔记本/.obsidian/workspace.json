@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS231n/1. Deep Learning Basic/Python 和 Numpy.md",
+                "file": "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Python 和 Numpy"
+              "title": "Lecture 3 Regularization and Optimization"
             }
           }
         ]
@@ -174,9 +174,9 @@
   },
   "active": "6ea370a79deb29f9",
   "lastOpenFiles": [
-    "CS231n/index.md",
+    "CS231n/1. Deep Learning Basic/lecture_3.pdf",
     "CS231n/1. Deep Learning Basic/Python 和 Numpy.md",
-    "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
-    "CS231n/1. Deep Learning Basic/lecture_3.pdf"
+    "CS231n/index.md",
+    "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md"
   ]
 }

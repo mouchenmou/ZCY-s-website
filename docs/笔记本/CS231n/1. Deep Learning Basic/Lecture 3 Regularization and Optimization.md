@@ -296,25 +296,132 @@ w += v
 
 Momentum 解决的是方向惯性的问题，但还有一个问题：不同参数方向的坡度大小差别可能很大。
 
-RMSProp 的想法是：给每个参数单独调学习率。
+RMSProp 的方法是，==给每个参数单独调学习率==。
 
 也就是说，不再让所有参数都用同一个更新幅度，而是根据每个方向过去的梯度大小来缩放它。
 
-### 2.6.1 RMSProp 的核心想法
+!!! explanation "如何理解学习率不同"
+    # Momentum 和 RMSProp 的一个误区：更新量不同 ≠ 学习率不同
+
+    ## 误区
+    
+    我一开始以为：
+    
+    $$v_{t+1}=\rho v_t-\eta \nabla L(W_t)$$
+    
+    里面每个参数的梯度本来就不同，比如：
+    
+    $$\frac{\partial L}{\partial w_1} \neq \frac{\partial L}{\partial w_2}$$
+    
+    每个参数的更新量也不同，所以我误以为Momentum 其实也相当于给每个参数单独设置了学习率。
+    
+    这个理解是不准确的。
+    
+    ---
+    
+    ## 正确理解
+    
+    **每个参数更新量不同，不等于每个参数学习率不同。**
+    
+    在 Momentum 里面：
+    
+    $$v_{t+1}=\rho v_t-\eta \nabla L(W_t)$$
+    
+    拆开看：
+    
+    $$v_{1,t+1}=\rho v_{1,t}-\eta \frac{\partial L}{\partial w_1}$$
+
+    $$v_{2,t+1}=\rho v_{2,t}-\eta \frac{\partial L}{\partial w_2}$$
+    
+    虽然：$\frac{\partial L}{\partial w_1}$ 和 $\frac{\partial L}{\partial w_2}$ 可能不同，所以 $w_1,w_2$ 的更新量不同。
+
+    但是它们前面乘的学习率都是 $\eta$
+
+    所以 Momentum 不是给每个参数单独调学习率。
+
+    它只是==用同一个学习率 $\eta$，乘上每个参数自己的梯度==，再加上历史速度项。
+
+    ---
+
+    ## Momentum 主要解决什么？
+
+    Momentum 的作用是累积历史更新方向：
+
+    $$v_{t+1}=\rho v_t-\eta g_t$$
+
+    $$W_{t+1}=W_t+v_{t+1}$$
+
+    其中：
+
+$$
+g_t=\nabla L(W_t)
+$$
+
+    Momentum 更像是：
+    
+    > 如果某个方向连续几次都朝同一个方向走，就加速；如果某个方向来回震荡，就互相抵消。
+    
+    所以 Momentum 主要缓解的是 $\text{zigzag 震荡}$ ，但它没有给每个参数设置不同的有效学习率。
+    
+    ---
+    
+    ## RMSProp
+
+    RMSProp 是：
+	
+	    $$s_{t+1}=\rho s_t+(1-\rho)g_t^2$$
+	
+	$$W_{t+1}=W_t-\eta\frac{g_t}{\sqrt{s_{t+1}}+\epsilon}$$
+	
+	拆成每个参数：
+	
+	$$
+	w_{1,t+1}=w_{1,t}-\eta\frac{g_1}{\sqrt{s_1}+\epsilon}
+	$$
+	
+	$$
+	w_{2,t+1}=w_{2,t}-\eta\frac{g_2}{\sqrt{s_2}+\epsilon}
+	$$
+	
+	这里关键是：
+	
+	$$
+	s_1 \neq s_2
+	$$
+	
+	其中：$s_1$ 记录的是 $w_1$ 这个方向过去梯度平方的大小。$s_2$ 记录的是 $w_2$ 这个方向过去梯度平方的大小。
+	
+	因此 $w_1$ 的实际有效学习率是：
+	
+	$$
+	\eta_1=\frac{\eta}{\sqrt{s_1}+\epsilon}
+	$$
+	
+	$w_2$ 的实际有效学习率是：
+	
+	$$
+	\eta_2=\frac{\eta}{\sqrt{s_2}+\epsilon}
+	$$
+	
+	所以 RMSProp 才是真的给每个参数分配了不同的有效学习率。
+
+
+---
+### 2.6.1 RMSProp的原理
 
 RMSProp 会记录每个维度历史梯度平方的平均值：
 
 $$
-cache=\rho \times cache+(1-\rho)dw^2
+cache_{new}=\rho \times cache+(1-\rho)\times(dw)^2
 $$
 
 然后更新时除以这个平方平均值：
 
 $$
-W=W-\eta \frac{dw}{\sqrt{cache}+\epsilon}
+W=W-\eta \frac{dw}{\sqrt{cache_{new}}+\epsilon}
 $$
 
-这里的 $\epsilon$ 是一个很小的数，主要是为了防止分母为 0。
+这里的 $\epsilon$ 是一个很小的数，主要是为了防止分母为 0。$dw=∇f(w)$
 
 ```python
 cache = decay_rate * cache + (1 - decay_rate) * dw ** 2
@@ -327,7 +434,7 @@ w += -learning_rate * dw / (np.sqrt(cache) + eps)
 
 如果某个方向的梯度一直很小，说明这个方向比较平。RMSProp 会让这个方向的 $cache$ 比较小，于是这个方向相对可以走快一点。
 
-所以课件里总结为：
+总结为：
 
 > Progress along “steep” directions is damped; progress along “flat” directions is accelerated.
 
@@ -375,7 +482,7 @@ $$
 
 ### 2.7.2 Bias correction：偏差修正
 
-Adam 还有一个重要细节：bias correction（偏差修正）。
+
 
 因为一开始 $m$ 和 $v$ 都初始化为 0，所以训练刚开始的时候，$m$ 和 $v$ 会偏小。
 
@@ -459,6 +566,8 @@ $$
 
 这就是 decoupled weight decay 的思想。
 
+当然这种AdamW比一定会比Adam好，在深度学习中就是把每一种方式都跑一遍，看哪种更强。
+
 ---
 
 ## 2.9 Learning Rate Schedules：学习率怎么变
@@ -477,9 +586,9 @@ $$
 
 ### 2.9.1 Step decay
 
-Step decay 的意思是：训练到某些固定 epoch 时，把学习率突然变小。
+训练到某些固定 epoch 时，把学习率突然变小。
 
-比如课件里举的 ResNet 例子：
+比如：
 
 > 在第 30、60、90 个 epoch 后，把 learning rate 乘以 0.1。
 
@@ -536,8 +645,6 @@ $$
 
 ## 2.10 Linear Warmup
 
-课件还讲了一个很常用的技巧：**linear warmup（线性预热）**。
-
 它的意思是：训练刚开始时，不要立刻使用很大的学习率，而是先从 0 开始，慢慢把学习率升到目标值。
 
 比如前 5000 次 iteration：
@@ -555,7 +662,7 @@ $$
     
     warmup 相当于先小步试探一下，让训练稳定起来，再逐渐加速。
 
-课件里还提到一个经验规则：
+一个经验规则：
 
 > 如果 batch size 增大 $N$ 倍，那么初始 learning rate 也可以增大 $N$ 倍。
 
@@ -564,8 +671,6 @@ $$
 ---
 
 ## 2.11 First-Order Optimization 和 Second-Order Optimization
-
-最后课件比较了一阶优化和二阶优化。
 
 ### 2.11.1 First-Order Optimization：一阶优化
 
@@ -585,7 +690,7 @@ $$
 
 然后沿着让这个近似函数下降的方向走。
 
-直觉上就是：
+即：
 
 > 我只知道脚下的坡往哪边斜，所以我就往下坡方向走。
 
@@ -644,7 +749,6 @@ $$
 所以深度学习里大部分时候还是用一阶优化方法。
 
 !!! note "实践总结"
-    课件最后给了一个很实用的总结：
     
     - Adam 或 AdamW 是很多情况下不错的默认选择，即使用固定 learning rate 也经常能工作。
     - SGD + Momentum 有时候能超过 Adam，但是通常需要更仔细地调 learning rate 和 schedule。
