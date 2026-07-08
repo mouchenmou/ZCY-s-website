@@ -1,56 +1,41 @@
 {
   "main": {
-    "id": "cbb9ea079ef60610",
+    "id": "20cdb5f48a4f572f",
     "type": "split",
     "children": [
       {
-        "id": "cb6cc8d3043913d8",
+        "id": "96a334a1ed877424",
         "type": "tabs",
         "children": [
           {
-            "id": "adc0afb6f484a017",
+            "id": "6ea370a79deb29f9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mit 18.06 线性代数/第4章 Orthogonality/4.1 Orthogonality of the Four Subspaces.md",
+                "file": "CS231n/1. Deep Learning Basic/Python 和 Numpy.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4.1 Orthogonality of the Four Subspaces"
-            }
-          },
-          {
-            "id": "c8c49b6dd49a9119",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Lecture 3 Regularization and Optimization"
+              "title": "Python 和 Numpy"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "903403985b2f06e7",
+    "id": "03b73d4c0b73d084",
     "type": "split",
     "children": [
       {
-        "id": "3c6e3df25957ce8d",
+        "id": "b8ad37fd40cf733e",
         "type": "tabs",
         "children": [
           {
-            "id": "0c3136469588a543",
+            "id": "2a6816d11ffda768",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -63,7 +48,7 @@
             }
           },
           {
-            "id": "00b3489ca12e63c0",
+            "id": "a1916464f5ff6d6b",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -80,7 +65,7 @@
             }
           },
           {
-            "id": "45cb8ab3e365b811",
+            "id": "e27893ec97181242",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -93,50 +78,51 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "52b244cff2ee050b",
+    "id": "3e3804ba2af637db",
     "type": "split",
     "children": [
       {
-        "id": "eb1cfe684e85ec64",
+        "id": "78b2415f5148d95d",
         "type": "tabs",
         "children": [
           {
-            "id": "4d5bf80eda54a4c7",
+            "id": "bd6f40d18a26e32a",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "CS231n/1. Deep Learning Basic/Python 和 Numpy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
-                "showSearch": true,
+                "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
+                "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "Python 和 Numpy 的反向链接列表"
             }
           },
           {
-            "id": "cdce7098a0b691a6",
+            "id": "01c1c426689d0a16",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS61B/Lecture 1/Lecture1 photo/Pasted image 20250913230638.png",
+                "file": "CS231n/1. Deep Learning Basic/Python 和 Numpy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Pasted image 20250913230638 的出链列表"
+              "title": "Python 和 Numpy 的出链列表"
             }
           },
           {
-            "id": "e7d2e9b5442449a3",
+            "id": "394cec06046913a3",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -151,99 +137,46 @@
             }
           },
           {
-            "id": "47ce7188dd06f363",
+            "id": "bbd8357bad6bd7a5",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "合并笔记/合并笔记.md",
+                "file": "CS231n/1. Deep Learning Basic/Python 和 Numpy.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "合并笔记 的大纲"
-            }
-          },
-          {
-            "id": "3ee86d49960c812e",
-            "type": "leaf",
-            "state": {
-              "type": "claudian-view",
-              "state": {},
-              "icon": "bot",
-              "title": "Claudian"
+              "title": "Python 和 Numpy 的大纲"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "claudian:Open Claudian": false,
-      "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "terminal:Open terminal": false
+      "terminal:Open terminal": false,
+      "claudian:Open Claudian": false
     }
   },
-  "active": "c8c49b6dd49a9119",
+  "active": "6ea370a79deb29f9",
   "lastOpenFiles": [
-    "CS231n/1. Deep Learning Basic/附件/Pasted image 20260706224144.png",
-    "CS231n/1. Deep Learning Basic/附件/Pasted image 20260706210110.png",
-    "CS231n/1. Deep Learning Basic/附件/Pasted image 20260706205920.png",
-    "CS231n/1. Deep Learning Basic/附件/Pasted image 20260706204121.png",
-    "CS231n/1. Deep Learning Basic/附件/Pasted image 20260706204114.png",
-    "CS231n/1. Deep Learning Basic/附件/Pasted image 20260706203320.png",
-    "CS231n/1. Deep Learning Basic/附件/Pasted image 20260706203246.png",
-    "CS231n/1. Deep Learning Basic/附件/Pasted image 20260706202601.png",
-    "CS231n/1. Deep Learning Basic/附件/Pasted image 20260706194533.png",
-    "CS231n/1. Deep Learning Basic/lecture_3.pdf",
-    "CS231n/1. Deep Learning Basic/Lecture 2 Image Classification with Linear Classifiers.md",
-    "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
-    "CS231n/1. Deep Learning Basic/Lecture 4 Neural Networks and Backpropagation.md",
-    "CS231n/1. Deep Learning Basic/附件/Pasted image 20260706144755.png",
-    "CS231n/1. Deep Learning Basic/附件/Pasted image 20260706142140.png",
     "CS231n/index.md",
-    "1. Deep Learning Basic/Lecture 2 Image Classification with Linear Classifiers.md",
-    "CS70/index.md",
-    "CS70/Lecture/Lecture 6 Graphs 2/2. Planar Graphs and Euler's Formula.md",
-    "1. Deep Learning Basic/Lecture 2 Image Classification with Linear Classifiers 2.md",
-    "1. Deep Learning Basic/Lecture 2 Image Classification with Linear Classifiers 1.md",
-    "CS231n/Lecture 1 导论/导论.md",
-    "1. Deep Learning Basic",
-    "CS231n/1. Deep Learning Basic/附件",
-    "CS231n/1. Deep Learning Basic",
-    "数据结构基础 FDS/Homework/期中考错题.md",
-    "机械设计基础/第4章 链传动/选择题.md",
-    "机械设计基础/第4章 链传动/判断题.md",
-    "机械设计基础/第4章 链传动/概念.md",
-    "机械设计基础/第5章 齿轮传动/概念1.md",
-    "机械设计基础/1. 网页上错误的答案在这里更正.md",
-    "机械设计基础/第2章 联接/判断题.md",
-    "机械设计基础/第1章 总论/判断题.md",
-    "机械设计基础/第2章 联接/概念1.md",
-    "数据结构基础 FDS/index.md",
-    "1.这个网站的一些东西/未命名.md",
-    "合并笔记/合并笔记.md",
-    "机械设计基础/轴系改错.md",
-    "课程内容/基础数据结构/ADT, The.md",
-    "附件.md",
-    "水下机器人/attachments",
-    "数据结构基础 FDS/课程内容/基础数据结构/DS07_Segment Tree.pptx",
-    "水下机器人/附件",
-    "水下机器人",
-    "tmp/presentations/graph/texts.txt",
-    "tmp/presentations/graph",
-    "未命名.canvas"
+    "CS231n/1. Deep Learning Basic/Python 和 Numpy.md",
+    "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
+    "CS231n/1. Deep Learning Basic/lecture_3.pdf"
   ]
 }
