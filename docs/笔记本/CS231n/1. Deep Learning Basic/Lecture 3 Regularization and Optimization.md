@@ -1,4 +1,5 @@
-	# 1. Regularization（正则化）
+# 1. Regularization（正则化）
+
 ![](附件/Pasted%20image%2020260706142140.png)
 
 ## 1.1 Regularization 是干什么的
@@ -24,7 +25,9 @@ $$W=[100,-250,80,\dots]$$
     
     因此 $Regularization$ 的作用就是：不要让模型参数太大、太复杂、太极端。
 
-!!! example “看个例子”
+
+
+!!! example "看个例子"
     以下图为例。$f_1$ 不太注重细节，$f_2$ 过于注重细节。虽然在训练数据（蓝色点点）上，$f_2$ 的表现比 $f_1$ 好。但是在测试数据（白色点点）上，明显是 $f_1$ 优于 $f_2$。这就是正则化在起作用。
     ![](附件/Pasted%20image%2020260706144755.png)
 
@@ -42,6 +45,7 @@ $$L1:\ R(W)=\sum_k\sum_l |W_{k,\ l}|$$​
 L2：把所有权重平方再加起来。
 
 $$L_2:\ R(W)=\sum_k\sum_l W_{k,\ l}^2$$
+
 ---
 
 # 2. Optimization（优化）
@@ -91,7 +95,7 @@ $$\min_W L(W)$$
     
     所以每个方向都要算一个导数。这些导数组合在一起，就叫 **gradient（梯度）**：
 
-$$\nabla L(W)= \left[ \frac{\partial L}{\partial w_1}, \frac{\partial L}{\partial w_2}, \frac{\partial L}{\partial w_3}, \dots \right]$$
+    $$\nabla L(W)= \left[ \frac{\partial L}{\partial w_1}, \frac{\partial L}{\partial w_2}, \frac{\partial L}{\partial w_3}, \dots \right]$$
     
     通过上式可以看出，$梯度=每个参数分别对loss的影响$。
     
