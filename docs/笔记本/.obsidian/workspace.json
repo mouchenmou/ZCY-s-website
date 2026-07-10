@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "stm32/4. 系统架构及总线介绍.md",
+                "file": "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4. 系统架构及总线介绍"
+              "title": "Lecture 3 Regularization and Optimization"
             }
           }
         ]
@@ -174,22 +174,23 @@
   },
   "active": "6ea370a79deb29f9",
   "lastOpenFiles": [
+    "stm32/7. stm32定时器介绍.md",
+    "stm32/附件/Pasted image 20260710114939.png",
+    "stm32/附件/Pasted image 20260710114842.png",
+    "stm32/6. GPIO.md",
+    "stm32/5. stm32时钟源.md",
+    "stm32/附件/Pasted image 20260709231634.png",
+    "stm32/4. 系统架构及总线介绍.md",
+    "stm32/附件/Pasted image 20260709223141.png",
+    "stm32/附件/Pasted image 20260709185131.png",
     "stm32/附件/Pasted image 20260709113405.png",
     "stm32/附件/Pasted image 20260709112932.png",
     "stm32/3. 工程创建与配置.md",
-    "stm32/4. 系统架构及总线介绍.md",
     "stm32/附件/Pasted image 20260709110852.png",
     "stm32/2. 固件库介绍.md",
     "stm32/附件/Pasted image 20260709100010.png",
     "stm32/附件/Pasted image 20260709094503.png",
-    "stm32/附件/Pasted image 20260709094352.png",
-    "stm32/附件/Pasted image 20260709092441.png",
-    "stm32/附件/Pasted image 20260709091855.png",
-    "stm32/附件/Pasted image 20260709091758.png",
-    "stm32/4. GPIO.md",
-    "stm32/附件/Pasted image 20260708222737.png",
     "stm32/1.  stm32芯片介绍.md",
-    "stm32/附件/Pasted image 20260708221100.png",
     "stm32/附件",
     "做笔记的规则.md",
     "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",

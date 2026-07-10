@@ -357,9 +357,7 @@ RMSProp 的方法是，==给每个参数单独调学习率==。
 
     其中：
 
-$$
-g_t=\nabla L(W_t)
-$$
+    $$g_t=\nabla L(W_t)$$
 
     Momentum 更像是：
     
