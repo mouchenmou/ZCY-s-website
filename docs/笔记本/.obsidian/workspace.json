@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
+                "file": "stm32/8. 串口.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 3 Regularization and Optimization"
+              "title": "8. 串口"
             }
           }
         ]
@@ -174,7 +174,22 @@
   },
   "active": "6ea370a79deb29f9",
   "lastOpenFiles": [
+    "stm32/附件/Pasted image 20260711111614.png",
     "stm32/7. stm32定时器介绍.md",
+    "CS70/Lecture/Lecture 21 Random Variables II (Variance and Covariance)/n17.pdf",
+    "CS70/Lecture/Lecture 11 Error Correcting Codes/n9.pdf",
+    "CS70/Lecture/Lecture 10 Polynomials, Secret Sharing/n8.pdf",
+    "CS70/Lecture/Lecture 16 Introduction to Discrete Probability/n13.pdf",
+    "CS70/Lecture/Lecture 14 Counting I/n12.pdf",
+    "CS70/Lecture/Lecture 7 Modular Arithmetic/Lecture 7 Modular Arithmetic.md",
+    "CS70/Lecture/Lecture 8 Euclid's Algorithm, FLT, CRT/Euclid's Algorithm, FLT, CRT.md.md",
+    "stm32/8. 串口.md",
+    "stm32/附件/Pasted image 20260711104218.png",
+    "CS231n/1. Deep Learning Basic/Lecture 2 Image Classification with Linear Classifiers.md",
+    "CS231n/1. Deep Learning Basic/附件/Pasted image 20260706202601.png",
+    "CS231n/1. Deep Learning Basic/附件/Pasted image 20260704213356.png",
+    "CS231n/1. Deep Learning Basic/附件/Pasted image 20260704212153.png",
+    "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
     "stm32/附件/Pasted image 20260710114939.png",
     "stm32/附件/Pasted image 20260710114842.png",
     "stm32/6. GPIO.md",
@@ -184,16 +199,11 @@
     "stm32/附件/Pasted image 20260709223141.png",
     "stm32/附件/Pasted image 20260709185131.png",
     "stm32/附件/Pasted image 20260709113405.png",
-    "stm32/附件/Pasted image 20260709112932.png",
     "stm32/3. 工程创建与配置.md",
-    "stm32/附件/Pasted image 20260709110852.png",
     "stm32/2. 固件库介绍.md",
-    "stm32/附件/Pasted image 20260709100010.png",
-    "stm32/附件/Pasted image 20260709094503.png",
     "stm32/1.  stm32芯片介绍.md",
     "stm32/附件",
     "做笔记的规则.md",
-    "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
     "stm32",
     "CS231n/1. Deep Learning Basic/lecture_3.pdf",
     "CS231n/1. Deep Learning Basic/Python 和 Numpy.md",
