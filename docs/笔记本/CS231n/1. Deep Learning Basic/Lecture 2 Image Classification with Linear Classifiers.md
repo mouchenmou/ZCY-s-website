@@ -218,7 +218,162 @@ $Cross-validation$ 即**交叉验证**
 !!! example "举个例子"
     ![](附件/Pasted%20image%2020260705012149.png)
 
-#### 2.2.2 Softmax Classifier (Multinomial Logistic Regression)
+#### 2.2.2 SVM Classifier (Multiclass SVM Loss)
+
+SVM 的全称是 **Support Vector Machine**。它不是直接输出概率，而是希望：
+
+> 正确类别的分数不仅要比错误类别高，而且要至少高出一个安全间隔（margin）。
+
+假设第 $i$ 个样本是 $x_i$，真实类别是 $y_i$，线性分类器输出每一类的分数：
+
+$$s=f(x_i;W)$$
+
+其中：
+
+$$s_j=f(x_i;W)_j$$
+
+表示第 $j$ 个类别的分数，而正确类别的分数是：
+
+$$s_{y_i}=f(x_i;W)_{y_i}$$
+
+##### 2.2.2.1 Multiclass SVM Loss 的公式
+
+对单个样本，SVM loss 定义为：
+
+$$L_i=\sum_{j\neq y_i}\max(0,\ s_j-s_{y_i}+\Delta)$$
+
+其中 $\Delta$ 是 margin，通常取：
+
+$$\Delta=1$$
+
+所以也可以写成：
+
+$$L_i=\sum_{j\neq y_i}\max(0,\ s_j-s_{y_i}+1)$$
+
+这个公式的意思是：对每一个错误类别 $j$，都检查它的分数 $s_j$ 有没有离正确类别分数 $s_{y_i}$ 足够远。
+
+如果：
+
+$$s_{y_i}\ge s_j+\Delta$$
+
+说明正确类别已经比这个错误类别至少高出 margin，这个错误类别就不会产生损失：
+
+$$\max(0,\ s_j-s_{y_i}+\Delta)=0$$
+
+如果：
+
+$$s_{y_i}<s_j+\Delta$$
+
+说明正确类别虽然可能比错误类别高，但是高得还不够；或者干脆比错误类别低。此时就会产生损失：
+
+$$s_j-s_{y_i}+\Delta>0$$
+
+也就是说，SVM 不满足于“正确类别分数最高”，它还要求“正确类别分数要明显高”。
+
+##### 2.2.2.2 举个例子
+
+假设有 3 个类别：cat、car、frog。某张图片真实类别是 cat，分类器输出的分数是：
+
+$$s=[13,\ -7,\ 11]$$
+
+其中：
+
+$$s_{cat}=13,\quad s_{car}=-7,\quad s_{frog}=11$$
+
+取 $\Delta=10$。
+
+对于 car：
+
+$$\max(0,\ s_{car}-s_{cat}+10)=\max(0,\ -7-13+10)=0$$
+
+因为 cat 的分数已经比 car 高很多，所以 car 不产生损失。
+
+对于 frog：
+
+$$\max(0,\ s_{frog}-s_{cat}+10)=\max(0,\ 11-13+10)=8$$
+
+虽然 cat 的分数 $13$ 比 frog 的分数 $11$ 高，但是只高了 $2$，没有达到 margin $10$，所以仍然会产生损失。
+
+因此这个样本的 SVM loss 是：
+
+$$L_i=0+8=8$$
+
+##### 2.2.2.3 对整个训练集的 Loss
+
+对整个训练集，我们会把所有样本的 loss 取平均：
+
+$$L=\frac{1}{N}\sum_i L_i$$
+
+实际训练时还会加上正则化项：
+
+$$L=\frac{1}{N}\sum_i\sum_{j\neq y_i}\max(0,\ f(x_i;W)_j-f(x_i;W)_{y_i}+1)+\alpha R(W)$$
+
+其中：
+
+- 第一项是 data loss，用来衡量分类结果是否正确。
+- 第二项是 regularization loss，用来防止 $W$ 变得过大，降低过拟合。
+- $\alpha$ 控制正则化项的重要程度。
+
+##### 2.2.2.4 为什么叫 Hinge Loss
+
+SVM loss 里面最关键的部分是：
+
+$$\max(0,\ s_j-s_{y_i}+\Delta)$$
+
+这个函数长得像一个“折页”：
+
+- 当 $s_j-s_{y_i}+\Delta\le 0$ 时，loss 为 0。
+- 当 $s_j-s_{y_i}+\Delta>0$ 时，loss 按线性方式增加。
+
+所以它也叫 **hinge loss**。
+
+从图像上看，它不是一条光滑曲线，而是由几段直线拼起来的。即，SVM loss 具有 **piecewise-linear** 的结构，也就是分段线性结构。
+
+这件事很重要，因为它说明：
+
+1. SVM loss 大部分地方可以求梯度。
+2. 在折点处严格来说不可导，因为 $\max(0,\cdot)$ 在拐角处没有唯一梯度。
+3. 实际训练时，我们通常使用 **subgradient**，也就是次梯度。
+
+在这门课里，很多时候会把 gradient 和 subgradient 混着说，因为对实现梯度下降来说，它们的作用很接近。
+
+##### 2.2.2.5 SVM Loss 的梯度直觉
+
+对某个样本 $x_i$，如果某个错误类别 $j$ 违反了 margin：
+
+$$s_j-s_{y_i}+\Delta>0$$
+
+那么这个错误类别对 loss 有贡献。为了降低 loss，我们希望：
+
+- 降低错误类别 $j$ 的分数 $s_j$。
+- 提高正确类别 $y_i$ 的分数 $s_{y_i}$。
+
+因为：
+
+$$s_j=w_j^Tx_i$$
+
+所以如果错误类别 $j$ 违反了 margin，那么它对应的权重梯度是：
+
+$$\nabla_{w_j}L_i=x_i$$
+
+直观理解：梯度下降会让 $w_j$ 往远离 $x_i$ 的方向走，从而降低错误类别的分数。
+
+对于正确类别 $y_i$，假设一共有 $k$ 个错误类别违反了 margin，那么：
+
+$$\nabla_{w_{y_i}}L_i=-k x_i$$
+
+直观理解：如果有很多错误类别都离正确类别太近，那么正确类别的权重就要更用力地朝 $x_i$ 的方向调整，让正确类别的分数升上去。
+
+##### 2.2.2.6 SVM 和 Softmax 的区别
+
+SVM 和 Softmax 都可以用来训练线性分类器，但它们看问题的角度不同：
+
+| 方法 | 关注点 | 输出含义 | Loss 的想法 |
+|---|---|---|---|
+| SVM | margin | 分数，不是概率 | 正确类分数要比错误类至少高出 $\Delta$ |
+| Softmax | probability | 概率分布 | 正确类概率越接近 1 越好 |
+
+#### 2.2.3 Softmax Classifier (Multinomial Logistic Regression)
 
 $$s=f(x_i\ ;\ W)$$
 
@@ -293,7 +448,7 @@ $$s_j = w_j^T x + b_j$$​
 
 也就是说，输入图片 $x$ 和类别模板 $w_j$​ 做匹配，匹配得越好，这个类别分数越高。
 
-##### 2.4.2.2 slide上有一句话：One template per class. 
+##### 2.4.2.2 One template per class. 
 意思是：线性分类起给每个类别都学了一张模版图。
 
 那么问题来了，模版是何意味？
