@@ -14,8 +14,8 @@ Stanford 的 CV 入门课，由计算机领域的巨佬李飞飞院士领衔教�
 - [Lecture 2: Image Classification with Linear Classifiers](./1.%20Deep%20Learning%20Basic/Lecture%202%20Image%20Classification%20with%20Linear%20Classifiers.md)
 - [Python 和 Numpy](./1.%20Deep%20Learning%20Basic/Python%20和%20Numpy.md)
 - [Lecture 3: Regularization and Optimization](./1.%20Deep%20Learning%20Basic/Lecture%203%20Regularization%20and%20Optimization.md)
+- [Lecture 4: Neural Networks and Backpropagation](./1.%20Deep%20Learning%20Basic/Lecture%204%20Neural%20Networks%20and%20Backpropagation.md)
 
 ---
 
 *持续更新中……*
-
