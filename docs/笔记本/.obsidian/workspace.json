@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "写CV.md",
+                "file": "CS231n/2. Perceiving and Understanding the Visual World/Lecture 5 Image Classification with CNNs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "写CV"
+              "title": "Lecture 5 Image Classification with CNNs"
             }
           },
           {
@@ -217,12 +217,20 @@
   },
   "active": "d5dbb0dc38e8169a",
   "lastOpenFiles": [
+    "写CV.md",
+    "CS231n/2. Perceiving and Understanding the Visual World/Lecture 5 Image Classification with CNNs.md",
+    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260713231746.png",
+    "WSL/Conda 环境、项目目录与 Python 解释器的关系.md",
+    "WSL/C盘迁移到D盘.md",
+    "Claude code使用/WSL Claude Code 国内安装教程以及Ubuntu的重新配置.md",
+    "Claude code使用/MacOS Claude Code 国内安装教程.md",
+    "Claude code使用/Windows Claude Code安装教程.md",
+    "Codex/Codex安装.md",
+    "WSL",
     "数据结构基础 FDS/补充知识/Bellman-Ford算法与SPFA算法.md",
     "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
-    "写CV.md",
     "做笔记的规则.md",
     "数据结构基础 FDS/补充知识/网络流.md",
-    "CS231n/2. Perceiving and Understanding the Visual World/Lecture 5 Image Classification with CNNs.md",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture5_平移等变性.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture5_MaxPooling.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture5_卷积层总结.png",
@@ -232,7 +240,6 @@
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture5_卷积层学到的特征.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture5_多卷积核与特征图.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture5_卷积核贯穿输入深度.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture5_CNN整体结构.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件",
     "CS231n/index.md",
     "CS231n/2. Perceiving and Understanding the Visual World/lecture_5.pdf",
@@ -254,9 +261,6 @@
     "stm32/6. GPIO.md",
     "stm32/5. stm32时钟源.md",
     "stm32/4. 系统架构及总线介绍.md",
-    "stm32/3. 工程创建与配置.md",
-    "stm32/2. 固件库介绍.md",
-    "stm32/1.  stm32芯片介绍.md",
-    "stm32/附件"
+    "stm32/3. 工程创建与配置.md"
   ]
 }

@@ -121,6 +121,9 @@ nav:
     - Obsidian中接入AI:
       - Gemini Cli接入Obsidian: 笔记本/Obsidian接入AI/Geimini Cli接入Obsidian.md
       - Claude code接入Obsidian: 笔记本/Obsidian接入AI/Claude Code接入Obsidian.md
+    - WSL:
+      - C盘迁移到D盘: 笔记本/WSL/C盘迁移到D盘.md
+      - Conda 环境、项目目录与 Python 解释器的关系: 笔记本/WSL/Conda 环境、项目目录与 Python 解释器的关系.md
     - 双端操作Blog: 笔记本/合并笔记/合并笔记.md
   - Undergraduate Study:
     - undergraduate-study/index1.md
