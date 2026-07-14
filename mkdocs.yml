@@ -1,4 +1,4 @@
-site_name: ZCY's blog
+﻿site_name: ZCY's blog
 site_description: 记录学习过程中的笔记和思考
 site_author: 某晨某
 site_url: https://mouchenmou.github.io/ZCY-s-website/
@@ -235,6 +235,7 @@ nav:
       - Lecture 19 Attributes:
         - 1. Class Attributes: 笔记本/CS61A/Lecture 19 Attributes/1. Class Attributes.md
         - 2. Method calls: 笔记本/CS61A/Lecture 19 Attributes/2. Method calls.md
+      - Lecture 20 Inheritance: 笔记本/CS61A/Lecture 20 Inheritance/Lecture 20 Inheritance.md
        
     - CS61B 数据结构:
       - 笔记本/CS61B/index.md
@@ -368,6 +369,8 @@ nav:
         - Lecture 2 Image Classification with Linear Classifiers: 笔记本/CS231n/1. Deep Learning Basic/Lecture 2 Image Classification with Linear Classifiers.md
         - Lecture 3 Regularization and Optimization: 笔记本/CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md
         - Lecture 4 Neural Networks and Backpropagation: 笔记本/CS231n/1. Deep Learning Basic/Lecture 4 Neural Networks and Backpropagation.md
+      - Part 2 Perceiving and Understanding the Visual World:
+        - Lecture 5 Image Classification with CNNs: 笔记本/cs231n/2. Perceiving and Understanding the Visual World/Lecture 5 Image Classification with CNNs.md
     - CSAPP 深入理解计算机系统:
       - 笔记本/深入理解计算机系统/index.md
       - 第1章 计算机系统漫游:
