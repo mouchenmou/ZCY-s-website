@@ -25,14 +25,12 @@
             "id": "97ed1bc34f9b08ca",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
-                "mode": "source",
-                "source": false
+                "file": "CS231n/2. Perceiving and Understanding the Visual World/lecture_5.pdf"
               },
-              "icon": "lucide-file",
-              "title": "4. 图"
+              "icon": "lucide-file-text",
+              "title": "lecture_5"
             }
           },
           {
@@ -217,8 +215,10 @@
   },
   "active": "d5dbb0dc38e8169a",
   "lastOpenFiles": [
-    "写CV.md",
+    "CS231n/2. Perceiving and Understanding the Visual World/lecture_5.pdf",
+    "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 5 Image Classification with CNNs.md",
+    "写CV.md",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260713231746.png",
     "WSL/Conda 环境、项目目录与 Python 解释器的关系.md",
     "WSL/C盘迁移到D盘.md",
@@ -228,7 +228,6 @@
     "Codex/Codex安装.md",
     "WSL",
     "数据结构基础 FDS/补充知识/Bellman-Ford算法与SPFA算法.md",
-    "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
     "做笔记的规则.md",
     "数据结构基础 FDS/补充知识/网络流.md",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture5_平移等变性.png",
@@ -242,7 +241,6 @@
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture5_卷积核贯穿输入深度.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件",
     "CS231n/index.md",
-    "CS231n/2. Perceiving and Understanding the Visual World/lecture_5.pdf",
     "CS231n/1. Deep Learning Basic/Lecture 2 Image Classification with Linear Classifiers.md",
     "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
     "CS231n/1. Deep Learning Basic/Lecture 4 Neural Networks and Backpropagation.md",
