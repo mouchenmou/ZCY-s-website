@@ -1,7 +1,7 @@
 我原本是把Claude Code安装在Windows原生系统下面的，但是在原生系统下面真的很蠢。。。Claude Code本身就更适配Linux系统。而且把Claude装在主系统中会很危险，搞不好哪天把你电脑搞死了，所以我选择跑路。。。
 
 首先打开Ubuntu，刚打开的时候是这样的：
-![](附件/Pasted%20image%2020260507215446.png)
+![](Pasted%20image%2020260507215446.png)
 提示中提到的“检测到 localhost 代理配置”是一个非常经典的**WSL 网络同步问题**。因为我的 Windows 开了代理，但 WSL 默认是一个独立的虚拟网络，它感知不到 Windows 上的代理，这会导致后续 `npm install` 报错或者 `claude` 无法联网。
 
 为了让 WSL 顺畅地访问网络，最简单的办法是开启 WSL 的“镜像网络”模式：
