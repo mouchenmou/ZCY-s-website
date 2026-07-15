@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS231n/1. Deep Learning Basic/Lecture 4 Neural Networks and Backpropagation.md",
+                "file": "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 4 Neural Networks and Backpropagation"
+              "title": "4. 图"
             }
           },
           {
@@ -55,16 +55,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS61A/Lecture 19 Attributes/2. Method calls.md",
+                "file": "数据结构基础 FDS/补充知识/Bellman-Ford算法与SPFA算法.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2. Method calls"
+              "title": "Bellman-Ford算法与SPFA算法"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -215,21 +214,11 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "97ed1bc34f9b08ca",
+  "active": "6ea370a79deb29f9",
   "lastOpenFiles": [
-    "CS61A/index.md",
-    "CS61A/Lecture 20 Inheritance/Lecture 20 Inheritance.md",
-    "CS61A/Lecture 20 Inheritance/附件/Pasted image 20260714224031.png",
-    "CS61A/Lecture 20 Inheritance/附件/Pasted image 20260714205742.png",
-    "CS61A/Lecture 20 Inheritance/附件",
-    "CS61A/Lecture 13/Lecture 13 Data Abstraction.md",
-    "CS61A/Lecture 16/Lecture 16 Iterators.md",
-    "CS61A/Lecture 17/Lecture 17 Generators.md",
-    "CS61A/Lecture 19 Attributes/1. Class Attributes.md",
-    "CS61A/Lecture 19 Attributes/2. Method calls.md",
-    "数据结构基础 FDS/补充知识/Bellman-Ford算法与SPFA算法.md",
     "CS61A/Lecture 20 Inheritance/19-Inheritance.pdf",
-    "tmp/pdfs/lecture20_pages",
+    "CS61A/Lecture 20 Inheritance/Lecture 20 Inheritance.md",
+    "CS231n/2. Perceiving and Understanding the Visual World/Lecture 5 Image Classification with CNNs.md",
     "tmp/pdfs/lecture20/slide-24.png",
     "tmp/pdfs/lecture20/slide-23.png",
     "tmp/pdfs/lecture20/slide-22.png",
@@ -238,29 +227,39 @@
     "tmp/pdfs/lecture20/slide-19.png",
     "tmp/pdfs/lecture20/slide-18.png",
     "tmp/pdfs/lecture20/slide-17.png",
+    "tmp/pdfs/lecture20/slide-16.png",
+    "tmp/pdfs/lecture20/slide-15.png",
     "tmp/pdfs/lecture20",
     "tmp/pdfs",
     "tmp",
-    "CS61A/Lecture 20 Inheritance/未确认 271271.crdownload",
-    "CS231n/2. Perceiving and Understanding the Visual World/Lecture 5 Image Classification with CNNs.md",
-    "CS231n/index.md",
-    "CS231n/2. Perceiving and Understanding the Visual World/lecture_5.pdf",
+    "CS61A/Lecture 20 Inheritance/附件",
     "CS61A/Lecture 20 Inheritance",
-    "CS61A/Lecture 18/Lecture 18 Object-Oriented Programming.md",
+    "CS231n/2. Perceiving and Understanding the Visual World/lecture_5.pdf",
     "WSL/C盘迁移到D盘.md",
     "WSL/附件",
     "WSL/Conda 环境、项目目录与 Python 解释器的关系.md",
     "写CV.md",
+    "数据结构基础 FDS/补充知识/Bellman-Ford算法与SPFA算法.md",
     "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
     "Claude code使用/WSL Claude Code 国内安装教程以及Ubuntu的重新配置.md",
     "Claude code使用/MacOS Claude Code 国内安装教程.md",
     "Claude code使用/Windows Claude Code安装教程.md",
     "Codex/Codex安装.md",
+    "WSL",
     "做笔记的规则.md",
     "数据结构基础 FDS/补充知识/网络流.md",
+    "CS231n/2. Perceiving and Understanding the Visual World/附件",
+    "CS231n/index.md",
     "CS231n/1. Deep Learning Basic/Lecture 2 Image Classification with Linear Classifiers.md",
     "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
     "CS231n/1. Deep Learning Basic/Lecture 4 Neural Networks and Backpropagation.md",
-    "CS231n/1. Deep Learning Basic/Python 和 Numpy.md"
+    "CS231n/1. Deep Learning Basic/Python 和 Numpy.md",
+    "stm32/8. 串口.md",
+    "stm32/7. stm32定时器介绍.md",
+    "CS70/Lecture/Lecture 7 Modular Arithmetic/Lecture 7 Modular Arithmetic.md",
+    "CS70/Lecture/Lecture 8 Euclid's Algorithm, FLT, CRT/Euclid's Algorithm, FLT, CRT.md.md",
+    "stm32/6. GPIO.md",
+    "stm32/5. stm32时钟源.md",
+    "stm32/4. 系统架构及总线介绍.md"
   ]
 }
