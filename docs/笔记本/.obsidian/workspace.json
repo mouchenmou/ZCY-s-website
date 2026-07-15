@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS61A/Lecture 20 Inheritance/Lecture 20 Inheritance.md",
+                "file": "CS231n/1. Deep Learning Basic/Python 和 Numpy.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 20 Inheritance"
+              "title": "Python 和 Numpy"
             }
           },
           {
@@ -216,9 +216,9 @@
   },
   "active": "6ea370a79deb29f9",
   "lastOpenFiles": [
-    "CS61A/Lecture 20 Inheritance/19-Inheritance.pdf",
-    "CS61A/Lecture 20 Inheritance/Lecture 20 Inheritance.md",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 5 Image Classification with CNNs.md",
+    "CS61A/Lecture 20 Inheritance/Lecture 20 Inheritance.md",
+    "CS61A/Lecture 20 Inheritance/19-Inheritance.pdf",
     "tmp/pdfs/lecture20/slide-24.png",
     "tmp/pdfs/lecture20/slide-23.png",
     "tmp/pdfs/lecture20/slide-22.png",

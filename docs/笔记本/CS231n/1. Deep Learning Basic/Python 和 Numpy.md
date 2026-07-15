@@ -1,27 +1,6 @@
 
 来源：[CS231n Python Numpy Tutorial](https://cs231n.github.io/python-numpy-tutorial/)
 
-> 这份笔记是对原英文教程的中文整理版，覆盖原页面的主要知识点、章节顺序、关键代码和学习提醒；不是逐字逐句的全文翻译。
-
-## 目录
-
-- [[#Jupyter 和 Colab Notebook]]
-- [[#Python]]
-  - [[#Python 版本]]
-  - [[#基本数据类型]]
-  - [[#容器]]
-  - [[#函数]]
-  - [[#类]]
-- [[#NumPy]]
-  - [[#数组]]
-  - [[#数组索引]]
-  - [[#数据类型]]
-  - [[#数组数学]]
-  - [[#广播]]
-- [[#SciPy]]
-- [[#Matplotlib]]
-- [[#补充说明：为什么有些输出不是固定的]]
-
 ## Jupyter 和 Colab Notebook
 
 CS231n 的作业主要使用 Python。Python 本身是通用编程语言；配合 `numpy`、`scipy`、`matplotlib` 这些库之后，它会变成非常适合科学计算和机器学习实验的环境。
