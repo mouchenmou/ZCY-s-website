@@ -38,6 +38,7 @@ CS61 系列是伯克利 CS 专业的入门课，其中：
     - [1. Class Attributes](Lecture%2019%20Attributes/1.%20Class%20Attributes.md)
     - [2. Method calls](Lecture%2019%20Attributes/2.%20Method%20calls.md)
 - [Lecture 20 Inheritance](Lecture%2020%20Inheritance/Lecture%2020%20Inheritance.md)
+- [Lecture 21 Representation](Lecture%2021%20Representation/Lecture%2021%20Representation.md)
 
 ### Lab
 
