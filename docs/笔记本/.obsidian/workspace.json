@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS61A/Lecture 21 Representation/Lecture 21 Representation.md",
+                "file": "OpenCV/第二章 图像基本操作/3. ROI区域.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 21 Representation"
+              "title": "3. ROI区域"
             }
           },
           {
@@ -216,8 +216,15 @@
   },
   "active": "6ea370a79deb29f9",
   "lastOpenFiles": [
-    "CS61A/Lecture 21 Representation/20-Representation_1pp.pdf",
+    "OpenCV/第二章 图像基本操作/2. 视频的读取与处理.md",
+    "OpenCV/第二章 图像基本操作/3. ROI区域.md",
+    "OpenCV/第二章 图像基本操作/1. 计算机眼中的图像.md",
+    "OpenCV/第二章 图像基本操作/附件/Pasted image 20260715225308.png",
+    "OpenCV/第二章 图像基本操作/附件",
     "CS61A/Lecture 21 Representation/Lecture 21 Representation.md",
+    "OpenCV/第二章 图像基本操作",
+    "OpenCV",
+    "CS61A/Lecture 21 Representation/20-Representation_1pp.pdf",
     "CS61A/Lecture 21 Representation/附件/Pasted image 20260715212103.png",
     "CS61A/Lecture 21 Representation/附件",
     "CS61B/Lecture 1 Intro, Hello World Java/Intro 1 Study Guide.md",
@@ -235,12 +242,8 @@
     "tmp/pdfs/lecture20/slide-19.png",
     "tmp/pdfs/lecture20/slide-18.png",
     "tmp/pdfs/lecture20/slide-17.png",
-    "tmp/pdfs/lecture20/slide-16.png",
     "tmp/pdfs/lecture20",
     "tmp/pdfs",
-    "tmp",
-    "CS61A/Lecture 20 Inheritance/附件",
-    "CS61A/Lecture 20 Inheritance",
     "WSL/C盘迁移到D盘.md",
     "WSL/Conda 环境、项目目录与 Python 解释器的关系.md",
     "写CV.md",
@@ -258,8 +261,6 @@
     "CS231n/1. Deep Learning Basic/Lecture 4 Neural Networks and Backpropagation.md",
     "stm32/8. 串口.md",
     "stm32/7. stm32定时器介绍.md",
-    "CS70/Lecture/Lecture 7 Modular Arithmetic/Lecture 7 Modular Arithmetic.md",
-    "CS70/Lecture/Lecture 8 Euclid's Algorithm, FLT, CRT/Euclid's Algorithm, FLT, CRT.md.md",
-    "stm32/6. GPIO.md"
+    "CS70/Lecture/Lecture 7 Modular Arithmetic/Lecture 7 Modular Arithmetic.md"
   ]
 }
