@@ -29,7 +29,7 @@
 
 ```Python
     a=[10]
-    b=a
+    b=[10]
     a is b # 会返回False，因为a和b的对象不同
     a == b # 会返回True，因为a和b的值相等
 ```

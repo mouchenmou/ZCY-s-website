@@ -21,65 +21,7 @@ Lecture 18 到 Lecture 20 主要在讨论对象里面保存什么属性、如何
 
 ---
 
-## 2. 多个对象之间的组合
-
-Lab 6 中有一道题目。这里一共有三种对象：
-
-1. `Email` 保存邮件内容、发送者和收件人的名字。
-2. `Server` 保存所有已经注册的 `Client`。
-3. `Client` 保存自己的收件箱以及它连接的 `Server`。
-
-```python
-class Email:
-    def __init__(self, msg, sender, recipient_name):
-        self.msg = msg
-        self.sender = sender
-        self.recipient_name = recipient_name
-
-
-class Server:
-    def __init__(self):
-        self.clients = {}
-
-    def send(self, email):
-        self.clients[email.recipient_name].inbox.append(email)
-
-
-class Client:
-    def __init__(self, server, name):
-        self.inbox = []
-        self.server = server
-        self.name = name
-```
-
-最重要的是 `send` 中的这一行：
-
-```python
-self.clients[email.recipient_name].inbox.append(email)
-```
-
-它可以从左往右拆开：
-
-1. `self` 是当前的 `Server`。
-2. `self.clients` 是一个 dictionary，保存 `名字 -> Client 实例` 的映射。
-3. `email.recipient_name` 得到收件人的名字。
-4. `self.clients[email.recipient_name]` 用名字找到对应的 `Client` 实例。
-5. `.inbox` 找到这个 Client 的收件箱列表。
-6. `.append(email)` 把邮件对象放进列表。
-
-!!! explanation "为什么 dictionary 中保存的是 Client 实例？"
-    如果 dictionary 只保存收件人的名字，那么 Server 最后只能找到一个 string，无法访问收件人的 `inbox`。
-
-    保存 Client 实例之后，查找得到的是一个真正的对象，因此可以继续使用 dot expression 访问它的属性：
-
-    ```python
-    client = self.clients[email.recipient_name]
-    client.inbox.append(email)
-    ```
-
----
-
-## 3. String Representations
+## 2. String Representations
 
 在 Python 中，每个对象都有两种 string representation（字符串表示）：
 
@@ -135,7 +77,7 @@ eval(repr(half))
 
 ---
 
-## 4. Python 在什么时候使用 `str` 和 `repr`
+## 3. Python 在什么时候使用 `str` 和 `repr`
 
 ### 在交互式解释器中直接输入对象
 
@@ -161,7 +103,7 @@ Fraction(1, 2)
 
 ---
 
-## 5. `repr`、`str` 与对应的特殊方法
+## 4. `repr`、`str` 与对应的特殊方法
 
 !!! explanation "我的疑问"
     ### 我的疑问：`
@@ -215,7 +157,7 @@ Fraction(1, 2)
 
     至于最后怎样显示，由 `x` 所属的 class 中定义的 `__repr__` 决定。
 
-### 5.1 如果只定义普通的 `repr` 方法会怎样？
+### 如果只定义普通的 `repr` 方法会怎样？
 
 我们当然可以自己定义一个名字叫 `repr` 的普通方法：
 
@@ -285,7 +227,7 @@ repr(tom)
 
 ---
 
-## 6. Polymorphic Functions
+## 5. Polymorphic Functions
 
 Polymorphic function（多态函数）指的是：**同一个 function 可以处理许多不同类型的对象，具体行为由对象所属的 class 决定。**
 
@@ -307,7 +249,7 @@ repr(Fraction(1, 2))
 
 ---
 
-### 7. 为什么 `repr(x)` 使用 `type(x).__repr__(x)`？
+### 6. 为什么 `repr(x)` 使用 `type(x).__repr__(x)`？
 
 如果让我们自己近似实现 built-in function `repr`，下面哪一种写法正确？
 ![](附件/Pasted%20image%2020260715212103.png)
@@ -411,9 +353,9 @@ type(x).__repr__(x)
 
 ---
 
-## 8. Interface
+## 7. Interface
 
-### 8.1 接口的定义
+### 7.1 接口的定义
 
 在一段程序中，好几个类可以定义一些**名称相同、用途相同的方法**。
 
@@ -447,7 +389,7 @@ Cat().speak()   # "喵喵"
 
 > 不同类中这个方法的具体代码不需要完全相同，只需要它们表示的功能相同。
 
-## 8.2 Python 内置的接口
+## 7.2 Python 内置的接口
 
 有些接口是 Python 提前规定好的。
 
@@ -462,6 +404,6 @@ __len__
 
 这些方法名有特殊含义，Python 会在特定情况下自动调用它们。
 
-## 8.3 我们也可以自己定义接口
+## 7.3 我们也可以自己定义接口
 
-我们刚刚在8.1中就自己定义了speak这个接口。
+我们刚刚在7.3中就自己定义了speak这个接口。

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OpenCV/第二章 图像基本操作/3. ROI区域.md",
+                "file": "CS61A/Lecture 22 Composition/Lecture 22 Composition.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3. ROI区域"
+              "title": "Lecture 22 Composition"
             }
           },
           {
@@ -216,12 +216,23 @@
   },
   "active": "6ea370a79deb29f9",
   "lastOpenFiles": [
-    "OpenCV/第二章 图像基本操作/2. 视频的读取与处理.md",
+    "CS61A/Lecture 22 Composition/附件/Pasted image 20260716235644.png",
+    "CS61A/Lecture 22 Composition/附件/Pasted image 20260716232917.png",
+    "CS61A/Lecture 22 Composition/附件/Pasted image 20260716211805.png",
+    "CS61A/Lecture 22 Composition/附件/Pasted image 20260716203242.png",
+    "CS61A/Lecture 15/Lecture 15 Mutability.md",
+    "CS61A/Lecture 22 Composition/Lecture 22 Composition.md",
+    "CS61A/Lecture 22 Composition/附件/Pasted image 20260716122035.png",
+    "CS61A/Lecture 22 Composition/附件",
+    "tmp/22-Composition_1pp.pdf",
+    "README.md",
+    "CS61A/Lecture 21 Representation/Lecture 21 Representation.md",
+    "CS61A/Lecture 22 Composition",
     "OpenCV/第二章 图像基本操作/3. ROI区域.md",
+    "OpenCV/第二章 图像基本操作/2. 视频的读取与处理.md",
     "OpenCV/第二章 图像基本操作/1. 计算机眼中的图像.md",
     "OpenCV/第二章 图像基本操作/附件/Pasted image 20260715225308.png",
     "OpenCV/第二章 图像基本操作/附件",
-    "CS61A/Lecture 21 Representation/Lecture 21 Representation.md",
     "OpenCV/第二章 图像基本操作",
     "OpenCV",
     "CS61A/Lecture 21 Representation/20-Representation_1pp.pdf",
@@ -233,17 +244,10 @@
     "CS61A/Lecture 21 Representation",
     "CS231n/1. Deep Learning Basic/Python 和 Numpy.md",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 5 Image Classification with CNNs.md",
-    "CS61A/Lecture 20 Inheritance/19-Inheritance.pdf",
     "tmp/pdfs/lecture20/slide-24.png",
     "tmp/pdfs/lecture20/slide-23.png",
     "tmp/pdfs/lecture20/slide-22.png",
     "tmp/pdfs/lecture20/slide-21.png",
-    "tmp/pdfs/lecture20/slide-20.png",
-    "tmp/pdfs/lecture20/slide-19.png",
-    "tmp/pdfs/lecture20/slide-18.png",
-    "tmp/pdfs/lecture20/slide-17.png",
-    "tmp/pdfs/lecture20",
-    "tmp/pdfs",
     "WSL/C盘迁移到D盘.md",
     "WSL/Conda 环境、项目目录与 Python 解释器的关系.md",
     "写CV.md",
@@ -257,10 +261,6 @@
     "数据结构基础 FDS/补充知识/网络流.md",
     "CS231n/index.md",
     "CS231n/1. Deep Learning Basic/Lecture 2 Image Classification with Linear Classifiers.md",
-    "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
-    "CS231n/1. Deep Learning Basic/Lecture 4 Neural Networks and Backpropagation.md",
-    "stm32/8. 串口.md",
-    "stm32/7. stm32定时器介绍.md",
-    "CS70/Lecture/Lecture 7 Modular Arithmetic/Lecture 7 Modular Arithmetic.md"
+    "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md"
   ]
 }
