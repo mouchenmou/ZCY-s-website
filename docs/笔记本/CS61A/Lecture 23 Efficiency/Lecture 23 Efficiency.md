@@ -78,6 +78,10 @@ def memo(f):
     return memoized
 ```
 
+
+这里有点太难理解了，实在是不好解释清楚。总之严格按照函数所在的环境去分析，是可以分析出来的。
+![](附件/Pasted%20image%2020260718000150.png)
+
 ---
 
 ## 3. Exponention
