@@ -18,6 +18,7 @@ Stanford 的 CV 入门课，由计算机领域的巨佬李飞飞院士领衔教�
 
 ### Part 2: Perceiving and Understanding the Visual World
 - [Lecture 5 Image Classification with CNNs](./2.%20Perceiving%20and%20Understanding%20the%20Visual%20World/Lecture%205%20Image%20Classification%20with%20CNNs.md)
+- [Lecture 6 CNN Architectures](./2.%20Perceiving%20and%20Understanding%20the%20Visual%20World/Lecture%206%20CNN%20Architectures.md)
 
 ---
 

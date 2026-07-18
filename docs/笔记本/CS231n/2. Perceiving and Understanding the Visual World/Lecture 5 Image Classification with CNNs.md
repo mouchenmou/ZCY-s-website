@@ -1280,7 +1280,7 @@ $$
 
 最常见的是 **max pooling（最大池化）**。它在每个局部窗口中只保留最大值。
 
-![](附件/Lecture5_MaxPooling.png)
+![](附件/Pasted%20image%2020260718143941.png)
 
 例如，对下面的 $4\times4$ 输入使用 $2\times2$ kernel 和 stride $2$：
 
