@@ -5,9 +5,10 @@
 ### Windows 用户
 1. 进入：C:\Users\你的用户名\.codex
 2. 新建一个文件：.env（注意不是 .env.txt）
-3. 粘贴这两行：
+3. 粘贴这三行：
     - HTTP_PROXY="http://127.0.0.1:端口号"
     - HTTPS_PROXY="http://127.0.0.1:端口号"
+    - ALL_PROXY="http://127.0.0.1:端口号"
 4. 保存后重启 Codex
 ### macOS 用户
 1. 进入：/Users/你的用户名/.codex
@@ -15,6 +16,7 @@
 3. 粘贴同样内容：
     - HTTP_PROXY="http://127.0.0.1:端口号"
     - HTTPS_PROXY="http://127.0.0.1:端口号"
+    - ALL_PROXY="http://127.0.0.1:端口号"
 4. 保存后重启 Codex
 
 去了美国之后得改回来！！！
