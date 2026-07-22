@@ -430,8 +430,9 @@ $$10 \times 3072$$
 
 也就是说，$W$ 里面有 10 行：
 
-$$W= \begin{bmatrix} w_1 \\ w_2 \\ \vdots \\ w_{10} \end{bmatrix}$$​​​
-
+$$
+W= \begin{bmatrix} w_1 \\ w_2 \\ \vdots \\ w_{10} \end{bmatrix}
+$$​​​
 每一行 $w_j$​ 都负责一个类别。
 
 比如：
@@ -444,7 +445,9 @@ w_dog：判断像不像狗
 
 对于第 $j$ 个类别，它的分数是：
 
-$$s_j = w_j^T x + b_j$$​
+$$
+s_j = w_j^T x + b_j
+$$​
 
 也就是说，输入图片 $x$ 和类别模板 $w_j$​ 做匹配，匹配得越好，这个类别分数越高。
 
@@ -508,29 +511,25 @@ $$x = (x_1, x_2)$$
 线性分类器会算两个分数：
 
 $$s_{cat}=w_{cat}^Tx+b_{cat}$$
-$$s_{\text{dog}} = w_{\text{cat}}^T x + b_{dog}$$
 
+$$s_{\text{dog}} = w_{\text{cat}}^T x + b_{dog}$$
 
 如果：
 
 $$s_{\text{cat}} > s_{\text{dog}}$$​
-
 就预测猫。
 
 如果：
 
-$$s_{\text{dog}} > s_{\text{cat}}$$​
+$$s_{\text{dog}} > s_{\text{cat}}$$
 
 就预测狗。
 
 猫和狗的分界线就是两个分数相等的地方，即：
 
 $$s_{\text{cat}} = s_{\text{dog}}$$​
-
 代入：
-
 $$w_{\text{cat}}^T x + b_{\text{cat}} = w_{\text{dog}}^T x + b_{\text{dog}}$$​
-
 整理得：
 
 $$(w_{\text{cat}}-w_{\text{dog}})^T x + (b_{\text{cat}}-b_{\text{dog}}) =0$$

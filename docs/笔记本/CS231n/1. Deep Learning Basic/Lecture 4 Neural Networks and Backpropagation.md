@@ -1043,7 +1043,7 @@ $$
 
 ### 6.2.3 为什么构造这个稀疏矩阵不值得
 
-如果 ReLU 的输入是 $D$ 维，完整 Jacobian 就是 $D\times D$，一共有 $D^2$ 个位置。但最多只有对角线上的 $D$ 个位置可能非零，其余 $D^2-D$ 个位置必定为 $0$。
+如果 ReLU 的输入是 $D$ 维向量，完整 Jacobian 就是 $D\times D$，一共有 $D^2$ 个位置。但最多只有对角线上的 $D$ 个位置可能非零，其余 $D^2-D$ 个位置必定为 $0$。
 
 例如 $D=10000$ 时，完整 Jacobian 有：
 
@@ -1053,12 +1053,37 @@ $$
 
 个位置，但真正有用的信息只有 10000 个输入分别是否大于 $0$。创建一个含一亿个位置的矩阵，再做矩阵乘法，只是为了把梯度中的某些位置变成 $0$，会浪费大量内存和计算时间。
 
-因此，程序直接利用 Jacobian 的结构：
+如果 ReLU 的输入 $x$ 是一个二维的矩阵，比如 $D\times D$ 的矩阵。那么输出 $y$ 也是一个 $D \times D$ 的二维矩阵，这样子的话 **$ReLU'(x)$ 就是一个高维度矩阵了**，凭我的实力是完全没办法求解出来的。
+
+**因此，我们直接利用 Jacobian 的结构：**
 
     # Python
     dx = dout * (x > 0)
 
 其中 $(x>0)$ 是一个和 $x$ 同 shape 的 mask。正数位置是 $1$，负数位置是 $0$。它与上游梯度逐元素相乘，结果和完整的 Jacobian 矩阵乘法完全相同。
+
+!!! example "举个例子"
+	比如 $x$ 是一个 $2\times 2$ 的矩阵，假设：
+	
+	$$x=\begin{bmatrix}
+	-3&7\\
+	-5&2
+	\end{bmatrix},\ d_y=\begin{bmatrix}
+	2&9\\
+	6&3
+	\end{bmatrix}$$
+	
+	则：
+	
+	$$y=ReLU(x)=\begin{bmatrix}
+	0&1\\
+	0&2
+	\end{bmatrix}$$
+	那么就可以直接求得：
+	
+	$$\begin{align*} d_x &= d_y\times (x>0) \\ &= \begin{bmatrix} 2&9\\ 6&3 \end{bmatrix} \times \begin{bmatrix} 0&1\\ 0&1 \end{bmatrix} \\ &= \begin{bmatrix} 0&9\\ 0&3 \end{bmatrix} \end{align*}$$
+	
+	注意：这里的 $\times$ 并不是两个矩阵相乘，而是逐元素相乘。$(x>0)$ 即 $x$ 中大于零的元素为1，小于0的元素为0
 
 ![](附件/Pasted%20image%2020260712230459.png)
 
@@ -1304,6 +1329,67 @@ db = np.sum(dy, axis=0)
 
 之所以要沿 batch 维度求和，是因为同一个 $b$ 被所有 $N$ 个样本共同使用。它通过 $N$ 条路径影响损失，所以这些路径贡献的梯度要相加。
 
+!!! explanation "解析"
+    ### 1. 先看最简单的一维情况
+
+	假设：
+	
+	$$y=xw+b$$
+	
+	因为这里 $b$ 是一个标量。所以：
+	
+	$$\frac{\partial y}{\partial b}=1$$
+	
+	因此：
+	
+	$$\frac{\partial L}{\partial b} = \frac{\partial L}{\partial y}\frac{\partial y}{\partial b}=\frac{\partial L}{\partial y}\times1$$​
+	
+	这很好理解。
+	
+    ---
+    ### 2. 加入batch
+    假设有两个样本：
+
+	$$Y=XW+b$$
+	
+	broadcast 后：
+	
+	$$Y=\begin{bmatrix} y_1\\ y_2 \end{bmatrix} = \begin{bmatrix} x_1W+b\\ x_2W+b \end{bmatrix}$$
+	根据链式法则：
+	
+    $$\begin{align*} \frac{\partial L}{\partial b} &= \frac{\partial L}{\partial y_1}\frac{\partial y_1}{\partial b}+\frac{\partial L}{\partial y_2}\frac{\partial y_2}{\partial b} \\ &= \frac{\partial L}{\partial y_1}\times 1+\frac{\partial L}{\partial y_2}\times 1 \\ &= dY_1+dY_2 \end{align*}$$
+    
+    ---
+    ### 3. 对矩阵形状看一下
+
+	假设有N个样本，一个样本有D个维度，总共M个类别，则：
+	
+	$$\begin{align*} X:\ (N,\ D)\\W:\ (D, \ M) \\ b:\ (M,\ ) \end{align*}$$
+	
+	$$Y=XW+b$$
+
+	以2个样本，3个类别为例：
+	
+	$$Y= \begin{bmatrix} y_{11}&y_{12}&y_{13}\\ y_{21}&y_{22}&y_{23} \end{bmatrix}$$
+	
+	那么b需要broadcast：
+	
+	$$\begin{bmatrix} b_1&b_2&b_3\\ b_1&b_2&b_3 \end{bmatrix}$$
+	
+	现在看 $b_1$​，它影响：
+	
+	$$y_{11},y_{21}$$​
+	所以：
+	
+	$$\frac{\partial L}{\partial b_1} = \frac{\partial L}{\partial y_{11}}\times1 + \frac{\partial L}{\partial y_{21}}\times1$$
+	
+    因此：
+    
+    $$\frac{\partial L}{\partial b}=\begin{bmatrix} \frac{\partial L}{\partial y_{11}}+ \frac{\partial L}{\partial y_{21}},\ \frac{\partial L}{\partial y_{12}}+ \frac{\partial L}{\partial y_{22}}\ , \frac{\partial L}{\partial y_{13}}+ \frac{\partial L}{\partial y_{23}}\end{bmatrix}$$
+    
+    即：
+    
+    $$db=\begin{bmatrix} \sum_i^N dY_{i1}​\ ,\ \sum_i^N dY_{i2}​\ ,...,\ \sum_i^N​dY_{iM}​​ \end{bmatrix}$$
 ---
 
 # 8. 两层神经网络的完整前向与反向传播

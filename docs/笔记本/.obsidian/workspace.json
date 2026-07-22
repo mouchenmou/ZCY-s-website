@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Codex/Codex安装.md",
+                "file": "CS231n/Homework/Homework1/Two-Layer Neural Network.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Codex安装"
+              "title": "Two-Layer Neural Network"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS231n/2. Perceiving and Understanding the Visual World/Lecture 7 Recurrent Neural Networks.md",
+                "file": "CS231n/1. Deep Learning Basic/Lecture 4 Neural Networks and Backpropagation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 7 Recurrent Neural Networks"
+              "title": "Lecture 4 Neural Networks and Backpropagation"
             }
           },
           {
@@ -55,16 +55,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "数据结构基础 FDS/补充知识/Bellman-Ford算法与SPFA算法.md",
+                "file": "CS231n/1. Deep Learning Basic/Lecture 4 Neural Networks and Backpropagation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bellman-Ford算法与SPFA算法"
+              "title": "Lecture 4 Neural Networks and Backpropagation"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -215,12 +215,26 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "97ed1bc34f9b08ca",
+  "active": "b5a5b5935c3b591b",
   "lastOpenFiles": [
+    "CS231n/2. Perceiving and Understanding the Visual World/Lecture 6 CNN Architectures.md",
+    "CS231n/1. Deep Learning Basic/Lecture 4 Neural Networks and Backpropagation.md",
+    "CS231n/Homework/Homework1/Two-Layer Neural Network.md",
     "Codex/Codex安装.md",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 7 Recurrent Neural Networks.md",
+    "CS231n/2. Perceiving and Understanding the Visual World/Lecture 5 Image Classification with CNNs.md",
+    "CS231n/Homework/Homework1/Softmax.md",
+    "数据结构基础 FDS/补充知识/Bellman-Ford算法与SPFA算法.md",
+    "CS231n/1. Deep Learning Basic/Lecture 2 Image Classification with Linear Classifiers.md",
+    "CS231n/Homework/Homework1",
+    "CS231n/Homework",
+    "CS231n/1. Deep Learning Basic/Python 和 Numpy.md",
+    "写CV.md",
+    "附件/Pasted image 20260721174551.png",
+    "附件",
+    "大二短学期总结心得.md",
+    "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260719210941.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/Lecture 6 CNN Architectures.md",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260719193314.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260719192953.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260719183230.png",
@@ -230,37 +244,24 @@
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260719180750.png",
     "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260719150019.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture7_ImageCaptioning公式-084.png",
     "tmp/pdfs/lecture7/lecture7.txt",
     "tmp/pdfs/lecture7",
     "CS231n/2. Perceiving and Understanding the Visual World/lecture_7.pdf",
     "CS231n/2. Perceiving and Understanding the Visual World/lecture_6.pdf",
-    "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
-    "CS231n/1. Deep Learning Basic/Lecture 4 Neural Networks and Backpropagation.md",
-    "CS231n/1. Deep Learning Basic/Lecture 2 Image Classification with Linear Classifiers.md",
     "OpenCV/第二章 图像基本操作/3. ROI区域.md",
-    "大二短学期总结心得.md",
     "tmp/22-Composition_1pp.pdf",
     "README.md",
     "CS61A/Lecture 23 Efficiency/附件",
     "CS61A/Lecture 23 Efficiency/Lecture 23 Efficiency.md",
     "CS61A/Lecture 23 Efficiency",
-    "CS61A/Lecture 22 Composition/附件",
     "CS61A/Lecture 22 Composition/Lecture 22 Composition.md",
-    "CS61A/Lecture 22 Composition",
     "OpenCV/第二章 图像基本操作/2. 视频的读取与处理.md",
     "OpenCV/第二章 图像基本操作/1. 计算机眼中的图像.md",
-    "OpenCV/第二章 图像基本操作/附件",
     "CS61A/Lecture 21 Representation/Lecture 21 Representation.md",
     "CS61B/Lecture 1 Intro, Hello World Java/Intro 1 Study Guide.md",
     "CS61A/Lecture 20 Inheritance/Lecture 20 Inheritance.md",
-    "CS231n/1. Deep Learning Basic/Python 和 Numpy.md",
-    "CS231n/2. Perceiving and Understanding the Visual World/Lecture 5 Image Classification with CNNs.md",
     "WSL/C盘迁移到D盘.md",
     "WSL/Conda 环境、项目目录与 Python 解释器的关系.md",
-    "写CV.md",
-    "数据结构基础 FDS/补充知识/Bellman-Ford算法与SPFA算法.md",
-    "Claude code使用/WSL Claude Code 国内安装教程以及Ubuntu的重新配置.md",
-    "Claude code使用/MacOS Claude Code 国内安装教程.md"
+    "Claude code使用/WSL Claude Code 国内安装教程以及Ubuntu的重新配置.md"
   ]
 }
