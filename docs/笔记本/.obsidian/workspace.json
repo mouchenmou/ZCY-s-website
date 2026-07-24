@@ -55,10 +55,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "CS189 机器学习/Part 5： Advanced Topics/25. AI for Protein Engineering/lec25.pdf"
+                "file": "CS189 机器学习/Part 1： Introduction/3. Machine Learning Mechanics - Terminology and Techniques/03 Machine Learning Mechanics - Terminology and Techniques.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "lec25"
+              "title": "03 Machine Learning Mechanics - Terminology and Techniques"
             }
           }
         ],
@@ -213,19 +213,20 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "2a6816d11ffda768",
+  "active": "b5a5b5935c3b591b",
   "lastOpenFiles": [
-    "CS189 机器学习/Part 2： Supervised Core/5. Intro to Maximum Likelihood Estimation, Multivariate Gaussians, Mixture of Gaussians/lec05.pdf",
-    "CS189 机器学习/Part 6： Applications/26. Guest Lecture on Agents (Online, NOT In Person)",
-    "CS189 机器学习/Part 6： Applications",
-    "CS189 机器学习/Part 1： Introduction/2. Data Tools/02 Data Tools.pdf",
-    "CS189 机器学习/Part 1： Introduction/2. Data Tools",
-    "CS189 机器学习/Part 1： Introduction/3. Machine Learning Mechanics - Terminology and Techniques/03 Machine Learning Mechanics - Terminology and Techniques.pdf",
-    "CS189 机器学习/Part 1： Introduction/3. Machine Learning Mechanics - Terminology and Techniques",
-    "CS189 机器学习/Part 1： Introduction/4. Clustering, Probability Review/04 Clustering, Probability Review.pdf",
-    "CS189 机器学习/Part 1： Introduction/1. Introduction + ML problem framing/01 Introduction + ML problem framing.pdf",
-    "CS189 机器学习/Part 1： Introduction/4. Clustering, Probability Review",
-    "CS189 机器学习/Part 1： Introduction/1. Introduction + ML problem framing",
+    "CS189 机器学习/Homework/HW7/hw7.pdf",
+    "CS189 机器学习/Homework/HW7/未确认 683468.crdownload",
+    "CS189 机器学习/Homework/HW6/hw6.pdf",
+    "CS189 机器学习/Homework/HW6/未确认 921332.crdownload",
+    "CS189 机器学习/Homework/HW5/hw5.pdf",
+    "CS189 机器学习/Homework/HW5/未确认 309357.crdownload",
+    "CS189 机器学习/Homework/HW4/readme.md",
+    "CS189 机器学习/Homework/HW4/新建 文本文档.txt",
+    "CS189 机器学习/Homework/HW4/hw4.pdf",
+    "CS189 机器学习/Homework/HW4/未确认 790640.crdownload",
+    "CS189 机器学习/Homework/HW3/hw3.pdf",
+    "CS189 机器学习/Homework/HW3/未确认 473192.crdownload",
     "CS189 机器学习/index.md",
     "CS231n/Homework/Homework1/Softmax.md",
     "CS231n/1. Deep Learning Basic/Lecture 4 Neural Networks and Backpropagation.md",
@@ -259,7 +260,6 @@
     "OpenCV/第二章 图像基本操作/1. 计算机眼中的图像.md",
     "CS61A/Lecture 21 Representation/Lecture 21 Representation.md",
     "CS61B/Lecture 1 Intro, Hello World Java/Intro 1 Study Guide.md",
-    "CS61A/Lecture 20 Inheritance/Lecture 20 Inheritance.md",
-    "WSL/C盘迁移到D盘.md"
+    "CS61A/Lecture 20 Inheritance/Lecture 20 Inheritance.md"
   ]
 }
