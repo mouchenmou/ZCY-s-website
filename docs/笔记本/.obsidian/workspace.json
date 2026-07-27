@@ -50,6 +50,18 @@
             }
           },
           {
+            "id": "d16a765163185f5d",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "CS231n/2. Perceiving and Understanding the Visual World/lecture_8.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "lecture_8"
+            }
+          },
+          {
             "id": "b5a5b5935c3b591b",
             "type": "leaf",
             "state": {
@@ -217,8 +229,12 @@
   },
   "active": "d5dbb0dc38e8169a",
   "lastOpenFiles": [
-    "写CV.md",
+    "CS231n/2. Perceiving and Understanding the Visual World/lecture_8.pdf",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 8 Attention and Transformers.md",
+    "写CV.md",
+    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260727005744.png",
+    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260726234544.png",
+    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260726225839.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260724221145.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260724213410.png",
     "tmp/pdfs/lecture8_assets_contact.png",
@@ -226,11 +242,7 @@
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture8_PreNorm.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture8_ViT结构.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture8_LLM结构.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture8_TransformerBlock.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture8_三种序列模型对比.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture8_MultiHeadAttention.png",
     "tmp/pdfs/lecture_8.txt",
-    "CS231n/2. Perceiving and Understanding the Visual World/lecture_8.pdf",
     "CS189 机器学习/Part 1： Introduction/3. Machine Learning Mechanics - Terminology and Techniques/03 Machine Learning Mechanics - Terminology and Techniques.pdf",
     "CS189 机器学习/Homework/HW7/hw7.pdf",
     "CS189 机器学习/Homework/HW7/未确认 683468.crdownload",

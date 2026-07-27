@@ -167,10 +167,25 @@ $$
 
 # 3. General Attention Layer
 
-RNN Attention 背后其实藏着一个更通用的算子：
+在 RNN Attention中：
+
+$$
+\begin{aligned}
+\text{query} &= s_{t-1} \\
+\text{data vectors} &= h_1,h_2,\dots,h_N \\
+\text{output} &= c_t
+\end{aligned}
+$$
+
+
+- decoder 上一时刻状态 $s_{t-1}$ 是 query
+- encoder 的所有 hidden states $h_i$ 是 data
+- 最终得到的 context vector $c_t$ 是 output
 
 > 给定一组 query vectors 和一组 data vectors，每个 query 都从全部 data vectors 中取出和自己相关的信息，得到一个 output vector。
 
+
+现在我们把 Attention 这个概念单独拿出来，去掉 RNNs。Attention 本身对于神经网络来说就是一个非常有用的操作。
 ## 3.1 单个 query 的基本形式
 
 先假设只有一个 query：
@@ -212,14 +227,7 @@ $$
 y=\sum_{i=1}^{N_X}a_iX_i
 $$
 
-!!! explanation "Query、data 和 output"
-    四个概念可以这样理解：
-    
-    1. **Query**：我现在想找什么。
-    2. **Data vectors**：我可以从哪些信息中查找。
-    3. **Attention weights**：每条信息和当前需求有多匹配。
-    4. **Output**：按照匹配程度汇总出来的结果。
-
+![](附件/Pasted%20image%2020260726225839.png)
 ## 3.2 Scaled Dot-Product Attention
 
 为了让相似度计算更容易并行，可以直接使用点积：
@@ -239,7 +247,7 @@ $$
 !!! explanation "为什么除以 $\sqrt{D_Q}$"
     假设 query 和 key 的每个分量都相互独立、均值为 $0$、方差为 $1$。
     
-    点积是 $D_Q$ 个乘积的和，所以它的方差会随 $D_Q$ 增长到大约 $D_Q$，标准差则增长到大约 $\sqrt{D_Q}$。
+    点积是 $D_Q$ 个乘积的和，所以它的方差会随 $D_Q$ 增长到大约 $D_Q$，标准差则增长到大约 $\sqrt{D_Q}$。（$var(X)=E(X^2)-E(X)^2$ 公式推出来）
     
     除以 $\sqrt{D_Q}$ 后，scores 的尺度不会因为维度增大而失控，softmax 和梯度会更稳定。
 
@@ -277,17 +285,17 @@ $$
 \sum_{j=1}^{N_X}A_{i,j}=1
 $$
 
-最后：
+最后，可以计算出所有的context vector：
 
 $$
-Y=AX
+C=AX
 \in\mathbb{R}^{N_Q\times D_X}
 $$
 
 第 $i$ 个输出为：
 
 $$
-Y_i=\sum_{j=1}^{N_X}A_{i,j}X_j
+C_i=\sum_{j=1}^{N_X}A_{i,j}X_j
 $$
 
 !!! warning "Softmax 到底沿哪个方向做"
@@ -305,7 +313,12 @@ $$
 
 # 4. Query、Key 和 Value
 
-直接拿 $Q$ 和 $X$ 做点积有一个限制：用来判断“匹不匹配”的信息，和最后真正被取出的信息是同一个向量。
+直接拿 $Q$ 和 $X$ 做点积有一个限制：用来判断“匹不匹配”的信息，和最后真正被取出的信息是同一个向量。以我们刚刚做的推导为例，计算 $E$ 和 $C$ 时用到的 $X$ 一模一样：
+
+$$\begin{aligned}
+& E=\frac{QX^T}{\sqrt{D}} \\
+& C=AX​
+\end{aligned}$$
 
 Attention 会把这两个角色拆开：
 
@@ -349,7 +362,7 @@ A=\operatorname{softmax}(E)
 $$
 
 $$
-Y=AV
+C=AV
 \in\mathbb{R}^{N_Q\times D_V}
 $$
 
@@ -361,6 +374,9 @@ $$
     
     用来检索的信息和最终返回的信息不一定相同，因此分别学习 $W_K$ 和 $W_V$ 会更灵活。
 
+
+下图的 $Y$ 并不是**最终的的输出 $Y$**，而是 $Context\ vector$
+![](附件/Pasted%20image%2020260726234544.png)
 ## 4.1 Cross-Attention
 
 如果 query 和 data vectors 来自两个不同的集合，这就是 **Cross-Attention**。
@@ -459,10 +475,46 @@ $$
 
 所以每个输出位置都可以直接读取所有输入位置的信息。
 
-在 RNN 中，位置 $1$ 的信息要到达位置 $N$，必须沿 hidden state 经过很多步；在 Self-Attention 中，这两个位置只经过一次 attention 就能直接交互。
+!!! explanation "Self-Attention 对比 RNNs 的优势"
 
-!!! note "Self-Attention 最重要的一句话"
-    Self-Attention 会让每个输入向量都提出一个 query，再根据它与所有 keys 的匹配程度，从所有 values 中加权取出信息。
+    在 RNN 中，位置 $1$ 的信息要到达位置 $N$，必须沿 hidden state 经过很多步；在 Self-Attention 中，这两个位置只经过一次 attention 就能直接交互。
+    
+    ## 举个具体例子
+
+	假设句子是：
+	
+> 	The cat that I saw yesterday was black.
+	
+	模型在处理 “was” 时，需要知道前面的主语是 “cat”。
+	
+	在 RNN 中，“cat” 的信息需要不断传：
+	
+    $$h_{\text{cat}} \rightarrow h_{\text{that}} \rightarrow h_{\text{I}} \rightarrow h_{\text{saw}} \rightarrow h_{\text{yesterday}} \rightarrow h_{\text{was}}$$​
+	中间每一步都要把之前的信息保留下来。
+
+	在 self-attention 中，每个位置都可以直接查看其他所有位置。
+	
+	对于位置 $N$，它会计算：
+	
+	$$q_N\cdot k_1,\quad q_N\cdot k_2,\quad \dots,\quad q_N\cdot k_N$$​
+	然后得到 attention weights：
+	
+	$$A_{N,1},A_{N,2},\dots,A_{N,N}$$
+	
+	最后位置 $N$ 的输出为：
+	
+	$$y_N = \sum_{j=1}^{N}A_{N,j}v_j$$
+	
+	其中直接包含：
+	
+	$$A_{N,1}v_1$$​
+	
+	这意味着位置 $N$ 可以直接从位置 $1$ 读取信息。
+	
+	不需要经过：
+	
+	$$1\rightarrow2\rightarrow3\rightarrow\cdots\rightarrow N$$
+	
 
 ## 5.3 一个小例子
 
@@ -656,7 +708,6 @@ A_{3,1} & A_{3,2} & A_{3,3}
 \end{bmatrix}
 $$
 
-![](附件/Lecture8_MaskedSelfAttention.png)
 
 !!! explanation "Mask 改变了什么"
     Mask 没有删除 Q、K、V，也没有改变网络参数。
@@ -768,13 +819,15 @@ $$
 
 这样所有 heads 都可以通过 batched matrix multiplication 并行计算。
 
----
 
-# 9. Self-Attention 的四次矩阵乘法
 
-把 Q、K、V 投影融合后，Multi-Head Self-Attention 的主要计算可以概括成四次矩阵乘法。
+## 8.3 Self-Attention 的四次矩阵乘法
 
-## 9.1 QKV Projection
+把 Q、K、V 投影融合后，Multi-Head Self-Attention 的计算实际上就是四次矩阵乘法。
+
+### 第一步：QKV Projection
+
+为每个词生成 $Q,K, V$
 
 $$
 [N\times D][D\times3HD_H]
@@ -788,7 +841,91 @@ $$
 Q,K,V\in\mathbb{R}^{H\times N\times D_H}
 $$
 
-## 9.2 QK Similarity
+!!! explanation "解析"
+    对于一个 head，本来应该分别计算：
+
+	$$\begin{aligned}
+	&Q^{(h)}=XW_Q^{(h)}\\
+	&K^{(h)}=XW_K^{(h)}\\
+	&V^{(h)}=XW_V^{(h)}
+	\end{aligned}$$​
+	
+	其中：
+	
+	$$Q^{(h)},K^{(h)},V^{(h)} \in\mathbb{R}^{N\times D_H}$$
+	
+	有 $H$ 个 head，就意味着要得到 $H$ 组这样的结果。
+	
+	实践中把所有 head 的所有权重拼成一个大矩阵：
+	
+	$$W_{QKV}\in\mathbb{R}^{D\times 3HD_H}$$
+	
+	然后一次计算：
+	
+	$$XW_{QKV}$$​
+	
+	维度为：
+	
+	$$[N\times D][D\times3HD_H] \longrightarrow [N\times3HD_H]$$
+	
+	这里结果的最后一维实际上包含：
+	
+    $$\underbrace{HD_H}_{Q} + \underbrace{HD_H}_{K} + \underbrace{HD_H}_{V}​​​$$
+	
+	所以把结果先切成三块：
+	
+	$$Q,K,V\in\mathbb{R}^{N\times HD_H}$$
+	
+	再把每一块中的 $HD_H$ 拆成：
+	
+	$$H\times D_H$$
+	
+	因此每一个 $head$ 的形状如下：
+	
+	$$Q^{(h)},K^{(h)},V^{(h)}\in\mathbb{R}^{ N\times D_H}​$$
+
+!!! warning "一共有 $H$ 个 head"
+    假设：
+    
+	$$H=4$$
+	
+	那么会有：
+	
+	$$Q^{(1)},Q^{(2)},Q^{(3)},Q^{(4)}$$
+	
+	并且每一个都是：
+	
+	$$N\times D_H$$​
+	
+	把这 $H$ 个矩阵放在一起，就得到：
+	
+	$$Q\in\mathbb{R}^{H\times N\times D_H}$$
+	
+	也就是：
+	
+	$$Q= \begin{bmatrix} Q^{(1)}\\ Q^{(2)}\\ \vdots\\ Q^{(H)} \end{bmatrix}$$
+	
+	所以：
+	
+	Q(h)∈RN×DH\boxed{ Q^{(h)}\in\mathbb{R}^{N\times D_H} }Q(h)∈RN×DH​​
+	
+	表示单个 head。
+	
+	而：
+	
+	Q∈RH×N×DH\boxed{ Q\in\mathbb{R}^{H\times N\times D_H} }Q∈RH×N×DH​​
+	
+	表示所有 heads。
+	
+### 第二步 QK Similarity
+
+在每一个 head 里，每个 query 都去和每个 key 做点积，再除以$\sqrt{D_H}$ 得到 $E$：
+
+$$
+E=\frac{QK^T}{\sqrt{D_H}}
+$$
+
+维度变化为：
 
 $$
 [H\times N\times D_H]
@@ -797,9 +934,60 @@ $$
 [H\times N\times N]
 $$
 
-得到每个 head 的 attention scores。
+然后再对 $E$ 做 softmax 得到每个 head 的 attention scores，所以第二步的完成流程是：
 
-## 9.3 Value Weighting
+$$QK^T \rightarrow \frac{QK^T}{\sqrt{D_H}}\rightarrow softmax$$
+
+得到的attention weight：
+
+$$A \in R^{H\times N\times N}$$
+ 
+!!! explanation "解析"
+    假设某个 head 里有 $N$ 个 query 和 $N$ 个 key：
+	
+	$$\begin{aligned}
+	&q_1,q_2,\dots,q_N\\
+	&k_1,k_2,\dots,k_N
+	\end{aligned}$$
+	
+	那么要计算所有组合：
+	
+	$$E= \begin{bmatrix} q_1\cdot k_1 & q_1\cdot k_2 & \cdots & q_1\cdot k_N\\ q_2\cdot k_1 & q_2\cdot k_2 & \cdots & q_2\cdot k_N\\ \vdots & \vdots & \ddots & \vdots\\ q_N\cdot k_1 & q_N\cdot k_2 & \cdots & q_N\cdot k_N \end{bmatrix}$$
+	
+	其中：
+	
+	$$E_{i,j}=q_i\cdot k_j$$
+	
+	含义是：
+	
+	在这个 head 中，第 $i$ 个 query 和第 $j$ 个 key 的相似度。
+	
+	即：
+	
+	- 第 $i$ 行：第 $i$ 个 query 对所有 key 的相似度；
+	- 第 $j$ 列：所有 query 对第 $j$ 个 key 的相似度。
+	
+	然后对每一行做 softmax，得到：
+	
+	$$A_{i,j}$$​
+	
+	表示第 $i$ 个 query 应该从第 $j$ 个位置取多少信息。
+	
+	而在 multi-head attention 中，每个 head 都各自做一遍：
+	
+	$$E^{(h)}=Q^{(h)}(K^{(h)})^T$$
+	
+	因此最终形状是：
+	
+	$$H\times N\times N$$
+	
+	也就是：
+	
+    $H$ 个 head，每个 head 都有一个 $N\times N$ 的 query-key 相似度矩阵。
+
+### 第三步 Value Weighting
+
+首先，计算每一个 head 的 Context vector
 
 $$
 [H\times N\times N]
@@ -808,13 +996,101 @@ $$
 [H\times N\times D_H]
 $$
 
-然后把 heads 拼接回：
+接着，把每一个 token 中所有 heads 产生的 Context vectors拼接起来，整个过程分成一下几个小步骤：
+
+先取出一个 token 的所有 heads 的 attention weight，其维度为：
+
+$$[H\times 1 \times N]$$
+
+然后将它与所有的 $value$ 进行矩阵相乘，即跟 $V$ 向量进行矩阵相乘，维度变化如下：
+
+$$[H\times 1\times N]
+[H\times N\times D_H]
+\longrightarrow
+[H\times 1\times D_H]$$
+
+相当于是 $H$ 个 $1\times D_H$ 的矩阵按行堆叠，因此本质就是一个 $H\times D_H$ 的矩阵，得到这个 $H\times D_H$ 的矩阵之后，再将这 $H$ 行按照顺序排列成一行，就变成了一个 $1\times HD_H$ 的矩阵，即：
+
+$$[HD_H]$$
+
+在此基础上把所有 token 的结果按行拼接起来，得到如下维度：
 
 $$
 [N\times HD_H]
 $$
 
-## 9.4 Output Projection
+!!! explanation "Context vector 解析"
+    ### 我的疑问
+    $A^{(h)}$ 中的一行表示这个 head 中，某个 query 跟所有 key 的相似度。但是 $A^{(h)} V^{(h)}$ 是用 $A^{(h)}$ 的每一行跟 $V^{(h)}$ 的每一列做点积，$V^{(h)}$ 的一列表示的不是所有的 value 的第一维吗，而是不一个 value 啊
+    
+    ### 解答：
+    
+    $$A^{(h)}= \begin{bmatrix} A_{11} & A_{12} & \cdots & A_{1N}\\ A_{21} & A_{22} & \cdots & A_{2N}
+    \\ \vdots & \vdots & \ddots & \vdots\\ A_{N1} & A_{N2} & \cdots & A_{NN} \end{bmatrix} \ \ \ \ \ \ \ \ \ \ \ \ V^{(h)}= \begin{bmatrix} V_{11} & V_{12} & \cdots & V_{1D_H}\\ V_{21} & V_{22} & \cdots & V_{2D_H}
+    \\ \vdots & \vdots & \ddots & \vdots\\ V_{N1} & V_{N2} & \cdots & V_{ND_H} \end{bmatrix} \ \ \ \ \ \ \ \ \ \ \ \ $$
+    
+    将 $V^{(h)}$ 视作：
+    
+    $$V^{(h)}=\begin{bmatrix}
+    V_1\\ V_2 \\ \vdots \\ V_N
+    \end{bmatrix}$$
+    
+    可以看出， A^{(h)} 跟 V^{(h)} 做点积，就是 $A^{(h)}$ 中的每一行都跟 $V^{(h)}$ 做点积：
+    
+    $$\begin{bmatrix}A_{i1}&A_{i2} &\cdots &A_{iN}\end{bmatrix} \begin{bmatrix} V_{1} \\V_{2} \\ \vdots \\ V_N \end{bmatrix}$$
+    
+    得到：
+    
+    $$C_i=A_{i1}V_1+A_{i2}V_2 + \cdots + A_{iN}V_N=\sum_{j=1}^{N}A_{ij}V_j$$
+    
+    因此，我的疑问中“$A^{(h)} V^{(h)}$ 是用 $A^{(h)}$ 的每一行跟 $V^{(h)}$ 的每一列做点积”这一点没错，我们正是需要通过这种方式来进行求解。
+
+!!! explanation "把所有 heads 拼接起来解析"
+    
+	对于一个 token $i$，不同 head 得到：
+	
+	$$C_i^{(1)},C_i^{(2)},\dots,C_i^{(H)}$$​
+	
+	每一个 token 都有 $H$ 个 Context Vectors，每个 Context vector 都是 $D_H$ 维的，把它们首位拼接起来，得到：
+	
+	$$C_i = \operatorname{Concat} \left( C_i^{(1)}, C_i^{(2)}, \dots, C_i^{(H)} \right)$$
+	
+	于是：
+	
+	$$C_i\in\mathbb{R}^{HD_H}$$
+	
+	所有 $N$ 个 token 放在一起：
+	
+	$$C\in\mathbb{R}^{N\times HD_H}$$
+	
+	例如两个 head 分别输出：
+	
+	$$\begin{aligned}& C_i^{(1)}=[a,b]\\
+	& C_i^{(2)}=[c,d]
+	\end{aligned}$$
+	
+	拼接之后得到：
+	
+	$$C_i=[a,b,c,d]$$
+### 第四步 Output Projection
+
+我们在第三步中已经把所有 heads 算出来的 context vectors 都拼接起来了。接着需要再做一次线性变换，得到最终的输出。
+
+现在每个 token 的向量只是把不同 head 的结果机械地排在一起：
+
+$$C_i= [ C_i^{(1)}, C_i^{(2)}, \dots, C_i^{(H)} ]$$
+
+各个 head 的信息还没有真正互相混合。
+
+所以再乘一个可学习的输出矩阵。因为Self-attention中，输入和输出的维度是一样的，所以：
+
+$$W_O\in\mathbb{R}^{HD_H\times D}$$
+
+得到：
+
+$$Y=CW_O$$
+
+维度变化如下：
 
 $$
 [N\times HD_H][HD_H\times D]
@@ -822,31 +1098,307 @@ $$
 [N\times D]
 $$
 
-## 9.5 时间和空间复杂度
+## 8.4 时间和空间复杂度
 
-attention score matrix 的 shape 是：
 
-$$
-H\times N\times N
-$$
+设 Self-Attention 的输入为：
 
-因此标准 Self-Attention 的计算量会随序列长度 $N$ 二次增长：
-
-$$
-O(N^2)
+$$  
+X\in\mathbb{R}^{N\times D}  
 $$
 
-如果直接保存完整 attention matrix，显存开销也会有 $O(N^2)$ 项。
+### 1. QKV Projection
 
-课件给出的例子是：
+首先，根据输入 $X$ 计算所有 heads 的 query、key 和 value：
 
+$$  
+[Q\ K\ V]=XW_{QKV}  
 $$
-N=100000,\qquad H=64
+
+矩阵维度为：
+
+$$  
+[N\times D][D\times 3HD_H]  
+\longrightarrow  
+[N\times 3HD_H]  
 $$
 
-这时 attention weights 会大到普通 GPU 根本放不下。
+因此，这一步的时间复杂度为：
 
-## 9.6 FlashAttention
+$$  
+O(N\cdot D\cdot 3HD_H)  
+$$
+
+忽略常数 $3$：
+
+$$  
+O(NDHD_H)  
+$$
+
+由于：
+
+$$  
+HD_H=D  
+$$
+
+所以：
+
+$$  
+\boxed{O(ND^2)}  
+$$
+
+
+### 2. QK Similarity
+
+对于第 $h$ 个 head：
+
+$$  
+Q^{(h)}\in\mathbb{R}^{N\times D_H}  
+$$
+
+$$  
+K^{(h)}\in\mathbb{R}^{N\times D_H}  
+$$
+
+计算 query 和 key 的相似度：
+
+$$  
+E^{(h)}
+
+Q^{(h)}\left(K^{(h)}\right)^T  
+$$
+
+矩阵维度为：
+
+$$  
+[N\times D_H][D_H\times N]  
+\longrightarrow  
+[N\times N]  
+$$
+
+所以单个 head 的时间复杂度为：
+
+$$  
+O(N\cdot D_H\cdot N)
+
+O(N^2D_H)  
+$$
+
+一共有 $H$ 个 heads，因此总复杂度为：
+
+$$  
+O(HN^2D_H)  
+$$
+
+由于：
+
+$$  
+HD_H=D  
+$$
+
+所以：
+
+$$  
+\boxed{O(N^2D)}  
+$$
+
+### 3. Softmax
+
+QK Similarity 得到的 attention scores 形状为：
+
+$$  
+E\in\mathbb{R}^{H\times N\times N}  
+$$
+
+其中共有：
+
+$$  
+HN^2  
+$$
+
+个元素。
+
+对每一个 query 对应的一行做 softmax，因此时间复杂度为：
+
+$$  
+\boxed{O(HN^2)}  
+$$
+
+### 4. Value Weighting
+
+经过 softmax 后得到 attention weights：
+
+$$  
+A^{(h)}\in\mathbb{R}^{N\times N}  
+$$
+
+第 $h$ 个 head 的 value 矩阵为：
+
+$$  
+V^{(h)}\in\mathbb{R}^{N\times D_H}  
+$$
+
+计算该 head 中所有 query 对应的 Context vectors：
+
+$$  
+C^{(h)}=A^{(h)}V^{(h)}  
+$$
+
+矩阵维度为：
+
+$$  
+[N\times N][N\times D_H]  
+\longrightarrow  
+[N\times D_H]  
+$$
+
+所以单个 head 的时间复杂度为：
+
+$$  
+O(N\cdot N\cdot D_H)
+
+O(N^2D_H)  
+$$
+
+一共有 $H$ 个 heads，因此：
+
+$$  
+O(HN^2D_H)  
+$$
+
+由于：
+
+$$  
+HD_H=D  
+$$
+
+所以：
+
+$$  
+\boxed{O(N^2D)}  
+$$
+
+这一步的实际作用是：对于每个 query，根据 attention weights 对所有 value vectors 进行加权求和。
+
+具体来说：
+
+$$  
+C_i^{(h)}
+
+\sum_{j=1}^{N}  
+A_{i,j}^{(h)}V_j^{(h)}  
+$$
+
+### 5. 拼接所有 Heads
+
+每一个 head 都会产生：
+
+$$  
+C^{(h)}\in\mathbb{R}^{N\times D_H}  
+$$
+
+对于同一个 token，把它在所有 heads 中得到的 Context vectors 拼接起来：
+
+$$  
+C_i
+
+\operatorname{Concat}  
+\left(  
+C_i^{(1)},  
+C_i^{(2)},  
+\dots,  
+C_i^{(H)}  
+\right)  
+$$
+
+因此：
+
+$$  
+C_i\in\mathbb{R}^{HD_H}  
+$$
+
+所有 token 的结果按行堆叠后：
+
+$$  
+C\in\mathbb{R}^{N\times HD_H}  
+$$
+
+拼接通常只是 reshape、transpose 或数据重新排列，不涉及主要的矩阵乘法。
+
+如果只考虑 reshape，可以近似认为没有额外计算复杂度；如果考虑数据移动，则复杂度约为：
+
+$$  
+O(NHD_H)=O(ND)  
+$$
+
+
+### 6. Output Projection
+
+拼接所有 heads 后：
+
+$$  
+C\in\mathbb{R}^{N\times HD_H}  
+$$
+
+然后乘以输出投影矩阵：
+
+$$  
+W_O\in\mathbb{R}^{HD_H\times D}  
+$$
+
+计算：
+
+$$  
+Y=CW_O  
+$$
+
+矩阵维度为：
+
+$$  
+[N\times HD_H][HD_H\times D]  
+\longrightarrow  
+[N\times D]  
+$$
+
+因此时间复杂度为：
+
+$$  
+O(N\cdot HD_H\cdot D)  
+$$
+
+由于：
+
+$$  
+HD_H=D  
+$$
+
+所以：
+
+$$  
+\boxed{O(ND^2)}  
+$$
+
+这一步的作用是把所有 heads 提取的信息重新混合，并将每个 token 的表示恢复为 $D$ 维。
+
+
+### 总时间复杂度
+
+
+把前面六步全部相加，忽略常数后，完整的 Multi-Head Self-Attention 时间复杂度为：
+
+$$  
+\boxed{  
+O(ND^2+N^2D)  
+}  
+$$
+
+因为正常情况下 $N >> D$，所以时间复杂度可以表示为：
+
+$$O(N^2)$$
+
+若 $N=100000,H=64$，attention weights 会大到普通 GPU 根本放不下。
+
+## 8.5 FlashAttention
 
 FlashAttention 会分块计算 $QK^T$、softmax 和 $AV$，避免把完整的 $N\times N$ attention matrix 全部写入显存。
 
@@ -863,11 +1415,11 @@ FlashAttention 会分块计算 $QK^T$、softmax 和 $AV$，避免把完整的 $N
 
 ---
 
-# 10. 三种处理序列的方法
+# 9. 三种处理序列的方法
 
 ![](附件/Lecture8_三种序列模型对比.png)
 
-## 10.1 Recurrent Neural Network
+## 9.1 Recurrent Neural Network
 
 RNN 适合一维有序序列。
 
@@ -883,7 +1435,7 @@ RNN 适合一维有序序列。
 2. 远距离信息必须经过很多次状态更新。
 3. 信息不断压缩进 hidden state，容易丢失细节。
 
-## 10.2 Convolution
+## 9.2 Convolution
 
 Convolution 天然适合规则网格，例如一维序列和二维图像。
 
@@ -897,7 +1449,7 @@ Convolution 天然适合规则网格，例如一维序列和二维图像。
 1. 单层卷积只能看到局部 receptive field。
 2. 要让相距很远的位置交换信息，必须堆很多层或进行下采样。
 
-## 10.3 Self-Attention
+## 9.3 Self-Attention
 
 Self-Attention 处理的是一组 vectors，再通过 positional encoding 加入顺序。
 
@@ -918,7 +1470,7 @@ Self-Attention 处理的是一组 vectors，再通过 positional encoding 加入
 
 ---
 
-# 11. Transformer Block
+# 10. Transformer Block
 
 Transformer 是一个大量使用 Self-Attention 的神经网络架构。
 
@@ -940,7 +1492,7 @@ $$
 
 ![](附件/Lecture8_TransformerBlock.png)
 
-## 11.1 Self-Attention 负责 token 之间的交互
+## 10.1 Self-Attention 负责 token 之间的交互
 
 Self-Attention 是 block 中唯一让不同位置相互交换信息的部分：
 
@@ -950,7 +1502,7 @@ $$
 
 每个位置可以根据自己的 query，从所有位置的 values 中取出信息。
 
-## 11.2 Residual Connection
+## 10.2 Residual Connection
 
 Attention 输出会和原输入相加：
 
@@ -960,7 +1512,7 @@ $$
 
 Residual connection 给信息和梯度提供一条更直接的通道，使深层网络更容易训练。
 
-## 11.3 Layer Normalization
+## 10.3 Layer Normalization
 
 对每个 token 的 $D$ 个特征单独做归一化。
 
@@ -988,7 +1540,7 @@ $$
 
 其中 $\gamma,\beta\in\mathbb{R}^D$ 是可学习参数。
 
-## 11.4 Feed-Forward Network
+## 10.4 Feed-Forward Network
 
 MLP 会对每个 token vector 独立使用同一套参数。经典结构是：
 
@@ -1024,7 +1576,7 @@ $$
     MLP：每个 token 自己处理信息
     ```
 
-## 11.5 原始 Post-Norm 结构
+## 10.5 原始 Post-Norm 结构
 
 课件先展示的是原始 Transformer 的 Post-Norm 写法：
 
@@ -1054,13 +1606,13 @@ $$
 
 ---
 
-# 12. Transformer Language Model
+# 11. Transformer Language Model
 
 Transformer 可以用来完成和 Lecture 7 中 RNN language model 相同的任务：根据前面的 token 预测下一个 token。
 
 ![](附件/Lecture8_LLM结构.png)
 
-## 12.1 Token Embedding
+## 11.1 Token Embedding
 
 假设词表大小为 $V$，model dimension 为 $D$。
 
@@ -1078,7 +1630,7 @@ $$
 
 再加入 positional encoding，得到 Transformer 的输入。
 
-## 12.2 使用 Masked Self-Attention
+## 11.2 使用 Masked Self-Attention
 
 Language Model 中的每个 Transformer block 都使用 causal mask，让第 $t$ 个 token 只能查看：
 
@@ -1092,7 +1644,7 @@ $$
 x_{t+1},x_{t+2},\dots
 $$
 
-## 12.3 输出词表分数
+## 11.3 输出词表分数
 
 最后一层输出：
 
@@ -1135,304 +1687,3 @@ $$
     
     所以输入序列和目标序列相差一个位置。通过 causal mask，一次 forward pass 就能同时得到所有位置的 next-token loss。
 
----
-
-# 13. Vision Transformer
-
-Transformer 的输入只要求是一组 vectors，并不要求这些 vectors 一定来自文字。
-
-Vision Transformer（ViT）会把图片切成 patches，再把每个 patch 当作一个视觉 token。
-
-![](附件/Lecture8_ViT结构.png)
-
-## 13.1 把图片切成 patches
-
-假设输入图片为：
-
-$$
-224\times224\times3
-$$
-
-patch size 为：
-
-$$
-16\times16
-$$
-
-那么高和宽方向各有：
-
-$$
-\frac{224}{16}=14
-$$
-
-个 patches，总 patch 数为：
-
-$$
-N=14\times14=196
-$$
-
-每个 RGB patch 的元素个数是：
-
-$$
-16\times16\times3=768
-$$
-
-## 13.2 Patch Embedding
-
-把每个 patch 展平为 $768$ 维向量，再使用线性层投影到 model dimension $D$：
-
-$$
-\mathbb{R}^{768}\longrightarrow\mathbb{R}^{D}
-$$
-
-对整张图来说：
-
-$$
-224\times224\times3
-\longrightarrow
-196\times D
-$$
-
-!!! explanation "Patch embedding 也可以看成卷积"
-    “切成 $16\times16$ patches，再展平并做线性变换”可以等价写成一个卷积层：
-    
-    1. Kernel size 为 $16\times16$。
-    2. Stride 为 $16$。
-    3. 输入通道数为 $3$。
-    4. 输出通道数为 $D$。
-    
-    因此 ViT 并不是完全没有使用卷积形式的计算；它的 patch embedding 本身就可以通过 strided convolution 实现。
-
-## 13.3 加入二维位置信息
-
-Self-Attention 本身不知道 patch 在图片中的位置，所以要加入 positional encoding，让模型知道每个 patch 的二维位置。
-
-ViT 通常不使用 causal mask，因为图像分类时没有“未来 patch”这个概念。每个 patch 都可以查看其他所有 patches。
-
-## 13.4 图像分类
-
-Transformer 对每个 patch 输出一个 $D$ 维向量：
-
-$$
-Y\in\mathbb{R}^{N\times D}
-$$
-
-课件中的做法是对所有 patch vectors 做 average pooling：
-
-$$
-\bar{y}
-=
-\frac{1}{N}\sum_{i=1}^{N}Y_i
-\in\mathbb{R}^{D}
-$$
-
-再用线性层输出 $C$ 个类别分数：
-
-$$
-s=\bar{y}W_{\text{cls}}+b
-\in\mathbb{R}^{C}
-$$
-
-!!! note "ViT 的主线"
-    ViT 做的事情可以概括为：
-    
-    ```text
-    image -> patches -> patch embeddings + positions
-          -> Transformer blocks -> pooling -> class scores
-    ```
-
----
-
-# 14. 现代 Transformer 的常见改动
-
-Transformer 的主架构从 2017 年以来没有发生根本变化，但有几项改动已经非常常见：
-
-1. Pre-Norm。
-2. RMSNorm。
-3. SwiGLU MLP。
-4. Mixture of Experts。
-
-![](附件/Lecture8_现代Transformer.png)
-
-## 14.1 Pre-Norm Transformer
-
-原始 Post-Norm 把 normalization 放在 residual addition 之后：
-
-$$
-Y=\operatorname{Norm}(X+F(X))
-$$
-
-现代模型更常把 normalization 移到 Self-Attention 或 MLP 之前，让 residual path 保持直接：
-
-$$
-U=X+\operatorname{MHA}(\operatorname{Norm}(X))
-$$
-
-$$
-Y=U+\operatorname{MLP}(\operatorname{Norm}(U))
-$$
-
-![](附件/Lecture8_PreNorm.png)
-
-!!! explanation "Pre-Norm 为什么更容易训练"
-    Pre-Norm 的 residual path 中存在一条更直接的 identity 路径：
-    
-    $$
-    X\longrightarrow X+F(\operatorname{Norm}(X))
-    $$
-    
-    即使 $F$ 暂时没有学好，原输入和梯度仍然可以沿加法路径继续传播，因此堆叠很多 blocks 时通常更稳定。
-
-## 14.2 RMSNorm
-
-RMSNorm 不再减去均值，只根据 root mean square 调整数值尺度。
-
-给定：
-
-$$
-x\in\mathbb{R}^{D}
-$$
-
-定义：
-
-$$
-\operatorname{RMS}(x)
-=
-\sqrt{
-\epsilon+\frac{1}{D}\sum_{i=1}^{D}x_i^2
-}
-$$
-
-输出：
-
-$$
-y_i=
-\frac{x_i}{\operatorname{RMS}(x)}\gamma_i
-$$
-
-其中：
-
-$$
-\gamma\in\mathbb{R}^{D}
-$$
-
-是可学习的缩放参数。
-
-和 LayerNorm 相比，RMSNorm：
-
-1. 不计算和减去均值。
-2. 通常不需要可学习 shift $\beta$。
-3. 计算更简单，在现代大模型中非常常见。
-
-## 14.3 SwiGLU MLP
-
-经典 MLP 为：
-
-$$
-Y=\phi(XW_1)W_2
-$$
-
-其中隐藏维度通常是 $4D$。
-
-SwiGLU 会计算两条投影分支，再用逐元素乘法做 gate：
-
-$$
-Y=
-\left[
-\operatorname{SiLU}(XW_1)
-\odot
-(XW_2)
-\right]W_3
-$$
-
-其中：
-
-$$
-W_1,W_2\in\mathbb{R}^{D\times D_{\text{hidden}}},
-\qquad
-W_3\in\mathbb{R}^{D_{\text{hidden}}\times D}
-$$
-
-为了让参数量和经典 $D\rightarrow4D\rightarrow D$ MLP 大致相同，可以设：
-
-$$
-D_{\text{hidden}}=\frac{8D}{3}
-$$
-
-!!! explanation "SwiGLU 的 gate 在做什么"
-    $\operatorname{SiLU}(XW_1)$ 产生经过非线性处理的特征，$XW_2$ 产生一组门控信号。
-    
-    两者逐元素相乘后，网络可以根据输入动态决定哪些特征应该保留、放大或抑制。
-
-## 14.4 Mixture of Experts
-
-普通 Transformer block 中只有一套 MLP 参数。Mixture of Experts（MoE）会学习 $E$ 套不同的 MLP，每一套叫做一个 expert。
-
-原来的权重：
-
-$$
-W_1\in\mathbb{R}^{D\times4D},
-\qquad
-W_2\in\mathbb{R}^{4D\times D}
-$$
-
-加入 $E$ 个 experts 后变成：
-
-$$
-W_1\in\mathbb{R}^{E\times D\times4D}
-$$
-
-$$
-W_2\in\mathbb{R}^{E\times4D\times D}
-$$
-
-但是每个 token 不会经过全部 $E$ 个 experts。Router 会为它选择：
-
-$$
-A<E
-$$
-
-个 active experts。
-
-因此：
-
-1. 总参数量大约随 expert 数量 $E$ 增加。
-2. 每个 token 的主要 MLP 计算量只随 active experts 数量 $A$ 增加。
-3. 模型可以拥有很大的参数容量，而不必在每个 token 上使用全部参数。
-
-!!! explanation "MoE 的直觉"
-    可以把 MoE 想成一个专家团队。
-    
-    模型中同时有很多专家，但每个问题只交给少数最合适的专家处理。这样团队可以储存很多不同能力，又不用每次把所有专家都叫来工作。
-
-!!! warning "参数量大不等于每次都用到全部参数"
-    MoE 模型可以拥有非常大的总参数量，但单个 token 只激活其中一部分 experts。
-    
-    所以比较 Dense Transformer 和 MoE 时，要同时区分：
-    
-    1. **Total parameters**：模型一共存了多少参数。
-    2. **Active parameters**：处理一个 token 时实际用了多少参数。
-
----
-
-# 15. 总结
-
-本讲从 RNN Encoder-Decoder 的固定 context bottleneck 出发，引出了 Attention，再逐步发展到 Self-Attention 和 Transformer。
-
-最重要的内容可以概括为：
-
-1. RNN Attention 让 Decoder 在每一个输出时间步重新查看所有 Encoder hidden states，不再把整个输入压缩进同一个 context vector。
-2. Attention 的基本流程是：用 query 和 keys 计算相似度，softmax 得到权重，再对 values 做加权求和。
-3. Scaled dot-product attention 除以 $\sqrt{D}$，可以避免高维点积过大导致 softmax 饱和。
-4. Cross-Attention 的 queries 和 key/value data 来自不同集合；Self-Attention 的 Q、K、V 都来自同一组输入。
-5. 原始 Self-Attention 对输入顺序是 permutation equivariant 的，所以语言和图像任务需要 positional encoding。
-6. Masked Self-Attention 把未来位置的 scores 设为 $-\infty$，用于 next-token prediction。
-7. Multi-Head Attention 并行学习多套 attention patterns，再通过 $W_O$ 融合。
-8. 标准 Self-Attention 的计算复杂度为 $O(N^2)$；FlashAttention 减少中间显存和内存访问，但不消除二次计算量。
-9. Transformer block 主要由 Self-Attention、MLP、residual connection 和 normalization 组成。
-10. Language Transformer 使用 token embedding、causal mask 和 vocabulary projection 预测下一个 token。
-11. ViT 把图像切成 patches，将每个 patch 投影成一个 token vector，再交给 Transformer 处理。
-12. 现代 Transformer 常使用 Pre-Norm、RMSNorm、SwiGLU 和 Mixture of Experts。
-
-!!! summary "一句话理解本讲"
-    Attention 的本质是让 query 按相关程度从一组 values 中取信息；Transformer 的本质是反复使用 Self-Attention 让所有 token 交流，再用 MLP 分别加工每个 token。

@@ -9,4 +9,5 @@
 CS231n不讲这个的推导
 
 ![](附件/Pasted%20image%2020260721174551.png)
-在讲Attention和Transformer时，讲的都是T个input对应T个output，但是我会想，要是输入个数与输出个数不相等怎么办。比如中文的你好帅翻译成英文是you are so handsome，三个字的输入对应了4个词的输出。
+
+在讲Attention和Transformer时，讲的都是T个input对应T个output，但是我会想，要是输入个数与输出个数不相等怎么办。比如中文的你好帅翻译成英文是you are so handsome，三个字的输入对应了4个词的输出。我会想为什么是用上一时刻的 $s_{t-1}$ 作为query去跟输入的各个 $h_i$ 去做匹配。
