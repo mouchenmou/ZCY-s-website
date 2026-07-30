@@ -1,0 +1,886 @@
+# 1. 现代 Transformer 的几个常见改动
+
+**现在的 Transformer block 和最早论文里的写法有一些工程上的小改动。**
+
+一个 Transformer block 分成这两步：
+
+1. **Self-Attention**：让不同 token 之间交换信息。
+2. **MLP**：每个 token 内部自己做一次非线性变换。
+
+每一步外面都会加一个 **residual connection**：
+
+$$
+\text{new output}
+=
+\text{old input}
++
+\text{change}
+$$
+
+如果输入是 $X$，Self-Attention 算出来的是 $\operatorname{MHA}(X)$，那么 residual connection 就是：
+
+$$
+X+\operatorname{MHA}(X)
+$$
+
+
+除了 residual，Transformer block 里还会做 normalization，即 $\hat{x} = \frac{x - \mu}{\sigma}$。
+
+现在问题来了：**Normalization 应该放在 residual addition 前面，还是后面？**
+
+## 1.1 Post-Norm
+
+原始 Transformer 使用 **Post-Norm**，也就是先做 residual addition，再做 LayerNorm：
+
+```text
+输入 X
+  -> Self-Attention
+  -> 和原来的 X 相加
+  -> LayerNorm
+```
+
+写成公式就是：
+
+$$
+U=\operatorname{LayerNorm}(X+\operatorname{MHA}(X))
+$$
+
+然后 MLP 部分也一样：
+
+$$
+Y=\operatorname{LayerNorm}(U+\operatorname{MLP}(U))
+$$
+
+这里 $U$ 是过完 attention 子层之后的中间结果，$Y$ 是整个 block 的输出。
+
+!!! warning "Post-Norm 的小问题"
+    Post-Norm 看起来很自然：先把信息加起来，再归一化整理一下。
+    
+    但它有一个训练上的问题：residual path 后面还跟着 LayerNorm，所以“原样传递输入”的通道并不是完全干净的。
+    
+    当 Transformer 堆得很深时，这会让训练更难稳定。
+
+## 1.2 Pre-Norm
+
+现在很多模型更常用 **Pre-Norm**，也就是先对输入做归一化，再送进 Self-Attention 或 MLP；最后再和原输入相加。
+
+Self-Attention 子层变成：
+
+```text
+输入 X
+  -> LayerNorm
+  -> Self-Attention
+  -> 和原来的 X 相加
+```
+
+公式是：
+
+$$
+U=X+\operatorname{MHA}(\operatorname{Norm}(X))
+$$
+
+MLP 子层同理：
+
+$$
+Y=U+\operatorname{MLP}(\operatorname{Norm}(U))
+$$
+
+注意这里最外层是：
+
+$$
+X+\text{something}
+$$
+
+而不是：
+
+$$
+\operatorname{Norm}(X+\text{something})
+$$
+
+![](附件/Pasted%20image%2020260730205551.png)
+
+!!! explanation "为什么 Pre-Norm 更稳定"
+    深层网络训练时，梯度需要从后面的层一路传回前面的层。
+    
+    Pre-Norm 的外层一直保留：
+    
+    $$
+    X+\text{something}
+    $$
+    
+    这条路可以让信息和梯度更直接地穿过很多层。
+    
+    简单说：Post-Norm 是“加完再整理”，Pre-Norm 是“先整理要处理的那部分，最后直接加回原输入”。后者通常更容易训练很深的 Transformer。
+
+!!! note "这一页真正想记住什么"
+    不用死背公式。先记住一句话：
+    
+    **Post-Norm 把 Norm 放在 residual addition 后面；Pre-Norm 把 Norm 放在 Attention / MLP 前面，让 residual path 更直接。**
+
+## 1.3 RMSNorm
+
+LayerNorm 会减均值再除以标准差。RMSNorm 简化了一点，只按 root mean square 缩放：
+
+$$
+\operatorname{RMS}(x)
+=
+\sqrt{
+\epsilon+
+\frac{1}{D}\sum_{i=1}^{D}x_i^2
+}
+$$
+
+$$
+y_i=\frac{x_i}{\operatorname{RMS}(x)}\gamma_i
+$$
+
+它仍然有可学习参数 $\gamma$，但不再显式减去均值。
+
+![](附件/Pasted%20image%2020260730205624.png)
+## 1.4 SwiGLU MLP
+
+经典 MLP 可以写成：
+
+$$
+Y=\sigma(XW_1)W_2
+$$
+
+其中：
+
+$$
+W_1\in\mathbb{R}^{D\times4D},
+\qquad
+W_2\in\mathbb{R}^{4D\times D}
+$$
+
+SwiGLU MLP 多了一条 gate：
+
+$$
+Y=(\sigma(XW_1)\odot XW_2)W_3
+$$
+
+其中 $W_1,W_2\in\mathbb{R}^{D\times H}$，$W_3\in\mathbb{R}^{H\times D}$。
+
+![](附件/Pasted%20image%2020260730205648.png)
+
+!!! explanation "SwiGLU 的直觉"
+    普通 MLP 是先把特征非线性变换，再投影回去。
+    
+    SwiGLU 可以理解为：一条分支产生候选内容，另一条分支产生门控信号，然后逐元素相乘。
+    
+    也就是让网络自己决定哪些中间特征应该被放大，哪些应该被压掉。
+
+## 1.5 Mixture of Experts
+
+Mixture of Experts（MoE）是在每个 block 里学习 $E$ 套不同的 MLP 参数，每套 MLP 叫一个 expert。
+
+原来一套 MLP 参数是：
+
+$$
+W_1\in\mathbb{R}^{D\times4D},
+\qquad
+W_2\in\mathbb{R}^{4D\times D}
+$$
+
+MoE 变成：
+
+$$
+W_1\in\mathbb{R}^{E\times D\times4D},
+\qquad
+W_2\in\mathbb{R}^{E\times4D\times D}
+$$
+
+但是每个 token 不会用全部 experts，而是只路由到其中 $A<E$ 个 active experts。
+
+所以它的效果是：
+
+1. 参数量可以按 $E$ 倍增加。
+2. 每个 token 实际计算量只按 $A$ 增加。
+
+![](附件/Pasted%20image%2020260730210425.png)
+
+!!! note "MoE 的核心优势"
+    MoE 不是让每个 token 都跑完整个大模型，而是让不同 token 选择不同专家。
+    
+    因此它特别适合把参数规模做得非常大，同时把单次 forward 的计算成本控制住。
+
+---
+
+# 2. Computer Vision Tasks 的层次
+
+计算机视觉的一些任务：
+
+1. **Image Classification**：整张图一个类别，没有空间范围。
+2. **Semantic Segmentation**：每个 pixel 一个类别，但不区分同类的不同实例。
+3. **Object Detection**：找出每个 object 的类别和 bounding box。
+4. **Instance Segmentation**：既要找 object，又要给每个 object 单独预测 mask。
+
+---
+
+# 3. Semantic Segmentation
+我们之前讲的都是图像分类（classification）。与classification不同，Semantic Segmentation（分割） 的目标是：**输入一张图片，输出每一个像素属于什么类别。**
+
+训练数据中，每张图片的每个像素都有一个语义标签：
+
+```text
+grass, cat, tree, sky, ...
+```
+
+测试时，输入一张新图片，输出一张同样大小的 label map：
+
+$$
+\text{input}\in\mathbb{R}^{3\times H\times W}
+\quad\longrightarrow\quad
+\text{prediction}\in\{1,\dots,C\}^{H\times W}
+$$
+
+## 3.1 Sliding Window 的问题
+
+最直接的想法是：对每个 pixel 周围取一个 patch，用 CNN 分类中心 pixel。
+
+```text
+取 patch -> CNN -> 判断中心 pixel 类别
+```
+
+这个方法的问题很明显：
+
+1. 如果 patch 太小，缺少上下文，可能看不出中心 pixel 属于什么。
+2. 如果 patch 很大，每个 pixel 都跑一次 CNN，重叠区域的计算会被重复很多次。
+
+![](附件/Pasted%20image%2020260731000649.png)
+
+!!! warning "Sliding Window 很浪费"
+    相邻 pixel 的 patch 大量重叠。如果每个 pixel 都独立跑 CNN，相当于同一片图像特征被反复计算。
+    
+    所以语义分割通常不应该用这种逐 pixel 独立分类的方式做。
+
+## 3.2 Fully Convolutional Network
+
+一次性把整张图喂给卷积网络，直接输出每个位置的类别分数：
+
+$$
+\text{scores}\in\mathbb{R}^{C\times H\times W}
+$$
+
+然后对每个 pixel 的 $C$ 个类别分数取 argmax：
+
+$$
+\hat{y}_{h,w}
+=
+\arg\max_c s_{c,h,w}
+$$
+
+问题是：在 Fully Convolutional Network 中，特征图一直保持原始大小 $H\times W$，那么**每一层卷积都要在所有像素位置上计算**，计算量和显存都会很大。因此我们引入了  Downsampling 和 Upsampling。
+
+![](附件/Pasted%20image%2020260731001631.png)
+
+## 3.3 Downsampling 和 Upsampling
+
+Downsampling 的作用是：
+
+1. 降低空间尺寸，减少计算量。
+2. 随着一层层的递进 引入Downsampling 能使 receptive field 以更快的速率增加。
+
+![](附件/Pasted%20image%2020260731002150.png)
+
+Downsampling 很简单，通过 pooling、strider 等等，但是 Upsampling 还没有讨论过，Upsampling 的常见做法包括：
+
+1. Nearest Neighbor upsampling。
+    - ![](附件/Pasted%20image%2020260731003401.png)
+2. Bed of Nails：把值放到稀疏位置，其余补 $0$。
+    - ![](附件/Pasted%20image%2020260731003418.png)
+3. Max Unpooling：记录 max pooling 时最大值的位置，再把值放回对应位置。
+    - ![](附件/Pasted%20image%2020260731003450.png)
+4. Transposed Convolution：可学习的上采样。
+
+## 3.4 Transposed Convolution
+
+3.3 中讲到的4中 Upsampling 的方法，只有 Transposed Convolution 用到了学习的方法
+
+我们可以把 stride convolution 看成 learnable downsampling。
+
+如果卷积 stride 为 $2$，那么 filter 在 input 上每移动 $2$ 个像素，output 只移动 $1$ 个像素，所以空间尺寸变小。
+
+![](附件/Pasted%20image%2020260731004157.png)
+
+Transposed convolution 刚好反过来：input 上移动 $1$ 个像素，对应 output 上移动 $2$ 个像素。每个 input value 会作为权重，把 filter 的一份拷贝加到 output 上；如果多个 filter copy 覆盖到同一 output 位置，就把它们相加。
+
+![](附件/Pasted%20image%2020260731005458.png)
+
+!!! example "看个例子"
+    ![](附件/Pasted%20image%2020260731005541.png)
+## 3.5 U-Net
+
+![](附件/Pasted%20image%2020260731005733.png)
+它分成两边：
+
+1. 左边 downsampling path：逐步降低分辨率，扩大 field of view，提取语义信息。
+2. 右边 upsampling path：逐步恢复分辨率，生成高分辨率预测。
+
+关键是中间的 skip connection：因为执行 Downsampling 的过程，会丢失很多细节，这些细节无法通过 Upsampling 恢复。Skip connection 会保存 Encoder 中的 feature map，然后跟 Decoder 产生的 feature map 拼接在一起。
+
+!!! example "举个例子"
+    Encoder 产生的 feature map：
+	
+	$$256\times256\times64$$
+	
+	保存下来。
+	
+	Decoder 产生的feature map：
+	
+	$$256\times256\times128$$
+	
+	然后将它们拼接起来：
+	
+	$$256\times256\times(64+128)=256\times 256\times192$$
+	
+
+
+!!! warning "我的疑问" 
+    ### 我的疑问
+    encoder阶段的那些东西哪来的 feature map？
+    ### 解答
+    Encoder 本质上就是一个不断做「卷积提取特征 + 下采样压缩」的 CNN，所以每一次卷积都会产生 feature map。严格来说，输入图片本身也可以看作一种 feature map。
+    
+    因此，Encoder 每一个阶段的输出都会被当作 feature map 保存下来，等 Decoder 上采样恢复到相同空间尺寸时，把对应的保存下来的 feature map 与 decoder 的产物进行拼接。
+
+
+
+---
+
+# 4. Object Detection
+
+Object Detection 要输出图像中每个物体的：
+
+1. 类别。
+2. bounding box。
+
+一个 box 通常写成：
+
+$$
+(x,y,w,h)
+$$
+
+其中 $(x,y)$ 表示中心或左上角位置，$w,h$ 表示宽和高。具体参数化方式可以不同，但本质都是描述一个矩形框。
+
+## 4.1 Single Object: Classification + Localization
+
+如果图中只有一个 object，问题比较简单。网络可以有两个 head：
+
+1. classification head：输出 $C$ 个类别分数。
+2. box regression head：输出 $4$ 个坐标。
+
+分类用 softmax loss：
+
+$$
+L_{\text{cls}}
+=
+-\log p(y)
+$$
+
+定位可以用 L2 loss 或 smooth L1 loss：
+
+$$
+L_{\text{box}}
+=
+\lVert b-\hat{b}\rVert^2
+$$
+
+总 loss 是一个 multitask loss：
+
+$$
+L=L_{\text{cls}}+\lambda L_{\text{box}}
+$$
+
+!!! note "Detection 里 box 是回归问题"
+    类别是离散的，所以用 classification loss。
+    
+    box 坐标是连续值，所以通常把 localization 当成 regression 问题。
+
+## 4.2 Multiple Objects 的困难
+
+一张图里可能有不同数量的 objects：
+
+```text
+图 1: 1 个 cat
+图 2: 2 个 dogs + 1 个 cat
+图 3: 很多 objects
+```
+
+所以输出不是固定长度的。
+
+最朴素的做法是：对图像中很多不同位置、尺度、长宽比的 crop 都跑 CNN，判断每个 crop 是 object 还是 background。
+
+问题是这太贵了：
+
+1. 位置很多。
+2. 尺度很多。
+3. aspect ratio 很多。
+4. 每个 crop 都独立 forward 一次，重复计算严重。
+
+---
+
+# 5. R-CNN 系列
+
+## 5.1 Region Proposals
+
+R-CNN 系列的一个关键想法是：先找出少量可能包含 object 的区域，叫 **region proposals**。
+
+Selective Search 这类方法会找出“看起来像物体”的 blob 区域，通常一张图给大约 $2000$ 个 proposals。
+
+这些 proposals 不直接给最终类别，只负责减少搜索空间：
+
+```text
+全图所有可能窗口 -> 约 2000 个候选 RoI
+```
+
+## 5.2 R-CNN
+
+R-CNN 的流程是：
+
+![](附件/Lecture9_RCNN_pipeline.png)
+
+1. 用 proposal method 得到约 $2000$ 个 RoI。
+2. 把每个 RoI warp 成固定大小，例如 $224\times224$。
+3. 每个 warped region 独立通过 ConvNet。
+4. 用 SVM 对 region 分类。
+5. 用 bbox regressor 预测 box correction：
+
+$$
+(d_x,d_y,d_w,d_h)
+$$
+
+R-CNN 的主要问题是慢。因为一张图要对约 $2000$ 个 region 分别跑 ConvNet。
+
+!!! warning "R-CNN 慢在哪里"
+    它不是 proposal 本身最慢，而是每个 proposal 都要独立 forward 一次 CNN。
+    
+    这些 proposal 之间高度重叠，但卷积特征没有被共享。
+
+## 5.3 Fast R-CNN
+
+Fast R-CNN 的改进是：==先对整张图跑一次 backbone，再在 feature map 上 crop RoI。==
+
+![](附件/Lecture9_FastRCNN_pipeline.png)
+
+流程变成：
+
+1. 输入整张图。
+2. Backbone CNN 输出 feature map。
+3. 把 region proposals 投影到 feature map 上。
+4. 对每个 RoI 做 crop + resize，得到固定大小 feature。
+5. per-region network 同时输出类别和 box offset。
+
+这样大部分卷积计算在整张图上共享，只在后面的小 head 里按 RoI 分开处理。
+
+## 5.4 RoI Pool 和 RoI Align
+
+Fast R-CNN 需要把不同大小的 RoI feature 变成固定大小，例如：
+
+$$
+512\times7\times7
+$$
+
+RoI Pool 的做法：
+
+1. 把 proposal 投影到 feature map。
+2. 把坐标 snap 到离散 grid cells。
+3. 划分成固定数量的 bins。
+4. 每个 bin 里做 max pooling。
+
+问题是 snap 到整数网格会产生轻微错位。
+
+Mask R-CNN 后来使用 **RoI Align**：
+
+1. 不做 snapping。
+2. 在每个 bin 内固定采样点。
+3. 用 bilinear interpolation 读取非整数位置的 feature。
+
+!!! explanation "RoI Align 为什么重要"
+    对 object detection 来说，轻微错位可能还勉强能接受。
+    
+    但 instance segmentation 要预测像素级 mask，边界位置很敏感。如果 RoI feature 本身已经错位，mask 的边界就容易跟真实物体对不齐。
+
+## 5.5 Faster R-CNN 和 RPN
+
+Fast R-CNN 仍然依赖外部 proposal method，例如 Selective Search。Faster R-CNN 的核心是：==让 CNN 自己产生 proposals。==
+
+这部分叫 **Region Proposal Network（RPN）**。
+
+![](附件/Lecture9_RPN_anchor.png)
+
+假设 backbone feature map 大小为：
+
+$$
+D\times H'\times W'
+$$
+
+在 feature map 的每个空间位置放一些 anchor boxes。实践中每个位置会放 $K$ 个不同 scale / aspect ratio 的 anchors。
+
+RPN 对每个 anchor 输出：
+
+1. objectness score：这个 anchor 是否包含 object。
+2. box transform：从 anchor 调整到更合适 box 的 $4$ 个数。
+
+如果 feature map 是 $20\times15$，每个位置有 $K$ 个 anchors，那么输出形状可以理解为：
+
+$$
+\text{objectness}\in\mathbb{R}^{K\times20\times15}
+$$
+
+$$
+\text{box transforms}\in\mathbb{R}^{4K\times20\times15}
+$$
+
+然后按照 objectness 排序，取 top proposals，例如 top $300$。
+
+Faster R-CNN 是 two-stage detector：
+
+**第一阶段：** 每张图运行一次。
+
+1. Backbone network。
+2. RPN 生成 proposals。
+
+**第二阶段：** 每个 proposal 运行一次。
+
+1. RoI Pool / RoI Align crop features。
+2. 分类 object class。
+3. 回归 bbox offset。
+
+训练时通常联合优化四个 loss：
+
+1. RPN object / not object 分类。
+2. RPN box regression。
+3. final object class 分类。
+4. final box regression。
+
+!!! note "Faster R-CNN 的本质"
+    R-CNN 到 Fast R-CNN 解决的是“卷积特征重复计算”的问题。
+    
+    Fast R-CNN 到 Faster R-CNN 解决的是“proposal 还靠外部算法”的问题。
+
+---
+
+# 6. Single-Stage Detectors: YOLO / SSD / RetinaNet
+
+Faster R-CNN 是 two-stage：
+
+```text
+先产生 proposals -> 再分类和修正 proposals
+```
+
+Single-stage detector 直接在密集网格上输出 boxes 和类别。
+
+以 YOLO / SSD / RetinaNet 这一类方法为例，把图像分成 $S\times S$ 个 grid cells。每个 grid cell 负责若干个 base boxes。
+
+对于每个 box 输出：
+
+1. $P(\text{object})$：是否有物体。
+2. box 坐标或 box correction。
+3. class scores。
+
+如果每个 grid cell 有 $B$ 个 boxes，类别数为 $C$，一种常见输出形状可以写成：
+
+$$
+S\times S\times(5B+C)
+$$
+
+这里 $5$ 通常表示：
+
+$$
+(d_x,d_y,d_w,d_h,\text{confidence})
+$$
+
+![](附件/Lecture9_YOLO_grid.png)
+
+!!! explanation "Single-stage 和 RPN 很像"
+    RPN 也在每个 feature map 位置预测 anchors 的 objectness 和 box transform。
+    
+    Single-stage detector 可以理解为把这个想法继续往前推：不再把 proposals 交给第二阶段，而是直接在 dense boxes 上预测最终类别和位置。
+
+一般来说：
+
+1. Two-stage detector 往往更慢，但精度更高。
+2. Single-stage detector 往往更快，更适合实时检测。
+
+---
+
+# 7. DETR: 用 Transformer 做 Detection
+
+DETR 的目标是把 detection 做得更端到端一些。
+
+它不再依赖 anchors，也不再预测 anchor 到 box 的 transforms，而是让 Transformer 直接输出一组 boxes。
+
+![](附件/Lecture9_DETR_pipeline.png)
+
+核心流程可以理解为：
+
+1. CNN backbone 提取图像特征。
+2. 把二维 feature map 展平成一组 tokens，加 positional encoding。
+3. Transformer encoder 处理图像 tokens。
+4. Transformer decoder 使用一组 learned object queries。
+5. 每个 object query 输出一个 class 和一个 box。
+
+因为输出是一组 unordered boxes，所以训练时需要把 predicted boxes 和 ground-truth boxes 做匹配。
+
+DETR 使用 bipartite matching：
+
+```text
+预测框集合 <-> 真实框集合
+```
+
+匹配之后，再对匹配到的 pair 计算分类 loss 和 box regression loss。
+
+!!! explanation "为什么 DETR 需要 matching"
+    Detection 的输出没有天然顺序。
+    
+    如果图里有 cat 和 dog，模型第 1 个 query 输出 cat、第 2 个 query 输出 dog，和反过来输出，本质上都应该算对。
+    
+    所以不能简单地要求“第 i 个预测框对应第 i 个真实框”。必须先找到一个最合理的一一匹配，再计算 loss。
+
+---
+
+# 8. Instance Segmentation 和 Mask R-CNN
+
+Instance Segmentation 既要检测 object，又要给每个 object 预测像素级 mask。
+
+和 semantic segmentation 的区别是：如果图中有两只同类 object，instance segmentation 要把它们分成两个不同实例。
+
+```text
+semantic segmentation: 这些像素都是 dog
+instance segmentation: 这是 dog 1，那是 dog 2
+```
+
+Mask R-CNN 可以看成 Faster R-CNN 加了一个 mask head。
+
+![](附件/Lecture9_MaskRCNN_outputs.png)
+
+对于每个 RoI，Mask R-CNN 输出：
+
+1. classification scores：$C$ 个类别分数。
+2. box coordinates：每类 $4$ 个坐标，所以是 $4C$。
+3. mask：每类一个 $28\times28$ binary mask，所以是：
+
+$$
+C\times28\times28
+$$
+
+mask head 是一个小的卷积网络，作用在 RoI Align 得到的 feature 上。
+
+!!! note "为什么每类都预测一个 mask"
+    Mask R-CNN 会给每个类别预测一张 mask，但最终只取分类 head 预测出来的那个类别对应的 mask。
+    
+    这样 mask branch 不需要在同一张 mask 里同时解决“这是哪个类别”和“这个类别的形状是什么”两个问题。
+
+Mask R-CNN 的成功很大程度上也依赖 RoI Align。因为 mask 是像素级输出，RoI Pool 的 rounding / snapping 会造成空间错位，而 RoI Align 用 bilinear interpolation 保留了更精细的位置对应关系。
+
+---
+
+# 9. Visualization and Understanding
+
+最后一部分讲的是怎么理解神经网络到底看了什么。
+
+这类方法大致分成：
+
+1. 直接看模型层的权重或特征。
+2. 用 gradient 看输入中哪些像素影响某个 class score。
+3. 用 CAM / Grad-CAM 看模型关注的空间区域。
+
+## 9.1 Visualize Filters
+
+第一层卷积核可以直接可视化，因为它们直接作用在 RGB 图像上。
+
+例如 AlexNet 第一层 filter 形状是：
+
+$$
+64\times3\times11\times11
+$$
+
+每个 filter 都可以看作一个小图像 patch。通常会看到一些类似边缘、颜色对比、方向纹理的模式。
+
+深层 filter 就不太能直接看了，因为它们的 channel 不再对应 RGB，而是抽象 feature。
+
+## 9.2 Saliency Maps
+
+Saliency map 想回答的问题是：
+
+```text
+哪些像素对某个类别分数最重要？
+```
+
+做法是：
+
+1. Forward pass，计算某个类别的 unnormalized class score $S_c$。
+2. 对输入图像 $I$ 求梯度：
+
+$$
+\frac{\partial S_c}{\partial I}
+$$
+
+3. 对 RGB channel 取绝对值并求最大：
+
+$$
+M_{h,w}
+=
+\max_{r,g,b}
+\left|
+\frac{\partial S_c}{\partial I_{h,w,:}}
+\right|
+$$
+
+如果某个像素的梯度绝对值大，说明这个像素轻微变化会明显影响类别分数。
+
+!!! warning "Saliency map 不是严格因果解释"
+    Saliency map 只是局部梯度敏感性。
+    
+    它告诉我们在当前输入附近，哪些像素会影响 score，但不等于模型真的“以人类方式理解”了这些区域。
+
+## 9.3 Class Activation Mapping
+
+CAM 适用于最后一层卷积特征后面接 global average pooling 和 linear classifier 的结构。
+
+设最后一层 CNN feature 为：
+
+$$
+f\in\mathbb{R}^{H\times W\times K}
+$$
+
+Global Average Pooling 得到：
+
+$$
+F_k
+=
+\frac{1}{HW}
+\sum_{h,w}f_{h,w,k}
+$$
+
+分类器权重为：
+
+$$
+W\in\mathbb{R}^{K\times C}
+$$
+
+类别 $c$ 的 score 为：
+
+$$
+S_c
+=
+\sum_k W_{k,c}F_k
+$$
+
+代入 $F_k$：
+
+$$
+\begin{aligned}
+S_c
+&=
+\sum_k W_{k,c}
+\left(
+\frac{1}{HW}
+\sum_{h,w}f_{h,w,k}
+\right)\\
+&=
+\frac{1}{HW}
+\sum_{h,w}
+\sum_k W_{k,c}f_{h,w,k}
+\end{aligned}
+$$
+
+因此可以定义类别 $c$ 的 activation map：
+
+$$
+M_{c,h,w}
+=
+\sum_k W_{k,c}f_{h,w,k}
+$$
+
+它表示空间位置 $(h,w)$ 对类别 $c$ 的贡献。
+
+!!! explanation "CAM 为什么能定位"
+    最后一层卷积 feature 仍然保留 $H\times W$ 的空间布局。
+    
+    线性分类器的权重 $W_{k,c}$ 告诉我们：第 $k$ 个 channel 对类别 $c$ 有多重要。
+    
+    所以把各个 channel 按 $W_{k,c}$ 加权相加，就能得到“哪些空间位置支持类别 $c$”。
+
+CAM 的限制是：它只能直接用于特定结构，尤其依赖最后的 global average pooling + linear classifier。
+
+## 9.4 Grad-CAM
+
+Grad-CAM 是 CAM 的推广，可以用于任意选择的一层 activation。
+
+![](附件/Lecture9_GradCAM_pipeline.png)
+
+选择某一层 activation：
+
+$$
+A\in\mathbb{R}^{H\times W\times K}
+$$
+
+先计算类别分数 $S_c$ 对 activation 的梯度：
+
+$$
+\frac{\partial S_c}{\partial A}
+\in
+\mathbb{R}^{H\times W\times K}
+$$
+
+对每个 channel 的梯度做 global average pooling，得到权重：
+
+$$
+\alpha_k^c
+=
+\frac{1}{HW}
+\sum_{h,w}
+\frac{\partial S_c}{\partial A_{h,w,k}}
+$$
+
+再用这些权重加权 activation：
+
+$$
+M_{h,w}^c
+=
+\operatorname{ReLU}
+\left(
+\sum_k
+\alpha_k^c A_{h,w,k}
+\right)
+$$
+
+这里的 ReLU 表示只保留对类别 $c$ 有正贡献的区域。
+
+!!! note "CAM 和 Grad-CAM 的关系"
+    CAM 用的是分类器最后线性层的权重。
+    
+    Grad-CAM 用的是类别分数对中间 feature 的梯度，梯度平均后扮演“这个 channel 对类别 c 有多重要”的权重。
+    
+    所以 Grad-CAM 更通用，可以在更多网络结构和更多中间层上使用。
+
+## 9.5 Intermediate Features via Guided Backprop
+
+还可以选择某个中间层 neuron 或 channel，计算它对输入像素的梯度。
+
+如果只让正梯度通过 ReLU，得到的图通常更清晰，这叫 **guided backprop**。
+
+这类方法能帮助观察某个中间 neuron 喜欢什么模式，例如边缘、纹理、局部部件等。
+
+---
+
+# 10. 总结
+
+本讲从 Transformer 进入更完整的视觉理解任务。
+
+最重要的线索可以概括为：
+
+1. ViT 把图像切成 patch token，再用普通 Transformer 处理。
+2. 现代 Transformer 常用 Pre-Norm、RMSNorm、SwiGLU 和 MoE。
+3. Semantic Segmentation 是每个 pixel 分类，常用 FCN / U-Net 这类 encoder-decoder 结构。
+4. Object Detection 要输出类别和 box，难点在于一张图有变长数量的 objects。
+5. R-CNN 系列从 region proposal 出发，逐步解决重复卷积计算和 proposal 生成的问题。
+6. Single-stage detectors 直接在 dense grid / anchors 上预测最终 boxes 和类别，速度更快。
+7. DETR 用 Transformer 直接输出一组 boxes，并用 bipartite matching 解决输出无序问题。
+8. Mask R-CNN 在 Faster R-CNN 上加 mask head，完成 instance segmentation。
+9. Saliency、CAM 和 Grad-CAM 都是在尝试回答“模型到底看哪里”。
+
+!!! summary "一句话理解本讲"
+    这一讲的主线是：从整图分类走向像素级和实例级视觉理解，同时学习检测、分割模型如何把“类别”和“空间位置”一起预测出来。

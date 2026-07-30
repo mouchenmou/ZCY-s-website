@@ -11,3 +11,7 @@ CS231n不讲这个的推导 $\frac{\partial L_i}{\partial W}=X_i^T \frac{\partia
 在讲Attention和Transformer时，讲的都是T个input对应T个output，但是我会想，要是输入个数与输出个数不相等怎么办。比如中文的你好帅翻译成英文是you are so handsome，三个字的输入对应了4个词的输出。我会想为什么是用上一时刻的 $s_{t-1}$ 作为query去跟输入的各个 $h_i$ 去做匹配。短短80分钟的lecture，我花了三天的时间才把这节课的内容看完
 
 因此我认为我是一个追求全方位理解，是一个学习知识会把所有底层原理全弄懂才肯罢休的人
+
+- 自我评价：
+    - 优点
+    - 缺点

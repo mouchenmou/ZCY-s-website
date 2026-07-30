@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "写CV.md",
+                "file": "CS231n/2. Perceiving and Understanding the Visual World/Lecture 9 Dection, Segmentation, Visualization, and Understanding.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "写CV"
+              "title": "Lecture 9 Dection, Segmentation, Visualization, and Understanding"
             }
           },
           {
@@ -229,29 +229,31 @@
   },
   "active": "d5dbb0dc38e8169a",
   "lastOpenFiles": [
+    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731005733.png",
+    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731005541.png",
+    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731005458.png",
+    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731004157.png",
+    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731003450.png",
+    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731003418.png",
+    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731003401.png",
+    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731002150.png",
+    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731001631.png",
+    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731000649.png",
+    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260730210425.png",
+    "tmp/lecture9_extracted.txt",
+    "CS231n/2. Perceiving and Understanding the Visual World/lecture_9.pdf",
+    "CS231n/2. Perceiving and Understanding the Visual World/未确认 394360.crdownload",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 8 Attention and Transformers.md",
-    "CS231n/2. Perceiving and Understanding the Visual World/lecture_8.pdf",
+    "CS231n/2. Perceiving and Understanding the Visual World/Lecture 9 Dection, Segmentation, Visualization, and Understanding.md",
     "写CV.md",
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260727005744.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260726234544.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260726225839.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260724221145.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260724213410.png",
-    "tmp/pdfs/lecture8_assets_contact.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture8_现代Transformer.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture8_PreNorm.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture8_ViT结构.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture8_LLM结构.png",
+    "CS231n/2. Perceiving and Understanding the Visual World/lecture_8.pdf",
     "tmp/pdfs/lecture_8.txt",
     "CS189 机器学习/Part 1： Introduction/3. Machine Learning Mechanics - Terminology and Techniques/03 Machine Learning Mechanics - Terminology and Techniques.pdf",
     "CS189 机器学习/Homework/HW7/hw7.pdf",
     "CS189 机器学习/Homework/HW7/未确认 683468.crdownload",
     "CS189 机器学习/Homework/HW6/hw6.pdf",
     "CS189 机器学习/Homework/HW6/未确认 921332.crdownload",
-    "CS189 机器学习/Homework/HW5/hw5.pdf",
-    "CS189 机器学习/Homework/HW5/未确认 309357.crdownload",
     "CS189 机器学习/Homework/HW4/readme.md",
-    "CS189 机器学习/Homework/HW4/新建 文本文档.txt",
     "CS189 机器学习/index.md",
     "CS231n/Homework/Homework1/Softmax.md",
     "CS231n/1. Deep Learning Basic/Lecture 4 Neural Networks and Backpropagation.md",
@@ -272,7 +274,6 @@
     "CS61A/Lecture 22 Composition/Lecture 22 Composition.md",
     "OpenCV/第二章 图像基本操作/2. 视频的读取与处理.md",
     "OpenCV/第二章 图像基本操作/1. 计算机眼中的图像.md",
-    "CS61A/Lecture 21 Representation/Lecture 21 Representation.md",
-    "CS61B/Lecture 1 Intro, Hello World Java/Intro 1 Study Guide.md"
+    "CS61A/Lecture 21 Representation/Lecture 21 Representation.md"
   ]
 }
