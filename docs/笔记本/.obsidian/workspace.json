@@ -50,15 +50,29 @@
             }
           },
           {
+            "id": "a9acd87d15e1dfa3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CS231n/2. Perceiving and Understanding the Visual World/Lecture 9 Dection, Segmentation, Visualization, and Understanding.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Lecture 9 Dection, Segmentation, Visualization, and Understanding"
+            }
+          },
+          {
             "id": "d16a765163185f5d",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "CS231n/2. Perceiving and Understanding the Visual World/lecture_8.pdf"
+                "file": "CS231n/2. Perceiving and Understanding the Visual World/lecture_9.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "lecture_8"
+              "title": "lecture_9"
             }
           },
           {
@@ -76,7 +90,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -96,7 +110,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -227,24 +243,23 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "d5dbb0dc38e8169a",
+  "active": "a9acd87d15e1dfa3",
   "lastOpenFiles": [
+    "CS231n/2. Perceiving and Understanding the Visual World/lecture_9.pdf",
+    "CS231n/2. Perceiving and Understanding the Visual World/Lecture 9 Dection, Segmentation, Visualization, and Understanding.md",
+    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260801003359.png",
+    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260801000128.png",
+    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731235227.png",
+    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731233708.png",
+    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731233040.png",
+    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731233028.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731005733.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731005541.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731005458.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731004157.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731003450.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731003418.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731003401.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731002150.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731001631.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731000649.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260730210425.png",
     "tmp/lecture9_extracted.txt",
-    "CS231n/2. Perceiving and Understanding the Visual World/lecture_9.pdf",
     "CS231n/2. Perceiving and Understanding the Visual World/未确认 394360.crdownload",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 8 Attention and Transformers.md",
-    "CS231n/2. Perceiving and Understanding the Visual World/Lecture 9 Dection, Segmentation, Visualization, and Understanding.md",
     "写CV.md",
     "CS231n/2. Perceiving and Understanding the Visual World/lecture_8.pdf",
     "tmp/pdfs/lecture_8.txt",

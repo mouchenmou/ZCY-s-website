@@ -392,31 +392,22 @@ $$
 L=L_{\text{cls}}+\lambda L_{\text{box}}
 $$
 
-!!! note "Detection 里 box 是回归问题"
-    类别是离散的，所以用 classification loss。
-    
-    box 坐标是连续值，所以通常把 localization 当成 regression 问题。
+![](附件/Pasted%20image%2020260731233040.png)
 
 ## 4.2 Multiple Objects 的困难
 
-一张图里可能有不同数量的 objects：
+一张图里可能有不同数量的物体，比如一张图中可能有两只猫蹲、三只狗等等
 
-```text
-图 1: 1 个 cat
-图 2: 2 个 dogs + 1 个 cat
-图 3: 很多 objects
-```
+最直接的做法是：对图像中很多不同位置、尺度、长宽比的 crop 都跑 CNN，判断每个 crop 是 object 还是 background。
 
-所以输出不是固定长度的。
-
-最朴素的做法是：对图像中很多不同位置、尺度、长宽比的 crop 都跑 CNN，判断每个 crop 是 object 还是 background。
-
-问题是这太贵了：
+但是这样子开销太大了：
 
 1. 位置很多。
 2. 尺度很多。
 3. aspect ratio 很多。
 4. 每个 crop 都独立 forward 一次，重复计算严重。
+
+![](附件/Pasted%20image%2020260731233708.png)
 
 ---
 
@@ -426,13 +417,26 @@ $$
 
 R-CNN 系列的一个关键想法是：先找出少量可能包含 object 的区域，叫 **region proposals**。
 
-Selective Search 这类方法会找出“看起来像物体”的 blob 区域，通常一张图给大约 $2000$ 个 proposals。
+Selective Search 这类方法会找出看起来像物体的 blob 区域，通常一张图给大约 $2000$ 个 proposals。
 
-这些 proposals 不直接给最终类别，只负责减少搜索空间：
-
-```text
-全图所有可能窗口 -> 约 2000 个候选 RoI
-```
+!!! warning "我的疑问"
+    ### 我的疑问1
+    一张图片中明明只有几个目标，我们为什么要生成2000个 region proposal？
+    ### 解答
+    并不是一个框框对应一个目标。而是产生的几百几千个框框，有好几个都能将我们要找到的目标给框住，比如下面三个不同的框框都能够将猫给框住：
+    ![](附件/Pasted%20image%2020260731235227.png)
+    
+    这些 proposals 都会被送到 CNN 中，CNN 会输出每个框框的得分，然后留下最高分。
+    ### 我的疑问2
+    既然这样的话，万一随机初始化的所有框框都没有将目标给框住怎么办？
+    ### 解答
+    如果 proposal 根本没有覆盖到真是目标的话，那确实寄了。但是我们并不是随机初始化这2000个框框的，Selective Search的操作机制如下图所示：
+    
+    ![](附件/Pasted%20image%2020260801000128.png)
+    ### 我的疑问3
+    为什么不能像Single Object detection 那样，用 learning 的方法一步步优化这个框框，这样子的话，我们想要探测一张图中的几个目标，就只用初始化这么多个框框，然后每个框都使用 learning 的方法来优化不就好了。为什么要像这样初始化一堆框，最后也不用learning 的方法优化，只是筛选出得分高的初始化框？
+    ### 解答
+    倒也不是完全不用 learning，是会把初始化中得分较高的框框挑出来，然后进行 learning 的，但是这个问题并没有得到我想要的解答，留着以后弄明白吧。
 
 ## 5.2 R-CNN
 
@@ -473,101 +477,12 @@ Fast R-CNN 的改进是：==先对整张图跑一次 backbone，再在 feature m
 
 这样大部分卷积计算在整张图上共享，只在后面的小 head 里按 RoI 分开处理。
 
-## 5.4 RoI Pool 和 RoI Align
-
-Fast R-CNN 需要把不同大小的 RoI feature 变成固定大小，例如：
-
-$$
-512\times7\times7
-$$
-
-RoI Pool 的做法：
-
-1. 把 proposal 投影到 feature map。
-2. 把坐标 snap 到离散 grid cells。
-3. 划分成固定数量的 bins。
-4. 每个 bin 里做 max pooling。
-
-问题是 snap 到整数网格会产生轻微错位。
-
-Mask R-CNN 后来使用 **RoI Align**：
-
-1. 不做 snapping。
-2. 在每个 bin 内固定采样点。
-3. 用 bilinear interpolation 读取非整数位置的 feature。
-
-!!! explanation "RoI Align 为什么重要"
-    对 object detection 来说，轻微错位可能还勉强能接受。
-    
-    但 instance segmentation 要预测像素级 mask，边界位置很敏感。如果 RoI feature 本身已经错位，mask 的边界就容易跟真实物体对不齐。
-
-## 5.5 Faster R-CNN 和 RPN
-
-Fast R-CNN 仍然依赖外部 proposal method，例如 Selective Search。Faster R-CNN 的核心是：==让 CNN 自己产生 proposals。==
-
-这部分叫 **Region Proposal Network（RPN）**。
-
-![](附件/Lecture9_RPN_anchor.png)
-
-假设 backbone feature map 大小为：
-
-$$
-D\times H'\times W'
-$$
-
-在 feature map 的每个空间位置放一些 anchor boxes。实践中每个位置会放 $K$ 个不同 scale / aspect ratio 的 anchors。
-
-RPN 对每个 anchor 输出：
-
-1. objectness score：这个 anchor 是否包含 object。
-2. box transform：从 anchor 调整到更合适 box 的 $4$ 个数。
-
-如果 feature map 是 $20\times15$，每个位置有 $K$ 个 anchors，那么输出形状可以理解为：
-
-$$
-\text{objectness}\in\mathbb{R}^{K\times20\times15}
-$$
-
-$$
-\text{box transforms}\in\mathbb{R}^{4K\times20\times15}
-$$
-
-然后按照 objectness 排序，取 top proposals，例如 top $300$。
-
-Faster R-CNN 是 two-stage detector：
-
-**第一阶段：** 每张图运行一次。
-
-1. Backbone network。
-2. RPN 生成 proposals。
-
-**第二阶段：** 每个 proposal 运行一次。
-
-1. RoI Pool / RoI Align crop features。
-2. 分类 object class。
-3. 回归 bbox offset。
-
-训练时通常联合优化四个 loss：
-
-1. RPN object / not object 分类。
-2. RPN box regression。
-3. final object class 分类。
-4. final box regression。
-
-!!! note "Faster R-CNN 的本质"
-    R-CNN 到 Fast R-CNN 解决的是“卷积特征重复计算”的问题。
-    
-    Fast R-CNN 到 Faster R-CNN 解决的是“proposal 还靠外部算法”的问题。
 
 ---
 
 # 6. Single-Stage Detectors: YOLO / SSD / RetinaNet
 
-Faster R-CNN 是 two-stage：
-
-```text
-先产生 proposals -> 再分类和修正 proposals
-```
+Faster R-CNN 是 two-stage（有两个阶段的）：先产生 proposals -> 再分类和修正 proposals
 
 Single-stage detector 直接在密集网格上输出 boxes 和类别。
 
@@ -591,17 +506,11 @@ $$
 (d_x,d_y,d_w,d_h,\text{confidence})
 $$
 
-![](附件/Lecture9_YOLO_grid.png)
-
-!!! explanation "Single-stage 和 RPN 很像"
-    RPN 也在每个 feature map 位置预测 anchors 的 objectness 和 box transform。
-    
-    Single-stage detector 可以理解为把这个想法继续往前推：不再把 proposals 交给第二阶段，而是直接在 dense boxes 上预测最终类别和位置。
-
-一般来说：
-
-1. Two-stage detector 往往更慢，但精度更高。
-2. Single-stage detector 往往更快，更适合实时检测。
+!!! explanation "每个 grid cell 有 B 个 boxes 是什么意思？"
+    ### 我的疑问
+    每个 grid cell 有 B 个 boxes 是什么意思？
+    ### 解答
+    ![](附件/Pasted%20image%2020260801003359.png)
 
 ---
 
@@ -881,6 +790,3 @@ $$
 7. DETR 用 Transformer 直接输出一组 boxes，并用 bipartite matching 解决输出无序问题。
 8. Mask R-CNN 在 Faster R-CNN 上加 mask head，完成 instance segmentation。
 9. Saliency、CAM 和 Grad-CAM 都是在尝试回答“模型到底看哪里”。
-
-!!! summary "一句话理解本讲"
-    这一讲的主线是：从整图分类走向像素级和实例级视觉理解，同时学习检测、分割模型如何把“类别”和“空间位置”一起预测出来。
