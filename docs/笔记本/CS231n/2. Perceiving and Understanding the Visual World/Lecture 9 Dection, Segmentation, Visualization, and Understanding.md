@@ -28,6 +28,8 @@ $$
 
 现在问题来了：**Normalization 应该放在 residual addition 前面，还是后面？**
 
+![](附件/Pasted%20image%2020260801141946.png)
+
 ## 1.1 Post-Norm
 
 原始 Transformer 使用 **Post-Norm**，也就是先做 residual addition，再做 LayerNorm：
@@ -50,15 +52,6 @@ $$
 $$
 Y=\operatorname{LayerNorm}(U+\operatorname{MLP}(U))
 $$
-
-这里 $U$ 是过完 attention 子层之后的中间结果，$Y$ 是整个 block 的输出。
-
-!!! warning "Post-Norm 的小问题"
-    Post-Norm 看起来很自然：先把信息加起来，再归一化整理一下。
-    
-    但它有一个训练上的问题：residual path 后面还跟着 LayerNorm，所以“原样传递输入”的通道并不是完全干净的。
-    
-    当 Transformer 堆得很深时，这会让训练更难稳定。
 
 ## 1.2 Pre-Norm
 
@@ -100,22 +93,8 @@ $$
 ![](附件/Pasted%20image%2020260730205551.png)
 
 !!! explanation "为什么 Pre-Norm 更稳定"
-    深层网络训练时，梯度需要从后面的层一路传回前面的层。
-    
-    Pre-Norm 的外层一直保留：
-    
-    $$
-    X+\text{something}
-    $$
-    
-    这条路可以让信息和梯度更直接地穿过很多层。
-    
-    简单说：Post-Norm 是“加完再整理”，Pre-Norm 是“先整理要处理的那部分，最后直接加回原输入”。后者通常更容易训练很深的 Transformer。
-
-!!! note "这一页真正想记住什么"
-    不用死背公式。先记住一句话：
-    
-    **Post-Norm 把 Norm 放在 residual addition 后面；Pre-Norm 把 Norm 放在 Attention / MLP 前面，让 residual path 更直接。**
+    2019年有一篇论文说明了为什么 Pre-Norm 比 Post-Norm 更好，它推导了这两种方法的 gradient，其中 Post-Norm 的 gradient 存在连乘，而 Pre-Norm 是连加。连乘容易出现梯度爆炸和梯度消失，但是连加没那么容易出现。
+    ![](附件/Pasted%20image%2020260801142411.png)
 
 ## 1.3 RMSNorm
 
@@ -214,6 +193,8 @@ $$
 2. **Semantic Segmentation**：每个 pixel 一个类别，但不区分同类的不同实例。
 3. **Object Detection**：找出每个 object 的类别和 bounding box。
 4. **Instance Segmentation**：既要找 object，又要给每个 object 单独预测 mask。
+
+![](附件/Pasted%20image%2020260801142958.png)
 
 ---
 
