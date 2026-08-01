@@ -396,9 +396,11 @@ $$
 
 ## 5.1 Region Proposals
 
-R-CNN 系列的一个关键想法是：先找出少量可能包含 object 的区域，叫 **region proposals**。
+R-CNN的做法：先找出少量可能包含 object 的区域，叫 **region proposals**。
 
 Selective Search 这类方法会找出看起来像物体的 blob 区域，通常一张图给大约 $2000$ 个 proposals。
+
+在R- CNN 中
 
 !!! warning "我的疑问"
     ### 我的疑问1
@@ -426,23 +428,23 @@ R-CNN 的流程是：
 ![](附件/Lecture9_RCNN_pipeline.png)
 
 1. 用 proposal method 得到约 $2000$ 个 RoI。
-2. 把每个 RoI warp 成固定大小，例如 $224\times224$。
-3. 每个 warped region 独立通过 ConvNet。
+2. 把这2000个 $RoI$ 都 warp 成固定的大小，例如 $224\times224$（我个人感觉这样子不太好，有些图片会被缩放的很难看，比如把一个 $9\times 16$ 的自拍照缩放成 $16\times 16$ 会很丑）。
+3. 每个 warped region 独立通过 ConvNet，生成 feature matrix。
+    - feature matirx 可以是 $2000\times 4096$ 维的，其中2000代表2000个框框，4096代表每个框框都提取出4096个特征值。
 4. 用 SVM 对 region 分类。
+    - 如果 feature matrix 的维度为 $2000\times 4096$ 的话，那么 SVM weight matrix 的维度为 $4096\times N$，其中 $N$ 代表类别数量
 5. 用 bbox regressor 预测 box correction：
 
 $$
 (d_x,d_y,d_w,d_h)
 $$
 
-R-CNN 的主要问题是慢。因为一张图要对约 $2000$ 个 region 分别跑 ConvNet。
-
-!!! warning "R-CNN 慢在哪里"
-    它不是 proposal 本身最慢，而是每个 proposal 都要独立 forward 一次 CNN。
-    
-    这些 proposal 之间高度重叠，但卷积特征没有被共享。
+一张图要生成 $2000$ 个 region，每个 region 都要跑 ConvNet，所以R- CNN的效率比较低。
 
 ## 5.3 Fast R-CNN
+
+R- CNN的缺点：
+![](附件/Pasted%20image%2020260802003847.png)
 
 Fast R-CNN 的改进是：==先对整张图跑一次 backbone，再在 feature map 上 crop RoI。==
 
@@ -450,11 +452,32 @@ Fast R-CNN 的改进是：==先对整张图跑一次 backbone，再在 feature m
 
 流程变成：
 
-1. 输入整张图。
-2. Backbone CNN 输出 feature map。
-3. 把 region proposals 投影到 feature map 上。
-4. 对每个 RoI 做 crop + resize，得到固定大小 feature。
-5. per-region network 同时输出类别和 box offset。
+# Fast R-CNN 执行过程
+
+1. 用 proposal method 得到约 $2000$ 个 RoI。
+2. 整张图片通过一次 ConvNet，生成 feature map。
+    - 与 R-CNN 不同，Fast R-CNN 不会把每个 RoI 单独 resize 后输入 CNN。
+    - 而是先对整张图片进行一次卷积操作：
+
+$$
+Image \rightarrow ConvNet \rightarrow Feature\ Map
+$$
+
+3. 对每个 RoI 使用 RoI Pooling 从 feature map 中提取固定大小的 feature。
+    - 每个 RoI 根据自己的位置，在 feature map 中找到对应区域。
+    - 然后通过 RoI Pooling 转换成固定大小
+        - 注意，这里的顺序跟 R-CNN 不一样，R- CNN 是先将 ROI 缩放成固定大小之后再丢到 ConvNet 中。而 Fast R-CNN 先将整张图片通过 ConvNet 得到 feature map，然后将 RoI 映射到 feature map 上，再通过 RoI Pooling 将每个 RoI 转换成固定大小的 feature
+4. 每个 RoI 的 feature 通过 Fully Connected Layer，生成 feature vector。
+5. 使用 Softmax classifier 对 region 分类。
+    - Fast R-CNN 不再使用 R-CNN 中单独训练的 SVM 分类器，而是将分类任务整合到网络内部，通过 Softmax layer 直接输出类别概率。
+6. 使用 bbox regressor 预测 box correction：
+
+$$
+(d_x,d_y,d_w,d_h)
+$$
+
+    - 与分类分支同时进行。
+    - 用预测出的 offset 对原来的 RoI 进行调整，得到更加准确的 bounding box。
 
 这样大部分卷积计算在整张图上共享，只在后面的小 head 里按 RoI 分开处理。
 

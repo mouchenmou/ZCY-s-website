@@ -64,6 +64,20 @@
             }
           },
           {
+            "id": "b784143cc664f89c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CS231n/2. Perceiving and Understanding the Visual World/Lecture 9 Dection, Segmentation, Visualization, and Understanding.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Lecture 9 Dection, Segmentation, Visualization, and Understanding"
+            }
+          },
+          {
             "id": "d16a765163185f5d",
             "type": "leaf",
             "state": {
@@ -90,7 +104,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -243,8 +257,9 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "a9acd87d15e1dfa3",
+  "active": "b784143cc664f89c",
   "lastOpenFiles": [
+    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260802003847.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260801142958.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260801142411.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260801142310.png",
@@ -257,7 +272,6 @@
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731233708.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731233040.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731233028.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260731005733.png",
     "tmp/lecture9_extracted.txt",
     "CS231n/2. Perceiving and Understanding the Visual World/未确认 394360.crdownload",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 8 Attention and Transformers.md",
