@@ -526,7 +526,7 @@ DETR 的目标是把 detection 做得更端到端一些。
 
 ![](附件/Lecture9_DETR_pipeline.png)
 
-核心流程可以理解为：
+流程如下：
 
 1. CNN backbone 提取图像特征。
 2. 把二维 feature map 展平成一组 tokens，加 positional encoding。
