@@ -547,9 +547,9 @@ $$
     
     用 convolution 处理 hidden state，可以让模型保留空间布局，同时沿时间递归传递信息。
 
-## 6.3 RNN 的限制
+## 6.3 RNN 的缺点
 
-RNN 能建模很长的时间依赖，但它也有一个明显问题：很难并行。
+在 Lecture 7 中就已经学过，RNN 在处理长序列的时候速度非常慢。而视频通常是非常长的，需要做并行化处理，但是 RNN 很难并行化。
 
 因为：
 
@@ -565,7 +565,7 @@ $$
 
 ---
 
-# 8. Spatio-Temporal Self-Attention：Nonlocal Block
+# 7. Spatio-Temporal Self-Attention：Nonlocal Block
 
 Lecture 8 已经讲过 self-attention：每个 query 可以从所有 key/value 中取信息。
 
@@ -583,9 +583,7 @@ $$
 
 Nonlocal Block 就是在视频特征上做 spatio-temporal self-attention。
 
-![](附件/Lecture10_page065.png)
-
-## 8.1 Nonlocal Block 的计算
+## 7.1 Nonlocal Block 的计算
 
 先用 $1\times1\times1$ convolution 生成 queries、keys、values：
 
@@ -654,7 +652,7 @@ $$
 
 ---
 
-# 9. I3D：把 2D 图像网络 Inflating 到 3D
+# 8. I3D：把 2D 图像网络 Inflating 到 3D
 
 图像领域已经有很多成熟架构，例如 Inception、ResNet。
 
@@ -678,7 +676,7 @@ $$
 
 例如 2D Inception block 可以扩展成 3D Inception block，让每个分支都处理时空信息。
 
-## 9.1 2D 权重如何变成 3D 权重
+## 8.1 2D 权重如何变成 3D 权重
 
 如果原来的 2D conv kernel 是：
 
@@ -692,18 +690,13 @@ $$
 W_{\text{3D}}\in\mathbb{R}^{C_{\text{out}}\times C_{\text{in}}\times K_T\times K\times K}
 $$
 
-一种直觉做法是：把 2D kernel 沿时间维复制 $K_T$ 次，并除以 $K_T$，使输出尺度大致不变。
+一种做法是：把 2D kernel 沿时间维复制 $K_T$ 次，并除以 $K_T$，使输出尺度大致不变。
 
 ![](附件/Lecture10_page075.png)
 
-!!! note "I3D 的核心优势"
-    I3D 不是从零设计视频网络，而是利用图像模型中已经验证过的架构。
-    
-    这让视频模型可以继承 image architecture 的经验，同时加入时间建模能力。
-
 ---
 
-# 10. Vision Transformers for Video
+# 9. Vision Transformers for Video
 
 随着 Transformer 在图像上成功，视频也可以被拆成一组 spatio-temporal tokens，然后用 Transformer 处理。
 
@@ -731,7 +724,7 @@ $$
 2. **Pooling module**：逐步减少 token 数量。
 3. **Video masked autoencoders**：通过 masked reconstruction 做高效预训练。
 
-## 10.1 Factorized Attention
+## 9.1 Factorized Attention
 
 Full spatio-temporal attention 是让每个 token 看所有时空 token。
 
@@ -759,54 +752,15 @@ Factorized attention 可以拆成：
     
     因此计算和显存都会随 $T^2$ 增长。
 
-## 10.2 不同视频模型的发展
-
-课件用 Kinetics-400 上的 Top-1 Accuracy 对比了不同模型：
-
-1. Per-frame CNN。
-2. CNN + LSTM。
-3. Two-Stream CNN。
-4. I3D。
-5. I3D + Nonlocal Block。
-6. SlowFast。
-7. MViTv2-L。
-8. VideoMAE V2-g。
-
-![](附件/Lecture10_page078.png)
-
-整体趋势是：从单帧 appearance，到 motion stream，到 3D CNN，再到 attention / transformer 和大规模预训练，视频理解模型越来越强。
-
 ---
 
-# 11. Visualizing Video Models
-
-和图像模型一样，我们也希望知道视频模型到底看了什么。
-
-对于 two-stream model，可以分别观察：
-
-1. Appearance stream 关注哪些图像区域。
-2. Motion stream 关注哪些运动模式。
-
-例如 weightlifting：
-
-1. Appearance 可能看杠铃、人、姿态。
-2. Fast motion 可能看杠铃抖动。
-3. Slow motion 可能看举过头顶的动作阶段。
-
-!!! note "视频可视化比图像更复杂"
-    图像可视化主要回答“哪片空间区域重要”。
-    
-    视频可视化还要回答“哪个时间段重要”和“什么运动模式重要”。
-
----
-
-# 12. 从短 clip 到长视频任务
+# 10. 从短 clip 到长视频任务
 
 到目前为止，很多方法都是在短 clip 上做分类。
 
 但是真实视频往往很长，而且动作只发生在其中一段时间。
 
-## 12.1 Temporal Action Localization
+## 10.1 Temporal Action Localization
 
 Temporal Action Localization 的任务是：
 
@@ -828,7 +782,7 @@ jumping: frame 90 -> frame 120
 1. 先生成 temporal proposals。
 2. 再对每个 proposal 分类和回归边界。
 
-## 12.2 Spatio-Temporal Detection
+## 10.2 Spatio-Temporal Detection
 
 Spatio-Temporal Detection 更进一步：不仅要知道动作发生在哪段时间，还要知道人在每一帧中的空间位置。
 
@@ -846,145 +800,3 @@ Spatio-Temporal Detection 更进一步：不仅要知道动作发生在哪段时
     Spatio-Temporal Detection 要在每一帧里画框，并且这些框沿时间形成 tube。
     
     所以前者更像 1D detection，后者更像 video version 的 object detection。
-
----
-
-# 13. Multisensory Fusion：视频不只有画面
-
-视频通常不只有视觉，还有音频。
-
-课件后半部分展示了多模态视频理解，核心思想是：视觉和听觉会互相影响，也可以互相帮助。
-
-## 13.1 McGurk Effect
-
-McGurk Effect 说明：人类听到的语音感知会受到嘴型视觉信息影响。
-
-例如音频像是：
-
-```text
-Ba Ba Ba
-```
-
-但如果看到嘴型像：
-
-```text
-Fa Fa Fa
-```
-
-人可能会感知到另一种声音。
-
-这说明 audio 和 visual 并不是两个完全独立的通道。
-
-## 13.2 Visually-Guided Audio Source Separation
-
-一个典型任务是：给定多人说话或多乐器混合的音频，再结合视频画面，把不同声源分离出来。
-
-例如：
-
-1. 输入：两个 speaker 的混合语音。
-2. 视觉：看到左边和右边各有一个人在说话。
-3. 输出：左边 speaker 的声音、右边 speaker 的声音。
-
-![](附件/Lecture10_page092.png)
-
-视觉信息可以告诉模型：
-
-1. 哪些物体或人正在发声。
-2. 声源大概在哪里。
-3. 不同声音应该如何分离。
-
-!!! note "视觉为什么能帮助分离声音"
-    如果画面中一个人在说话，嘴部运动和语音节奏通常相关。
-    
-    如果画面中一把小提琴在演奏，乐器的位置和动作也能帮助模型判断哪一部分音频属于它。
-
-## 13.3 Audio-Visual Video Understanding
-
-现代视频理解中，多模态融合可以用于：
-
-1. audio-visual masked autoencoder。
-2. audio-adaptive activity recognition。
-3. attention bottlenecks for multimodal fusion。
-
-![](附件/Lecture10_page097.png)
-
-!!! explanation "多模态融合的直觉"
-    视觉擅长提供 object、scene、motion。
-    
-    音频擅长提供 speech、sound event、rhythm。
-    
-    如果一个任务同时依赖画面和声音，那么模型应该学会在合适的地方融合两种信息，而不是只把它们简单拼接。
-
----
-
-# 14. Efficient Video Understanding
-
-视频模型的计算量很大，所以 efficient video understanding 是一个重要方向。
-
-常见思路包括：
-
-1. 设计更轻量的视频网络。
-2. 只采样最有信息量的 clips。
-3. 用多模态信息帮助模型更快定位关键片段。
-4. 面向长视频做分层或流式处理。
-
-![](附件/Lecture10_page099.png)
-
-## 14.1 为什么视频模型更需要效率
-
-图像模型处理一张图；视频模型处理很多帧。
-
-如果每帧都跑一次大模型，计算量大约随 $T$ 线性增长。如果再做 full attention，代价可能随 $T^2$ 增长。
-
-所以高效视频理解的核心不是“少看一点就行”，而是：
-
-```text
-把计算花在真正有用的时间片段和模态上
-```
-
-## 14.2 Video Understanding + LLMs
-
-最后，课件提到 video understanding 和 LLM / multimodal foundation models 的结合。
-
-例如 Video-LLaVA、VideoLLaMA、Video-ChatGPT 这类模型，目标是让模型不仅能分类动作，还能对视频做更开放的理解和问答。
-
-![](附件/Lecture10_page102.png)
-
-!!! note "从分类到开放式理解"
-    传统 video classification 的输出是固定类别：
-    
-    ```text
-    running / swimming / eating
-    ```
-    
-    多模态大模型希望输出更丰富的语言描述，例如：
-    
-    ```text
-    一个人先拿起杯子，然后倒水，最后把杯子递给旁边的人。
-    ```
-    
-    这要求模型理解 object、action、temporal order、speech 和上下文。
-
----
-
-# 15. 总结
-
-本讲的主线是：**视频 = 图像 + 时间，因此视频模型要同时处理 appearance 和 motion。**
-
-几个关键点：
-
-1. 视频输入是 $T\times3\times H\times W$，数据量很大，所以训练常用短 clip。
-2. Single-frame CNN 是强 baseline，因为很多动作类别有明显 appearance cue。
-3. Late Fusion 在高层融合多帧，Early Fusion 在第一层融合多帧，3D CNN 则逐层融合时空信息。
-4. 3D convolution 在 $t,x,y$ 三个方向滑动，可以学习局部时空模式。
-5. Optical Flow 显式表达 motion；Two-Stream Network 分别建模 appearance 和 motion。
-6. CNN + RNN 可以用 CNN 提取局部 clip feature，再用 RNN 建模长期时间结构，但 RNN 难以并行。
-7. Nonlocal Block 把 self-attention 用到视频特征上，让任意时空位置可以直接交互。
-8. I3D 把成熟的 2D CNN 架构 inflate 成 3D CNN，复用图像模型经验。
-9. Video Transformer 需要处理 token 数过大的问题，因此常用 factorized attention、pooling 和 masked pretraining。
-10. 长视频任务包括 temporal action localization 和 spatio-temporal detection。
-11. 视频理解还可以融合音频，做 audio-visual recognition、source separation 和多模态理解。
-12. 未来方向包括更高效的视频模型，以及和 LLM 结合的开放式视频理解。
-
-!!! note "一句话记忆"
-    图像模型主要问“画面里有什么”；视频模型还要问“这些东西怎么动、先后发生了什么、声音和画面如何对应”。
