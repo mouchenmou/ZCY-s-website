@@ -55,24 +55,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS231n/2. Perceiving and Understanding the Visual World/Lecture 10 Video Understanding.md",
+                "file": "CS231n/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 10 Video Understanding"
+              "title": "index"
             }
           },
           {
             "id": "b5a5b5935c3b591b",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "CS231n/2. Perceiving and Understanding the Visual World/lecture_10.pdf"
+                "file": "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "lecture_10"
+              "icon": "lucide-file",
+              "title": "Lecture 3 Regularization and Optimization"
             }
           },
           {
@@ -245,9 +247,9 @@
   },
   "active": "a9acd87d15e1dfa3",
   "lastOpenFiles": [
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260804223845.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/lecture_10.pdf",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 10 Video Understanding.md",
+    "CS231n/2. Perceiving and Understanding the Visual World/lecture_10.pdf",
+    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260804223845.png",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 7 Recurrent Neural Networks.md",
     "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 9 Dection, Segmentation, Visualization, and Understanding.md",
@@ -263,7 +265,6 @@
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture10_page102.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture10_page099.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture10_page097.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture10_page092.png",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 8 Attention and Transformers.md",
     "CS231n/2. Perceiving and Understanding the Visual World/未确认 667190.crdownload",
     "tmp/lecture9_extracted.txt",

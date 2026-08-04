@@ -374,6 +374,9 @@ nav:
         - Lecture 5 Image Classification with CNNs: 笔记本/CS231n/2. Perceiving and Understanding the Visual World/Lecture 5 Image Classification with CNNs.md
         - Lecture 6 CNN Architectures: 笔记本/CS231n/2. Perceiving and Understanding the Visual World/Lecture 6 CNN Architectures.md
         - Lecture 7 Recurrent Neural Networks: 笔记本/CS231n/2. Perceiving and Understanding the Visual World/Lecture 7 Recurrent Neural Networks.md
+        - Lecture 8 Attention and Transformers: 笔记本/CS231n/2. Perceiving and Understanding the Visual World/Lecture 8 Attention and Transformers.md
+        - Lecture 9 Dection, Segmentation, Visualization, and Understanding: 笔记本/CS231n/2. Perceiving and Understanding the Visual World/Lecture 9 Dection, Segmentation, Visualization, and Understanding.md
+        - Lecture 10 Video Understanding: 笔记本/CS231n/2. Perceiving and Understanding the Visual World/Lecture 10 Video Understanding.md
     - CSAPP 深入理解计算机系统:
       - 笔记本/深入理解计算机系统/index.md
       - 第1章 计算机系统漫游:
