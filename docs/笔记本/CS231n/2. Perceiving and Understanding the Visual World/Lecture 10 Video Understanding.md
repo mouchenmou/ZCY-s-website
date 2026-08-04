@@ -18,11 +18,6 @@ $$
 
 ![](附件/Lecture10_page007.png)
 
-!!! note "Video = 2D + Time"
-    视频理解相比图像理解，多出来的关键维度就是 **time**。
-    
-    因此模型不仅要看每一帧里有什么，还要理解这些东西随时间怎么变化。
-
 ## 1.1 Video Classification
 
 最基本的视频任务是 **Video Classification**：给定一段视频，输出一个类别。
@@ -299,58 +294,80 @@ $$
 
 # 3. Early Fusion、Late Fusion 和 3D CNN 的对比
 
-三者的差别可以从 temporal receptive field 来看。
-
-![](附件/Lecture10_page024.png)
-
+主要是对比三者的感受野
 ## 3.1 Late Fusion
+
+以下面这个例子来分析一下感受野的变化过程：
+
+![](附件/Pasted%20image%2020260803161715.png)
 
 Late Fusion 的 temporal receptive field 在前面的 2D CNN 中基本不增长。
 
-每一帧独立经过 CNN：
+#### 第一步：第一层 Conv2D
 
+$$\begin{align*} &\because C_{in}=3, \ C_{out}=12
+\\& \therefore 卷积核整体： W \in R^{12\times 3\times3\times3}
+\\ &\because 感受野不统计\ channel 
+\\ & \therefore 经过第一层\ ConV2D\ 后，感受野为\ 1\times3\times 3 
+\end{align*}$$
+
+注意：这里的 $1\times 3\times 3$ 中的 $1$ 代表的是**时间维度**而不是 $C_{in}\ 和\ C_{out}$。
+
+#### 第二步：Pool2D
+
+注意：这里的 pooling 就是正常的池化，而不是 2.2.2 中那个 average pool over space and time.
+
+$$\begin{align*}
+&\because 空间尺寸由\ 64\times64\ 变为\ 16\times 16
+\\ &\therefore Pooling\ kernel\ 的空间尺寸为\ 4\times4
+\\ & 相当于是把 \ 64\times 64 \ 中的每个\ 4\times4\ 都变成 \ 1
+\\ &\because 这一层输入的\ feature\ map\ 中的每一个点都是原图中的\ 3\times3\ 转化来的
+\\ &又 \because 这一层的\ 4\times4\ 又被合并成\ 1\ 了
+\\ &\therefore 空间感受野的\ H\ 和\ W\ 都变为：3+(4-1)=6
+\\ &\therefore 感受野由\ 1\times3\times3\ 变为\ 1\times6\times6
+\end{align*}
 $$
-I_t\rightarrow f_t
-$$
 
-直到最后 pooling / concat 时，模型才把不同时间步放在一起。
+感受野此刻依然只在空间维度上有变化吗，在时间维度上还是没有变化。
 
-所以它是：
+#### 第三步：第二层 ConV2D
 
-```text
-space: gradually build
-time: all-at-once at the end
-```
+
+$$\begin{align*} &\because C_{in}=12, \ C_{out}=24
+\\& \therefore 卷积核整体： W \in R^{24\times 12\times3\times3}
+\\ &\because 刚刚经过了\ Pool(4\times4,\ stride=4)
+\\ &\therefore Pool\ 之后输出的\ feature\ map\ 中，
+\\&\ \ \ \ \ 点与点之间的间隔对应原图间隔\ junp=4
+\\ &\therefore RF_{new}=6+(3-1)\times4=14
+\\ &\therefore 感受野从\ 1\times6\times6\ 转变为\ 1\times14\times14
+\end{align*}$$
+
+#### 第四步：Pool over time and space
+
+经过第二层 ConV 之后，feature map 的维度变为 $24\times 20\times 16\times 16$
+
+Global Average Pool 会平均：
+
+- 时间：$20$
+- 空间：$16\times16$
+
+最后输出的 feature map 维度为 $24\times 1\times 1\times1$
+
+因此感受野变为 $20\times64\times64$
 
 ## 3.2 Early Fusion
 
-Early Fusion 在第一层就看完所有时间帧：
+![](附件/Pasted%20image%2020260803172631.png)
 
-$$
-(3T)\times H\times W
-\rightarrow
-C\times H'\times W'
-$$
-
-所以它是：
-
-```text
-time: all-at-once at the beginning
-space: gradually build later
-```
+Early Fusion 首先将输入的 $T\times3\times H \times W$ reshape 为 $3T\times H \times W$。故第一层 Conv2D 的卷积核在 channel 维度上同时覆盖所有时间帧对应的 RGB channel，因此**时间维度的感受野变为 $T$**。空间维度则是跟 Late Fusion 一样的推导方法。
 
 ## 3.3 3D CNN
 
-3D CNN 每一层都保留时间维度，并逐层扩大时间和空间 receptive field。
+![](附件/Pasted%20image%2020260803174605.png)
 
-所以它是：
+3D CNN 同时对时间和空间维度进行卷积，因此感受野在时间维度和空间维度都是逐层扩大的。
 
-```text
-space: gradually build
-time: gradually build
-```
-
-!!! note "三种方法的直觉总结"
+!!! note "三种方法总结对比"
     Late Fusion：先理解每帧，再最后合并。
     
     Early Fusion：一开始就把多帧混在一起，后面按普通图像处理。
@@ -359,66 +376,9 @@ time: gradually build
 
 ---
 
-# 4. 2D Conv 和 3D Conv 的具体对比
+# 4. C3D
 
-如果做 Early Fusion，输入是：
-
-$$
-C_{\text{in}}\times T\times H\times W
-$$
-
-但是第一层 2D conv 的输出会变成：
-
-$$
-C_{\text{out}}\times H'\times W'
-$$
-
-时间维度消失了。
-
-![](附件/Lecture10_page037.png)
-
-如果做 3D Conv，输入和输出都是 3D grid：
-
-$$
-C_{\text{in}}\times T\times H\times W
-\quad\longrightarrow\quad
-C_{\text{out}}\times T'\times H'\times W'
-$$
-
-!!! explanation "为什么 Early Fusion 不能算真正的 3D CNN"
-    Early Fusion 的 filter 形状虽然包含 $T$ 帧：
-    
-    $$
-    C_{\text{out}}\times (3T)\times K\times K
-    $$
-    
-    但是它只在 $x,y$ 方向滑动，不在时间方向滑动。
-    
-    3D convolution 的 filter 是：
-    
-    $$
-    C_{\text{out}}\times C_{\text{in}}\times K_T\times K_H\times K_W
-    $$
-    
-    它会在 $t,x,y$ 三个方向滑动，因此能够学习局部时空模式。
-
----
-
-# 5. 实验：Sports-1M 和 C3D
-
-Sports-1M 是一个视频分类数据集，包含约一百万个 YouTube 视频，标注了 487 种运动类别。
-
-早期结果中：
-
-1. Single-frame CNN 已经很强。
-2. Early Fusion、Late Fusion 有提升，但不总是压倒性。
-3. C3D 这类 3D CNN 在后来表现更好。
-
-![](附件/Lecture10_page039.png)
-
-## 5.1 C3D
-
-C3D 可以理解成视频里的 VGG：大量使用 $3\times3\times3$ convolution 和 pooling。
+C3D 可以理解成3维的 VGG：大量使用 $3\times3\times3$ convolution 和 pooling。
 
 输入通常是一个短 clip：
 
@@ -437,17 +397,17 @@ $$
 
 ---
 
-# 6. Motion Information 和 Optical Flow
+# 5. Motion Information 和 Optical Flow
 
-有些动作即使只看 motion 也能识别出来。经典 point-light experiment 表明，人类看到几个运动光点，也能判断人在走路、跑步或做其他动作。
+有些动作即使只看 motion 也能识别出来。人类看到几个运动光点，也能判断人在走路、跑步或做其他动作（像火柴人那样）。
 
 所以视频理解里 appearance 和 motion 都重要。
 
-## 6.1 Optical Flow
+## 5.1 Optical Flow
 
 Optical Flow 描述相邻两帧之间每个像素的位移。
 
-给定第 $t$ 帧图像 $I_t$ 和第 $t+1$ 帧图像 $I_{t+1}$，optical flow 是一个 displacement field：
+给定第 $t$ 帧图像 $I_t$ 和第 $t+1$ 帧图像 $I_{t+1}$，optical flow 会计算这一帧中的每一个像素在下一帧中移动到了哪里：
 
 $$
 F(x,y)=(dx,dy)
@@ -459,7 +419,7 @@ $$
 (x+dx,y+dy)
 $$
 
-于是可以写成：
+即：
 
 $$
 I_{t+1}(x+dx,y+dy)\approx I_t(x,y)
@@ -476,7 +436,7 @@ Optical flow 会突出局部运动。例如水平 flow $dx$ 表示像素在水�
     
     因此 optical flow 更直接地表达 motion，但通常需要额外计算或估计。
 
-## 6.2 Two-Stream Networks
+## 5.2 Two-Stream Networks
 
 Two-Stream Network 把 appearance 和 motion 分开处理。
 
@@ -499,58 +459,27 @@ $$
 2(T-1)
 $$
 
-Two-Stream 的结果说明：只看 temporal stream 已经很强，把 spatial 和 temporal stream 融合通常更好。
 
-!!! explanation "为什么 Two-Stream 有用"
-    Spatial stream 擅长回答：
-    
-    ```text
-    画面里有什么？
-    ```
-    
-    Temporal stream 擅长回答：
-    
-    ```text
-    这些东西怎么动？
-    ```
-    
-    很多动作类别需要同时知道这两个问题的答案。
 
 ---
 
-# 7. 长时间结构：CNN + RNN
+# 6. 长时间结构：CNN + RNN
 
 前面的 3D CNN 和 Two-Stream 主要处理短 clip，大约只有几秒。
 
-但是很多视频任务需要长时间结构。例如：
-
-```text
-先助跑 -> 起跳 -> 落地
-```
-
-或者：
-
-```text
-先拿起物体 -> 操作物体 -> 放下物体
-```
+但是很多视频任务需要长时间结构，此时我们需要引入 CNN+RNN（通常用 LSTM）。
 
 ![](附件/Lecture10_page049.png)
 
-## 7.1 CNN 提取局部特征，RNN 建模全局时间
+## 6.1 CNN 提取局部特征，RNN 建模全局时间
 
-一种自然做法是：
+步骤：
 
 1. 用 2D CNN 或 3D CNN 从每个 clip 提取 feature。
 2. 把这些 feature 按时间顺序送入 RNN / LSTM。
 3. 最后输出整段视频类别，或者每一帧的预测。
 
-也就是：
-
-```text
-video clips -> CNN features -> RNN/LSTM -> prediction
-```
-
-对于整段视频分类，这是 many-to-one：
+对于整段视频分类，是 many-to-one：
 
 $$
 f_1,f_2,\dots,f_T
@@ -558,7 +487,7 @@ f_1,f_2,\dots,f_T
 y
 $$
 
-对于逐帧标注，这是 many-to-many：
+对于逐帧标注，是 many-to-many：
 
 $$
 f_1,f_2,\dots,f_T
@@ -571,7 +500,7 @@ $$
     
     实践中有时会先预训练 CNN，把它当作 feature extractor，只训练后面的 RNN。这样可以减少 backprop 需要保存的中间激活。
 
-## 7.2 Recurrent Convolutional Network
+## 6.2 Recurrent Convolutional Network
 
 CNN 只能在固定时间窗口内建模局部时序结构，而 RNN 可以把之前所有时间步的信息压进 hidden state。
 
@@ -618,7 +547,7 @@ $$
     
     用 convolution 处理 hidden state，可以让模型保留空间布局，同时沿时间递归传递信息。
 
-## 7.3 RNN 的限制
+## 6.3 RNN 的限制
 
 RNN 能建模很长的时间依赖，但它也有一个明显问题：很难并行。
 

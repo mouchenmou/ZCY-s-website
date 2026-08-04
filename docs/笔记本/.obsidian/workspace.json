@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS231n/2. Perceiving and Understanding the Visual World/Lecture 9 Dection, Segmentation, Visualization, and Understanding.md",
+                "file": "CS231n/2. Perceiving and Understanding the Visual World/Lecture 10 Video Understanding.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 9 Dection, Segmentation, Visualization, and Understanding"
+              "title": "Lecture 10 Video Understanding"
             }
           },
           {
@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
+                "file": "CS231n/2. Perceiving and Understanding the Visual World/Lecture 6 CNN Architectures.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 3 Regularization and Optimization"
+              "title": "Lecture 6 CNN Architectures"
             }
           }
         ],
@@ -233,23 +233,25 @@
   },
   "active": "a9acd87d15e1dfa3",
   "lastOpenFiles": [
-    "CS231n/2. Perceiving and Understanding the Visual World/lecture_10.pdf",
+    "CS231n/2. Perceiving and Understanding the Visual World/Lecture 6 CNN Architectures.md",
+    "CS231n/2. Perceiving and Understanding the Visual World/Lecture 5 Image Classification with CNNs.md",
+    "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 10 Video Understanding.md",
+    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260803174605.png",
+    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260803172631.png",
+    "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260803161715.png",
+    "CS231n/2. Perceiving and Understanding the Visual World/Lecture 9 Dection, Segmentation, Visualization, and Understanding.md",
+    "CS231n/2. Perceiving and Understanding the Visual World/lecture_10.pdf",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260802003847.png",
     "CS231n/2. Perceiving and Understanding the Visual World/lecture_9.pdf",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260803010333.png",
-    "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
     "CS231n/1. Deep Learning Basic/Lecture 2 Image Classification with Linear Classifiers.md",
     "写CV.md",
-    "CS231n/2. Perceiving and Understanding the Visual World/Lecture 9 Dection, Segmentation, Visualization, and Understanding.md",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260802224651.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture10_page102.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture10_page099.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture10_page097.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture10_page092.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture10_page086.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture10_page085.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture10_page078.png",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 8 Attention and Transformers.md",
     "CS231n/2. Perceiving and Understanding the Visual World/未确认 667190.crdownload",
     "tmp/lecture9_extracted.txt",
@@ -263,11 +265,9 @@
     "CS189 机器学习/index.md",
     "CS231n/Homework/Homework1/Softmax.md",
     "CS231n/1. Deep Learning Basic/Lecture 4 Neural Networks and Backpropagation.md",
-    "CS231n/2. Perceiving and Understanding the Visual World/Lecture 6 CNN Architectures.md",
     "CS231n/Homework/Homework1/Two-Layer Neural Network.md",
     "Codex/Codex安装.md",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 7 Recurrent Neural Networks.md",
-    "CS231n/2. Perceiving and Understanding the Visual World/Lecture 5 Image Classification with CNNs.md",
     "数据结构基础 FDS/补充知识/Bellman-Ford算法与SPFA算法.md",
     "CS231n/1. Deep Learning Basic/Python 和 Numpy.md",
     "大二短学期总结心得.md",
