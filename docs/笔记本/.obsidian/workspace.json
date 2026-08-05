@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS231n/index.md",
+                "file": "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Lecture 3 Regularization and Optimization"
             }
           },
           {
@@ -247,6 +247,8 @@
   },
   "active": "a9acd87d15e1dfa3",
   "lastOpenFiles": [
+    "CS231n/1. Deep Learning Basic/Lecture 4 Neural Networks and Backpropagation.md",
+    "CS231n/index.md",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 10 Video Understanding.md",
     "CS231n/2. Perceiving and Understanding the Visual World/lecture_10.pdf",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Pasted image 20260804223845.png",
@@ -277,7 +279,6 @@
     "CS189 机器学习/Homework/HW4/readme.md",
     "CS189 机器学习/index.md",
     "CS231n/Homework/Homework1/Softmax.md",
-    "CS231n/1. Deep Learning Basic/Lecture 4 Neural Networks and Backpropagation.md",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 6 CNN Architectures.md",
     "CS231n/Homework/Homework1/Two-Layer Neural Network.md",
     "Codex/Codex安装.md",
