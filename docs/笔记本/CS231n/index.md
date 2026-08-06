@@ -23,6 +23,7 @@ Stanford 的 CV 入门课，由计算机领域的巨佬李飞飞院士领衔教�
 - [Lecture 8 Attention and Transformers](./2.%20Perceiving%20and%20Understanding%20the%20Visual%20World/Lecture%208%20Attention%20and%20Transformers.md)
 - [Lecture 9 Dection, Segmentation, Visualization, and Understanding](./2.%20Perceiving%20and%20Understanding%20the%20Visual%20World/Lecture%209%20Dection,%20Segmentation,%20Visualization,%20and%20Understanding.md)
 - [Lecture 10 Video Understanding](./2.%20Perceiving%20and%20Understanding%20the%20Visual%20World/Lecture%2010%20Video%20Understanding.md)
+- [Lecture 11 Large Scale Distributed Training](./2.%20Perceiving%20and%20Understanding%20the%20Visual%20World/Lecture%2011%20Large%20Scale%20Distributed%20Training.md)
 
 ---
 

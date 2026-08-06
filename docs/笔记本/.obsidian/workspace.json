@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS231n/2. Perceiving and Understanding the Visual World/Lecture 11 Large Scale Distributed Training.md",
+                "file": "CS231n/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 11 Large Scale Distributed Training"
+              "title": "index"
             }
           },
           {
@@ -245,8 +245,10 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "2a6816d11ffda768",
+  "active": "a9acd87d15e1dfa3",
   "lastOpenFiles": [
+    "CS231n/2. Perceiving and Understanding the Visual World/Lecture 11 Large Scale Distributed Training.md",
+    "CS231n/2. Perceiving and Understanding the Visual World/lecture_11.pdf",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture11_page-147.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture11_page-146.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture11_page-143.png",
@@ -257,11 +259,8 @@
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture11_page-101.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture11_page-070.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture11_page-067.png",
-    "CS231n/2. Perceiving and Understanding the Visual World/附件/Lecture11_page-045.png",
     "CS231n/2. Perceiving and Understanding the Visual World/附件/lecture11_tmp_render",
-    "CS231n/2. Perceiving and Understanding the Visual World/lecture_11.pdf",
     "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
-    "CS231n/2. Perceiving and Understanding the Visual World/Lecture 11 Large Scale Distributed Training.md",
     "CS231n/1. Deep Learning Basic/Lecture 4 Neural Networks and Backpropagation.md",
     "CS231n/index.md",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 10 Video Understanding.md",
