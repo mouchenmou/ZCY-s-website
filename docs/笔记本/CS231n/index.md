@@ -25,6 +25,9 @@ Stanford 的 CV 入门课，由计算机领域的巨佬李飞飞院士领衔教�
 - [Lecture 10 Video Understanding](./2.%20Perceiving%20and%20Understanding%20the%20Visual%20World/Lecture%2010%20Video%20Understanding.md)
 - [Lecture 11 Large Scale Distributed Training](./2.%20Perceiving%20and%20Understanding%20the%20Visual%20World/Lecture%2011%20Large%20Scale%20Distributed%20Training.md)
 
+### Part 3: Generative and Interactive Visual Intelligence
+- [Lecture 12 Self-supervised Learning](./3.%20Generative%20and%20Interactive%20Visual%20Intelligence/Lecture%2012%20Self-supervised%20Learning.md)
+
 ---
 
 *持续更新中……*
