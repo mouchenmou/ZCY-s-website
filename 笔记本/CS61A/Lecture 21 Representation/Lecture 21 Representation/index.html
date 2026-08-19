@@ -13,7 +13,7 @@
 <a id=__codelineno-0-4 name=__codelineno-0-4></a><span class=n>letter</span> <span class=o>=</span> <span class=n>Letter</span><span class=p>()</span>
 <a id=__codelineno-0-5 name=__codelineno-0-5></a>
 <a id=__codelineno-0-6 name=__codelineno-0-6></a><span class=nb>type</span><span class=p>(</span><span class=n>letter</span><span class=p>)</span>
-<a id=__codelineno-0-7 name=__codelineno-0-7></a><span class=c1># &lt;class &#39;__main__.Letter&#39;&gt;</span>
+<a id=__codelineno-0-7 name=__codelineno-0-7></a><span class=c1># &lt;class '__main__.Letter'&gt;</span>
 <a id=__codelineno-0-8 name=__codelineno-0-8></a>
 <a id=__codelineno-0-9 name=__codelineno-0-9></a><span class=nb>isinstance</span><span class=p>(</span><span class=n>letter</span><span class=p>,</span> <span class=n>Letter</span><span class=p>)</span>
 <a id=__codelineno-0-10 name=__codelineno-0-10></a><span class=c1># True</span>
@@ -30,10 +30,10 @@
 <a id=__codelineno-1-3 name=__codelineno-1-3></a><span class=n>half</span> <span class=o>=</span> <span class=n>Fraction</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=mi>2</span><span class=p>)</span>
 <a id=__codelineno-1-4 name=__codelineno-1-4></a>
 <a id=__codelineno-1-5 name=__codelineno-1-5></a><span class=nb>str</span><span class=p>(</span><span class=n>half</span><span class=p>)</span>
-<a id=__codelineno-1-6 name=__codelineno-1-6></a><span class=c1># &#39;1/2&#39;</span>
+<a id=__codelineno-1-6 name=__codelineno-1-6></a><span class=c1># '1/2'</span>
 <a id=__codelineno-1-7 name=__codelineno-1-7></a>
 <a id=__codelineno-1-8 name=__codelineno-1-8></a><span class=nb>repr</span><span class=p>(</span><span class=n>half</span><span class=p>)</span>
-<a id=__codelineno-1-9 name=__codelineno-1-9></a><span class=c1># &#39;Fraction(1, 2)&#39;</span>
+<a id=__codelineno-1-9 name=__codelineno-1-9></a><span class=c1># 'Fraction(1, 2)'</span>
 </code></pre></div></td></tr></table></div> <p><code>1/2</code> 很适合人阅读，但如果把它交给 Python 求值，Python 会把它理解成除法表达式，结果是 <code>0.5</code>。</p> <p><code>Fraction(1, 2)</code> 则清楚地写出了这个对象的类型以及构造它所需的参数，更接近 Python interpreter 能理解的形式。</p> </div> <h3 id=repr><code>repr</code> 的理想性质<a class=headerlink href=#repr title="Permanent link">&para;</a></h3> <p>一个设计良好的 <code>repr</code> 通常希望满足：</p> <div class=highlight><table class=highlighttable><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-2-1>1</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-2-1 name=__codelineno-2-1></a><span class=nb>eval</span><span class=p>(</span><span class=nb>repr</span><span class=p>(</span><span class=nb>object</span><span class=p>))</span>
 </code></pre></div></td></tr></table></div> <p>可以创建出一个与原对象等价的新对象。</p> <div class=highlight><table class=highlighttable><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-3-1>1</a></span>
 <span class=normal><a href=#__codelineno-3-2>2</a></span>
@@ -42,7 +42,7 @@
 <span class=normal><a href=#__codelineno-3-5>5</a></span>
 <span class=normal><a href=#__codelineno-3-6>6</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-3-1 name=__codelineno-3-1></a><span class=n>half</span> <span class=o>=</span> <span class=n>Fraction</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=mi>2</span><span class=p>)</span>
 <a id=__codelineno-3-2 name=__codelineno-3-2></a><span class=nb>repr</span><span class=p>(</span><span class=n>half</span><span class=p>)</span>
-<a id=__codelineno-3-3 name=__codelineno-3-3></a><span class=c1># &#39;Fraction(1, 2)&#39;</span>
+<a id=__codelineno-3-3 name=__codelineno-3-3></a><span class=c1># 'Fraction(1, 2)'</span>
 <a id=__codelineno-3-4 name=__codelineno-3-4></a>
 <a id=__codelineno-3-5 name=__codelineno-3-5></a><span class=nb>eval</span><span class=p>(</span><span class=nb>repr</span><span class=p>(</span><span class=n>half</span><span class=p>))</span>
 <a id=__codelineno-3-6 name=__codelineno-3-6></a><span class=c1># Fraction(1, 2)</span>
@@ -81,14 +81,14 @@
 <span class=normal><a href=#__codelineno-11-2>2</a></span>
 <span class=normal><a href=#__codelineno-11-3>3</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-11-1 name=__codelineno-11-1></a><span class=k>class</span><span class=w> </span><span class=nc>Student</span><span class=p>:</span>
 <a id=__codelineno-11-2 name=__codelineno-11-2></a>    <span class=k>def</span><span class=w> </span><span class=nf>repr</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
-<a id=__codelineno-11-3 name=__codelineno-11-3></a>        <span class=k>return</span> <span class=s1>&#39;ordinary repr&#39;</span>
+<a id=__codelineno-11-3 name=__codelineno-11-3></a>        <span class=k>return</span> <span class=s1>'ordinary repr'</span>
 </code></pre></div></td></tr></table></div> <p>但它只是一个普通 method，只能由我们主动调用：</p> <div class=highlight><table class=highlighttable><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-12-1>1</a></span>
 <span class=normal><a href=#__codelineno-12-2>2</a></span>
 <span class=normal><a href=#__codelineno-12-3>3</a></span>
 <span class=normal><a href=#__codelineno-12-4>4</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-12-1 name=__codelineno-12-1></a><span class=n>tom</span> <span class=o>=</span> <span class=n>Student</span><span class=p>()</span>
 <a id=__codelineno-12-2 name=__codelineno-12-2></a>
 <a id=__codelineno-12-3 name=__codelineno-12-3></a><span class=n>tom</span><span class=o>.</span><span class=n>repr</span><span class=p>()</span>
-<a id=__codelineno-12-4 name=__codelineno-12-4></a><span class=c1># &#39;ordinary repr&#39;</span>
+<a id=__codelineno-12-4 name=__codelineno-12-4></a><span class=c1># 'ordinary repr'</span>
 </code></pre></div></td></tr></table></div> <p>Python 内置的 <code>repr(tom)</code> 不会调用它，因为 Python 规定自己寻找的接口叫 <code>__repr__</code>，而不是 <code>repr</code>。</p> <div class=highlight><table class=highlighttable><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-13-1>1</a></span>
 <span class=normal><a href=#__codelineno-13-2>2</a></span>
 <span class=normal><a href=#__codelineno-13-3>3</a></span>
@@ -96,10 +96,10 @@
 <span class=normal><a href=#__codelineno-13-5>5</a></span>
 <span class=normal><a href=#__codelineno-13-6>6</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-13-1 name=__codelineno-13-1></a><span class=k>class</span><span class=w> </span><span class=nc>Student</span><span class=p>:</span>
 <a id=__codelineno-13-2 name=__codelineno-13-2></a>    <span class=k>def</span><span class=w> </span><span class=nf>repr</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
-<a id=__codelineno-13-3 name=__codelineno-13-3></a>        <span class=k>return</span> <span class=s1>&#39;ordinary repr&#39;</span>
+<a id=__codelineno-13-3 name=__codelineno-13-3></a>        <span class=k>return</span> <span class=s1>'ordinary repr'</span>
 <a id=__codelineno-13-4 name=__codelineno-13-4></a>
 <a id=__codelineno-13-5 name=__codelineno-13-5></a>    <span class=k>def</span><span class=w> </span><span class=fm>__repr__</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
-<a id=__codelineno-13-6 name=__codelineno-13-6></a>        <span class=k>return</span> <span class=s1>&#39;special repr&#39;</span>
+<a id=__codelineno-13-6 name=__codelineno-13-6></a>        <span class=k>return</span> <span class=s1>'special repr'</span>
 </code></pre></div></td></tr></table></div> <p>现在两种调用会得到不同结果：</p> <div class=highlight><table class=highlighttable><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-14-1>1</a></span>
 <span class=normal><a href=#__codelineno-14-2>2</a></span>
 <span class=normal><a href=#__codelineno-14-3>3</a></span>
@@ -109,10 +109,10 @@
 <span class=normal><a href=#__codelineno-14-7>7</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-14-1 name=__codelineno-14-1></a><span class=n>tom</span> <span class=o>=</span> <span class=n>Student</span><span class=p>()</span>
 <a id=__codelineno-14-2 name=__codelineno-14-2></a>
 <a id=__codelineno-14-3 name=__codelineno-14-3></a><span class=n>tom</span><span class=o>.</span><span class=n>repr</span><span class=p>()</span>
-<a id=__codelineno-14-4 name=__codelineno-14-4></a><span class=c1># &#39;ordinary repr&#39;</span>
+<a id=__codelineno-14-4 name=__codelineno-14-4></a><span class=c1># 'ordinary repr'</span>
 <a id=__codelineno-14-5 name=__codelineno-14-5></a>
 <a id=__codelineno-14-6 name=__codelineno-14-6></a><span class=nb>repr</span><span class=p>(</span><span class=n>tom</span><span class=p>)</span>
-<a id=__codelineno-14-7 name=__codelineno-14-7></a><span class=c1># &#39;special repr&#39;</span>
+<a id=__codelineno-14-7 name=__codelineno-14-7></a><span class=c1># 'special repr'</span>
 </code></pre></div></td></tr></table></div> <div class="admonition warning"> <p class=admonition-title>一个 class 中不能用两个同名方法分别表示 <code>repr</code> 和 <code>str</code></p> <p>如果写成：</p> <div class=highlight><table class=highlighttable><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-15-1>1</a></span>
 <span class=normal><a href=#__codelineno-15-2>2</a></span>
 <span class=normal><a href=#__codelineno-15-3>3</a></span>
@@ -120,19 +120,19 @@
 <span class=normal><a href=#__codelineno-15-5>5</a></span>
 <span class=normal><a href=#__codelineno-15-6>6</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-15-1 name=__codelineno-15-1></a><span class=k>class</span><span class=w> </span><span class=nc>Fraction</span><span class=p>:</span>
 <a id=__codelineno-15-2 name=__codelineno-15-2></a>    <span class=k>def</span><span class=w> </span><span class=nf>repr</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
-<a id=__codelineno-15-3 name=__codelineno-15-3></a>        <span class=k>return</span> <span class=s1>&#39;Fraction(1, 2)&#39;</span>
+<a id=__codelineno-15-3 name=__codelineno-15-3></a>        <span class=k>return</span> <span class=s1>'Fraction(1, 2)'</span>
 <a id=__codelineno-15-4 name=__codelineno-15-4></a>
 <a id=__codelineno-15-5 name=__codelineno-15-5></a>    <span class=k>def</span><span class=w> </span><span class=nf>repr</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
-<a id=__codelineno-15-6 name=__codelineno-15-6></a>        <span class=k>return</span> <span class=s1>&#39;1/2&#39;</span>
+<a id=__codelineno-15-6 name=__codelineno-15-6></a>        <span class=k>return</span> <span class=s1>'1/2'</span>
 </code></pre></div></td></tr></table></div> <p>后面的 <code>repr</code> 会覆盖前面的 <code>repr</code>，最后 class 中只剩下返回 <code>'1/2'</code> 的版本。</p> <p>如果只是想定义两个普通方法，至少要使用两个不同的名字：</p> <div class=highlight><table class=highlighttable><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-16-1>1</a></span>
 <span class=normal><a href=#__codelineno-16-2>2</a></span>
 <span class=normal><a href=#__codelineno-16-3>3</a></span>
 <span class=normal><a href=#__codelineno-16-4>4</a></span>
 <span class=normal><a href=#__codelineno-16-5>5</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-16-1 name=__codelineno-16-1></a><span class=k>def</span><span class=w> </span><span class=nf>repr</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
-<a id=__codelineno-16-2 name=__codelineno-16-2></a>    <span class=k>return</span> <span class=s1>&#39;Fraction(1, 2)&#39;</span>
+<a id=__codelineno-16-2 name=__codelineno-16-2></a>    <span class=k>return</span> <span class=s1>'Fraction(1, 2)'</span>
 <a id=__codelineno-16-3 name=__codelineno-16-3></a>
 <a id=__codelineno-16-4 name=__codelineno-16-4></a><span class=k>def</span><span class=w> </span><span class=nf>str</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
-<a id=__codelineno-16-5 name=__codelineno-16-5></a>    <span class=k>return</span> <span class=s1>&#39;1/2&#39;</span>
+<a id=__codelineno-16-5 name=__codelineno-16-5></a>    <span class=k>return</span> <span class=s1>'1/2'</span>
 </code></pre></div></td></tr></table></div> <p>但这样只能手动调用 <code>half.repr()</code> 和 <code>half.str()</code>。如果想接入 Python 内置的 <code>repr(half)</code> 和 <code>str(half)</code>，就必须实现 Python 规定的 <code>__repr__</code> 和 <code>__str__</code>。</p> </div> <hr> <h2 id=5-polymorphic-functions>5. Polymorphic Functions<a class=headerlink href=#5-polymorphic-functions title="Permanent link">&para;</a></h2> <p>Polymorphic function（多态函数）指的是：<strong>同一个 function 可以处理许多不同类型的对象，具体行为由对象所属的 class 决定。</strong></p> <p><code>repr</code> 和 <code>str</code> 都是 polymorphic functions：</p> <div class=highlight><table class=highlighttable><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-17-1> 1</a></span>
 <span class=normal><a href=#__codelineno-17-2> 2</a></span>
 <span class=normal><a href=#__codelineno-17-3> 3</a></span>
@@ -144,16 +144,16 @@
 <span class=normal><a href=#__codelineno-17-9> 9</a></span>
 <span class=normal><a href=#__codelineno-17-10>10</a></span>
 <span class=normal><a href=#__codelineno-17-11>11</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-17-1 name=__codelineno-17-1></a><span class=nb>repr</span><span class=p>(</span><span class=mi>123</span><span class=p>)</span>
-<a id=__codelineno-17-2 name=__codelineno-17-2></a><span class=c1># &#39;123&#39;</span>
+<a id=__codelineno-17-2 name=__codelineno-17-2></a><span class=c1># '123'</span>
 <a id=__codelineno-17-3 name=__codelineno-17-3></a>
 <a id=__codelineno-17-4 name=__codelineno-17-4></a><span class=nb>repr</span><span class=p>([</span><span class=mi>1</span><span class=p>,</span> <span class=mi>2</span><span class=p>])</span>
-<a id=__codelineno-17-5 name=__codelineno-17-5></a><span class=c1># &#39;[1, 2]&#39;</span>
+<a id=__codelineno-17-5 name=__codelineno-17-5></a><span class=c1># '[1, 2]'</span>
 <a id=__codelineno-17-6 name=__codelineno-17-6></a>
-<a id=__codelineno-17-7 name=__codelineno-17-7></a><span class=nb>repr</span><span class=p>(</span><span class=s1>&#39;hello&#39;</span><span class=p>)</span>
-<a id=__codelineno-17-8 name=__codelineno-17-8></a><span class=c1># &quot;&#39;hello&#39;&quot;</span>
+<a id=__codelineno-17-7 name=__codelineno-17-7></a><span class=nb>repr</span><span class=p>(</span><span class=s1>'hello'</span><span class=p>)</span>
+<a id=__codelineno-17-8 name=__codelineno-17-8></a><span class=c1># "'hello'"</span>
 <a id=__codelineno-17-9 name=__codelineno-17-9></a>
 <a id=__codelineno-17-10 name=__codelineno-17-10></a><span class=nb>repr</span><span class=p>(</span><span class=n>Fraction</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=mi>2</span><span class=p>))</span>
-<a id=__codelineno-17-11 name=__codelineno-17-11></a><span class=c1># &#39;Fraction(1, 2)&#39;</span>
+<a id=__codelineno-17-11 name=__codelineno-17-11></a><span class=c1># 'Fraction(1, 2)'</span>
 </code></pre></div></td></tr></table></div> <hr> <h3 id=6-reprx-typex__repr__x>6. 为什么 <code>repr(x)</code> 使用 <code>type(x).__repr__(x)</code>？<a class=headerlink href=#6-reprx-typex__repr__x title="Permanent link">&para;</a></h3> <p>如果让我们自己近似实现 built-in function <code>repr</code>，下面哪一种写法正确？ <img alt src=../%E9%99%84%E4%BB%B6/Pasted%20image%2020260715212103.png></p> <p>正确答案是：</p> <div class=highlight><table class=highlighttable><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-18-1>1</a></span>
 <span class=normal><a href=#__codelineno-18-2>2</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-18-1 name=__codelineno-18-1></a><span class=k>def</span><span class=w> </span><span class=nf>repr</span><span class=p>(</span><span class=n>x</span><span class=p>):</span>
 <a id=__codelineno-18-2 name=__codelineno-18-2></a>    <span class=k>return</span> <span class=nb>type</span><span class=p>(</span><span class=n>x</span><span class=p>)</span><span class=o>.</span><span class=fm>__repr__</span><span class=p>(</span><span class=n>x</span><span class=p>)</span>
@@ -169,12 +169,12 @@
 <span class=normal><a href=#__codelineno-22-5>5</a></span>
 <span class=normal><a href=#__codelineno-22-6>6</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-22-1 name=__codelineno-22-1></a><span class=k>class</span><span class=w> </span><span class=nc>A</span><span class=p>:</span>
 <a id=__codelineno-22-2 name=__codelineno-22-2></a>    <span class=k>def</span><span class=w> </span><span class=fm>__repr__</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
-<a id=__codelineno-22-3 name=__codelineno-22-3></a>        <span class=k>return</span> <span class=s1>&#39;class repr&#39;</span>
+<a id=__codelineno-22-3 name=__codelineno-22-3></a>        <span class=k>return</span> <span class=s1>'class repr'</span>
 <a id=__codelineno-22-4 name=__codelineno-22-4></a>
 <a id=__codelineno-22-5 name=__codelineno-22-5></a>
 <a id=__codelineno-22-6 name=__codelineno-22-6></a><span class=n>x</span> <span class=o>=</span> <span class=n>A</span><span class=p>()</span>
-</code></pre></div></td></tr></table></div> <p>但是Python 允许我们在创建 instance 以后，随时给它添加新的 instance attribute：</p> <div class=highlight><table class=highlighttable><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-23-1>1</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-23-1 name=__codelineno-23-1></a><span class=n>x</span><span class=o>.</span><span class=n>name</span> <span class=o>=</span> <span class=s1>&#39;Tom&#39;</span>
-</code></pre></div></td></tr></table></div> <p>因此，程序员也可以手动给 <code>x</code> 添加一个名字叫 <code>__repr__</code> 的 instance attribute：</p> <div class=highlight><table class=highlighttable><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-24-1>1</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-24-1 name=__codelineno-24-1></a><span class=n>x</span><span class=o>.</span><span class=fm>__repr__</span> <span class=o>=</span> <span class=k>lambda</span><span class=p>:</span> <span class=s1>&#39;instance repr&#39;</span>
+</code></pre></div></td></tr></table></div> <p>但是Python 允许我们在创建 instance 以后，随时给它添加新的 instance attribute：</p> <div class=highlight><table class=highlighttable><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-23-1>1</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-23-1 name=__codelineno-23-1></a><span class=n>x</span><span class=o>.</span><span class=n>name</span> <span class=o>=</span> <span class=s1>'Tom'</span>
+</code></pre></div></td></tr></table></div> <p>因此，程序员也可以手动给 <code>x</code> 添加一个名字叫 <code>__repr__</code> 的 instance attribute：</p> <div class=highlight><table class=highlighttable><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-24-1>1</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-24-1 name=__codelineno-24-1></a><span class=n>x</span><span class=o>.</span><span class=fm>__repr__</span> <span class=o>=</span> <span class=k>lambda</span><span class=p>:</span> <span class=s1>'instance repr'</span>
 </code></pre></div></td></tr></table></div> <p>执行完这一行之后，同时存在两个不同的 <code>__repr__</code>：</p> <div class=highlight><table class=highlighttable><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-25-1>1</a></span>
 <span class=normal><a href=#__codelineno-25-2>2</a></span>
 <span class=normal><a href=#__codelineno-25-3>3</a></span>
@@ -186,10 +186,10 @@
 <a id=__codelineno-25-5 name=__codelineno-25-5></a><span class=c1># 手动添加在 instance x 上</span>
 </code></pre></div></td></tr></table></div> <p>直接执行普通的 dot expression 时，会先找到 <code>x</code> 自己的 instance attribute：</p> <div class=highlight><table class=highlighttable><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-26-1>1</a></span>
 <span class=normal><a href=#__codelineno-26-2>2</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-26-1 name=__codelineno-26-1></a><span class=n>x</span><span class=o>.</span><span class=fm>__repr__</span><span class=p>()</span>
-<a id=__codelineno-26-2 name=__codelineno-26-2></a><span class=c1># &#39;instance repr&#39;</span>
+<a id=__codelineno-26-2 name=__codelineno-26-2></a><span class=c1># 'instance repr'</span>
 </code></pre></div></td></tr></table></div> <p>但是 built-in function <code>repr</code> 会忽略这个手动添加的 <code>x.__repr__</code>，直接使用 class <code>A</code> 中定义的 <code>A.__repr__</code>：</p> <div class=highlight><table class=highlighttable><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-27-1>1</a></span>
 <span class=normal><a href=#__codelineno-27-2>2</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-27-1 name=__codelineno-27-1></a><span class=nb>repr</span><span class=p>(</span><span class=n>x</span><span class=p>)</span>
-<a id=__codelineno-27-2 name=__codelineno-27-2></a><span class=c1># &#39;class repr&#39;</span>
+<a id=__codelineno-27-2 name=__codelineno-27-2></a><span class=c1># 'class repr'</span>
 </code></pre></div></td></tr></table></div> <p>所以：</p> <blockquote> <p>An instance attribute called <code>__repr__</code> is ignored! Only class attributes are found.</p> </blockquote> <p>专门讨论的是这种不常见的情况：程序员执行了 <code>x.__repr__ = ...</code>，手动给某一个 instance 添加了自己的 <code>__repr__</code>。</p> <p>如果程序员从来没有写过：</p> <div class=highlight><table class=highlighttable><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-28-1>1</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-28-1 name=__codelineno-28-1></a><span class=n>x</span><span class=o>.</span><span class=fm>__repr__</span> <span class=o>=</span> <span class=o>...</span>
 </code></pre></div></td></tr></table></div> <p>那么 <code>x</code> 自己身上就没有 <code>__repr__</code>。这时 <code>x.__repr__</code> 和 <code>repr(x)</code> 最后找到的都是 class 中定义的 <code>A.__repr__</code>。</p> <p>正因为 Python 必须保证 <code>repr(x)</code> 忽略手动添加的 instance attribute，所以在Class中，它不能简单写成 <code>x.__repr__()</code>，而要近似写成：</p> <div class=highlight><table class=highlighttable><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-29-1>1</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-29-1 name=__codelineno-29-1></a><span class=nb>type</span><span class=p>(</span><span class=n>x</span><span class=p>)</span><span class=o>.</span><span class=fm>__repr__</span><span class=p>(</span><span class=n>x</span><span class=p>)</span>
 </code></pre></div></td></tr></table></div> <hr> <h2 id=7-interface>7. Interface<a class=headerlink href=#7-interface title="Permanent link">&para;</a></h2> <h3 id=71>7.1 接口的定义<a class=headerlink href=#71 title="Permanent link">&para;</a></h3> <p>在一段程序中，好几个类可以定义一些<strong>名称相同、用途相同的方法</strong>。</p> <p>那么这些方法就可以称为一个接口，可以称为一个接口。</p> <p>例如：</p> <div class=highlight><table class=highlighttable><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-30-1>1</a></span>
@@ -201,15 +201,15 @@
 <span class=normal><a href=#__codelineno-30-7>7</a></span>
 <span class=normal><a href=#__codelineno-30-8>8</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-30-1 name=__codelineno-30-1></a>class Dog:
 <a id=__codelineno-30-2 name=__codelineno-30-2></a>    def speak(self):
-<a id=__codelineno-30-3 name=__codelineno-30-3></a>        return &quot;汪汪&quot;
+<a id=__codelineno-30-3 name=__codelineno-30-3></a>        return "汪汪"
 <a id=__codelineno-30-4 name=__codelineno-30-4></a>
 <a id=__codelineno-30-5 name=__codelineno-30-5></a>
 <a id=__codelineno-30-6 name=__codelineno-30-6></a>class Cat:
 <a id=__codelineno-30-7 name=__codelineno-30-7></a>    def speak(self):
-<a id=__codelineno-30-8 name=__codelineno-30-8></a>        return &quot;喵喵&quot;
+<a id=__codelineno-30-8 name=__codelineno-30-8></a>        return "喵喵"
 </code></pre></div></td></tr></table></div> <p><code>Dog</code> 和 <code>Cat</code> 中都有一个叫作 <code>speak</code> 的方法。</p> <p>虽然它们返回的结果不同：</p> <div class=highlight><table class=highlighttable><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-31-1>1</a></span>
-<span class=normal><a href=#__codelineno-31-2>2</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-31-1 name=__codelineno-31-1></a>Dog().speak()   # &quot;汪汪&quot;
-<a id=__codelineno-31-2 name=__codelineno-31-2></a>Cat().speak()   # &quot;喵喵&quot;
+<span class=normal><a href=#__codelineno-31-2>2</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-31-1 name=__codelineno-31-1></a>Dog().speak()   # "汪汪"
+<a id=__codelineno-31-2 name=__codelineno-31-2></a>Cat().speak()   # "喵喵"
 </code></pre></div></td></tr></table></div> <p>但它们的用途相同，因此，可以认为 <code>Dog</code> 和 <code>Cat</code> 都实现了 <code>speak</code> 这个接口。</p> <p>不过需要注意：</p> <blockquote> <p>不同类中这个方法的具体代码不需要完全相同，只需要它们表示的功能相同。</p> </blockquote> <h2 id=72-python>7.2 Python 内置的接口<a class=headerlink href=#72-python title="Permanent link">&para;</a></h2> <p>有些接口是 Python 提前规定好的。</p> <p>例如：</p> <div class=highlight><table class=highlighttable><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-32-1>1</a></span>
 <span class=normal><a href=#__codelineno-32-2>2</a></span>
 <span class=normal><a href=#__codelineno-32-3>3</a></span>

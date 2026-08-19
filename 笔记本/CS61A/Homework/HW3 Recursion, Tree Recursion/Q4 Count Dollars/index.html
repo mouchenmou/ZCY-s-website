@@ -32,7 +32,7 @@
 <span class=normal><a href=#__codelineno-0-32>32</a></span>
 <span class=normal><a href=#__codelineno-0-33>33</a></span>
 <span class=normal><a href=#__codelineno-0-34>34</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-0-1 name=__codelineno-0-1></a>def next_smaller_dollar(bill):
-<a id=__codelineno-0-2 name=__codelineno-0-2></a>    &quot;&quot;&quot;Returns the next smaller bill in order.&quot;&quot;&quot;
+<a id=__codelineno-0-2 name=__codelineno-0-2></a>    """Returns the next smaller bill in order."""
 <a id=__codelineno-0-3 name=__codelineno-0-3></a>    if bill == 100:
 <a id=__codelineno-0-4 name=__codelineno-0-4></a>        return 50
 <a id=__codelineno-0-5 name=__codelineno-0-5></a>    if bill == 50:
@@ -45,7 +45,7 @@
 <a id=__codelineno-0-12 name=__codelineno-0-12></a>        return 1
 <a id=__codelineno-0-13 name=__codelineno-0-13></a>
 <a id=__codelineno-0-14 name=__codelineno-0-14></a>def count_dollars(total):
-<a id=__codelineno-0-15 name=__codelineno-0-15></a>    &quot;&quot;&quot;Return the number of ways to make change.
+<a id=__codelineno-0-15 name=__codelineno-0-15></a>    """Return the number of ways to make change.
 <a id=__codelineno-0-16 name=__codelineno-0-16></a>
 <a id=__codelineno-0-17 name=__codelineno-0-17></a>    &gt;&gt;&gt; count_dollars(15)  # 15 $1 bills, 10 $1 &amp; 1 $5 bills, ... 1 $5 &amp; 1 $10 bills
 <a id=__codelineno-0-18 name=__codelineno-0-18></a>    6
@@ -61,10 +61,10 @@
 <a id=__codelineno-0-28 name=__codelineno-0-28></a>    3274
 <a id=__codelineno-0-29 name=__codelineno-0-29></a>    &gt;&gt;&gt; from construct_check import check
 <a id=__codelineno-0-30 name=__codelineno-0-30></a>    &gt;&gt;&gt; # ban iteration
-<a id=__codelineno-0-31 name=__codelineno-0-31></a>    &gt;&gt;&gt; check(HW_SOURCE_FILE, &#39;count_dollars&#39;, [&#39;While&#39;, &#39;For&#39;])
+<a id=__codelineno-0-31 name=__codelineno-0-31></a>    &gt;&gt;&gt; check(HW_SOURCE_FILE, 'count_dollars', ['While', 'For'])
 <a id=__codelineno-0-32 name=__codelineno-0-32></a>    True
-<a id=__codelineno-0-33 name=__codelineno-0-33></a>    &quot;&quot;&quot;
-<a id=__codelineno-0-34 name=__codelineno-0-34></a>    &quot;*** YOUR CODE HERE ***&quot;
+<a id=__codelineno-0-33 name=__codelineno-0-33></a>    """
+<a id=__codelineno-0-34 name=__codelineno-0-34></a>    "*** YOUR CODE HERE ***"
 </code></pre></div></td></tr></table></div> <div class="admonition thinking"> <p class=admonition-title>我的个人思考</p> <p>我一开始就感觉这道题的递归方式应该跟Lecture 10中的count partitions是一样的。但是我一开始一直用错了方式。像Lecture 10中的那个例子 <code>count_partitioon(6, 4)</code>，老师使用的分成两种大情况来看，第一种是最大部分为4的情况、第二种是最大部分小于4的情况。最大部分为4的时候。但是这种方式需要传入两个参数<code>m、n</code>，也就是这道题中的<code>total``和``max_bill</code> 。可是这道题给出的代码只能传入一个参数，而这道题用了一个很聪明的解法解决了这个问题。</p> <p>我原来见过的<code>higher_order_function</code>都是下面这种形式的：</p> <div class=highlight><table class=highlighttable><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-1-1>1</a></span>
 <span class=normal><a href=#__codelineno-1-2>2</a></span>
 <span class=normal><a href=#__codelineno-1-3>3</a></span>
@@ -84,7 +84,7 @@
 <span class=normal><a href=#__codelineno-2-8> 8</a></span>
 <span class=normal><a href=#__codelineno-2-9> 9</a></span>
 <span class=normal><a href=#__codelineno-2-10>10</a></span>
-<span class=normal><a href=#__codelineno-2-11>11</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-2-1 name=__codelineno-2-1></a>     <span class=s2>&quot;*** YOUR CODE HERE ***&quot;</span>
+<span class=normal><a href=#__codelineno-2-11>11</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-2-1 name=__codelineno-2-1></a>     <span class=s2>"*** YOUR CODE HERE ***"</span>
 <a id=__codelineno-2-2 name=__codelineno-2-2></a>     <span class=k>def</span><span class=w> </span><span class=nf>calculate</span><span class=p>(</span><span class=n>total</span><span class=p>,</span> <span class=n>bill</span><span class=p>):</span>
 <a id=__codelineno-2-3 name=__codelineno-2-3></a>        <span class=k>if</span><span class=p>(</span><span class=n>total</span><span class=o>&lt;</span><span class=mi>0</span> <span class=ow>or</span> <span class=n>bill</span><span class=o>==</span><span class=kc>None</span><span class=p>):</span>
 <a id=__codelineno-2-4 name=__codelineno-2-4></a>            <span class=k>return</span> <span class=mi>0</span>

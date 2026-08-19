@@ -9,7 +9,7 @@
 <span class=normal><a href=#__codelineno-2-7>7</a></span>
 <span class=normal><a href=#__codelineno-2-8>8</a></span>
 <span class=normal><a href=#__codelineno-2-9>9</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-2-1 name=__codelineno-2-1></a><span class=k>class</span><span class=w> </span><span class=nc>Link</span><span class=p>:</span>
-<a id=__codelineno-2-2 name=__codelineno-2-2></a><span class=w>    </span><span class=sd>&quot;&quot;&quot;A linked list.&quot;&quot;&quot;</span>
+<a id=__codelineno-2-2 name=__codelineno-2-2></a><span class=w>    </span><span class=sd>"""A linked list."""</span>
 <a id=__codelineno-2-3 name=__codelineno-2-3></a>
 <a id=__codelineno-2-4 name=__codelineno-2-4></a>    <span class=n>empty</span> <span class=o>=</span> <span class=p>()</span>
 <a id=__codelineno-2-5 name=__codelineno-2-5></a>
@@ -103,11 +103,11 @@
 <a id=__codelineno-11-5 name=__codelineno-11-5></a>    <span class=k>return</span> <span class=n>x</span><span class=o>%</span><span class=mi>2</span><span class=o>==</span><span class=mi>1</span>
 <a id=__codelineno-11-6 name=__codelineno-11-6></a>
 <a id=__codelineno-11-7 name=__codelineno-11-7></a><span class=k>def</span><span class=w> </span><span class=nf>range_link</span><span class=p>(</span><span class=n>start</span><span class=p>,</span> <span class=n>end</span><span class=p>):</span>
-<a id=__codelineno-11-8 name=__codelineno-11-8></a><span class=w>    </span><span class=sd>&quot;&quot;&quot;Return a Link containing consecutive integers from start to end</span>
+<a id=__codelineno-11-8 name=__codelineno-11-8></a><span class=w>    </span><span class=sd>"""Return a Link containing consecutive integers from start to end</span>
 <a id=__codelineno-11-9 name=__codelineno-11-9></a>
 <a id=__codelineno-11-10 name=__codelineno-11-10></a><span class=sd>    &gt;&gt;&gt; range_link(3, 6)</span>
 <a id=__codelineno-11-11 name=__codelineno-11-11></a><span class=sd>    Link(3, Link(4, Link(5)))</span>
-<a id=__codelineno-11-12 name=__codelineno-11-12></a><span class=sd>    &quot;&quot;&quot;</span>
+<a id=__codelineno-11-12 name=__codelineno-11-12></a><span class=sd>    """</span>
 <a id=__codelineno-11-13 name=__codelineno-11-13></a>
 <a id=__codelineno-11-14 name=__codelineno-11-14></a>    <span class=k>if</span> <span class=n>start</span> <span class=o>&gt;=</span> <span class=n>end</span><span class=p>:</span>
 <a id=__codelineno-11-15 name=__codelineno-11-15></a>        <span class=k>return</span> <span class=n>Link</span><span class=o>.</span><span class=n>empty</span>
@@ -116,11 +116,11 @@
 <a id=__codelineno-11-18 name=__codelineno-11-18></a>
 <a id=__codelineno-11-19 name=__codelineno-11-19></a>
 <a id=__codelineno-11-20 name=__codelineno-11-20></a><span class=k>def</span><span class=w> </span><span class=nf>map_link</span><span class=p>(</span><span class=n>f</span><span class=p>,</span> <span class=n>s</span><span class=p>):</span>
-<a id=__codelineno-11-21 name=__codelineno-11-21></a><span class=sd>&quot;&quot;&quot;Return a Link that contains f(x) for each x in Link s.</span>
+<a id=__codelineno-11-21 name=__codelineno-11-21></a><span class=sd>"""Return a Link that contains f(x) for each x in Link s.</span>
 <a id=__codelineno-11-22 name=__codelineno-11-22></a>
 <a id=__codelineno-11-23 name=__codelineno-11-23></a><span class=sd>&gt;&gt;&gt; map_link(square, range_link(3, 6))</span>
 <a id=__codelineno-11-24 name=__codelineno-11-24></a><span class=sd>Link(9, Link(16, Link(25)))</span>
-<a id=__codelineno-11-25 name=__codelineno-11-25></a><span class=sd>&quot;&quot;&quot;</span>
+<a id=__codelineno-11-25 name=__codelineno-11-25></a><span class=sd>"""</span>
 <a id=__codelineno-11-26 name=__codelineno-11-26></a>
 <a id=__codelineno-11-27 name=__codelineno-11-27></a>    <span class=k>if</span> <span class=n>s</span> <span class=ow>is</span> <span class=n>Link</span><span class=o>.</span><span class=n>empty</span> <span class=p>:</span>
 <a id=__codelineno-11-28 name=__codelineno-11-28></a>        <span class=k>return</span> <span class=n>s</span>
@@ -128,11 +128,11 @@
 <a id=__codelineno-11-30 name=__codelineno-11-30></a>        <span class=k>return</span> <span class=n>Link</span><span class=p>(</span><span class=n>f</span><span class=p>(</span><span class=n>s</span><span class=o>.</span><span class=n>first</span><span class=p>),</span> <span class=n>map_link</span><span class=p>(</span><span class=n>f</span><span class=p>,</span> <span class=n>s</span><span class=o>.</span><span class=n>rest</span><span class=p>))</span>
 <a id=__codelineno-11-31 name=__codelineno-11-31></a>
 <a id=__codelineno-11-32 name=__codelineno-11-32></a><span class=k>def</span><span class=w> </span><span class=nf>filter_link</span><span class=p>(</span><span class=n>f</span><span class=p>,</span> <span class=n>s</span><span class=p>):</span>
-<a id=__codelineno-11-33 name=__codelineno-11-33></a><span class=sd>&quot;&quot;&quot;Return a Link that contains only the elements x of s for which f(x) is a true value.</span>
+<a id=__codelineno-11-33 name=__codelineno-11-33></a><span class=sd>"""Return a Link that contains only the elements x of s for which f(x) is a true value.</span>
 <a id=__codelineno-11-34 name=__codelineno-11-34></a>
 <a id=__codelineno-11-35 name=__codelineno-11-35></a><span class=sd>&gt;&gt;&gt; filter_link(odd, range_link(3, 6))</span>
 <a id=__codelineno-11-36 name=__codelineno-11-36></a><span class=sd>Link(3, Link(5))</span>
-<a id=__codelineno-11-37 name=__codelineno-11-37></a><span class=sd>&quot;&quot;&quot;</span>
+<a id=__codelineno-11-37 name=__codelineno-11-37></a><span class=sd>"""</span>
 <a id=__codelineno-11-38 name=__codelineno-11-38></a>    <span class=k>if</span> <span class=n>s</span> <span class=ow>is</span> <span class=n>Link</span><span class=o>.</span><span class=n>empty</span><span class=p>:</span>
 <a id=__codelineno-11-39 name=__codelineno-11-39></a>        <span class=k>return</span> <span class=n>s</span>
 <a id=__codelineno-11-40 name=__codelineno-11-40></a>    <span class=n>filter_rest</span> <span class=o>=</span> <span class=n>filter_link</span><span class=p>(</span><span class=n>f</span><span class=p>,</span> <span class=n>s</span><span class=o>.</span><span class=n>rest</span><span class=p>)</span>
@@ -169,9 +169,9 @@
 <span class=normal><a href=#__codelineno-13-14>14</a></span>
 <span class=normal><a href=#__codelineno-13-15>15</a></span>
 <span class=normal><a href=#__codelineno-13-16>16</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-13-1 name=__codelineno-13-1></a><span class=k>def</span><span class=w> </span><span class=nf>add</span><span class=p>(</span><span class=n>s</span><span class=p>,</span> <span class=n>v</span><span class=p>):</span>
-<a id=__codelineno-13-2 name=__codelineno-13-2></a><span class=w>   </span><span class=sd>&quot;&quot;&quot;Add v to an ordered list s with no repeats, return modified s.</span>
-<a id=__codelineno-13-3 name=__codelineno-13-3></a><span class=sd>   (Note: If v is alread in s, then don&#39;t modify s, but still return it.)</span>
-<a id=__codelineno-13-4 name=__codelineno-13-4></a><span class=sd>   &quot;&quot;&quot;</span>
+<a id=__codelineno-13-2 name=__codelineno-13-2></a><span class=w>   </span><span class=sd>"""Add v to an ordered list s with no repeats, return modified s.</span>
+<a id=__codelineno-13-3 name=__codelineno-13-3></a><span class=sd>   (Note: If v is alread in s, then don't modify s, but still return it.)</span>
+<a id=__codelineno-13-4 name=__codelineno-13-4></a><span class=sd>   """</span>
 <a id=__codelineno-13-5 name=__codelineno-13-5></a>    <span class=c1># 情况 0：s 不能为空链表</span>
 <a id=__codelineno-13-6 name=__codelineno-13-6></a>    <span class=k>assert</span> <span class=n>s</span> <span class=ow>is</span> <span class=ow>not</span> <span class=n>Link</span><span class=o>.</span><span class=n>empty</span>
 <a id=__codelineno-13-7 name=__codelineno-13-7></a>    <span class=c1># 情况 1：v 比当前节点小</span>

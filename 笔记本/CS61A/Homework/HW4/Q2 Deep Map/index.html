@@ -13,13 +13,13 @@
 <span class=normal><a href=#__codelineno-0-13>13</a></span>
 <span class=normal><a href=#__codelineno-0-14>14</a></span>
 <span class=normal><a href=#__codelineno-0-15>15</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-0-1 name=__codelineno-0-1></a>    <span class=k>def</span><span class=w> </span><span class=nf>deep_map</span><span class=p>(</span><span class=n>f</span><span class=p>,</span> <span class=n>s</span><span class=p>):</span> 
-<a id=__codelineno-0-2 name=__codelineno-0-2></a>        <span class=s2>&quot;&quot;&quot;Replace all non-list elements x with f(x) in the nested list s.</span>
+<a id=__codelineno-0-2 name=__codelineno-0-2></a>        <span class=s2>"""Replace all non-list elements x with f(x) in the nested list s.</span>
 <a id=__codelineno-0-3 name=__codelineno-0-3></a>
 <a id=__codelineno-0-4 name=__codelineno-0-4></a><span class=s2>        &gt;&gt;&gt; six = [1, 2, [3, [4], 5], 6] </span>
 <a id=__codelineno-0-5 name=__codelineno-0-5></a><span class=s2>        &gt;&gt;&gt; deep_map(lambda x: x * x, six) </span>
 <a id=__codelineno-0-6 name=__codelineno-0-6></a><span class=s2>        &gt;&gt;&gt; six</span>
 <a id=__codelineno-0-7 name=__codelineno-0-7></a><span class=s2>        [1, 4, [9, [16], 25], 36]</span>
-<a id=__codelineno-0-8 name=__codelineno-0-8></a><span class=s2>        &gt;&gt;&gt; # Check that you&#39;re not making new lists </span>
+<a id=__codelineno-0-8 name=__codelineno-0-8></a><span class=s2>        &gt;&gt;&gt; # Check that you're not making new lists </span>
 <a id=__codelineno-0-9 name=__codelineno-0-9></a><span class=s2>        &gt;&gt;&gt; s = [3, [1, [4, [1]]]] </span>
 <a id=__codelineno-0-10 name=__codelineno-0-10></a><span class=s2>        &gt;&gt;&gt; s1 = s[1] </span>
 <a id=__codelineno-0-11 name=__codelineno-0-11></a><span class=s2>        &gt;&gt;&gt; s2 = s1[1]</span>
