@@ -28,7 +28,7 @@ Pretext task 是为了学习 representation 而构造出来的“借口任务”
     ### 我的疑问1
     为什么这些数据不需要人工标注？像正常的图片旋转不也是要给它们标上旋转的度数的吗？像模型恢复正确顺序不是也要有正确的顺序才能学习吗？
     ### 解答 
-    **这些任务当然还是需要标签**，但关键区别是：**标签不是人一个一个手工标出来的，而是我们从原始数据本身通过一个确定的规则自动构造出来。**所以这里的 self-supervised 并不是没有标签，而是**标签来自数据自己**。
+    **这些任务当然还是需要标签**，但是**标签不是一个一个手工标出来的，而是我们从原始数据本身通过一个确定的规则自动构造出来。所以这里的 self-supervised 并不是没有标签，而是**标签来自数据自己。
 
     以旋转预测为例，原始图片是：
 	
@@ -67,10 +67,6 @@ Pretext task 是为了学习 representation 而构造出来的“借口任务”
 
 ## 1.2 Downstream Task
 
-Pretext task 训练完后，我们通常不关心它本身做得有多好，而关心学到的 **encoder / representation** 对真正任务有没有帮助。
-
-这里一定要分清楚两件事：
-
 1. **Pretext task 阶段**：为了让模型学特征，我们会临时加一个任务头，比如 rotation classifier、inpainting decoder、MAE decoder。
 2. **Downstream task 阶段**：预训练结束后，把真正有用的 encoder 拿出来，接到分类、检测、分割这些真实任务上。
 
@@ -80,14 +76,10 @@ Pretext task 训练完后，我们通常不关心它本身做得有多好，而�
 2. **取出 encoder**：丢掉 pretext task 里临时使用的 classifier / decoder。
 3. **Downstream task**：在真正任务的有标签数据上，接一个新的 classifier / detector / segmenter，或者微调整个模型。
 
-所以严格说，第一步不是 downstream task，而是 downstream task 之前的自监督预训练。
-
-真正的 downstream task 是第三步，也就是：用预训练好的 encoder 去解决分类、检测、分割等真实任务
-
 !!! note "为什么通常只说迁移 encoder"
     自监督学习真正想要的是 encoder 学到的 feature。
     
-    pretext task 后面的 classifier / decoder 只是为了构造训练信号。比如 rotation classifier 只会预测旋转角度，MAE decoder 只会重建 patch，它们不一定适合真正的分类、检测、分割任务。
+    pretext task 后面的 classifier / decoder 只是并不是我们最终要用的decoder。比如 rotation classifier 只会预测旋转角度，MAE decoder 只会重建 patch，它们并不是我们最终要用来做真正的分类、检测、分割任务的decoder。
     
     所以 downstream task 通常会换一个新的 task head，但复用已经预训练好的 encoder。
 
@@ -119,8 +111,6 @@ Pretext task 训练完后，我们通常不关心它本身做得有多好，而�
 
 ## 2.1 Rotation Prediction
 
-Rotation prediction 的做法：
-
 1. 从图片 $x$ 生成旋转后的图片。
 2. 旋转角度从四个类别里选：
 
@@ -148,19 +138,9 @@ $$
 
 ### 2.2.1 Relative Patch Location
 
-给定一张图片中的两个 patch：
+给定一张图片中的两个 patch：patch A 和 patch B。模型要预测 $B$ 相对于 $A$ 的位置。
 
-```text
-patch A, patch B
-```
-
-模型要预测 $B$ 相对于 $A$ 的位置，例如：
-
-```text
-left / right / top / bottom / top-left / ...
-```
-
-如果模型要做对这个任务，它需要理解物体的局部结构。比如车轮通常在车身下面，人脸的眼睛和嘴巴有稳定位置关系。
+如果模型要做对这个任务，它需要理解物体的局部结构。
 
 ### 2.2.2 Jigsaw Puzzle
 
@@ -175,8 +155,6 @@ Jigsaw puzzle 更进一步：
 1. 局部纹理是否连续。
 2. 不同部件之间的语义关系。
 3. 整体物体结构。
-
-
 ## 2.3 Inpainting
 
 Inpainting 是把图片的一部分遮住，让模型预测缺失像素。它类似 autoencoder，但不是重建整张图，而是重点重建缺失区域。
@@ -245,56 +223,41 @@ Colorization 说白了就是给黑白照片上色。
 1. $L$：亮度信息，可以理解成黑白照片里哪里亮、哪里暗。
 2. $a,b$：颜色信息，用两个方向来描述颜色。
 
-这里颜色为什么要分成 $a$ 和 $b$？
+!!! warning "这里颜色为什么要分成 $a$ 和 $b$？"
+    ### 我的疑问
+    为什么颜色要分成 $a$ 和 $b$
+    ### 解析
+	因为颜色不是一个一维数值就能描述清楚的东西。只用一个数，你最多只能表示颜色多一点还是少一点，但真实颜色至少需要两个方向：
+	
+	1. $a$ 轴：大致表示从绿色到红色的变化。
+	2. $b$ 轴：大致表示从蓝色到黄色的变化。
+	
+	所以一个像素在 Lab 里可以理解成：
+	
+	- L：这个点有多亮
+	- a：这个点偏绿还是偏红
+	- b：这个点偏蓝还是偏黄
 
-因为颜色不是一个一维数值就能描述清楚的东西。只用一个数，你最多只能表示颜色多一点还是少一点，但真实颜色至少需要两个方向：
+	
+	这有点像在平面上用 $(x,y)$ 两个坐标定位一个点。颜色也需要 $(a,b)$ 两个坐标，才能表示往哪个颜色方向偏。
+	
+	所以 colorization 的训练任务可以写成：
+	
+	- 输入：L，也就是灰度图
+	- 输出：a,b，也就是颜色
 
-1. $a$ 轴：大致表示从绿色到红色的变化。
-2. $b$ 轴：大致表示从蓝色到黄色的变化。
-
-所以一个像素在 Lab 里可以理解成：
-
-```text
-L：这个点有多亮
-a：这个点偏绿还是偏红
-b：这个点偏蓝还是偏黄
-```
-
-这有点像在平面上用 $(x,y)$ 两个坐标定位一个点。颜色也需要 $(a,b)$ 两个坐标，才能表示往哪个颜色方向偏。
-
-所以 colorization 的训练任务可以写成：
-
-```text
-输入：L，也就是灰度图
-输出：a,b，也就是颜色
-```
-
-模型只看灰度图，要预测合理颜色。为了做到这件事，它需要识别物体类别：
-
-1. 天空通常是蓝色。
-2. 草地通常是绿色。
-3. 香蕉通常是黄色。
-
-所以 colorization 也会推动模型学习语义特征。
 
 ### 2.4.1 Split-Brain Autoencoder
 
 Split-brain autoencoder 这个名字里的 split-brain 可以理解成把大脑分成左右两半。
 
-对于一张图片，它不只包含亮度，也包含颜色。普通 colorization 只做一个方向：
+对于一张图片，它不只包含亮度，也包含颜色。普通 colorization 只做一个方向：$亮度 L \rightarrow 预测颜色 a,b$
 
-```text
-亮度 L -> 预测颜色 a,b
-```
 
-Split-brain autoencoder 的想法：既然图片有不同 channel，那就把 channel 分成两组，让两组互相预测。
+Split-brain autoencoder：既然图片有不同 channel，那就把 channel 分成两组，让两组互相预测:
 
-例如在 Lab 里可以做成：
-
-```text
-第一半网络：看到 L，预测 a,b
-第二半网络：看到 a,b，预测 L
-```
+- 第一半网络：看到 L，预测 a,b
+- 第二半网络：看到 a,b，预测 L
 
 这样第一半网络为了从灰度预测颜色，需要理解物体语义；第二半网络为了从颜色预测亮度，也需要理解图片结构。最后不用 decoder 的输出，而是把这两半网络中间学到的 features 拿出来拼在一起，作为之后分类、检测等任务的 representation。
 
@@ -322,17 +285,16 @@ Video colorization 利用了视频中的 temporal coherence。
 2. 在 target frame 中追踪同一个区域。
 3. 把 reference color 复制过去。
 
-这件事可以用一个例子理解：
-
-```text
-第 0 帧：一个人穿着红衣服，在画面左边
-第 1 帧：同一个人移动到了画面中间，但这一帧是灰度图
-```
-
-模型需要回到第 0 帧里找：第 1 帧中间这个区域，最像第 0 帧里的哪个区域
-
-如果模型发现第 1 帧中间的人，对应第 0 帧左边那个红衣服的人，那么它就可以把第 0 帧里那块区域的红色复制过来。
-
+!!! example "举个例子"
+    给定第 0 帧和第 1 帧：
+    
+	- 第 0 帧：一个人穿着红衣服，在画面左边
+	- 第 1 帧：同一个人移动到了画面中间，但这一帧是灰度图
+	
+	模型需要回到第 0 帧里找：第 1 帧中间这个区域，最像第 0 帧里的哪个区域
+	
+	如果模型发现第 1 帧中间的人，对应第 0 帧左边那个红衣服的人，那么它就可以把第 0 帧里那块区域的红色复制过来。
+	
 所以 video colorization 的核心不是单纯上色，而是**建立 target frame 和 reference frame 之间的位置对应关系**。
 
 这个过程可以写成 attention（选择性的关注reference frame中的某些位置）：
@@ -391,79 +353,31 @@ MAE 的 encoder 只处理 unmasked patches。
 3. 输入 Transformer blocks。
 ## 3.3 MAE Decoder
 
-先回忆一下 MAE 前面做了什么：
+由于原图被切成很多 patch，其中 75% 被 mask 掉，encoder 只看剩下 25% 可见 patch。所以 encoder 输出的时候，只输出了可见 patch 的表示。问题是，如果我们想让模型把整张图补回来，那么只知道这 $25\%$ 的 patch 还不够。模型还需要知道**哪些位置原来有 patch，但是现在被遮住了。这就是 decoder 要做的事情。**
 
-```text
-原图被切成很多 patch
-其中 75% 被 mask 掉
-encoder 只看剩下 25% 可见 patch
-```
+### 3.3.1 Decoder 的输入
 
-所以 encoder 输出的时候，只输出了可见 patch 的表示。
-
-问题是：如果我们想让模型把整张图补回来，那么只知道这 $25\%$ 的 patch 还不够。我们还需要告诉模型：
-
-```text
-哪些位置原来有 patch，但是现在被遮住了
-```
-
-这就是 decoder 要做的事情。
-
-### 3.3.1 Decoder 的输入是什么
-
-Decoder 的输入由两部分拼起来：
-
-1. **Visible patch representations**：encoder 已经处理过的那 $25\%$ 可见 patch。
-2. **Mask tokens**：给那 $75\%$ 被遮住的位置放上的占位符。
-3. **positional embeddings**：告诉 decoder 每个 patch 原来在图像里的位置。
+1. **Visible patch representations**：encoder 输出的 $25\%$ 可见 patch 的特征。
+2. **Mask tokens**： $75\%$ 被遮住的位置放上的占位符。表示该位置的图像内容未知。
+3. **positional embeddings**：告诉 decoder 所有的 patch 原来在图像里的位置（被 masked 和未被 masked 的都有）。
 
 即：
 
-```text
-[可见 patch 的表示] + [被遮住位置的 mask token] + [位置信息]
-```
+$$[可见\ patch\ 的表示] + [被遮住位置的\ mask\ token] + [位置信息]$$
 
-### 3.3.2 Decoder 的输出是什么
+### 3.3.2 Decoder 的输出
 
-Decoder 的任务很具体：
+decoder 输出的是像素层面的重建结果：
 
-> 根据可见 patch 的信息，预测被 mask 掉的 patch 原来长什么样。
+$$mask token -> decoder -> 预测这个 patch 的 RGB 像素$$
 
-也就是说，decoder 输出的是像素层面的重建结果：
 
-```text
-mask token -> decoder -> 预测这个 patch 的 RGB 像素
-```
+但是预训练结束后，我们需要删掉这个 decoder 留下 encoder，再执行downstream：
 
-### 3.3.3 为什么 downstream 时通常丢掉 decoder
+1. 保留 encoder
+2. 丢掉 MAE decoder
+3. 换上 classifier / detector / segmenter
 
-MAE 训练时的完整结构是：
-
-```text
-image -> encoder -> decoder -> 重建被 mask 的 patch
-```
-
-但是预训练结束后，我们真正想要的是 encoder 学到的图像特征。因为后面的分类、检测、分割通常需要的是：
-
-```text
-image -> encoder -> 图像特征 -> 新任务的 head
-```
-
-而 MAE decoder 学到的是：
-
-```text
-怎么把 encoder 的特征还原成像素
-```
-
-这个能力是为了 pretext task 服务的，不是分类、检测、分割真正需要的任务头。
-
-所以 downstream 时通常做的是：
-
-```text
-保留 encoder
-丢掉 MAE decoder
-换上 classifier / detector / segmenter
-```
 
 !!! note "为什么叫 asymmetrical autoencoder"
     asymmetrical 的意思是 encoder 和 decoder 不对称。
@@ -474,7 +388,7 @@ image -> encoder -> 图像特征 -> 新任务的 head
 
 ## 3.4 Reconstruction Loss
 
-MAE 使用像素空间的 MSE loss，而且只在 masked patches 上计算：
+只在 masked patches 上计算：
 
 $$
 L
@@ -504,45 +418,30 @@ $$
 1. 设计任务很麻烦。
 2. 学到的 representation 可能和某个任务绑得太死。
 
-Contrastive representation learning 想构造一个更通用的 pretext task：
+Contrastive representation learning 想构造一个更通用的 pretext task：**同一个东西的不同 view 应该靠近，不同东西应该远离。**
 
-> 同一个东西的不同 view 应该靠近，不同东西应该远离。
-
-也就是：
-
-```text
-positive pair -> attract
-negative pair -> repel
-```
-
-这为什么能解决上面两个问题？
-
-首先，它不再要求我们专门设计“旋转预测”“拼图”“上色”这种具体任务。我们只需要定义什么算同一个东西的不同 view，什么算不同东西。
-
-例如对于图片，可以这样构造：
-
-```text
-同一张图片做两次不同数据增强 -> positive pair
-不同图片 -> negative pair
-```
-
-这样标签仍然可以自动生成：
-
-```text
-这两个 view 来自同一张原图 -> positive
-这两个 view 来自不同原图 -> negative
-```
-
-
-
-所以 4.1 和 4.2 实际上是在回答两个问题：
-
-1. **4.1**：怎么定义应该靠近和应该远离的样本关系。
-2. **4.2**：怎么把这种关系写成一个可以训练神经网络的 loss。
+!!! warning "为什么能解决上面两个问题？"
+    
+	首先，我们不需要耗费功夫去设计什么图片旋转这些具体任务。我们只需要定义什么算同一个东西的不同 view。
+	
+	例如对于图片，可以这样构造：
+	
+	- 同一张图片做两次不同数据增强 -> positive pair
+	- 不同图片 -> negative pair
+	
+	这样标签仍然可以自动生成：
+	
+	- 这两个 view 来自同一张原图 -> positive
+	- 这两个 view 来自不同原图 -> negative
+	
+	所以 4.1 和 4.2 其实是在回答两个问题：
+	
+	1. **4.1**：怎么定义 positive sample 和 negative sample。
+	2. **4.2**：怎么把这种关系写成一个可以训练神经网络的 loss。
 
 ## 4.1 Reference, Positive, Negative
 
-为了把“靠近 / 远离”这件事写清楚，我们先定义三种样本。
+我们先定义三种样本。
 
 对一个 reference sample $x$：
 
@@ -591,15 +490,6 @@ L
 }
 $$
 
-这个形式非常像 $N$ 类 softmax cross entropy：给定 reference，在 $N$ 个候选样本中找出真正的 positive sample。
-
-!!! note "InfoNCE 的原理"
-    分子越大，说明 reference 和 positive 越接近。
-    
-    分母里包含 positive 和所有 negative。如果 reference 和 negative 也很接近，分母会变大，loss 就会上升。
-    
-    所以这个 loss 同时完成 attract positive 和 repel negative。
-
 InfoNCE 也可以看作 mutual information 的 lower bound。负样本数量 $N$ 越大，这个 bound 通常越紧。
 
 !!! explanation "mutual information、lower bound、bound 越紧是什么意思"
@@ -607,44 +497,32 @@ InfoNCE 也可以看作 mutual information 的 lower bound。负样本数量 $N$
     
     例如：
     
-    ```text
-    A = 今天是不是下雨
-    B = 地面是不是湿
-    ```
+    - A = 今天是不是下雨
+    - B = 地面是不是湿
     
-    如果知道今天下雨，那我们对“地面是不是湿”就更确定了，所以 $A$ 和 $B$ 的 mutual information 比较高。
+    如果知道今天下雨，那么地面肯定是湿的，所以 $A$ 和 $B$ 的 mutual information 比较高。
     
     在对比学习里：
     
-    ```text
-    x  = 原图
-    x+ = 同一张图做数据增强后的版本
-    ```
+    - x  = 原图
+    - x+ = 同一张图做数据增强后的版本
     
     如果知道 $x$ 是一只猫，那 $x^+$ 大概率还是猫。所以 $x$ 和 $x^+$ 共享了很多语义信息，这就是 mutual information 高。
     
-    **Lower bound** 叫下界，意思是：真实值我可能算不出来，但我能算出一个保证不超过真实值的数。
+    **Lower bound**：
     
-    例如真实分数是 100，但我只知道：
-    
-    ```text
-    真实分数 >= 80
-    ```
-    
-    那 80 就是真实分数的 lower bound。
+    例如真实分数是 100，但我只知道真实分数 >= 80。那 80 就是真实分数的 lower bound。
     
     **Bound 越紧** 的意思是：这个下界离真实值越近。
     
     如果真实值是 100：
     
-    ```text
-    lower bound = 20  -> 很松
-    lower bound = 90  -> 很紧
-    ```
+    - lower bound = 20  -> 很松
+    - lower bound = 90  -> 很紧
     
-    所以“InfoNCE 是 mutual information 的 lower bound”可以理解成：真实 mutual information 很难直接算，但 InfoNCE 给了一个保守估计。
+    所以 InfoNCE 是 mutual information 的 lower bound 可以理解成：真实 mutual information 很难直接算，但 InfoNCE 给了一个保守估计。
     
-    “负样本数量 $N$ 越大，bound 越紧”可以理解成：negative 越多，对比任务越难，InfoNCE 给出的这个保守估计通常越接近真实 mutual information。
+    负样本数量 $N$ 越大，bound 越紧可以理解成：negative 越多，对比任务越难，InfoNCE 给出的这个保守估计通常越接近真实 mutual information。
 
 !!! warning "负样本数量为什么重要"
     如果 negative 太少，任务太容易，模型不一定能学到细粒度表示。
@@ -725,9 +603,9 @@ $$
 例如：
 
 $$\begin{aligned}
-以 x_{1,a} 为 reference：x_{1,b} 是 positive
-\\以 x_{1,b} 为 reference：x_{1,a} 是 positive
-\\以 x_{2,a} 为 reference：x_{2,b} 是 positive
+以\ x_{1,a} 为\ reference：x_{1,b}\ 是\ positive
+\\以\ x_{1,b}\ 为\ reference：x_{1,a}\ 是\ positive
+\\以\ x_{2,a}\ 为\ reference：x_{2,b}\ 是\ positive
 \\ ...\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
 \end{aligned}$$
 
@@ -744,24 +622,17 @@ $$\begin{aligned}
 
 ## 4.4 Momentum Contrastive Learning (MoCo)
 
-MoCo 主要是在解决 SimCLR 的一个问题：**negative samples 不够多怎么办？**
-
 在 SimCLR 里，negative samples 来自当前 mini-batch。所以 SimCLR 想要很多 negatives，就必须让 batch size 大，但 batch size 大会占很多显存。
 
-MoCo 的解决方法是：不要只从当前 batch 里找 negatives，而是额外维护一个 queue，当作“负样本仓库”。
+MoCo 解决了这个问题，它的做法是：不要只从当前 batch 里找 negatives，而是额外维护一个 queue，当作**负样本仓库。**
 
 这个 queue 里存的是过去很多 mini-batch 算出来的 image representations。
 
 这样当前 batch 即使很小，也可以从 queue 里拿到很多 negative samples：
 
-```text
-当前 batch：提供 query 和 positive
-历史 queue：提供大量 negatives
-```
-
-所以 MoCo 的核心是：
-
-> 用历史 batch 留下来的 representations 当 negative samples，从而减少对 large batch size 的依赖。
+- 当前 batch：提供 query 和 positive
+- 历史 queue：提供大量 negatives
+    - 用历史 batch 留下来的 representations 当 negative samples，从而减少对 large batch size 的依赖。
 
 ![](附件/Lecture12_MoCo.png)
 
@@ -800,12 +671,10 @@ $$
 其中 $m$ 通常接近 1。
 
 !!! explanation "$\theta_k$ 和 $k$ 不是同一个东西"
-    可以把 encoder 想成一台机器。
+    可以把 encoder 想成一台机器：
     
-    ```text
-    query encoder = 一台机器
-    key encoder   = 另一台机器
-    ```
+    - query encoder = 一台机器
+     -key encoder   = 另一台机器
     
     $\theta$ 表示机器里面的参数，也就是这台机器内部的设置。
     
@@ -844,12 +713,7 @@ $$
     \theta_k \leftarrow m\theta_k + (1-m)\theta_q
     $$
     
-    当 $m$ 很接近 1 时，意思是：
-    
-    ```text
-    key encoder 大部分保留原来的参数
-    只吸收一点点 query encoder 的新参数
-    ```
+    当 $m$ 很接近 1 时，意思是：key encoder 大部分保留原来的参数，只吸收一点点 query encoder 的新参数
     
     这样 key encoder 变化很慢，queue 里新旧 keys 的表示空间就比较一致。
     
