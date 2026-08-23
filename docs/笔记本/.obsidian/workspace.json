@@ -11,29 +11,30 @@
             "id": "7330ad594012ebac",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "CS231n/3. Generative and Interactive Visual Intelligence/lecture 13 Generative Models 1.md",
-                "mode": "source",
-                "source": false
+                "file": "CS231n/3. Generative and Interactive Visual Intelligence/lecture_14.pdf"
               },
-              "icon": "lucide-file",
-              "title": "lecture 13 Generative Models 1"
+              "icon": "lucide-file-text",
+              "title": "lecture_14"
             }
           },
           {
             "id": "1b7b9ab8cd00c425",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "CS231n/3. Generative and Interactive Visual Intelligence/lecture_13.pdf"
+                "file": "CS231n/3. Generative and Interactive Visual Intelligence/Lecture 14 Generative Models 2.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "lecture_13"
+              "icon": "lucide-file",
+              "title": "Lecture 14 Generative Models 2"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -186,10 +187,14 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "7330ad594012ebac",
+  "active": "1b7b9ab8cd00c425",
   "lastOpenFiles": [
-    "CS231n/3. Generative and Interactive Visual Intelligence/lecture_13.pdf",
+    "CS231n/3. Generative and Interactive Visual Intelligence/附件/Pasted image 20260822152700.png",
+    "CS231n/3. Generative and Interactive Visual Intelligence/lecture_14.pdf",
+    "CS231n/3. Generative and Interactive Visual Intelligence/Lecture 14 Generative Models 2.md",
+    "CS231n/3. Generative and Interactive Visual Intelligence/附件/Pasted image 20260822151917.png",
     "CS231n/3. Generative and Interactive Visual Intelligence/lecture 13 Generative Models 1.md",
+    "CS231n/3. Generative and Interactive Visual Intelligence/lecture_13.pdf",
     "CS231n/3. Generative and Interactive Visual Intelligence/附件/Pasted image 20260822003658.png",
     "CS231n/3. Generative and Interactive Visual Intelligence/附件/Pasted image 20260822002144.png",
     "CS231n/3. Generative and Interactive Visual Intelligence/附件/Pasted image 20260821095956.png",
@@ -207,7 +212,6 @@
     "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
     "CS231n/3. Generative and Interactive Visual Intelligence/附件/Pasted image 20260815152148.png",
     "CS231n/3. Generative and Interactive Visual Intelligence/附件/Pasted image 20260815152101.png",
-    "CS231n/3. Generative and Interactive Visual Intelligence/附件/Pasted image 20260815152003.png",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 8 Attention and Transformers.md",
     "CS231n/3. Generative and Interactive Visual Intelligence/附件",
     "tmp/pdfs/lecture12",
@@ -220,7 +224,6 @@
     "CS231n/2. Perceiving and Understanding the Visual World/附件/lecture11_tmp_render",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 10 Video Understanding.md",
     "CS231n/2. Perceiving and Understanding the Visual World/lecture_10.pdf",
-    "CS231n/2. Perceiving and Understanding the Visual World/lecture_9.pdf",
     "写CV.md",
     "CS189 机器学习/Homework/HW4/readme.md",
     "CS189 机器学习/index.md",
@@ -231,7 +234,6 @@
     "CS231n/1. Deep Learning Basic/Python 和 Numpy.md",
     "大二短学期总结心得.md",
     "数据结构基础 FDS/课程内容/基础数据结构/4. 图.md",
-    "OpenCV/第二章 图像基本操作/3. ROI区域.md",
-    "README.md"
+    "OpenCV/第二章 图像基本操作/3. ROI区域.md"
   ]
 }
