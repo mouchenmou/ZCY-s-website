@@ -23,6 +23,18 @@
             "id": "1b7b9ab8cd00c425",
             "type": "leaf",
             "state": {
+              "type": "pdf",
+              "state": {
+                "file": "CS231n/3. Generative and Interactive Visual Intelligence/lecture_14.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "lecture_14"
+            }
+          },
+          {
+            "id": "82c11089b92c43b0",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "CS231n/3. Generative and Interactive Visual Intelligence/Lecture 14 Generative Models 2.md",
@@ -34,7 +46,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -187,14 +199,14 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "1b7b9ab8cd00c425",
+  "active": "82c11089b92c43b0",
   "lastOpenFiles": [
     "CS231n/3. Generative and Interactive Visual Intelligence/lecture_14.pdf",
     "CS231n/3. Generative and Interactive Visual Intelligence/Lecture 14 Generative Models 2.md",
+    "CS231n/3. Generative and Interactive Visual Intelligence/lecture 13 Generative Models 1.md",
     "CS231n/3. Generative and Interactive Visual Intelligence/附件/Pasted image 20260826181836.png",
     "CS231n/3. Generative and Interactive Visual Intelligence/附件/Pasted image 20260822152700.png",
     "CS231n/3. Generative and Interactive Visual Intelligence/附件/Pasted image 20260822151917.png",
-    "CS231n/3. Generative and Interactive Visual Intelligence/lecture 13 Generative Models 1.md",
     "CS231n/3. Generative and Interactive Visual Intelligence/lecture_13.pdf",
     "CS231n/3. Generative and Interactive Visual Intelligence/附件/Pasted image 20260822003658.png",
     "CS231n/3. Generative and Interactive Visual Intelligence/附件/Pasted image 20260822002144.png",
