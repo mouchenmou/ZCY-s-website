@@ -169,4 +169,37 @@ $$\begin{aligned}
 \\& G=G-α_G\frac{​∂V}{∂G}​​
 \end{aligned}$$
 
+
+### 1.4.4 $\min_{G}\max_{D}\left[\mathbb{E}_{x\sim p_{\text{data}}}\big[\log D(x)\big]+\mathbb{E}_{z\sim p(z)}\big[\log\big(1-D(G(z))\big)\big]\right]$ 的问题
+
+原本 Generator 最小化：
+
+$$\log(1-D(G(z)))$$
+
+但是训练刚开始时，G 很差，所以 D 很容易发现假图：
+
+$$G(z)\approx0$$
+
+但是这里有一个问题：
+
+$$
+\begin{aligned}
+&如果使用 \log(1-D(G(z))) 的话，刚开始训练时\ Generator\ gradient\ 接近于0，
+\\&这被称为\ gradient\ saturation
+\end{aligned}$$
+
+所以实际常把 Generator loss 改成：
+
+$$\boxed{ L_G=-\log D(G(z)) }$$
+
+而不是：
+
+$$\log(1-D(G(z)))$$
+
+这两个目标都希望：
+
+$$D(G(z))\rightarrow1$$
+
+但前者在训练初期 gradient 更强。
+
 ---
