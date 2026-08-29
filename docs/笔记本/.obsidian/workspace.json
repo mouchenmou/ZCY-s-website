@@ -60,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -213,17 +213,20 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "25ddd1d807bb7434",
+  "active": "2c6cc963ea9b6b24",
   "lastOpenFiles": [
+    "CS182 深度神经网络/Homework/HW0/附件/01bddd4f9e722e237b68e37ec79a37f5.jpg",
+    "CS294-318 VLA/Lecture 1/pi0.pdf",
+    "CS182 深度神经网络/Homework/HW0/hw00_question.pdf",
+    "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
+    "CS182 深度神经网络/Homework/HW0/附件/bfa8cf2e33f2b04155ac5d4ccc62321d.jpg",
+    "CS182 深度神经网络/Homework/HW0/附件/1e11265cc19a3a4e4d1b408131078b2b.jpg",
     "CS182 深度神经网络/Homework/HW0/查漏补缺.md",
     "CS231n/3. Generative and Interactive Visual Intelligence/lecture_14.pdf",
     "CS231n/3. Generative and Interactive Visual Intelligence/Lecture 14 Generative Models 2.md",
-    "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
-    "CS294-318 VLA/Lecture 1/pi0.pdf",
     "CS189 机器学习/Part 1： Introduction/2. Data Tools/02 Data Tools.pdf",
     "CS182 深度神经网络/Discussion",
     "CS189 机器学习/Part 1： Introduction/1. Introduction + ML problem framing/01 Introduction + ML problem framing.pdf",
-    "CS182 深度神经网络/Homework/HW0/hw00_question.pdf",
     "未命名.md",
     "CS294-318 VLA/Lecture 1/未命名.md",
     "CS182 深度神经网络/tmp/pdfs/homework-0.html",
@@ -243,8 +246,6 @@
     "CS231n/3. Generative and Interactive Visual Intelligence/附件/Pasted image 20260822151917.png",
     "CS231n/3. Generative and Interactive Visual Intelligence/lecture 13 Generative Models 1.md",
     "CS231n/3. Generative and Interactive Visual Intelligence/附件/Pasted image 20260822003658.png",
-    "CS231n/3. Generative and Interactive Visual Intelligence/附件/Pasted image 20260822002144.png",
-    "CS231n/3. Generative and Interactive Visual Intelligence/附件/Pasted image 20260821095956.png",
     "CS231n/index.md",
     "CS231n/3. Generative and Interactive Visual Intelligence/Lecture 12 Self-supervised Learning.md",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 9 Dection, Segmentation, Visualization, and Understanding.md",

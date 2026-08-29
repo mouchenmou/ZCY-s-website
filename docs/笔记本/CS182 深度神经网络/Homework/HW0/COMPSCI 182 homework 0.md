@@ -78,6 +78,22 @@ Therefore, A must be a symmetric matrix.
 
 # 4. Least Squares and the Min-Norm Problem from the Perspective of SVD
 
+### (a)
+![](附件/1e11265cc19a3a4e4d1b408131078b2b.jpg)
+
+### (b)
+![](附件/bfa8cf2e33f2b04155ac5d4ccc62321d.jpg)
+
+### (c)
+![](附件/01bddd4f9e722e237b68e37ec79a37f5.jpg)
+
+### (d)
+
+### (f)
+
+### (e)
+
+
 
 # 5. The Five Interpretations of Ridge Regression
 
