@@ -8,45 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7330ad594012ebac",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "CS231n/3. Generative and Interactive Visual Intelligence/lecture_14.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "lecture_14"
-            }
-          },
-          {
-            "id": "1b7b9ab8cd00c425",
+            "id": "ea16a89dc6e542f7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS231n/3. Generative and Interactive Visual Intelligence/Lecture 14 Generative Models 2.md",
+                "file": "CS182 深度神经网络/Homework/HW0/查漏补缺.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 14 Generative Models 2"
+              "title": "查漏补缺"
             }
           },
           {
-            "id": "39b7d84db743afd6",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "CS182 深度神经网络/Homework/HW0/hw00_question.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "hw00_question"
-            }
-          },
-          {
-            "id": "0ebae3f416509fce",
+            "id": "2c6cc963ea9b6b24",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -57,6 +33,30 @@
               },
               "icon": "lucide-file",
               "title": "COMPSCI 182 homework 0"
+            }
+          },
+          {
+            "id": "a012240fa9466e8c",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "CS294-318 VLA/Lecture 1/pi0.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "pi0"
+            }
+          },
+          {
+            "id": "25ddd1d807bb7434",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "CS182 深度神经网络/Homework/HW0/hw00_question.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "hw00_question"
             }
           }
         ],
@@ -213,27 +213,31 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "0ebae3f416509fce",
+  "active": "25ddd1d807bb7434",
   "lastOpenFiles": [
-    "CS182 深度神经网络/Homework/HW0/附件/64cef113bbd8c7f6270e193cc4759dc9.jpg",
-    "CS182 深度神经网络/Homework/HW0/hw00_question.pdf",
+    "CS182 深度神经网络/Homework/HW0/查漏补缺.md",
+    "CS231n/3. Generative and Interactive Visual Intelligence/lecture_14.pdf",
+    "CS231n/3. Generative and Interactive Visual Intelligence/Lecture 14 Generative Models 2.md",
     "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
-    "CS182 深度神经网络/Homework/HW0/附件/645a70832736482c3c7af7528ea33421.jpg",
-    "CS182 深度神经网络/Homework/HW0/附件/a02aa731f7720678fe7c946f98213295.jpg",
-    "CS182 深度神经网络/Homework/HW0/homework 0.pdf",
+    "CS294-318 VLA/Lecture 1/pi0.pdf",
+    "CS189 机器学习/Part 1： Introduction/2. Data Tools/02 Data Tools.pdf",
+    "CS182 深度神经网络/Discussion",
+    "CS189 机器学习/Part 1： Introduction/1. Introduction + ML problem framing/01 Introduction + ML problem framing.pdf",
+    "CS182 深度神经网络/Homework/HW0/hw00_question.pdf",
+    "未命名.md",
+    "CS294-318 VLA/Lecture 1/未命名.md",
     "CS182 深度神经网络/tmp/pdfs/homework-0.html",
     "CS182 深度神经网络/tmp/pdfs",
     "CS182 深度神经网络/tmp",
-    "CS182 深度神经网络/output/pdf",
-    "CS182 深度神经网络/output",
     "CS182 深度神经网络/scripts/md-to-pdf.js",
-    "CS182 深度神经网络/scripts",
+    "CS182 深度神经网络/Homework/HW0/附件/a02aa731f7720678fe7c946f98213295.jpg",
+    "CS182 深度神经网络/Homework/HW0/附件/64cef113bbd8c7f6270e193cc4759dc9.jpg",
+    "CS182 深度神经网络/Homework/HW0/附件/645a70832736482c3c7af7528ea33421.jpg",
     "CS182 深度神经网络/Homework/HW0/附件/23e0a1c5ba3a7e2c5a79c916caa86b49.jpg",
-    "CS182 深度神经网络/Homework/HW0/附件",
-    "未命名.md",
+    "未命名 2.md",
+    "CS182 深度神经网络/Homework/homework 0.md",
     "CS182 深度神经网络/Lecutre/Lecture 1.md",
     "未命名 1.md",
-    "CS231n/3. Generative and Interactive Visual Intelligence/Lecture 14 Generative Models 2.md",
     "CS231n/3. Generative and Interactive Visual Intelligence/附件/Pasted image 20260826181836.png",
     "CS231n/3. Generative and Interactive Visual Intelligence/附件/Pasted image 20260822152700.png",
     "CS231n/3. Generative and Interactive Visual Intelligence/附件/Pasted image 20260822151917.png",
@@ -241,7 +245,6 @@
     "CS231n/3. Generative and Interactive Visual Intelligence/附件/Pasted image 20260822003658.png",
     "CS231n/3. Generative and Interactive Visual Intelligence/附件/Pasted image 20260822002144.png",
     "CS231n/3. Generative and Interactive Visual Intelligence/附件/Pasted image 20260821095956.png",
-    "CS231n/3. Generative and Interactive Visual Intelligence/附件/Pasted image 20260821094318.png",
     "CS231n/index.md",
     "CS231n/3. Generative and Interactive Visual Intelligence/Lecture 12 Self-supervised Learning.md",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 9 Dection, Segmentation, Visualization, and Understanding.md",
@@ -256,10 +259,6 @@
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 10 Video Understanding.md",
     "写CV.md",
     "CS189 机器学习/Homework/HW4/readme.md",
-    "CS189 机器学习/index.md",
-    "CS231n/2. Perceiving and Understanding the Visual World/Lecture 6 CNN Architectures.md",
-    "Codex/Codex安装.md",
-    "CS231n/2. Perceiving and Understanding the Visual World/Lecture 5 Image Classification with CNNs.md",
-    "数据结构基础 FDS/补充知识/Bellman-Ford算法与SPFA算法.md"
+    "CS189 机器学习/index.md"
   ]
 }

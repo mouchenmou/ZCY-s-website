@@ -62,6 +62,18 @@ I also think group collaboration can help me experience the atmosphere of resear
 
 ### (e)
 
+I have already proved that : 
+
+$$\frac{\partial (X^TAX)}{\partial X}=X^T(A+A^T)$$
+
+So we only need to find the condition under which : 
+
+$$X^T(A+A^T)=2X^TA$$
+
+Since $X^T(A+A^T)-2X^TA = X^T(A^T-A)$, the equality holds for all X when $A^T=A$.
+
+Therefore, A must be a symmetric matrix.
+
 ---
 
 # 4. Least Squares and the Min-Norm Problem from the Perspective of SVD
