@@ -76,7 +76,7 @@ Therefore, A must be a symmetric matrix.
 
 ---
 
-# 4. Least Squares and the Min-Norm Problem from the Perspective of SVD
+## 4. Least Squares and the Min-Norm Problem from the Perspective of SVD
 
 ### (a)
 ![](附件/1e11265cc19a3a4e4d1b408131078b2b.jpg)
@@ -95,18 +95,24 @@ Therefore, A must be a symmetric matrix.
 
 
 
-# 5. The Five Interpretations of Ridge Regression
+## 5. The Five Interpretations of Ridge Regression
 
+### (a)
+![](附件/f1a29df3a8c6514a610c34bfcac3db92.png)
 
-# 6. ReLU Elbow Update under SGD
+### (b)
+
+![](附件/24be3b0a7daca342134e766f1f69ca25.jpg)
+
+## 6. ReLU Elbow Update under SGD
 
 ---
 
-# 7. Coding Fully Connected Networks
+## 7. Coding Fully Connected Networks
 
 Complete the provided `networks.ipynb` notebook using NumPy and export the completed notebook as a PDF.
 
-## (a)
+### (a)
 
 **Fill this part in after running the three-layer and five-layer networks.**
 
@@ -116,9 +122,9 @@ A possible answer, if it agrees with the experimental results, is:
 
 ---
 
-# 8. Homework Process and Study Group
+## 8. Homework Process and Study Group
 
-## (a)
+### (a)
 
 I used the course materials, the assigned readings, and ChatGPT to discuss and check some of the mathematical derivations.
 
