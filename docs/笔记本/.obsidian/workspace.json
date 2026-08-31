@@ -8,31 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ea16a89dc6e542f7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS182 深度神经网络/Homework/HW0/查漏补缺.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "查漏补缺"
-            }
-          },
-          {
             "id": "2c6cc963ea9b6b24",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
+                "file": "CS182 深度神经网络/Homework/HW0/查漏补缺/1. SVD.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "COMPSCI 182 homework 0"
+              "title": "1. SVD"
             }
           },
           {
@@ -51,6 +37,34 @@
             "id": "25ddd1d807bb7434",
             "type": "leaf",
             "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CS182 深度神经网络/Homework/HW0/查漏补缺/3. 概率论.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "3. 概率论"
+            }
+          },
+          {
+            "id": "033e329eeb1b1243",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "COMPSCI 182 homework 0"
+            }
+          },
+          {
+            "id": "c29a9b3fa641184f",
+            "type": "leaf",
+            "state": {
               "type": "pdf",
               "state": {
                 "file": "CS182 深度神经网络/Homework/HW0/hw00_question.pdf"
@@ -60,7 +74,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -213,17 +227,26 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "2c6cc963ea9b6b24",
+  "active": "033e329eeb1b1243",
   "lastOpenFiles": [
-    "CS182 深度神经网络/Homework/HW0/附件/24be3b0a7daca342134e766f1f69ca25.jpg",
-    "CS294-318 VLA/Lecture 1/pi0.pdf",
+    "CS182 深度神经网络/Homework/HW0/附件/a24d7cd81ff4c3b52e26150a98291699.jpg",
     "CS182 深度神经网络/Homework/HW0/hw00_question.pdf",
     "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
-    "CS182 深度神经网络/Homework/HW0/附件/f1a29df3a8c6514a610c34bfcac3db92.png",
-    "CS182 深度神经网络/Homework/HW0/附件/01bddd4f9e722e237b68e37ec79a37f5.jpg",
-    "CS182 深度神经网络/Homework/HW0/附件/bfa8cf2e33f2b04155ac5d4ccc62321d.jpg",
-    "CS182 深度神经网络/Homework/HW0/附件/1e11265cc19a3a4e4d1b408131078b2b.jpg",
-    "CS182 深度神经网络/Homework/HW0/查漏补缺.md",
+    "CS294-318 VLA/Lecture 1/pi0.pdf",
+    "CS182 深度神经网络/Homework/HW0/查漏补缺/3. 概率论.md",
+    "CS182 深度神经网络/Homework/HW0/附件/0ff33f276fb834f833b135a23fbc0b80.jpg",
+    "CS182 深度神经网络/Homework/HW0/附件/6497155a50968381202acb6ae5b802b4.jpg",
+    "CS182 深度神经网络/Homework/HW0/附件/c143c0c8c876bd1d9d91b1c26af3cb56.jpg",
+    "CS182 深度神经网络/Homework/HW0/附件/b4ac2a84e9033c51609f1dfec2280194.jpg",
+    "CS182 深度神经网络/Homework/HW0/附件/7ab527ce8697ae01ca12211c64ed46cb.jpg",
+    "CS182 深度神经网络/Homework/HW0/附件/a0e1f6a53fdbb216ed5e291299e21e81.jpg",
+    "CS182 深度神经网络/Homework/HW0/附件/e4b634f283b13171536e4b6652d91f27.jpg",
+    "CS182 深度神经网络/Homework/HW0/附件/fecb1ecd5aece106479a6cd342946ab2.jpg",
+    "CS182 深度神经网络/Homework/HW0/附件/Pasted image 20260830185717.png",
+    "CS182 深度神经网络/Homework/HW0/附件/5ec1a2ad6fe84d4a1cec0001d3d578bf.jpg",
+    "CS182 深度神经网络/Homework/HW0/查漏补缺/1. SVD.md",
+    "CS182 深度神经网络/Homework/HW0/查漏补缺/2. 特征值的几何意义.md",
+    "CS182 深度神经网络/Homework/HW0/查漏补缺",
     "CS231n/3. Generative and Interactive Visual Intelligence/lecture_14.pdf",
     "CS231n/3. Generative and Interactive Visual Intelligence/Lecture 14 Generative Models 2.md",
     "CS189 机器学习/Part 1： Introduction/2. Data Tools/02 Data Tools.pdf",
@@ -234,17 +257,10 @@
     "CS182 深度神经网络/tmp/pdfs/homework-0.html",
     "CS182 深度神经网络/tmp/pdfs",
     "CS182 深度神经网络/tmp",
-    "CS182 深度神经网络/scripts/md-to-pdf.js",
-    "CS182 深度神经网络/Homework/HW0/附件/a02aa731f7720678fe7c946f98213295.jpg",
-    "CS182 深度神经网络/Homework/HW0/附件/64cef113bbd8c7f6270e193cc4759dc9.jpg",
-    "CS182 深度神经网络/Homework/HW0/附件/645a70832736482c3c7af7528ea33421.jpg",
-    "CS182 深度神经网络/Homework/HW0/附件/23e0a1c5ba3a7e2c5a79c916caa86b49.jpg",
     "未命名 2.md",
     "CS182 深度神经网络/Homework/homework 0.md",
     "CS182 深度神经网络/Lecutre/Lecture 1.md",
     "未命名 1.md",
-    "CS231n/3. Generative and Interactive Visual Intelligence/附件/Pasted image 20260826181836.png",
-    "CS231n/3. Generative and Interactive Visual Intelligence/附件/Pasted image 20260822152700.png",
     "CS231n/3. Generative and Interactive Visual Intelligence/lecture 13 Generative Models 1.md",
     "CS231n/index.md",
     "CS231n/3. Generative and Interactive Visual Intelligence/Lecture 12 Self-supervised Learning.md",
@@ -258,8 +274,6 @@
     "CS231n/Homework/Homework1/Two-Layer Neural Network.md",
     "CS231n/Homework/Homework1/Softmax.md",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 10 Video Understanding.md",
-    "写CV.md",
-    "CS189 机器学习/Homework/HW4/readme.md",
-    "CS189 机器学习/index.md"
+    "写CV.md"
   ]
 }

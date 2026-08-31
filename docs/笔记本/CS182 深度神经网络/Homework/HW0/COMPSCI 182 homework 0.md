@@ -104,7 +104,46 @@ Therefore, A must be a symmetric matrix.
 
 ![](附件/24be3b0a7daca342134e766f1f69ca25.jpg)
 
+### (c)
+![](附件/23fee0421a82656814ae135a7e29c424.jpg)
+
+### (d)
+
+![](附件/4c9978108ec62cbb0564f8307701aa0a.jpg)
+
+### (e)
+
+![](附件/5ec1a2ad6fe84d4a1cec0001d3d578bf.jpg)
+
+### (f)
+
+![](附件/Pasted%20image%2020260830185717.png)
+
+### (g)
+![](附件/fecb1ecd5aece106479a6cd342946ab2.jpg)
+
+### (h)
+
+![](附件/e4b634f283b13171536e4b6652d91f27.jpg)
+
 ## 6. ReLU Elbow Update under SGD
+
+### (a)
+![](附件/a0e1f6a53fdbb216ed5e291299e21e81.jpg)
+
+### (b)
+![](附件/7ab527ce8697ae01ca12211c64ed46cb.jpg)
+![](附件/b4ac2a84e9033c51609f1dfec2280194.jpg)
+![](附件/c143c0c8c876bd1d9d91b1c26af3cb56.jpg)
+![](附件/a24d7cd81ff4c3b52e26150a98291699.jpg)
+
+### (c)
+
+![](附件/6497155a50968381202acb6ae5b802b4.jpg)
+
+### (d)
+![](附件/0ff33f276fb834f833b135a23fbc0b80.jpg)
+
 
 ---
 
