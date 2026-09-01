@@ -74,7 +74,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -227,10 +227,10 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "033e329eeb1b1243",
+  "active": "c29a9b3fa641184f",
   "lastOpenFiles": [
-    "CS182 深度神经网络/Homework/HW0/hw00_question.pdf",
     "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
+    "CS182 深度神经网络/Homework/HW0/hw00_question.pdf",
     "CS182 深度神经网络/Homework/HW0/附件/a24d7cd81ff4c3b52e26150a98291699.jpg",
     "CS294-318 VLA/Lecture 1/pi0.pdf",
     "CS182 深度神经网络/Homework/HW0/查漏补缺/3. 概率论.md",
