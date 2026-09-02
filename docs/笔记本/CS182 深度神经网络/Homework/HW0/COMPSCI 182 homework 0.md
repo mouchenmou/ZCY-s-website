@@ -61,18 +61,7 @@ I also think group collaboration can help me experience the atmosphere of resear
 ![](附件/64cef113bbd8c7f6270e193cc4759dc9.jpg)
 
 ### (e)
-
-I have already proved that : 
-
-$$\frac{\partial (X^TAX)}{\partial X}=X^T(A+A^T)$$
-
-So we only need to find the condition under which : 
-
-$$X^T(A+A^T)=2X^TA$$
-
-Since $X^T(A+A^T)-2X^TA = X^T(A^T-A)$, the equality holds for all X when $A^T=A$.
-
-Therefore, A must be a symmetric matrix.
+![](附件/6f0cee3615486322864ef1e097709526.jpg)
 
 ---
 
@@ -80,19 +69,16 @@ Therefore, A must be a symmetric matrix.
 
 ### (a)
 ![](附件/1e11265cc19a3a4e4d1b408131078b2b.jpg)
-
 ### (b)
 ![](附件/bfa8cf2e33f2b04155ac5d4ccc62321d.jpg)
-
 ### (c)
 ![](附件/01bddd4f9e722e237b68e37ec79a37f5.jpg)
-
 ### (d)
-
-### (f)
-
+![](附件/9fc270b0d51a609d262e4c1854297883.jpg)
 ### (e)
-
+![](附件/cb5cb0aa4d877c467069f8ff67e5f149.jpg)
+### (f)
+![](附件/9611078a2b20d4751247f3528654f458.jpg)
 
 
 ## 5. The Five Interpretations of Ridge Regression
@@ -153,11 +139,7 @@ Complete the provided `networks.ipynb` notebook using NumPy and export the compl
 
 ### (a)
 
-**Fill this part in after running the three-layer and five-layer networks.**
-
-A possible answer, if it agrees with the experimental results, is:
-
-> I found that the five-layer network was more difficult to train than the three-layer network. The deeper network was more sensitive to optimization choices and generally required more careful tuning to obtain good performance. This is consistent with the fact that gradients must propagate through more layers in the five-layer network.
+In the three-layer network, a learning rate on the order of $10^{-2}$ worked well and allowed the model to reach 100% training accuracy. However, when I used a learning rate of similar magnitude for the five-layer network, the training often became unstable and the loss turned into `NaN`. I therefore reduced the learning rate to the order of $10^{-3}$, after which the five-layer network could be trained successfully to 100% training accuracy.
 
 ---
 
@@ -165,12 +147,10 @@ A possible answer, if it agrees with the experimental results, is:
 
 ### (a)
 
-I used the course materials, the assigned readings, and ChatGPT to discuss and check some of the mathematical derivations.
-
-## (b)
+For Problems 3–6, I used ChatGPT when I encountered concepts or steps that I did not understand
+### (b)
 
 I did not work with other students on this homework.
+### (c)
 
-## (c)
-
-Approximately **[fill in the actual number] hours**.
+Approximately 30 hours.
