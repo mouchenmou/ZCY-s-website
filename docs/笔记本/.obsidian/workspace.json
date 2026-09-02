@@ -37,14 +37,12 @@
             "id": "5d4cc5d682c66e02",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "CS182 深度神经网络/index.md",
-                "mode": "source",
-                "source": false
+                "file": "Xiaomin Lin老师科研/Post Fusion/2603.05623v1.pdf"
               },
-              "icon": "lucide-file",
-              "title": "index"
+              "icon": "lucide-file-text",
+              "title": "2603.05623v1"
             }
           }
         ],
@@ -201,11 +199,13 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "5d4cc5d682c66e02",
+  "active": "2a6816d11ffda768",
   "lastOpenFiles": [
+    "CS182 深度神经网络/index.md",
+    "Xiaomin Lin老师科研/Post Fusion",
+    "Xiaomin Lin老师科研/Post Fusion/2603.05623v1.pdf",
     "CS182 深度神经网络/Homework/HW0/hw00_question.pdf",
     "CS182 深度神经网络/Lecutre/Lecture 1.md",
-    "CS182 深度神经网络/index.md",
     "CS189 机器学习/index.md",
     "CS189 机器学习/Part 1： Introduction/3. Machine Learning Mechanics - Terminology and Techniques/03 Machine Learning Mechanics - Terminology and Techniques.pdf",
     "CS189 机器学习/Part 1： Introduction/2. KNN, ML Vocabulary, and K-Means/Lecture 02 -- KNN, ML Vocabulary, and KMeans.pdf",
@@ -219,8 +219,6 @@
     "CS189 机器学习/Part 1： Introduction/2. Data Tools",
     "CS189 机器学习/Part 1： Introduction/1. Introduction + ML problem framing/01 Introduction + ML problem framing.pdf",
     "CS189 机器学习/Part 1： Introduction/2. Data Tools/02 Data Tools.pdf",
-    "CS189 机器学习/Part 1： Introduction/4. Clustering, Probability Review/04 Clustering, Probability Review.pdf",
-    "CS182 深度神经网络/Homework/HW0/output/pdf/COMPSCI 182 hw00.pdf",
     "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
     "CS182 深度神经网络/Homework/HW0/tmp/pdfs/merge_check/page-26.png",
     "CS182 深度神经网络/Homework/HW0/tmp/pdfs/merge_check/page-25.png",
