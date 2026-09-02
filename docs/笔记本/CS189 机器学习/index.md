@@ -15,7 +15,6 @@ UC Berkeley CS189: Introduction to Machine Learning，伯克利最热门最难�
 
 - Lecture 2: KNN, ML Vocabulary, and K-Means
     - [笔记](Part%201：%20Introduction/2.%20KNN,%20ML%20Vocabulary,%20and%20K-Means/Lecture%2002%20KNN,%20ML%20Vocabulary,%20and%20K-Means.md)
-    - [Slides](Part%201：%20Introduction/2.%20KNN,%20ML%20Vocabulary,%20and%20K-Means/Lecture%2002%20--%20KNN,%20ML%20Vocabulary,%20and%20KMeans.pdf)
 - [Lecture 3: Machine Learning Mechanics - Terminology and Techniques](Part%201：%20Introduction/3.%20Machine%20Learning%20Mechanics%20-%20Terminology%20and%20Techniques/03%20Machine%20Learning%20Mechanics%20-%20Terminology%20and%20Techniques.pdf)
 - [Lecture 4: Clustering, Probability Review](Part%201：%20Introduction/4.%20Clustering,%20Probability%20Review/04%20Clustering,%20Probability%20Review.pdf)
 

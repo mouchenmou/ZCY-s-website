@@ -398,7 +398,6 @@ nav:
       - Part 1 Introduction:
         - Lecture 2 KNN, ML Vocabulary, and K-Means:
           - 笔记: 笔记本/CS189 机器学习/Part 1： Introduction/2. KNN, ML Vocabulary, and K-Means/Lecture 02 KNN, ML Vocabulary, and K-Means.md
-          - Slides: 笔记本/CS189 机器学习/Part 1： Introduction/2. KNN, ML Vocabulary, and K-Means/Lecture 02 -- KNN, ML Vocabulary, and KMeans.pdf
         - Lecture 3 Machine Learning Mechanics: 笔记本/CS189 机器学习/Part 1： Introduction/3. Machine Learning Mechanics - Terminology and Techniques/03 Machine Learning Mechanics - Terminology and Techniques.pdf
         - Lecture 4 Clustering, Probability Review: 笔记本/CS189 机器学习/Part 1： Introduction/4. Clustering, Probability Review/04 Clustering, Probability Review.pdf
       - Part 2 Supervised Core:
