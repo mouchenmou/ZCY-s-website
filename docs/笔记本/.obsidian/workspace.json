@@ -11,38 +11,38 @@
             "id": "2c6cc963ea9b6b24",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS182 深度神经网络/Homework/HW0/查漏补缺/1. SVD.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1. SVD"
-            }
-          },
-          {
-            "id": "a012240fa9466e8c",
-            "type": "leaf",
-            "state": {
               "type": "pdf",
               "state": {
-                "file": "CS294-318 VLA/Lecture 1/pi0.pdf"
+                "file": "Xiaomin Lin老师科研/LADBench/2606.17433v1.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "pi0"
+              "title": "2606.17433v1"
             }
           },
           {
             "id": "5d4cc5d682c66e02",
             "type": "leaf",
             "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Xiaomin Lin老师科研/LADBench/我的疑问.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "我的疑问"
+            }
+          },
+          {
+            "id": "ffac055df8066b57",
+            "type": "leaf",
+            "state": {
               "type": "pdf",
               "state": {
-                "file": "Xiaomin Lin老师科研/Post Fusion/2603.05623v1.pdf"
+                "file": "Xiaomin Lin老师科研/LADBench/2606.17433v1.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "2603.05623v1"
+              "title": "2606.17433v1"
             }
           }
         ],
@@ -105,7 +105,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "3e3804ba2af637db",
@@ -199,26 +199,30 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "2a6816d11ffda768",
+  "active": "ffac055df8066b57",
   "lastOpenFiles": [
+    "Xiaomin Lin老师科研/LADBench/我的疑问.md",
+    "Xiaomin Lin老师科研/LADBench/2606.17433v1.pdf",
+    "Xiaomin Lin老师科研/LADBench/附件/Pasted image 20260902153453.png",
+    "Xiaomin Lin老师科研/LADBench/附件",
+    "Xiaomin Lin老师科研/LADBench/gpt说的重点.md",
+    "CS182 深度神经网络/Homework/HW0/查漏补缺/1. SVD.md",
+    "2026-09-02.md",
+    "CS188 人工智能/Project/Project0/tutorial/__pycache__/testParser.cpython-314.pyc",
+    "CS188 人工智能/Project/Project0/tutorial/__pycache__/textDisplay.cpython-314.pyc",
+    "CS188 人工智能/Project/Project0/tutorial/__pycache__/testClasses.cpython-314.pyc",
+    "CS188 人工智能/Project/Project0/tutorial/__pycache__/tutorialTestClasses.cpython-314.pyc",
+    "CS188 人工智能/Project/Project0/tutorial/__pycache__/town.cpython-314.pyc",
+    "CS188 人工智能/Project/Project0/tutorial/__pycache__/shopAroundTown.cpython-314.pyc",
+    "CS188 人工智能/Project/Project0/tutorial/__pycache__/shop.cpython-314.pyc",
+    "CS188 人工智能/Project/Project0/tutorial/__pycache__/shopSmart.cpython-314.pyc",
     "CS182 深度神经网络/index.md",
-    "Xiaomin Lin老师科研/Post Fusion",
-    "Xiaomin Lin老师科研/Post Fusion/2603.05623v1.pdf",
-    "CS182 深度神经网络/Homework/HW0/hw00_question.pdf",
     "CS182 深度神经网络/Lecutre/Lecture 1.md",
     "CS189 机器学习/index.md",
-    "CS189 机器学习/Part 1： Introduction/3. Machine Learning Mechanics - Terminology and Techniques/03 Machine Learning Mechanics - Terminology and Techniques.pdf",
-    "CS189 机器学习/Part 1： Introduction/2. KNN, ML Vocabulary, and K-Means/Lecture 02 -- KNN, ML Vocabulary, and KMeans.pdf",
     "CS189 机器学习/Part 1： Introduction/2. KNN, ML Vocabulary, and K-Means/Lecture 02 KNN, ML Vocabulary, and K-Means.md",
     "CS189 机器学习/Part 1： Introduction/2. KNN, ML Vocabulary, and K-Means/附件/Pasted image 20260902002118.png",
-    "CS189 机器学习/Part 1： Introduction/2. KNN, ML Vocabulary, and K-Means/附件",
-    "CS182 深度神经网络/Homework/HW0/查漏补缺/1. SVD.md",
-    "CS294-318 VLA/Lecture 1/pi0.pdf",
     "CS182 深度神经网络/Homework/HW0/查漏补缺/3. 概率论.md",
     "CS182 深度神经网络/Homework/HW0/查漏补缺/4. 行空间和零空间.md",
-    "CS189 机器学习/Part 1： Introduction/2. Data Tools",
-    "CS189 机器学习/Part 1： Introduction/1. Introduction + ML problem framing/01 Introduction + ML problem framing.pdf",
-    "CS189 机器学习/Part 1： Introduction/2. Data Tools/02 Data Tools.pdf",
     "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
     "CS182 深度神经网络/Homework/HW0/tmp/pdfs/merge_check/page-26.png",
     "CS182 深度神经网络/Homework/HW0/tmp/pdfs/merge_check/page-25.png",
@@ -228,7 +232,6 @@
     "CS182 深度神经网络/Homework/HW0/tmp/pdfs/render_check/page-14.png",
     "CS182 深度神经网络/Homework/HW0/tmp/pdfs/render_check/page-13.png",
     "CS182 深度神经网络/Homework/HW0/tmp/pdfs/render_check/page-12.png",
-    "CS182 深度神经网络/Homework/HW0/tmp/pdfs/render_check/page-03.png",
     "未命名 1.md",
     "未命名 2.md",
     "CS182 深度神经网络/Homework/HW0/4. 零空间与行空间、正交性及线性组合表示.md",
@@ -242,9 +245,6 @@
     "CS231n/3. Generative and Interactive Visual Intelligence/Lecture 12 Self-supervised Learning.md",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 9 Dection, Segmentation, Visualization, and Understanding.md",
     "CS231n/1. Deep Learning Basic/Lecture 4 Neural Networks and Backpropagation.md",
-    "CS231n/2. Perceiving and Understanding the Visual World/Lecture 7 Recurrent Neural Networks.md",
-    "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
-    "CS231n/2. Perceiving and Understanding the Visual World/Lecture 8 Attention and Transformers.md",
-    "CS231n/2. Perceiving and Understanding the Visual World/Lecture 11 Large Scale Distributed Training.md"
+    "CS231n/2. Perceiving and Understanding the Visual World/Lecture 7 Recurrent Neural Networks.md"
   ]
 }
