@@ -65,12 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS189 机器学习/Lecture/2. KNN, ML Vocabulary, and K-Means/Lecture 02 KNN, ML Vocabulary, and K-Means.md",
+                "file": "Xiaomin Lin老师科研/LADBench/我的疑问.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 02 KNN, ML Vocabulary, and K-Means"
+              "title": "我的疑问"
             }
           }
         ],
@@ -227,8 +227,18 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "e302dab4e7a9d59c",
+  "active": "2a6816d11ffda768",
   "lastOpenFiles": [
+    "Xiaomin Lin老师科研/LADBench/读文章.md",
+    "Xiaomin Lin老师科研/LADBench/我的疑问.md",
+    "Xiaomin Lin老师科研/LADBench/gpt说的重点.md",
+    "Xiaomin Lin老师科研/LADBench/2606.17433v1.pdf",
+    "CS189 机器学习/Lecture/2. KNN, ML Vocabulary, and K-Means/Lecture 02 KNN, ML Vocabulary, and K-Means.md",
+    "Xiaomin Lin老师科研/LADBench/附件/Pasted image 20260902225608.png",
+    "Xiaomin Lin老师科研/LADBench/附件/Pasted image 20260902153453.png",
+    "Xiaomin Lin老师科研/LADBench/附件/Pasted image 20260902104955.png",
+    "Xiaomin Lin老师科研/LADBench/附件",
+    "Xiaomin Lin老师科研/LADBench",
     "CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 03 -- Dimensionality Reduction.pdf",
     "CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 3 Dimensionality Reduction.md",
     "CS189 机器学习/Lecture/3. Dimensionality Reduction/附件/Lecture3_matrix_factorization-17.png",
@@ -236,7 +246,6 @@
     "CS189 机器学习/Lecture/3. Dimensionality Reduction/附件/Lecture3_vote_pca_demo-05.png",
     "CS189 机器学习/Lecture/3. Dimensionality Reduction/附件/Lecture3_intrinsic_dimension-12.png",
     "CS189 机器学习/Lecture/3. Dimensionality Reduction/附件",
-    "CS189 机器学习/Lecture/2. KNN, ML Vocabulary, and K-Means/Lecture 02 KNN, ML Vocabulary, and K-Means.md",
     "CS189 机器学习/Lecture/2. KNN, ML Vocabulary, and K-Means/附件/Pasted image 20260902002118.png",
     "CS189 机器学习/Lecture",
     "Xiaomin Lin老师科研/Post Fusion/2603.05623v1.pdf",
@@ -245,9 +254,6 @@
     "CS182 深度神经网络/Homework/HW01/hw01_question.pdf",
     "Xiaomin Lin老师科研/LADBench/我的疑问.md",
     "CS182 深度神经网络/Homework/HW01",
-    "CS182 深度神经网络/Homework/未命名文件夹",
-    "CS182 深度神经网络/Homework/hw01_question.pdf",
-    "Xiaomin Lin老师科研/LADBench/2606.17433v1.pdf",
     "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
     "CS182 深度神经网络/Lecutre/Lecture 2 Optimization.md",
     "CS182 深度神经网络/Lecutre/Lecture 1 Basic Principles.md",
@@ -262,17 +268,11 @@
     "CS182 深度神经网络/Homework/HW0/查漏补缺/3. 概率论.md",
     "CS182 深度神经网络/Homework/HW0/查漏补缺/4. 行空间和零空间.md",
     "CS182 深度神经网络/Homework/HW0/tmp/pdfs/merge_check/page-26.png",
-    "CS182 深度神经网络/Homework/HW0/tmp/pdfs/merge_check/page-25.png",
-    "CS182 深度神经网络/Homework/HW0/tmp/pdfs/render_check/final_page-25.png",
-    "CS182 深度神经网络/Homework/HW0/tmp/pdfs/render_check/page-25.png",
     "未命名 1.md",
     "未命名 2.md",
     "CS182 深度神经网络/Homework/HW0/4. 零空间与行空间、正交性及线性组合表示.md",
     "CS182 深度神经网络/Homework/HW0/查漏补缺/2. 特征值的几何意义.md",
     "CS231n/3. Generative and Interactive Visual Intelligence/Lecture 14 Generative Models 2.md",
-    "未命名.md",
-    "CS294-318 VLA/Lecture 1/未命名.md",
-    "CS182 深度神经网络/Homework/homework 0.md",
-    "CS231n/3. Generative and Interactive Visual Intelligence/lecture 13 Generative Models 1.md"
+    "未命名.md"
   ]
 }
