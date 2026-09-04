@@ -74,7 +74,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -227,10 +227,11 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "e302dab4e7a9d59c",
+  "active": "ffac055df8066b57",
   "lastOpenFiles": [
-    "Xiaomin Lin老师科研/Post Fusion/2603.05623v1.pdf",
+    "CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 3 Dimensionality Reduction.md",
     "Xiaomin Lin老师科研/Post Fusion/我的疑问.md",
+    "Xiaomin Lin老师科研/Post Fusion/2603.05623v1.pdf",
     "CS189 机器学习/Lecture/2. KNN, ML Vocabulary, and K-Means/Lecture 02 KNN, ML Vocabulary, and K-Means.md",
     "Xiaomin Lin老师科研/LADBench/我的疑问.md",
     "Xiaomin Lin老师科研/LADBench/读文章.md",
@@ -242,7 +243,6 @@
     "Xiaomin Lin老师科研/LADBench/附件",
     "Xiaomin Lin老师科研/LADBench",
     "CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 03 -- Dimensionality Reduction.pdf",
-    "CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 3 Dimensionality Reduction.md",
     "CS189 机器学习/Lecture/3. Dimensionality Reduction/附件/Lecture3_matrix_factorization-17.png",
     "CS189 机器学习/Lecture/3. Dimensionality Reduction/附件/Lecture3_explained_variance-37.png",
     "CS189 机器学习/Lecture/3. Dimensionality Reduction/附件/Lecture3_vote_pca_demo-05.png",
