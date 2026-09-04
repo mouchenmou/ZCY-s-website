@@ -90,6 +90,7 @@ I also think group collaboration can help me experience the atmosphere of resear
 
 ![](附件/24be3b0a7daca342134e766f1f69ca25.jpg)
 
+订正：西格玛远小于拉姆达的时候，西格玛'=0
 ### (c)
 ![](附件/23fee0421a82656814ae135a7e29c424.jpg)
 
