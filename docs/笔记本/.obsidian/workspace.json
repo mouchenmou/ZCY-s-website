@@ -34,18 +34,6 @@
             }
           },
           {
-            "id": "ffac055df8066b57",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Xiaomin Lin老师科研/Post Fusion/2603.05623v1.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "2603.05623v1"
-            }
-          },
-          {
             "id": "aac74b18fbddbb74",
             "type": "leaf",
             "state": {
@@ -72,9 +60,21 @@
               "icon": "lucide-file",
               "title": "我的疑问"
             }
+          },
+          {
+            "id": "fdda0165b69860c0",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Xiaomin Lin老师科研/Post Fusion/2603.05623v1.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "2603.05623v1"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -227,11 +227,12 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "ffac055df8066b57",
+  "active": "e302dab4e7a9d59c",
   "lastOpenFiles": [
+    "Xiaomin Lin老师科研/Post Fusion/2603.05623v1.pdf",
     "CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 3 Dimensionality Reduction.md",
     "Xiaomin Lin老师科研/Post Fusion/我的疑问.md",
-    "Xiaomin Lin老师科研/Post Fusion/2603.05623v1.pdf",
+    "CS182 深度神经网络/Homework/HW01/hw01_question.pdf",
     "CS189 机器学习/Lecture/2. KNN, ML Vocabulary, and K-Means/Lecture 02 KNN, ML Vocabulary, and K-Means.md",
     "Xiaomin Lin老师科研/LADBench/我的疑问.md",
     "Xiaomin Lin老师科研/LADBench/读文章.md",
@@ -251,7 +252,6 @@
     "CS189 机器学习/Lecture/2. KNN, ML Vocabulary, and K-Means/附件/Pasted image 20260902002118.png",
     "CS189 机器学习/Lecture",
     "CS189 机器学习/Part 1： Introduction/3. Machine Learning Mechanics - Terminology and Techniques/03 Machine Learning Mechanics - Terminology and Techniques.pdf",
-    "CS182 深度神经网络/Homework/HW01/hw01_question.pdf",
     "CS182 深度神经网络/Homework/HW01",
     "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
     "CS182 深度神经网络/Lecutre/Lecture 2 Optimization.md",
