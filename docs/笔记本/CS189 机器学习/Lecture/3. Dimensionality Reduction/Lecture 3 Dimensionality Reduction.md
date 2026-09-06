@@ -1,3 +1,272 @@
+## 1. Principal Component Analysis (PCA)
+主成分分析，也就是分析数据里面主要的那些成分，主要的方向：
+
+$$把一个高维的数据，投影到一个更低维的空间，同时尽量保留原数据中的重要信息$$
+
+- 降维：我们会把高维数据投影到一个能较好描述原始数据的低维空间中
+- Parametirc method：模型会有一组固定数量的参数
+    - 像 KNN 这种就是 non-parametric method，因为它没有固定的参数，输入图像 X 的数量就是参数，因此参数的数量会随着 X 的数量的改变而改变
+    - Parametric method 就是去学 $w,b$ 这些东西，它们的数量是固定的
+
+
+## 1.1 Dimensionality Reduction
+
+Dimensionality Reduction 跟 Clustering 一样，都是 Unsupervised Learning
+
+### 1.1.1 降维的原因
+
+1. 为了更好的可视化。像1维、2维、3维还能画出来，但是到了4维就没办法可视化了，因此我们只能降维。
+2. 像 KNN，K-means 这类，在太高的维度反而会表现得很差
+    - 因为它们非常依赖距离，如果维度很高，比如1000维的话，那么距离公式就是 $∥x−y∥^2=j=\sum^{1000}_{j=1}​(x_j​−y_j​)^2$，然而这里面很多维度可能只是噪声，但是它们都被贡献到了距离里面
+    - 因此遇到这种情况，降维是一个比较好的选择
+
+### 1.2 Intrinsic Dimension and Matrix Rank
+
+### 1.2.1 Matirx Rank
+
+矩阵的秩：矩阵列空间的维数，也就是最多有多少列是线性无关的。
+
+对于
+
+$$X\in \mathbb{R}^{n\times d}$$
+
+有：
+
+$$\operatorname{rank}(X)\leq \min(n,d)$$
+
+如果达到这个上界，就称这个矩阵是 **full rank**。
+
+### 1.2.2 Intrinsic Dimension
+
+Intrinsic Dimension：完整描述这组数据所需要的最少变量
+
+它和 rank 最大的区别就是 Intrinsic Dimension 允许变量之间存在非线性关系，而 rank 只考虑线性关系。
+
+!!! example "举个例子"
+    以下面这幅图为例：
+    ![](附件/Pasted%20image%2020260905201136.png)
+    图中一共有 5 个变量，但是 perimeter 这个变量可以由 width 和 height 线性组合出来，即：
+    $$周长=2*(长+宽度)$$
+    
+    因此，我们只需要 4 个维度就能表示出这五个变量，所以它的 $rank=4$
+    
+    然而，intrinsic dimension 允许非线性关系，由于 diagonal、area、perimeter 都能由 height 和 width 表示出来，即：
+    
+    $$\begin{aligned}
+    &diagonal = \sqrt{height^2z+width^2}
+    \\& perimeter=2(height+width)
+    \\& area=height\times width
+    \end{aligned}$$
+    
+    因此，只需要 height 和 width 这两个维度就能把它们都表示出来了，所以它的 $intrinsic dimension=2$。
+
+### 1.3 降维的原因plus
+Real data is rarely exactly low rank.
+
+明明刚才上面那个例子，我们可以看出，虽然有5个变量，但是 $rank=4$。按理来说，在更宽泛的情况下，一个维度很大很大的矩阵，它的 rank 也应该是一个比较小的数，但是为什么这里说真实的数据往往不是 low rank 呢？
+
+原因是，我们现实中会有很多误差，也就是噪声，比如说我们刚刚说的：
+
+$$周长=2(长+宽)$$
+
+这只是理论上的，现实中我们去测量的时候，肯定会有误差的：
+
+$周长 =2(长+宽)+ϵ$
+
+这要 $ϵ \ne 0$，那么原先的 $rank=4$ 就得变成 $rank=5$ 了，这也就是我们现实数据中的噪声。
+
+这种数据虽然不是严格的低 rank 数据，但是往往可以被低维空间很好地近似。
+
+而且研究表明，PCA发现，将维度压缩到 rank=2 都能解释 86% 左右的数据 spread. 这样印证了 datasets are nearly full rank but are often accurately approximated by a lower dimensional sub-space
+
+---
+
+## 2. Deriving PCA
+
+我们刚刚讲了降维的好处，那么我们应该如何找到一个低维表示，使它尽可能准确地近似原始数据呢？
+
+### 2.1 Dimensionality reduction as Matrix Factorization
+
+先规定：假设有 n 个 data point，每个 data point 有 d 个 feature，那么:
+
+$$X\in\mathbb R^{n\times d}$$
+
+然后 PCA 的目标被写成：
+
+$$X\approx ZW$$
+
+其中：
+
+$$Z\in\mathbb R^{n\times k}, W\in\mathbb R^{k\times d}$$
+
+而且 k<d。因为原来每个点有 d 个 feature，现在只用 k 个数表示，所以这里的 Z 就是**低维坐标**。也就是说，我们把每个数据的 d 个 feature 压缩成了 k 个 feature，这样就实现了降维。
+
+![](附件/Pasted%20image%2020260905233344.png)
+
+### 2.2 什么时候 $ZW$ 能完全还原 $X$，什么时候只能近似？
+
+能不能完全还原 $X$，取决于 $k$ 和 $rank(X)$ 的大小：
+
+- $k>rank(X)$：能完全还原
+- $k<rank(X)$：只能近似
+
+!!! example "举个例子"
+    ![](附件/Pasted%20image%2020260905233902.png)
+    这道题选 B 和 D。
+    
+    A 得出的矩阵最大的秩只能是2，C 得出的最大的秩只能是1
+
+### 2.3 objective function
+如何判断我们这个 Z 和 W 构建的好不好，就要用到损失函数：
+
+$$Loss(Z,W)=\frac{1}{n}​\sum^n_i​∥X_i​−Z_i​W∥^2$$
+
+
+### 2.4 Why we subtract the mean?
+
+$ZW$ 能表示出来的所有点，天然都只能落在由 $W$ 的行向量张成的那个子空间里，而这个子空间一定经过原点。
+
+然而，真实的数据 $X$ 不一定围绕原点分布。比如一堆点可能都集中在 (10,10)  附近，那么最合适的低维直线也应该经过这堆数据的中心附近，而不是被强迫经过 (0,0)。
+
+所以 PCA 先对每个 feature 减去它自己的均值，也就是做 centering：
+
+$$x_i \leftarrow x_i-\mu$$
+
+这样一来，数据的均值就被移动到了原点：
+
+$$\mu \rightarrow 0$$
+
+于是：**原本应该经过数据均值的最佳低维子空间，现在就等价于经过原点的低维子空间。**
+
+![](附件/Pasted%20image%2020260906002200.png)
+
+!!! explanation "解析"
+	在 PCA 中，我们写：
+	
+	$$
+	X \approx ZW
+	$$
+	
+	对第 $i$ 个数据点来说，它的重建结果是：
+	
+	$$
+	Z_iW
+	$$
+	
+	为什么说这些重建出来的点一定落在一个**经过原点的子空间**里？
+	
+	先看最简单的情况：$k=1$。
+	
+	这时：
+	
+	$$
+	W=w\in\mathbb{R}^{1\times d}
+	$$
+	
+	而第 $i$ 个数据点的低维坐标只是一个标量：
+	
+	$$
+	z_i\in\mathbb{R}
+	$$
+	
+	所以重建结果为：
+	
+	$$
+	Z_iW=z_iw
+	$$
+	
+	当 $z_i$ 取不同的值时，我们得到：
+	
+	$$
+	\cdots,-2w,-w,0,w,2w,\cdots
+	$$
+	
+	这些点全部落在由 $w$ 决定的一条直线上。
+	
+	而当：
+	
+	$$
+	z_i=0
+	$$
+	
+	时：
+	
+	$$
+	z_iw=0
+	$$
+	
+	所以这条直线一定经过原点。
+	
+	如果 $k=2$，那么：
+	
+	$$
+	Z_i=[z_{i1},z_{i2}]
+	$$
+	
+	并且：
+	
+	$$
+	W=
+	\begin{bmatrix}
+	w_1\\
+	w_2
+	\end{bmatrix}
+	$$
+	
+	因此：
+	
+	$$
+	Z_iW=z_{i1}w_1+z_{i2}w_2
+	$$
+	
+	也就是说，所有重建出来的点都是 $w_1$ 和 $w_2$ 的线性组合，因此它们都落在：
+	
+	$$
+	\operatorname{span}(w_1,w_2)
+	$$
+	
+	这个二维子空间中。
+	
+	而这个子空间一定包含：
+	
+	$$
+	0w_1+0w_2=0
+	$$
+	
+	所以它也一定经过原点。
+	
+	因此一般来说：
+	
+	$$
+	\boxed{ZW\text{ 描述的是一个经过原点的线性子空间}}
+	$$
+	
+	但真实数据不一定分布在原点附近。比如数据可能都集中在 $(10,10)$ 附近，那么最适合这些数据的直线可能经过 $(10,10)$，而不是 $(0,0)$。
+	
+	所以 PCA 会先对数据做 centering：
+	
+	$$
+	x_i\leftarrow x_i-\mu
+	$$
+	
+	把数据的均值移动到原点，然后再去寻找这个经过原点的低维子空间。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 这节课主要讲 **PCA（Principal Component Analysis，主成分分析）**。
 
 PCA 要解决的问题是：原始数据维度很高，但是这些高维特征里面可能有很多冗余信息。我们希望把数据投影到一个低维空间里，同时尽可能保留原始数据中的主要信息。

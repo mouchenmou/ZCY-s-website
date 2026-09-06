@@ -51,26 +51,12 @@
             "id": "e302dab4e7a9d59c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Xiaomin Lin老师科研/Post Fusion/我的疑问.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "我的疑问"
-            }
-          },
-          {
-            "id": "fdda0165b69860c0",
-            "type": "leaf",
-            "state": {
               "type": "pdf",
               "state": {
-                "file": "Xiaomin Lin老师科研/Post Fusion/2603.05623v1.pdf"
+                "file": "CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 03 -- Dimensionality Reduction.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "2603.05623v1"
+              "title": "Lecture 03 -- Dimensionality Reduction"
             }
           }
         ],
@@ -229,44 +215,44 @@
   },
   "active": "e302dab4e7a9d59c",
   "lastOpenFiles": [
-    "Xiaomin Lin老师科研/Post Fusion/2603.05623v1.pdf",
     "CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 3 Dimensionality Reduction.md",
-    "Xiaomin Lin老师科研/Post Fusion/我的疑问.md",
+    "CS189 机器学习/Lecture/3. Dimensionality Reduction/附件/Pasted image 20260906002200.png",
+    "CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 03 -- Dimensionality Reduction.pdf",
+    "CS189 机器学习/Lecture/3. Dimensionality Reduction/附件/Pasted image 20260905233902.png",
+    "CS189 机器学习/Lecture/3. Dimensionality Reduction/附件/Pasted image 20260905233344.png",
+    "CS189 机器学习/Lecture/3. Dimensionality Reduction/附件/Pasted image 20260905201136.png",
+    "CS189 机器学习/Lecture/3. Dimensionality Reduction/附件/Pasted image 20260905200852.png",
     "CS182 深度神经网络/Homework/HW01/hw01_question.pdf",
+    "Xiaomin Lin老师科研/Post Fusion/2603.05623v1.pdf",
+    "CS189 机器学习/index.md",
     "CS189 机器学习/Lecture/2. KNN, ML Vocabulary, and K-Means/Lecture 02 KNN, ML Vocabulary, and K-Means.md",
+    "Part 1： Introduction/3. Machine Learning Mechanics - Terminology and Techniques/03 Machine Learning Mechanics - Terminology and Techniques.pdf.md",
+    "Part 1： Introduction/3. Machine Learning Mechanics - Terminology and Techniques",
+    "Part 1： Introduction",
+    "Xiaomin Lin老师科研/Post Fusion/我的疑问和我的想法.md",
+    "Xiaomin Lin老师科研/LADBench/gpt说的重点.md",
     "Xiaomin Lin老师科研/LADBench/我的疑问.md",
     "Xiaomin Lin老师科研/LADBench/读文章.md",
-    "Xiaomin Lin老师科研/LADBench/gpt说的重点.md",
     "Xiaomin Lin老师科研/LADBench/2606.17433v1.pdf",
     "Xiaomin Lin老师科研/LADBench/附件/Pasted image 20260902225608.png",
     "Xiaomin Lin老师科研/LADBench/附件/Pasted image 20260902153453.png",
     "Xiaomin Lin老师科研/LADBench/附件/Pasted image 20260902104955.png",
     "Xiaomin Lin老师科研/LADBench/附件",
     "Xiaomin Lin老师科研/LADBench",
-    "CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 03 -- Dimensionality Reduction.pdf",
     "CS189 机器学习/Lecture/3. Dimensionality Reduction/附件/Lecture3_matrix_factorization-17.png",
     "CS189 机器学习/Lecture/3. Dimensionality Reduction/附件/Lecture3_explained_variance-37.png",
-    "CS189 机器学习/Lecture/3. Dimensionality Reduction/附件/Lecture3_vote_pca_demo-05.png",
-    "CS189 机器学习/Lecture/3. Dimensionality Reduction/附件/Lecture3_intrinsic_dimension-12.png",
     "CS189 机器学习/Lecture/3. Dimensionality Reduction/附件",
-    "CS189 机器学习/Lecture/2. KNN, ML Vocabulary, and K-Means/附件/Pasted image 20260902002118.png",
     "CS189 机器学习/Lecture",
-    "CS189 机器学习/Part 1： Introduction/3. Machine Learning Mechanics - Terminology and Techniques/03 Machine Learning Mechanics - Terminology and Techniques.pdf",
-    "CS182 深度神经网络/Homework/HW01",
     "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
     "CS182 深度神经网络/Lecutre/Lecture 2 Optimization.md",
     "CS182 深度神经网络/Lecutre/Lecture 1 Basic Principles.md",
     "CS182 深度神经网络/Lecutre/Lecture 1/未命名.md",
     "CS182 深度神经网络/Lecutre/Lecture 1.md",
-    "Xiaomin Lin老师科研/LADBench/gpt说的重点.md",
-    "Xiaomin Lin老师科研/LADBench/附件/Pasted image 20260902153453.png",
     "CS182 深度神经网络/Homework/HW0/查漏补缺/1. SVD.md",
     "2026-09-02.md",
     "CS182 深度神经网络/index.md",
-    "CS189 机器学习/index.md",
     "CS182 深度神经网络/Homework/HW0/查漏补缺/3. 概率论.md",
     "CS182 深度神经网络/Homework/HW0/查漏补缺/4. 行空间和零空间.md",
-    "CS182 深度神经网络/Homework/HW0/tmp/pdfs/merge_check/page-26.png",
     "未命名 1.md",
     "未命名 2.md",
     "CS182 深度神经网络/Homework/HW0/4. 零空间与行空间、正交性及线性组合表示.md",
