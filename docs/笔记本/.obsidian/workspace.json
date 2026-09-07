@@ -60,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -213,10 +213,10 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "aac74b18fbddbb74",
+  "active": "e302dab4e7a9d59c",
   "lastOpenFiles": [
-    "CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 03 -- Dimensionality Reduction.pdf",
     "CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 3 Dimensionality Reduction.md",
+    "CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 03 -- Dimensionality Reduction.pdf",
     "CS182 深度神经网络/Homework/HW01/hw01_question.pdf",
     "CS189 机器学习/Lecture/3. Dimensionality Reduction/附件/Pasted image 20260906002200.png",
     "CS189 机器学习/Lecture/3. Dimensionality Reduction/附件/Pasted image 20260905233902.png",
