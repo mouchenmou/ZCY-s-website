@@ -60,7 +60,7 @@ Intrinsic Dimension：完整描述这组数据所需要的最少变量
     
     因此，只需要 height 和 width 这两个维度就能把它们都表示出来了，所以它的 $intrinsic dimension=2$。
 
-### 1.3 降维的原因plus
+### 1.3 降维的原因 plus 版本
 Real data is rarely exactly low rank.
 
 明明刚才上面那个例子，我们可以看出，虽然有5个变量，但是 $rank=4$。按理来说，在更宽泛的情况下，一个维度很大很大的矩阵，它的 rank 也应该是一个比较小的数，但是为什么这里说真实的数据往往不是 low rank 呢？
@@ -85,7 +85,7 @@ $周长 =2(长+宽)+ϵ$
 
 我们刚刚讲了降维的好处，那么我们应该如何找到一个低维表示，使它尽可能准确地近似原始数据呢？
 
-### 2.1 Dimensionality reduction as Matrix Factorization
+### 2.1 Dimensionality reduction as Matrix Factorization（因式分解）
 
 先规定：假设有 n 个 data point，每个 data point 有 d 个 feature，那么:
 
@@ -250,6 +250,97 @@ $$\mu \rightarrow 0$$
 	$$
 	
 	把数据的均值移动到原点，然后再去寻找这个经过原点的低维子空间。
+
+### 2.5 The factorization is not unique
+ $X=ZW$ 这个分解不是唯一的，对于任意可逆的（invertible）$k\times k$ 的矩阵 $A$，都有：
+
+  $$ZW=ZA^{-1}AW$$
+
+虽然 reconstruction 完全没变，但是 $Z$ 和 $W$ 本身可以完全不一样
+
+我们甚至可以把 $Z$ 放大 $10$ 倍，把 $W$ 缩小 $10$ 倍，那么 objective 也完全不变：
+
+$$(10Z)(\frac{1}{10}W)=ZW$$
+
+为了解决这个困扰，我们**规定 $W$ 为正交矩阵**，这个规定有以下两个好处：
+
+1. 消除 scale ambiguous
+    - 因为原来的 $ZW$ 你可以随意的将 $W$ 放大缩小，只要 $Z$ 跟着反向变就行，这样的话就没有统一的标准。
+2. 让这些 bias 变得规范、好解释、好计算
+    - 规定了 $WW^T=I$，相当于要求每个 basis 的长度都是 1，而且彼此互相垂直，表达不同的方向。
+
+### 2.6 Summary
+
+因此，我们最终规定：
+
+$$(Z^*,W^*) =\min_{Z,W} \frac1n\sum_{i=1}^n \|X_i-Z_iW\|^2 \quad \text{subject to }WW^\top=I $$
+
+---
+## 3. The basic stationary point method:
+
+我们求函数的最小值，就是高中的无脑法：
+
+1. 对参数求导
+2. 令导数为 0，解出 stationary point (驻点)
+3. 如果需要的话再验证一下二阶导是不是正数。
+
+### 3.1 具体做法：
+
+设
+
+$$X\in\mathbb R^{n\times d},\ Z\in\mathbb R^{n\times k},\ W\in\mathbb R^{k\times d}$$
+
+并且有约束
+
+$$WW^\top=I_k$$
+
+PCA 的 loss 是：
+
+$${Loss}(Z,W) = \frac1n \|X-ZW\|_F^2$$
+
+把 loss 展开：
+
+$$
+\begin{aligned}
+\|X-ZW\|_F^2 &= \operatorname{tr}\left( (X-ZW)(X-ZW)^\top \right) \\
+&= \operatorname{tr}(XX^\top) - \operatorname{tr}(ZWX^\top) - \operatorname{tr}(XW^\top Z^\top)+\operatorname{tr}(ZWW^\top Z^\top)\\
+&= \operatorname{tr}(XX^\top) - 2\operatorname{tr}(ZWX^\top) + \operatorname{tr}(ZWW^\top Z^\top)\\
+&= \operatorname{tr}(XX^\top) - 2\operatorname{tr}(ZWX^\top) + \operatorname{tr}(ZZ^\top)
+\end{aligned}
+$$
+
+!!! explanation "解释几个问题"
+    ### 1. $tr$ 
+    $tr$ 是把一个方阵的**主对角线的元素都加起来**：
+    
+    对于一个方阵 
+    
+    $$A= \begin{bmatrix} a_{11} & a_{12}\\ a_{21} & a_{22} \end{bmatrix}$$
+    
+    我们可以得到 $AA^T$：
+    
+    $$AA^T=\begin{bmatrix} a^2+b^2 & ac+bd\\ ac+bd & c^2+d^2 \end{bmatrix}$$
+    
+    取 trace 可以得到：
+    
+    $$\mathrm{tr}(AA^T) = a^2+b^2+c^2+d^2$$
+    
+    ### 2. 两个化简是如何得到的
+    
+    1. $ZWX^T$ 和 $XW^TZ^T$ 两个矩阵互为对方的转置，因此它们的对角线上元素相同，trace 也就相同，所以：$\operatorname{tr}(ZWX^\top) + \operatorname{tr}(XW^\top Z^\top)=2\operatorname{tr}(ZWX^\top)$
+    2. 因为 $W$ 是正交矩阵，所以 $WW^T=I$，即 $\operatorname{tr}(ZWW^\top Z^\top)=\operatorname{tr}(Z Z^\top)$
+
+因此：
+
+$$Loss(Z,W)=\frac{1}{n}[tr(XX^T)-2tr(ZWX^T)+tr(ZZ^T)]$$
+
+其中 $\operatorname{tr}(XX^\top)$ 跟 $Z,W$ 都无关，可以记成常数 $C$。所以 loss 函数可以写成：
+
+$$Loss(Z,W)=C+\frac{1}{n}​[−2tr(ZWX^⊤)+tr(ZZ^⊤)]$$
+
+
+
+
 
 
 

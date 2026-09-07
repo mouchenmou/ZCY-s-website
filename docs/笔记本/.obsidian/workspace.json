@@ -60,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -213,16 +213,16 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "e302dab4e7a9d59c",
+  "active": "aac74b18fbddbb74",
   "lastOpenFiles": [
-    "CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 3 Dimensionality Reduction.md",
-    "CS189 机器学习/Lecture/3. Dimensionality Reduction/附件/Pasted image 20260906002200.png",
     "CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 03 -- Dimensionality Reduction.pdf",
+    "CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 3 Dimensionality Reduction.md",
+    "CS182 深度神经网络/Homework/HW01/hw01_question.pdf",
+    "CS189 机器学习/Lecture/3. Dimensionality Reduction/附件/Pasted image 20260906002200.png",
     "CS189 机器学习/Lecture/3. Dimensionality Reduction/附件/Pasted image 20260905233902.png",
     "CS189 机器学习/Lecture/3. Dimensionality Reduction/附件/Pasted image 20260905233344.png",
     "CS189 机器学习/Lecture/3. Dimensionality Reduction/附件/Pasted image 20260905201136.png",
     "CS189 机器学习/Lecture/3. Dimensionality Reduction/附件/Pasted image 20260905200852.png",
-    "CS182 深度神经网络/Homework/HW01/hw01_question.pdf",
     "Xiaomin Lin老师科研/Post Fusion/2603.05623v1.pdf",
     "CS189 机器学习/index.md",
     "CS189 机器学习/Lecture/2. KNN, ML Vocabulary, and K-Means/Lecture 02 KNN, ML Vocabulary, and K-Means.md",
