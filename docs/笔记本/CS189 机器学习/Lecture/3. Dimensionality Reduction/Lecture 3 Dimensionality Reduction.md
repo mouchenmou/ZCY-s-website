@@ -338,7 +338,8 @@ $$Loss(Z,W)=\frac{1}{n}[tr(XX^T)-2tr(ZWX^T)+tr(ZZ^T)]$$
 
 $$Loss(Z,W)=C+\frac{1}{n}​[−2tr(ZWX^⊤)+tr(ZZ^⊤)]$$
 
-### 3.1.1 Loss 对 Z 求导
+---
+## 4. Loss 对 Z 求导
 
 首先需要知道这两个公式：
 
@@ -462,3 +463,134 @@ $$∇_Z\ ​Loss(Z,W)=\frac{1}{n}[−2XW^⊤+2Z]$$
 
 令梯度为 0，可以得到 $Z^*=XW^T$
 
+## 5. Loss 对 $w$ 求导
+
+我们前面得到：
+
+$$\operatorname{Loss}(Z,W) = C+\frac1n \left[ -2\operatorname{tr}(ZWX^\top) + \operatorname{tr}(ZZ^\top) \right]$$
+
+并且已经求出最优：
+
+$$Z^*=XW^\top$$
+
+现在把它代进去，得到：
+
+$$\begin{aligned}
+\operatorname{Loss}(W) &= C+\frac1n \left[ -2\operatorname{tr}(XW^\top WX^\top) + \operatorname{tr}(XW^\top WX^\top) \right]
+\\ &=C-\frac{1}{n}\ tr(XW^TWX^T)
+\end{aligned}$$
+
+然后在利用 trace 的循环性质 $tr(AB)=tr(BA)$ 可得：
+
+$$\operatorname{Loss}(W) = C- \frac1n \operatorname{tr}(WX^\top XW^\top)$$
+
+现在定义：
+
+$$\Sigma=\frac1nX^\top X$$
+
+于是：
+
+$$Loss(W)=C−tr(WΣW^⊤)$$
+
+下面需要引入两个定理
+
+### 5.1 Lagrange multipliers(拉格朗日乘子法)
+
+!!! explanation "拉格朗提乘子法"
+	原问题：
+	
+	$$\boxed{ \text{原问题：} \quad \min f(w) \quad \text{s.t. }g(w)=0 }$$
+	
+	变成：
+	
+	$$\boxed{ \mathcal L(w,\lambda) = f(w)+\lambda g(w) }$$
+	
+	然后同时解：
+	
+	$$ \nabla_w\mathcal L=0 $$
+	
+	和
+	
+	$$ \frac{\partial\mathcal L}{\partial\lambda}=0 $$
+	
+	第二个方程其实就是把原来的 constraint 重新强制回来。
+### 5.2 CS182 的 hw00 中的 3(d)
+
+!!! explanation "证明 $\frac{\partial (WΣW^⊤)}{\partial W}=W(Σ+Σ^T)$"
+	若 $X \in R^n,\ A \in R^{n\times n}$
+	
+	$$\frac{\partial(X^TAX)}{\partial X}=X^T(A+A^T)$$
+	
+	不过 182 的这个地方有点问题，因为 $X$ 是一个列向量，因此​ $\frac{\partial(X^TAX)}{\partial X}$ 也应该是一个列向量，但是 $X^T(A+A^T)$ 是个行向量，因此需要对它转置，也就是：
+	
+	$$\frac{\partial(X^TAX)}{\partial X}=(A+A^T)X$$
+	
+	
+	但是这里不能直接套用，因为 $W \in R^{k\times d}$，它的每一行是一个 bias，而不是每一列是一个 bias，所以这里应该写成：
+	
+	$$\frac{\partial (WΣW^⊤)}{\partial W}=W(Σ+Σ^T)$$
+	
+	又因为 $\Sigma=\frac1nX^\top X$，所以 $\Sigma=\Sigma^T$。于是我们可以得到：
+	
+	$$∇_W\ ​Loss(Z,W)=-2W\Sigma$$
+	
+	因为还有 $WW^T=I$ 这个约束，所以我们不能直接令 $W\Sigma=0$
+
+原问题是：
+
+$$\min_W \operatorname{Loss}(W)$$
+
+约束是：
+
+$$WW^\top=I_k$$
+
+也就是：
+
+$$g(W)=WW^\top-I_k=0$$
+
+根据拉格朗日乘子法，我么可以把目标函数和约束合成一个新函数：
+
+$$ \mathcal L(W,\lambda)= C−tr(WΣW^⊤) + tr(\Lambda^T(WW^\top-I_k)) $$
+
+!!! explanation "为什么这里是$tr(\Lambda^T(WW^\top-I_k))$"
+	注意，这里的 $W$ 中不仅仅是一个行向量，而是一大堆行向量的组合，因此每个行向量之间都需要有一个 $\lambda$ 约束，比方说 $W_1W_1^T=1$，$W_1W_2^T=0$，一共有 $k\times k$ 种组合，因此要有 $k^2$ 个约束
+	
+	$$tr(\Lambda^T(WW^T-I_k))=\lambda_{11}(W_1W_1^T-1)+\lambda_{12}W_1W_2^T+...$$
+
+    这个结果正好就是所有的约束加在一起。
+    
+    为什么我用的是 $\Lambda^T$ 而不是 $\Lambda$？
+    
+    如果用 $\Lambda$，那么会变成 $\lambda_{12}w_1w_2^T,\ \lambda_{23}w_3w_2^T$ 这样，会比较难看。所以我选择用 $\Lambda^T$。 
+    
+    而且，我们完全可以把 $\Lambda$ 设置成一个对称矩阵：因为 $W_iW_j^T和W_jW_i^T$ 是同一个约束，所以 $\lambda_{ij}+\lambda{ji}$ 才是真正的那个约束 $\lambda$。我们可以随意设置 $\lambda_{ij}和\lambda{ji}$ 的值，只要他们俩加起来等于 $\lambda$ 就行，我们完全可以设置 $\lambda_{ij}=\lambda{ji}=\frac{\lambda}{2}$ 把 $\Lambda$ 变成一个对称矩阵。
+    
+    所以这里也并非严格意义上的 $k^2$ 个约束，真正的约束数量是 $\frac{(k^2-k)}{2}+k=\frac{k(k+1)}{2}$
+
+!!! warning "计算$\frac{\partial(tr(\Lambda^T(WW^T-I_k)))}{\partial W}$"
+    因为 $tr(A^TI_k)$ 与 $W$ 无关，所以我们只用算 $\frac{∂}{∂W}​tr(Λ^⊤WW^⊤)$
+    
+我们已经知道了循环性质 $tr(AB)=tr(BA)$，因此 $tr(Λ^TWW^T)=tr(W^T\Lambda^TW)$
+    
+    因此:
+
+    $$\frac{\partial tr(\Lambda^TWW^T)}{\partial W}=\frac{\partial tr(W^T\Lambda^T W)}{\partial W}$$
+    
+    再根据 CS 182 证明的那个定理可得：
+
+    $$\frac{\partial tr(W^T\Lambda^T W)}{\partial W}=(\Lambda+\Lambda^T)W$$
+
+$$\begin{aligned}
+\frac{\partial(\mathcal L(W,\lambda))}{\partial W} &=0-\frac{\partial(tr(W\Sigma W^T))}{\partial W}+(\Lambda+\Lambda^T)W
+\\&=-W(\Sigma+\Sigma^T)+(\Lambda+\Lambda^T)W
+\end{aligned}$$
+
+因为 $\Sigma$ 和 $\Lambda$ 是对称矩阵，所以：
+
+$$\frac{\partial(\mathcal L(W, \lambda))}{\partial W}=2\Lambda W-2W\Sigma$$
+
+于是我们得到：
+
+$$\Lambda W=W\Sigma$$
+​
+后续还可以推出 $w_i^T$ 是 $\Sigma$ 的特征向量，我推不动了，就这样吧。。。
