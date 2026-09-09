@@ -62,7 +62,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -121,7 +121,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 233.70746994018555
+    "width": 233.70746994018555,
+    "collapsed": true
   },
   "right": {
     "id": "3e3804ba2af637db",
@@ -215,13 +216,17 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "e569a32d5d903508",
+  "active": "2a18db435f3e392f",
   "lastOpenFiles": [
-    "CS182 深度神经网络/Homework/HW01/COMPSCI 182 homework 01.md",
-    "CS182 深度神经网络/Homework/HW01/附件/Pasted image 20260909004357.png",
+    "CS182 深度神经网络/Homework/HW01/附件/b0189ba27b20d45e8e29762d0b86f650.jpg",
     "CS182 深度神经网络/Homework/HW01/hw01_question.pdf",
-    "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
     "CS182 深度神经网络/Homework/HW01/查漏补缺.md",
+    "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
+    "CS182 深度神经网络/Homework/HW01/COMPSCI 182 homework 01.md",
+    "CS182 深度神经网络/Homework/HW01/附件/5228f6a12849fbaa8cb6fc4493f81f7d.jpg",
+    "CS182 深度神经网络/Homework/HW01/附件/5d0b453fcff50984887cf4a644af7587.jpg",
+    "CS182 深度神经网络/Homework/HW01/附件/Pasted image 20260909112136.png",
+    "CS182 深度神经网络/Homework/HW01/附件/Pasted image 20260909004357.png",
     "CS182 深度神经网络/Lecutre/Lecture 2&3 Optimization.md",
     "CS182 深度神经网络/Homework/HW01/附件/a904aa01258ac024631d507b2e0ba07e.jpg",
     "CS182 深度神经网络/Homework/HW01/附件/a2fcf44d5a2f4d2a99b961f6cce49833.jpg",
@@ -229,9 +234,6 @@
     "CS182 深度神经网络/Homework/HW01/附件/256161e1a9d7a1e99f5f94e37ae98a5e.jpg",
     "CS182 深度神经网络/Homework/HW01/附件/c7d4d69a660667d9202a673f07c3f873.jpg",
     "CS182 深度神经网络/Homework/HW01/附件/49fb30a709386776b5e3148d81ec4f5b.jpg",
-    "CS182 深度神经网络/Homework/HW01/附件/08abcd78589c0729bd9174943a13095e.jpg",
-    "CS182 深度神经网络/Homework/HW01/附件/38b98ba5aafc2d8b367b69a5b9d1498f.jpg",
-    "CS182 深度神经网络/Homework/HW01/附件/640d8fa18156296856be92aa628cf2bf.jpg",
     "CS182 深度神经网络/Homework/HW01/附件",
     "CS182 深度神经网络/Homework/HW0/hw00_question.pdf",
     "CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 03 -- Dimensionality Reduction.pdf",

@@ -35,3 +35,14 @@ Through singular value decomposition, we can transform the original complicated 
 ---
 
 ## 4
+
+### (a)
+![](附件/5228f6a12849fbaa8cb6fc4493f81f7d.jpg)
+### (b)
+![](附件/b0189ba27b20d45e8e29762d0b86f650.jpg)
+### (c)
+
+### (d)
+
+
+
