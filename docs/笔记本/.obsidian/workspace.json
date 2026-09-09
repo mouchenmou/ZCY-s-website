@@ -8,7 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2c6cc963ea9b6b24",
+            "id": "5d4cc5d682c66e02",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CS182 深度神经网络/Homework/HW01/查漏补缺.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "查漏补缺"
+            }
+          },
+          {
+            "id": "2a18db435f3e392f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,7 +36,7 @@
             }
           },
           {
-            "id": "5d4cc5d682c66e02",
+            "id": "e569a32d5d903508",
             "type": "leaf",
             "state": {
               "type": "pdf",
@@ -34,15 +48,17 @@
             }
           },
           {
-            "id": "86556defa0b16ea4",
+            "id": "5f3b2c1e52de68d3",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "CS182 深度神经网络/Homework/HW01/hw01_question.pdf"
+                "file": "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "hw01_question"
+              "icon": "lucide-file",
+              "title": "COMPSCI 182 homework 0"
             }
           }
         ],
@@ -105,8 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 233.70746994018555
   },
   "right": {
     "id": "3e3804ba2af637db",
@@ -200,28 +215,27 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "86556defa0b16ea4",
+  "active": "e569a32d5d903508",
   "lastOpenFiles": [
     "CS182 深度神经网络/Homework/HW01/COMPSCI 182 homework 01.md",
+    "CS182 深度神经网络/Homework/HW01/附件/Pasted image 20260909004357.png",
     "CS182 深度神经网络/Homework/HW01/hw01_question.pdf",
-    "CS182 深度神经网络/Homework/HW01/附件/a904aa01258ac024631d507b2e0ba07e.jpg",
-    "CS182 深度神经网络/Homework/HW01/附件/5a2aa31050ed049d3c2f53e2e7aa31ba.jpg",
-    "CS182 深度神经网络/Homework/HW01/附件/a2fcf44d5a2f4d2a99b961f6cce49833.jpg",
-    "CS182 深度神经网络/Homework/HW01/附件/256161e1a9d7a1e99f5f94e37ae98a5e.jpg",
     "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
-    "CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 03 -- Dimensionality Reduction.pdf",
-    "CS231n/1. Deep Learning Basic/Lecture 3 Regularization and Optimization.md",
-    "CS231n/1. Deep Learning Basic/Lecture 4 Neural Networks and Backpropagation.md",
+    "CS182 深度神经网络/Homework/HW01/查漏补缺.md",
     "CS182 深度神经网络/Lecutre/Lecture 2&3 Optimization.md",
-    "CS182 深度神经网络/Lecutre/Lecture 1 Basic Principles.md",
-    "CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 3 Dimensionality Reduction.md",
-    "CS182 深度神经网络/Homework/HW01/附件/f6535873cbcb1e628719ed94429e2611.jpg",
+    "CS182 深度神经网络/Homework/HW01/附件/a904aa01258ac024631d507b2e0ba07e.jpg",
+    "CS182 深度神经网络/Homework/HW01/附件/a2fcf44d5a2f4d2a99b961f6cce49833.jpg",
+    "CS182 深度神经网络/Homework/HW01/附件/5a2aa31050ed049d3c2f53e2e7aa31ba.jpg",
+    "CS182 深度神经网络/Homework/HW01/附件/256161e1a9d7a1e99f5f94e37ae98a5e.jpg",
     "CS182 深度神经网络/Homework/HW01/附件/c7d4d69a660667d9202a673f07c3f873.jpg",
-    "CS182 深度神经网络/Homework/HW01/附件/Pasted image 20260907232014.png",
-    "CS182 深度神经网络/Homework/HW01/附件/640d8fa18156296856be92aa628cf2bf.jpg",
     "CS182 深度神经网络/Homework/HW01/附件/49fb30a709386776b5e3148d81ec4f5b.jpg",
+    "CS182 深度神经网络/Homework/HW01/附件/08abcd78589c0729bd9174943a13095e.jpg",
     "CS182 深度神经网络/Homework/HW01/附件/38b98ba5aafc2d8b367b69a5b9d1498f.jpg",
+    "CS182 深度神经网络/Homework/HW01/附件/640d8fa18156296856be92aa628cf2bf.jpg",
     "CS182 深度神经网络/Homework/HW01/附件",
+    "CS182 深度神经网络/Homework/HW0/hw00_question.pdf",
+    "CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 03 -- Dimensionality Reduction.pdf",
+    "CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 3 Dimensionality Reduction.md",
     "Xiaomin Lin老师科研/Post Fusion/2603.05623v1.pdf",
     "CS189 机器学习/index.md",
     "CS189 机器学习/Lecture/2. KNN, ML Vocabulary, and K-Means/Lecture 02 KNN, ML Vocabulary, and K-Means.md",
@@ -235,7 +249,8 @@
     "Xiaomin Lin老师科研/LADBench/2606.17433v1.pdf",
     "Xiaomin Lin老师科研/LADBench/附件",
     "Xiaomin Lin老师科研/LADBench",
-    "CS189 机器学习/Lecture/3. Dimensionality Reduction/附件",
+    "CS182 深度神经网络/Lecutre/Lecture 2 Optimization.md",
+    "CS182 深度神经网络/Lecutre/Lecture 1 Basic Principles.md",
     "CS182 深度神经网络/Lecutre/Lecture 1/未命名.md",
     "CS182 深度神经网络/Lecutre/Lecture 1.md",
     "CS182 深度神经网络/Homework/HW0/查漏补缺/1. SVD.md",

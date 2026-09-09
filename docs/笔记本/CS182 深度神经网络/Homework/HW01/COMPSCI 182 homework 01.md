@@ -30,3 +30,8 @@ Through singular value decomposition, we can transform the original complicated 
 
 ---
 ## 3
+![](附件/Pasted%20image%2020260909004357.png)
+
+---
+
+## 4
