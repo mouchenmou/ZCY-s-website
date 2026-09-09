@@ -1,1 +1,0 @@
-rigid regression 就是带上正则化的损失函数

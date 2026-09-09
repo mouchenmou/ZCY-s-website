@@ -16,4 +16,17 @@
 ### (g)
 Through singular value decomposition, we can transform the original complicated matrix problem into many independent dimensions, which makes the problem much easier to analyze and solve.
 
+---
+## 2
 
+### (a)
+![](附件/256161e1a9d7a1e99f5f94e37ae98a5e.jpg)
+### (b)
+![](附件/a2fcf44d5a2f4d2a99b961f6cce49833.jpg)
+### (c)
+![](附件/5a2aa31050ed049d3c2f53e2e7aa31ba.jpg)
+### (d)
+![](附件/a904aa01258ac024631d507b2e0ba07e.jpg)
+
+---
+## 3
