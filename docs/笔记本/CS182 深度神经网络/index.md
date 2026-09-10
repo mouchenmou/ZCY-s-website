@@ -11,6 +11,7 @@ Berkeley CS182: Deep Neural Networks 是一门专门讲深度学习的课程。�
 ### Lecture 笔记
 
 - [Lecture 1](Lecutre/Lecture%201.md)
+- [Lecture 2&3 Optimization](Lecutre/Lecture%202%263%20Optimization.md)
 
 ### Homework
 

@@ -27,24 +27,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS182 深度神经网络/Homework/HW01/COMPSCI 182 homework 01.md",
+                "file": "CS189 机器学习/Lecture/4. Probability and Density Estimation/Lecture 4 Probability and Density Estimation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "COMPSCI 182 homework 01"
+              "title": "Lecture 4 Probability and Density Estimation"
             }
           },
           {
             "id": "e569a32d5d903508",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "CS182 深度神经网络/Homework/HW01/hw01_question.pdf"
+                "file": "Xiaomin Lin老师科研/LADBench/我的疑问.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "hw01_question"
+              "icon": "lucide-file",
+              "title": "我的疑问"
             }
           },
           {
@@ -59,6 +61,32 @@
               },
               "icon": "lucide-file",
               "title": "COMPSCI 182 homework 0"
+            }
+          },
+          {
+            "id": "9423adc06897d3d8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CS189 机器学习/Lecture/2. KNN, ML Vocabulary, and K-Means/Lecture 02 KNN, ML Vocabulary, and K-Means.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Lecture 02 KNN, ML Vocabulary, and K-Means"
+            }
+          },
+          {
+            "id": "ae7e00432cc76315",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "CS182 深度神经网络/Homework/HW01/hw01_question.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "hw01_question"
             }
           }
         ],
@@ -121,8 +149,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 233.70746994018555,
-    "collapsed": true
+    "width": 233.70746994018555
   },
   "right": {
     "id": "3e3804ba2af637db",
@@ -218,41 +245,41 @@
   },
   "active": "2a18db435f3e392f",
   "lastOpenFiles": [
-    "CS182 深度神经网络/Homework/HW01/附件/b0189ba27b20d45e8e29762d0b86f650.jpg",
-    "CS182 深度神经网络/Homework/HW01/hw01_question.pdf",
-    "CS182 深度神经网络/Homework/HW01/查漏补缺.md",
-    "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
-    "CS182 深度神经网络/Homework/HW01/COMPSCI 182 homework 01.md",
-    "CS182 深度神经网络/Homework/HW01/附件/5228f6a12849fbaa8cb6fc4493f81f7d.jpg",
-    "CS182 深度神经网络/Homework/HW01/附件/5d0b453fcff50984887cf4a644af7587.jpg",
-    "CS182 深度神经网络/Homework/HW01/附件/Pasted image 20260909112136.png",
-    "CS182 深度神经网络/Homework/HW01/附件/Pasted image 20260909004357.png",
+    "CS189 机器学习/Lecture/4. Probability and Density Estimation/Lecture 04 -- Probability and Density Estimation.pdf",
     "CS182 深度神经网络/Lecutre/Lecture 2&3 Optimization.md",
-    "CS182 深度神经网络/Homework/HW01/附件/a904aa01258ac024631d507b2e0ba07e.jpg",
-    "CS182 深度神经网络/Homework/HW01/附件/a2fcf44d5a2f4d2a99b961f6cce49833.jpg",
-    "CS182 深度神经网络/Homework/HW01/附件/5a2aa31050ed049d3c2f53e2e7aa31ba.jpg",
-    "CS182 深度神经网络/Homework/HW01/附件/256161e1a9d7a1e99f5f94e37ae98a5e.jpg",
-    "CS182 深度神经网络/Homework/HW01/附件/c7d4d69a660667d9202a673f07c3f873.jpg",
-    "CS182 深度神经网络/Homework/HW01/附件/49fb30a709386776b5e3148d81ec4f5b.jpg",
-    "CS182 深度神经网络/Homework/HW01/附件",
-    "CS182 深度神经网络/Homework/HW0/hw00_question.pdf",
-    "CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 03 -- Dimensionality Reduction.pdf",
-    "CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 3 Dimensionality Reduction.md",
-    "Xiaomin Lin老师科研/Post Fusion/2603.05623v1.pdf",
-    "CS189 机器学习/index.md",
+    "CS182 深度神经网络/Lecutre/Lecture 1 Basic Principles.md",
+    "CS182 深度神经网络/Lecutre/03.pdf",
+    "CS182 深度神经网络/Lecutre/02.pdf",
+    "CS182 深度神经网络/Homework/HW01/COMPSCI 182 homework 01 combined.pdf",
+    "CS182 深度神经网络/Homework/HW01/q_relu_vis.ipynb - Colab.pdf",
+    "CS182 深度神经网络/Homework/HW01/COMPSCI 182 homework 01.md",
+    "CS182 深度神经网络/Homework/HW01/hw01_question.pdf",
+    "CS182 深度神经网络/tmp/pdfs/combined_boundary_preview-14.png",
+    "CS182 深度神经网络/tmp/pdfs/combined_boundary_preview-13.png",
+    "CS182 深度神经网络/tmp/pdfs/combined_preview-03.png",
+    "CS182 深度神经网络/tmp/pdfs/combined_preview-02.png",
+    "CS182 深度神经网络/tmp/pdfs/combined_join_preview-09.png",
+    "CS182 深度神经网络/tmp/pdfs/combined_preview-01.png",
+    "CS182 深度神经网络/tmp/pdfs/combined_join_preview-08.png",
+    "CS182 深度神经网络/tmp/pdfs/COMPSCI 182 homework 01.pdf",
+    "CS182 深度神经网络/tmp/pdfs/build_hw01_pdf.py",
+    "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
+    "CS182 深度神经网络/Homework/HW01/附件/89cc5fffc65d4ba163ca9f0e4348ea59.jpg",
     "CS189 机器学习/Lecture/2. KNN, ML Vocabulary, and K-Means/Lecture 02 KNN, ML Vocabulary, and K-Means.md",
-    "Part 1： Introduction/3. Machine Learning Mechanics - Terminology and Techniques/03 Machine Learning Mechanics - Terminology and Techniques.pdf.md",
-    "Part 1： Introduction/3. Machine Learning Mechanics - Terminology and Techniques",
-    "Part 1： Introduction",
+    "CS182 深度神经网络/Homework/HW01/附件/a3f7e477b38060fa75658255de2ed238.jpg",
+    "Xiaomin Lin老师科研/LADBench/我的疑问.md",
+    "CS182 深度神经网络/Homework/HW01/查漏补缺.md",
+    "CS189 机器学习/Lecture/4. Probability and Density Estimation/Lecture 4 Probability and Density Estimation.md",
+    "CS189 机器学习/Lecture/4. Probability and Density Estimation/lecture4_preview-12.png",
+    "CS182 深度神经网络/Lecutre/附件",
+    "CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 3 Dimensionality Reduction.md",
+    "CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 03 -- Dimensionality Reduction.pdf",
     "Xiaomin Lin老师科研/Post Fusion/我的疑问和我的想法.md",
     "Xiaomin Lin老师科研/LADBench/gpt说的重点.md",
-    "Xiaomin Lin老师科研/LADBench/我的疑问.md",
+    "CS189 机器学习/index.md",
+    "Part 1： Introduction/3. Machine Learning Mechanics - Terminology and Techniques/03 Machine Learning Mechanics - Terminology and Techniques.pdf.md",
     "Xiaomin Lin老师科研/LADBench/读文章.md",
-    "Xiaomin Lin老师科研/LADBench/2606.17433v1.pdf",
-    "Xiaomin Lin老师科研/LADBench/附件",
-    "Xiaomin Lin老师科研/LADBench",
     "CS182 深度神经网络/Lecutre/Lecture 2 Optimization.md",
-    "CS182 深度神经网络/Lecutre/Lecture 1 Basic Principles.md",
     "CS182 深度神经网络/Lecutre/Lecture 1/未命名.md",
     "CS182 深度神经网络/Lecutre/Lecture 1.md",
     "CS182 深度神经网络/Homework/HW0/查漏补缺/1. SVD.md",
@@ -262,7 +289,6 @@
     "CS182 深度神经网络/Homework/HW0/查漏补缺/4. 行空间和零空间.md",
     "未命名 1.md",
     "未命名 2.md",
-    "CS182 深度神经网络/Homework/HW0/4. 零空间与行空间、正交性及线性组合表示.md",
-    "CS182 深度神经网络/Homework/HW0/查漏补缺/2. 特征值的几何意义.md"
+    "CS182 深度神经网络/Homework/HW0/4. 零空间与行空间、正交性及线性组合表示.md"
   ]
 }

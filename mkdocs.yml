@@ -383,7 +383,8 @@ nav:
     - cs182 深度学习:
       - 笔记本/CS182 深度神经网络/index.md
       - Lecture:
-        - Lecture 1: 笔记本/CS182 深度神经网络/Lecutre/Lecture 1.md
+        - Lecture 1: 笔记本/CS182 深度神经网络/Lecutre/Lecture 1 Basic Principles.md
+        - Lecture 2&3 Optimization: 笔记本/CS182 深度神经网络/Lecutre/Lecture 2&3 Optimization.md
       - Homework:
         - HW0:
           - COMPSCI 182 Homework 0: 笔记本/CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md
@@ -396,10 +397,9 @@ nav:
     - cs189 机器学习:
       - 笔记本/CS189 机器学习/index.md
       - Part 1 Introduction:
-        - Lecture 2 KNN, ML Vocabulary, and K-Means:
-          - 笔记: 笔记本/CS189 机器学习/Part 1： Introduction/2. KNN, ML Vocabulary, and K-Means/Lecture 02 KNN, ML Vocabulary, and K-Means.md
-        - Lecture 3 Machine Learning Mechanics: 笔记本/CS189 机器学习/Part 1： Introduction/3. Machine Learning Mechanics - Terminology and Techniques/03 Machine Learning Mechanics - Terminology and Techniques.pdf
-        - Lecture 4 Clustering, Probability Review: 笔记本/CS189 机器学习/Part 1： Introduction/4. Clustering, Probability Review/04 Clustering, Probability Review.pdf
+        - Lecture 2 KNN, ML Vocabulary, and K-Means: 笔记本/CS189 机器学习/Lecture/2. KNN, ML Vocabulary, and K-Means/Lecture 02 KNN, ML Vocabulary, and K-Means.md
+        - Lecture 3 Dimensionality Reduction: 笔记本/CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 3 Dimensionality Reduction.md
+        - Lecture 4 Probability and Density Estimation: 笔记本/CS189 机器学习/Lecture/4. Probability and Density Estimation/Lecture 4 Probability and Density Estimation.md
       - Part 2 Supervised Core:
         - Lecture 5 MLE, Multivariate Gaussians, Mixture of Gaussians: 笔记本/CS189 机器学习/Part 2： Supervised Core/5. Intro to Maximum Likelihood Estimation, Multivariate Gaussians, Mixture of Gaussians/lec05.pdf
         - Lecture 6 Multivariate Gaussians & Mixture of Gaussians: 笔记本/CS189 机器学习/Part 2： Supervised Core/6. Multivariate Gaussians & Mixture of Gaussians/06 Multivariate Gaussians & Mixture of Gaussians.pdf
