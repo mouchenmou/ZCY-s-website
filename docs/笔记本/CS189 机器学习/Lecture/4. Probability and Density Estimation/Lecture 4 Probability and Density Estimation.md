@@ -881,6 +881,27 @@ $$
 
 找到最好的参数 $w$。
 
+!!! warning "我的疑问"
+    ### 我的疑问1
+    什么是 parametric distribution？
+    ### 解析
+    **parameters of a distribution** 就是**一个概率分布里面，用来决定这个分布具体长什么样的那些数。**比如正态分布：
+	
+	$$X \sim \mathcal N(\mu,\sigma^2)$$
+	
+	这里的：
+	
+    - $\mu$：均值，决定分布中心在哪里
+	- $\sigma^2$：方差，决定分布有多宽
+	
+	所以 $\mu$ 和 $\sigma^2$ 就是这个 distribution 的 **parameters**。
+	### 我的疑问2
+	在我的认知里，$p(x|w)$ 表示的是 $w$ 发生的前提下， $x$ 发生的概率。但是这里的 $w$ 明明是参数，为什么还可以写成 $p(x|w)$。
+	### 解析
+	$p(x∣w)$ 在这里表示：**在参数 $w$ 已经给定的情况下，$x$ 的概率是多少。**
+	
+	
+
 这节课讲两种方法：
 
 1. Maximum Likelihood Estimation (MLE)
@@ -896,9 +917,10 @@ $$
 
 这是 frequentist 的做法。
 
+意思是，我们已经观察到一组数据 $\mathcal D$。然后假设这些数据是由某个参数化分布 $p(x\mid w)$ 产生的。MLE 要做的，就是在所有可能的参数 $w$ 里，找到那个最能让这组已观察数据出现的参数。
 ## 18.2 MAP
 
-MAP 的目标是选择在看到数据之后 posterior 最大的参数：
+MAP chooses the parameter value $w$ that has the highest posterior probability after observing the data.
 
 $$
 w^*_{\text{MAP}}=\arg\max_w p(w\mid \mathcal{D})
@@ -918,20 +940,6 @@ w^*_{\text{MAP}}=
 \arg\max_w p(\mathcal{D}\mid w)p(w)
 $$
 
-!!! explanation "MLE 和 MAP 的差别"
-    MLE 只问：
-
-    $$
-    \text{哪个参数最能解释数据？}
-    $$
-
-    MAP 还会额外问：
-
-    $$
-    \text{这个参数本身在先验上合不合理？}
-    $$
-
-    所以 MAP 可以看成 MLE 加上 prior。
 
 ---
 
@@ -973,11 +981,6 @@ $$
 =
 \sum_{n=1}^{N}\log p(x_n\mid w)
 $$
-
-原因有两个：
-
-1. product 变成 summation，求导更方便。
-2. 数值更稳定，因为很多小概率连乘容易 underflow。
 
 由于 $\log$ 是 monotonic increasing function，所以：
 
@@ -1069,7 +1072,7 @@ $$
 n_1\log\mu+n_0\log(1-\mu)
 $$
 
-$n_0$ 和 $n_1$ 叫 sufficient statistics，因为对于估计 $\mu$ 来说，原始数据的顺序已经不重要了，只需要知道 $0$ 和 $1$ 各出现了多少次。
+$n_0$ 和 $n_1$ 叫 sufficient statistics（充分统计量），因为对于估计 $\mu$ 来说，原始数据的顺序已经不重要了，只需要知道 $0$ 和 $1$ 各出现了多少次。
 
 ## 21.2 Optimization
 
@@ -1204,7 +1207,7 @@ $$
 
 # 23. Parameter as a Random Variable
 
-MLE 把参数 $\mu$ 当成一个 unknown constant。
+MLE 把参数 $\mu$ 当成一个 unknown constant（固定但不知道的常数）。
 
 Bayesian view 会把 $\mu$ 本身也当成 random variable，并且给它一个 distribution。
 
