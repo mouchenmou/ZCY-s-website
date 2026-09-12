@@ -614,9 +614,7 @@ $$
 2. Classic probability models。
 3. Nonparametric models，比如 histograms 和 kernel density estimation。
 
----
-
-# 13. Tabular Representation
+## 12.1 Tabular Representation
 
 对于离散变量，我们可以直接用表格表示 joint distribution。
 
@@ -659,9 +657,8 @@ $$
 
     这就是为什么我们经常需要更有结构的 probability model。
 
----
 
-# 14. Bernoulli Distribution
+## 12.2 Bernoulli Distribution
 
 Bernoulli distribution 用来描述 binary random variable：
 
@@ -699,13 +696,13 @@ $$
 p(X=0\mid \mu)=1-\mu
 $$
 
-## 14.1 Bernoulli 的 expectation
+### 12.2.1 Bernoulli 的 expectation
 
 $$
 \mathbb{E}[X]=0\cdot (1-\mu)+1\cdot \mu=\mu
 $$
 
-## 14.2 Bernoulli 的 variance
+### 12.2.2 Bernoulli 的 variance
 
 因为 $X$ 只会取 $0$ 或 $1$，所以：
 
@@ -736,9 +733,7 @@ $$
     p(Y=1\mid X=x)
     $$
 
----
-
-# 15. Continuous Random Variables
+## 12.3 Continuous Random Variables
 
 对于 continuous random variable，我们不用 probability mass function，而是用 probability density function：
 
@@ -781,31 +776,28 @@ $$
     P(a\leq X\leq b)
     $$
 
-## 15.1 离散规则到连续规则
+### 12.3.1 离散规则到连续规则
 
 连续情况下，很多规则还是一样，只是把 summation 换成 integral。
 
-### 15.1.1 Sum Rule
+1. Sum Rule:
 
 $$
 p(x)=\int p(x,y)\,dy
 $$
-
-### 15.1.2 Product Rule
+2. Product Rule:
 
 $$
 p(x,y)=p(y\mid x)p(x)
 $$
 
-### 15.1.3 Expectation
+3. Expectation:
 
 $$
 \mathbb{E}[f(X)]=\int f(x)p(x)\,dx
 $$
 
----
-
-# 16. Density Estimation
+### 12.3.2 Density Estimation
 
 Density estimation：给定 observations，也就是数据：
 
@@ -826,9 +818,7 @@ $$
 !!! explanation "density estimation 和机器学习的关系"
     很多机器学习模型都可以看成是在做 density estimation，也就是估计 $P(x)$。或者至少是在估计某种 conditional distribution，也就是 supervised learning，估计 $p(Y\mid X)$。
 
----
-
-# 17. Empirical Probability Distribution
+## 12.4 Empirical Probability Distribution
 
 假设我们做了 $N$ 次试验，观察到：
 
@@ -865,7 +855,7 @@ $$
 
 ---
 
-# 18. Estimating Parameters of a Distribution
+# 13. Estimating Parameters of a Distribution
 
 给定一个 parametric distribution：
 
@@ -907,7 +897,7 @@ $$
 1. Maximum Likelihood Estimation (MLE)
 2. Maximum A Posteriori (MAP)
 
-## 18.1 MLE
+## 13.1 MLE
 
 MLE 的目标是选择让 observed data 最可能出现的参数：
 
@@ -918,7 +908,7 @@ $$
 这是 frequentist 的做法。
 
 意思是，我们已经观察到一组数据 $\mathcal D$。然后假设这些数据是由某个参数化分布 $p(x\mid w)$ 产生的。MLE 要做的，就是在所有可能的参数 $w$ 里，找到那个最能让这组已观察数据出现的参数。
-## 18.2 MAP
+## 13.2 MAP
 
 MAP chooses the parameter value $w$ that has the highest posterior probability after observing the data.
 
@@ -943,7 +933,7 @@ $$
 
 ---
 
-# 19. Likelihood Function
+# 14. MLE and Likelihood Function
 
 Likelihood function 描述的是：在某个参数 $w$ 下，观察到当前数据集 $\mathcal{D}$ 的概率。
 
@@ -970,9 +960,7 @@ $$
 
     但它本身不是 $p(w)$。
 
----
-
-# 20. Log Likelihood
+## 14.1. Log Likelihood
 
 实际计算中通常不直接最大化 likelihood，而是最大化 log likelihood：
 
@@ -1010,9 +998,7 @@ $$
     \sum_{\text{doc}}\sum_{\text{word}}\log p(\text{word}\mid \text{words before it},w)
     $$
 
----
-
-# 21. Bernoulli Samples 的 MLE
+## 14.2 Bernoulli Samples 的 MLE
 
 假设我们观察到 $N$ 个 IID Bernoulli samples：
 
@@ -1032,7 +1018,7 @@ $$
 x_n\sim \operatorname{Bern}(\mu)
 $$
 
-## 21.1 Modeling
+### 14.2.1 Modeling
 
 Bernoulli 的概率是：
 
@@ -1074,7 +1060,7 @@ $$
 
 $n_0$ 和 $n_1$ 叫 sufficient statistics（充分统计量），因为对于估计 $\mu$ 来说，原始数据的顺序已经不重要了，只需要知道 $0$ 和 $1$ 各出现了多少次。
 
-## 21.2 Optimization
+### 14.2.2 Optimization
 
 现在最大化：
 
@@ -1146,9 +1132,7 @@ $$
 
     因为 $\mu=0.7$ 会让这组观察结果在 Bernoulli model 下最合理。
 
----
-
-# 22. MLE 在 Rare Events 上的问题
+## 14.3 MLE 在 Rare Events 上的问题
 
 MLE 很直观，但在 rare event 上会有问题。
 
@@ -1168,7 +1152,7 @@ $$
 
 但是这很可能不合理。它只是因为数据太少，没有观察到 heads。
 
-## 22.1 Wake Word 里的 rare event 问题
+### 14.3.1 Wake Word 里的 rare event 问题
 
 假设真实 wake word rate 是：
 
@@ -1205,7 +1189,7 @@ $$
 
 ---
 
-# 23. Parameter as a Random Variable
+# 15. Parameter as a Random Variable
 
 MLE 把参数 $\mu$ 当成一个 unknown constant（固定但不知道的常数）。
 
@@ -1246,7 +1230,7 @@ $$
 
 ---
 
-# 24. Beta Distribution
+# 16. Beta Distribution
 
 对于 Bernoulli parameter：
 
@@ -1270,19 +1254,13 @@ $$
 
 其中 $B(a,b)$ 是 normalizer，保证整个 density 积分等于 $1$。
 
-## 24.1 Beta Distribution 的形状
+## 16.1 Beta Distribution 的形状
 
 不同的 $a,b$ 表示不同的 prior belief：
 
-1. $a=b=1$：所有 $[0,1]$ 里的值都差不多 equally plausible。
+1. $a=b=1$：所有 $[0,1]$ 具有相同的 probability density。
 2. $a=b=2$：更相信 $X$ 靠近 $0.5$。
-3. $a,b$ 越大，distribution 越集中在：
-
-$$
-\frac{a}{a+b}
-$$
-
-附近。
+3. $a,b$ 越大，distribution 越集中在 $\frac{a}{a+b}$ 附近。
 
 !!! explanation "为什么 Beta 适合做 Bernoulli 的 prior"
     Bernoulli 的参数 $\mu$ 本来就是一个概率，所以它必须在 $[0,1]$ 之间。
@@ -1293,7 +1271,7 @@ $$
 
 ---
 
-# 25. Bernoulli + Beta 的 Posterior
+# 17. Bernoulli + Beta 的 Posterior
 
 我们要计算：
 
@@ -1351,48 +1329,167 @@ $$
 
 ---
 
-# 26. Computing the MAP
+# 18 Bernoulli Likelihood + Beta Prior 下的 MAP
 
-MAP 最大化：
+!!! note "关于 $p(\mu)$ 的记号"
+
+	因为 $\mu$ 是连续变量，所以这里的 $p(\mu)$ 和 $p(\mu\mid\mathcal D)$ 严格来说都是 **probability density**，而不是某个具体取值的 probability。
+
+机器学习中通常仍然习惯用 $p(\mu)$ 来表示 density。
+
+这里讨论的是一个**具体的 MAP 情况**：
+
+- likelihood 选择 Bernoulli distribution；
+- prior 选择 Beta distribution。
+
+也就是说，我们假设：
 
 $$
-\log p(\mathcal{D}\mid \mu)+\log p(\mu)
+X \mid \mu \sim \mathrm{Bernoulli}(\mu)
 $$
 
-对于 Bernoulli likelihood 加 Beta prior，我们已经得到：
+同时给 Bernoulli 的未知参数 $\mu$ 一个 Beta prior：
 
 $$
-\log p(\mathcal{D}\mid \mu)+\log p(\mu)
+\mu \sim \mathrm{Beta}(a,b)
+$$
+
+因此：
+
+$$
+p(\mu)\propto \mu^{a-1}(1-\mu)^{b-1}
+$$
+
+MAP 要寻找 posterior 最大的位置：
+
+$$
+\mu_{\mathrm{MAP}}
 =
-(n_1+a-1)\log\mu+(n_0+b-1)\log(1-\mu)
+\arg\max_{\mu} p(\mu\mid\mathcal D)
 $$
 
-这和前面 Bernoulli MLE 的形式几乎一样。
-
-前面 MLE 的 stationary point 是：
+根据 Bayes' theorem：
 
 $$
-\mu_{\text{ML}}=\frac{n_1}{n_0+n_1}
+p(\mu\mid\mathcal D)
+\propto
+p(\mathcal D\mid\mu)p(\mu)
 $$
 
-现在只要把：
+所以 MAP 等价于最大化：
 
 $$
-n_1 \leftarrow n_1+a-1
+p(\mathcal D\mid\mu)p(\mu)
+$$
+
+或者最大化它的 log：
+
+$$
+\log p(\mathcal D\mid\mu)+\log p(\mu)
+$$
+
+注意：
+
+MAP 本身并不要求 prior 一定是 Beta distribution。
+
+这里只是针对：
+
+$$
+\text{Bernoulli likelihood} + \text{Beta prior}
+$$
+
+这个具体情况进行推导。
+
+
+## 18.1 Computing the MAP
+
+Bernoulli likelihood 是：
+
+$$
+p(\mathcal D\mid\mu)
+=
+\mu^{n_1}(1-\mu)^{n_0}
+$$
+
+其中：
+
+- $n_1$：数据中 $1$ 的数量，也就是 successes 的数量；
+- $n_0$：数据中 $0$ 的数量，也就是 failures 的数量；
+- $N=n_0+n_1$：总样本数。
+
+Beta prior 是：
+
+$$
+p(\mu)
+\propto
+\mu^{a-1}(1-\mu)^{b-1}
+$$
+
+因此：
+
+$$
+p(\mathcal D\mid\mu)p(\mu)
+\propto
+\mu^{n_1}(1-\mu)^{n_0}
+\mu^{a-1}(1-\mu)^{b-1}
+$$
+
+整理指数：
+
+$$
+p(\mathcal D\mid\mu)p(\mu)
+\propto
+\mu^{n_1+a-1}
+(1-\mu)^{n_0+b-1}
+$$
+
+取 log：
+
+$$
+\log p(\mathcal D\mid\mu)
++
+\log p(\mu)
+=
+(n_1+a-1)\log\mu
++
+(n_0+b-1)\log(1-\mu)
+$$
+
+这个形式和前面 Bernoulli MLE 的形式几乎完全一样。
+
+Bernoulli MLE 得到：
+
+$$
+\mu_{\mathrm{ML}}
+=
+\frac{n_1}{n_0+n_1}
+$$
+
+现在相当于把：
+
+$$
+n_1
+\leftarrow
+n_1+a-1
 $$
 
 以及：
 
 $$
-n_0 \leftarrow n_0+b-1
+n_0
+\leftarrow
+n_0+b-1
 $$
 
-代进去，就得到：
+代入 MLE 的形式。
+
+因此：
 
 $$
-\mu_{\text{MAP}}
+\mu_{\mathrm{MAP}}
 =
-\frac{n_1+a-1}{n_0+n_1+a+b-2}
+\frac{n_1+a-1}
+{n_0+n_1+a+b-2}
 $$
 
 因为：
@@ -1404,146 +1501,69 @@ $$
 所以：
 
 $$
-\mu_{\text{MAP}}
+\boxed{
+\mu_{\mathrm{MAP}}
 =
-\frac{n_1+a-1}{N+a+b-2}
+\frac{n_1+a-1}
+{N+a+b-2}
+}
 $$
 
----
+## 18.2 Prior as Pseudo-Counts
 
-# 27. Prior as Pseudo-Counts
-
-MAP 的公式是：
+在 Bernoulli likelihood + Beta prior 的情况下：
 
 $$
-\mu_{\text{MAP}}
+\mu_{\mathrm{MAP}}
 =
-\frac{n_1+a-1}{N+a+b-2}
+\frac{n_1+a-1}
+{N+a+b-2}
 $$
 
-这里的 prior 可以被理解成 pseudo-counts：
-
-1. $a-1$：想象中额外观察到的 successes。
-2. $b-1$：想象中额外观察到的 failures。
-
-比如设：
+可以把 Beta prior 中的：
 
 $$
-a=b=2
+a-1
 $$
 
-那么：
+理解成在真正观察数据之前，额外加入的 imaginary successes。
+
+同样：
 
 $$
-\mu_{\text{MAP}}
+b-1
+$$
+
+可以理解成额外加入的 imaginary failures。
+
+因此：
+
+$$
+a-1
 =
-\frac{n_1+1}{N+2}
+\text{pseudo-count of successes}
 $$
 
-这就相当于在数据之外，额外加入：
-
-1. 一个 imaginary success。
-2. 一个 imaginary failure。
-
-所以无论真实观察到什么：
-
 $$
-0<\mu_{\text{MAP}}<1
-$$
-
-不会直接给出 $0$ 或 $1$ 这种极端估计。
-
-这个方法也叫 Laplace smoothing。
-
-!!! explanation "Laplace smoothing 的直觉"
-    当数据很少的时候，我们不希望模型因为没见过某个事件，就认定它永远不会发生。
-
-    所以我们先加一点 pseudo-counts，让模型保持一点不确定性。
-
-    这不是在否认数据，而是在防止小数据集带来的过度自信。
-
----
-
-# 28. MLE 和 MAP 随着 $N$ 的变化
-
-MLE 是：
-
-$$
-\mu_{\text{ML}}=\frac{n_1}{N}
-$$
-
-MAP 是：
-
-$$
-\mu_{\text{MAP}}
+b-1
 =
-\frac{n_1+a-1}{N+a+b-2}
+\text{pseudo-count of failures}
 $$
 
-当 $N$ 很小时，$a-1$ 和 $b-1$ 这些 prior 贡献的 pseudo-counts 影响很大。
-
-这时 MAP 会被 prior 拉住，不会完全跟着 observed frequency 跑。
-
-当 $N$ 很大时：
+所以 MAP 的公式可以理解成：
 
 $$
-a-1,\quad b-1,\quad a+b-2
+\mu_{\mathrm{MAP}}
+=
+\frac{
+\text{real successes}
++
+\text{pseudo successes}
+}{
+\text{real observations}
++
+\text{pseudo observations}
+}
 $$
 
-相对于 $N$ 来说都很小。
 
-所以 MAP 和 MLE 会越来越接近。
-
-$$
-\mu_{\text{MAP}}\approx \mu_{\text{ML}}
-$$
-
-!!! explanation "总结一下"
-    MLE：数据说什么就是什么。
-
-    MAP：数据很少的时候，会听一下 prior；数据很多的时候，prior 的影响逐渐消失。
-
----
-
-# 29. 本讲总结
-
-这节课做了三件事：
-
-1. 复习 probability 的基础规则：
-    - joint probability
-    - marginalization
-    - conditional probability
-    - product rule
-    - Bayes' theorem
-    - independence 和 IID
-2. 用 wake word detector 说明 rare event 会让 precision 变得很低，即使 recall 很高、false positive rate 很小。
-3. 引出 density estimation，并推导了 Bernoulli distribution 下的 MLE 和 MAP。
-
-最核心的公式可以记成：
-
-$$
-\text{MLE:}\quad
-w^*=\arg\max_w p(\mathcal{D}\mid w)
-$$
-
-$$
-\text{MAP:}\quad
-w^*=\arg\max_w p(\mathcal{D}\mid w)p(w)
-$$
-
-以及 Bernoulli 的两个估计：
-
-$$
-\mu_{\text{ML}}=\frac{n_1}{N}
-$$
-
-$$
-\mu_{\text{MAP}}=\frac{n_1+a-1}{N+a+b-2}
-$$
-
-!!! warning "这节课最容易混的地方"
-    1. $p(Y=1\mid Z=1)$ 是 recall，不是 precision。
-    2. $p(Z=1\mid Y=1)$ 才是 detector 触发后真的有 wake word 的概率。
-    3. Density $p(x)$ 不是 probability，连续变量要靠积分算区间概率。
-    4. Likelihood $p(\mathcal{D}\mid w)$ 是数据在参数下的概率，不是参数自己的概率。
-    5. MLE 可能在 rare events 上给出 $0$ 或 $1$ 的极端估计，MAP 用 prior 缓解这个问题。
