@@ -1,0 +1,25 @@
+## 1
+### (a)
+![](附件/1edad053ba43af8574a19d730c0bdc32.jpg)
+
+### (b)
+![](附件/22e5e3961ddc8a677028df12db63af75.jpg)
+### (c)
+![](附件/55500db0d5065143ddccf1f3868a1878.jpg)
+### (d)
+![](附件/90855ad9a19da6e88f15b7595b4481cd.jpg)
+### (e)
+![](附件/107c05a04a14fddf85de280f2ca091a2.jpg)
+### (f)
+![](附件/2474c0c7f9d0731e25d7c1fe96d8a7c4.jpg)
+### (g)
+![](附件/3bbe18cdd8b508f840b78d1028a85611.jpg)
+### (h)
+![](附件/9366b3a6751f8172c9691fb8ee7edfaf%201.jpg)
+### (i)
+![](附件/126afc19019bf720ef2c5117428bad51%201.jpg)
+### (j)
+![](附件/e9a9985d940b20b2695abf9949265ae7.jpg)
+### (k)
+
+The original ridge SGD decreases rapidly at first, but then fluctuates around a nonzero error level. In contrast, the feature-augmented SGD keeps decreasing and approaches zero. Thus, the feature-augmented method continues converging toward the ridge solution, while the original ridge SGD reaches a nonzero error floor.
