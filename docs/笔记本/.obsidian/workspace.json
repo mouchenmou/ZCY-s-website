@@ -60,6 +60,18 @@
               "icon": "lucide-file",
               "title": "COMPSCI 182 homework 02"
             }
+          },
+          {
+            "id": "b2b8cb1d0175ff17",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "CS182 深度神经网络/Homework/HW02/hw02_question.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "hw02_question"
+            }
           }
         ],
         "currentTab": 3
@@ -217,10 +229,14 @@
   },
   "active": "095d55bf45012bdb",
   "lastOpenFiles": [
+    "CS182 深度神经网络/Homework/HW02/hw02_question.pdf",
+    "CS182 深度神经网络/Homework/HW02/COMPSCI 182 homework 02.md",
+    "CS182 深度神经网络/Homework/HW02/附件/cc813bd1ab152445ea7dcbd810443a2a.jpg",
+    "CS182 深度神经网络/Homework/HW02/附件/fba461813207984de69530d502651110.jpg",
+    "CS182 深度神经网络/Homework/HW02/附件/54dc2443979d629b490b09a7cea77fbb.jpg",
+    "Xiaomin Lin老师科研/3. AqualBEV/AquaBEV.pdf",
     "CS182 深度神经网络/Homework/HW02/附件/2dbaea53ab769987f6d676266dd39cdc.jpg",
     "CS182 深度神经网络/Homework/HW02/附件/344cd547472d673dd07b85fcf42a3f79.jpg",
-    "Xiaomin Lin老师科研/3. AqualBEV/AquaBEV.pdf",
-    "CS182 深度神经网络/Homework/HW02/COMPSCI 182 homework 02.md",
     "CS182 深度神经网络/Homework/HW02/附件/0312761716f9e0a4789361e817dd9da1.jpg",
     "CS182 深度神经网络/Homework/HW02/附件/496332c2900e53c01d528794fa9e0678.jpg",
     "CS182 深度神经网络/Homework/HW02/附件/d7786ed20bd06d45e08769404e143b6b.jpg",
@@ -229,13 +245,8 @@
     "Xiaomin Lin老师科研/3. AqualBEV/附件/Pasted image 20260913171147.png",
     "Xiaomin Lin老师科研/3. AqualBEV/附件",
     "Xiaomin Lin老师科研/3. AqualBEV/生词.md",
-    "CS182 深度神经网络/Homework/HW02/hw02_question.pdf",
     "2026-09-02.md",
-    "CS182 深度神经网络/Homework/HW02/附件/e9a9985d940b20b2695abf9949265ae7.jpg",
-    "CS182 深度神经网络/Homework/HW02/附件/126afc19019bf720ef2c5117428bad51 1.jpg",
-    "CS182 深度神经网络/Homework/HW02/附件/126afc19019bf720ef2c5117428bad51.jpg",
     "CS182 深度神经网络/Homework/HW01/查漏补缺.md",
-    "CS182 深度神经网络/Homework/HW02/附件/9366b3a6751f8172c9691fb8ee7edfaf 1.jpg",
     "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
     "CS182 深度神经网络/Lecutre/02.pdf",
     "CS182 深度神经网络/Lecutre/03.pdf",

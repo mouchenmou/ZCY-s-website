@@ -38,11 +38,24 @@ The original ridge SGD decreases rapidly at first, but then fluctuates around a 
 ![](附件/344cd547472d673dd07b85fcf42a3f79.jpg)
 ### (e)
 ![](附件/2dbaea53ab769987f6d676266dd39cdc.jpg)
-### (f)
 
 ### (g)
-
+![](附件/54dc2443979d629b490b09a7cea77fbb.jpg)
 ### (h)
-
+Thus, directions with larger singular values are updated more aggressively, while directions with smaller singular values change more slowly.
 ### (i)
+Gradient descent with momentum converges faster overall because momentum preserves part of the previous update direction, allowing the parameters to keep moving in a consistent direction instead of relying only on the current gradient.
 
+---
+
+## 3
+### (a)
+![](附件/fba461813207984de69530d502651110.jpg)
+### (b)
+![](附件/cc813bd1ab152445ea7dcbd810443a2a.jpg)
+
+---
+## 4
+---
+## 5.
+See my answer in 2(h) and 2(i)
