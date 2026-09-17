@@ -56,6 +56,17 @@ Gradient descent with momentum converges faster overall because momentum preserv
 
 ---
 ## 4
+### (a)
+
+![](附件/ed42ff516ebc8fb1825e2bcaa8814d61.jpg)
+### (b)
+![](附件/18e69f6d89042a73a462fbd449d1fff1.jpg)
+### (c)
+![](附件/0b8fe8a68ac1b80af0879349c1b1e8f7.jpg)
+
+### (d)
+![](附件/2e32e0086da85add3522640f227a70c7.jpg)
+
 ---
 ## 5.
 See my answer in 2(h) and 2(i)
