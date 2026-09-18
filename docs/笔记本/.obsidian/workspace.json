@@ -76,7 +76,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -230,12 +230,12 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "e569a32d5d903508",
+  "active": "095d55bf45012bdb",
   "lastOpenFiles": [
-    "Xiaomin Lin老师科研/4. One model, two worlds/问题.md",
     "Xiaomin Lin老师科研/4. One model, two worlds/2609.06253v1.pdf",
-    "Xiaomin Lin老师科研/4. One model, two worlds/生词.md",
+    "Xiaomin Lin老师科研/4. One model, two worlds/问题.md",
     "Xiaomin Lin老师科研/3. AqualBEV/生词.md",
+    "Xiaomin Lin老师科研/4. One model, two worlds/生词.md",
     "CS182 深度神经网络/Homework/HW01/查漏补缺.md",
     "Xiaomin Lin老师科研/3. AqualBEV/AquaBEV.pdf",
     "CS182 深度神经网络/Homework/HW02/output/pdf/COMPSCI_182_homework_02.pdf",
