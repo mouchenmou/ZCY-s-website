@@ -8,34 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5d4cc5d682c66e02",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS182 深度神经网络/Homework/HW01/查漏补缺.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "查漏补缺"
-            }
-          },
-          {
-            "id": "2a18db435f3e392f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Xiaomin Lin老师科研/3. AqualBEV/生词.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "生词"
-            }
-          },
-          {
             "id": "e569a32d5d903508",
             "type": "leaf",
             "state": {
@@ -53,12 +25,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Xiaomin Lin老师科研/4. One model, two worlds/问题.md",
+                "file": "Xiaomin Lin老师科研/4. One model, two worlds/亮点.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "问题"
+              "title": "亮点"
             }
           },
           {
@@ -74,9 +46,23 @@
               "icon": "lucide-file",
               "title": "生词"
             }
+          },
+          {
+            "id": "e115d1247ca4827e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Xiaomin Lin老师科研/4. One model, two worlds/问题.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "问题"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -135,8 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "3e3804ba2af637db",
@@ -233,9 +218,10 @@
   "active": "095d55bf45012bdb",
   "lastOpenFiles": [
     "Xiaomin Lin老师科研/4. One model, two worlds/2609.06253v1.pdf",
-    "Xiaomin Lin老师科研/4. One model, two worlds/问题.md",
-    "Xiaomin Lin老师科研/3. AqualBEV/生词.md",
+    "Xiaomin Lin老师科研/4. One model, two worlds/亮点.md",
     "Xiaomin Lin老师科研/4. One model, two worlds/生词.md",
+    "Xiaomin Lin老师科研/3. AqualBEV/生词.md",
+    "Xiaomin Lin老师科研/4. One model, two worlds/问题.md",
     "CS182 深度神经网络/Homework/HW01/查漏补缺.md",
     "Xiaomin Lin老师科研/3. AqualBEV/AquaBEV.pdf",
     "CS182 深度神经网络/Homework/HW02/output/pdf/COMPSCI_182_homework_02.pdf",
@@ -275,7 +261,6 @@
     "Xiaomin Lin老师科研/LADBench/读文章.md",
     "CS182 深度神经网络/Lecutre/Lecture 2 Optimization.md",
     "CS182 深度神经网络/Lecutre/Lecture 1/未命名.md",
-    "CS182 深度神经网络/Lecutre/Lecture 1.md",
-    "CS182 深度神经网络/Homework/HW0/查漏补缺/1. SVD.md"
+    "CS182 深度神经网络/Lecutre/Lecture 1.md"
   ]
 }
