@@ -39,15 +39,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Research/Jiattao Gu/3D Vision and Neural Rendering/PointAction/问题.md",
+                "file": "Research/Jiattao Gu/3D Vision and Neural Rendering/PointAction/亮点.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "问题"
+              "title": "亮点"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -200,11 +201,12 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "e569a32d5d903508",
+  "active": "f92386e80056bad2",
   "lastOpenFiles": [
     "Research/Jiattao Gu/3D Vision and Neural Rendering/PointAction/问题.md",
-    "Research/Jiattao Gu/3D Vision and Neural Rendering/PointAction/PointAction.pdf",
+    "Research/Jiattao Gu/3D Vision and Neural Rendering/PointAction/亮点.md",
     "Research/Jiattao Gu/3D Vision and Neural Rendering/PointAction/生词.md",
+    "Research/Jiattao Gu/3D Vision and Neural Rendering/PointAction/PointAction.pdf",
     "Research/Xiaomin Lin老师科研/4. One model, two worlds/亮点.md",
     "Research/Xiaomin Lin老师科研/4. One model, two worlds/Summary.md",
     "Research/Jiattao Gu/OmniGuide/2603.10052v1.pdf",
@@ -246,7 +248,6 @@
     "CS189 机器学习/Lecture/2. KNN, ML Vocabulary, and K-Means/Lecture 02 KNN, ML Vocabulary, and K-Means.md",
     "Research/Xiaomin Lin老师科研/2. Post Fusion/我的疑问和我的想法.md",
     "Xiaomin Lin老师科研/LADBench/gpt说的重点.md",
-    "Research/Xiaomin Lin老师科研/1. LADBench/我的疑问.md",
-    "Xiaomin Lin老师科研/LADBench/读文章.md"
+    "Research/Xiaomin Lin老师科研/1. LADBench/我的疑问.md"
   ]
 }
