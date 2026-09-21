@@ -46,9 +46,22 @@
               "icon": "lucide-file",
               "title": "亮点"
             }
+          },
+          {
+            "id": "2adeb4045c29e0a9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Research/Jiattao Gu/3D Vision and Neural Rendering/PointAction/问题.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "问题"
+            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -201,12 +214,14 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "f92386e80056bad2",
+  "active": "e569a32d5d903508",
   "lastOpenFiles": [
     "Research/Jiattao Gu/3D Vision and Neural Rendering/PointAction/问题.md",
     "Research/Jiattao Gu/3D Vision and Neural Rendering/PointAction/亮点.md",
-    "Research/Jiattao Gu/3D Vision and Neural Rendering/PointAction/生词.md",
     "Research/Jiattao Gu/3D Vision and Neural Rendering/PointAction/PointAction.pdf",
+    "Research/Jiattao Gu/3D Vision and Neural Rendering/PointAction/生词.md",
+    "Research/Xiaomin Lin老师科研/324_Context_Aware_Risk_Assessm.pdf",
+    "Research/Xiaomin Lin老师科研/2423_Edge_Oriented_Multi_Task_.pdf",
     "Research/Xiaomin Lin老师科研/4. One model, two worlds/亮点.md",
     "Research/Xiaomin Lin老师科研/4. One model, two worlds/Summary.md",
     "Research/Jiattao Gu/OmniGuide/2603.10052v1.pdf",
@@ -218,8 +233,6 @@
     "Research/Jiattao Gu/未确认 573793.crdownload",
     "Research/Jiattao Gu/3D Vision and Neural Rendering",
     "未命名.md",
-    "Research/Jiattao Gu",
-    "Research/Jiatao Gu老师",
     "Research/Xiaomin Lin老师科研/4. One model, two worlds/生词.md",
     "Research/Xiaomin Lin老师科研/3. AqualBEV/生词.md",
     "Research/Xiaomin Lin老师科研/4. One model, two worlds/问题.md",
@@ -247,7 +260,6 @@
     "CS189 机器学习/index.md",
     "CS189 机器学习/Lecture/2. KNN, ML Vocabulary, and K-Means/Lecture 02 KNN, ML Vocabulary, and K-Means.md",
     "Research/Xiaomin Lin老师科研/2. Post Fusion/我的疑问和我的想法.md",
-    "Xiaomin Lin老师科研/LADBench/gpt说的重点.md",
-    "Research/Xiaomin Lin老师科研/1. LADBench/我的疑问.md"
+    "Xiaomin Lin老师科研/LADBench/gpt说的重点.md"
   ]
 }
