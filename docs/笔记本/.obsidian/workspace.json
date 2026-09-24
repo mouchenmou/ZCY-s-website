@@ -11,35 +11,9 @@
             "id": "88f20dd727d5be6c",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Research/Xiaomin Lin老师科研/6. Edge-Oriented/2423_Edge_Oriented_Multi_Task_.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "2423_Edge_Oriented_Multi_Task_"
-            }
-          },
-          {
-            "id": "35f6f869bfa172ec",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "Research/Xiaomin Lin老师科研/6. Edge-Oriented/问题.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "问题"
-            }
-          },
-          {
-            "id": "88f11dee2133f484",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Research/Xiaomin Lin老师科研/6. Edge-Oriented/生词.md",
+                "file": "Research/Dan Wang老师/1. VideoArtGS/生词.md",
                 "mode": "source",
                 "source": false
               },
@@ -48,33 +22,33 @@
             }
           },
           {
-            "id": "5c54259975339f31",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Research/Xiaomin Lin老师科研/6. Edge-Oriented/2423_Edge_Oriented_Multi_Task_.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "2423_Edge_Oriented_Multi_Task_"
-            }
-          },
-          {
             "id": "89180b62487a8062",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Research/Xiaomin Lin老师科研/review of 5 and 6.md",
+                "file": "Research/Dan Wang老师/1. VideoArtGS/问题.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "review of 5 and 6"
+              "title": "问题"
+            }
+          },
+          {
+            "id": "63cfe4f4ae84cc8f",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Research/Dan Wang老师/1. VideoArtGS/2509.17647v1.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "2509.17647v1"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -227,11 +201,14 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "2a6816d11ffda768",
+  "active": "63cfe4f4ae84cc8f",
   "lastOpenFiles": [
+    "Research/Dan Wang老师/1. VideoArtGS/问题.md",
+    "Research/Dan Wang老师/1. VideoArtGS/2509.17647v1.pdf",
+    "Research/Dan Wang老师/1. VideoArtGS/生词.md",
     "Research/Xiaomin Lin老师科研/6. Edge-Oriented/2423_Edge_Oriented_Multi_Task_.pdf",
-    "Research/Xiaomin Lin老师科研/review of 5 and 6.md",
     "Research/Xiaomin Lin老师科研/6. Edge-Oriented/问题.md",
+    "Research/Xiaomin Lin老师科研/review of 5 and 6.md",
     "Research/Xiaomin Lin老师科研/6. Edge-Oriented/生词.md",
     "Research/Xiaomin Lin老师科研/5. Context-Aware/文章总结.md",
     "Research/Xiaomin Lin老师科研/5. Context-Aware/问题.md",
@@ -246,7 +223,6 @@
     "Research/Xiaomin Lin老师科研/6. Edge-Oriented/附件/Pasted image 20260922211503.png",
     "Research/Xiaomin Lin老师科研/6. Edge-Oriented/附件/Pasted image 20260922180158.png",
     "Research/Xiaomin Lin老师科研/6. Edge-Oriented/附件",
-    "Research/Dan Wang老师/1. VideoArtGS/问题.md",
     "Research/Xiaomin Lin老师科研/4. One model, two worlds/生词.md",
     "Research/Jiatao Gu老师/3D Vision and Neural Rendering/PointAction/问题.md",
     "Research/Jiatao Gu老师/3D Vision and Neural Rendering/PointAction/PointAction.pdf",
@@ -256,7 +232,6 @@
     "Research/Dan Wang老师/4. Neural Implicit Representation",
     "Research/Dan Wang老师/3. ScrewSplat/2508.02146v2.pdf",
     "Research/Dan Wang老师/3. ScrewSplat",
-    "Research/Dan Wang老师/2. REArtGS++/2511.17059v3.pdf",
     "Research/Dan Wang/未命名.canvas",
     "未命名.md",
     "Research/Xiaomin Lin老师科研/4. One model, two worlds/Summary.md",
@@ -273,7 +248,6 @@
     "Research/Xiaomin Lin老师科研/3. AqualBEV/我的疑问.md",
     "2026-09-02.md",
     "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
-    "CS182 深度神经网络/Homework/HW01/COMPSCI 182 homework 01.md",
-    "CS189 机器学习/Lecture/5. Density Estimation and GMM/Lecture 5 Density Estimation and GMM.md"
+    "CS182 深度神经网络/Homework/HW01/COMPSCI 182 homework 01.md"
   ]
 }
