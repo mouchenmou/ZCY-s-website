@@ -36,47 +36,19 @@
             }
           },
           {
-            "id": "59824647f883215e",
+            "id": "00fd3b9a58aa258e",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "CS182 深度神经网络/Lecutre/07_fa26.pdf"
+                "file": "Research/Dan Wang老师/1. VideoArtGS/2509.17647v1.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "07_fa26"
-            }
-          },
-          {
-            "id": "affb439dc887a0b5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS189 机器学习/Lecture/4. Probability and Density Estimation/Lecture 4 Probability and Density Estimation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Lecture 4 Probability and Density Estimation"
-            }
-          },
-          {
-            "id": "8e6da5183cc6a314",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS182 深度神经网络/Homework/HW01/COMPSCI 182 homework 01.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "COMPSCI 182 homework 01"
+              "title": "2509.17647v1"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -229,35 +201,35 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "8e6da5183cc6a314",
+  "active": "89180b62487a8062",
   "lastOpenFiles": [
+    "Research/Dan Wang老师/1. VideoArtGS/2509.17647v1.pdf",
+    "Research/Dan Wang老师/1. VideoArtGS/问题.md",
+    "Research/Dan Wang老师/1. VideoArtGS/生词.md",
     "CS182 深度神经网络/Lecutre/07_fa26.pdf",
-    "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
     "CS189 机器学习/Lecture/4. Probability and Density Estimation/Lecture 4 Probability and Density Estimation.md",
+    "CS182 深度神经网络/Homework/HW02/COMPSCI 182 homework 02.md",
+    "CS182 深度神经网络/Homework/HW01/COMPSCI 182 homework 01.md",
+    "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
     "CS189 机器学习/Lecture/5. Density Estimation and GMM/Lecture 5 Density Estimation and GMM.md",
     "CS182 深度神经网络/Homework/HW0/hw00_question.pdf",
     "CS182 深度神经网络/Lecutre/Lecture 7 RMS RMS norm, Maximal update parameterization.md",
     "CS182 深度神经网络/Lecutre/附件/Pasted image 20260924221757.png",
     "CS182 深度神经网络/Lecutre/Lecture 2&3 Optimization.md",
-    "Research/Dan Wang老师/1. VideoArtGS/问题.md",
     "copilot/copilot-custom-prompts/Clip Web Page.md",
     "CS182 深度神经网络/Lecutre/03.pdf",
     "CS182 深度神经网络/Lecutre/02.pdf",
     "CS182 深度神经网络/Lecutre/Lecture 1 Basic Principles.md",
     "CS182 深度神经网络/Homework/HW01/查漏补缺.md",
-    "CS182 深度神经网络/Homework/HW01/COMPSCI 182 homework 01.md",
     "CS182 深度神经网络/Homework/HW01/q_relu_vis.ipynb - Colab.pdf",
     "CS182 深度神经网络/Homework/HW01/COMPSCI 182 homework 01 combined.pdf",
     "CS182 深度神经网络/Homework/HW01/hw01_question.pdf",
-    "CS182 深度神经网络/Homework/HW02/COMPSCI 182 homework 02.md",
     "CS182 深度神经网络/Homework/HW02/hw02_question.pdf",
     "CS182 深度神经网络/Homework/HW02/output/pdf/COMPSCI_182_homework_02.pdf",
     "CS182 深度神经网络/Homework/HW0/查漏补缺/4. 行空间和零空间.md",
     "CS182 深度神经网络/Homework/HW0/查漏补缺/3. 概率论.md",
     "CS182 深度神经网络/Homework/HW0/查漏补缺/2. 特征值的几何意义.md",
     "CS182 深度神经网络/Homework/HW0/查漏补缺/1. SVD.md",
-    "Research/Dan Wang老师/1. VideoArtGS/2509.17647v1.pdf",
-    "Research/Dan Wang老师/1. VideoArtGS/生词.md",
     "Research/Xiaomin Lin老师科研/6. Edge-Oriented/问题.md",
     "Research/Xiaomin Lin老师科研/review of 5 and 6.md",
     "Research/Xiaomin Lin老师科研/6. Edge-Oriented/生词.md",
