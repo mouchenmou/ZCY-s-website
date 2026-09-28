@@ -8,12 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "88f20dd727d5be6c",
+            "id": "00fd3b9a58aa258e",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Research/Dan Wang老师/2. REArtGS++/2511.17059v3.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "2511.17059v3"
+            }
+          },
+          {
+            "id": "16169185ce39fbbb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Research/Dan Wang老师/1. VideoArtGS/生词.md",
+                "file": "Research/Dan Wang老师/2. REArtGS++/生词.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,61 +34,20 @@
             }
           },
           {
-            "id": "89180b62487a8062",
+            "id": "cced3c034dc59bbe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Research/Dan Wang老师/1. VideoArtGS/问题.md",
+                "file": "Research/Dan Wang老师/2. REArtGS++/问题.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "问题"
             }
-          },
-          {
-            "id": "00fd3b9a58aa258e",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Research/Dan Wang老师/1. VideoArtGS/2509.17647v1.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "2509.17647v1"
-            }
-          },
-          {
-            "id": "429ec05c3c07566b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS189 机器学习/Lecture/2. KNN, ML Vocabulary, and K-Means/Lecture 02 KNN, ML Vocabulary, and K-Means.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Lecture 02 KNN, ML Vocabulary, and K-Means"
-            }
-          },
-          {
-            "id": "deaf8a818db3a32f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 3 Dimensionality Reduction.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Lecture 3 Dimensionality Reduction"
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -231,13 +202,16 @@
   },
   "active": "00fd3b9a58aa258e",
   "lastOpenFiles": [
-    "CS189 机器学习/Lecture/2. KNN, ML Vocabulary, and K-Means/Lecture 02 KNN, ML Vocabulary, and K-Means.md",
+    "Research/Dan Wang老师/2. REArtGS++/问题.md",
+    "Research/Dan Wang老师/2. REArtGS++/2511.17059v3.pdf",
+    "Research/Dan Wang老师/2. REArtGS++/生词.md",
+    "Research/Dan Wang老师/1. VideoArtGS/3D Gaussian.md",
+    "Research/Dan Wang老师/1. VideoArtGS/问题.md",
+    "Research/Dan Wang老师/1. VideoArtGS/生词.md",
     "CS189 机器学习/Lecture/3. Dimensionality Reduction/Lecture 3 Dimensionality Reduction.md",
+    "CS189 机器学习/Lecture/2. KNN, ML Vocabulary, and K-Means/Lecture 02 KNN, ML Vocabulary, and K-Means.md",
     "Research/Dan Wang老师/1. VideoArtGS/2509.17647v1.pdf",
     "Research/Dan Wang老师/1. VideoArtGS/复现",
-    "Research/Dan Wang老师/1. VideoArtGS/问题.md",
-    "Research/Dan Wang老师/2. REArtGS++/2511.17059v3.pdf",
-    "Research/Dan Wang老师/1. VideoArtGS/生词.md",
     "CS182 深度神经网络/Lecutre/07_fa26.pdf",
     "CS189 机器学习/Lecture/4. Probability and Density Estimation/Lecture 4 Probability and Density Estimation.md",
     "CS182 深度神经网络/Homework/HW02/COMPSCI 182 homework 02.md",
@@ -264,10 +238,6 @@
     "Research/Xiaomin Lin老师科研/review of 5 and 6.md",
     "Research/Xiaomin Lin老师科研/6. Edge-Oriented/生词.md",
     "Research/Xiaomin Lin老师科研/5. Context-Aware/文章总结.md",
-    "Research/Xiaomin Lin老师科研/5. Context-Aware/问题.md",
-    "Research/Xiaomin Lin老师科研/5. Context-Aware/生词.md",
-    "Research/Xiaomin Lin老师科研/4. One model, two worlds/亮点.md",
-    "Research/Xiaomin Lin老师科研/4. One model, two worlds/问题.md",
     "Research/Xiaomin Lin老师科研/6. Edge-Oriented/附件/Pasted image 20260922212241.png",
     "Research/Xiaomin Lin老师科研/6. Edge-Oriented/附件/Pasted image 20260922211503.png",
     "Research/Xiaomin Lin老师科研/6. Edge-Oriented/附件/Pasted image 20260922180158.png",
