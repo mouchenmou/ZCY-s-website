@@ -1,25 +1,73 @@
+## 0. 这节课的各种 norm
+由于这节课的各种 norm，vector norm 倒还好，matrix norm 的那一大堆我实在记不住，所以在这里列一个清单，顺便附上字面意思，这样子好记一点
+## 0.1 Matrix $2$-norm/Spectral norm
 
-## 0. 这节课到底在讲什么
+Matrix $2$-norm **不是把矩阵元素平方求和**。它的 2 是说：**输入和输出都用 vector $L_2$ norm 来量。**
 
-这节课的核心问题是：
+定义：
 
-> 已知当前的 gradient，我们应该如何选择 parameter update，才能让 loss 尽可能快地下降？
+$$ \|W\|_2 = \max_{x\neq0} \frac{\|Wx\|_2}{\|x\|_2} $$
 
-老师给出的统一视角是：
+表示**这个 matrix 最多能把一个向量的 $L_2$ 长度放大多少倍？**
+
+Spectral norm 和 matrix $2$-norm 是**同一个东西**。那么为什么叫 spectral？
+
+因为它和矩阵的 singular values 有关：
+
+$$\|W\|_2 = \sigma_{\max}(W) $$
+
+“spectral” 这个词本来就和 eigenvalues / singular values 这种“谱”有关。**spectral norm = 看矩阵最强的那个伸缩方向。**因此：
+
+$$\boxed{ \text{spectral norm} = \text{最大 singular value} = \text{最大 }L_2\text{ 放大倍数} }$$
+
+## 0.2 RMS norm
+
+RMS 全称：**Root Mean Square**。它是针对 vector 的 norm
+
+逐字就是：
+
+- Square：平方
+- Mean：平均
+- Root：开根号
+
+所以：
+
+$$\|x\|_{\mathrm{RMS}} = \sqrt{ \frac1d\sum_i x_i^2 } $$
+
+字面意思就是：**平方 → 求平均 → 开根号**。
+
+## 0.3 RMS-to-RMS norm
+
+**输入 RMS $\rightarrow$ 输出 RMS**
+
+定义：
+
+$$\|W\|_{\mathrm{RMS}\rightarrow\mathrm{RMS}} = \max_{x\neq0} \frac{ \|Wx\|_{\mathrm{RMS}} }{ \|x\|_{\mathrm{RMS}} } $$
+
+
+## 0.4 Frobenius norm
+
+**把矩阵所有元素摊平，当成一个大 vector，然后算 $L_2$ norm。**
 
 $$
-\boxed{\text{Choose a norm} \rightarrow \text{Choose a step size} \rightarrow \text{Get an optimizer}}
-$$
+ \|G\|_F = \sqrt{ \sum_{i,j}G_{ij}^2 } $$
 
-也就是说，很多 optimizer 的区别，本质上来自：
+## 最容易记的总表
 
-$$我们如何定义“一次 update 有多大”。$$
-
-课程从参数向量上的 $L_\infty$ norm、$L_2$ norm 出发，再推广到矩阵参数上的 spectral norm，最后引出 Shampoo、RMS-to-RMS norm 和 Muon。
+|Norm|字面/直观意思|它在问什么|
+|---|---|---|
+|$L_p$ norm|第 $p$ 种长度定义|vector 有多大|
+|$L_2$ norm|$p=2$|整个 vector 总长度|
+|$L_\infty$ norm|$p\to\infty$|最大 coordinate 有多大|
+|matrix $2$-norm|输入输出都用 $L_2$|matrix 最大能放大 $L_2$ 多少倍|
+|spectral norm|“谱”上的 norm|最大 singular value|
+|RMS norm|Root Mean Square|平均一个 coordinate 有多大|
+|RMS-to-RMS norm|RMS 输入到 RMS 输出|matrix 最大能放大 RMS 多少倍|
+|Frobenius norm|人名|矩阵所有元素整体有多大|
 
 ---
 
-# 1. Local Linear Perspective：先把 Loss 局部线性化
+# 1. Local Linear Perspective：Optimizer 到底在做什么？
 
 假设模型参数是 $\theta$，当前 loss 为：
 
@@ -71,30 +119,30 @@ $$
 
 说明 loss 会下降。
 
-因此 optimizer 想做的事情就是：
+所以 optimizer 想做的事情就是：
 
 $$
 \min_{\Delta\theta}
 \langle \nabla_\theta L,\Delta\theta\rangle
 $$
 
-但是不能让 $\Delta\theta$ 无限大，否则可以直接让这个内积趋向 $-\infty$，而且 Taylor approximation 也会失效。
+但是不能让 $\Delta\theta$ 无限大，否则这个内积可以无限变小，而且 Taylor approximation 也会失效。
 
-所以必须增加一个约束：
+因此必须限制：
 
 $$
-\|\Delta\theta\|\le \eta
+\|\Delta\theta\|\le\eta
 $$
 
-这里的 $\eta$ 在这个 constrained optimization 视角中，首先表示：
+这里的 $\eta$ 在这个 constrained optimization 视角里，更适合理解为：
 
-$$一次 update 最大允许有多大$$
+> **一次 update 最大允许有多大，也就是 step-size budget / radius。**
 
-它和传统公式中的 learning rate 有联系，但这里更适合理解为 **step-size budget / radius**。
+它和传统意义的 learning rate 有联系，但此时先不要把它直接理解成普通 GD 公式里的 learning rate。
 
 ---
 
-# 2. Vector Norm
+# 2. Vector Norm：什么叫“Update 不能太大”？
 
 一般的 $L_p$ norm 定义为：
 
@@ -105,6 +153,8 @@ $$
 \sum_i |x_i|^p
 \right)^{1/p}
 $$
+
+不同 norm 对“向量有多大”的定义不同，因此会导出不同的 update。
 
 ## 2.1 $L_2$ Norm
 
@@ -214,9 +264,7 @@ $$
 
 > 每一个参数在这一步最多只能改变 $\eta$。
 
----
-
-# 3. $L_\infty$ Constraint $\rightarrow$ Sign SGD
+## 2.3 $L_\infty$ Constraint $\rightarrow$ Sign SGD
 
 考虑：
 
@@ -286,7 +334,7 @@ $$
 
 这就是 Sign SGD。
 
-## 3.1 什么是 sign？
+### 什么是 sign？
 
 符号函数：
 
@@ -300,30 +348,12 @@ $$
 \end{cases}
 $$
 
-例如：
-
-$$
-\operatorname{sign}
-\begin{pmatrix}
-2\\
--5\\
-0.1
-\end{pmatrix}
-=
-\begin{pmatrix}
-1\\
--1\\
-1
-\end{pmatrix}
-$$
-
-Sign SGD 的特点：
+Sign SGD 的特点是：
 
 > 不看 gradient magnitude，只看正负号。
 
----
 
-# 4. $L_2$ Constraint
+## 2.4 $L_2$ Constraint 与 Gradient Descent
 
 现在换成：
 
@@ -381,11 +411,9 @@ $$
 
 > 不管 gradient 本身有多大，一步的总长度固定为 $\eta$。
 
----
+### 2.4.1 从 $L_2$ Regularization 得到普通 Gradient Descent
 
-# 5. 从 $L_2$ Regularization 得到普通 Gradient Descent
-
-随后考虑：
+考虑：
 
 $$
 \min_{\Delta\theta}
@@ -395,16 +423,6 @@ $$
 \lambda\|\Delta\theta\|_2^2
 \right]
 $$
-
-第一项希望 loss 降得更多。
-
-第二项：
-
-$$
-\lambda\|\Delta\theta\|_2^2
-$$
-
-惩罚过大的 update。
 
 对 $\Delta\theta$ 求导：
 
@@ -438,7 +456,7 @@ $$
 
 ---
 
-# 6. 为什么突然从 Vector 变成 Matrix？
+# 3. Matrix Parameterization 与 Spectral Norm
 
 神经网络参数天然通常是矩阵。
 
@@ -454,8 +472,7 @@ $$
 W\in\mathbb R^{d_{\text{out}}\times d_{\text{in}}}
 $$
 
-
-与其把所有参数摊平成一个 vector，不如直接在 matrix space 中定义 update，于是：
+于是可以直接在 matrix space 中定义 update：
 
 $$
 \theta\rightarrow W,\qquad
@@ -472,9 +489,7 @@ $$
 
 subject to 某种 matrix norm constraint。
 
----
-
-# 7. Matrix Inner Product
+## 3.1 Matrix Inner Product
 
 对于矩阵 $A,B$：
 
@@ -502,7 +517,11 @@ $$
 \langle\nabla_WL,\Delta W\rangle
 $$
 
-就是每一个 weight gradient 乘以对应的 weight update，再全部加起来。它依然表示 loss 的一阶近似变化量：
+表示：
+
+> 每一个 weight gradient 乘以对应的 weight update，再全部加起来，也就是 loss 的一阶近似变化量。
+
+即：
 
 $$
 L(W+\Delta W)
@@ -512,9 +531,7 @@ L(W)
 \langle\nabla_WL,\Delta W\rangle
 $$
 
----
-
-# 8. Spectral Norm
+## 3.2 Spectral Norm：矩阵的 $2$-Norm
 
 对于矩阵 $W$：
 
@@ -548,11 +565,13 @@ $$
 }
 $$
 
-含义：
+这里的 $x$ 是一个单独的向量，不是整个 batch 的 data matrix。
+
+它的含义是：
 
 > 对所有单位向量 $x$，矩阵 $W$ 最多能把它的长度放大多少倍。
 
-## 8.1 为什么下标是 2？
+### 3.2.1 为什么下标是 2？
 
 因为定义中输入和输出都使用 vector $L_2$ norm：
 
@@ -562,7 +581,7 @@ $$
 
 所以叫 matrix $2$-norm。
 
-## 8.2 Spectral Norm 与 Singular Value
+### 3.2.2 Spectral Norm 与 Singular Value
 
 如果：
 
@@ -580,17 +599,25 @@ $$
 }
 $$
 
-也就是最大的 singular value。
-
 因此 spectral norm 可以理解成：
 
 > 矩阵在所有方向中的最大伸缩倍率。
 
----
+注意：
 
-# 9. Spectral-Norm Constraint
+> Spectral norm 本身只表示 $\|W\|_2=\sigma_{\max}(W)$。
 
-现在考虑：
+后面出现的：
+
+$$
+\Delta W^*=-\eta UV^\top
+$$
+
+不是 spectral norm 的定义，而是使用 spectral norm 作为 constraint 后求出来的最优 update。
+
+## 3.3 Spectral-Norm Constraint
+
+考虑：
 
 $$
 \min_{\Delta W}
@@ -619,7 +646,7 @@ $$
 \operatorname{diag}(\sigma_1,\sigma_2,\ldots)
 $$
 
-## 9.1 换到 Singular-Vector Coordinate System
+### 3.3.1 为什么要引入 $B$？
 
 定义：
 
@@ -633,23 +660,105 @@ $$
 \Delta W=UBV^\top
 $$
 
-这只是换坐标系，并不是假设 $B$ 是 diagonal matrix。
+这只是把 $\Delta W$ 换到 gradient 的 singular-vector coordinate system 中，并不是说 $B$ 本身是 diagonal matrix。
 
-利用 matrix inner product：
+### 3.3.2 为什么 $\langle U\Sigma V^\top,UBV^\top\rangle=\langle\Sigma,B\rangle$？
+
+根据：
+
+$$
+\langle A,C\rangle
+=
+\operatorname{tr}(AC^\top)
+$$
+
+有：
 
 $$
 \langle U\Sigma V^\top,UBV^\top\rangle
 =
-\langle\Sigma,B\rangle
+\operatorname{tr}
+\left[
+(U\Sigma V^\top)(UBV^\top)^\top
+\right]
 $$
 
 因为：
 
 $$
-V^\top V=I,\qquad U^\top U=I
+(UBV^\top)^\top
+=
+VB^\top U^\top
 $$
 
-以及 trace 的循环性质。
+所以：
+
+$$
+=
+\operatorname{tr}
+\left[
+U\Sigma V^\top VB^\top U^\top
+\right]
+$$
+
+利用：
+
+$$
+V^\top V=I
+$$
+
+得到：
+
+$$
+=
+\operatorname{tr}
+\left[
+U\Sigma B^\top U^\top
+\right]
+$$
+
+再利用 trace 的循环性质：
+
+$$
+\operatorname{tr}(ABC)=\operatorname{tr}(BCA)
+$$
+
+于是：
+
+$$
+=
+\operatorname{tr}
+\left[
+\Sigma B^\top U^\top U
+\right]
+$$
+
+因为：
+
+$$
+U^\top U=I
+$$
+
+所以：
+
+$$
+=
+\operatorname{tr}(\Sigma B^\top)
+=
+\langle\Sigma,B\rangle
+$$
+
+因此：
+
+$$
+\boxed{
+\langle U\Sigma V^\top,UBV^\top\rangle
+=
+\langle\Sigma,B\rangle
+}
+$$
+
+## 3.4 为什么最优 Update 是 $-\eta UV^\top$？
 
 如果：
 
@@ -658,12 +767,8 @@ $$
 \begin{bmatrix}
 \sigma_1&0\\
 0&\sigma_2
-\end{bmatrix}
-$$
-
-而：
-
-$$
+\end{bmatrix},
+\qquad
 B=
 \begin{bmatrix}
 a&b\\
@@ -671,7 +776,7 @@ c&d
 \end{bmatrix}
 $$
 
-则：
+那么：
 
 $$
 \langle\Sigma,B\rangle
@@ -679,25 +784,11 @@ $$
 \sigma_1a+\sigma_2d
 $$
 
-非对角元素因为和 $\Sigma$ 的 0 相乘，不直接进入 objective。
-
----
-
-# 10. 为什么最优 Update 是 $-\eta UV^\top$？
-
-因为：
+我们希望这个量尽可能小，同时：
 
 $$
 \|B\|_2\le\eta
 $$
-
-而我们希望：
-
-$$
-\sigma_1a+\sigma_2d
-$$
-
-尽可能小。
 
 由于：
 
@@ -705,13 +796,13 @@ $$
 \sigma_i\ge0
 $$
 
-因此最优时希望：
+最优时可以取：
 
 $$
 a=-\eta,\qquad d=-\eta
 $$
 
-于是可以取：
+即：
 
 $$
 B^*=-\eta I
@@ -720,10 +811,12 @@ $$
 然后：
 
 $$
-\Delta W^*=UB^*V^\top
+\Delta W^*
+=
+UB^*V^\top
 $$
 
-因此：
+于是：
 
 $$
 \boxed{
@@ -733,38 +826,18 @@ $$
 }
 $$
 
-注意：
+这里要注意：
 
-> $UV^\top$ 并不是 spectral norm 的定义。
+- $\nabla_WL=U\Sigma V^\top$ 是已经给定的 gradient matrix；
+- $\Delta W$ 是我们还没有确定、正在优化的 update matrix；
+- 我们不是人为修改一个固定矩阵的奇异值，而是在所有满足 constraint 的候选 $\Delta W$ 中寻找最优的那个。
 
-spectral norm 本身只是：
-
-$$
-\|W\|_2=\sigma_{\max}(W)
-$$
-
-而：
-
-$$
-\Delta W^*=-\eta UV^\top
-$$
-
-是**在 spectral norm constraint 下求出来的最优 update**。
-
----
-
-# 11. $U\Sigma V^\top\rightarrow UV^\top$ 的意义
+## 3.5 $U\Sigma V^\top\rightarrow UV^\top$ 的意义
 
 gradient：
 
 $$
 G=U\Sigma V^\top
-$$
-
-其中：
-
-$$
-\Sigma=\operatorname{diag}(\sigma_1,\sigma_2,\ldots)
 $$
 
 如果直接用 gradient descent：
@@ -773,7 +846,7 @@ $$
 \Delta W\propto-U\Sigma V^\top
 $$
 
-那么大的 singular value 对 update 影响特别大。
+那么大的 singular value 会严重主导 update。
 
 例如：
 
@@ -785,7 +858,7 @@ $$
 \end{bmatrix}
 $$
 
-两个方向的 update strength 差了：
+两个 singular directions 的 update strength 差了：
 
 $$
 10000
@@ -796,7 +869,9 @@ $$
 而：
 
 $$
-UV^\top=UIV^\top
+UV^\top
+=
+UIV^\top
 $$
 
 相当于：
@@ -805,11 +880,9 @@ $$
 \sigma_i\rightarrow1
 $$
 
-因此各个 singular direction 的 scale 被拉平。
+因此不同 singular directions 的 scale 被拉平。
 
----
-
-# 12. Condition Number
+### 3.5.1 Condition Number
 
 对于 full-rank matrix：
 
@@ -835,25 +908,43 @@ $$
 \kappa=10000
 $$
 
-说明不同方向尺度极度不均匀。
-
 而 $UV^\top$ 的非零 singular values 都是 1，所以在相应非零 singular subspace 上：
 
 $$
 \kappa=1
 $$
 
-这表示各方向 scale 最均衡。
+表示各方向 scale 最均衡。
 
 ---
 
-# 13. Xavier Initialization
+# 4. Xavier Initialization 与 RMS Norm
 
-对 deep neural network 来说，什么 norm 才最自然？
+到这里老师已经建立：
 
-回顾 Xavier initialization。
+$$
+\boxed{
+\text{Choose a norm}
+\rightarrow
+\text{Get an optimizer}
+}
+$$
 
-考虑：
+接下来真正的问题是：
+
+> **对于 deep neural network，到底什么 norm 才最自然？**
+
+这就是为什么老师重新回到 Xavier initialization。
+
+Xavier 的作用不是这节课的终点，而是为了说明：
+
+> 神经网络里我们真正关心的是“每个 activation 的典型 scale 是否保持稳定”。
+
+这会自然引出 RMS norm。
+
+## 4.1 Xavier Initialization
+
+考虑一层：
 
 $$
 h=Wx
@@ -880,9 +971,9 @@ $$
 
 并假设各项近似独立。
 
-## 13.1 为什么方差可以相加？
+### 4.1.1 为什么方差可以相加？
 
-一般：
+一般情况下：
 
 $$
 \operatorname{Var}(X+Y)
@@ -900,7 +991,7 @@ $$
 \operatorname{Cov}(X,Y)=0
 $$
 
-所以：
+因此：
 
 $$
 \operatorname{Var}(X+Y)
@@ -910,7 +1001,7 @@ $$
 \operatorname{Var}(Y)
 $$
 
-因此：
+所以：
 
 $$
 \operatorname{Var}(h_j)
@@ -919,7 +1010,7 @@ $$
 \operatorname{Var}(W_{ji}x_i)
 $$
 
-## 13.2 继续推导
+### 4.1.2 为什么 $\operatorname{Var}(W_{ji}x_i)$ 等于方差的乘积？
 
 如果 $W_{ji}$ 和 $x_i$ 独立且均值为 0：
 
@@ -982,11 +1073,7 @@ $$
 }
 $$
 
-这解释了：
-
-> layer 越宽，每个 individual weight 初始化时应该越小。
-
-经典 Xavier 还会同时考虑 backward flow，因此常见形式是：
+经典 Xavier 还会同时兼顾 backward flow，因此常见形式是：
 
 $$
 \operatorname{Var}(W_{ji})
@@ -1004,17 +1091,15 @@ $$
 }
 $$
 
----
+## 4.2 为什么 Xavier 会引出 RMS Norm？
 
-# 14. RMS Norm
-
-Xavier 想维持的是：
+Xavier 想维持的不是整个向量的总长度，而是：
 
 > 每个 activation 的典型 magnitude。
 
-普通 $L_2$ norm 会随着维度增加而增加。
+普通 $L_2$ norm 会随着维度增加而自然变大。
 
-所以定义 RMS norm：
+因此定义 RMS norm：
 
 $$
 \boxed{
@@ -1041,17 +1126,15 @@ $$
 
 > 一个典型 coordinate 的 magnitude。
 
-如果所有元素都是 1：
+如果所有元素都是 1，那么无论 $d=10$ 还是 $d=10000$：
 
 $$
 \|x\|_{\mathrm{RMS}}=1
 $$
 
-无论 $d=10$ 还是 $d=10000$。
+因此 RMS norm 比普通 $L_2$ norm 更适合描述 neural network 中 activation 的典型 scale。
 
----
-
-# 15. RMS-to-RMS Matrix Norm
+## 4.3 RMS-to-RMS Matrix Norm
 
 对于：
 
@@ -1073,6 +1156,10 @@ $$
 }
 }
 $$
+
+它表示：
+
+> 一个 matrix 最多能把输入的 RMS scale 放大多少倍。
 
 因为：
 
@@ -1122,22 +1209,24 @@ $$
 }
 $$
 
-所以 RMS-to-RMS matrix norm 本质上就是：
+所以：
 
-> spectral norm × 一个与 layer shape 有关的 scaling factor。
+> **RMS-to-RMS matrix norm 本质上就是 spectral norm 乘上一个由 fan-in / fan-out 决定的 scaling factor。**
+
+这是本节课最重要的公式之一。
 
 ---
 
-# 16. RMS-to-RMS Constraint 带来的 Layer-Specific Scaling
+# 5. Maximal Update Parameterization
 
-如果：
+如果要求：
 
 $$
 \|\Delta W\|_{\mathrm{RMS}\rightarrow\mathrm{RMS}}
 \le\eta
 $$
 
-那么：
+则：
 
 $$
 \sqrt{
@@ -1160,11 +1249,25 @@ $$
 }
 $$
 
-因此即使全网络只设置一个 $\eta$，不同 layer 因为 $d_{\text{in}}$ 和 $d_{\text{out}}$ 不同，实际允许的 spectral-norm update 也不同。
+这意味着：
 
----
+> 即使整个 network 只使用一个全局 $\eta$，不同 layer 因为 $d_{\text{in}}$ 和 $d_{\text{out}}$ 不同，实际允许的 update scale 也会不同。
 
-# 17. Muon 的核心 Update
+也就是说：
+
+$$
+\text{effective update scale}
+\propto
+\sqrt{
+\frac{d_{\text{out}}}{d_{\text{in}}}
+}
+$$
+
+这就是课件所说的 maximal update parameterization 的 essential idea：
+
+> **同一个 global hyperparameter，通过参数化方式让不同宽度的 layer 自动得到合适的 update scale。**
+
+## 5.1 从 RMS-to-RMS Norm 到 Muon
 
 定义：
 
@@ -1211,7 +1314,7 @@ $$
 G=U\Sigma V^\top
 $$
 
-不直接使用原始 $\Sigma$，而希望得到近似：
+不直接保留原始 singular values $\Sigma$，而希望得到：
 
 $$
 UV^\top
@@ -1227,7 +1330,106 @@ $$
 
 ---
 
-# 18. 为什么不能每一步直接算 SVD？
+# 6. Muon 与 Newton–Schulz
+
+## 6.1 Muon 是什么？
+
+**Muon 全称 Momentum Orthogonalized by Newton–Schulz，是一个 optimizer。**
+
+它和 SGD、Adam 属于同一类概念：
+
+> Muon 决定在训练神经网络时，拿到 gradient 以后，应该怎样更新参数。
+
+假设某一层参数矩阵的 gradient 是：
+
+$$
+G=\nabla_WL
+$$
+
+对 $G$ 做 SVD：
+
+$$
+G=U\Sigma V^\top
+$$
+
+其中 $\Sigma$ 中存放 singular values：
+
+$$
+\Sigma=
+\operatorname{diag}(\sigma_1,\sigma_2,\ldots)
+$$
+
+如果直接使用普通 gradient descent，那么 update direction 与：
+
+$$
+-U\Sigma V^\top
+$$
+
+成正比。
+
+问题是：
+
+> 如果不同 singular values 差别很大，那么 update 会被最大的 singular directions 强烈支配。
+
+例如：
+
+$$
+\Sigma=
+\begin{bmatrix}
+100&0\\
+0&0.01
+\end{bmatrix}
+$$
+
+那么两个 singular directions 的 scale 相差：
+
+$$
+\frac{100}{0.01}=10000
+$$
+
+倍。
+
+Muon 的核心思想之一就是：
+
+> **尽量把 gradient matrix 的不同 singular directions 拉到更接近的 scale。**
+
+也就是希望：
+
+$$
+G
+=
+U\Sigma V^\top
+$$
+
+变成接近：
+
+$$
+UV^\top
+$$
+
+因为：
+
+$$
+UV^\top
+=
+UIV^\top
+$$
+
+相当于：
+
+$$
+\Sigma\rightarrow I
+$$
+
+也就是让非零 singular values 尽量靠近 1。
+
+所以可以暂时把 Muon 理解成：
+
+> **Muon 是一个 optimizer，它会对 gradient matrix 做近似 orthogonalization / singular-value flattening，使不同 singular directions 的 update 更均衡。**
+
+## 6.2 Newton–Schulz 是什么？
+
+**Newton–Schulz 的作用是**帮助 Muon 在不显式做完整 SVD 的情况下，近似得到 $UV^\top$。**
 
 理论上：
 
@@ -1235,17 +1437,13 @@ $$
 G=U\Sigma V^\top
 $$
 
-我们只需要：
+如果我们想得到：
 
 $$
 UV^\top
 $$
 
-但问题是：
-
-> 要得到 $U$ 和 $V$，通常还是需要先做 SVD。
-
-也就是：
+最直接的方法就是：
 
 $$
 G
@@ -1257,51 +1455,28 @@ U,\Sigma,V
 UV^\top
 $$
 
-SVD 是比较昂贵的 matrix decomposition。
+但是问题是：
+
+> SVD 本身是比较昂贵的 matrix decomposition。
 
 深度学习训练中：
 
 - matrix 很大；
 - layer 很多；
-- optimizer 每一步都要执行。
+- optimizer 每一步都要运行。
 
-所以每一步对每层做完整 SVD 成本过高。
+所以如果每一个 training step、每一层都完整做一次 SVD，计算成本会很高。
 
-因此 Muon 想：
+因此 Muon 希望：
 
-> 不显式求 $U$ 和 $V$，能不能直接从 $G$ 本身近似算出 $UV^\top$？
+> 不显式求出 $U,\Sigma,V$，而是直接从 $G$ 本身出发，用便宜的 matrix multiplication 近似得到 $UV^\top$。
 
-这就引出了 Newton–Schulz iteration。
+这就是 Newton–Schulz 出现的原因。
 
----
 
-# 19. Newton–Schulz：不做 SVD，直接修改 Singular Values
+## 6.3 Newton–Schulz 如何把 Singular Values 推向 1？
 
-目标：
-
-$$
-G=U\Sigma V^\top
-$$
-
-希望：
-
-$$
-G\rightarrow UV^\top
-$$
-
-也就是：
-
-$$
-\Sigma\rightarrow I
-$$
-
-即：
-
-$$
-\sigma_i\rightarrow1
-$$
-
-我们考虑：
+老师使用的简化 polynomial 是：
 
 $$
 p(x)
@@ -1309,7 +1484,7 @@ p(x)
 \frac32x-\frac12x^3
 $$
 
-对于 matrix：
+对于 matrix，使用：
 
 $$
 \boxed{
@@ -1321,10 +1496,32 @@ p(G)
 }
 $$
 
-因为：
+然后反复迭代：
+
+$$
+\boxed{
+G_{k+1}
+=
+\frac32G_k
+-
+\frac12G_kG_k^\top G_k
+}
+$$
+
+### 6.3.1 为什么这个操作会修改 Singular Values？
+
+假设：
 
 $$
 G=U\Sigma V^\top
+$$
+
+那么：
+
+$$
+G^\top
+=
+V\Sigma^\top U^\top
 $$
 
 所以：
@@ -1332,10 +1529,48 @@ $$
 $$
 GG^\top G
 =
-U\Sigma^3V^\top
+(U\Sigma V^\top)
+(V\Sigma^\top U^\top)
+(U\Sigma V^\top)
 $$
 
-于是：
+利用：
+
+$$
+V^\top V=I
+$$
+
+以及：
+
+$$
+U^\top U=I
+$$
+
+得到：
+
+$$
+GG^\top G
+=
+U\Sigma\Sigma^\top\Sigma V^\top
+$$
+
+对于每一个 singular value 来说，这相当于：
+
+$$
+\sigma_i
+\rightarrow
+\sigma_i^3
+$$
+
+因此：
+
+$$
+p(G)
+=
+\frac32G-\frac12GG^\top G
+$$
+
+就等价于：
 
 $$
 p(G)
@@ -1347,7 +1582,7 @@ U
 V^\top
 $$
 
-即：
+也就是：
 
 $$
 \boxed{
@@ -1357,13 +1592,13 @@ U\,p(\Sigma)\,V^\top
 }
 $$
 
-关键意义：
+所以：
 
-> 不需要显式知道 $U,\Sigma,V$，直接对 $G$ 做这个 matrix polynomial，就等价于保持 singular vectors，同时把每个 singular value $\sigma_i$ 替换成 $p(\sigma_i)$。
+> **直接对 matrix $G$ 做这个 polynomial operation，会保持 singular vectors，同时把 singular values 按 $p(\sigma)$ 修改。**
 
 ---
 
-# 20. Singular Value 如何靠近 1？
+### 6.4.2 为什么 Singular Values 会向 1 靠近？
 
 对于：
 
@@ -1379,92 +1614,66 @@ $$
 0<x<1
 $$
 
-则反复迭代：
+那么：
 
 $$
-x
-\rightarrow
-p(x)
-\rightarrow
-p(p(x))
-\rightarrow
-\cdots
+p(x)>x
 $$
 
-会向 1 靠近。
+并且迭代会逐渐靠近 1。
+
+![](附件/Pasted%20image%2020260929175808.png)
+
+## 6.5 为什么 Newton–Schulz 之前必须 Normalize？
+
+Newton–Schulz 并不是对任意大的 singular value 都稳定。
 
 例如：
 
 $$
-0.5
-\rightarrow
-0.6875
-\rightarrow
-\cdots
-\rightarrow1
-$$
-
-因此 matrix iteration：
-
-$$
-G_{k+1}
+p(2)
 =
-\frac32G_k
--
-\frac12G_kG_k^\top G_k
-$$
-
-会让非零 singular values 逐渐趋向 1。
-
-最终：
-
-$$
-G_k
-\approx
-UIV^\top
+\frac32\times2-\frac12\times2^3
 =
-UV^\top
+3-4
+=
+-1
 $$
 
-![](附件/Pasted%20image%2020260924221757.png)
-
----
-
-# 21. 为什么 Newton–Schulz 之前必须 Normalize？
-
-如果 singular value 太大，这个 iteration 会不稳定。
-
-例如：
+而：
 
 $$
-x=2
+p(3)
+=
+\frac32\times3-\frac12\times3^3
+=
+4.5-13.5
+=
+-9
 $$
 
-则：
+可以看到：
+
+> 如果 singular value 太大，iteration 可能直接变得非常不稳定。
+
+所以在 Newton–Schulz 之前，需要先把 gradient matrix 缩小，让 singular values 落到比较安全的范围。
+
+这就引出了 Frobenius norm。
+
+## 6.6 Frobenius Norm 是什么？
+
+对于矩阵：
 
 $$
-p(2)=3-4=-1
+G=
+\begin{bmatrix}
+g_{11}&g_{12}&\cdots\\
+g_{21}&g_{22}&\cdots\\
+\vdots&\vdots&\ddots
+\end{bmatrix}
 $$
 
-如果：
-
-$$
-x=3
-$$
-
-则：
-
-$$
-p(3)=4.5-13.5=-9
-$$
-
-所以不能直接把任意大的 singular values 扔进去。
-
----
-
-# 22. Frobenius Norm
-
-矩阵的 Frobenius norm：
+Frobenius norm 定义为：
 
 $$
 \boxed{
@@ -1476,25 +1685,215 @@ $$
 }
 $$
 
-它也满足：
+直观上就是：
+
+> **把整个矩阵摊平成一个长向量，然后计算这个长向量的普通 $L_2$ norm。**
+
+例如：
+
+$$
+G=
+\begin{bmatrix}
+1&2\\
+3&4
+\end{bmatrix}
+$$
+
+那么：
 
 $$
 \|G\|_F
 =
 \sqrt{
+1^2+2^2+3^2+4^2
+}
+=
+\sqrt{30}
+$$
+
+所以 Frobenius norm 衡量的是：
+
+> **整个矩阵所有元素的总体 magnitude。**
+
+
+### 6.6.1 为什么 $\|G\|_F=\sqrt{\sum_i\sigma_i^2}$？
+
+这是 Frobenius norm 和 singular values 之间的一个重要性质。
+
+首先：
+
+$$
+\|G\|_F^2
+=
+\sum_{i,j}G_{ij}^2
+$$
+
+而所有 matrix entries 的平方和，也可以写成：
+
+$$
+\boxed{
+\|G\|_F^2
+=
+\operatorname{tr}(G^\top G)
+}
+$$
+
+为什么？
+
+因为 $G^\top G$ 的对角元素分别是 $G$ 每一列元素的平方和。
+
+把这些对角元素全部加起来：
+
+$$
+\operatorname{tr}(G^\top G)
+$$
+
+正好就是：
+
+$$
+\sum_{i,j}G_{ij}^2
+$$
+
+现在对 $G$ 做 SVD：
+
+$$
+G=U\Sigma V^\top
+$$
+
+那么：
+
+$$
+G^\top
+=
+V\Sigma^\top U^\top
+$$
+
+于是：
+
+$$
+G^\top G
+=
+V\Sigma^\top U^\top U\Sigma V^\top
+$$
+
+因为：
+
+$$
+U^\top U=I
+$$
+
+所以：
+
+$$
+G^\top G
+=
+V\Sigma^\top\Sigma V^\top
+$$
+
+因此：
+
+$$
+\operatorname{tr}(G^\top G)
+=
+\operatorname{tr}
+\left(
+V\Sigma^\top\Sigma V^\top
+\right)
+$$
+
+利用 trace 的循环性质：
+
+$$
+\operatorname{tr}(ABC)
+=
+\operatorname{tr}(BCA)
+$$
+
+得到：
+
+$$
+=
+\operatorname{tr}
+\left(
+\Sigma^\top\Sigma V^\top V
+\right)
+$$
+
+因为：
+
+$$
+V^\top V=I
+$$
+
+所以：
+
+$$
+=
+\operatorname{tr}
+\left(
+\Sigma^\top\Sigma
+\right)
+$$
+
+而 $\Sigma^\top\Sigma$ 的对角线就是：
+
+$$
+\sigma_1^2,\sigma_2^2,\ldots
+$$
+
+因此：
+
+$$
+\operatorname{tr}
+\left(
+\Sigma^\top\Sigma
+\right)
+=
+\sum_i\sigma_i^2
+$$
+
+所以：
+
+$$
+\boxed{
+\|G\|_F^2
+=
 \sum_i\sigma_i^2
 }
 $$
 
-关键性质：
+最后两边开根号：
 
 $$
 \boxed{
-\|G\|_2\le\|G\|_F
+\|G\|_F
+=
+\sqrt{
+\sum_i\sigma_i^2
+}
 }
 $$
 
-而：
+因此 Frobenius norm 有两种等价理解：
+
+$$
+\boxed{
+\text{所有 matrix entries 平方和开根号}
+}
+$$
+
+和：
+
+$$
+\boxed{
+\text{所有 singular values 平方和开根号}
+}
+$$
+
+
+### 6.6.2 关键性质：为什么 $\|G\|_2\le\|G\|_F$？
+
+我们已经知道：
 
 $$
 \|G\|_2
@@ -1502,15 +1901,66 @@ $$
 \sigma_{\max}(G)
 $$
 
+同时：
+
+$$
+\|G\|_F
+=
+\sqrt{
+\sigma_1^2+\sigma_2^2+\cdots
+}
+$$
+
+假设最大的 singular value 是：
+
+$$
+\sigma_{\max}
+$$
+
+显然：
+
+$$
+\sigma_1^2+\sigma_2^2+\cdots
+\ge
+\sigma_{\max}^2
+$$
+
 所以：
 
 $$
-\sigma_{\max}(G)
-\le
-\|G\|_F
+\sqrt{
+\sigma_1^2+\sigma_2^2+\cdots
+}
+\ge
+\sigma_{\max}
 $$
 
-于是定义：
+因此：
+
+$$
+\boxed{
+\|G\|_2
+\le
+\|G\|_F
+}
+$$
+
+
+---
+
+### 6.6.3 为什么 Frobenius Norm 可以用来 Normalize？
+
+Newton–Schulz 希望 singular values 不要太大。
+
+但我们又不想先去计算：
+
+$$
+\sigma_{\max}
+$$
+
+因为那通常又需要 SVD 或类似的昂贵计算。
+
+所以直接使用容易计算的 Frobenius norm：
 
 $$
 G_0
@@ -1518,177 +1968,150 @@ G_0
 \frac{G}{\|G\|_F}
 $$
 
-那么：
+矩阵整体除以一个常数后，它的所有 singular values 也会除以同一个常数：
 
 $$
 \sigma_i(G_0)
 =
-\frac{\sigma_i(G)}{\|G\|_F}
-$$
-
-因此：
-
-$$
-\sigma_{\max}(G_0)\le1
-$$
-
-所以所有 singular values 都被压到 $[0,1]$ 内。
-
-最关键的是：
-
-> 我们不需要知道 singular values 是多少。
-
-因为 $\|G\|_F$ 可以直接从 matrix entries 计算：
-
-$$
-\sqrt{\sum_{i,j}G_{ij}^2}
-$$
-
-无需 SVD。
-
----
-
-# 23. 一个额外的重要问题：如果归一化后 singular value 太小怎么办？
-
-如果矩阵很大，Frobenius norm 可能很大。
-
-例如有很多 singular values：
-
-$$
-\sigma_1,\sigma_2,\ldots,\sigma_r
-$$
-
-则：
-
-$$
+\frac{
+\sigma_i(G)
+}{
 \|G\|_F
-=
-\sqrt{
-\sum_i\sigma_i^2
 }
 $$
 
-所以归一化后某些 singular values 可能非常小：
+而我们已经知道：
 
 $$
-\tilde\sigma_i
+\sigma_{\max}(G)
 =
-\frac{\sigma_i}{\|G\|_F}
-\ll1
-$$
-
-当 $x$ 很小时：
-
-$$
-p(x)
-=
-\frac32x-\frac12x^3
-\approx
-\frac32x
+\|G\|_2
+\le
+\|G\|_F
 $$
 
 所以：
 
 $$
-x\rightarrow1.5x
-$$
-
-收敛可能比较慢。
-
-例如：
-
-$$
-0.01
-\rightarrow
-0.015
-\rightarrow
-0.0225
-\rightarrow\cdots
-$$
-
-因此 Frobenius normalization 主要解决的是：
-
-> 防止最大的 singular value 太大，导致 iteration 不稳定。
-
-它并不能保证：
-
-> 最小 singular value 一开始就足够大。
-
-Muon 实际只做有限次数 iteration，因此并不要求所有 singular values 数学上精确变成 1。
-
-另外，如果：
-
-$$
-\sigma_i=0
-$$
-
-那么：
-
-$$
-p(0)=0
-$$
-
-所以真正为 0 的 singular value 不会被变成 1。
-
----
-
-# 24. 整节课最终逻辑
-
-整节 Lecture 7 可以压缩成下面这条链：
-
-$$
-L(\theta+\Delta\theta)
-\approx
-L(\theta)
-+
-\langle\nabla L,\Delta\theta\rangle
+\frac{
+\sigma_{\max}(G)
+}{
+\|G\|_F
+}
+\le1
 $$
 
 因此：
 
 $$
-\text{optimizer}
-=
-\text{寻找一个小的 }\Delta\theta\text{ 让 loss 降最多}
-$$
-
-然后：
-
-$$
-L_\infty\text{ constraint}
-$$
-
-得到：
-
-$$
 \boxed{
-\Delta\theta
-=
--\eta\operatorname{sign}(\nabla L)
+\sigma_{\max}(G_0)\le1
 }
 $$
 
-即 Sign SGD。
+既然最大的 singular value 都不超过 1，那么其他 singular values 当然也都不超过 1。
 
-$L_2$ geometry 对应 negative-gradient direction，并与普通 Gradient Descent 联系起来：
+所以：
+
+> **Frobenius normalization 的作用，就是不用显式知道 singular values，也能保证最大的 singular value 不超过 1。**
+
+---
+
+### 6.6.4 为什么我们不需要先知道 Singular Values？
+
+原始 singular values 的确是 matrix 本身的性质，我们不能手动指定。
+
+但是：
 
 $$
-\boxed{
-\Delta\theta
+\|G\|_F
 =
--\alpha\nabla L
+\sqrt{
+\sum_{i,j}G_{ij}^2
 }
 $$
 
-参数从 vector 变成 matrix，使用 spectral norm：
+可以直接从 matrix entries 算出来。
+
+不需要做 SVD。
+
+而由于：
 
 $$
+\sigma_{\max}(G)
+\le
+\|G\|_F
+$$
+
+所以即使我们不知道：
+
+$$
+\sigma_{\max}
+$$
+
+具体是多少，也可以通过：
+
+$$
+G_0
+=
+\frac{G}{\|G\|_F}
+$$
+
+保证：
+
+$$
+\sigma_{\max}(G_0)\le1
+$$
+
+---
+
+# 7. 本节课的完整主线
+
+这节课更符合标题的逻辑是：
+
+$$
+\boxed{
+\text{Local linear perspective}
+\rightarrow
+\text{Choose a norm}
+\rightarrow
+\text{Get an optimizer}
+}
+$$
+
+例如：
+
+$$
+L_\infty
+\rightarrow
+\text{Sign SGD}
+$$
+
+以及：
+
+$$
+L_2
+\rightarrow
+\text{Gradient Descent geometry}
+$$
+
+再把 parameter 从 vector 换成 matrix：
+
+$$
+W
+$$
+
+引入 spectral norm：
+
+$$
+\boxed{
 \|W\|_2
 =
 \sigma_{\max}(W)
+}
 $$
 
-得到：
+在 spectral-norm constraint 下得到：
 
 $$
 \boxed{
@@ -1698,7 +2121,19 @@ $$
 }
 $$
 
-神经网络中考虑 Xavier 所保持的 activation scale，引入 RMS norm：
+然后真正进入本节课标题的重点：
+
+$$
+\boxed{
+\text{Xavier}
+\rightarrow
+\text{RMS norm}
+\rightarrow
+\text{RMS-to-RMS norm}
+}
+$$
+
+其中：
 
 $$
 \|x\|_{\mathrm{RMS}}
@@ -1706,23 +2141,52 @@ $$
 \frac{\|x\|_2}{\sqrt d}
 $$
 
-进而：
+以及：
 
 $$
+\boxed{
 \|W\|_{\mathrm{RMS}\rightarrow\mathrm{RMS}}
 =
 \sqrt{
 \frac{d_{\text{in}}}{d_{\text{out}}}
 }
 \|W\|_2
+}
 $$
 
-最终 Muon 希望：
+从而：
 
 $$
-G
-=
-U\Sigma V^\top
+\boxed{
+\|\Delta W\|_2
+\le
+\eta
+\sqrt{
+\frac{d_{\text{out}}}{d_{\text{in}}}
+}
+}
+$$
+
+这说明：
+
+> 同一个 global hyperparameter $\eta$，会因为 layer shape 不同而自然产生不同的 effective update scale。
+
+这就是 maximal update parameterization 的核心直觉。
+
+最后：
+
+$$
+\boxed{
+\mu\text{P}
+\rightarrow
+\text{Muon}
+}
+$$
+
+Muon 希望：
+
+$$
+G=U\Sigma V^\top
 $$
 
 变成：
@@ -1737,7 +2201,7 @@ $$
 \Sigma\rightarrow I
 $$
 
-但显式 SVD 太贵，于是使用 Newton–Schulz：
+为了避免显式 SVD，使用 Newton–Schulz：
 
 $$
 \boxed{
@@ -1749,26 +2213,52 @@ G_{k+1}
 }
 $$
 
-在迭代前先：
-
-$$
-G_0
-=
-\frac{G}{\|G\|_F}
-$$
-
-把 singular values 放进安全范围。
-
----
-
-# 25. 一句话总结
+并在迭代前先做：
 
 $$
 \boxed{
-\text{不同的 norm 定义了不同的 update geometry，从而导出不同的 optimizer。}
+G_0
+=
+\frac{G}{\|G\|_F}
 }
 $$
 
-而 Muon 的核心思想可以理解为：
+把 singular values 放进稳定范围。
 
-> 把 gradient matrix 的 singular values 拉平，让不同 singular directions 的更新更均衡，同时用 Newton–Schulz 避免每一步显式做昂贵的 SVD。
+---
+
+# 8. 最后一句总结
+
+这节课真正想表达的是：
+
+$$
+\boxed{
+\text{对 DNN 来说，RMS scale 比单纯的 Euclidean scale 更自然。}
+}
+$$
+
+因此从 RMS-to-RMS norm 出发，可以得到：
+
+$$
+\boxed{
+\text{layer-width-aware update scaling}
+}
+$$
+
+这就是 maximal update parameterization 的核心思想之一。
+
+而 Muon 则进一步把这种 matrix update geometry 变成实际 optimizer：
+
+$$
+\boxed{
+U\Sigma V^\top
+\rightarrow
+UV^\top
+}
+$$
+
+从而减少 singular-value imbalance，同时用 Newton–Schulz 避免每一步显式做昂贵的 SVD。
+
+
+
+
