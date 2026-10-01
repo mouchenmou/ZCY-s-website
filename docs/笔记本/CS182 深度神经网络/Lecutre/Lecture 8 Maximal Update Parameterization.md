@@ -1,9 +1,7 @@
 # 0. 前言
 ## 为什么这一讲选择 RMS 作为基础？
 
-这节课讨论的是 **network width 改变时，feature 和 update 的尺度会不会失控**。这里选择 RMS，而不是直接用 $L_2$ / spectral norm，最核心的原因是：
-
-> **RMS 会把“维度变多”本身带来的 $\sqrt d$ 放大去掉，更直接地衡量每个 coordinate 的典型大小。**
+这节课讨论的是 **network width 改变时，feature 和 update 的尺度会不会失控**。这里选择 RMS，而不是直接用 $L_2$ / spectral norm，是因**RMS 会把维度变多本身带来的 $\sqrt d$ 放大去掉，更直接地衡量每个 coordinate 的典型大小。**
 
 例如，如果
 
@@ -17,11 +15,9 @@ $$
 \|x\|_2=\sqrt d,
 $$
 
-所以随着 width $d$ 增大，$L_2$ norm 会自然变大。
+所以随着 width $d$ 增大，$L_2$ norm 会自然变大。但这不代表每个 feature coordinate 真的爆炸了，因为每个 coordinate 仍然只是 $1$。
 
-但这不代表每个 feature coordinate 真的“爆炸”了，因为每个 coordinate 仍然只是 $1$。
-
-RMS 是
+RMS 是：
 
 $$
 \|x\|_{\mathrm{RMS}}
@@ -30,11 +26,7 @@ $$
 =1.
 $$
 
-所以 RMS 更适合回答：
-
-> **网络变宽以后，每个 neuron / feature coordinate 的典型 magnitude 有没有改变？**
-
-同理，对 matrix，RMS-to-RMS induced norm 是
+所以 RMS 更适合回答**网络变宽以后，每个 neuron / feature coordinate 的典型 magnitude 有没有改变？**同理，对 matrix，RMS-to-RMS induced norm 是
 
 $$
 \|W\|_{\mathrm{RMS}\to\mathrm{RMS}}
@@ -117,13 +109,11 @@ $$
 - 它不是 spectral norm budget；
 - 不同 layer 的 $d_{\mathrm{in}},d_{\mathrm{out}}$ 不同，所以同一个 $\gamma$ 会对应不同的 spectral-norm scale。
 
-这就是课件说的：可以跨 layer 共享一个 hyperparameter，但实际效果会由于 fan-in / fan-out 而自动 layer-specific。
+因此，通过 RMS-to-RMS norm，我们可以跨 layer 共享一个 hyperparameter，但实际效果会由于 $d_{in}\ 和\ d_{out}$ 而自动 layer-specific。
 
 ---
 
 ## 2. SignSGD / Adam：为什么 learning rate 要按 $1/d_{\mathrm{in}}$ 缩放？
-
-Lecture 8 p.17–21 用一个非常具体的例子说明 $\mu$P 的 width scaling。
 
 SignSGD（以及把 Adam 简化成 elementwise sign update 的视角）写成：
 
