@@ -25,12 +25,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Research/Dan Wang老师/3. ScrewSplat/问题.md",
+                "file": "CS182 深度神经网络/Lecutre/Lecture 8 Maximal Update Parameterization.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "问题"
+              "title": "Lecture 8 Maximal Update Parameterization"
             }
           },
           {
@@ -47,7 +47,8 @@
               "title": "生词"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,8 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "3e3804ba2af637db",
@@ -201,11 +201,13 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "88f20dd727d5be6c",
+  "active": "89180b62487a8062",
   "lastOpenFiles": [
+    "CS182 深度神经网络/Lecutre/08_fa26.pdf",
+    "Research/Dan Wang老师/3. ScrewSplat/总结.md",
     "Research/Dan Wang老师/3. ScrewSplat/问题.md",
     "Research/Dan Wang老师/3. ScrewSplat/2508.02146v2.pdf",
-    "CS182 深度神经网络/Lecutre/08_fa26.pdf",
+    "Research/Dan Wang老师/2. REArtGS++/生词.md",
     "CS182 深度神经网络/Lecutre/Lecture 7 RMS RMS norm, Maximal update parameterization.md",
     "Research/Dan Wang老师/3. ScrewSplat/生词.md",
     "CS182 深度神经网络/Lecutre/Lecture 8 Maximal Update Parameterization.md",
@@ -217,7 +219,6 @@
     "CS182 深度神经网络/Lecutre/附件/Pasted image 20260929175808.png",
     "CS182 深度神经网络/Lecutre/CS182_Lecture_7_RMS_RMS_Maximal_Update_Parameterization.md",
     "Research/Dan Wang老师/2. REArtGS++/2511.17059v3.pdf",
-    "Research/Dan Wang老师/2. REArtGS++/生词.md",
     "Research/Dan Wang老师/1. VideoArtGS/2509.17647v1.pdf",
     "Research/Dan Wang老师/1. VideoArtGS/问题.md",
     "Research/Dan Wang老师/1. VideoArtGS/生词.md",
@@ -239,7 +240,6 @@
     "CS182 深度神经网络/Homework/HW0/查漏补缺/3. 概率论.md",
     "CS182 深度神经网络/Homework/HW0/查漏补缺/2. 特征值的几何意义.md",
     "CS182 深度神经网络/Homework/HW0/查漏补缺/1. SVD.md",
-    "Research/Xiaomin Lin老师科研/6. Edge-Oriented/问题.md",
     "Research/Xiaomin Lin老师科研/6. Edge-Oriented/附件/Pasted image 20260922212241.png",
     "Research/Xiaomin Lin老师科研/6. Edge-Oriented/附件/Pasted image 20260922211503.png",
     "Research/Xiaomin Lin老师科研/6. Edge-Oriented/附件/Pasted image 20260922180158.png",

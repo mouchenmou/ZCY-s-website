@@ -466,7 +466,7 @@ $$
 
 ### 2.7 Batch size 增大时的 caveat
 
-课件 p.21 特别提醒：batch size 增大后，gradient 不再一定 rank 1。
+batch size 增大后，gradient 不再一定 rank 1。
 
 这时 Frobenius norm 一般只给 spectral norm 一个 upper bound：
 
@@ -522,7 +522,7 @@ $$
 
 ## 3. $\mu$P 到底想控制什么？Feature Learning 的两个目标
 
-Lecture 8 p.25 重新把问题拉回 feature learning。
+重新把问题拉回 feature learning。
 
 一层 hidden feature 记为：
 
