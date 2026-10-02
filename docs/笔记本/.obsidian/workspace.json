@@ -11,18 +11,16 @@
             "id": "88f20dd727d5be6c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Research/Dan Wang老师/3. ScrewSplat/生词.md",
-                "mode": "source",
-                "source": false
+                "file": "Research/Dan Wang老师/3. ScrewSplat/2508.02146v2.pdf"
               },
-              "icon": "lucide-file",
-              "title": "生词"
+              "icon": "lucide-file-text",
+              "title": "2508.02146v2"
             }
           },
           {
-            "id": "00fd3b9a58aa258e",
+            "id": "89180b62487a8062",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -36,19 +34,20 @@
             }
           },
           {
-            "id": "c0a497a7804826e8",
+            "id": "00fd3b9a58aa258e",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Research/Dan Wang老师/3. ScrewSplat/2508.02146v2.pdf"
+                "file": "Research/Dan Wang老师/2. REArtGS++/生词.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "2508.02146v2"
+              "icon": "lucide-file",
+              "title": "生词"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -107,7 +106,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "3e3804ba2af637db",
@@ -201,25 +201,14 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "c0a497a7804826e8",
+  "active": "88f20dd727d5be6c",
   "lastOpenFiles": [
     "Research/Dan Wang老师/3. ScrewSplat/问题.md",
     "Research/Dan Wang老师/3. ScrewSplat/2508.02146v2.pdf",
-    "Research/Dan Wang老师/3. ScrewSplat/生词.md",
-    "Research/Dan Wang老师/1. VideoArtGS/2509.17647v1.pdf",
-    "Research/Dan Wang老师/2. REArtGS++/生词.md",
     "CS182 深度神经网络/Lecutre/08_fa26.pdf",
-    "CS182 深度神经网络/Lecutre/Lecture 8 Maximal Update Parameterization.md",
-    "CS182 深度神经网络/Homework/HW0/查漏补缺/4. 行空间和零空间.md",
-    "CS182 深度神经网络/Homework/HW0/查漏补缺/3. 概率论.md",
-    "CS182 深度神经网络/Homework/HW0/hw00_question.pdf",
-    "CS182 深度神经网络/Homework/HW01/hw01_question.pdf",
-    "CS182 深度神经网络/Homework/HW01/COMPSCI 182 homework 01 combined.pdf",
-    "CS182 深度神经网络/Homework/HW01/查漏补缺.md",
-    "CS182 深度神经网络/Homework/HW01/q_relu_vis.ipynb - Colab.pdf",
-    "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
-    "CS182 深度神经网络/Homework/HW01/COMPSCI 182 homework 01.md",
     "CS182 深度神经网络/Lecutre/Lecture 7 RMS RMS norm, Maximal update parameterization.md",
+    "Research/Dan Wang老师/3. ScrewSplat/生词.md",
+    "CS182 深度神经网络/Lecutre/Lecture 8 Maximal Update Parameterization.md",
     "Research/Dan Wang老师/2. REArtGS++/问题.md",
     "CS182 深度神经网络/Lecutre/03.pdf",
     "CS182 深度神经网络/Lecutre/Lecture 2&3 Optimization.md",
@@ -228,15 +217,26 @@
     "CS182 深度神经网络/Lecutre/附件/Pasted image 20260929175808.png",
     "CS182 深度神经网络/Lecutre/CS182_Lecture_7_RMS_RMS_Maximal_Update_Parameterization.md",
     "Research/Dan Wang老师/2. REArtGS++/2511.17059v3.pdf",
+    "Research/Dan Wang老师/2. REArtGS++/生词.md",
+    "Research/Dan Wang老师/1. VideoArtGS/2509.17647v1.pdf",
     "Research/Dan Wang老师/1. VideoArtGS/问题.md",
     "Research/Dan Wang老师/1. VideoArtGS/生词.md",
     "Research/Dan Wang老师/1. VideoArtGS/3D Gaussian.md",
     "CS189 机器学习/Lecture/2. KNN, ML Vocabulary, and K-Means/Lecture 02 KNN, ML Vocabulary, and K-Means.md",
+    "Research/Dan Wang老师/1. VideoArtGS/复现",
     "CS189 机器学习/Lecture/4. Probability and Density Estimation/Lecture 4 Probability and Density Estimation.md",
     "CS182 深度神经网络/Homework/HW02/COMPSCI 182 homework 02.md",
+    "CS182 深度神经网络/Homework/HW01/COMPSCI 182 homework 01.md",
+    "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
     "CS189 机器学习/Lecture/5. Density Estimation and GMM/Lecture 5 Density Estimation and GMM.md",
+    "CS182 深度神经网络/Homework/HW0/hw00_question.pdf",
     "CS182 深度神经网络/Lecutre/附件/Pasted image 20260924221757.png",
     "copilot/copilot-custom-prompts/Clip Web Page.md",
+    "CS182 深度神经网络/Lecutre/02.pdf",
+    "CS182 深度神经网络/Homework/HW01/查漏补缺.md",
+    "CS182 深度神经网络/Homework/HW01/q_relu_vis.ipynb - Colab.pdf",
+    "CS182 深度神经网络/Homework/HW0/查漏补缺/4. 行空间和零空间.md",
+    "CS182 深度神经网络/Homework/HW0/查漏补缺/3. 概率论.md",
     "CS182 深度神经网络/Homework/HW0/查漏补缺/2. 特征值的几何意义.md",
     "CS182 深度神经网络/Homework/HW0/查漏补缺/1. SVD.md",
     "Research/Xiaomin Lin老师科研/6. Edge-Oriented/问题.md",
