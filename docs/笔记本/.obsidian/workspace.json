@@ -13,10 +13,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Research/Dan Wang老师/4. Neural Implicit Representation/2404.01440v2.pdf"
+                "file": "Research/Koushil Sreenath/Toward Real-World/2505.13834v2.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "2404.01440v2"
+              "title": "2505.13834v2"
             }
           },
           {
@@ -25,12 +25,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Research/Dan Wang老师/4. Neural Implicit Representation/Summarize.md",
+                "file": "Research/Koushil Sreenath/Toward Real-World/生词.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Summarize"
+              "title": "生词"
             }
           },
           {
@@ -39,28 +39,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS182 深度神经网络/Lecutre/Lecture 7 RMS RMS norm, Maximal update parameterization.md",
+                "file": "Research/Koushil Sreenath/Toward Real-World/问题.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 7 RMS RMS norm, Maximal update parameterization"
-            }
-          },
-          {
-            "id": "a9ceac85bd726e2e",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "CS182 深度神经网络/Homework/HW04/hw04_solution.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "hw04_solution"
+              "title": "问题"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -213,26 +200,27 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "00fd3b9a58aa258e",
+  "active": "88f20dd727d5be6c",
   "lastOpenFiles": [
-    "CS182 深度神经网络/Homework/HW04/cs182(2).pdf",
-    "CS182 深度神经网络/Lecutre/Lecture 8 Maximal Update Parameterization.md",
+    "Research/Koushil Sreenath/Toward Real-World/生词.md",
+    "Research/Koushil Sreenath/Toward Real-World/2505.13834v2.pdf",
+    "Research/Koushil Sreenath/Toward Real-World/问题.md",
+    "Research/Dan Wang老师/4. Neural Implicit Representation/Summarize.md",
+    "Research/Dan Wang老师/4. Neural Implicit Representation/2404.01440v2.pdf",
     "CS182 深度神经网络/Homework/HW04/hw04_solution.pdf",
     "CS182 深度神经网络/Lecutre/Lecture 7 RMS RMS norm, Maximal update parameterization.md",
+    "Research/Koushil Sreenath/PhysicsFC/2504.21216v2.pdf",
+    "Research/Koushil Sreenath/PhysicsFC/未确认 896345.crdownload",
+    "Research/Koushil Sreenath/PhysicsFC",
+    "Research/Koushil Sreenath/Toward Real-World",
+    "Research/Koushil Sreenath",
+    "CS182 深度神经网络/Homework/HW04/cs182(2).pdf",
+    "CS182 深度神经网络/Lecutre/Lecture 8 Maximal Update Parameterization.md",
     "CS182 深度神经网络/Homework/HW04/未确认 191923.crdownload",
-    "CS182 深度神经网络/Homework/HW04",
-    "CS182 深度神经网络/Homework/新建文件夹",
     "Research/Dan Wang老师/4. Neural Implicit Representation/问题.md",
-    "Research/Dan Wang老师/4. Neural Implicit Representation/2404.01440v2.pdf",
-    "Research/Dan Wang老师/4. Neural Implicit Representation/Summarize.md",
     "Research/Dan Wang老师/2. REArtGS++/生词.md",
     "Research/Dan Wang老师/1. VideoArtGS/问题.md",
-    "Research/Dan Wang老师/1. VideoArtGS/2509.17647v1.pdf",
-    "Research/Dan Wang老师/3. ScrewSplat/2508.02146v2.pdf",
     "Research/Dan Wang老师/1. VideoArtGS/3D Gaussian.md",
-    "CS182 深度神经网络/Homework/HW03/hw03_question.pdf",
-    "CS182 深度神经网络/Homework/HW03/cs182.pdf",
-    "CS182 深度神经网络/Homework/HW01/q_relu_vis.ipynb - Colab.pdf",
     "Research/Dan Wang老师/3. ScrewSplat/总结.md",
     "Research/Dan Wang老师/3. ScrewSplat/问题.md",
     "Research/Dan Wang老师/3. ScrewSplat/生词.md",
@@ -251,8 +239,6 @@
     "CS182 深度神经网络/Lecutre/附件/Pasted image 20260924221757.png",
     "copilot/copilot-custom-prompts/Clip Web Page.md",
     "CS182 深度神经网络/Homework/HW01/查漏补缺.md",
-    "CS182 深度神经网络/Homework/HW0/查漏补缺/4. 行空间和零空间.md",
-    "CS182 深度神经网络/Homework/HW0/查漏补缺/3. 概率论.md",
     "Research/Xiaomin Lin老师科研/6. Edge-Oriented/附件/Pasted image 20260922212241.png",
     "Research/Xiaomin Lin老师科研/6. Edge-Oriented/附件/Pasted image 20260922211503.png",
     "Research/Xiaomin Lin老师科研/6. Edge-Oriented/附件/Pasted image 20260922180158.png",
