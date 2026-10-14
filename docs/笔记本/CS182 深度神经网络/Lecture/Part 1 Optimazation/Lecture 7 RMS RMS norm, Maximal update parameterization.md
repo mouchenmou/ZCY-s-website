@@ -1622,7 +1622,7 @@ $$
 
 并且迭代会逐渐靠近 1。
 
-![](附件/Pasted%20image%2020260929175808.png)
+![](Pasted%20image%2020260929175808.png)
 
 ## 6.5 为什么 Newton–Schulz 之前必须 Normalize？
 

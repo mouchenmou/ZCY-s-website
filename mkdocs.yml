@@ -383,8 +383,11 @@ nav:
     - cs182 深度学习:
       - 笔记本/CS182 深度神经网络/index.md
       - Lecture:
-        - Lecture 1: 笔记本/CS182 深度神经网络/Lecutre/Lecture 1 Basic Principles.md
-        - Lecture 2&3 Optimization: 笔记本/CS182 深度神经网络/Lecutre/Lecture 2&3 Optimization.md
+        - Part 1 Optimization:
+          - Lecture 1: 笔记本/CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 1 Basic Principles.md
+          - Lecture 2&3 Optimization: 笔记本/CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 2&3 Optimization.md
+          - Lecture 7 RMS RMS norm, Maximal update parameterization: 笔记本/CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 7 RMS RMS norm, Maximal update parameterization.md
+          - Lecture 8 Maximal Update Parameterization: 笔记本/CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 8 Maximal Update Parameterization.md
       - Homework:
         - HW0:
           - COMPSCI 182 Homework 0: 笔记本/CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md
