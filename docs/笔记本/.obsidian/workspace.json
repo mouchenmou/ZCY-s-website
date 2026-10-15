@@ -41,10 +41,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Research/Koushil Sreenath/3. MAPush/long_horizon_multi_robot_push.pdf"
+                "file": "CS182 深度神经网络/Lecture/Part 3 GNN/12_fa26.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "long_horizon_multi_robot_push"
+              "title": "12_fa26"
             }
           }
         ],
@@ -203,12 +203,14 @@
   },
   "active": "89180b62487a8062",
   "lastOpenFiles": [
+    "CS182 深度神经网络/Lecture/Part 2 CNN/11_fa26.pdf",
+    "CS182 深度神经网络/Lecture/Part 2 CNN/09b_fa26.pdf",
+    "Research/Koushil Sreenath/2. Toward Real-World/2505.13834v2.pdf",
+    "Research/Koushil Sreenath/3. MAPush/long_horizon_multi_robot_push.pdf",
     "Research/Koushil Sreenath/3. MAPush/生词.md",
     "Research/Koushil Sreenath/3. MAPush/问题.md",
-    "Research/Koushil Sreenath/3. MAPush/long_horizon_multi_robot_push.pdf",
     "Research/Koushil Sreenath/3. MAPush/附件/Pasted image 20261014145322.png",
     "Research/Koushil Sreenath/3. MAPush/附件",
-    "CS182 深度神经网络/Lecture/Part 2 CNN/11_fa26.pdf",
     "Research/Koushil Sreenath/6.  Learning Robot Soccer from Egocentric Vision/tirumala25a.pdf",
     "Research/Dan Wang老师/1. VideoArtGS/3D Gaussian.md",
     "Research/Koushil Sreenath/6.  Learning Robot Soccer from Egocentric Vision",
@@ -216,7 +218,6 @@
     "Research/Koushil Sreenath/Ego-VCP/未确认 258167.crdownload",
     "Research/Koushil Sreenath/5. Ego-VCP",
     "Research/Koushil Sreenath/4. D-HRL/2407.06499v2.pdf",
-    "Research/Koushil Sreenath/4. D-HRL/未确认 325819.crdownload",
     "CS182 深度神经网络/Lecture/Part 2 CNN/Lecture 11 ResNets, Normalization & U-Nets.md",
     "CS182 深度神经网络/Lecture/Part 2 CNN/附件/Pasted image 20261014011751.png",
     "Research/Koushil Sreenath/1. PhysicsFC/问题.md",
