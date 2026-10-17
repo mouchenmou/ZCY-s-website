@@ -185,7 +185,7 @@ $$
 P_{Null(X)}\vec{w}_t = P_{Null(X)}\vec{w}_0
 $$
 
-![](Lecture2_Row_Null_Space.png)
+![](附件/Lecture2_Row_Null_Space.png)
 
 ## 2.3 为什么 zero initialization 很重要
 
@@ -538,7 +538,7 @@ $$
 
 这和 ridge 的效果很像：都在抑制小 singular value 方向。
 
-![](Lecture2_Ridge_EarlyStopping_Filter.png)
+![](附件/Lecture2_Ridge_EarlyStopping_Filter.png)
 
 !!! note "Ridge 和 Early Stopping 不是同一个 estimator"
     Ridge 和 early stopping 的 filter shape 不一样。
@@ -655,7 +655,7 @@ SGD 的好处很直接：
 
 但这不是保证。noise 也可能把参数推向更差的区域。
 
-![](Lecture3_SGD_Noise.png)
+![](附件/Lecture3_SGD_Noise.png)
 
 !!! warning "无偏不等于每一步都下降"
     $g_B(\theta)$ 是 full gradient 的 unbiased estimator，只说明平均方向是对的。
