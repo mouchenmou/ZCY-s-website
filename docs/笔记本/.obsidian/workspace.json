@@ -11,12 +11,14 @@
             "id": "89180b62487a8062",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Research/Shuqi Zhao/1. ONE FROM INFINITY/2609.36413v3.pdf"
+                "file": "CS182 深度神经网络/Lecture/Part 3 GNN/GNN.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "2609.36413v3"
+              "icon": "lucide-file",
+              "title": "GNN"
             }
           },
           {
@@ -202,11 +204,12 @@
   },
   "active": "89180b62487a8062",
   "lastOpenFiles": [
-    "Research/Shuqi Zhao/1. ONE FROM INFINITY/生词.md",
+    "CS182 深度神经网络/Lecture/Part 3 GNN/12_fa26.pdf",
+    "CS182 深度神经网络/Lecture/Part 3 GNN/GNN.md",
     "Research/Shuqi Zhao/1. ONE FROM INFINITY/2609.36413v3.pdf",
+    "Research/Shuqi Zhao/1. ONE FROM INFINITY/生词.md",
     "Research/Shuqi Zhao/1. ONE FROM INFINITY/问题.md",
     "Research/Koushil Sreenath/3. MAPush/问题.md",
-    "CS182 深度神经网络/Lecture/Part 3 GNN/12_fa26.pdf",
     "Research/Shuqi Zhao/3. Dexctrl/2505.00991v1.pdf",
     "Research/Shuqi Zhao/3. Dexctrl/未确认 629843.crdownload",
     "Research/Shuqi Zhao/3. Dexctrl",
@@ -246,7 +249,6 @@
     "Research/Dan Wang老师/3. ScrewSplat/总结.md",
     "Research/Dan Wang老师/3. ScrewSplat/问题.md",
     "Research/Dan Wang老师/3. ScrewSplat/生词.md",
-    "Research/Dan Wang老师/2. REArtGS++/问题.md",
     "Research/Dan Wang/未命名.canvas"
   ]
 }
