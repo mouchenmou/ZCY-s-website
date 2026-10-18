@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS188/3. RL.md",
+                "file": "CS188/4. Probability.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3. RL"
+              "title": "4. Probability"
             }
           },
           {
@@ -202,11 +202,12 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "89180b62487a8062",
+  "active": "2a6816d11ffda768",
   "lastOpenFiles": [
-    "CS188/2. Game Trees and MDP.md",
     "CS188/3. RL.md",
     "CS188/1. Search and CSP.md",
+    "CS188/4. Probability.md",
+    "CS188/2. Game Trees and MDP.md",
     "CS182 深度神经网络/Lecture/Part 3 GNN/GNN.md",
     "CS188",
     "CS182 深度神经网络/Lecture/Part 3 GNN/12_fa26.pdf",
@@ -249,7 +250,6 @@
     "Research/Dan Wang老师/4. Neural Implicit Representation/问题.md",
     "Research/Dan Wang老师/2. REArtGS++/生词.md",
     "Research/Dan Wang老师/1. VideoArtGS/问题.md",
-    "Research/Dan Wang老师/3. ScrewSplat/总结.md",
     "Research/Dan Wang/未命名.canvas"
   ]
 }
