@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS188/4. Probability.md",
+                "file": "CS188/3. RL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4. Probability"
+              "title": "3. RL"
             }
           },
           {
@@ -202,12 +202,12 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "2a6816d11ffda768",
+  "active": "89180b62487a8062",
   "lastOpenFiles": [
-    "CS188/3. RL.md",
-    "CS188/1. Search and CSP.md",
-    "CS188/4. Probability.md",
     "CS188/2. Game Trees and MDP.md",
+    "CS188/3. RL.md",
+    "CS188/4. Probability.md",
+    "CS188/1. Search and CSP.md",
     "CS182 深度神经网络/Lecture/Part 3 GNN/GNN.md",
     "CS188",
     "CS182 深度神经网络/Lecture/Part 3 GNN/12_fa26.pdf",
