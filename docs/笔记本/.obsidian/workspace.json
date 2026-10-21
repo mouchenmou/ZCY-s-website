@@ -11,14 +11,12 @@
             "id": "89180b62487a8062",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "CS188/3. RL.md",
-                "mode": "source",
-                "source": false
+                "file": "CS182 深度神经网络/Homework/HW05/hw05_question.pdf"
               },
-              "icon": "lucide-file",
-              "title": "3. RL"
+              "icon": "lucide-file-text",
+              "title": "hw05_question"
             }
           },
           {
@@ -124,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS231n/1. Deep Learning Basic/Python 和 Numpy.md",
+                "file": "CS182 深度神经网络/Homework/HW05/hw05_question.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +132,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Python 和 Numpy 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
@@ -185,8 +183,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -204,27 +201,32 @@
   },
   "active": "89180b62487a8062",
   "lastOpenFiles": [
+    "CS182 深度神经网络/Homework/HW04/hw04_solution.pdf",
+    "CS182 深度神经网络/Homework/HW04/cs182(2).pdf",
     "CS188/2. Game Trees and MDP.md",
+    "CS188/附件/Pasted image 20261020222735.png",
+    "CS188/附件",
+    "CS188/1. Search and CSP.md",
+    "CS182 深度神经网络/Homework/HW05/hw05_solution.pdf",
+    "CS182 深度神经网络/Homework/HW05/未确认 277800.crdownload",
+    "CS182 深度神经网络/Homework/HW05/hw05_question.pdf",
+    "CS182 深度神经网络/Homework/HW05/未确认 807780.crdownload",
+    "CS182 深度神经网络/Homework/HW05",
+    "CS182 深度神经网络/Homework/新建文件夹",
+    "Research/Shuqi Zhao/1. ONE FROM INFINITY/2609.36413v3.pdf",
+    "Research/Shuqi Zhao/1. ONE FROM INFINITY/问题.md",
+    "Research/Shuqi Zhao/1. ONE FROM INFINITY/生词.md",
+    "Research/Dan Wang老师/1. VideoArtGS/问题.md",
+    "Research/Dan Wang老师/1. VideoArtGS/3D Gaussian.md",
+    "Research/Dan Wang老师/1. VideoArtGS/生词.md",
+    "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 8 Maximal Update Parameterization.md",
+    "CS182 深度神经网络/Lecture/Part 2 CNN/Lecture 9&10.md",
     "CS188/3. RL.md",
     "CS188/4. Probability.md",
-    "CS188/1. Search and CSP.md",
     "CS182 深度神经网络/Lecture/Part 3 GNN/GNN.md",
-    "CS188",
-    "CS182 深度神经网络/Lecture/Part 3 GNN/12_fa26.pdf",
-    "Research/Shuqi Zhao/1. ONE FROM INFINITY/2609.36413v3.pdf",
-    "Research/Shuqi Zhao/1. ONE FROM INFINITY/生词.md",
-    "Research/Shuqi Zhao/1. ONE FROM INFINITY/问题.md",
     "Research/Koushil Sreenath/3. MAPush/问题.md",
-    "Research/Shuqi Zhao/3. Dexctrl/2505.00991v1.pdf",
-    "Research/Shuqi Zhao/3. Dexctrl/未确认 629843.crdownload",
-    "Research/Shuqi Zhao/3. Dexctrl",
-    "Research/Shuqi Zhao/2. Grounding Generated Video Plans/2609.10050v2.pdf",
-    "Research/Shuqi Zhao/2. Grounding Generated Video Plans/未确认 437770.crdownload",
-    "Research/Shuqi Zhao/2. Grounding Generated Video Plans",
-    "Research/Shuqi Zhao/1. ONE FROM INFINITY/未确认 921142.crdownload",
     "Research/Koushil Sreenath/3. MAPush/生词.md",
     "Research/Koushil Sreenath/3. MAPush/附件/Pasted image 20261014145322.png",
-    "Research/Dan Wang老师/1. VideoArtGS/3D Gaussian.md",
     "CS182 深度神经网络/Lecture/Part 2 CNN/Lecture 11 ResNets, Normalization & U-Nets.md",
     "CS182 深度神经网络/Lecture/Part 2 CNN/附件/Pasted image 20261014011751.png",
     "Research/Koushil Sreenath/1. PhysicsFC/问题.md",
@@ -236,9 +238,6 @@
     "CS182 深度神经网络/Lecture/Part 2 CNN/附件/Pasted image 20261014003324.png",
     "CS182 深度神经网络/Lecture/Part 2 CNN/附件/Pasted image 20261014003103.png",
     "Research/Koushil Sreenath/1. PhysicsFC/生词.md",
-    "CS182 深度神经网络/Lecture/Part 2 CNN/附件/Pasted image 20261013191905.png",
-    "CS182 深度神经网络/Lecture/Part 2 CNN/Lecture 9&10.md",
-    "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 8 Maximal Update Parameterization.md",
     "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 7 RMS RMS norm, Maximal update parameterization.md",
     "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 2&3 Optimization.md",
     "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 1 Basic Principles.md",
@@ -247,9 +246,6 @@
     "Research/Dan Wang老师/4. Neural Implicit Representation/Summarize.md",
     "CS182 深度神经网络/Lecutre/Lecture 7 RMS RMS norm, Maximal update parameterization.md",
     "CS182 深度神经网络/Lecutre/Lecture 8 Maximal Update Parameterization.md",
-    "Research/Dan Wang老师/4. Neural Implicit Representation/问题.md",
-    "Research/Dan Wang老师/2. REArtGS++/生词.md",
-    "Research/Dan Wang老师/1. VideoArtGS/问题.md",
     "Research/Dan Wang/未命名.canvas"
   ]
 }
