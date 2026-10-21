@@ -23,14 +23,12 @@
             "id": "16531649b7823d47",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Research/Shuqi Zhao/1. ONE FROM INFINITY/生词.md",
-                "mode": "source",
-                "source": false
+                "file": "CS182 深度神经网络/Homework/HW05/hw05_solution.pdf"
               },
-              "icon": "lucide-file",
-              "title": "生词"
+              "icon": "lucide-file-text",
+              "title": "hw05_solution"
             }
           },
           {
@@ -47,7 +45,8 @@
               "title": "问题"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -122,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS182 深度神经网络/Homework/HW05/hw05_question.pdf",
+                "file": "CS182 深度神经网络/Homework/HW05/hw05_solution.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,8 +198,10 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "89180b62487a8062",
+  "active": "16531649b7823d47",
   "lastOpenFiles": [
+    "Research/Shuqi Zhao/1. ONE FROM INFINITY/生词.md",
+    "CS182 深度神经网络/Homework/HW05/hw05_question.pdf",
     "CS182 深度神经网络/Homework/HW04/hw04_solution.pdf",
     "CS182 深度神经网络/Homework/HW04/cs182(2).pdf",
     "CS188/2. Game Trees and MDP.md",
@@ -209,13 +210,11 @@
     "CS188/1. Search and CSP.md",
     "CS182 深度神经网络/Homework/HW05/hw05_solution.pdf",
     "CS182 深度神经网络/Homework/HW05/未确认 277800.crdownload",
-    "CS182 深度神经网络/Homework/HW05/hw05_question.pdf",
     "CS182 深度神经网络/Homework/HW05/未确认 807780.crdownload",
     "CS182 深度神经网络/Homework/HW05",
     "CS182 深度神经网络/Homework/新建文件夹",
     "Research/Shuqi Zhao/1. ONE FROM INFINITY/2609.36413v3.pdf",
     "Research/Shuqi Zhao/1. ONE FROM INFINITY/问题.md",
-    "Research/Shuqi Zhao/1. ONE FROM INFINITY/生词.md",
     "Research/Dan Wang老师/1. VideoArtGS/问题.md",
     "Research/Dan Wang老师/1. VideoArtGS/3D Gaussian.md",
     "Research/Dan Wang老师/1. VideoArtGS/生词.md",
