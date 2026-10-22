@@ -59,8 +59,7 @@
               "title": "Lecture 7 RMS RMS norm, Maximal update parameterization"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -135,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS182 深度神经网络/Homework/HW05/hw05_solution.pdf",
+                "file": "CS182 深度神经网络/Homework/HW05/hw05_question.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -212,10 +211,10 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "16531649b7823d47",
+  "active": "89180b62487a8062",
   "lastOpenFiles": [
-    "CS182 深度神经网络/Homework/HW05/hw05_question.pdf",
     "CS182 深度神经网络/Homework/HW05/hw05_solution.pdf",
+    "CS182 深度神经网络/Homework/HW05/hw05_question.pdf",
     "CS182 深度神经网络/Homework/HW05/查漏补缺.md",
     "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 7 RMS RMS norm, Maximal update parameterization.md",
     "CS70/Lecture/Lecture 3 Induction/Induction.md",
