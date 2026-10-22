@@ -37,12 +37,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Research/Shuqi Zhao/1. ONE FROM INFINITY/问题.md",
+                "file": "CS182 深度神经网络/Homework/HW05/查漏补缺.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "问题"
+              "title": "查漏补缺"
+            }
+          },
+          {
+            "id": "a436dc90c98cb110",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 7 RMS RMS norm, Maximal update parameterization.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Lecture 7 RMS RMS norm, Maximal update parameterization"
             }
           }
         ],
@@ -202,6 +216,12 @@
   "lastOpenFiles": [
     "CS182 深度神经网络/Homework/HW05/hw05_question.pdf",
     "CS182 深度神经网络/Homework/HW05/hw05_solution.pdf",
+    "CS182 深度神经网络/Homework/HW05/查漏补缺.md",
+    "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 7 RMS RMS norm, Maximal update parameterization.md",
+    "CS70/Lecture/Lecture 3 Induction/Induction.md",
+    "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 2&3 Optimization.md",
+    "Research/Shuqi Zhao/1. ONE FROM INFINITY/问题.md",
+    "未命名.md",
     "Research/Shuqi Zhao/1. ONE FROM INFINITY/生词.md",
     "CS182 深度神经网络/Homework/HW04/hw04_solution.pdf",
     "CS182 深度神经网络/Homework/HW04/cs182(2).pdf",
@@ -214,7 +234,6 @@
     "CS182 深度神经网络/Homework/HW05",
     "CS182 深度神经网络/Homework/新建文件夹",
     "Research/Shuqi Zhao/1. ONE FROM INFINITY/2609.36413v3.pdf",
-    "Research/Shuqi Zhao/1. ONE FROM INFINITY/问题.md",
     "Research/Dan Wang老师/1. VideoArtGS/问题.md",
     "Research/Dan Wang老师/1. VideoArtGS/3D Gaussian.md",
     "Research/Dan Wang老师/1. VideoArtGS/生词.md",
@@ -237,14 +256,9 @@
     "CS182 深度神经网络/Lecture/Part 2 CNN/附件/Pasted image 20261014003324.png",
     "CS182 深度神经网络/Lecture/Part 2 CNN/附件/Pasted image 20261014003103.png",
     "Research/Koushil Sreenath/1. PhysicsFC/生词.md",
-    "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 7 RMS RMS norm, Maximal update parameterization.md",
-    "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 2&3 Optimization.md",
     "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 1 Basic Principles.md",
     "Research/Koushil Sreenath/2. Toward Real-World/问题.md",
     "Research/Koushil Sreenath/2. Toward Real-World/生词.md",
-    "Research/Dan Wang老师/4. Neural Implicit Representation/Summarize.md",
-    "CS182 深度神经网络/Lecutre/Lecture 7 RMS RMS norm, Maximal update parameterization.md",
-    "CS182 深度神经网络/Lecutre/Lecture 8 Maximal Update Parameterization.md",
     "Research/Dan Wang/未命名.canvas"
   ]
 }
