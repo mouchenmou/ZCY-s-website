@@ -13,10 +13,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "CS182 深度神经网络/Homework/HW05/hw05_question.pdf"
+                "file": "CS182 深度神经网络/Homework/HW06/hw06_solution.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "hw05_question"
+              "title": "hw06_solution"
             }
           },
           {
@@ -25,10 +25,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "CS182 深度神经网络/Homework/HW05/COMPSCI_182_homework_05.pdf"
+                "file": "CS182 深度神经网络/Homework/HW06/hw06_question.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "COMPSCI_182_homework_05"
+              "title": "hw06_question"
             }
           },
           {
@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS182 深度神经网络/Homework/HW05/COMPSCI_182_homework_05.pdf",
+                "file": "CS182 深度神经网络/Homework/HW06/hw06_question.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -196,7 +196,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -214,12 +215,17 @@
   },
   "active": "16531649b7823d47",
   "lastOpenFiles": [
-    "CS182 深度神经网络/Homework/HW05/hw05_solution.pdf",
-    "CS182 深度神经网络/Homework/HW05/COMPSCI_182_homework_05.pdf",
-    "CS182 深度神经网络/Homework/HW05/HandDesignFilters.ipynb - Colab.pdf",
+    "CS182 深度神经网络/Homework/HW06/hw06_solution.pdf",
+    "CS182 深度神经网络/Homework/HW06/hw06_question.pdf",
     "CS182 深度神经网络/Homework/HW05/查漏补缺.md",
-    "CS182 深度神经网络/Homework/HW05/cs182(4).pdf",
     "CS182 深度神经网络/Homework/HW05/hw05_question.pdf",
+    "CS182 深度神经网络/tmp/pdfs/02-5.png",
+    "CS182 深度神经网络/tmp/pdfs/02-2.png",
+    "CS182 深度神经网络/tmp/pdfs/02-1.png",
+    "CS182 深度神经网络/Homework/HW05/COMPSCI_182_homework_05.pdf",
+    "CS182 深度神经网络/Homework/HW05/hw05_solution.pdf",
+    "CS182 深度神经网络/Homework/HW05/HandDesignFilters.ipynb - Colab.pdf",
+    "CS182 深度神经网络/Homework/HW05/cs182(4).pdf",
     "CS182 深度神经网络/Homework/HW05/tmp/pdfs/contact-sheet.png",
     "CS182 深度神经网络/Homework/HW05/tmp/pdfs/rendered/page-8.png",
     "CS182 深度神经网络/Homework/HW05/tmp/pdfs/rendered/page-7.png",
@@ -227,13 +233,9 @@
     "CS182 深度神经网络/Homework/HW05/tmp/pdfs/rendered/page-5.png",
     "CS182 深度神经网络/Homework/HW05/tmp/pdfs/rendered/page-4.png",
     "CS182 深度神经网络/Homework/HW05/tmp/pdfs/rendered/page-3.png",
-    "CS182 深度神经网络/Homework/HW05/tmp/pdfs/rendered/page-2.png",
-    "CS182 深度神经网络/Homework/HW05/tmp/pdfs/rendered/page-1.png",
     "CS182 深度神经网络/Homework/HW05/tmp/pdfs/rendered",
     "CS182 深度神经网络/Homework/HW05/tmp/pdfs",
     "CS182 深度神经网络/Homework/HW05/tmp",
-    "CS182 深度神经网络/Homework/HW05/output/pdf",
-    "CS182 深度神经网络/Homework/HW05/output",
     "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 7 RMS RMS norm, Maximal update parameterization.md",
     "CS70/Lecture/Lecture 3 Induction/Induction.md",
     "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 2&3 Optimization.md",
@@ -241,7 +243,6 @@
     "未命名.md",
     "Research/Shuqi Zhao/1. ONE FROM INFINITY/生词.md",
     "CS188/2. Game Trees and MDP.md",
-    "CS188/附件/Pasted image 20261020222735.png",
     "CS188/1. Search and CSP.md",
     "Research/Dan Wang老师/1. VideoArtGS/问题.md",
     "Research/Dan Wang老师/1. VideoArtGS/3D Gaussian.md",
