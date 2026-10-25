@@ -32,6 +32,20 @@
             }
           },
           {
+            "id": "419d061753243b30",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Robotics Research/机器人运动学/4. 机械臂几何描述与运动学（Robot Arm Geometry & Kinematics）.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "4. 机械臂几何描述与运动学（Robot Arm Geometry & Kinematics）"
+            }
+          },
+          {
             "id": "38cc797cbf179e1c",
             "type": "leaf",
             "state": {
@@ -60,7 +74,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,7 +124,10 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-bookmark",
               "title": "书签"
             }
@@ -213,10 +230,23 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "16531649b7823d47",
+  "active": "419d061753243b30",
   "lastOpenFiles": [
-    "CS182 深度神经网络/Homework/HW06/hw06_solution.pdf",
+    "Robotics Research/机器人运动学/3. Homogeneous Transformation Matrix（齐次变换矩阵）.md",
+    "Robotics Research/机器人运动学/2. 两种旋转方法.md",
+    "Robotics Research/机器人运动学/1. 旋转矩阵.md",
+    "Robotics Research/机器人运动学/4. 机械臂几何描述与运动学（Robot Arm Geometry & Kinematics）.md",
+    "Robotics Research/机器人运动学/附件/Pasted image 20261024230219.png",
+    "Robotics Research/机器人运动学/附件",
+    "Robotics Research/机器人运动学/4. Robot Arm Geometry and DH（机械臂几何描述与 DH 参数）.md",
+    "Robotics Research/机器人运动学/4..md",
+    "未命名 1.md",
+    "Robotics Research/机器人运动学",
+    "Robotics Research",
+    "未命名.md",
+    "未命名",
     "CS182 深度神经网络/Homework/HW06/hw06_question.pdf",
+    "CS182 深度神经网络/Homework/HW06/hw06_solution.pdf",
     "CS182 深度神经网络/Homework/HW05/查漏补缺.md",
     "CS182 深度神经网络/Homework/HW05/hw05_question.pdf",
     "CS182 深度神经网络/tmp/pdfs/02-5.png",
@@ -225,22 +255,16 @@
     "CS182 深度神经网络/Homework/HW05/COMPSCI_182_homework_05.pdf",
     "CS182 深度神经网络/Homework/HW05/hw05_solution.pdf",
     "CS182 深度神经网络/Homework/HW05/HandDesignFilters.ipynb - Colab.pdf",
-    "CS182 深度神经网络/Homework/HW05/cs182(4).pdf",
     "CS182 深度神经网络/Homework/HW05/tmp/pdfs/contact-sheet.png",
     "CS182 深度神经网络/Homework/HW05/tmp/pdfs/rendered/page-8.png",
     "CS182 深度神经网络/Homework/HW05/tmp/pdfs/rendered/page-7.png",
     "CS182 深度神经网络/Homework/HW05/tmp/pdfs/rendered/page-6.png",
     "CS182 深度神经网络/Homework/HW05/tmp/pdfs/rendered/page-5.png",
     "CS182 深度神经网络/Homework/HW05/tmp/pdfs/rendered/page-4.png",
-    "CS182 深度神经网络/Homework/HW05/tmp/pdfs/rendered/page-3.png",
-    "CS182 深度神经网络/Homework/HW05/tmp/pdfs/rendered",
-    "CS182 深度神经网络/Homework/HW05/tmp/pdfs",
-    "CS182 深度神经网络/Homework/HW05/tmp",
     "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 7 RMS RMS norm, Maximal update parameterization.md",
     "CS70/Lecture/Lecture 3 Induction/Induction.md",
     "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 2&3 Optimization.md",
     "Research/Shuqi Zhao/1. ONE FROM INFINITY/问题.md",
-    "未命名.md",
     "Research/Shuqi Zhao/1. ONE FROM INFINITY/生词.md",
     "CS188/2. Game Trees and MDP.md",
     "CS188/1. Search and CSP.md",
@@ -253,13 +277,6 @@
     "CS188/4. Probability.md",
     "CS182 深度神经网络/Lecture/Part 3 GNN/GNN.md",
     "Research/Koushil Sreenath/3. MAPush/问题.md",
-    "Research/Koushil Sreenath/3. MAPush/生词.md",
-    "CS182 深度神经网络/Lecture/Part 2 CNN/Lecture 11 ResNets, Normalization & U-Nets.md",
-    "Research/Koushil Sreenath/1. PhysicsFC/问题.md",
-    "Research/Koushil Sreenath/1. PhysicsFC/生词.md",
-    "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 1 Basic Principles.md",
-    "Research/Koushil Sreenath/2. Toward Real-World/问题.md",
-    "Research/Koushil Sreenath/2. Toward Real-World/生词.md",
     "Research/Dan Wang/未命名.canvas"
   ]
 }
