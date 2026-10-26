@@ -8,31 +8,43 @@
         "type": "tabs",
         "children": [
           {
-            "id": "89180b62487a8062",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "CS182 深度神经网络/Homework/HW06/hw06_solution.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "hw06_solution"
-            }
-          },
-          {
-            "id": "16531649b7823d47",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "CS182 深度神经网络/Homework/HW06/hw06_question.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "hw06_question"
-            }
-          },
-          {
             "id": "419d061753243b30",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Robotics Research/机器人运动学/附件/01_Joint_Link_Axis.png"
+              },
+              "icon": "lucide-image",
+              "title": "01_Joint_Link_Axis"
+            }
+          },
+          {
+            "id": "42b1b07a2ec2a4d7",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Robotics Research/机器人运动学/附件/02_DH_Parameters_Overview.png"
+              },
+              "icon": "lucide-image",
+              "title": "02_DH_Parameters_Overview"
+            }
+          },
+          {
+            "id": "fd93b5820f79636c",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Robotics Research/机器人运动学/附件/03_DH_Parameters_Closeup.png"
+              },
+              "icon": "lucide-image",
+              "title": "03_DH_Parameters_Closeup"
+            }
+          },
+          {
+            "id": "eaadd6734e9d3e3b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -44,37 +56,9 @@
               "icon": "lucide-file",
               "title": "4. 机械臂几何描述与运动学（Robot Arm Geometry & Kinematics）"
             }
-          },
-          {
-            "id": "38cc797cbf179e1c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS182 深度神经网络/Homework/HW05/查漏补缺.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "查漏补缺"
-            }
-          },
-          {
-            "id": "a436dc90c98cb110",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 7 RMS RMS norm, Maximal update parameterization.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Lecture 7 RMS RMS norm, Maximal update parameterization"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -108,7 +92,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Robotics",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -230,12 +214,23 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "419d061753243b30",
+  "active": "2a6816d11ffda768",
   "lastOpenFiles": [
+    "Robotics Research/机器人运动学/附件/01_Joint_Link_Axis.png",
+    "Robotics Research/机器人运动学/附件/03_DH_Parameters_Closeup.png",
+    "Robotics Research/机器人运动学/附件/02_DH_Parameters_Overview.png",
+    "Robotics Research/机器人运动学/4. 机械臂几何描述与运动学（Robot Arm Geometry & Kinematics）.md",
+    "Robotics Research/机器人运动学/4. 机械臂几何描述与运动学（Robot Arm Geometry & Kinematics）.md",
+    "Robotics Research/机器人运动学/附件/05_Craig_DH_Transform.png",
+    "Robotics Research/机器人运动学/附件/04_Craig_DH_Definitions.png",
+    "Robotics Research/机器人运动学/Robot_Arm_DH_Obsidian_With_Images/assets",
+    "Robotics Research/机器人运动学/Robot_Arm_DH_Obsidian_With_Images",
+    "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 7 RMS RMS norm, Maximal update parameterization.md",
+    "CS182 深度神经网络/Homework/HW06/hw06_question.pdf",
+    "CS182 深度神经网络/Homework/HW05/查漏补缺.md",
     "Robotics Research/机器人运动学/3. Homogeneous Transformation Matrix（齐次变换矩阵）.md",
     "Robotics Research/机器人运动学/2. 两种旋转方法.md",
     "Robotics Research/机器人运动学/1. 旋转矩阵.md",
-    "Robotics Research/机器人运动学/4. 机械臂几何描述与运动学（Robot Arm Geometry & Kinematics）.md",
     "Robotics Research/机器人运动学/附件/Pasted image 20261024230219.png",
     "Robotics Research/机器人运动学/附件",
     "Robotics Research/机器人运动学/4. Robot Arm Geometry and DH（机械臂几何描述与 DH 参数）.md",
@@ -245,23 +240,13 @@
     "Robotics Research",
     "未命名.md",
     "未命名",
-    "CS182 深度神经网络/Homework/HW06/hw06_question.pdf",
     "CS182 深度神经网络/Homework/HW06/hw06_solution.pdf",
-    "CS182 深度神经网络/Homework/HW05/查漏补缺.md",
     "CS182 深度神经网络/Homework/HW05/hw05_question.pdf",
     "CS182 深度神经网络/tmp/pdfs/02-5.png",
     "CS182 深度神经网络/tmp/pdfs/02-2.png",
     "CS182 深度神经网络/tmp/pdfs/02-1.png",
     "CS182 深度神经网络/Homework/HW05/COMPSCI_182_homework_05.pdf",
-    "CS182 深度神经网络/Homework/HW05/hw05_solution.pdf",
-    "CS182 深度神经网络/Homework/HW05/HandDesignFilters.ipynb - Colab.pdf",
     "CS182 深度神经网络/Homework/HW05/tmp/pdfs/contact-sheet.png",
-    "CS182 深度神经网络/Homework/HW05/tmp/pdfs/rendered/page-8.png",
-    "CS182 深度神经网络/Homework/HW05/tmp/pdfs/rendered/page-7.png",
-    "CS182 深度神经网络/Homework/HW05/tmp/pdfs/rendered/page-6.png",
-    "CS182 深度神经网络/Homework/HW05/tmp/pdfs/rendered/page-5.png",
-    "CS182 深度神经网络/Homework/HW05/tmp/pdfs/rendered/page-4.png",
-    "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 7 RMS RMS norm, Maximal update parameterization.md",
     "CS70/Lecture/Lecture 3 Induction/Induction.md",
     "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 2&3 Optimization.md",
     "Research/Shuqi Zhao/1. ONE FROM INFINITY/问题.md",
@@ -276,7 +261,6 @@
     "CS188/3. RL.md",
     "CS188/4. Probability.md",
     "CS182 深度神经网络/Lecture/Part 3 GNN/GNN.md",
-    "Research/Koushil Sreenath/3. MAPush/问题.md",
     "Research/Dan Wang/未命名.canvas"
   ]
 }
