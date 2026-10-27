@@ -11,14 +11,12 @@
             "id": "bb400b9092b085e8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Robotics Research/ROS2/1. 节点 Node.md",
-                "mode": "source",
-                "source": false
+                "file": "CS182 深度神经网络/Homework/HW06/hw06_solution.pdf"
               },
-              "icon": "lucide-file",
-              "title": "1. 节点 Node"
+              "icon": "lucide-file-text",
+              "title": "hw06_solution"
             }
           }
         ]
@@ -179,6 +177,15 @@
   },
   "active": "bb400b9092b085e8",
   "lastOpenFiles": [
+    "CS182 深度神经网络/Homework/HW06/hw06_question.pdf",
+    "CS182 深度神经网络/Homework/HW06/hw06_solution.pdf",
+    "CS182 深度神经网络/Homework/HW05/hw05_question.pdf",
+    "CS182 深度神经网络/Homework/HW05/hw05_solution.pdf",
+    "CS182 深度神经网络/Homework/HW05/tmp/pdfs/contact-sheet.png",
+    "CS182 深度神经网络/Homework/HW05/tmp/pdfs/rendered/page-4.png",
+    "CS182 深度神经网络/Homework/HW05/tmp/pdfs/rendered/page-2.png",
+    "CS231n/3. Generative and Interactive Visual Intelligence/Lecture 12 Self-supervised Learning.md",
+    "Robotics Research/ROS2/1. 节点 Node.md",
     "Robotics Research/机器人运动学/5. 机器人逆运动学（Inverse Kinematics）.md",
     "Robotics Research/机器人运动学/1. 旋转矩阵.md"
   ]
