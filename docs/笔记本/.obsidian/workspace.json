@@ -1,50 +1,14 @@
 {
   "main": {
-    "id": "20cdb5f48a4f572f",
+    "id": "9b58ea59fdc61e4a",
     "type": "split",
     "children": [
       {
-        "id": "9a12381940f85bfc",
+        "id": "1be2720314e7627a",
         "type": "tabs",
         "children": [
           {
-            "id": "419d061753243b30",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Robotics Research/机器人运动学/附件/01_Joint_Link_Axis.png"
-              },
-              "icon": "lucide-image",
-              "title": "01_Joint_Link_Axis"
-            }
-          },
-          {
-            "id": "42b1b07a2ec2a4d7",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Robotics Research/机器人运动学/附件/02_DH_Parameters_Overview.png"
-              },
-              "icon": "lucide-image",
-              "title": "02_DH_Parameters_Overview"
-            }
-          },
-          {
-            "id": "fd93b5820f79636c",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Robotics Research/机器人运动学/附件/03_DH_Parameters_Closeup.png"
-              },
-              "icon": "lucide-image",
-              "title": "03_DH_Parameters_Closeup"
-            }
-          },
-          {
-            "id": "eaadd6734e9d3e3b",
+            "id": "bb400b9092b085e8",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -57,22 +21,21 @@
               "title": "1. 节点 Node"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "03b73d4c0b73d084",
+    "id": "4cf5309926d55131",
     "type": "split",
     "children": [
       {
-        "id": "b8ad37fd40cf733e",
+        "id": "d420d682defa66ba",
         "type": "tabs",
         "children": [
           {
-            "id": "2a6816d11ffda768",
+            "id": "28b1ac81b96a44d4",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -87,12 +50,12 @@
             }
           },
           {
-            "id": "a1916464f5ff6d6b",
+            "id": "78f457acab42fb67",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Robotics",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -104,7 +67,7 @@
             }
           },
           {
-            "id": "e27893ec97181242",
+            "id": "7078332b1be548f3",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -120,23 +83,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "3e3804ba2af637db",
+    "id": "eb6ef88025f02c89",
     "type": "split",
     "children": [
       {
-        "id": "78b2415f5148d95d",
+        "id": "abad1e954a68ae70",
         "type": "tabs",
         "children": [
           {
-            "id": "bd6f40d18a26e32a",
+            "id": "6a2bbedc072c136a",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS182 深度神经网络/Homework/HW06/hw06_question.pdf",
+                "file": "Robotics Research/ROS2/1. 节点 Node.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,21 +113,21 @@
             }
           },
           {
-            "id": "01c1c426689d0a16",
+            "id": "805880c557339ba4",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS231n/1. Deep Learning Basic/Python 和 Numpy.md",
+                "file": "Robotics Research/ROS2/1. 节点 Node.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Python 和 Numpy 的出链列表"
+              "title": "出链"
             }
           },
           {
-            "id": "394cec06046913a3",
+            "id": "ed260459c02cb5a7",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -179,18 +142,18 @@
             }
           },
           {
-            "id": "bbd8357bad6bd7a5",
+            "id": "14b642d2cdbfe95c",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS231n/1. Deep Learning Basic/Python 和 Numpy.md",
+                "file": "Robotics Research/ROS2/1. 节点 Node.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Python 和 Numpy 的大纲"
+              "title": "大纲"
             }
           }
         ]
@@ -214,54 +177,9 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "eaadd6734e9d3e3b",
+  "active": "bb400b9092b085e8",
   "lastOpenFiles": [
-    "Robotics Research/ROS2/附件/Pasted image 20261027003352.png",
-    "Robotics Research/ROS2/附件/Pasted image 20261027003344.png",
-    "Robotics Research/ROS2/附件",
-    "Robotics Research/机器人运动学/4. 机械臂几何描述与运动学（Robot Arm Geometry & Kinematics）.md",
-    "Robotics Research/ROS2/1. 节点 Node.md",
-    "Robotics Research/ROS2",
-    "Robotics Research/机器人运动学/附件/01_Joint_Link_Axis.png",
-    "Robotics Research/机器人运动学/附件/03_DH_Parameters_Closeup.png",
-    "Robotics Research/机器人运动学/附件/02_DH_Parameters_Overview.png",
-    "Robotics Research/机器人运动学/附件/05_Craig_DH_Transform.png",
-    "Robotics Research/机器人运动学/附件/04_Craig_DH_Definitions.png",
-    "Robotics Research/机器人运动学/Robot_Arm_DH_Obsidian_With_Images/assets",
-    "Robotics Research/机器人运动学/Robot_Arm_DH_Obsidian_With_Images",
-    "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 7 RMS RMS norm, Maximal update parameterization.md",
-    "CS182 深度神经网络/Homework/HW06/hw06_question.pdf",
-    "CS182 深度神经网络/Homework/HW05/查漏补缺.md",
-    "Robotics Research/机器人运动学/3. Homogeneous Transformation Matrix（齐次变换矩阵）.md",
-    "Robotics Research/机器人运动学/2. 两种旋转方法.md",
-    "Robotics Research/机器人运动学/1. 旋转矩阵.md",
-    "Robotics Research/机器人运动学/附件/Pasted image 20261024230219.png",
-    "Robotics Research/机器人运动学/附件",
-    "Robotics Research/机器人运动学/4. Robot Arm Geometry and DH（机械臂几何描述与 DH 参数）.md",
-    "Robotics Research/机器人运动学/4..md",
-    "未命名 1.md",
-    "Robotics Research/机器人运动学",
-    "Robotics Research",
-    "未命名.md",
-    "未命名",
-    "CS182 深度神经网络/Homework/HW06/hw06_solution.pdf",
-    "CS182 深度神经网络/tmp/pdfs/02-5.png",
-    "CS182 深度神经网络/tmp/pdfs/02-2.png",
-    "CS182 深度神经网络/tmp/pdfs/02-1.png",
-    "CS70/Lecture/Lecture 3 Induction/Induction.md",
-    "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 2&3 Optimization.md",
-    "Research/Shuqi Zhao/1. ONE FROM INFINITY/问题.md",
-    "Research/Shuqi Zhao/1. ONE FROM INFINITY/生词.md",
-    "CS188/2. Game Trees and MDP.md",
-    "CS188/1. Search and CSP.md",
-    "Research/Dan Wang老师/1. VideoArtGS/问题.md",
-    "Research/Dan Wang老师/1. VideoArtGS/3D Gaussian.md",
-    "Research/Dan Wang老师/1. VideoArtGS/生词.md",
-    "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 8 Maximal Update Parameterization.md",
-    "CS182 深度神经网络/Lecture/Part 2 CNN/Lecture 9&10.md",
-    "CS188/3. RL.md",
-    "CS188/4. Probability.md",
-    "CS182 深度神经网络/Lecture/Part 3 GNN/GNN.md",
-    "Research/Dan Wang/未命名.canvas"
+    "Robotics Research/机器人运动学/5. 机器人逆运动学（Inverse Kinematics）.md",
+    "Robotics Research/机器人运动学/1. 旋转矩阵.md"
   ]
 }
