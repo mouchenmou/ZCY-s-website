@@ -49,12 +49,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Robotics Research/机器人运动学/4. 机械臂几何描述与运动学（Robot Arm Geometry & Kinematics）.md",
+                "file": "Robotics Research/ROS2/1. 节点 Node.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4. 机械臂几何描述与运动学（Robot Arm Geometry & Kinematics）"
+              "title": "1. 节点 Node"
             }
           }
         ],
@@ -214,13 +214,17 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "2a6816d11ffda768",
+  "active": "eaadd6734e9d3e3b",
   "lastOpenFiles": [
+    "Robotics Research/ROS2/附件/Pasted image 20261027003352.png",
+    "Robotics Research/ROS2/附件/Pasted image 20261027003344.png",
+    "Robotics Research/ROS2/附件",
+    "Robotics Research/机器人运动学/4. 机械臂几何描述与运动学（Robot Arm Geometry & Kinematics）.md",
+    "Robotics Research/ROS2/1. 节点 Node.md",
+    "Robotics Research/ROS2",
     "Robotics Research/机器人运动学/附件/01_Joint_Link_Axis.png",
     "Robotics Research/机器人运动学/附件/03_DH_Parameters_Closeup.png",
     "Robotics Research/机器人运动学/附件/02_DH_Parameters_Overview.png",
-    "Robotics Research/机器人运动学/4. 机械臂几何描述与运动学（Robot Arm Geometry & Kinematics）.md",
-    "Robotics Research/机器人运动学/4. 机械臂几何描述与运动学（Robot Arm Geometry & Kinematics）.md",
     "Robotics Research/机器人运动学/附件/05_Craig_DH_Transform.png",
     "Robotics Research/机器人运动学/附件/04_Craig_DH_Definitions.png",
     "Robotics Research/机器人运动学/Robot_Arm_DH_Obsidian_With_Images/assets",
@@ -241,12 +245,9 @@
     "未命名.md",
     "未命名",
     "CS182 深度神经网络/Homework/HW06/hw06_solution.pdf",
-    "CS182 深度神经网络/Homework/HW05/hw05_question.pdf",
     "CS182 深度神经网络/tmp/pdfs/02-5.png",
     "CS182 深度神经网络/tmp/pdfs/02-2.png",
     "CS182 深度神经网络/tmp/pdfs/02-1.png",
-    "CS182 深度神经网络/Homework/HW05/COMPSCI_182_homework_05.pdf",
-    "CS182 深度神经网络/Homework/HW05/tmp/pdfs/contact-sheet.png",
     "CS70/Lecture/Lecture 3 Induction/Induction.md",
     "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 2&3 Optimization.md",
     "Research/Shuqi Zhao/1. ONE FROM INFINITY/问题.md",
