@@ -13,22 +13,24 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "CS182 深度神经网络/Homework/HW07/hw07_solution.pdf"
+                "file": "Robotics Research/RL for Tracking/1. Grounding Generated Video Plans/GALATEA_paper.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "hw07_solution"
+              "title": "GALATEA_paper"
             }
           },
           {
             "id": "1579195db87e9b37",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "CS182 深度神经网络/Homework/HW07/hw07_question.pdf"
+                "file": "Robotics Research/RL for Tracking/1. Grounding Generated Video Plans/问题.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "hw07_question"
+              "icon": "lucide-file",
+              "title": "问题"
             }
           },
           {
@@ -37,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS182 深度神经网络/Homework/HW07/生词.md",
+                "file": "Robotics Research/RL for Tracking/1. Grounding Generated Video Plans/生词.md",
                 "mode": "source",
                 "source": false
               },
@@ -204,17 +206,19 @@
   },
   "active": "1579195db87e9b37",
   "lastOpenFiles": [
+    "Robotics Research/RL for Tracking/1. Grounding Generated Video Plans/GALATEA_paper.pdf",
+    "Robotics Research/RL for Tracking/1. Grounding Generated Video Plans/问题.md",
+    "Robotics Research/RL for Tracking/1. Grounding Generated Video Plans/生词.md",
     "CS182 深度神经网络/Homework/HW07/生词.md",
-    "CS182 深度神经网络/Homework/HW07/hw07_question.pdf",
     "CS182 深度神经网络/Homework/HW07/hw07_solution.pdf",
+    "Robotics Research/RL for Tracking/3. BeyondMimic/2508.08241v4.pdf",
+    "Robotics Research/RL for Tracking/2. SuperMinic/2610.28480v1.pdf",
+    "CS182 深度神经网络/Homework/HW07/hw07_question.pdf",
     "CS182 深度神经网络/Lecture/Part 3 GNN/12_fa26.pdf",
     "CS182 深度神经网络/Lecture/Part 3 GNN/GNN.md",
-    "Robotics Research/RL for Tracking/1. Grounding Generated Video Plans/GALATEA_paper.pdf",
     "Robotics Research/Cross Embodiment/4. DexGrasp/2603.16806v2.pdf",
     "Robotics Research/Cross Embodiment/4. DexGrasp/未确认 810459.crdownload",
     "Robotics Research/Cross Embodiment/4. DexGrasp",
-    "Robotics Research/Cross Embodiment/新建文件夹",
-    "Robotics Research/Cross Embodiment/3. Cross hand/xl-vla.pdf",
-    "Robotics Research/Cross Embodiment/3. Cross hand/未确认 12655.crdownload"
+    "Robotics Research/Cross Embodiment/新建文件夹"
   ]
 }
