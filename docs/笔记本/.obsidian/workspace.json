@@ -1,78 +1,51 @@
 {
   "main": {
-    "id": "20cdb5f48a4f572f",
+    "id": "18a6eb738a368fb5",
     "type": "split",
     "children": [
       {
-        "id": "9a12381940f85bfc",
+        "id": "7ff2ed06f93de99e",
         "type": "tabs",
         "children": [
           {
-            "id": "419d061753243b30",
+            "id": "0b70840a8b6739b6",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "pdf",
               "state": {
-                "file": "Robotics Research/机器人运动学/附件/01_Joint_Link_Axis.png"
+                "file": "CS182 深度神经网络/Homework/HW07/hw07_question.pdf"
               },
-              "icon": "lucide-image",
-              "title": "01_Joint_Link_Axis"
+              "icon": "lucide-file-text",
+              "title": "hw07_question"
             }
           },
           {
-            "id": "42b1b07a2ec2a4d7",
+            "id": "1579195db87e9b37",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "pdf",
               "state": {
-                "file": "Robotics Research/机器人运动学/附件/02_DH_Parameters_Overview.png"
+                "file": "CS182 深度神经网络/Homework/HW07/hw07_solution.pdf"
               },
-              "icon": "lucide-image",
-              "title": "02_DH_Parameters_Overview"
-            }
-          },
-          {
-            "id": "fd93b5820f79636c",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Robotics Research/机器人运动学/附件/03_DH_Parameters_Closeup.png"
-              },
-              "icon": "lucide-image",
-              "title": "03_DH_Parameters_Closeup"
-            }
-          },
-          {
-            "id": "eaadd6734e9d3e3b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Robotics Research/机器人运动学/5. 机器人逆运动学（Inverse Kinematics）.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "5. 机器人逆运动学（Inverse Kinematics）"
+              "icon": "lucide-file-text",
+              "title": "hw07_solution"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "03b73d4c0b73d084",
+    "id": "92e48c4887951745",
     "type": "split",
     "children": [
       {
-        "id": "b8ad37fd40cf733e",
+        "id": "49ff91b3a97f6339",
         "type": "tabs",
         "children": [
           {
-            "id": "2a6816d11ffda768",
+            "id": "124612a87b396ea7",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -87,12 +60,12 @@
             }
           },
           {
-            "id": "a1916464f5ff6d6b",
+            "id": "805d5af9a19d9f56",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Robotics",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -104,7 +77,7 @@
             }
           },
           {
-            "id": "e27893ec97181242",
+            "id": "d737011291be6f06",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -120,23 +93,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "3e3804ba2af637db",
+    "id": "4a872444f960435e",
     "type": "split",
     "children": [
       {
-        "id": "78b2415f5148d95d",
+        "id": "12b3eaf0fe2c64d9",
         "type": "tabs",
         "children": [
           {
-            "id": "bd6f40d18a26e32a",
+            "id": "1e4b9a644765ca7e",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS182 深度神经网络/Homework/HW06/hw06_question.pdf",
+                "file": "CS182 深度神经网络/Homework/HW07/hw07_question.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,21 +123,21 @@
             }
           },
           {
-            "id": "01c1c426689d0a16",
+            "id": "c48db5a7bede5427",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS231n/1. Deep Learning Basic/Python 和 Numpy.md",
+                "file": "CS182 深度神经网络/Homework/HW07/hw07_question.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Python 和 Numpy 的出链列表"
+              "title": "出链"
             }
           },
           {
-            "id": "394cec06046913a3",
+            "id": "d4816fe75b2d331b",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -179,18 +152,18 @@
             }
           },
           {
-            "id": "bbd8357bad6bd7a5",
+            "id": "098794d6b4c69105",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS231n/1. Deep Learning Basic/Python 和 Numpy.md",
+                "file": "CS182 深度神经网络/Homework/HW07/hw07_question.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Python 和 Numpy 的大纲"
+              "title": "大纲"
             }
           }
         ]
@@ -214,53 +187,15 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "2a6816d11ffda768",
+  "active": "0b70840a8b6739b6",
   "lastOpenFiles": [
-    "Robotics Research/机器人运动学/4. 机械臂几何描述与运动学（Robot Arm Geometry & Kinematics）.md",
-    "Robotics Research/机器人运动学/附件/IK_05_half_angle_substitution.png",
-    "Robotics Research/机器人运动学/附件/IK_04_eliminate_theta2.png",
-    "Robotics Research/机器人运动学/附件/IK_03_3D_f_g_coordinates.png",
-    "Robotics Research/机器人运动学/附件/IK_02_theta1_geometry.png",
-    "Robotics Research/机器人运动学/附件/IK_01_algebra_k1k2.png",
-    "Robotics Research/机器人运动学/Inverse_Kinematics_Obsidian/assets",
-    "Robotics Research/机器人运动学/5. 机器人逆运动学（Inverse Kinematics）.md",
-    "Robotics Research/机器人运动学/Inverse_Kinematics_Obsidian",
-    "Robotics Research/机器人运动学/Robot_Kinematics_Obsidian_Complete/Robot_Arm_Geometry_DH_and_Inverse_Kinematics.md",
-    "Robotics Research/机器人运动学/Robot_Kinematics_Obsidian_Complete/assets/IK_05_half_angle_substitution.png",
-    "Robotics Research/机器人运动学/Robot_Kinematics_Obsidian_Complete/assets/IK_04_eliminate_theta2.png",
-    "Robotics Research/机器人运动学/Robot_Kinematics_Obsidian_Complete/assets/IK_03_3D_f_g_coordinates.png",
-    "Robotics Research/机器人运动学/Robot_Kinematics_Obsidian_Complete/assets/IK_02_theta1_geometry.png",
-    "Robotics Research/机器人运动学/Robot_Kinematics_Obsidian_Complete/assets/IK_01_algebra_k1k2.png",
-    "Robotics Research/机器人运动学/Robot_Kinematics_Obsidian_Complete/assets",
-    "Robotics Research/机器人运动学/Robot_Kinematics_Obsidian_Complete",
-    "Robotics Research/机器人运动学/Robot_Arm_DH_Obsidian_With_Images/assets",
-    "Robotics Research/机器人运动学/Robot_Arm_DH_Obsidian_With_Images",
-    "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 7 RMS RMS norm, Maximal update parameterization.md",
+    "CS182 深度神经网络/Lecture/Part 3 GNN/GNN.md",
+    "CS182 深度神经网络/Homework/HW07/hw07_solution.pdf",
+    "CS182 深度神经网络/Homework/HW07/hw07_question.pdf",
+    "CS182 深度神经网络/Lecture/Part 4 RNN/13_rnn_fa26.pdf",
     "CS182 深度神经网络/Homework/HW06/hw06_question.pdf",
-    "CS182 深度神经网络/Homework/HW05/查漏补缺.md",
-    "Robotics Research/机器人运动学/3. Homogeneous Transformation Matrix（齐次变换矩阵）.md",
-    "Robotics Research/机器人运动学/2. 两种旋转方法.md",
-    "Robotics Research/机器人运动学/1. 旋转矩阵.md",
-    "Robotics Research/机器人运动学/附件",
-    "Robotics Research/机器人运动学/4. Robot Arm Geometry and DH（机械臂几何描述与 DH 参数）.md",
-    "Robotics Research/机器人运动学/4..md",
-    "未命名 1.md",
-    "Robotics Research/机器人运动学",
-    "Robotics Research",
-    "未命名.md",
-    "CS70/Lecture/Lecture 3 Induction/Induction.md",
-    "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 2&3 Optimization.md",
-    "Research/Shuqi Zhao/1. ONE FROM INFINITY/问题.md",
-    "Research/Shuqi Zhao/1. ONE FROM INFINITY/生词.md",
-    "CS188/2. Game Trees and MDP.md",
-    "CS188/1. Search and CSP.md",
-    "Research/Dan Wang老师/1. VideoArtGS/问题.md",
-    "Research/Dan Wang老师/1. VideoArtGS/3D Gaussian.md",
-    "Research/Dan Wang老师/1. VideoArtGS/生词.md",
-    "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 8 Maximal Update Parameterization.md",
-    "CS182 深度神经网络/Lecture/Part 2 CNN/Lecture 9&10.md",
-    "CS188/3. RL.md",
-    "CS188/4. Probability.md",
-    "Research/Dan Wang/未命名.canvas"
+    "CS182 深度神经网络/Homework/HW07",
+    "CS182 深度神经网络/Homework/未确认 656050.crdownload",
+    "CS182 深度神经网络/Homework/HW06/hw06_solution.pdf"
   ]
 }
