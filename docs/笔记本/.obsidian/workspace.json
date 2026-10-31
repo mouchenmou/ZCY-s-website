@@ -13,10 +13,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Robotics Research/RL for Tracking/1. Grounding Generated Video Plans/GALATEA_paper.pdf"
+                "file": "Robotics Research/RL for Tracking/2. SuperMinic/2610.28480v1.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "GALATEA_paper"
+              "title": "2610.28480v1"
             }
           },
           {
@@ -205,9 +205,10 @@
   },
   "active": "0b70840a8b6739b6",
   "lastOpenFiles": [
+    "Robotics Research/RL for Tracking/1. Grounding Generated Video Plans/GALATEA_III-B_阅读笔记与复现Ideas.md",
+    "Robotics Research/RL for Tracking/1. Grounding Generated Video Plans/GALATEA_paper.pdf",
     "Robotics Research/RL for Tracking/1. Grounding Generated Video Plans/生词.md",
     "Robotics Research/RL for Tracking/1. Grounding Generated Video Plans/问题.md",
-    "Robotics Research/RL for Tracking/1. Grounding Generated Video Plans/GALATEA_paper.pdf",
     "Robotics Research/Cross Embodiment/2. One hand to rule them all/2602.16712v2.pdf",
     "Robotics Research/Cross Embodiment/1. UMI-on-Air/umi-on-air.pdf",
     "Robotics Research/RL for Tracking/4. ManipTrans/2503.21860v1.pdf",
