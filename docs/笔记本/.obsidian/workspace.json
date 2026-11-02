@@ -11,14 +11,12 @@
             "id": "c9c410a6715f60a9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Robotics Research/RL for Tracking/2. SuperMinic/3. Method.md",
-                "mode": "source",
-                "source": false
+                "file": "CS182 深度神经网络/Lecture/Part 4 RNN/13_rnn_fa26.pdf"
               },
-              "icon": "lucide-file",
-              "title": "3. Method"
+              "icon": "lucide-file-text",
+              "title": "13_rnn_fa26"
             }
           },
           {
