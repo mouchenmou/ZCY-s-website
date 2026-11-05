@@ -1,0 +1,9 @@
+{
+  "mano_zip_bytes": 175200815,
+  "mano_zip_sha256": "50976831790ea9657d8110e0c94e50e90eaf35cd76169f0b27e5d32f3fcd951f",
+  "isaacgym_matches_official": {
+    "python/setup.py": true,
+    "python/isaacgym/_bindings/linux-x86_64/gym_38.so": true,
+    "python/isaacgym/_bindings/linux-x86_64/libPhysXGpu_64.so": true
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "checks/sm4_model.py": "6c488f341731ad8b10ce95f324df5c85665c12dbe95fc839a75d9ea9fa198614",
+  "checks/sm4_env.py": "4fc053696bd1dc256e5f8750121500907aacddc37669c02a8940908c1d299c75",
+  "checks/sm4_train.py": "300fcababce9622614d8a923327cd5248ee94d34932b2c46265c2808b3496446",
+  "checks/sm4_run.py": "7f58f4b020230ca7882fe4efc1a33e0d1a7e7217bc295182f5fddcb2bb618886",
+  "checks/sm4_eval.py": "5771de4b518f93f23ca5bb7c09f902efa0b750f273e625213f8431c8fc7d260e",
+  "experiments/supermimic4/PLAN.zh-CN.md": "ff86df64eef20f0e4fd6ea80399dece04189a04d390e6eff7619d11a9be08f42",
+  "experiments/wm4_200k/nested_groups.json": "b9ed29fc9a10d29a8da89804810680324c6a0e5c64e494ee1c3ebf16c28d74c1"
+}

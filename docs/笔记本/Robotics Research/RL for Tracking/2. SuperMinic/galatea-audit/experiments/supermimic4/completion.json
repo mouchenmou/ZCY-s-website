@@ -1,0 +1,9 @@
+{
+  "status": "four_short_loops_and_common_real_evaluation_complete",
+  "formal_training_started": false,
+  "next_requires_user_confirmation": "hours-long formal training",
+  "successes_each_policy": 0,
+  "evaluation_episodes_each_policy": 240,
+  "training_transitions_each_group": 30720,
+  "no_external_uploads": true
+}

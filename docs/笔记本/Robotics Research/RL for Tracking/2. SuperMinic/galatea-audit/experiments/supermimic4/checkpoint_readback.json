@@ -1,0 +1,58 @@
+{
+  "3": {
+    "actor": {
+      "optimizer_steps": 28,
+      "parameters_readable_finite": true
+    },
+    "wm": {
+      "optimizer_steps": 224,
+      "parameters_readable_finite": true
+    },
+    "critic": {
+      "optimizer_steps": 112,
+      "parameters_readable_finite": true
+    }
+  },
+  "12": {
+    "actor": {
+      "optimizer_steps": 28,
+      "parameters_readable_finite": true
+    },
+    "wm": {
+      "optimizer_steps": 224,
+      "parameters_readable_finite": true
+    },
+    "critic": {
+      "optimizer_steps": 112,
+      "parameters_readable_finite": true
+    }
+  },
+  "20": {
+    "actor": {
+      "optimizer_steps": 28,
+      "parameters_readable_finite": true
+    },
+    "wm": {
+      "optimizer_steps": 224,
+      "parameters_readable_finite": true
+    },
+    "critic": {
+      "optimizer_steps": 112,
+      "parameters_readable_finite": true
+    }
+  },
+  "30": {
+    "actor": {
+      "optimizer_steps": 28,
+      "parameters_readable_finite": true
+    },
+    "wm": {
+      "optimizer_steps": 224,
+      "parameters_readable_finite": true
+    },
+    "critic": {
+      "optimizer_steps": 112,
+      "parameters_readable_finite": true
+    }
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "groups": {
+    "3": [
+      "g16",
+      "g25",
+      "g26"
+    ],
+    "12": [
+      "g16",
+      "g25",
+      "g26",
+      "g19",
+      "g29",
+      "g34",
+      "g32",
+      "g17",
+      "g6",
+      "g13",
+      "g18",
+      "g27"
+    ],
+    "20": [
+      "g16",
+      "g25",
+      "g26",
+      "g19",
+      "g29",
+      "g34",
+      "g32",
+      "g17",
+      "g6",
+      "g13",
+      "g18",
+      "g27",
+      "g1",
+      "g12",
+      "g7",
+      "g4",
+      "g20",
+      "g8",
+      "g15",
+      "g28"
+    ],
+    "30": [
+      "g16",
+      "g25",
+      "g26",
+      "g19",
+      "g29",
+      "g34",
+      "g32",
+      "g17",
+      "g6",
+      "g13",
+      "g18",
+      "g27",
+      "g1",
+      "g12",
+      "g7",
+      "g4",
+      "g20",
+      "g8",
+      "g15",
+      "g28",
+      "g10",
+      "g5",
+      "g2",
+      "g31",
+      "g0",
+      "g23",
+      "g30",
+      "g24",
+      "g11",
+      "g21"
+    ]
+  },
+  "heldout_ids": [
+    "g3",
+    "g9",
+    "g14",
+    "g22",
+    "g33"
+  ],
+  "ordering": [
+    "g16",
+    "g25",
+    "g26",
+    "g19",
+    "g29",
+    "g34",
+    "g32",
+    "g17",
+    "g6",
+    "g13",
+    "g18",
+    "g27",
+    "g1",
+    "g12",
+    "g7",
+    "g4",
+    "g20",
+    "g8",
+    "g15",
+    "g28",
+    "g10",
+    "g5",
+    "g2",
+    "g31",
+    "g0",
+    "g23",
+    "g30",
+    "g24",
+    "g11",
+    "g21"
+  ],
+  "motion_sha256": {
+    "g0": "09c1ab4abd5cf667f3be029d90735ee948c082f03ed19773830dcebe3bb87dc2",
+    "g1": "cd87bf53d67907e0db82df5ca50782a41262583e749d72774da3cff50b83643d",
+    "g2": "a6fd5faeb13d24c3d5eb67594f21c7563b7fb878a84416449bdcd2609438a15b",
+    "g4": "bc918dd805b809ad1f4bd201dbee131bbad93431a39213099a4ddacceb82eeb0",
+    "g5": "30fd8c7d8abb7c84fc1ab2e5f07a2c9345197267ce6fbe5346132a0a276803e4",
+    "g6": "4a41bdc6a5b7ccd58dbb2489587da143e15176faacee2d2172a749b52912b324",
+    "g7": "5d33de7f94e5481a3c5186a15ab0440d2a8e590d2d36bdd64cfe3a6495db770d",
+    "g8": "d8763bfba06da97420c2e6d25e5488bb3cdb6eaeb53ec85daa17a4fe45dafe83",
+    "g10": "1a246ce9f2576346ecb1593649c2252c0002d6353099518db099e72302c8bbbf",
+    "g11": "49b85e27d9ca2b8ed51bbf2cb740869af0a2dce888250d74f737647e6e39b17e",
+    "g12": "c620dc5095c57643edefb813f8530ab75827921bc68202fd419c1df369dcc739",
+    "g13": "4fdcd96c9a2723c3ac3bd816f616c3a272e37cf29023674f489bb221667fe0ac",
+    "g15": "009caaae061a73380667e7a9b5a1f94beb1b86f480667f5eec4526468c86a1af",
+    "g16": "1bc68b937164bc0732cbb7739d6498cc76fff6db38d10d0fb748d80b79d7dacc",
+    "g17": "009ebd33e458ebdb52bb98b744b6a99645556a0292e0b1d8b5d012234bcf0415",
+    "g18": "0331d6491076e6a7d6778dc57c2f8d9eacbee1cdebcc1f93ad22fc7e730ec156",
+    "g19": "7e39a99788b4095b000c3f47407a38a8ea8441a71ffa955c26efc63c52a6935f",
+    "g20": "34a4fa74ef0470f886b15da54bbd2d648525ab5ebaeb0cfe036b2017fbd9ae65",
+    "g21": "6829c1f62fd4399fc486f7997a10d3c020366b028a5af19629ec0d11ccede3d7",
+    "g23": "5c165531e43fc7f9617f3b49a3c5859cd193e96caa6e5a6d29cc5cf4ef6f15f9",
+    "g24": "6d1d5abd4a0f566a76525650ef87c2ccd892e03f61a1c854a8a3667a87b4d210",
+    "g25": "321aa4a1acbeb968af35020b62baf43490d48de0c375eb4a2a20503e5311f0de",
+    "g26": "c4feea10b1f980a3e9b2f2f04c33397f605aaa31034c2ac3f74b4782526b649c",
+    "g27": "8e26116c47a9c98e5faf2f73193f446e3a57159d354c42f4270ecd083e24e4b2",
+    "g28": "61ee63a67c9f91422598e7c1b19df2d95be9bb9d519617be01876fa2fede43dc",
+    "g29": "7a3ce6f16e0ed1d2bae59917ed4d15ca1f8d0a57a68d349b388c0c64d264db5c",
+    "g30": "8dff7939f9c1531ce38f85feb8612cc0397229abe077404cc07fe03f6e58d00b",
+    "g31": "50ddccf6548f3dc1776935abb4f7794c9abbf9f9e11cd1fefb26d1636719c0f8",
+    "g32": "69912b93b85ad821da86da8d01a39469cb65b5053067aa12e5ca3a4a730250d6",
+    "g34": "aaddc0feb8b72c22f4ca750c786821d05d1cd2878ad9e71ee10bba73cb433bb4"
+  },
+  "rule": "128 phase samples; equal-weight standardized object, hand, and reference-contact/reset blocks; greedy farthest-first from g16/g25/g26; numeric-ID tie break",
+  "contact_definition": "MANO fingertip distance to 2048 fixed-seed mesh samples: near <20mm, close <5mm; proxy, not PhysX contact",
+  "selection_feature_fit_ids": [
+    "g0",
+    "g1",
+    "g2",
+    "g4",
+    "g5",
+    "g6",
+    "g7",
+    "g8",
+    "g10",
+    "g11",
+    "g12",
+    "g13",
+    "g15",
+    "g16",
+    "g17",
+    "g18",
+    "g19",
+    "g20",
+    "g21",
+    "g23",
+    "g24",
+    "g25",
+    "g26",
+    "g27",
+    "g28",
+    "g29",
+    "g30",
+    "g31",
+    "g32",
+    "g34"
+  ],
+  "trace": [
+    {
+      "added": "g19",
+      "min_distance": 2.770183925458841
+    },
+    {
+      "added": "g29",
+      "min_distance": 2.5338965194899226
+    },
+    {
+      "added": "g34",
+      "min_distance": 2.241116192518047
+    },
+    {
+      "added": "g32",
+      "min_distance": 2.209997306611304
+    },
+    {
+      "added": "g17",
+      "min_distance": 2.141079608527605
+    },
+    {
+      "added": "g6",
+      "min_distance": 2.082212289010988
+    },
+    {
+      "added": "g13",
+      "min_distance": 2.0773154847771513
+    },
+    {
+      "added": "g18",
+      "min_distance": 2.004590849653841
+    },
+    {
+      "added": "g27",
+      "min_distance": 1.9762708747015125
+    },
+    {
+      "added": "g1",
+      "min_distance": 1.8918045530121546
+    },
+    {
+      "added": "g12",
+      "min_distance": 1.8488022006457245
+    },
+    {
+      "added": "g7",
+      "min_distance": 1.7476498796059612
+    },
+    {
+      "added": "g4",
+      "min_distance": 1.7244102694815815
+    },
+    {
+      "added": "g20",
+      "min_distance": 1.6170572929838798
+    },
+    {
+      "added": "g8",
+      "min_distance": 1.53716438727203
+    },
+    {
+      "added": "g15",
+      "min_distance": 1.535487780180107
+    },
+    {
+      "added": "g28",
+      "min_distance": 1.5003307079164487
+    },
+    {
+      "added": "g10",
+      "min_distance": 1.4400037499862492
+    },
+    {
+      "added": "g5",
+      "min_distance": 1.4079343415669932
+    },
+    {
+      "added": "g2",
+      "min_distance": 1.3987464091476163
+    },
+    {
+      "added": "g31",
+      "min_distance": 1.3856271021571407
+    },
+    {
+      "added": "g0",
+      "min_distance": 1.3532939686568386
+    },
+    {
+      "added": "g23",
+      "min_distance": 1.3066732013144264
+    },
+    {
+      "added": "g30",
+      "min_distance": 1.2191329415868108
+    },
+    {
+      "added": "g24",
+      "min_distance": 1.1594080130522406
+    },
+    {
+      "added": "g11",
+      "min_distance": 1.1448525158304748
+    },
+    {
+      "added": "g21",
+      "min_distance": 1.060853812139238
+    }
+  ],
+  "status": "ID freeze; pending actual PhysX coverage validation"
+}

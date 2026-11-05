@@ -1,0 +1,21 @@
+{
+  "actual_state_dim": 312,
+  "legacy_physical_state_dim": 292,
+  "actor_obs_dim": 323,
+  "reference_dim": 200,
+  "slices": {
+    "legacy": [
+      0,
+      292
+    ],
+    "force_active": [
+      292,
+      297
+    ],
+    "pad_world_positions": [
+      297,
+      312
+    ]
+  },
+  "note": "Smoke checkpoint contract inherited obsolete state_dim=292; tensor schema and networks were consistently 312. Metadata corrected in current source after the frozen run; source_used preserves the executed source. No weights or metrics changed."
+}
