@@ -1,0 +1,9 @@
+{
+  "GALATEA": "36b90481ba458d9beb5b6ac1396c639ea49a4747",
+  "pytorch3d": "33824be3cbc87a7dd1db0f6a9a9de9ac81b2d0ba",
+  "manotorch": "a2a70c591f91551078b7bb2af9b5d9f275b626e0",
+  "bps_torch": "4a2eb59dfbf8982de1af878552e561d688dced28",
+  "chamfer_distance": "f86f6f7cadd3aca642704573d1626c67ca2e2846",
+  "isaacgym": "1.0.preview4; uploaded core files match official download",
+  "pytorch3d_deviation": "README v0.7.8 does not exist upstream; v0.7.9 built successfully against torch2.4.1+cu121"
+}

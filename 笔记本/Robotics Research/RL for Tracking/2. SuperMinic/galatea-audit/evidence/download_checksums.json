@@ -1,0 +1,62 @@
+[
+  {
+    "file": "dog.pth",
+    "size_bytes": 57030182,
+    "sha256": "5426d3a879fd7bb99c8ff9b7cf2ae98569a0d5f98f3f43e5fc70711a97a4ea4b"
+  },
+  {
+    "file": "dog.tar.gz",
+    "size_bytes": 39201399,
+    "sha256": "3be43d7e4c27d986c3d03c2d0a92a62146f3192299d36a3f4c811a576773603c"
+  },
+  {
+    "file": "dog_raw.tar.gz",
+    "size_bytes": 1815985,
+    "sha256": "7a0b6ea04054c27f4c1d7b6e4980a9f68af0c6b81c3602591a5091224d321008"
+  },
+  {
+    "file": "numpy-1.23.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "size_bytes": 17066537,
+    "sha256": "ae8adff4172692ce56233db04b7ce5792186f179c415c37d539c25de7298d25d"
+  },
+  {
+    "file": "old_camera2.pth",
+    "size_bytes": 57031366,
+    "sha256": "dde74dc408d06b5510a33e65bd15dbce419c7c45708626500b41008491dc8526"
+  },
+  {
+    "file": "old_camera2.tar.gz",
+    "size_bytes": 28228819,
+    "sha256": "66f57721b288f11a78142aa008a30ae249acef270ae69105f4aa65770679f39f"
+  },
+  {
+    "file": "old_camera2_raw.tar.gz",
+    "size_bytes": 1416758,
+    "sha256": "5c2d806fcaad1ee9580ec4b15e830a2ecc15dd9a352db5eaf05a6f23f0d72d5b"
+  },
+  {
+    "file": "power_drill.pth",
+    "size_bytes": 57031602,
+    "sha256": "59182426fd9709de5bf44789185943ce24d0ea8f4c5171d47f13c034c06ce552"
+  },
+  {
+    "file": "power_drill.tar.gz",
+    "size_bytes": 123761454,
+    "sha256": "7d7080d1de518fe94df738ed62c0fc5a2aa8da24d468181173311ba7de7521df"
+  },
+  {
+    "file": "power_drill_raw.tar.gz",
+    "size_bytes": 4177328,
+    "sha256": "3f4f9bf191f81d36c43e4db9e55f2149bb68b512f27f4a8acd83c061d511e42d"
+  },
+  {
+    "file": "pypdf-4.3.1-py3-none-any.whl",
+    "size_bytes": 295825,
+    "sha256": "64b31da97eda0771ef22edb1bfecd5deee4b72c3d1736b7df2689805076d6418"
+  },
+  {
+    "file": "typing_extensions.whl",
+    "size_bytes": 37438,
+    "sha256": "04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d"
+  }
+]

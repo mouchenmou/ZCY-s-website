@@ -1,0 +1,22 @@
+{
+  "status": "complete_and_stopped",
+  "four_groups": [
+    3,
+    12,
+    20,
+    30
+  ],
+  "train_transitions_per_group": 200000,
+  "updates_per_group": 5000,
+  "valid_probe_cases_per_split": 120,
+  "first_600_env_probe_rejected": true,
+  "response_repair_passed": true,
+  "same_initial_weights": true,
+  "seconds_from_start_to_final_metrics": 1269.6488761901855,
+  "experiment_disk_gib": 4.916194991208613,
+  "no_actor_training": true,
+  "no_external_uploads_this_run": true,
+  "no_training_budget_increase": true,
+  "original_training_source_commit": "0a67295",
+  "optimizer_state_available_in_original_checkpoints": false
+}

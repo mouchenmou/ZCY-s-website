@@ -1,0 +1,11 @@
+{
+  "reason": "600-environment GPU PhysX repeated fresh simulations failed identical-prefix audit; some unseen prefix q differences reached 0.04498 rad. No model score used to choose repair.",
+  "invalid_probe_directory": "local_run/rejected_600",
+  "repair": "One repeat of response measurement using preflight-tested 120 environments, unchanged seeds 8201/8202, identical scripts and perturbation. If prefix still differs, no valid response conclusion.",
+  "training_data_or_model_changed": false,
+  "additional_training_updates": 0,
+  "ordinary_test_changed": false,
+  "original_wall_budget_seconds": 2700,
+  "checkpoint_format_note": "Original final/latest checkpoints contain model, normalization and RNG but optimizer metadata overwrote state. Fixed future save key after completion; no run repeated; original checkpoints cannot exact-resume optimizer.",
+  "repair_outcome": "passed: core and unseen prefixes, repeat trajectories and rewards exactly identical with 120 environments; all four models use the same repaired tests"
+}

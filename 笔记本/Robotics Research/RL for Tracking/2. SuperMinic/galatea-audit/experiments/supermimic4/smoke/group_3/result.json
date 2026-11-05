@@ -1,0 +1,89 @@
+{
+  "group": "3",
+  "ids": [
+    "g16",
+    "g25",
+    "g26"
+  ],
+  "status": "short_loop_complete",
+  "raw_transitions": 30720,
+  "usable_transitions": 30066,
+  "updates": {
+    "actor": 28,
+    "wm": 224,
+    "critic": 112
+  },
+  "initial_hashes": {
+    "actor": "1804afdf4b8cb2f09bd87c408c3c98affd667766db977b4658897a957ea3ac4e",
+    "wm": "d9a6e10221ade7c6b61871aa0aadf7d0b57fe31db60b943a98e483816a3190d5",
+    "critic": "5df2323b4ad79267be0c6168494a76cf39742b73b4f5e50f897b95d824106bfc"
+  },
+  "final_hashes": {
+    "actor": "619eb185d263d7623783f52cb408d85a4da8df4ed431b6fdc455350a7add08ae",
+    "wm": "a6167a822a9f09d37b0c441014dc9b96084257c751f02a190703ed93099143e3",
+    "critic": "9934a9bdc7efb1dcef4ee9a95a8d97f9f7c99a534e2079bdf1834891c99bd0c3"
+  },
+  "control_error_max_rad": 1.1920928955078125e-07,
+  "actor_obs_error_max": 5.960464477539062e-07,
+  "seconds": 38.01277005299926,
+  "collection_seconds": 13.669957294128835,
+  "update_seconds": 14.573619685601443,
+  "gpu_peak_mib": 7067.3125,
+  "phase_quartile_counts": [
+    30066,
+    0,
+    0,
+    0
+  ],
+  "contact_transitions": 1576,
+  "sustained_contact_transitions": 1268,
+  "independent_contact_onsets": 308,
+  "policy_version_counts": [
+    3840,
+    960,
+    960,
+    960,
+    960,
+    960,
+    960,
+    960,
+    960,
+    960,
+    960,
+    960,
+    960,
+    960,
+    960,
+    960,
+    960,
+    960,
+    960,
+    960,
+    960,
+    960,
+    960,
+    960,
+    960,
+    960,
+    960,
+    960,
+    960
+  ],
+  "per_motion_raw": {
+    "g16": 10240,
+    "g25": 10240,
+    "g26": 10240
+  },
+  "episode_count": 534,
+  "successes": 0,
+  "mean_episode_length": 53.764044943820224,
+  "mean_episode_return": 249.2565392197741,
+  "audit": {
+    "future_draw_poison_test": "passed"
+  },
+  "random_model_seed": 45,
+  "environment_seed": 10401,
+  "no_expert_no_old_weights": true,
+  "wm_effective_supervision": "8-step truncated at observed Done; terminal transition included; reset-first excluded",
+  "observations_refreshed_before_action": true
+}
