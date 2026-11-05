@@ -11,17 +11,28 @@
             "id": "c9c410a6715f60a9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/CS182_Self_Supervision_FullSVD.md",
-                "mode": "source",
-                "source": false
+                "file": "CS182 深度神经网络/Lecture/Part 6 State based model/16_fa26.pdf"
               },
-              "icon": "lucide-file",
-              "title": "CS182_Self_Supervision_FullSVD"
+              "icon": "lucide-file-text",
+              "title": "16_fa26"
+            }
+          },
+          {
+            "id": "ee5032cbd4baee77",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "CS182 深度神经网络/Lecture/15_fa26.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "15_fa26"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -177,8 +188,11 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "c9c410a6715f60a9",
+  "active": "ee5032cbd4baee77",
   "lastOpenFiles": [
+    "CS182 深度神经网络/Lecture/Part 6 State based model/16_fa26.pdf",
+    "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/CS182_Self_Supervision_FullSVD.md",
+    "CS182 深度神经网络/Lecture/15_fa26.pdf",
     "CS182 深度神经网络/Lecture/Part 2 CNN/Lecture 9&10.md",
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/附件/Pasted image 20261104150005.png",
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/附件/Pasted image 20261104150004.png",
@@ -186,7 +200,6 @@
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/附件/Pasted image 20261104150002.png",
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/附件/Pasted image 20261104150001.png",
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/附件",
-    "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/CS182_Self_Supervision_FullSVD.md",
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning",
     "CS182 深度神经网络/Lecture/Part 2 CNN/11_fa26.pdf",
     "CS182 深度神经网络/Lecture/Part 2 CNN/09b_fa26.pdf",
@@ -196,7 +209,6 @@
     "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 8 Maximal Update Parameterization.md",
     "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 1 Basic Principles.md",
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervision/Self Supervised Learning.md",
-    "CS182 深度神经网络/Lecture/15_fa26.pdf",
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/images/lecture_p22_sparse.png",
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/images/lecture_p21_denoising_masked.png",
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/images/lecture_p20_autoencoder.png",
@@ -206,7 +218,6 @@
     "Robotics Research/RL for Tracking/2. SuperMinic/研究全程记录.md",
     "Robotics Research/RL for Tracking/2. SuperMinic/GALATEA + SuperMimic 自主实验最终报告.md",
     "CS182 深度神经网络/Lecture/Part 4 RNN/RNN.md",
-    "CS182 深度神经网络/Lecture/Part 6 State based model/16_fa26.pdf",
     "CS182 深度神经网络/Lecture/Part 6 State based model/未确认 615653.crdownload",
     "CS182 深度神经网络/Lecture/Part 6 State based model",
     "CS182 深度神经网络/Lecture/未命名.canvas",
