@@ -11,17 +11,28 @@
             "id": "c9c410a6715f60a9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Robotics Research/RL for Tracking/2. SuperMinic/11.4日研究.md",
-                "mode": "source",
-                "source": false
+                "file": "CS182 深度神经网络/Lecture/Part 6 State based model/16_fa26.pdf"
               },
-              "icon": "lucide-file",
-              "title": "11.4日研究"
+              "icon": "lucide-file-text",
+              "title": "16_fa26"
+            }
+          },
+          {
+            "id": "ee5032cbd4baee77",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "CS182 深度神经网络/Lecture/15_fa26.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "15_fa26"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -177,35 +188,23 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "124612a87b396ea7",
+  "active": "ee5032cbd4baee77",
   "lastOpenFiles": [
-    "Robotics Research/RL for Tracking/2. SuperMinic/galatea_source.zip",
-    "Robotics Research/RL for Tracking/2. SuperMinic/galatea-audit/inventory.py",
-    "Robotics Research/RL for Tracking/2. SuperMinic/galatea-audit/experiments/wm4_200k/nested_groups.json",
-    "Robotics Research/RL for Tracking/2. SuperMinic/galatea-audit/experiments/wm4_200k/measurement_amendment.json",
-    "Robotics Research/RL for Tracking/2. SuperMinic/galatea-audit/experiments/wm4_200k/execution_lock.json",
-    "Robotics Research/RL for Tracking/2. SuperMinic/galatea-audit/experiments/wm4_200k/completion.json",
-    "Robotics Research/RL for Tracking/2. SuperMinic/galatea-audit/experiments/wm4_200k/PROTOCOL.zh-CN.md",
-    "Robotics Research/RL for Tracking/2. SuperMinic/galatea-audit/experiments/wm4_200k",
-    "Robotics Research/RL for Tracking/2. SuperMinic/galatea-audit/experiments/supermimic4/summary.json",
-    "Robotics Research/RL for Tracking/2. SuperMinic/galatea-audit/experiments/supermimic4/state_schema.json",
-    "Robotics Research/RL for Tracking/2. SuperMinic/galatea-audit/experiments/supermimic4/source_used/experiments/wm4_200k/nested_groups.json",
-    "Robotics Research/RL for Tracking/2. SuperMinic/galatea-audit/experiments/supermimic4/source_used/experiments/wm4_200k",
-    "Robotics Research/RL for Tracking/2. SuperMinic/galatea-audit/experiments/supermimic4/source_used/experiments/supermimic4/PLAN.zh-CN.md",
-    "Robotics Research/RL for Tracking/2. SuperMinic/galatea-audit/experiments/supermimic4/actor_evaluation.png",
-    "Robotics Research/RL for Tracking/2. SuperMinic/galatea-audit/experiments/supermimic4/PLAN.zh-CN.md",
-    "Robotics Research/RL for Tracking/2. SuperMinic/galatea-audit/REPORT.zh-CN.md",
-    "Robotics Research/RL for Tracking/2. SuperMinic/galatea-audit/README.md",
-    "Robotics Research/RL for Tracking/2. SuperMinic/galatea-audit/HANDOFF_2026-11-05.zh-CN.md",
+    "CS182 深度神经网络/Lecture/Part 6 State based model/16_fa26.pdf",
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/CS182_Self_Supervision_FullSVD.md",
-    "Robotics Research/RL for Tracking/2. SuperMinic/11.4日研究.md",
+    "CS182 深度神经网络/Lecture/15_fa26.pdf",
     "CS182 深度神经网络/Lecture/Part 2 CNN/Lecture 9&10.md",
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/附件/Pasted image 20261104150005.png",
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/附件/Pasted image 20261104150004.png",
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/附件/Pasted image 20261104150003.png",
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/附件/Pasted image 20261104150002.png",
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/附件/Pasted image 20261104150001.png",
+    "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/附件",
+    "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning",
+    "CS182 深度神经网络/Lecture/Part 2 CNN/11_fa26.pdf",
+    "CS182 深度神经网络/Lecture/Part 2 CNN/09b_fa26.pdf",
     "CS182 深度神经网络/Lecture/Part 3 GNN/GNN.md",
+    "CS182 深度神经网络/Lecture/Part 3 GNN/12_fa26.pdf",
     "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 7 RMS RMS norm, Maximal update parameterization.md",
     "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 8 Maximal Update Parameterization.md",
     "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 1 Basic Principles.md",
@@ -214,9 +213,13 @@
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/images/lecture_p21_denoising_masked.png",
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/images/lecture_p20_autoencoder.png",
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/images/lecture_p19_pca_to_ae.png",
+    "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/images/lecture_p17_self_supervision.png",
+    "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/images",
     "Robotics Research/RL for Tracking/2. SuperMinic/研究全程记录.md",
     "Robotics Research/RL for Tracking/2. SuperMinic/GALATEA + SuperMimic 自主实验最终报告.md",
     "CS182 深度神经网络/Lecture/Part 4 RNN/RNN.md",
+    "CS182 深度神经网络/Lecture/Part 6 State based model/未确认 615653.crdownload",
+    "CS182 深度神经网络/Lecture/Part 6 State based model",
     "CS182 深度神经网络/Lecture/未命名.canvas",
     "Robotics Research/RL for Tracking/2. SuperMinic/3. Method.md",
     "Robotics Research/RL for Tracking/2. SuperMinic/3. Method.md",
@@ -225,6 +228,12 @@
     "Robotics Research/RL for Tracking/2. SuperMinic/生词.md",
     "Robotics Research/RL for Tracking/2. SuperMinic/0. Abstraction — 初读与 GALATEA 迁移研究记录.md",
     "Robotics Research/RL for Tracking/1. Grounding Generated Video Plans/未命名.md",
-    "Robotics Research/RL for Tracking/1. Grounding Generated Video Plans/生词.md"
+    "Robotics Research/RL for Tracking/1. Grounding Generated Video Plans/生词.md",
+    "Robotics Research/RL for Tracking/2. SuperMinic/问题.md",
+    "Robotics Research/RL for Tracking/1. Grounding Generated Video Plans/问题.md",
+    "Robotics Research/RL for Tracking/1. Grounding Generated Video Plans/GALATEA_III-B_阅读笔记与复现Ideas.md",
+    "Robotics Research/机器人运动学/1. 旋转矩阵.md",
+    "Robotics Research/机器人运动学/2. 两种旋转方法.md",
+    "CS182 深度神经网络/Homework/HW07/生词.md"
   ]
 }
