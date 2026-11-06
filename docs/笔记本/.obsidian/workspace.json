@@ -11,6 +11,32 @@
             "id": "c9c410a6715f60a9",
             "type": "leaf",
             "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/CS182_Self_Supervision_FullSVD.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CS182_Self_Supervision_FullSVD"
+            }
+          },
+          {
+            "id": "ee5032cbd4baee77",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "CS182 深度神经网络/Lecture/Part 6 State based model/附件/Pasted image 20261106090009.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20261106090009"
+            }
+          },
+          {
+            "id": "41d0f78fe80f1b01",
+            "type": "leaf",
+            "state": {
               "type": "pdf",
               "state": {
                 "file": "CS182 深度神经网络/Lecture/Part 6 State based model/16_fa26.pdf"
@@ -20,19 +46,21 @@
             }
           },
           {
-            "id": "ee5032cbd4baee77",
+            "id": "a6160b06893781df",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "CS182 深度神经网络/Lecture/15_fa26.pdf"
+                "file": "CS182 深度神经网络/Lecture/Part 6 State based model/State Space Models.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "15_fa26"
+              "icon": "lucide-file",
+              "title": "State Space Models"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -188,38 +216,40 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "ee5032cbd4baee77",
+  "active": "a6160b06893781df",
   "lastOpenFiles": [
     "CS182 深度神经网络/Lecture/Part 6 State based model/16_fa26.pdf",
+    "CS182 深度神经网络/Lecture/Part 6 State based model/附件/Pasted image 20261106090009.png",
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/CS182_Self_Supervision_FullSVD.md",
-    "CS182 深度神经网络/Lecture/15_fa26.pdf",
+    "CS182 深度神经网络/Lecture/Part 6 State based model/State Space Models.md",
+    "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/15_fa26.pdf",
+    "CS182 深度神经网络/Lecture/Part 6 State based model/附件/Pasted image 20261106014219.png",
+    "CS182 深度神经网络/Lecture/Part 6 State based model/附件/Pasted image 20261106090011.png",
+    "CS182 深度神经网络/Lecture/Part 6 State based model/附件/Pasted image 20261106090001.png",
+    "CS182 深度神经网络/Lecture/Part 6 State based model/附件/Pasted image 20261106090002.png",
+    "CS182 深度神经网络/Lecture/Part 6 State based model/附件/Pasted image 20261106090003.png",
+    "CS182 深度神经网络/Lecture/Part 6 State based model/附件/Pasted image 20261106090004.png",
+    "CS182 深度神经网络/Lecture/Part 6 State based model/附件/Pasted image 20261106090005.png",
+    "CS182 深度神经网络/Lecture/Part 6 State based model/附件/Pasted image 20261106090006.png",
+    "CS182 深度神经网络/Lecture/Part 6 State based model/附件/Pasted image 20261106090007.png",
+    "CS182 深度神经网络/Lecture/Part 6 State based model/附件",
+    "CS182 深度神经网络/Lecture/Part 7 Attention/18_fa26.pdf",
+    "CS182 深度神经网络/Lecture/Part 7 Attention/未确认 963601.crdownload",
+    "CS182 深度神经网络/Lecture/Part 7 Attention/CS182_Self_Supervision_FullSVD.md",
+    "CS182 深度神经网络/Lecture/Part 7 Attention/附件",
+    "CS182 深度神经网络/Lecture/附件",
+    "CS182 深度神经网络/Lecture/Part 7 Attention",
     "CS182 深度神经网络/Lecture/Part 2 CNN/Lecture 9&10.md",
-    "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/附件/Pasted image 20261104150005.png",
-    "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/附件/Pasted image 20261104150004.png",
-    "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/附件/Pasted image 20261104150003.png",
-    "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/附件/Pasted image 20261104150002.png",
-    "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/附件/Pasted image 20261104150001.png",
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/附件",
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning",
-    "CS182 深度神经网络/Lecture/Part 2 CNN/11_fa26.pdf",
-    "CS182 深度神经网络/Lecture/Part 2 CNN/09b_fa26.pdf",
     "CS182 深度神经网络/Lecture/Part 3 GNN/GNN.md",
-    "CS182 深度神经网络/Lecture/Part 3 GNN/12_fa26.pdf",
     "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 7 RMS RMS norm, Maximal update parameterization.md",
     "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 8 Maximal Update Parameterization.md",
     "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 1 Basic Principles.md",
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervision/Self Supervised Learning.md",
-    "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/images/lecture_p22_sparse.png",
-    "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/images/lecture_p21_denoising_masked.png",
-    "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/images/lecture_p20_autoencoder.png",
-    "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/images/lecture_p19_pca_to_ae.png",
-    "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/images/lecture_p17_self_supervision.png",
-    "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/images",
     "Robotics Research/RL for Tracking/2. SuperMinic/研究全程记录.md",
     "Robotics Research/RL for Tracking/2. SuperMinic/GALATEA + SuperMimic 自主实验最终报告.md",
     "CS182 深度神经网络/Lecture/Part 4 RNN/RNN.md",
-    "CS182 深度神经网络/Lecture/Part 6 State based model/未确认 615653.crdownload",
-    "CS182 深度神经网络/Lecture/Part 6 State based model",
     "CS182 深度神经网络/Lecture/未命名.canvas",
     "Robotics Research/RL for Tracking/2. SuperMinic/3. Method.md",
     "Robotics Research/RL for Tracking/2. SuperMinic/3. Method.md",
@@ -233,7 +263,6 @@
     "Robotics Research/RL for Tracking/1. Grounding Generated Video Plans/问题.md",
     "Robotics Research/RL for Tracking/1. Grounding Generated Video Plans/GALATEA_III-B_阅读笔记与复现Ideas.md",
     "Robotics Research/机器人运动学/1. 旋转矩阵.md",
-    "Robotics Research/机器人运动学/2. 两种旋转方法.md",
-    "CS182 深度神经网络/Homework/HW07/生词.md"
+    "Robotics Research/机器人运动学/2. 两种旋转方法.md"
   ]
 }
