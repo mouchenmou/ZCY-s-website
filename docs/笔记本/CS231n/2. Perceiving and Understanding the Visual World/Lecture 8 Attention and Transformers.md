@@ -476,7 +476,6 @@ $$
 所以每个输出位置都可以直接读取所有输入位置的信息。
 
 !!! explanation "Self-Attention 对比 RNNs 的优势"
-
     在 RNN 中，位置 $1$ 的信息要到达位置 $N$，必须沿 hidden state 经过很多步；在 Self-Attention 中，这两个位置只经过一次 attention 就能直接交互。
     
     ## 举个具体例子
@@ -845,9 +844,9 @@ $$
     对于一个 head，本来应该分别计算：
 
 	$$\begin{aligned}
-	&Q^{(h)}=XW_Q^{(h)}\\
-	&K^{(h)}=XW_K^{(h)}\\
-	&V^{(h)}=XW_V^{(h)}
+	&Q^{(h)}=XW_Q^{(h)}
+	\\&K^{(h)}=XW_K^{(h)}
+	\\&V^{(h)}=XW_V^{(h)}
 	\end{aligned}$$​
 	
 	其中：
@@ -1163,9 +1162,7 @@ $$
 计算 query 和 key 的相似度：
 
 $$  
-E^{(h)}
-
-Q^{(h)}\left(K^{(h)}\right)^T  
+E^{(h)}Q^{(h)}\left(K^{(h)}\right)^T  
 $$
 
 矩阵维度为：
@@ -1283,9 +1280,7 @@ $$
 具体来说：
 
 $$  
-C_i^{(h)}
-
-\sum_{j=1}^{N}  
+C_i^{(h)}\sum_{j=1}^{N}  
 A_{i,j}^{(h)}V_j^{(h)}  
 $$
 
@@ -1300,9 +1295,7 @@ $$
 对于同一个 token，把它在所有 heads 中得到的 Context vectors 拼接起来：
 
 $$  
-C_i
-
-\operatorname{Concat}  
+C_i\operatorname{Concat}  
 \left(  
 C_i^{(1)},  
 C_i^{(2)},  
