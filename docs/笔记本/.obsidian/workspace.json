@@ -11,12 +11,14 @@
             "id": "c9c410a6715f60a9",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "CS182 深度神经网络/Homework/HW08/hw08_question.pdf"
+                "file": "CS182 深度神经网络/Homework/HW08/查漏补缺1 三种常见的loss.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "hw08_question"
+              "icon": "lucide-file",
+              "title": "查漏补缺1 三种常见的loss"
             }
           },
           {
@@ -44,8 +46,33 @@
               "icon": "lucide-file",
               "title": "生词"
             }
+          },
+          {
+            "id": "4053d9b3cefd2cc5",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "CS182 深度神经网络/Homework/HW08/hw08_question.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "hw08_question"
+            }
+          },
+          {
+            "id": "4cf1ec44f3c0cf38",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "CS182 深度神经网络/Homework/HW10/hw10_question.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "hw10_question"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -201,12 +228,15 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "c9c410a6715f60a9",
+  "active": "41d0f78fe80f1b01",
   "lastOpenFiles": [
-    "CS182 深度神经网络/Homework/HW08/hw08_solution.pdf",
-    "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/CS182_Self_Supervision_FullSVD.md",
     "CS182 深度神经网络/Homework/HW08/hw08_question.pdf",
+    "CS182 深度神经网络/Homework/HW08/hw08_solution.pdf",
+    "CS182 深度神经网络/Homework/HW08/查漏补缺1 三种常见的loss.md",
+    "CS182 深度神经网络/Homework/HW10/hw10_question.pdf",
+    "CS182 深度神经网络/Homework/HW09/hw09_question.pdf",
     "CS182 深度神经网络/Homework/HW08/生词.md",
+    "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/CS182_Self_Supervision_FullSVD.md",
     "CS182 深度神经网络/Lecture/Part 3 GNN/GNN.md",
     "CS182 深度神经网络/Homework/HW07/hw07_question.pdf",
     "CS182 深度神经网络/Homework/HW07/hw07_solution.pdf",
@@ -219,10 +249,8 @@
     "Robotics Research/RL for Tracking/2. SuperMinic/supermimic_galatea_噪声问题笔记.md",
     "CS182 深度神经网络/Homework/HW06/hw06_question.pdf",
     "CS182 深度神经网络/Lecture/Part 7 Attention/Attention and Transformer.md",
-    "CS182 深度神经网络/Homework/HW10/hw10_question.pdf",
     "CS182 深度神经网络/Homework/HW10",
     "CS182 深度神经网络/Homework/HW09/hw09_solution.pdf",
-    "CS182 深度神经网络/Homework/HW08",
     "CS182 深度神经网络/Lecture/Part 7 Attention/附件/Pasted image 20261106210108.png",
     "CS182 深度神经网络/Lecture/Part 7 Attention/附件/Pasted image 20261106210107.png",
     "CS182 深度神经网络/Lecture/Part 7 Attention/附件/Pasted image 20261106210105.png",
@@ -247,7 +275,6 @@
     "CS182 深度神经网络/Lecture/Part 4 RNN/RNN.md",
     "CS182 深度神经网络/Lecture/未命名.canvas",
     "Robotics Research/RL for Tracking/2. SuperMinic/3. Method.md",
-    "Robotics Research/RL for Tracking/2. SuperMinic/3. Method.md",
-    "Robotics Research/RL for Tracking/2. SuperMinic/2. Related Works.md"
+    "Robotics Research/RL for Tracking/2. SuperMinic/3. Method.md"
   ]
 }
