@@ -281,6 +281,10 @@ $$
 
 不同 Neighbor 通常共享 $W_{\text{neighbor}}$。
 
+!!! warning "注意"
+    标准的 GNN 就是每一层中所有的 nodes 都共享 $w$。
+    
+    因此，对于只考虑 node representation 的情况，node 的数量不会影响 the number of learned weight
 ### 3.4 Message Passing 计算例子
 
 假设 Graph：
@@ -911,8 +915,8 @@ $$
 $$  
 S=  
 \begin{bmatrix}  
-0.9&0.1\  
-0.8&0.2\  
+0.9&0.1\\  
+0.8&0.2\\  
 0.2&0.8  
 \end{bmatrix}  
 $$
@@ -981,8 +985,8 @@ Assignment Matrix：
 $$  
 S=  
 \begin{bmatrix}  
-0.9&0.1\  
-0.8&0.2\  
+0.9&0.1\\  
+0.8&0.2\\  
 0.2&0.8  
 \end{bmatrix}  
 $$
