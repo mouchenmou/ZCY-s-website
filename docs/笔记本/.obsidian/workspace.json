@@ -39,22 +39,24 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "CS182 深度神经网络/Homework/HW09/hw09_question.pdf"
+                "file": "Robotics Research/Cross Embodiment/1. UMI-on-Air/umi-on-air.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "hw09_question"
+              "title": "umi-on-air"
             }
           },
           {
             "id": "2656f7c3225b9b5e",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Robotics Research/Cross Embodiment/1. UMI-on-Air/umi-on-air.pdf"
+                "file": "Robotics Research/Cross Embodiment/1. UMI-on-Air/1. Introduction.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "umi-on-air"
+              "icon": "lucide-file",
+              "title": "1. Introduction"
             }
           },
           {
@@ -72,7 +74,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -228,17 +230,18 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "2656f7c3225b9b5e",
+  "active": "4cf1ec44f3c0cf38",
   "lastOpenFiles": [
-    "CS182 深度神经网络/Homework/HW08/生词.md",
-    "Robotics Research/Cross Embodiment/1. UMI-on-Air/生词.md",
+    "CS182 深度神经网络/线性代数常见英文.md",
+    "Robotics Research/Cross Embodiment/1. UMI-on-Air/1. Introduction.md",
     "Robotics Research/Cross Embodiment/1. UMI-on-Air/umi-on-air.pdf",
-    "CS182 深度神经网络/Lecture/Part 6 State based model/State Space Models.md",
     "CS182 深度神经网络/Homework/HW09/hw09_question.pdf",
     "CS182 深度神经网络/Homework/HW08/hw08_question.pdf",
+    "CS182 深度神经网络/Homework/HW08/生词.md",
+    "Robotics Research/Cross Embodiment/1. UMI-on-Air/生词.md",
+    "CS182 深度神经网络/Lecture/Part 6 State based model/State Space Models.md",
     "CS182 深度神经网络/Homework/HW08/hw08_solution.pdf",
     "Robotics Research/RL for Tracking/4. ManipTrans/2503.21860v1.pdf",
-    "CS182 深度神经网络/线性代数常见英文.md",
     "CS182 深度神经网络/求导和推导常见的英文.md",
     "CS182 深度神经网络/Homework/HW0/hw00_question.pdf",
     "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
@@ -274,7 +277,6 @@
     "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 8 Maximal Update Parameterization.md",
     "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 1 Basic Principles.md",
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervision/Self Supervised Learning.md",
-    "Robotics Research/RL for Tracking/2. SuperMinic/研究全程记录.md",
     "CS182 深度神经网络/Lecture/未命名.canvas"
   ]
 }
