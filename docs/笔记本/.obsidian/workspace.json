@@ -27,10 +27,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "CS182 深度神经网络/Homework/HW08/hw08_question.pdf"
+                "file": "CS182 深度神经网络/Homework/HW06/hw06_question.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "hw08_question"
+              "title": "hw06_question"
             }
           },
           {
@@ -39,10 +39,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Robotics Research/Cross Embodiment/1. UMI-on-Air/umi-on-air.pdf"
+                "file": "CS182 深度神经网络/Homework/HW09/hw09_solution.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "umi-on-air"
+              "title": "hw09_solution"
             }
           },
           {
@@ -72,9 +72,23 @@
               "icon": "lucide-file",
               "title": "生词"
             }
+          },
+          {
+            "id": "a51855e93d344337",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CS182 深度神经网络/Lecture/Part 7 Attention/Attention and Transformer.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Attention and Transformer"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -230,15 +244,18 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "4cf1ec44f3c0cf38",
+  "active": "c9c410a6715f60a9",
   "lastOpenFiles": [
-    "CS182 深度神经网络/线性代数常见英文.md",
+    "CS182 深度神经网络/Homework/HW10/hw10_question.pdf",
+    "CS182 深度神经网络/Homework/HW09/hw09_question.pdf",
+    "CS182 深度神经网络/Homework/HW09/hw09_solution.pdf",
     "Robotics Research/Cross Embodiment/1. UMI-on-Air/1. Introduction.md",
     "Robotics Research/Cross Embodiment/1. UMI-on-Air/umi-on-air.pdf",
-    "CS182 深度神经网络/Homework/HW09/hw09_question.pdf",
+    "Robotics Research/Cross Embodiment/1. UMI-on-Air/生词.md",
+    "CS182 深度神经网络/Lecture/Part 7 Attention/Attention and Transformer.md",
+    "CS182 深度神经网络/线性代数常见英文.md",
     "CS182 深度神经网络/Homework/HW08/hw08_question.pdf",
     "CS182 深度神经网络/Homework/HW08/生词.md",
-    "Robotics Research/Cross Embodiment/1. UMI-on-Air/生词.md",
     "CS182 深度神经网络/Lecture/Part 6 State based model/State Space Models.md",
     "CS182 深度神经网络/Homework/HW08/hw08_solution.pdf",
     "Robotics Research/RL for Tracking/4. ManipTrans/2503.21860v1.pdf",
@@ -246,19 +263,16 @@
     "CS182 深度神经网络/Homework/HW0/hw00_question.pdf",
     "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
     "CS182 深度神经网络/Homework/HW08/查漏补缺1 三种常见的loss.md",
-    "CS182 深度神经网络/Homework/HW10/hw10_question.pdf",
     "Robotics Research/RL for Tracking/3. BeyondMimic/2508.08241v4.pdf",
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/CS182_Self_Supervision_FullSVD.md",
     "CS182 深度神经网络/Lecture/Part 3 GNN/GNN.md",
     "CS182 深度神经网络/Homework/HW07/hw07_question.pdf",
-    "CS182 深度神经网络/Homework/HW07/hw07_solution.pdf",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 8 Attention and Transformers.md",
     "CS182 深度神经网络/Lecture/Part 6 State based model/附件/Pasted image 20261106090009.png",
     "Robotics Research/迁移SuperMimic到GALATEA/研究全程记录.md",
     "Robotics Research/迁移SuperMimic到GALATEA/GALATEA + SuperMimic 自主实验最终报告.md",
     "Robotics Research/迁移SuperMimic到GALATEA/11.4日研究.md",
     "Robotics Research/RL for Tracking/2. SuperMinic/supermimic_galatea_噪声问题笔记.md",
-    "CS182 深度神经网络/Lecture/Part 7 Attention/Attention and Transformer.md",
     "CS182 深度神经网络/Lecture/Part 7 Attention/附件/Pasted image 20261106210108.png",
     "CS182 深度神经网络/Lecture/Part 7 Attention/附件/Pasted image 20261106210107.png",
     "CS182 深度神经网络/Lecture/Part 7 Attention/附件/Pasted image 20261106210105.png",
