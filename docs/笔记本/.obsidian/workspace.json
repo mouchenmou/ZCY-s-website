@@ -34,15 +34,27 @@
             }
           },
           {
+            "id": "9f72cecf725de12a",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.15.1"
+              },
+              "icon": "lucide-book-up",
+              "title": "版本说明 1.15.1"
+            }
+          },
+          {
             "id": "4cf1ec44f3c0cf38",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "CS182 深度神经网络/Homework/HW09/hw09_solution.pdf"
+                "file": "Robotics Research/Cross Embodiment/2. One hand to rule them all/2602.16712v2.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "hw09_solution"
+              "title": "2602.16712v2"
             }
           },
           {
@@ -88,7 +100,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -244,11 +256,11 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "c9c410a6715f60a9",
+  "active": "4cf1ec44f3c0cf38",
   "lastOpenFiles": [
+    "CS182 深度神经网络/Homework/HW09/hw09_solution.pdf",
     "CS182 深度神经网络/Homework/HW10/hw10_question.pdf",
     "CS182 深度神经网络/Homework/HW09/hw09_question.pdf",
-    "CS182 深度神经网络/Homework/HW09/hw09_solution.pdf",
     "Robotics Research/Cross Embodiment/1. UMI-on-Air/1. Introduction.md",
     "Robotics Research/Cross Embodiment/1. UMI-on-Air/umi-on-air.pdf",
     "Robotics Research/Cross Embodiment/1. UMI-on-Air/生词.md",
