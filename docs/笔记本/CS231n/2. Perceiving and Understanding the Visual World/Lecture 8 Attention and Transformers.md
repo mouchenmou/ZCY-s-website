@@ -906,13 +906,13 @@ $$
 	
 	所以：
 	
-	Q(h)∈RN×DH\boxed{ Q^{(h)}\in\mathbb{R}^{N\times D_H} }Q(h)∈RN×DH​​
+	$$\boxed{ Q^{(h)}\in\mathbb{R}^{N\times D_H}}$$​
 	
 	表示单个 head。
 	
 	而：
 	
-	Q∈RH×N×DH\boxed{ Q\in\mathbb{R}^{H\times N\times D_H} }Q∈RH×N×DH​​
+	$$\boxed{ Q\in\mathbb{R}^{H\times N\times D_H} }​​$$
 	
 	表示所有 heads。
 	
@@ -995,18 +995,7 @@ $$
 [H\times N\times D_H]
 $$
 
-接着，把每一个 token 中所有 heads 产生的 Context vectors拼接起来，整个过程分成一下几个小步骤：
-
-先取出一个 token 的所有 heads 的 attention weight，其维度为：
-
-$$[H\times 1 \times N]$$
-
-然后将它与所有的 $value$ 进行矩阵相乘，即跟 $V$ 向量进行矩阵相乘，维度变化如下：
-
-$$[H\times 1\times N]
-[H\times N\times D_H]
-\longrightarrow
-[H\times 1\times D_H]$$
+接着，把每一个 token 中所有 heads 产生的 Context vectors拼接起来，
 
 相当于是 $H$ 个 $1\times D_H$ 的矩阵按行堆叠，因此本质就是一个 $H\times D_H$ 的矩阵，得到这个 $H\times D_H$ 的矩阵之后，再将这 $H$ 行按照顺序排列成一行，就变成了一个 $1\times HD_H$ 的矩阵，即：
 
