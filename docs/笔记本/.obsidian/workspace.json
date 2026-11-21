@@ -49,14 +49,12 @@
             "id": "2656f7c3225b9b5e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "CS231n/2. Perceiving and Understanding the Visual World/Lecture 8 Attention and Transformers.md",
-                "mode": "source",
-                "source": false
+                "file": "Robotics Research/RL for Tracking/6. SimToolReal/2602.16863v3.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Lecture 8 Attention and Transformers"
+              "icon": "lucide-file-text",
+              "title": "2602.16863v3"
             }
           }
         ],
@@ -122,7 +120,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "4a872444f960435e",
@@ -218,6 +217,16 @@
   },
   "active": "2656f7c3225b9b5e",
   "lastOpenFiles": [
+    "Robotics Research/RL for Tracking/7. Play2Perfect/2606.26428v4.pdf",
+    "Robotics Research/RL for Tracking/7. Play2Perfect/未确认 416720.crdownload",
+    "Robotics Research/RL for Tracking/7. Play2Perfect",
+    "Robotics Research/RL for Tracking/5. SuperTrack/SuperTrack.pdf",
+    "Robotics Research/RL for Tracking/6. SimToolReal/2602.16863v3.pdf",
+    "Robotics Research/RL for Tracking/6. SimToolReal",
+    "Robotics Research/RL for Tracking/5. SuperTrack",
+    "Robotics Research/RL for Tracking/4. ManipTrans/2503.21860v1.pdf",
+    "Research/Koushil Sreenath/2. Toward Real-World/2505.13834v2.pdf",
+    "CS231n/2. Perceiving and Understanding the Visual World/Lecture 8 Attention and Transformers.md",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 9 Dection, Segmentation, Visualization, and Understanding.md",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 10 Video Understanding.md",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 11 Large Scale Distributed Training.md",
@@ -226,23 +235,14 @@
     "Robotics Research/Cross Embodiment/1. UMI-on-Air/生词.md",
     "CS182 深度神经网络/Lecture/Part 8 Transformer/19_fa26.pdf",
     "CS182 深度神经网络/Homework/HW06/hw06_question.pdf",
-    "Robotics Research/Cross Embodiment/2. One hand to rule them all/2602.16712v2.pdf",
-    "CS182 深度神经网络/Homework/HW09/hw09_solution.pdf",
-    "CS182 深度神经网络/Homework/HW10/hw10_question.pdf",
-    "CS182 深度神经网络/Homework/HW09/hw09_question.pdf",
-    "Robotics Research/Cross Embodiment/1. UMI-on-Air/umi-on-air.pdf",
     "CS182 深度神经网络/线性代数常见英文.md",
-    "CS182 深度神经网络/Homework/HW08/hw08_question.pdf",
     "CS182 深度神经网络/Homework/HW08/生词.md",
     "CS182 深度神经网络/Lecture/Part 6 State based model/State Space Models.md",
-    "CS182 深度神经网络/Homework/HW08/hw08_solution.pdf",
-    "Robotics Research/RL for Tracking/4. ManipTrans/2503.21860v1.pdf",
     "CS182 深度神经网络/求导和推导常见的英文.md",
     "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
     "CS182 深度神经网络/Homework/HW08/查漏补缺1 三种常见的loss.md",
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/CS182_Self_Supervision_FullSVD.md",
     "CS182 深度神经网络/Lecture/Part 3 GNN/GNN.md",
-    "CS231n/2. Perceiving and Understanding the Visual World/Lecture 8 Attention and Transformers.md",
     "CS182 深度神经网络/Lecture/Part 6 State based model/附件/Pasted image 20261106090009.png",
     "Robotics Research/迁移SuperMimic到GALATEA/研究全程记录.md",
     "Robotics Research/迁移SuperMimic到GALATEA/GALATEA + SuperMimic 自主实验最终报告.md",
@@ -263,7 +263,6 @@
     "CS182 深度神经网络/Lecture/Part 7 Attention/CS182_Self_Supervision_FullSVD.md",
     "CS182 深度神经网络/Lecture/Part 2 CNN/Lecture 9&10.md",
     "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 7 RMS RMS norm, Maximal update parameterization.md",
-    "CS182 深度神经网络/Lecture/Part 1 Optimazation/Lecture 8 Maximal Update Parameterization.md",
     "CS182 深度神经网络/Lecture/未命名.canvas"
   ]
 }
