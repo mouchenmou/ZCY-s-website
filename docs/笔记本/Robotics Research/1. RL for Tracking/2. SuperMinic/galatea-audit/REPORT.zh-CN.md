@@ -658,7 +658,7 @@ Reset限制来自官方预处理，不是采集器写死25%：从 reset_collisio
 
 研究主线保留 3/12/20/30 条固定嵌套 Reference，不退回三条 Motion 或单独手指 WM。旧四个 WM checkpoint 未用于本次初始化；没有 Expert 权重、Expert 数据或固定手指动作脚本。此前 WM-only 泛化结果是本研究的动机，不能推导出当前闭环 Actor 已获益。
 
-完整协议：[PLAN.zh-CN.md](experiments/supermimic4/PLAN.zh-CN.md)。数据、checkpoint、逐周期日志和共同真实评估轨迹都保存在 `experiments/supermimic4/`。
+完整协议：[PLAN.zh-CN.md](Robotics%20Research/1.%20RL%20for%20Tracking/2.%20SuperMinic/galatea-audit/experiments/supermimic4/PLAN.zh-CN.md)。数据、checkpoint、逐周期日志和共同真实评估轨迹都保存在 `experiments/supermimic4/`。
 
 ### 1. 本次实际执行与公平性
 
@@ -688,7 +688,7 @@ Reset限制来自官方预处理，不是采集器写死25%：从 reset_collisio
 
 ### 3. 真实 PhysX 结果
 
-共同种子 11401/11402；每 Motion 每 seed 15 episodes，共核心 g16/g25/g26 90 episodes、五条 heldout 150 episodes。所有 episode 都在真实 Done 结束，没有预算截断。官方 eval_mode 关闭训练 mask，保留官方 delay 和传感器噪声。下面是每个完整 episode 累计官方 Reward，未做任意归一化；原始逐 Motion 结果见 [CSV](experiments/supermimic4/per_motion_evaluation.csv)。
+共同种子 11401/11402；每 Motion 每 seed 15 episodes，共核心 g16/g25/g26 90 episodes、五条 heldout 150 episodes。所有 episode 都在真实 Done 结束，没有预算截断。官方 eval_mode 关闭训练 mask，保留官方 delay 和传感器噪声。下面是每个完整 episode 累计官方 Reward，未做任意归一化；原始逐 Motion 结果见 [CSV](per_motion_evaluation.csv)。
 
 | Policy | 核心3条 Reward | 核心长度 | 未见5条 Reward | 未见长度 | 成功数/评估数 |
 |---|---:|---:|---:|---:|---:|
@@ -700,7 +700,7 @@ Reset限制来自官方预处理，不是采集器写死25%：从 reset_collisio
 
 12 条组未见 Motion Reward 较初始上升约 11.4%，核心 Reward 下降约 4.3%；这是本次短测试的描述性结果，不能据此宣布最优 Motion 数为 12。3/20/30 条组核心 Reward 分别下降约 58.2%/43.2%/60.1%。所有组成功率仍为零，28 次 Actor 更新和单个初始化种子不足以回答最终学习能力或统计显著性。
 
-![真实评估 Reward 与 Episode Length，点为逐 Motion 均值](experiments/supermimic4/actor_evaluation.png)
+![真实评估 Reward 与 Episode Length，点为逐 Motion 均值](actor_evaluation.png)
 
 随机初始 Actor 输出很小，在 Reference 早段保持姿态就能获得一定回报；这不代表它会操作电钻。训练后更主动的动作可能更快触发真实失败。失败以手指 keypoint 偏差为主：30 条组 200 次 thumb、60 次 index 原因（可同时发生）；3 条组额外有 72 次 object-position 失败。本次没有以手速/臂速门槛作为主要失败原因，不能把退化直接归咎于开启严格手速门槛。
 
