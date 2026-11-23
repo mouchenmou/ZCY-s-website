@@ -1,4 +1,4 @@
-# CS182 Lecture 19 — Transformer：Position Encoding、MLA、GPT-3、BERT、GLU 与 MoE
+# Position Encoding、MLA、GPT-3、BERT、GLU 与 MoE
 
 > **范围：课程笔记 PDF 第 1–18 页。第 19 页以及之后的所有内容都没有收录。** 这份笔记按第一次上课的顺序展开，不是考前提纲。原讲义图已裁剪放进同目录的 `附件` 文件夹；公式和数字例子中，未注明为老师原图的部分是为教学补充的示例。
 >

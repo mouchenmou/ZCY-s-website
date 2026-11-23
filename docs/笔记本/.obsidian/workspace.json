@@ -11,14 +11,12 @@
             "id": "4053d9b3cefd2cc5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "CS182 深度神经网络/Lecture/Part 8 Transformer/CS182 Lecture 19（第1-18页）完整笔记.md",
-                "mode": "source",
-                "source": false
+                "file": "CS182 深度神经网络/Lecture/Part 8 Transformer/21_fa26.pdf"
               },
-              "icon": "lucide-file",
-              "title": "CS182 Lecture 19（第1-18页）完整笔记"
+              "icon": "lucide-file-text",
+              "title": "21_fa26"
             }
           },
           {
@@ -119,7 +117,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "4a872444f960435e",
@@ -215,7 +214,9 @@
   },
   "active": "4053d9b3cefd2cc5",
   "lastOpenFiles": [
+    "CS182 深度神经网络/Lecture/Part 8 Transformer/CS182 Lecture 19 & 20.md",
     "CS182 深度神经网络/Lecture/Part 8 Transformer/19_fa26.pdf",
+    "CS182 深度神经网络/Lecture/Part 8 Transformer/21_fa26.pdf",
     "CS182 深度神经网络/Lecture/Part 8 Transformer/附件/Pasted image 20261121150701.png",
     "CS182 深度神经网络/Lecture/Part 8 Transformer/附件/Pasted image 20261121150601.png",
     "CS182 深度神经网络/Lecture/Part 8 Transformer/附件/Pasted image 20261121150501.png",
@@ -224,10 +225,8 @@
     "CS182 深度神经网络/Lecture/Part 8 Transformer/附件/Pasted image 20261121150201.png",
     "CS182 深度神经网络/Lecture/Part 8 Transformer/附件/Pasted image 20261121150101.png",
     "CS182 深度神经网络/Lecture/Part 8 Transformer/附件",
-    "CS182 深度神经网络/Lecture/Part 8 Transformer/CS182 Lecture 19（第1-18页）完整笔记.md",
     "CS182 深度神经网络/Lecture/Part 8 Transformer",
     "Robotics Research/3. Sim to Real",
-    "CS182 深度神经网络/Lecture/Part 9/21_fa26.pdf",
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/CS182_Self_Supervision_FullSVD.md",
     "CS182 深度神经网络/Lecture/Part 4 RNN/RNN.md",
     "CS182 深度神经网络/线性代数常见英文.md",
