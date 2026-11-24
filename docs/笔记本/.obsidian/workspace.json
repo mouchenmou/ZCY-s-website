@@ -13,10 +13,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "CS182 深度神经网络/Lecture/Part 8 Transformer/21_fa26.pdf"
+                "file": "CS182 深度神经网络/Homework/HW10/hw10_solution.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "21_fa26"
+              "title": "hw10_solution"
             }
           },
           {
@@ -117,8 +117,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "4a872444f960435e",
@@ -212,20 +211,20 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "4053d9b3cefd2cc5",
+  "active": "124612a87b396ea7",
   "lastOpenFiles": [
+    "CS182 深度神经网络/Homework/HW11/hw11_solution.pdf",
+    "CS182 深度神经网络/Homework/HW11/未确认 97905.crdownload",
+    "CS182 深度神经网络/Homework/HW11/hw11_question.pdf",
+    "CS182 深度神经网络/Homework/HW10/hw10_question.pdf",
+    "CS182 深度神经网络/Lecture/Part 8 Transformer/21_fa26.pdf",
     "CS182 深度神经网络/Homework/HW12/hw12_question.pdf",
     "CS182 深度神经网络/Homework/HW12/未确认 541863.crdownload",
     "CS182 深度神经网络/Homework/HW12",
     "CS182 深度神经网络/Homework/新建文件夹",
-    "CS182 深度神经网络/Homework/HW11/hw10_solution.pdf",
+    "CS182 深度神经网络/Homework/HW10/hw10_solution.pdf",
     "CS182 深度神经网络/Homework/HW11/未确认 61547.crdownload",
-    "CS182 深度神经网络/Homework/HW11/hw11_question.pdf",
-    "CS182 深度神经网络/Homework/HW11/未确认 855892.crdownload",
-    "CS182 深度神经网络/Homework/HW11",
     "CS182 深度神经网络/Lecture/Part 8 Transformer/CS182 Lecture 19 & 20.md",
-    "CS182 深度神经网络/Lecture/Part 8 Transformer/19_fa26.pdf",
-    "CS182 深度神经网络/Lecture/Part 8 Transformer/21_fa26.pdf",
     "CS182 深度神经网络/Lecture/Part 8 Transformer/附件/Pasted image 20261121150701.png",
     "CS182 深度神经网络/Lecture/Part 8 Transformer/附件/Pasted image 20261121150601.png",
     "CS182 深度神经网络/Lecture/Part 8 Transformer/附件/Pasted image 20261121150501.png",
