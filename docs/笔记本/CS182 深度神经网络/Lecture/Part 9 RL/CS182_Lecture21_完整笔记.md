@@ -609,10 +609,7 @@ $\operatorname{sg}$ 表示 Stop Gradient（停止梯度），本次反传把已�
     $$
     \begin{aligned}
     \hat g=\frac14\Bigg[
-    &0.75\frac{\nabla_\theta p_8}{p_8}\\
-    &-0.25\frac{\nabla_\theta p_7}{p_7}\\
-    &-0.25\frac{\nabla_\theta p_7}{p_7}\\
-    &-0.25\frac{\nabla_\theta p_7}{p_7}
+    &0.75\frac{\nabla_\theta p_8}{p_8}-0.25\frac{\nabla_\theta p_7}{p_7}-0.25\frac{\nabla_\theta p_7}{p_7}-0.25\frac{\nabla_\theta p_7}{p_7}
     \Bigg]
     \end{aligned}
     $$
@@ -1287,6 +1284,82 @@ $$
 
 新组标准差恰好也是 0.4，因为成功和失败比例互换，并非总不变。如果用于标准差统计的 Batch 改变，分母也可能改变；只更新参数不会自动修改已经算好的组优势。**重新生成数据时才按新组重新计算。**
 
+!!! warning "我的疑问"
+
+    ### 我的疑问
+
+    明明更新了 Policy 之后平均值也跟着变了，平均值变了之后 $A$ 也会跟着改变啊，但是 $A$ 为什么每次都是在重新生成数据的时候才改变的？
+
+    ### 解析
+
+    因为 Baseline（基准）用旧的平均值还是新的平均值，算出来的梯度相同。所以 $\hat A$ 不需要跟着 Policy 更新。下面用公式推导。
+
+    **设定**
+
+    - $\pi_{\mathrm{gen}}$：生成这批回答时的旧模型
+    - $\pi_{\mathrm{train}}^\theta$：现在正在训练的模型
+    - $\rho(y)=\dfrac{\pi_{\mathrm{train}}^\theta(y)}{\pi_{\mathrm{gen}}(y)}$
+    - $b$：基准，对同一道题的所有回答 $y$ 是同一个数
+
+    用基准 $b$ 时的梯度是
+
+    $$
+    g(b)=\mathbb E_{y\sim\pi_{\mathrm{gen}}}\Big[\rho(y)\big(r(y)-b\big)\nabla_\theta\log\pi_{\mathrm{train}}^\theta(y)\Big]
+    $$
+
+    要证明：$g(b)$ 的值和 $b$ 无关。
+
+    **第 1 步：把括号拆开。** $b$ 不依赖 $y$，可以提到期望外面：
+
+    $$
+    g(b)=\underbrace{\mathbb E_{y\sim\pi_{\mathrm{gen}}}\big[\rho(y)\,r(y)\,\nabla_\theta\log\pi_{\mathrm{train}}^\theta(y)\big]}_{\text{第一项，没有 }b}
+    -b\cdot\underbrace{\mathbb E_{y\sim\pi_{\mathrm{gen}}}\big[\rho(y)\,\nabla_\theta\log\pi_{\mathrm{train}}^\theta(y)\big]}_{\text{第二项}}
+    $$
+
+    **第 2–5 步：证明第二项等于 0。**
+
+    $$
+    \begin{aligned}
+    \mathbb E_{y\sim\pi_{\mathrm{gen}}}\big[\rho(y)\,\nabla_\theta\log\pi_{\mathrm{train}}^\theta(y)\big]
+    &=\sum_y\pi_{\mathrm{gen}}(y)\cdot\frac{\pi_{\mathrm{train}}^\theta(y)}{\pi_{\mathrm{gen}}(y)}\cdot\nabla_\theta\log\pi_{\mathrm{train}}^\theta(y)
+    &&\text{期望写成求和，代入 }\rho\\
+    &=\sum_y\pi_{\mathrm{train}}^\theta(y)\,\nabla_\theta\log\pi_{\mathrm{train}}^\theta(y)
+    &&\pi_{\mathrm{gen}}(y)\text{ 上下约掉}\\
+    &=\sum_y\pi_{\mathrm{train}}^\theta(y)\cdot\frac{\nabla_\theta\pi_{\mathrm{train}}^\theta(y)}{\pi_{\mathrm{train}}^\theta(y)}
+    &&\nabla\log f=\frac{\nabla f}{f}\\
+    &=\sum_y\nabla_\theta\pi_{\mathrm{train}}^\theta(y)\\
+    &=\nabla_\theta\sum_y\pi_{\mathrm{train}}^\theta(y)
+    &&\text{求和与求导交换}\\
+    &=\nabla_\theta 1=0
+    &&\text{概率之和等于 1}
+    \end{aligned}
+    $$
+
+    **第 6 步：代回第 1 步。** 第二项是 0，所以
+
+    $$
+    \boxed{g(b)=\mathbb E_{y\sim\pi_{\mathrm{gen}}}\big[\rho(y)\,r(y)\,\nabla_\theta\log\pi_{\mathrm{train}}^\theta(y)\big]}
+    $$
+
+    右边没有 $b$。
+
+    **结论**
+
+    $g(b)$ 不含 $b$，所以对任意两个基准都有
+
+    $$
+    g(b_{\text{旧}})=g(b_{\text{新}})
+    $$
+
+    基准用旧的平均值还是新的平均值，梯度相同。Policy 变了这件事由 $\rho$ 负责修正，$\hat A$ 只需要在重新生成数据时按新组重新计算。
+
+    这和 2.3 节 $\mathbb E[\nabla_\theta\log P_\theta]=0$ 的推导是同一个，只多了把 $\rho$ 约掉的两步。
+
+    **成立条件**
+
+    - 对期望（所有可能的 $y$ 求和）严格成立；有限个样本算出来的是它的近似。
+    - $b$ 不能依赖具体的 $y$，否则第 1 步提不出来。
+
 #### 3.2.3 Token-level Importance Ratio、Truncation 与 Stop Gradient
 
 真实回答 $y_i$ 有多个 Token。ScaleRL 给每个已生成的 Token 计算当前模型与生成模型的条件概率比：
@@ -1312,18 +1385,17 @@ $$
 \mathcal J_{\mathrm{ScaleRL}}(\theta)=\mathbb E_{\substack{x\sim D\\\{y_i\}_{i=1}^{G}\sim\pi_{\mathrm{gen}}^{\theta_{\mathrm{old}}}(\cdot\mid x)}}\Bigg[
 \frac{1}{\sum_{g=1}^G|y_g|}
 \sum_{i=1}^{G}\sum_{t=1}^{|y_i|}
-&\operatorname{sg}(\min(\rho_{i,t},\epsilon))\\
-&\cdot\hat A_i^{\mathrm{norm}}\log\pi_{\mathrm{train}}^\theta(y_{i,t}\mid x,y_{i,<t})\Bigg].
+&\operatorname{sg}(\min(\rho_{i,t},\epsilon))\cdot\hat A_i^{\mathrm{norm}}\log\pi_{\mathrm{train}}^\theta(y_{i,t}\mid x,y_{i,<t})\Bigg].
 \end{aligned}
 $$
 
-| 符号 | 含义 |
-|---|---|
-| $x\sim D$ | 从题库抽取题目 |
-| $G,i$ | 同一道题生成 $G$ 份回答，$i$ 为回答编号 |
-| $t,|y_i|$ | 当前 Token 的位置、回答的 Token 长度 |
-| $\sum_g|y_g|$ | 同题所有回答的 Token 总数 |
-| $\rho_{i,t}$ | 当前 Token 的重要性采样权重 |
+| 符号                         | 含义                         |
+| -------------------------- | -------------------------- |
+| $x\sim D$                  | 从题库抽取题目                    |
+| $G,i$                      | 同一道题生成 $G$ 份回答，$i$ 为回答编号   |
+| $t,y_i$                    | 当前 Token 的位置、回答的 Token 长度  |
+| $\sum_gy_g$                | 同题所有回答的 Token 总数           |
+| $\rho_{i,t}$               | 当前 Token 的重要性采样权重          |
 | $\hat A_i^{\mathrm{norm}}$ | 整条回答的归一化优势，同一回答所有 Token 共用 |
 
 先在一道题内部把所有 Token 项求和、除以该题的总 Token 数，再对题目取平均。若两份回答长度为 2 和 8，本题共有 10 项；不是先分别给两个回答取平均，因此长回答贡献更多 Token 项。此式是 **Surrogate Objective**，不是最初定义的真实 Expected Reward。
@@ -1445,10 +1517,10 @@ $$
 
 用一个数值例子从内往外算。数据是 $x=5+3=?$，winner 为 8，loser 为 7；假设只有两个输出：
 
-| 回答 | 当前 Policy | 固定 Reference Policy |
-|---|---:|---:|
-| $y_w=8$ | 0.4 | 0.2 |
-| $y_l=7$ | 0.6 | 0.8 |
+| 回答      | 当前 Policy | 固定 Reference Policy |
+| ------- | --------: | ------------------: |
+| $y_w=8$ |       0.4 |                 0.2 |
+| $y_l=7$ |       0.6 |                 0.8 |
 
 取 $\beta=1$，Sigmoid 内的值为
 
@@ -1543,6 +1615,102 @@ $$
 
 含义：当 winner 的隐式奖励低于 loser 时，前面的 Sigmoid 权重较大（例如差为 -2 时权重 0.881）；当模型已明显偏好 winner 时权重较小（差为 2 时权重 0.119）。最后按 Gradient Descent 更新 $\theta\leftarrow\theta-\eta\nabla_\theta\mathcal L_{\mathrm{DPO}}$，只更新当前语言模型。
 
+#### 4.2.3 强化学习与深度学习（监督学习）的区别
+
+DPO Loss 写成"最小化 Loss"，看起来不像强化学习。这一小节说明怎么判断一个方法是不是强化学习，以及 DPO 属于哪一类。这里的"深度学习"指普通的 Supervised Learning（监督学习）；强化学习同样用神经网络和反向传播，区别不在这里。
+
+**1. "最小化 Loss"不是判断标准**
+
+最大化和最小化只差一个负号：
+
+$$
+\min_\theta\,(-S)\iff\max_\theta\,S.
+$$
+
+强化学习想最大化 $S$，但 PyTorch 的优化器只做最小化，所以代码里定义 $\mathcal L=-S$ 再最小化（见 2.3）。因此强化学习写成代码也是"最小化一个 Loss"，不能用 max 还是 min 来判断。
+
+**2. 判断标准：训练用的回答是谁写的**
+
+- 是正在训练的模型自己写的，写完再被打分：强化学习。
+- 是事先写好、放在数据集里的：监督学习。
+
+这在公式里对应 $\mathbb E$ 右下角的那一小串：
+
+- $y\sim\pi_\theta$ 读作"回答 $y$ 是模型 $\pi_\theta$ 写出来的"。
+- $(x,y_w,y_l)\sim\mathcal D$ 读作"题目和两个回答是从数据集 $\mathcal D$ 里拿出来的"。
+
+| | 强化学习 | 监督学习 |
+|---|---|---|
+| 目标函数 | $\max_\theta\mathbb E_{y\sim\pi_\theta(\cdot\mid x)}[r(x,y)]$ | $\min_\theta\mathbb E_{(x,y)\sim\mathcal D}[\ell_\theta(x,y)]$ |
+| 数据来源 | 模型自己生成回答 | 训练前就存在的固定数据集 |
+| $\theta$ 更新后 | 生成的回答跟着变，需要重新生成 | 数据不变，继续用 |
+| 反馈 | 只有一个分数 $r$，不告诉正确回答 | 直接给出目标（正确回答，或哪个回答更好） |
+
+**3. 本课各方法的归类**
+
+| 方法 | 期望对谁取 | 类型 |
+|---|---|---|
+| SFT | $(x,y)\sim\mathcal D$ | 监督学习 |
+| REINFORCE / RLVR | $y\sim\pi_\theta$ | 强化学习 |
+| ScaleRL | $y\sim\pi_{\mathrm{gen}}^{\theta_{\mathrm{old}}}$（模型自己稍早的版本生成） | 强化学习 |
+| RLHF 第一阶段（训练 Reward Model） | 人类标注的比较数据 $\sim\mathcal D$ | 监督学习 |
+| RLHF 第二阶段（训练语言模型） | $y\sim\pi_\theta$ | 强化学习 |
+| DPO | $(x,y_w,y_l)\sim\mathcal D$ | 监督学习 |
+
+**4. 两种方法都有 $\theta$，但 $\theta$ 在公式里的位置不同**
+
+监督学习：$\theta$ 在方括号里面。以 SFT 为例，
+
+$$
+\mathcal L(\theta)=\mathbb E_{(x,y)\sim\mathcal D}\big[-\log\pi_\theta(y\mid x)\big]
+=\sum_{(x,y)}\underbrace{\mathcal D(x,y)}_{\text{没有 }\theta}\cdot\underbrace{\big(-\log\pi_\theta(y\mid x)\big)}_{\text{有 }\theta}.
+$$
+
+对 $\theta$ 求导时 $\mathcal D(x,y)$ 是常数，直接对后面那项求导：
+
+$$
+\nabla_\theta\mathcal L=\sum_{(x,y)}\mathcal D(x,y)\cdot\nabla_\theta\big(-\log\pi_\theta(y\mid x)\big)
+=\mathbb E_{(x,y)\sim\mathcal D}\big[\nabla_\theta(-\log\pi_\theta(y\mid x))\big].
+$$
+
+DPO 也是这种情况：$\theta$ 在方括号里的 $\pi_\theta(y_w\mid x)$ 和 $\pi_\theta(y_l\mid x)$ 上，下标 $\mathcal D$ 里没有 $\theta$。
+
+强化学习：$\theta$ 在期望的下标里。
+
+$$
+J(\theta)=\mathbb E_{y\sim\pi_\theta}\big[r(y)\big]
+=\sum_y\underbrace{\pi_\theta(y)}_{\text{有 }\theta}\cdot\underbrace{r(y)}_{\text{没有 }\theta}.
+$$
+
+这次 $\theta$ 在前面的概率上，方括号里的 $r(y)$ 反而没有 $\theta$。求导得到
+
+$$
+\nabla_\theta J=\sum_y\nabla_\theta\pi_\theta(y)\cdot r(y).
+$$
+
+这个式子前面不再是概率 $\pi_\theta(y)$，所以它不是期望，没法靠"抽样再取平均"来估计。于是补一步，乘一个 $\pi_\theta(y)$ 再除一个 $\pi_\theta(y)$：
+
+$$
+\nabla_\theta J=\sum_y\pi_\theta(y)\cdot r(y)\cdot\frac{\nabla_\theta\pi_\theta(y)}{\pi_\theta(y)}
+=\mathbb E_{y\sim\pi_\theta}\big[r(y)\,\nabla_\theta\log\pi_\theta(y)\big].
+$$
+
+这一步就是 Log-Derivative Trick。$\nabla_\theta\log\pi_\theta$、Advantage、$\rho$ 这一整套东西都是从这里来的。
+
+| | $\theta$ 的位置 | 求导 |
+|---|---|---|
+| 监督学习（SFT、DPO） | 方括号里的 Loss 上 | 直接对方括号里的东西求导 |
+| 强化学习 | 期望下标的 $\pi_\theta$ 上 | 要多做一步 Log-Derivative Trick |
+
+4.2.2 的 DPO 梯度推导里没有 Advantage 和 $\rho$，就是因为 DPO 属于第一行。
+
+**5. DPO 属于哪一类**
+
+- **目标**来自强化学习：DPO 是从 RLHF 的目标"Reward 高，同时不离 $\pi_{\mathrm{ref}}$ 太远"推出来的（见 4.2.1），$\beta\log\dfrac{\pi_\theta(y\mid x)}{\pi_{\mathrm{ref}}(y\mid x)}$ 充当隐式 Reward。
+- **训练方式**是监督学习：固定数据集，最小化 Loss，模型在训练中不生成回答，也没有打分。
+
+这个判断标准在本课范围内够用。更广的领域里还有用固定数据集做的 Offline RL，那里界线没有这么清楚。
+
 ### 4.3 RLHF vs. DPO：优缺点与 A/B/C 的例子
 
 | | 经典在线 RLHF | 标准离线 DPO |
@@ -1565,3 +1733,10 @@ $$
 - [ScaleRL 原论文](https://arxiv.org/html/2510.13786v1)：训练计算规模、重要性权重、优势归一化与筛选。
 - [InstructGPT 原论文](https://arxiv.org/html/2203.02155v1)：经典 SFT、奖励模型、RLHF 流程。
 - [DPO 原论文](https://arxiv.org/html/2305.18290v3)：DPO 损失、最优策略推导与梯度。
+
+
+**③ $\nabla\log\pi$ 怎么来的**（现在 $p=0.8$）：
+
+- 答对的概率是 $p$，所以 $\nabla\log p=\frac1p\nabla p=\frac{1}{0.8}\nabla p$
+- 答错的概率是 $1-p$，所以 $\nabla\log(1-p)=-\frac{1}{1-p}\nabla p=-\frac{1}{0.2}\nabla p$
+- 
