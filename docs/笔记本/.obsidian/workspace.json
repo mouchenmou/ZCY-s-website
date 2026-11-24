@@ -13,10 +13,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "CS182 深度神经网络/Homework/HW10/hw10_solution.pdf"
+                "file": "CS182 深度神经网络/Lecture/Part 9 RL/21_fa26.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "hw10_solution"
+              "title": "21_fa26"
             }
           },
           {
@@ -35,12 +35,14 @@
             "id": "4cf1ec44f3c0cf38",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "CS182 深度神经网络/Lecture/Part 6 State based model/16_fa26.pdf"
+                "file": "CS182 深度神经网络/Lecture/Part 9 RL/CS182_Lecture21_完整笔记.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "16_fa26"
+              "icon": "lucide-file",
+              "title": "CS182_Lecture21_完整笔记"
             }
           },
           {
@@ -55,7 +57,8 @@
               "title": "2602.16863v3"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -211,27 +214,32 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "124612a87b396ea7",
+  "active": "4cf1ec44f3c0cf38",
   "lastOpenFiles": [
-    "CS182 深度神经网络/Homework/HW11/hw11_solution.pdf",
-    "CS182 深度神经网络/Homework/HW11/未确认 97905.crdownload",
-    "CS182 深度神经网络/Homework/HW11/hw11_question.pdf",
-    "CS182 深度神经网络/Homework/HW10/hw10_question.pdf",
-    "CS182 深度神经网络/Lecture/Part 8 Transformer/21_fa26.pdf",
-    "CS182 深度神经网络/Homework/HW12/hw12_question.pdf",
-    "CS182 深度神经网络/Homework/HW12/未确认 541863.crdownload",
-    "CS182 深度神经网络/Homework/HW12",
-    "CS182 深度神经网络/Homework/新建文件夹",
-    "CS182 深度神经网络/Homework/HW10/hw10_solution.pdf",
-    "CS182 深度神经网络/Homework/HW11/未确认 61547.crdownload",
+    "CS182 深度神经网络/Lecture/Part 9 RL/21_fa26.pdf",
+    "Robotics Research/3. Sim to Real/1. SimToolReal/2602.16863v3.pdf",
+    "CS182 深度神经网络/Homework/HW06/hw06_question.pdf",
+    "CS182 深度神经网络/Lecture/Part 9 RL/CS182_Lecture21_完整笔记.md",
+    "CS182 深度神经网络/Lecture/Part 9 RL/CS182_Lecture21_完整笔记.md",
+    "CS182 深度神经网络/Lecture/Part 9 RL/附件/Lecture21 p09 dpo loss.png",
+    "CS182 深度神经网络/Lecture/Part 9 RL/附件/Lecture21 p09 dpo gradient.png",
+    "CS182 深度神经网络/Lecture/Part 9 RL/附件/Lecture21 p08 pipeline.png",
+    "CS182 深度神经网络/Lecture/Part 9 RL/附件/Lecture21 p08 degeneration.png",
+    "CS182 深度神经网络/Lecture/Part 9 RL/附件/Lecture21 p07 rlhf.png",
+    "CS182 深度神经网络/Lecture/Part 9 RL/附件/Lecture21 p06 objective.png",
+    "CS182 深度神经网络/Lecture/Part 9 RL/附件/Lecture21 p05 scaling.png",
+    "CS182 深度神经网络/Lecture/Part 9 RL/附件/Lecture21 p05 recipes.png",
+    "CS182 深度神经网络/Lecture/Part 9 RL/附件/Lecture21 p03 reinforce.png",
+    "CS182 深度神经网络/Lecture/Part 9 RL/附件/Lecture21 p02 feedback.png",
+    "CS182 深度神经网络/Lecture/Part 9 RL/附件/21_fa26.pdf",
+    "CS182 深度神经网络/Lecture/Part 9 RL/附件",
+    "CS182 深度神经网络/Lecture/Part 9 RL",
+    "CS182 深度神经网络/Lecture/Part 6 State based model/16_fa26.pdf",
+    "CS182 深度神经网络/Lecture/Part 9 RL/附件/21_fa26.pdf",
+    "CS182 深度神经网络/Lecture/Part 9 RL/附件",
+    "CS182 深度神经网络/Lecture/Part 9 RL",
+    "CS182 深度神经网络/Lecture/Part 7 Attention/Attention and Transformer.md",
     "CS182 深度神经网络/Lecture/Part 8 Transformer/CS182 Lecture 19 & 20.md",
-    "CS182 深度神经网络/Lecture/Part 8 Transformer/附件/Pasted image 20261121150701.png",
-    "CS182 深度神经网络/Lecture/Part 8 Transformer/附件/Pasted image 20261121150601.png",
-    "CS182 深度神经网络/Lecture/Part 8 Transformer/附件/Pasted image 20261121150501.png",
-    "CS182 深度神经网络/Lecture/Part 8 Transformer/附件/Pasted image 20261121150401.png",
-    "CS182 深度神经网络/Lecture/Part 8 Transformer/附件/Pasted image 20261121150301.png",
-    "CS182 深度神经网络/Lecture/Part 8 Transformer/附件/Pasted image 20261121150201.png",
-    "CS182 深度神经网络/Lecture/Part 8 Transformer/附件/Pasted image 20261121150101.png",
     "CS182 深度神经网络/Lecture/Part 5 Self-Supervised Learning/CS182_Self_Supervision_FullSVD.md",
     "CS182 深度神经网络/Lecture/Part 4 RNN/RNN.md",
     "CS182 深度神经网络/线性代数常见英文.md",
@@ -240,7 +248,6 @@
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 10 Video Understanding.md",
     "CS231n/2. Perceiving and Understanding the Visual World/Lecture 11 Large Scale Distributed Training.md",
     "Robotics Research/2. Cross Embodiment/1. UMI-on-Air/1. Introduction.md",
-    "CS182 深度神经网络/Lecture/Part 7 Attention/Attention and Transformer.md",
     "Robotics Research/2. Cross Embodiment/1. UMI-on-Air/生词.md",
     "CS182 深度神经网络/Homework/HW08/生词.md",
     "CS182 深度神经网络/Lecture/Part 6 State based model/State Space Models.md",
@@ -248,17 +255,12 @@
     "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
     "CS182 深度神经网络/Homework/HW08/查漏补缺1 三种常见的loss.md",
     "CS182 深度神经网络/Lecture/Part 3 GNN/GNN.md",
-    "CS182 深度神经网络/Lecture/Part 6 State based model/附件/Pasted image 20261106090009.png",
     "Robotics Research/迁移SuperMimic到GALATEA/研究全程记录.md",
     "Robotics Research/迁移SuperMimic到GALATEA/GALATEA + SuperMimic 自主实验最终报告.md",
     "Robotics Research/迁移SuperMimic到GALATEA/11.4日研究.md",
     "Robotics Research/1. RL for Tracking/2. SuperMinic/supermimic_galatea_噪声问题笔记.md",
-    "CS182 深度神经网络/Lecture/Part 7 Attention/附件/Pasted image 20261106210108.png",
-    "CS182 深度神经网络/Lecture/Part 7 Attention/附件/Pasted image 20261106210107.png",
     "CS231n/3. Generative and Interactive Visual Intelligence/Lecture 14 Generative Models 2.md",
     "CS231n/3. Generative and Interactive Visual Intelligence/lecture 13 Generative Models 1.md",
-    "CS231n/3. Generative and Interactive Visual Intelligence/Lecture 12 Self-supervised Learning.md",
-    "CS182 深度神经网络/Lecture/Part 7 Attention/CS182_Self_Supervision_FullSVD.md",
     "CS182 深度神经网络/Lecture/未命名.canvas"
   ]
 }
