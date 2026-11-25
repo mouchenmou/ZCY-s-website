@@ -13,22 +13,24 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "CS182 深度神经网络/Lecture/Part 9 RL/21_fa26.pdf"
+                "file": "Robotics Research/3. Sim to Real/1. SimToolReal/2602.16863v3.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "21_fa26"
+              "title": "2602.16863v3"
             }
           },
           {
             "id": "c9c410a6715f60a9",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "CS182 深度神经网络/Homework/HW06/hw06_question.pdf"
+                "file": "Robotics Research/3. Sim to Real/1. SimToolReal/2. related work.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "hw06_question"
+              "icon": "lucide-file",
+              "title": "2. related work"
             }
           },
           {
@@ -37,28 +39,29 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS182 深度神经网络/Lecture/Part 9 RL/CS182_Lecture21_完整笔记.md",
+                "file": "Robotics Research/3. Sim to Real/1. SimToolReal/1. FIgure 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CS182_Lecture21_完整笔记"
+              "title": "1. FIgure 2"
             }
           },
           {
             "id": "2656f7c3225b9b5e",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Robotics Research/3. Sim to Real/1. SimToolReal/2602.16863v3.pdf"
+                "file": "Robotics Research/3. Sim to Real/1. SimToolReal/0. abstract.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "2602.16863v3"
+              "icon": "lucide-file",
+              "title": "0. abstract"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -214,11 +217,16 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "4cf1ec44f3c0cf38",
+  "active": "4053d9b3cefd2cc5",
   "lastOpenFiles": [
-    "CS182 深度神经网络/Lecture/Part 9 RL/21_fa26.pdf",
+    "Robotics Research/3. Sim to Real/1. SimToolReal/3. Method.md",
     "CS182 深度神经网络/Lecture/Part 9 RL/CS182_Lecture21_完整笔记.md",
+    "Robotics Research/3. Sim to Real/1. SimToolReal/2. related work.md",
     "Robotics Research/3. Sim to Real/1. SimToolReal/2602.16863v3.pdf",
+    "CS182 深度神经网络/Lecture/Part 9 RL/21_fa26.pdf",
+    "Robotics Research/3. Sim to Real/1. SimToolReal/0 Figure1.md",
+    "Robotics Research/3. Sim to Real/1. SimToolReal/1. FIgure 2.md",
+    "Robotics Research/3. Sim to Real/1. SimToolReal/0. abstract.md",
     "CS182 深度神经网络/Homework/HW06/hw06_question.pdf",
     "CS182 深度神经网络/Lecture/Part 9 RL/附件/Lecture21 p09 dpo loss.png",
     "CS182 深度神经网络/Lecture/Part 9 RL/附件/Lecture21 p09 dpo gradient.png",
@@ -257,9 +265,6 @@
     "Robotics Research/迁移SuperMimic到GALATEA/研究全程记录.md",
     "Robotics Research/迁移SuperMimic到GALATEA/GALATEA + SuperMimic 自主实验最终报告.md",
     "Robotics Research/迁移SuperMimic到GALATEA/11.4日研究.md",
-    "Robotics Research/1. RL for Tracking/2. SuperMinic/supermimic_galatea_噪声问题笔记.md",
-    "CS231n/3. Generative and Interactive Visual Intelligence/Lecture 14 Generative Models 2.md",
-    "CS231n/3. Generative and Interactive Visual Intelligence/lecture 13 Generative Models 1.md",
     "CS182 深度神经网络/Lecture/未命名.canvas"
   ]
 }
