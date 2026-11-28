@@ -23,14 +23,12 @@
             "id": "c9c410a6715f60a9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Robotics Research/3. Sim to Real/1. SimToolReal/2. related work.md",
-                "mode": "source",
-                "source": false
+                "file": "CS182 深度神经网络/Homework/HW10/hw10_solution.pdf"
               },
-              "icon": "lucide-file",
-              "title": "2. related work"
+              "icon": "lucide-file-text",
+              "title": "hw10_solution"
             }
           },
           {
@@ -231,17 +229,18 @@
   },
   "active": "4053d9b3cefd2cc5",
   "lastOpenFiles": [
+    "CS182 深度神经网络/Homework/HW10/hw10_solution.pdf",
+    "CS182 深度神经网络/Homework/HW10/hw10_question.pdf",
+    "Robotics Research/3. Sim to Real/1. SimToolReal/2. related work.md",
     "CS182 深度神经网络/Homework/HW0/hw00_question.pdf",
     "CS182 深度神经网络/Homework/HW0/COMPSCI 182 homework 0.md",
     "CS182 深度神经网络/Homework/HW01/hw01_question.pdf",
     "CS182 深度神经网络/Homework/HW01/COMPSCI 182 homework 01 combined.pdf",
     "Robotics Research/3. Sim to Real/1. SimToolReal/0. abstract.md",
-    "CS182 深度神经网络/Homework/HW10/hw10_question.pdf",
     "CS182 深度神经网络/Homework/HW09/hw09_question.pdf",
     "Robotics Research/3. Sim to Real/1. SimToolReal/2602.16863v3.pdf",
     "Robotics Research/3. Sim to Real/1. SimToolReal/3. Method.md",
     "CS182 深度神经网络/Lecture/Part 9 RL/CS182_Lecture21_完整笔记.md",
-    "Robotics Research/3. Sim to Real/1. SimToolReal/2. related work.md",
     "CS182 深度神经网络/Lecture/Part 9 RL/21_fa26.pdf",
     "Robotics Research/3. Sim to Real/1. SimToolReal/0 Figure1.md",
     "Robotics Research/3. Sim to Real/1. SimToolReal/1. FIgure 2.md",
